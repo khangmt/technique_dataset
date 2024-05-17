@@ -1,0 +1,361 @@
+{
+    "id": "T1069.002",
+    "tech_id": "T1069.002",
+    "tech_name": "Domain Groups",
+    "best_phrases": [],
+    "tactics": [
+        "TA0007"
+    ],
+    "features": [
+        "FUNCTION",
+        "USER",
+        "DATA",
+        "NETWORK",
+        "COMPONENT"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--040ff1f7-493d-4762-a9bb-db143a971464",
+        "relationship--0c472bde-ea1e-48b4-bd55-a32f276b0b13",
+        "relationship--0eb8fe0a-6a6b-4d66-b6ff-e1d7f8f18948",
+        "relationship--1280542b-4574-4567-ad3d-76692271699e",
+        "relationship--1991b422-2f89-4b90-9cea-7c34919eec05",
+        "relationship--19baa7ba-5fdd-405e-996c-13e49299cbfb",
+        "relationship--3a3efac5-1531-413b-97b7-e210b8880f05",
+        "relationship--3e17459a-edb2-471c-87b0-1315f3500ab6",
+        "relationship--409581f2-270d-43ce-8044-34bc09874548",
+        "relationship--4358ef19-eef7-48bb-9941-39d70bf235af",
+        "relationship--4af77ee9-ee38-4594-81e3-177a2f2d4bfb",
+        "relationship--51db2539-ad77-4fa1-8f54-2bb6ccf603df",
+        "relationship--533deac3-2f27-4256-bb11-7d68d8824d47",
+        "relationship--6317e636-4766-4968-ac4b-66b1a7199250",
+        "relationship--7114f449-1436-41ca-ab9e-5704bf3552ef",
+        "relationship--80cbc348-7246-418a-8b25-e112408a498b",
+        "relationship--98737ffe-6b7b-4c2d-a775-7a93e304a9c7",
+        "relationship--a1fab866-6486-4775-8caf-2b5744971477",
+        "relationship--a8b6a519-2159-46f0-916d-1f7a3d940eea",
+        "relationship--afeb1494-e640-410c-8e81-62970e22f8a7",
+        "relationship--b2bd8d90-28ca-4524-85f7-07aaf066b485",
+        "relationship--b368c7c2-a593-45cb-b557-aac668a02656",
+        "relationship--bcd2cfa1-793c-40a7-9920-614539e651a7",
+        "relationship--bcf90f77-1b2b-46e2-914b-051e51a2d409",
+        "relationship--c0a0d653-ff95-4c77-a129-c7f3398a56ca",
+        "relationship--c2541365-58bd-474c-82ab-28c7b63e7fb8",
+        "relationship--cdcc30ba-b4be-469f-ae09-18913c53205d",
+        "relationship--d57826cf-0fbd-44e5-9d67-9f29a93f1ca6",
+        "relationship--f36a8899-940f-4c8f-924d-eef2f056744d"
+    ],
+    "graph_nodes": [
+        {
+            "count": 20,
+            "id": 0,
+            "texts": [
+                "Kwampirs",
+                "LAPSUS$",
+                "APT29",
+                "GRIFFON",
+                "OilRig",
+                "Cobalt Strike",
+                "Turla",
+                "threat actors",
+                "FIN7",
+                "POWRUNER",
+                "BADHATCH",
+                "SoreFang",
+                "OSInfo",
+                "WellMess",
+                "Egregor",
+                "Ke3chang",
+                "Inception",
+                "Dragonfly",
+                "Helminth",
+                "REvil"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 24,
+            "id": 1,
+            "texts": [
+                "domain groups",
+                "victim",
+                "domain groups",
+                "members",
+                "domain groups",
+                "domain groups",
+                "domain groups",
+                "targets",
+                "account groups",
+                "domain administrators",
+                "domain groups",
+                "victim",
+                "user",
+                "Domain Administrators",
+                "domain groups",
+                "Domain Admins",
+                "power users",
+                "user",
+                "users",
+                "administrators",
+                "domain admin group",
+                "Exchange Trusted Subsystem groups",
+                "domain groups",
+                "permission groups"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 35,
+            "id": 2,
+            "texts": [
+                "command net localgroup /domain",
+                "AD Explorer tool",
+                "Commands",
+                "net group /domain",
+                "Net",
+                "BloodHound",
+                "SILENTTRINITY",
+                "AdFind",
+                "reconnaissance module",
+                "net group",
+                "net group \"domain admins\" /domain",
+                "net group /domain",
+                "net group \"Exchange Trusted Subsystem\" /domain",
+                "AdFind",
+                "domain contoller",
+                "command net group \"domain admins\" /domain",
+                "net group \"Domain Admins\" /domain",
+                "command net group \"domain admins\" /dom",
+                "net group /domain",
+                "commands",
+                "Brute Ratel C4",
+                "net group",
+                "net.exe group /domain",
+                "net.exe group \"domain admins\" /domain",
+                "Active Directory reconnaissance",
+                "Sharphound",
+                "tools",
+                "AdFind",
+                "malware modules",
+                "batch scripts",
+                "commands",
+                "net group domain admins /domain",
+                "net group Exchange Trusted Subsystem /domain",
+                "CrackMapExec",
+                "dsquery"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 3,
+            "id": 3,
+            "texts": [
+                "groups",
+                "groups",
+                "Volt Typhoon"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 5,
+            "id": 4,
+            "texts": [
+                "network",
+                "System.DirectoryServices namespace",
+                "domain",
+                "domain",
+                "domain"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 17,
+            "id": 5,
+            "texts": [
+                "information",
+                "information",
+                "domain groups",
+                "members",
+                "domain group information",
+                "Windows domain membership information",
+                "domain group permission settings",
+                "domain group information",
+                "domain admin privileges",
+                "domain group membership",
+                "information",
+                "domain membership",
+                "users",
+                "administrators",
+                "user accounts",
+                "domain membership",
+                "information"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 3,
+            "id": 6,
+            "texts": [
+                "compromised environments",
+                "compromised host",
+                "compromised host"
+            ],
+            "label": "COMPONENT"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 10
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 13
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "2_5",
+            "source": 2,
+            "dest": 5,
+            "count": 6
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "5_1",
+            "source": 5,
+            "dest": 1,
+            "count": 4
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "3_6",
+            "source": 3,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "2_6",
+            "source": 2,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 7
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "1_6",
+            "source": 1,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 3
+        },
+        {
+            "id": "5_4",
+            "source": 5,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "5_6",
+            "source": 5,
+            "dest": 6,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "collect": 3,
+        "with": 1,
+        "use": 12,
+        "enumerate": 6,
+        "on": 5,
+        "of": 2,
+        "in": 4,
+        "gather": 4,
+        "manipulate": 1,
+        "about": 1,
+        "retrieve": 2,
+        "run": 2,
+        "discover": 2,
+        "find": 1,
+        "identify": 3,
+        "query": 1,
+        "have": 1,
+        "execute": 1,
+        "for": 4,
+        "within": 3,
+        "conduct": 1
+    }
+}

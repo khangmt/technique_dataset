@@ -1,0 +1,355 @@
+{
+    "id": "T1027.003",
+    "tech_id": "T1027.003",
+    "tech_name": "Steganography",
+    "best_phrases": [
+        "steganography",
+        "Steganography"
+    ],
+    "tactics": [
+        "TA0005"
+    ],
+    "features": [
+        "DATA",
+        "FUNCTION",
+        "ENCRYPTION",
+        "REGISTRY",
+        "COMPONENT",
+        "NETWORK"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--09f5abff-ad09-4d5b-a6c4-612d4171c089",
+        "relationship--15698fb0-12df-4135-8ecb-093e9fd268a2",
+        "relationship--18f4bc4e-ef29-4fe4-ace3-c4671f94ccef",
+        "relationship--1aad8f36-aec7-4210-8edb-7ad3dd14f5ed",
+        "relationship--1fedf226-02b4-4634-a7bf-4dac49bd97a3",
+        "relationship--2e55a09d-0784-4a74-bd3a-6beca63adcce",
+        "relationship--3811b12a-fcfc-47d2-83ec-89df60ca4c21",
+        "relationship--44d62933-848e-481e-84f9-7dbdec9a4b85",
+        "relationship--5342c0fb-0f4d-456a-a7e7-525c60b7f82e",
+        "relationship--54ece776-8a64-4e0c-9d54-4350680c07b8",
+        "relationship--5791055c-1a0c-460e-91cc-7d85278ce533",
+        "relationship--59ef906c-f395-427a-9cd5-30887a983516",
+        "relationship--65838f5f-0cc3-4e33-953a-11f1e5e7a20e",
+        "relationship--6c9ed67e-95f1-4585-8d8d-14a27f21e14c",
+        "relationship--879ee01b-0517-42bd-8ac8-3857e63e40c4",
+        "relationship--8aca6fab-b526-4716-98e0-1300847b9478",
+        "relationship--8d36ae15-a2af-4c13-86f0-f657afbb4c86",
+        "relationship--aba32ee8-9eca-45fa-99f3-89e75dbc16a6",
+        "relationship--b0557c84-d4c5-4016-8381-f419d18f2d47",
+        "relationship--b8e0c578-c249-4106-9568-3cbe0473b081",
+        "relationship--c09c2f08-3bda-4af7-9578-01fa1c7fba2c",
+        "relationship--c09f73f8-f350-457c-a492-8cd820b00074",
+        "relationship--c6572007-a3f6-40d1-bfd2-37abf6a63b58",
+        "relationship--c748a743-6d63-4287-a86a-d799e14fcd99",
+        "relationship--da7dcfcb-7a36-43a8-8a0a-409d15b7e62e",
+        "relationship--e35f5636-2ae8-4ab7-9851-73410e6a58d0",
+        "relationship--e9342a76-171e-4831-96b7-d998a6de8282",
+        "relationship--f5777849-9cea-4e02-93ba-9065b27f0e58"
+    ],
+    "graph_nodes": [
+        {
+            "count": 27,
+            "id": 0,
+            "texts": [
+                "Earth Lusca",
+                "RDAT",
+                "PowerDuke",
+                "threat actors",
+                "APT37",
+                "LiteDuke",
+                "ABK",
+                "BBK",
+                "RegDuke",
+                "build_downer",
+                "Okrum",
+                "Bandook",
+                "TA551",
+                "Diavol",
+                "Leviathan",
+                "Ramsay",
+                "ObliqueRAT",
+                "IcedID",
+                "ProLock",
+                "MuddyWater",
+                "APT29",
+                "Raindrop",
+                "Avenger",
+                "Andariel",
+                "Tropic Trooper",
+                "PolyglotDuke",
+                "BRONZE BUTLER"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 11,
+            "id": 1,
+            "texts": [
+                "steganography",
+                "steganography",
+                "Tiny Encryption Algorithm",
+                "TEA",
+                "steganography",
+                "zip file",
+                "steganography",
+                "steganography",
+                "steganography",
+                "steganography",
+                "steganography"
+            ],
+            "label": "ENCRYPTION"
+        },
+        {
+            "count": 33,
+            "id": 2,
+            "texts": [
+                "shellcode",
+                "backdoors",
+                "packers",
+                "command",
+                "resource sections",
+                "shellcode",
+                "loader component",
+                "Portable Executable",
+                "PE",
+                "photo",
+                "LSB",
+                "malware",
+                "payload",
+                "loader",
+                "executable",
+                "main code routines",
+                "anti-analysis techniques",
+                "payload",
+                "binaries",
+                "payload",
+                "obfuscated JavaScript code",
+                "Invoke-PSImage",
+                "PowerShell script",
+                "payloads",
+                "encoded payload",
+                "legitimate 7-Zip code",
+                "backdoor malware",
+                "executables",
+                "backdoor routines",
+                "detection",
+                "encrypted payloads",
+                "operations",
+                "payloads"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 38,
+            "id": 3,
+            "texts": [
+                "BMP image file",
+                "data",
+                "BMP image",
+                "PNG files",
+                "pixel data",
+                "images",
+                "data",
+                "files",
+                "images",
+                "users",
+                "image files",
+                "use",
+                "data",
+                "images",
+                "Significant Bit",
+                "JPEG",
+                ".PNG images",
+                "encoded data",
+                "PNG",
+                "bitmap images",
+                "stolen data",
+                "files",
+                "PE data",
+                "JPEG files",
+                "Word documents",
+                "BMP images",
+                "RC4 encrypted .png files",
+                ".jpg and .bmp files",
+                "image file",
+                "temp.jpg",
+                "pixels",
+                "PNG file",
+                "valid images",
+                "images",
+                "PNG files",
+                "JPG files",
+                "C2 information",
+                "images"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 7,
+            "id": 4,
+            "texts": [
+                "layer",
+                "that",
+                "that",
+                "use",
+                "data",
+                "part",
+                "start"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "malware DLLs"
+            ],
+            "label": "REGISTRY"
+        },
+        {
+            "count": 1,
+            "id": 6,
+            "texts": [
+                "Github"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 1,
+            "id": 7,
+            "texts": [
+                "compromised websites"
+            ],
+            "label": "NETWORK"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 8
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 22
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 13
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 21
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 3
+        },
+        {
+            "id": "4_3",
+            "source": 4,
+            "dest": 3,
+            "count": 5
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 4
+        },
+        {
+            "id": "4_2",
+            "source": 4,
+            "dest": 2,
+            "count": 5
+        },
+        {
+            "id": "2_0",
+            "source": 2,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "3_5",
+            "source": 3,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "3_6",
+            "source": 3,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "3_7",
+            "source": 3,
+            "dest": 7,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 15,
+        "hide": 10,
+        "in": 13,
+        "embed": 4,
+        "within": 12,
+        "execute": 1,
+        "read": 1,
+        "build": 2,
+        "from": 11,
+        "contain in": 1,
+        "of": 7,
+        "send": 1,
+        "to": 1,
+        "with": 2,
+        "extract": 4,
+        "for": 1,
+        "obfuscate": 1,
+        "as": 2,
+        "inside": 2,
+        "store on": 1,
+        "have": 1,
+        "embed within": 1,
+        "contain within": 1,
+        "host on": 1,
+        "store": 2,
+        "locate": 1,
+        "mask": 1,
+        "evade": 1,
+        "conceal": 1
+    }
+}

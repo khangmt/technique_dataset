@@ -1,0 +1,69 @@
+{
+    "id": "T1593.003",
+    "tech_id": "T1593.003",
+    "tech_name": "Code Repositories",
+    "best_phrases": [],
+    "tactics": [
+        "TA0043"
+    ],
+    "features": [
+        "COMPONENT",
+        "DATA"
+    ],
+    "locations": [
+        "PRE"
+    ],
+    "procedures": [
+        "relationship--72c044ec-4869-4273-aff9-10c14e3326ca"
+    ],
+    "graph_nodes": [
+        {
+            "count": 1,
+            "id": 0,
+            "texts": [
+                "LAPSUS$"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 1,
+            "id": 1,
+            "texts": [
+                "public code repositories"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 1,
+            "id": 2,
+            "texts": [
+                "exposed credentials"
+            ],
+            "label": "DATA"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "search": 1,
+        "for": 2
+    }
+}

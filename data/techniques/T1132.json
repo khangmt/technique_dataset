@@ -1,0 +1,170 @@
+{
+    "id": "T1132",
+    "tech_id": "T1132",
+    "tech_name": "Data Encoding",
+    "best_phrases": [],
+    "tactics": [
+        "TA0011"
+    ],
+    "features": [
+        "DATA",
+        "FUNCTION",
+        "NETWORK",
+        "ENCRYPTION"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--3884be12-f73f-4f9b-875e-68d40798faf6",
+        "relationship--448cab31-deb1-40d5-a7f6-848d0116c4b6",
+        "relationship--45a113e7-452c-4bf3-9962-b0f71f386095",
+        "relationship--9a2046a3-41c8-4d81-a812-63c66bcb3400",
+        "relationship--c79d7110-46bb-4b6d-a256-87bd1b6379a3"
+    ],
+    "graph_nodes": [
+        {
+            "count": 4,
+            "id": 0,
+            "texts": [
+                "BADNEWS",
+                "Mythic",
+                "transform functions",
+                "payload"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 6,
+            "id": 1,
+            "texts": [
+                "C2 data",
+                "hexadecimal representation",
+                "C2 data",
+                "encoded data",
+                "encoded URL parameter",
+                "altered version"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 5,
+            "id": 2,
+            "texts": [
+                "attacker",
+                "attacker",
+                "Ursnif",
+                "Linux Rabbit",
+                "H1N1"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 2,
+            "id": 3,
+            "texts": [
+                "base64",
+                "base64"
+            ],
+            "label": "ENCRYPTION"
+        },
+        {
+            "count": 4,
+            "id": 4,
+            "texts": [
+                "HTTP URLs",
+                "C2",
+                "C2",
+                "C2 traffic"
+            ],
+            "label": "NETWORK"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 4
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 4
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 4
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "2_0",
+            "source": 2,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "encrypt": 1,
+        "convert": 1,
+        "into": 4,
+        "encode": 1,
+        "provide": 1,
+        "randomize": 1,
+        "use": 1,
+        "in": 2,
+        "for": 2,
+        "send": 1,
+        "from": 2,
+        "as": 2,
+        "obfuscate": 1,
+        "with": 2,
+        "of": 1
+    }
+}

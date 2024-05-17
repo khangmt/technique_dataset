@@ -1,0 +1,186 @@
+{
+    "id": "T1592.002",
+    "tech_id": "T1592.002",
+    "tech_name": "Software",
+    "best_phrases": [
+        "software code",
+        "software",
+        "Software"
+    ],
+    "tactics": [
+        "TA0043"
+    ],
+    "features": [
+        "DATA",
+        "FUNCTION",
+        "NETWORK",
+        "USER",
+        "COMPONENT"
+    ],
+    "locations": [
+        "PRE"
+    ],
+    "procedures": [
+        "relationship--3499e2c5-e22a-4e99-ae90-3c7b48aa5ccb",
+        "relationship--9f10e334-ae5f-4d8e-8229-64408fef1fd1",
+        "relationship--9fc2e926-e5a9-4c56-8d7c-cdef9dd7f7ab"
+    ],
+    "graph_nodes": [
+        {
+            "count": 3,
+            "id": 0,
+            "texts": [
+                "Magic Hound",
+                "Sandworm Team",
+                "Andariel"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 6,
+            "id": 1,
+            "texts": [
+                "user-agent strings",
+                "browser type",
+                "potential victim information",
+                "data",
+                "Flash Player version",
+                "system language"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 2,
+            "texts": [
+                "visitors"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 2,
+            "id": 3,
+            "texts": [
+                "phishing sites",
+                "compromised websites"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 5,
+            "id": 4,
+            "texts": [
+                "software code",
+                "2017 NotPetya attack",
+                "software",
+                "targeting efforts",
+                "script"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "computers"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 1,
+            "id": 6,
+            "texts": [
+                "part"
+            ],
+            "label": "OTHER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 3
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "0_6",
+            "source": 0,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "4_6",
+            "source": 4,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "5_4",
+            "source": 5,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "5_6",
+            "source": 5,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "6_4",
+            "source": 6,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "4_3",
+            "source": 4,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "capture": 1,
+        "from": 1,
+        "to": 1,
+        "research": 1,
+        "for": 2,
+        "collect": 2,
+        "as": 2,
+        "enable": 1,
+        "use": 1,
+        "of": 1,
+        "insert": 1,
+        "within": 2
+    }
+}

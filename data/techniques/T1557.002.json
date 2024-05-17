@@ -1,0 +1,93 @@
+{
+    "id": "T1557.002",
+    "tech_id": "T1557.002",
+    "tech_name": "ARP Cache Poisoning",
+    "best_phrases": [],
+    "tactics": [
+        "TA0006",
+        "TA0009"
+    ],
+    "features": [
+        "FUNCTION",
+        "NETWORK",
+        "COMPONENT"
+    ],
+    "locations": [
+        "Linux",
+        "Windows",
+        "macOS"
+    ],
+    "procedures": [
+        "relationship--1e03e6e0-8b7b-4e93-a955-245561085aae",
+        "relationship--5cd6e7fd-b6c6-4796-91d5-6cf4ab724adf"
+    ],
+    "graph_nodes": [
+        {
+            "count": 2,
+            "id": 0,
+            "texts": [
+                "Cleaver",
+                "LuminousMoth"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 2,
+            "id": 1,
+            "texts": [
+                "custom tools",
+                "ARP cache poisoning"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 2,
+            "id": 2,
+            "texts": [
+                "ARP spoofing",
+                "website"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "compromised machine"
+            ],
+            "label": "COMPONENT"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 2,
+        "facilitate": 1,
+        "redirect": 1,
+        "to": 1
+    }
+}

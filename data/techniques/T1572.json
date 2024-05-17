@@ -1,0 +1,312 @@
+{
+    "id": "T1572",
+    "tech_id": "T1572",
+    "tech_name": "Protocol Tunneling",
+    "best_phrases": [],
+    "tactics": [
+        "TA0011"
+    ],
+    "features": [
+        "NETWORK",
+        "FUNCTION",
+        "COMPONENT",
+        "USER"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--002e561a-5500-4293-a876-01e8205a67c8",
+        "relationship--0d357a8d-c053-44f0-8777-0e8f8f7bc9a8",
+        "relationship--19539764-3fe2-42c1-bf25-9e61c21469b4",
+        "relationship--19bef554-d625-49f9-a521-c6a8ed773083",
+        "relationship--20c7d1a2-be94-4f58-83a9-7eb9e05c4449",
+        "relationship--48f74ebb-3a7e-4b65-8e87-04d3bfe02914",
+        "relationship--4d7080b8-a3e0-4122-b0c9-c1d9c2ba6890",
+        "relationship--5ee6a7c8-a9a5-4445-8173-408caab5bcbc",
+        "relationship--69a744c7-a971-4e21-b305-335801c539d1",
+        "relationship--8121e11c-6bd7-4b4a-8072-bb9622e6627c",
+        "relationship--8b769a4e-8898-4995-adc1-4334dc0ec0f7",
+        "relationship--93066a4a-0181-48cb-a2c3-3daa7ae5fefd",
+        "relationship--b4645fc7-ed61-46d8-a793-ce0e8e43b64a",
+        "relationship--b6c44630-d1d0-467c-a84d-83564a3a0639",
+        "relationship--b6f52beb-1be0-4607-86a6-977d34fabe54",
+        "relationship--bdaf3340-0580-4e89-9cdc-e0af5a91ed85",
+        "relationship--c50f75fe-e7a9-4190-9ca8-a28187955669",
+        "relationship--ca56b2a6-39a7-4449-9017-fa8ce4285ed5",
+        "relationship--d0228817-aba0-46c8-9449-de757f9238ac",
+        "relationship--dfd947d6-60c1-4cb1-90ff-0111ccaddd1a",
+        "relationship--e3b79cfa-6ea8-4e7a-85f8-9862702d466a",
+        "relationship--ea904c7f-f3a7-4e47-884f-bc13e38b09c6",
+        "relationship--f3b71f03-f6d5-4ae2-a8e8-a6263550e5a5",
+        "relationship--f71fa9f5-7a3c-43a7-8ca3-2e3c8996bde8"
+    ],
+    "graph_nodes": [
+        {
+            "count": 8,
+            "id": 0,
+            "texts": [
+                "Scattered Spider",
+                "FIN13",
+                "that",
+                "Strike",
+                "that",
+                "that",
+                "Windows named",
+                "use"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 58,
+            "id": 1,
+            "texts": [
+                "SSH tunneling",
+                "bidirectional tunnel",
+                "C2s",
+                "compromised host",
+                "SSH",
+                "RDP",
+                "SSH tunnels",
+                "C2s",
+                "custom C2 protocol",
+                "used ports",
+                "application layer protocols",
+                "TCP",
+                "HTTP proxies",
+                "tunnel",
+                "C2",
+                "custom protocol",
+                "HTTP",
+                "DNS",
+                "internal proxy",
+                "HTTP CONNECT",
+                "tunnel",
+                "DNS",
+                "C2",
+                "HTTPS",
+                "C2 protocol",
+                "HTTPS",
+                "DNS",
+                "network protocols",
+                "tunnels",
+                "C2s",
+                "custom C2 protocol",
+                "peer-to-peer",
+                "pipes",
+                "HTTP",
+                "SMB protocol",
+                "protocol tunneling",
+                "RDP activity",
+                "communication",
+                "SSH tunnels",
+                "internet connections",
+                "RDP",
+                "services",
+                "protocol",
+                "SOCKS proxies",
+                "traffic",
+                "remote SSH tunneling",
+                "domain",
+                "RDP",
+                "traffic",
+                "SOCKS5 protocol",
+                "proxy protocol",
+                "DNS",
+                "C2 nodes",
+                "HTTPS",
+                "DoH",
+                "protocol tunneling",
+                "infrastructure",
+                "C2 communications"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 8,
+            "id": 2,
+            "texts": [
+                "targeted environments",
+                "C2s",
+                "compromised host",
+                "compromised hosts",
+                "environment",
+                "victim environment",
+                "infrastructure",
+                "C2 communications"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 21,
+            "id": 3,
+            "texts": [
+                "web shells",
+                "Java tools",
+                "capabilities",
+                "spoofed DNS requests",
+                "Plink",
+                "Plink command-line utility",
+                "Brute Ratel C4",
+                "custom communications methodologies",
+                "tools",
+                "Plink utility",
+                "RDP activity",
+                "communication",
+                "open source tools",
+                "ngrok",
+                "custom tool SSHMinion",
+                "Plink utility",
+                "ngrok",
+                "RDP",
+                "services",
+                "Mythic",
+                "QakBot proxy module"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 18,
+            "id": 4,
+            "texts": [
+                "Heyoka Backdoor",
+                "Magic Hound",
+                "FIN6",
+                "Duqu",
+                "FunnyDream",
+                "Milan",
+                "Kevin",
+                "Industroyer",
+                "Chimera",
+                "Uroburos",
+                "OilRig",
+                "Cobalt Strike",
+                "Fox Kitten",
+                "Cobalt Group",
+                "threat actors",
+                "FLIPSIDE",
+                "Cyclops Blink",
+                "Leviathan"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "victim"
+            ],
+            "label": "USER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 4
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 5
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 3
+        },
+        {
+            "id": "4_3",
+            "source": 4,
+            "dest": 3,
+            "count": 7
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 27
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 11
+        },
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 4
+        },
+        {
+            "id": "4_0",
+            "source": 4,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "2_5",
+            "source": 2,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "4_2",
+            "source": 4,
+            "dest": 2,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 19,
+        "in": 5,
+        "utilize": 1,
+        "tunnel": 6,
+        "create": 5,
+        "between": 1,
+        "over": 11,
+        "to": 4,
+        "communicate": 1,
+        "encapsulate": 3,
+        "by": 5,
+        "perform": 1,
+        "establish": 1,
+        "for": 4,
+        "of": 3,
+        "ride": 1,
+        "conduct": 2,
+        "name": 1,
+        "encapsulate in": 1,
+        "on": 1,
+        "set": 1,
+        "into": 1,
+        "from": 2,
+        "within": 2,
+        "resolve": 1,
+        "conceal": 1
+    }
+}

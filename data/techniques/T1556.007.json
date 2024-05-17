@@ -1,0 +1,162 @@
+{
+    "id": "T1556.007",
+    "tech_id": "T1556.007",
+    "tech_name": "Hybrid Identity",
+    "best_phrases": [],
+    "tactics": [
+        "TA0006",
+        "TA0005",
+        "TA0003"
+    ],
+    "features": [
+        "FUNCTION",
+        "REGISTRY",
+        "COMPONENT",
+        "DATA",
+        "USER"
+    ],
+    "locations": [
+        "Windows",
+        "Azure AD",
+        "SaaS",
+        "Google Workspace",
+        "Office 365",
+        "IaaS"
+    ],
+    "procedures": [
+        "relationship--3691a1cd-c9d4-4492-b6c1-7ceb1b661758",
+        "relationship--7a58b25f-1736-48c6-90e1-70c49896ed4b"
+    ],
+    "graph_nodes": [
+        {
+            "count": 5,
+            "id": 0,
+            "texts": [
+                "AADInternals",
+                "Microsoft.IdentityServer.Servicehost.exe.config file",
+                "AD FS process",
+                "service",
+                "AD FS"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 3,
+            "id": 1,
+            "texts": [
+                "DLL",
+                "PTASpy",
+                "DLL"
+            ],
+            "label": "REGISTRY"
+        },
+        {
+            "count": 2,
+            "id": 2,
+            "texts": [
+                "AzureADConnectAuthenticationAgentService",
+                "Azure AD Pass-Through Authentication"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "APT29"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 2,
+            "id": 4,
+            "texts": [
+                "persistent access",
+                "User Principal Name"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "user"
+            ],
+            "label": "USER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "3_0",
+            "source": 3,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "4_0",
+            "source": 4,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "4_5",
+            "source": 4,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "5_4",
+            "source": 5,
+            "dest": 4,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "inject": 2,
+        "into": 3,
+        "backdoor": 1,
+        "edit": 1,
+        "load": 1,
+        "enable": 1,
+        "to": 1,
+        "for": 1,
+        "federate with": 1,
+        "with": 1
+    }
+}

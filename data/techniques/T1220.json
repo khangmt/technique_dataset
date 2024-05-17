@@ -1,0 +1,120 @@
+{
+    "id": "T1220",
+    "tech_id": "T1220",
+    "tech_name": "XSL Script Processing",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "NETWORK",
+        "COMPONENT"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--7dc3f129-9cac-4279-a4d2-b5dbe1237f07",
+        "relationship--8c13ef6b-5274-4de0-9fad-531b9c87309e",
+        "relationship--9dc630a6-a6fd-4173-8236-9bbb1041f7ea",
+        "relationship--c4ea56ee-ac98-40bd-a609-9c694fad391d"
+    ],
+    "graph_nodes": [
+        {
+            "count": 4,
+            "id": 0,
+            "texts": [
+                "Astaroth",
+                "Cobalt Group",
+                "Higaisa",
+                "Lazarus Group"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 7,
+            "id": 1,
+            "texts": [
+                "VBScript",
+                "embedded JScript",
+                "msxsl.exe",
+                "Jscript code",
+                "VBScript code",
+                "remote XSL script",
+                "Base64-encoded DLL custom downloader"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 3,
+            "id": 2,
+            "texts": [
+                "XSL stylesheet",
+                "XSL file",
+                "XSL file"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "remote domain"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "AppLocker"
+            ],
+            "label": "COMPONENT"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 6
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "execute": 1,
+        "in": 2,
+        "locate on": 1,
+        "use": 3,
+        "bypass": 1,
+        "invoke": 1,
+        "from": 1,
+        "run": 1,
+        "download": 1
+    }
+}

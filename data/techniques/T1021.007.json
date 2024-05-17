@@ -1,0 +1,133 @@
+{
+    "id": "T1021.007",
+    "tech_id": "T1021.007",
+    "tech_name": "Cloud Services",
+    "best_phrases": [],
+    "tactics": [
+        "TA0008"
+    ],
+    "features": [
+        "FUNCTION",
+        "COMPONENT",
+        "DATA"
+    ],
+    "locations": [
+        "Office 365",
+        "Azure AD",
+        "SaaS",
+        "IaaS",
+        "Google Workspace"
+    ],
+    "procedures": [
+        "relationship--603bfd74-0585-40f7-ba65-1a72d87f0775",
+        "relationship--93e345d9-a7d2-4abd-be34-46211fa64a7d"
+    ],
+    "graph_nodes": [
+        {
+            "count": 5,
+            "id": 0,
+            "texts": [
+                "Scattered Spider",
+                "on-premises",
+                "Office",
+                "use",
+                "cloud environment"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 2,
+            "id": 1,
+            "texts": [
+                "compromised Azure credentials",
+                "compromised high-privileged on-premises accounts"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 3,
+            "id": 2,
+            "texts": [
+                "credential theft activity",
+                "lateral movement",
+                "Azure AD PowerShell"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 3,
+            "id": 3,
+            "texts": [
+                "systems",
+                "use",
+                "cloud environment"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "APT29"
+            ],
+            "label": "ACTOR"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "2_0",
+            "source": 2,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 2,
+        "for": 2,
+        "to": 2,
+        "sync to": 1,
+        "of": 1
+    }
+}

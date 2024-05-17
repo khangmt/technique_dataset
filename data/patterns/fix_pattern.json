@@ -1,0 +1,11 @@
+{
+    "fix_path": ["(\\\\|\/\/)\\w+\\s\\w+(\\\\|\\\/)"],
+    "code_reg": ["<code>((.|\\n)*?)<\\\/code>"],
+    "link_mitre": ["\\(([a-z]{3,}\\:\\\/\\\/[\\S]{4,})\\)"],
+    "citation": ["\\((C|c)itation\\:(.*?)\\)"],
+    "mitre_subject": ["\\[(.*?)\\]"],
+    "replacement": ["`(.*?)`"],
+    "entity": ["<code>((.|\\n)*?)<\\\/code>","`(.*?)`"],
+    "subject_meta": ["\\]\\(https:\/\/attack.mitre.org\/[\\S]*\\)"],
+    "mitre_entity":["\\[[^\\]]*?\\]\\(https:\/\/attack.mitre.org\/[\\S]*\\)"]
+}

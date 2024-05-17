@@ -1,0 +1,130 @@
+{
+    "id": "T1070.005",
+    "tech_id": "T1070.005",
+    "tech_name": "Network Share Connection Removal",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "COMPONENT",
+        "NETWORK"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--4e167937-d152-4c57-a7b7-e3b407470720",
+        "relationship--56b6a1b5-b7ec-4974-baf1-9e4565ce5b78",
+        "relationship--c5d67c9b-f8de-420a-ad05-3691ca001b64",
+        "relationship--dc7cb17d-c3d3-4c3c-b79e-499cede49baa"
+    ],
+    "graph_nodes": [
+        {
+            "count": 4,
+            "id": 0,
+            "texts": [
+                "net use \\\\system\\share /delete command",
+                "Net",
+                "command net use * /DELETE /Y",
+                "detection"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 1,
+            "texts": [
+                "established connection"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 4,
+            "id": 2,
+            "texts": [
+                "network share",
+                "network shares",
+                "network shares",
+                "files"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 3,
+            "id": 3,
+            "texts": [
+                "RobbinHood",
+                "InvisiMole",
+                "Threat Group-3390"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 2,
+            "id": 4,
+            "texts": [
+                "computer",
+                "connected remote drives"
+            ],
+            "label": "COMPONENT"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 3
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "3_0",
+            "source": 3,
+            "dest": 0,
+            "count": 2
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "2_0",
+            "source": 2,
+            "dest": 0,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "in": 1,
+        "remove": 1,
+        "to": 1,
+        "disconnect": 2,
+        "from": 2,
+        "with": 2,
+        "detach": 1,
+        "exfiltrate": 1,
+        "evade": 1
+    }
+}

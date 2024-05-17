@@ -1,0 +1,168 @@
+{
+    "id": "T1530",
+    "tech_id": "T1530",
+    "tech_name": "Data from Cloud Storage",
+    "best_phrases": [],
+    "tactics": [
+        "TA0009"
+    ],
+    "features": [
+        "COMPONENT",
+        "DATA",
+        "FUNCTION",
+        "USER"
+    ],
+    "locations": [
+        "IaaS",
+        "SaaS",
+        "Google Workspace",
+        "Office 365"
+    ],
+    "procedures": [
+        "relationship--118c566e-2042-4566-99c2-308351d50a40",
+        "relationship--2cf91706-674a-4ae0-8a4c-0d8d43eb6e1a",
+        "relationship--d4fa4797-aec0-419b-83d8-8b06ea3ac06d",
+        "relationship--db315985-f1c1-4d7f-a154-c65351602680",
+        "relationship--e8747d32-65e4-4a55-a5c8-e87136cc44da"
+    ],
+    "graph_nodes": [
+        {
+            "count": 1,
+            "id": 0,
+            "texts": [
+                "Fox Kitten"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 8,
+            "id": 1,
+            "texts": [
+                "files",
+                "contents",
+                "service account tokens",
+                "files",
+                "S3 buckets",
+                "VPN and MFA enrollment information",
+                "help desk instructions",
+                "files"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 10,
+            "id": 2,
+            "texts": [
+                "cloud storage instances",
+                "AWS S3 buckets",
+                "kOps buckets",
+                "S3",
+                "Google Cloud Storage",
+                "files",
+                "S3 buckets",
+                "AWS storage services",
+                "victim OneDrive environments",
+                "OneDrive"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 2,
+            "id": 3,
+            "texts": [
+                "victim",
+                "user"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 5,
+            "id": 4,
+            "texts": [
+                "Peirates",
+                "Pacu",
+                "VPN and MFA enrollment information",
+                "help desk instructions",
+                "AADInternals"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "Scattered Spider"
+            ],
+            "label": "OTHER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 5
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 4
+        },
+        {
+            "id": "4_2",
+            "source": 4,
+            "dest": 2,
+            "count": 3
+        },
+        {
+            "id": "5_2",
+            "source": 5,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "5_4",
+            "source": 5,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "5_1",
+            "source": 5,
+            "dest": 1,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "obtain": 1,
+        "from": 6,
+        "of": 3,
+        "dump": 1,
+        "retrieve": 1,
+        "in": 1,
+        "download": 1,
+        "store in": 1,
+        "access": 1,
+        "search": 1,
+        "collect": 1
+    }
+}

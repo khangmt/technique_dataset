@@ -1,0 +1,119 @@
+{
+    "id": "T1552.008",
+    "tech_id": "T1552.008",
+    "tech_name": "Chat Messages",
+    "best_phrases": [],
+    "tactics": [
+        "TA0006"
+    ],
+    "features": [
+        "NETWORK",
+        "FUNCTION",
+        "DATA"
+    ],
+    "locations": [
+        "Office 365",
+        "SaaS",
+        "Google Workspace"
+    ],
+    "procedures": [
+        "relationship--65ebc3e9-e5c1-402d-8d1e-873689b09396"
+    ],
+    "graph_nodes": [
+        {
+            "count": 7,
+            "id": 0,
+            "texts": [
+                "Slack",
+                "Teams",
+                "LAPSUS$",
+                "Confluence",
+                "JIRA",
+                "others",
+                "collaboration tools"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 7,
+            "id": 1,
+            "texts": [
+                "Slack",
+                "Teams",
+                "LAPSUS$",
+                "Confluence",
+                "JIRA",
+                "others",
+                "collaboration tools"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 7,
+            "id": 2,
+            "texts": [
+                "Slack",
+                "Teams",
+                "LAPSUS$",
+                "Confluence",
+                "JIRA",
+                "others",
+                "collaboration tools"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 7,
+            "id": 3,
+            "texts": [
+                "Slack",
+                "Teams",
+                "LAPSUS$",
+                "Confluence",
+                "JIRA",
+                "others",
+                "collaboration tools"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 2,
+            "id": 4,
+            "texts": [
+                "exposed credentials",
+                "privilege"
+            ],
+            "label": "DATA"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 2
+        }
+    ],
+    "verbs": {
+        "hunt": 1,
+        "escalate": 1
+    }
+}

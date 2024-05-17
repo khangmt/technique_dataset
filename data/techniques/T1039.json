@@ -1,0 +1,217 @@
+{
+    "id": "T1039",
+    "tech_id": "T1039",
+    "tech_name": "Data from Network Shared Drive",
+    "best_phrases": [],
+    "tactics": [
+        "TA0009"
+    ],
+    "features": [
+        "DATA",
+        "COMPONENT",
+        "FUNCTION",
+        "NETWORK",
+        "USER"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--3e7c9978-4db1-4ee1-ae27-640acee5a543",
+        "relationship--41fd6ebb-4262-40f8-842e-ff583ff01500",
+        "relationship--4716b9ec-a0d4-47db-a901-5a3b67d9e096",
+        "relationship--595be2e7-9f2a-4d5a-b23d-8e4822ae6199",
+        "relationship--59c58c73-046c-4e01-9ced-8c049381fcd2",
+        "relationship--5f3eb1ae-782e-4e49-8e1e-650f3e5a1139",
+        "relationship--6c692a16-22b8-42bb-9a6b-3c25a2714cf5",
+        "relationship--6c9649b7-00c6-4503-a911-9e8b9086eac4",
+        "relationship--acb0fd33-201c-481f-857d-429c3ef67015",
+        "relationship--c2909563-2b7e-48d6-b165-05b8eff63862",
+        "relationship--d3720380-6d0d-41a9-a2b5-e0fcc311f486",
+        "relationship--d51c9d02-a701-4334-9dbc-bba6c128ba2b"
+    ],
+    "graph_nodes": [
+        {
+            "count": 13,
+            "id": 0,
+            "texts": [
+                "CosmicDuke",
+                "APT28",
+                "threat actors",
+                "BRONZE BUTLER",
+                "Egregor",
+                "attacker",
+                "Sowbug",
+                "Ramsay",
+                "attacker",
+                "BADNEWS",
+                "Chimera",
+                "menuPass",
+                "Fox Kitten"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 27,
+            "id": 1,
+            "texts": [
+                "user files",
+                "keywords",
+                "file extensions",
+                "list",
+                "files",
+                "Microsoft Office documents",
+                "files",
+                "file shares",
+                "files",
+                "Word documents",
+                "data",
+                "documents",
+                "extensions",
+                ".ppt",
+                ".pdf",
+                ".pptx",
+                ".docx",
+                ".doc",
+                ".txt",
+                "data",
+                "network shares",
+                "interest",
+                "data",
+                "network shares",
+                "data",
+                "network shares",
+                "sensitive documents"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 7,
+            "id": 2,
+            "texts": [
+                "network shared drives",
+                "network shared drives",
+                "mapped network drives",
+                "enumerated drivers",
+                "network drives",
+                "mapped drives",
+                "remote systems"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 3,
+            "id": 3,
+            "texts": [
+                "Gamaredon Group malware",
+                "Robocopy",
+                "net use"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 3,
+            "id": 4,
+            "texts": [
+                "C2 channel",
+                "file server",
+                "victim network"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "victim"
+            ],
+            "label": "USER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 15
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 5
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 6
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "2_5",
+            "source": 2,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "steal": 1,
+        "from": 14,
+        "with": 5,
+        "match": 1,
+        "collect": 7,
+        "exfiltrate": 1,
+        "steal from": 1,
+        "send": 1,
+        "find in": 1,
+        "to": 1,
+        "extract": 1,
+        "on": 1,
+        "stage": 1,
+        "crawl": 1,
+        "of": 2,
+        "mount": 1,
+        "use": 1,
+        "transfer": 1,
+        "search": 1,
+        "access": 1
+    }
+}

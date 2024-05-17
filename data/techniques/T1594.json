@@ -1,0 +1,193 @@
+{
+    "id": "T1594",
+    "tech_id": "T1594",
+    "tech_name": "Search Victim-Owned Websites",
+    "best_phrases": [],
+    "tactics": [
+        "TA0043"
+    ],
+    "features": [
+        "DATA",
+        "NETWORK",
+        "FUNCTION",
+        "COMPONENT",
+        "USER"
+    ],
+    "locations": [
+        "PRE"
+    ],
+    "procedures": [
+        "relationship--33201f98-6367-4f36-a581-98fd4d1203fa",
+        "relationship--5d705563-a639-4ec1-a19d-f797c1c0c078",
+        "relationship--93450717-845e-4cd8-b1ac-3a842251a331",
+        "relationship--bfb63eb2-7db6-45d0-83c4-1fc93a8e51c5"
+    ],
+    "graph_nodes": [
+        {
+            "count": 4,
+            "id": 0,
+            "texts": [
+                "Silent Librarian",
+                "Kimsuky",
+                "EXOTIC LILY",
+                "Sandworm Team"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 6,
+            "id": 1,
+            "texts": [
+                "websites",
+                "phishing pages",
+                "website",
+                "phishing e-mails",
+                "victim websites",
+                "potential victim websites"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 2,
+            "id": 2,
+            "texts": [
+                "interests",
+                "academic areas"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 7,
+            "id": 3,
+            "texts": [
+                "interests",
+                "academic areas",
+                "organizational contact information",
+                "source code",
+                "branding",
+                "information",
+                "contact forms"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 6,
+            "id": 4,
+            "texts": [
+                "organizational contact information",
+                "source code",
+                "branding",
+                "company",
+                "research",
+                "part"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 3,
+            "id": 5,
+            "texts": [
+                "organizational contact information",
+                "source code",
+                "branding"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 2,
+            "id": 6,
+            "texts": [
+                "victim",
+                "targeted individuals"
+            ],
+            "label": "USER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 4
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 3
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "1_6",
+            "source": 1,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "2_6",
+            "source": 2,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "3_6",
+            "source": 3,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "5_1",
+            "source": 5,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "search": 1,
+        "identify": 1,
+        "scrape": 1,
+        "of": 3,
+        "for": 2,
+        "on": 2,
+        "use": 1,
+        "generate": 1,
+        "conduct": 1,
+        "as": 1,
+        "against": 1
+    }
+}

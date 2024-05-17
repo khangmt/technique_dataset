@@ -1,0 +1,120 @@
+{
+    "id": "T1195.001",
+    "tech_id": "T1195.001",
+    "tech_name": "Compromise Software Dependencies and Development Tools",
+    "best_phrases": [],
+    "tactics": [
+        "TA0001"
+    ],
+    "features": [
+        "FUNCTION",
+        "DIRECTORY",
+        "DATA",
+        "COMPONENT"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--55a9fab0-30f8-45f5-b48d-7edbd961404d"
+    ],
+    "graph_nodes": [
+        {
+            "count": 1,
+            "id": 0,
+            "texts": [
+                "XCSSET"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 4,
+            "id": 1,
+            "texts": [
+                "code",
+                "Xcode projects",
+                "Mach-O file",
+                "script"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 3,
+            "id": 2,
+            "texts": [
+                "CocoaPods target_integrator.rb files",
+                "Mach-O file",
+                "script"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 4,
+            "id": 3,
+            "texts": [
+                ".xcodeproj folders",
+                "Xcode project folder",
+                "/Library/Ruby/Gems folder",
+                "given directory"
+            ],
+            "label": "DIRECTORY"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "host"
+            ],
+            "label": "COMPONENT"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "add": 1,
+        "to": 2,
+        "enumerate": 2,
+        "download": 1,
+        "into": 2,
+        "of": 1,
+        "under": 2
+    }
+}

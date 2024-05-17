@@ -1,0 +1,374 @@
+{
+    "id": "T1562.004",
+    "tech_id": "T1562.004",
+    "tech_name": "Disable or Modify System Firewall",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005"
+    ],
+    "features": [
+        "NETWORK",
+        "FUNCTION",
+        "DATA",
+        "COMPONENT",
+        "USER",
+        "REGISTRY"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--15489699-7ea0-473f-a4cd-5bc9e05e2104",
+        "relationship--1ae1ce05-3db2-4a97-8e58-0ed3d65d9d22",
+        "relationship--23bb2f7c-9f4e-4c11-b4e9-b41ba6e6f4c1",
+        "relationship--279654f5-dece-48db-bc9a-93242b62433c",
+        "relationship--30d1528d-6a50-47b2-ab5c-eb9074adc716",
+        "relationship--321e9302-b335-4f17-b03a-7782683d69f9",
+        "relationship--43c16333-5f95-45b4-aedd-b90ccb56da3a",
+        "relationship--448ea71c-ebfa-4604-bb8e-0c8c997c746a",
+        "relationship--478e9268-e91a-4777-a4ee-644be4cd9fd0",
+        "relationship--512879fe-8433-4c78-9345-009ed5168078",
+        "relationship--5e4a4b86-b2af-450b-b365-0a5399509462",
+        "relationship--68650240-a1a6-424b-9711-1201d868305f",
+        "relationship--6d8718c4-9abe-41fc-b048-472da9d70b5c",
+        "relationship--729d8ddd-b1e1-4076-b98c-3d5497dffd6e",
+        "relationship--7fea2b8f-60f8-400a-bfef-08471fb75a3e",
+        "relationship--8baf3f0d-0ab4-4691-8ef7-8b9af8a8069c",
+        "relationship--9121d8be-058d-4ee2-9372-62c6607dd8f4",
+        "relationship--a1d5c2d2-92f7-4cfa-bd1d-fa06e18c0f33",
+        "relationship--a2c599c5-be26-4837-a613-b7d74446247c",
+        "relationship--a83683c2-87ee-486e-bb21-0d511c5461ef",
+        "relationship--ab6646bd-2b05-4c04-b6ee-0c0250352e76",
+        "relationship--b348a960-f2f1-4832-aeb4-ac890c1e1c39",
+        "relationship--c0a373f1-a0bb-4896-8b9e-ee8d642127a9",
+        "relationship--c2480447-a55d-446e-8d62-88c6a4f08afb",
+        "relationship--d03e6e8b-bc2e-4c7b-8cde-58987659fbbb",
+        "relationship--e1614b27-52c5-41e5-bbcb-ab08a9a5e85c",
+        "relationship--eb7a6a3f-cc88-4ed7-8421-4642c1eb1978",
+        "relationship--f81df2c8-1edd-4734-a1c9-cca6e4c56607",
+        "relationship--fa66467a-e6d8-49ff-add1-8e5c5e4ef1db"
+    ],
+    "graph_nodes": [
+        {
+            "count": 27,
+            "id": 0,
+            "texts": [
+                "InvisiMole",
+                "Carbanak",
+                "NanoCore",
+                "BADCALL",
+                "Rocke",
+                "TeamTNT",
+                "H1N1",
+                "TYPEFRAME",
+                "Dragonfly",
+                "PyDCrypt",
+                "Cyclops Blink",
+                "Moses Staff",
+                "njRAT",
+                "Grandoreiro",
+                "Remsec",
+                "ZxShell",
+                "DarkComet",
+                "Kimsuky",
+                "CookieMiner",
+                "Magic Hound",
+                "threat actors",
+                "attacker",
+                "APT38",
+                "HOPLIGHT",
+                "HARDRAIN",
+                "Kasidet",
+                "APT29"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 28,
+            "id": 1,
+            "texts": [
+                "command",
+                "netsh",
+                "scripts",
+                "processes",
+                "cryptominers",
+                "services",
+                "netsh",
+                "netsh.exe",
+                "batch scripts",
+                "Deibold Warsaw GAS Tecnologia security tool",
+                "ports",
+                "applications",
+                "Windows Firewall",
+                "Security Center functions",
+                "system firewall",
+                "presence",
+                "\"Little Snitch",
+                "macOS network monitoring and application firewall software",
+                "PowerShell",
+                "Lazarus Group malware",
+                "netsh",
+                "firewall exemptions",
+                "netsh",
+                "\"ZR\" variant",
+                "BACKSPACE",
+                "mouse-click",
+                "firewall software",
+                "netsh"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 6,
+            "id": 2,
+            "texts": [
+                "Firewall",
+                "routing",
+                "group",
+                "that",
+                "itself",
+                "pop-up"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 36,
+            "id": 3,
+            "texts": [
+                "Firewall",
+                "routing",
+                "firewall",
+                "Windows firewall",
+                "port",
+                "traffic",
+                "Windows Firewall",
+                "Windows Firewall",
+                "incoming connections",
+                "host-based firewalls",
+                "port",
+                "incoming SMB, NetBIOS, and RPC connections",
+                "Linux iptables firewall",
+                "C2 communication",
+                "Windows firewall",
+                "Windows firewall",
+                "firewall",
+                "ports",
+                "applications",
+                "Windows firewall",
+                "firewall",
+                "Windows Firewall",
+                "Security Center functions",
+                "system firewall",
+                "Windows firewall",
+                "RDP traffic",
+                "Windows firewall",
+                "Windows firewall",
+                "incoming connections",
+                "ports",
+                "firewall",
+                "Windows Firewall",
+                "incoming connections",
+                "C2 channel",
+                "host-based firewalls",
+                "UDP outbound packets"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 6,
+            "id": 4,
+            "texts": [
+                "machine",
+                "machine",
+                "remote machines",
+                "remote machines",
+                "open windows",
+                "infected systems"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 4,
+            "id": 5,
+            "texts": [
+                "victim",
+                "victim",
+                "victim",
+                "victim"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 12,
+            "id": 6,
+            "texts": [
+                "local firewall rule exceptions",
+                "firewall rules",
+                "iptables",
+                "local firewall settings",
+                "firewall rules",
+                "stored list",
+                "port numbers",
+                "firewall level",
+                "rule",
+                "rules",
+                "firewall settings",
+                "firewall rules"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 2,
+            "id": 7,
+            "texts": [
+                "registry key",
+                "HKLM\\SYSTEM\\CurrentControlSet\\Services\\SharedAccess\\Parameters\\FirewallPolicy\\StandardProfile"
+            ],
+            "label": "REGISTRY"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 13
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 8
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 4
+        },
+        {
+            "id": "4_5",
+            "source": 4,
+            "dest": 5,
+            "count": 2
+        },
+        {
+            "id": "0_6",
+            "source": 0,
+            "dest": 6,
+            "count": 9
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 20
+        },
+        {
+            "id": "3_5",
+            "source": 3,
+            "dest": 5,
+            "count": 2
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "1_6",
+            "source": 1,
+            "dest": 6,
+            "count": 2
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "3_6",
+            "source": 3,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "0_7",
+            "source": 0,
+            "dest": 7,
+            "count": 2
+        },
+        {
+            "id": "6_3",
+            "source": 6,
+            "dest": 3,
+            "count": 3
+        },
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "have": 1,
+        "disable": 11,
+        "on": 8,
+        "of": 8,
+        "use": 8,
+        "add": 3,
+        "modify": 9,
+        "bind": 1,
+        "block": 2,
+        "kill": 1,
+        "relate to": 1,
+        "for": 2,
+        "open": 3,
+        "allow": 4,
+        "enable": 1,
+        "by": 2,
+        "at": 2,
+        "remove": 1,
+        "to": 2,
+        "delete": 1,
+        "in": 1,
+        "create": 1,
+        "examine": 1,
+        "establish": 1,
+        "identify": 1,
+        "simulate": 1,
+        "from": 1,
+        "change": 1,
+        "configure": 1,
+        "limit": 1
+    }
+}

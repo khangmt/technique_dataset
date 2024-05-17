@@ -1,0 +1,87 @@
+{
+    "id": "T1651",
+    "tech_id": "T1651",
+    "tech_name": "Cloud Administration Command",
+    "best_phrases": [],
+    "tactics": [
+        "TA0002"
+    ],
+    "features": [
+        "FUNCTION",
+        "COMPONENT"
+    ],
+    "locations": [
+        "IaaS",
+        "Azure AD"
+    ],
+    "procedures": [
+        "relationship--3d0fed27-cf0e-4ca4-aef3-04300422299a",
+        "relationship--deb5cfb8-d9e8-46bf-9f13-3f3dfca885d9",
+        "relationship--f5287ad4-f299-49f3-9a44-d98057fa186c"
+    ],
+    "graph_nodes": [
+        {
+            "count": 1,
+            "id": 0,
+            "texts": [
+                "APT29"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 6,
+            "id": 1,
+            "texts": [
+                "Azure Run Command",
+                "Azure Admin-on-Behalf-of",
+                "AOBO",
+                "virtual machines",
+                "Azure virtual machines",
+                "EC2 instances"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 9,
+            "id": 2,
+            "texts": [
+                "Azure Run Command",
+                "Azure Admin-on-Behalf-of",
+                "code",
+                "AADInternals",
+                "commands",
+                "VM agent",
+                "Pacu",
+                "commands",
+                "AWS Systems Manager Run Command"
+            ],
+            "label": "FUNCTION"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 5
+        }
+    ],
+    "verbs": {
+        "use": 4,
+        "execute": 2,
+        "on": 5,
+        "run": 1
+    }
+}

@@ -1,0 +1,185 @@
+{
+    "id": "T1036.003",
+    "tech_id": "T1036.003",
+    "tech_name": "Rename System Utilities",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "COMPONENT",
+        "DIRECTORY"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--5151bd6c-fb42-49da-9c97-f32a33a505a1",
+        "relationship--6441d8c3-861f-4ce3-9121-809d2b0d173b",
+        "relationship--9932d0d8-ad06-4a4f-8acf-1502c2b5f009",
+        "relationship--a4a49b56-e220-4a81-a0da-43b63c012cfe",
+        "relationship--d04af539-cfb6-4662-8d5a-82dc85cfab1b",
+        "relationship--f8517b42-4d52-417a-a5dc-cbfb2a31930b"
+    ],
+    "graph_nodes": [
+        {
+            "count": 5,
+            "id": 0,
+            "texts": [
+                "menuPass",
+                "Lazarus Group",
+                "APT32",
+                "Kevin",
+                "GALLIUM"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 14,
+            "id": 1,
+            "texts": [
+                "certutil",
+                "detection",
+                "tool",
+                "system utilities",
+                "mshta.exe",
+                "wscript.exe",
+                "pubprn.vbs",
+                "detection",
+                "CozyCar dropper",
+                "rundll32.exe executable",
+                "malware",
+                "cmd.exe",
+                "renamed cmd.exe file",
+                "detection"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 7,
+            "id": 2,
+            "texts": [
+                "location",
+                ".txt file",
+                "copy",
+                "configuration file",
+                "image",
+                "random name",
+                ".tmpl extension"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 2,
+            "id": 3,
+            "texts": [
+                "system",
+                "system"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 2,
+            "id": 4,
+            "texts": [
+                "use",
+                "that"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "install directory"
+            ],
+            "label": "DIRECTORY"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 7
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 3
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "2_5",
+            "source": 2,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "4_5",
+            "source": 4,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "5_1",
+            "source": 5,
+            "dest": 1,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "rename": 4,
+        "to": 5,
+        "avoid": 2,
+        "on": 1,
+        "base on": 1,
+        "of": 5,
+        "masquerade": 1,
+        "accord": 1,
+        "with": 1,
+        "follow": 1,
+        "use": 1,
+        "evade": 1
+    }
+}

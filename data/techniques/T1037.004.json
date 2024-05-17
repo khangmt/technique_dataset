@@ -1,0 +1,153 @@
+{
+    "id": "T1037.004",
+    "tech_id": "T1037.004",
+    "tech_name": "RC Scripts",
+    "best_phrases": [],
+    "tactics": [
+        "TA0003",
+        "TA0004"
+    ],
+    "features": [
+        "FUNCTION",
+        "DIRECTORY",
+        "DATA",
+        "COMPONENT"
+    ],
+    "locations": [
+        "macOS",
+        "Linux"
+    ],
+    "procedures": [
+        "relationship--7ced0df2-1d05-40ea-986e-28692c028d92",
+        "relationship--91e9d060-8d6f-4d3a-9c69-8935f8e72338",
+        "relationship--b745cf21-c63a-42f2-bc98-6bd61674917a",
+        "relationship--e8a13c1f-d4b9-495d-b039-112c4d60916b",
+        "relationship--fed9f1de-bd5b-4715-ae70-ad457e89a988"
+    ],
+    "graph_nodes": [
+        {
+            "count": 5,
+            "id": 0,
+            "texts": [
+                "HiddenWasp",
+                "APT29",
+                "Green Lambert",
+                "Cyclops Blink",
+                "iKitten"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 2,
+            "id": 1,
+            "texts": [
+                "itself",
+                "entry"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 3,
+            "id": 2,
+            "texts": [
+                "/etc/rc.local",
+                "/etc folder",
+                "device startup"
+            ],
+            "label": "DIRECTORY"
+        },
+        {
+            "count": 4,
+            "id": 3,
+            "texts": [
+                "run command",
+                "malware",
+                "modified RC script",
+                "S51armled"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "compromised system"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 2,
+            "id": 5,
+            "texts": [
+                "init.d and rc.d files",
+                "rc.common file"
+            ],
+            "label": "DATA"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 3
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 2
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "5_2",
+            "source": 5,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "add": 3,
+        "to": 3,
+        "instal": 1,
+        "on": 3,
+        "execute": 1,
+        "in": 2,
+        "use": 1
+    }
+}

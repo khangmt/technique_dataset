@@ -1,0 +1,184 @@
+{
+    "id": "T1562.006",
+    "tech_id": "T1562.006",
+    "tech_name": "Indicator Blocking",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "COMPONENT",
+        "REGISTRY"
+    ],
+    "locations": [
+        "Windows",
+        "macOS",
+        "Linux"
+    ],
+    "procedures": [
+        "relationship--03c1479b-bbe6-4f21-bb56-133b4f7eb16a",
+        "relationship--43cc0c46-bec4-472c-9d22-8345bcd199df",
+        "relationship--8c3d3be5-88b1-4ad8-a775-822bed655615",
+        "relationship--a74a0a14-9c50-48b8-aa6d-5b0aea81e8fb",
+        "relationship--db963d57-c16f-4a69-92f3-fce8d25ab93d"
+    ],
+    "graph_nodes": [
+        {
+            "count": 4,
+            "id": 0,
+            "texts": [
+                "HermeticWiper",
+                "Woody RAT",
+                "Ebury",
+                "Waterbear"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 1,
+            "id": 1,
+            "texts": [
+                "HKLM:\\SYSTEM\\\\CurrentControlSet\\\\Control\\\\CrashControl\\CrashDumpEnabled Registry key"
+            ],
+            "label": "REGISTRY"
+        },
+        {
+            "count": 4,
+            "id": 2,
+            "texts": [
+                "0",
+                "error reporting",
+                "0x8007",
+                "nothing"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 5,
+            "id": 3,
+            "texts": [
+                "crash dumps",
+                "parameter",
+                "memory artifacts",
+                "PIDs",
+                "TCP records"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 12,
+            "id": 4,
+            "texts": [
+                "SetErrorMode",
+                "Brute Ratel C4",
+                "Anti Malware Scan Interface",
+                "Event Tracing",
+                "ETW",
+                "logging functions",
+                "backdoor",
+                "logging facility",
+                "ZwOpenProcess and GetExtendedTcpTable APIs",
+                "process",
+                "security product",
+                "detection"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 4,
+            "id": 5,
+            "texts": [
+                "Anti Malware Scan Interface",
+                "Event Tracing",
+                "AMSI",
+                "Windows"
+            ],
+            "label": "COMPONENT"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 3
+        },
+        {
+            "id": "4_2",
+            "source": 4,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "4_3",
+            "source": 4,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "4_5",
+            "source": 4,
+            "dest": 5,
+            "count": 3
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "set": 1,
+        "to": 3,
+        "disable": 1,
+        "suppress": 1,
+        "call": 1,
+        "with": 1,
+        "as": 1,
+        "hide": 2,
+        "patch": 3,
+        "for": 1,
+        "hook": 2,
+        "from": 2,
+        "of": 1
+    }
+}

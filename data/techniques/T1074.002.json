@@ -1,0 +1,263 @@
+{
+    "id": "T1074.002",
+    "tech_id": "T1074.002",
+    "tech_name": "Remote Data Staging",
+    "best_phrases": [],
+    "tactics": [
+        "TA0009"
+    ],
+    "features": [
+        "DATA",
+        "NETWORK",
+        "COMPONENT",
+        "FUNCTION",
+        "ENCRYPTION",
+        "USER"
+    ],
+    "locations": [
+        "Windows",
+        "IaaS",
+        "Linux",
+        "macOS"
+    ],
+    "procedures": [
+        "relationship--15ec2486-936e-4bb0-8265-84ba20491c05",
+        "relationship--2650cd6f-c837-4889-9044-37e9649d7bf4",
+        "relationship--9eb8df35-0cbf-490e-903a-f610a1387eb2",
+        "relationship--9ffd6752-5d0f-4108-8cab-8541b54c0434",
+        "relationship--b8df1d2c-f014-4f51-a277-8050adafb865",
+        "relationship--bbd420ed-6959-4190-8317-2b9ecdc32856",
+        "relationship--be571764-53d2-4f73-9567-8001e59925b8",
+        "relationship--c51de2e2-e36c-4716-b77a-7b35496049a3",
+        "relationship--f875597f-06ce-4402-bfec-eb55e28369c2",
+        "relationship--fa0e5b1c-2434-4aff-ab0c-25efb7ba1b49",
+        "relationship--fa8d15db-498b-45f5-8cc1-bf4cf70e2e62"
+    ],
+    "graph_nodes": [
+        {
+            "count": 10,
+            "id": 0,
+            "texts": [
+                "Chimera",
+                "ccf32",
+                "APT29",
+                "menuPass",
+                "FIN8",
+                "Leviathan",
+                "APT28",
+                "FIN6 actors",
+                "threat actors",
+                "Threat Group-3390"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 16,
+            "id": 1,
+            "texts": [
+                "stolen data",
+                "files",
+                "files",
+                "data",
+                "data",
+                "information",
+                "staged data",
+                "location",
+                "data",
+                "information",
+                "data",
+                "captured screenshots",
+                "data",
+                "information",
+                "files",
+                "information"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 8,
+            "id": 2,
+            "texts": [
+                "designated servers",
+                "OWA server",
+                "remote MSP systems",
+                "victim networks",
+                "network",
+                "Outlook Web Access (OWA) server",
+                "company web servers",
+                "Internet-facing servers"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 6,
+            "id": 3,
+            "texts": [
+                "target environment",
+                "remote machine",
+                "remote MSP systems",
+                "victim networks",
+                "staging system",
+                "remote systems"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 4,
+            "id": 4,
+            "texts": [
+                "Chinoxy",
+                "backdoor",
+                "plugins",
+                "China Chopper"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 3,
+            "id": 5,
+            "texts": [
+                "password-protected archives",
+                "archives",
+                "staged encrypted archives"
+            ],
+            "label": "ENCRYPTION"
+        },
+        {
+            "count": 2,
+            "id": 6,
+            "texts": [
+                "victim",
+                "target"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 3,
+            "id": 7,
+            "texts": [
+                "MoustachedBouncer",
+                ".\\AActdata\\",
+                "that"
+            ],
+            "label": "OTHER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 13
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 4
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 4
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 3
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "5_2",
+            "source": 5,
+            "dest": 2,
+            "count": 3
+        },
+        {
+            "id": "2_6",
+            "source": 2,
+            "dest": 6,
+            "count": 2
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 2
+        },
+        {
+            "id": "5_1",
+            "source": 5,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "7_4",
+            "source": 7,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "7_1",
+            "source": 7,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "1_7",
+            "source": 1,
+            "dest": 7,
+            "count": 1
+        },
+        {
+            "id": "0_7",
+            "source": 0,
+            "dest": 7,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "stage": 5,
+        "on": 6,
+        "in": 2,
+        "copy": 2,
+        "to": 8,
+        "infect with": 1,
+        "of": 3,
+        "exfiltrate": 4,
+        "aggregate": 1,
+        "into": 2,
+        "from": 2,
+        "use": 1,
+        "save": 1,
+        "compress": 1,
+        "move": 1,
+        "compromise": 1,
+        "with": 1
+    }
+}

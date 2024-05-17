@@ -1,0 +1,366 @@
+{
+    "id": "T1070",
+    "tech_id": "T1070",
+    "tech_name": "Indicator Removal",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "REGISTRY",
+        "COMPONENT",
+        "DIRECTORY",
+        "USER",
+        "NETWORK"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows",
+        "Containers",
+        "Network",
+        "Office 365",
+        "Google Workspace"
+    ],
+    "procedures": [
+        "relationship--07f86f87-71bf-4f6b-b902-e6e4d912e2d6",
+        "relationship--08f4dfcb-c394-470d-851f-045bbc38cdb5",
+        "relationship--0dff1232-e275-46bd-b893-3df8b5a6b0c2",
+        "relationship--12c761e7-f026-4e14-80fb-da9f4cb0ca38",
+        "relationship--2062ec61-e6b5-45dd-8d2d-71aa5aa1f6e8",
+        "relationship--2123bedd-f2b3-4856-9ee4-5d23aa9c8745",
+        "relationship--31501f0f-e5be-4980-a2f1-b241d68f654c",
+        "relationship--42d6cd7c-a512-4fb9-a625-d21152b60f22",
+        "relationship--5246b52e-cb6c-43da-84e5-dff0172abaea",
+        "relationship--726e2014-a0d6-4ed3-959b-2ad647884f5c",
+        "relationship--811ba10b-6fe7-40d9-ab98-70d4135ac7cf",
+        "relationship--b26f9867-37f2-4b7f-9b87-26f2152191bc",
+        "relationship--bb5486b6-f5b3-4a4c-9b88-d676011a4906",
+        "relationship--bbc492bf-de7c-4ef7-ba1b-565ec0f22379",
+        "relationship--bcee230a-c671-4c71-afbf-d6216aeee5b6",
+        "relationship--cabbe975-9936-4a9a-8fae-a747b3dc7a9d",
+        "relationship--d8b95918-bf5b-455a-928c-1b69fe9c9703",
+        "relationship--df1cdf5d-aaca-4a6f-ac5f-2506df830f62",
+        "relationship--df520c15-50fc-46cf-8559-368e88072aa7",
+        "relationship--e2d28250-862e-4dd5-8712-aa6b6782b088",
+        "relationship--f54e5455-c539-4bcb-9a06-92440314324f",
+        "relationship--fed38133-26a9-44e3-b57d-9d415aaeaf84",
+        "relationship--fee1306e-0a56-40c0-b3ea-ff0697c464a4"
+    ],
+    "graph_nodes": [
+        {
+            "count": 25,
+            "id": 0,
+            "texts": [
+                "Donut",
+                "payloads",
+                "TESTSIGNING boot configuration option",
+                "function",
+                "\"DeleteLeftovers",
+                "attack",
+                "SILENTTRINITY",
+                "services",
+                "command",
+                "OLE Automation",
+                "SQL stored procedures",
+                "payloads",
+                "process",
+                "malware deployment",
+                "detections",
+                "legitimate utilities",
+                "payload",
+                "KernelCallbackTable code",
+                "process execution flow",
+                "\"Wow64RevertWow64FsRedirection\" function",
+                "attempts",
+                "CSPY Downloader",
+                "malware",
+                "components",
+                "processes"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 25,
+            "id": 1,
+            "texts": [
+                "file references",
+                "data structures",
+                "watermark",
+                "relevant strings",
+                "artifacts",
+                "artifacts",
+                "created Registry keys",
+                "information",
+                "folders",
+                "desktop items",
+                "memory blog",
+                "junk bytes",
+                "traces",
+                "created WMI objects",
+                "file",
+                "state",
+                "shadow volumes",
+                "state",
+                "values",
+                "artifacts",
+                "Windows Security and Internet Explorer dialog boxes",
+                "browser history",
+                "traces",
+                "browser history",
+                "ClearBrowsingHistoryOnExit value"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 4,
+            "id": 2,
+            "texts": [
+                "in-memory",
+                "visibility",
+                "own",
+                "1"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 20,
+            "id": 3,
+            "texts": [
+                "SDBbot",
+                "ShadowPad",
+                "BlackEnergy",
+                "EVILNUM",
+                "Orz",
+                "HermeticWiper",
+                "Metamorfo",
+                "Stuxnet",
+                "Rising Sun",
+                "FunnyDream",
+                "Sardonic",
+                "APT29",
+                "Lazarus Group",
+                "Maze",
+                "Sibot",
+                "Bankshot",
+                "Flagpro",
+                "DarkWatchman",
+                "SUNBURST",
+                "Neoichor"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 6,
+            "id": 4,
+            "texts": [
+                "compromised host",
+                "system",
+                "compromised host",
+                "system",
+                "infected machine",
+                "compromised host"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 13,
+            "id": 5,
+            "texts": [
+                "arbitrary Registry values",
+                "user32.dll.mui",
+                "artifacts",
+                "created Registry keys",
+                "Registry settings",
+                "Registry keys",
+                "Registry key",
+                "\\Software\\Microsoft\\Internet Explorer\\notes",
+                "associated registry key",
+                "Registry",
+                "Registry",
+                "HTTP proxy registry values",
+                "HKEY_CURRENT_USER\\Software\\Microsoft\\Internet Explorer\\Privacy Registry key"
+            ],
+            "label": "REGISTRY"
+        },
+        {
+            "count": 1,
+            "id": 6,
+            "texts": [
+                "victim"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 2,
+            "id": 7,
+            "texts": [
+                "folders",
+                "desktop items"
+            ],
+            "label": "DIRECTORY"
+        },
+        {
+            "count": 1,
+            "id": 8,
+            "texts": [
+                "external connections"
+            ],
+            "label": "NETWORK"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 6
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 6
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 15
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 3
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 4
+        },
+        {
+            "id": "3_5",
+            "source": 3,
+            "dest": 5,
+            "count": 6
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 2
+        },
+        {
+            "id": "5_4",
+            "source": 5,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "3_0",
+            "source": 3,
+            "dest": 0,
+            "count": 14
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 5
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "2_6",
+            "source": 2,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "1_7",
+            "source": 1,
+            "dest": 7,
+            "count": 1
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "3_8",
+            "source": 3,
+            "dest": 8,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "2_5",
+            "source": 2,
+            "dest": 5,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "erase": 2,
+        "to": 5,
+        "remove": 7,
+        "from": 8,
+        "delete": 9,
+        "enable": 1,
+        "in": 5,
+        "of": 3,
+        "have": 2,
+        "overwrite": 1,
+        "reduce": 1,
+        "on": 2,
+        "disable": 1,
+        "hide": 1,
+        "about": 1,
+        "store": 1,
+        "clear": 3,
+        "with": 2,
+        "clean": 2,
+        "evade": 1,
+        "replace": 1,
+        "execute": 1,
+        "restore": 2,
+        "hijack": 1,
+        "use": 1,
+        "follow": 2,
+        "leave": 1,
+        "write": 1,
+        "associate with": 1,
+        "close": 1,
+        "mask": 1,
+        "uninstall": 1,
+        "stop": 1,
+        "change": 1
+    }
+}

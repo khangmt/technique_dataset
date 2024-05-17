@@ -1,0 +1,73 @@
+{
+    "id": "T1205.002",
+    "tech_id": "T1205.002",
+    "tech_name": "Socket Filters",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005",
+        "TA0003",
+        "TA0011"
+    ],
+    "features": [
+        "FUNCTION",
+        "COMPONENT"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--cdf000de-7faa-4251-b1f0-d08e043ef16a"
+    ],
+    "graph_nodes": [
+        {
+            "count": 1,
+            "id": 0,
+            "texts": [
+                "Penquin"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 1,
+            "id": 1,
+            "texts": [
+                "TCP and UDP filter"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 2,
+            "texts": [
+                "eth0 interface"
+            ],
+            "label": "COMPONENT"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "install": 1,
+        "on": 2
+    }
+}

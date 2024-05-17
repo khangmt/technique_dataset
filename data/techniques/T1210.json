@@ -1,0 +1,325 @@
+{
+    "id": "T1210",
+    "tech_id": "T1210",
+    "tech_name": "Exploitation of Remote Services",
+    "best_phrases": [
+        "CVE-2020-1472",
+        "BlueKeep (CVE-2019-0708) and EternalBlue (CVE-2017-0144) vulnerabilities"
+    ],
+    "tactics": [
+        "TA0008"
+    ],
+    "features": [
+        "VULNERABILITY",
+        "FUNCTION",
+        "NETWORK",
+        "COMPONENT",
+        "DATA"
+    ],
+    "locations": [
+        "Linux",
+        "Windows",
+        "macOS"
+    ],
+    "procedures": [
+        "relationship--052b685c-6d95-4a98-86f1-4c9bb39a398c",
+        "relationship--0e12dc13-6f73-4ad9-9cb5-845d443b4d58",
+        "relationship--14f3eebf-40c3-48d5-ad62-356d57ccf2dc",
+        "relationship--1cfc2e72-a9ce-4dc2-95ad-fb99c90a2880",
+        "relationship--495db551-b69c-482e-b242-831011c054f7",
+        "relationship--4f2bd19b-f0f4-4946-a7a5-4947be3346b1",
+        "relationship--670efee1-b854-4d39-85b1-b6038e3580e3",
+        "relationship--6cb2f741-eedb-4b1d-8d84-7823f0095d44",
+        "relationship--73fbf268-20d3-4549-9dd2-6e20e18079e0",
+        "relationship--754d1521-2fcf-4511-b7df-af4fffc7d635",
+        "relationship--771b78fb-4ed1-4c55-b5e8-31775eb60ad2",
+        "relationship--a14c0cae-f7da-42d6-ab3c-f11746233e06",
+        "relationship--a358f0a9-b5b9-4a84-8c83-dc0a1325d63e",
+        "relationship--b56b122d-0a12-4b1a-854e-5c0826603121",
+        "relationship--bd1282fe-7a81-432b-9ac7-f93fb8f8b33f",
+        "relationship--c1a8eea8-f273-4dad-8ae0-d5c93bf5467f",
+        "relationship--d393d40d-d18a-4d89-9cc8-b57d3afaa9bf",
+        "relationship--e31ca67c-1662-4d27-b349-44f3dda2a872",
+        "relationship--e56f602c-ec9f-46f0-a52f-45b90220314e",
+        "relationship--f2aa88d9-852b-4932-9881-d9c6f5d89779",
+        "relationship--f53f17c6-b2ad-4201-8a26-ef53565a61af",
+        "relationship--f9ec1b10-f819-42d8-a4b4-ecf015999cb6",
+        "relationship--fe3872cb-5e08-4a04-9162-a6868ef95952"
+    ],
+    "graph_nodes": [
+        {
+            "count": 20,
+            "id": 0,
+            "texts": [
+                "Flame",
+                "WannaCry",
+                "MuddyWater",
+                "Wizard Spider",
+                "Fox Kitten",
+                "Earth Lusca",
+                "Stuxnet",
+                "QakBot",
+                "Emotet",
+                "NotPetya",
+                "InvisiMole",
+                "APT28",
+                "Conficker",
+                "Lucifer",
+                "Tonto Team",
+                "menuPass",
+                "TrickBot",
+                "Dragonfly",
+                "Threat Group-3390",
+                "FIN7"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 26,
+            "id": 1,
+            "texts": [
+                "MS10-061",
+                "print spooler vulnerability",
+                "Microsoft Netlogon vulnerability",
+                "EternalBlue (MS17-010) vulnerabilities",
+                "Zerologon",
+                "CVE-2020-1472",
+                "vulnerabilities",
+                "CVE-2020-1472",
+                "MS10-061 Print Spooler and MS08-067 Windows Server Service vulnerabilities",
+                "exploitation",
+                "vulnerability exploit",
+                "EternalBlue",
+                "MS17-010",
+                "EternalBlue",
+                "EternalRomance",
+                "BlueKeep (CVE-2019-0708) and EternalBlue (CVE-2017-0144) vulnerabilities",
+                "Windows SMB Remote Code Execution Vulnerability",
+                "MS08-067 Windows vulnerability",
+                "vulnerabilities",
+                "ZeroLogon vulnerability",
+                "CVE-2020-1472",
+                "Windows Netlogon vulnerability",
+                "CVE-2020-1472",
+                "MS17-010",
+                "ZeroLogon",
+                "CVE-2020-1472"
+            ],
+            "label": "VULNERABILITY"
+        },
+        {
+            "count": 4,
+            "id": 2,
+            "texts": [
+                "remote system",
+                "remote systems",
+                "remote systems",
+                "systems"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 16,
+            "id": 3,
+            "texts": [
+                "shared printer",
+                "SMBv1",
+                "network",
+                "remote services",
+                "SMB",
+                "SMB",
+                "remote SMB, JBoss, and Jenkins servers",
+                "victim networks",
+                "SMBv1",
+                "network",
+                "network",
+                "RDP",
+                "SMB",
+                "SMB",
+                "Windows Active Directory servers",
+                "network"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 21,
+            "id": 4,
+            "texts": [
+                "exploit",
+                "ZeroLogon exploit",
+                "Mimikatz",
+                "domain controller",
+                "worm-like functionality",
+                "vulnerability exploit",
+                "EternalBlue",
+                "MS17-010",
+                "Empire",
+                "built-in modules",
+                "EternalRomance SMB exploit",
+                "exploits",
+                "EternalBlue",
+                "EternalRomance",
+                "module",
+                "EternalBlue",
+                "PoshC2",
+                "EternalBlue exploits",
+                "tools",
+                "EternalBlue and EternalRomance exploits",
+                "vulnerable domain controllers"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 3,
+            "id": 5,
+            "texts": [
+                "itself",
+                "Rabbit",
+                "itself"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 2,
+            "id": 6,
+            "texts": [
+                "limited number",
+                "access"
+            ],
+            "label": "DATA"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 20
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 4
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 12
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 2
+        },
+        {
+            "id": "4_3",
+            "source": 4,
+            "dest": 3,
+            "count": 4
+        },
+        {
+            "id": "5_2",
+            "source": 5,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 3
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "4_6",
+            "source": 4,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "6_4",
+            "source": 6,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "5_3",
+            "source": 5,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "5_4",
+            "source": 5,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "0_6",
+            "source": 0,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "6_3",
+            "source": 6,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 13,
+        "exploit": 18,
+        "in": 5,
+        "with": 1,
+        "spread": 3,
+        "to": 3,
+        "on": 3,
+        "by": 6,
+        "of": 2,
+        "have": 1,
+        "within": 1,
+        "contain": 1,
+        "utilize": 1,
+        "obtain": 1,
+        "against": 2
+    }
+}

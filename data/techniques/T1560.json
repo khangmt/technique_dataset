@@ -1,0 +1,506 @@
+{
+    "id": "T1560",
+    "tech_id": "T1560",
+    "tech_name": "Archive Collected Data",
+    "best_phrases": [],
+    "tactics": [
+        "TA0009"
+    ],
+    "features": [
+        "DATA",
+        "ENCRYPTION",
+        "FUNCTION",
+        "NETWORK",
+        "COMPONENT",
+        "DIRECTORY",
+        "REGISTRY",
+        "USER"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--0082e86b-a7b7-496b-af03-88785b6c8fbb",
+        "relationship--02174a5c-9cda-4ddc-9952-1ff1b956d31e",
+        "relationship--03b18e87-f5f2-4d12-b5b3-2e1ba131b091",
+        "relationship--088ed15f-46da-4b32-a182-68553c61f09b",
+        "relationship--1631a8e5-36e6-4468-9ed6-48df1138461c",
+        "relationship--1f066ba6-31e2-48d1-a7ac-27a20879287b",
+        "relationship--2202d670-a6f3-42eb-ae1b-1ae615c3b620",
+        "relationship--2762485e-c8a2-4bbe-b3d8-8b20ca70197b",
+        "relationship--2a8f0313-4059-42b9-b487-6c8f860588c0",
+        "relationship--32fc949c-2127-425b-9480-6d07ead49982",
+        "relationship--3df9c843-4833-45f9-a1ae-f7231d8410c4",
+        "relationship--423b6f97-96c5-47f3-aa9f-f27bf5cd1ba0",
+        "relationship--552ac18c-4fac-4cb0-aefc-811a10e1c320",
+        "relationship--59ad51ee-bc2e-4428-be3f-ddf50cf0deb9",
+        "relationship--6259ae94-15ac-4343-9eb9-7315160bf58a",
+        "relationship--63ee7d80-372e-4841-87a4-825cb5dd7058",
+        "relationship--6b2770ca-bf5d-4994-8a7e-868c906f385a",
+        "relationship--70af600c-ca7a-4ea3-8c03-3a166e2d88a7",
+        "relationship--7723037f-0b2e-447b-811a-d18a109570bb",
+        "relationship--7bbd6131-24cd-437e-8057-02f84b357cbe",
+        "relationship--7ee9b1ad-7f7b-4ae7-8cf4-8ab97b6a74b8",
+        "relationship--823fc0fa-1648-40ed-87a3-eec3138eb3dd",
+        "relationship--8a2be44e-6a93-479f-ade9-7d49a1eb692a",
+        "relationship--8b16a324-45f2-4e90-8c30-39229b352fb7",
+        "relationship--9076865a-8215-4536-bb31-60ab7fa20af6",
+        "relationship--9433ea0e-0bae-44b6-b32b-5290356f057b",
+        "relationship--960accee-d5ea-4570-8697-84ada0cc266a",
+        "relationship--98229d5a-fce3-442e-91cf-7ec7b7994248",
+        "relationship--982d9af7-45bb-4cc0-9819-aaadb3304783",
+        "relationship--985066fb-7fbb-4147-a69d-b33d45cd3e7f",
+        "relationship--9e8e158e-31a9-406e-8b58-68ef645b0cc8",
+        "relationship--a1dc7c15-bd44-43b3-a32b-8e4ea9856758",
+        "relationship--a4361a93-3ce2-4c35-a5d8-9a4fae2dc822",
+        "relationship--ab62293d-8f89-46b5-bab1-f7b564f5996f",
+        "relationship--ab7eb363-c775-4065-a80d-1b324f22d0b8",
+        "relationship--b516dc1a-69c7-4dd2-935a-b0b1dcee150f",
+        "relationship--b997d866-0aef-4ba6-a812-cfa2fccb05af",
+        "relationship--c254bf89-3726-4c56-aae5-700c59427daf",
+        "relationship--c48ff628-9276-492f-a61c-73989785b292",
+        "relationship--d80207ae-0b3c-4f5f-ac89-9caa8c2c9beb",
+        "relationship--d844fdcc-a0d1-46b4-a4dc-f56063ef9584",
+        "relationship--df6c39fa-9d95-45ee-911b-0ca2fc167086",
+        "relationship--e37d3456-b3a0-4502-b502-a505f383cb4c",
+        "relationship--e898c937-29b0-4e30-aeed-017ac3bbc3ed",
+        "relationship--efea6d26-7372-45bb-81bb-1e300abd5b13",
+        "relationship--fa77baa1-a258-4059-aa84-6822fe023d70",
+        "relationship--fada6223-ba24-4c26-aa89-3998f07604f9",
+        "relationship--ff9e8d81-dc74-4494-a4aa-54f8039f9ad7"
+    ],
+    "graph_nodes": [
+        {
+            "count": 48,
+            "id": 0,
+            "texts": [
+                "Dragonfly",
+                "Chrommme",
+                "Patchwork",
+                "Emotet",
+                "attacker",
+                "TAINTEDSCRIBE",
+                "BLUELIGHT",
+                "Ke3chang group",
+                "Axiom",
+                "KONNI",
+                "AppleSeed",
+                "ADVSTORESHELL",
+                "Bumblebee",
+                "WellMail",
+                "Lazarus Group",
+                "Cadelspy",
+                "LightNeuron",
+                "APT28",
+                "VERMIN",
+                "APT32",
+                "XCSSET",
+                "Gold Dragon",
+                "NETWIRE",
+                "PowerLess",
+                "Epic",
+                "attacker",
+                "Kessel",
+                "Zebrocy",
+                "FIN6",
+                "Lurid",
+                "attacker",
+                "LuminousMoth",
+                "Backdoor.Oldrea",
+                "FELIXROOT",
+                "attacker",
+                "Remexi",
+                "RunningRAT",
+                "Agent Tesla",
+                "menuPass",
+                "Daserf",
+                "Leviathan",
+                "Proton",
+                "Pillowmint",
+                "attacker",
+                "Aria-body",
+                "attacker",
+                "Lizar",
+                "attacker"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 60,
+            "id": 1,
+            "texts": [
+                "data",
+                "information",
+                "data",
+                "them",
+                "files",
+                "data",
+                "files",
+                "file",
+                "files",
+                "data",
+                "information",
+                "data",
+                "volume shadow copies",
+                "data",
+                "files",
+                "exfiltrated data",
+                "stolen data",
+                "documents",
+                "files",
+                "initial reconnaissance reports",
+                "information",
+                "data size",
+                "200MB",
+                "data",
+                "archived screenshots",
+                "browser database files",
+                "data",
+                "data",
+                "credentials",
+                "data",
+                "log files",
+                "data",
+                "information",
+                "data",
+                "stolen files",
+                "information",
+                "data",
+                "file",
+                "encrypted form",
+                "data",
+                "gathered browser data",
+                "files",
+                "files",
+                "zipped files",
+                "profile data",
+                "data",
+                "data",
+                "information",
+                "encrypted files",
+                "information",
+                "data",
+                "data",
+                "information",
+                "files",
+                "them",
+                "stolen credit card information",
+                "data",
+                "documents",
+                "files",
+                "data"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 31,
+            "id": 2,
+            "texts": [
+                ".zip files",
+                "AES",
+                "base64",
+                "FileReadZipSend",
+                "ZIP file",
+                "hardcoded key",
+                "3DES algorithm",
+                "RAR",
+                ".zip file",
+                ".cab file",
+                "3-DES",
+                "LZ compression",
+                "RC4 encryption",
+                "LZMA compression",
+                "Base64",
+                "AES",
+                "base64",
+                "method",
+                "AES",
+                "hexadecimal",
+                "encryption",
+                "ZIP archive",
+                "AES",
+                "Base64",
+                "3DES",
+                "password protected archive",
+                "password-protected .rar archives",
+                "AES",
+                "Base64",
+                "ZIP",
+                "Blowfish"
+            ],
+            "label": "ENCRYPTION"
+        },
+        {
+            "count": 8,
+            "id": 3,
+            "texts": [
+                "disk",
+                "Windows",
+                "target system",
+                "compromised host",
+                "victim machines",
+                "installed web browsers",
+                "compromised host",
+                "removable media"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 4,
+            "id": 4,
+            "texts": [
+                "path",
+                "directories",
+                "entire ~/Desktop folders",
+                ".git folders"
+            ],
+            "label": "DIRECTORY"
+        },
+        {
+            "count": 13,
+            "id": 5,
+            "texts": [
+                "C2",
+                "C2",
+                "C2",
+                "C2",
+                "emails",
+                "DCCC and DNC networks",
+                "C2",
+                "C2 channel",
+                "C2",
+                "C2",
+                "C2",
+                "C2",
+                "server"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 19,
+            "id": 6,
+            "texts": [
+                "Exaramel",
+                "BloodHound",
+                "SharpHound ingestor",
+                "hardcoded key",
+                "3DES algorithm",
+                "RomeoDelta malware",
+                "function",
+                "tool",
+                "ShimRatReporter",
+                "backdoor",
+                "public key framework",
+                "variants",
+                "method",
+                "AES",
+                "hexadecimal",
+                "upload",
+                "code",
+                "Dtrack packs",
+                "Prikormka"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 3,
+            "id": 7,
+            "texts": [
+                "Empire can ZIP directories",
+                ".zip format",
+                "Machete stores"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 1,
+            "id": 8,
+            "texts": [
+                "Registry"
+            ],
+            "label": "REGISTRY"
+        },
+        {
+            "count": 1,
+            "id": 9,
+            "texts": [
+                "victim"
+            ],
+            "label": "USER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 42
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 21
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 12
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 6
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 3
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "4_2",
+            "source": 4,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 7
+        },
+        {
+            "id": "6_3",
+            "source": 6,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "6_1",
+            "source": 6,
+            "dest": 1,
+            "count": 10
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 2
+        },
+        {
+            "id": "6_2",
+            "source": 6,
+            "dest": 2,
+            "count": 8
+        },
+        {
+            "id": "0_6",
+            "source": 0,
+            "dest": 6,
+            "count": 7
+        },
+        {
+            "id": "7_3",
+            "source": 7,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "1_8",
+            "source": 1,
+            "dest": 8,
+            "count": 1
+        },
+        {
+            "id": "4_7",
+            "source": 4,
+            "dest": 7,
+            "count": 1
+        },
+        {
+            "id": "6_5",
+            "source": 6,
+            "dest": 5,
+            "count": 5
+        },
+        {
+            "id": "6_0",
+            "source": 6,
+            "dest": 0,
+            "count": 3
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "1_6",
+            "source": 1,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "2_5",
+            "source": 2,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "1_9",
+            "source": 1,
+            "dest": 9,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "compress": 15,
+        "into": 12,
+        "exfiltrate": 8,
+        "store": 2,
+        "on": 5,
+        "encrypt": 15,
+        "with": 22,
+        "encode": 4,
+        "of": 3,
+        "send": 6,
+        "to": 11,
+        "for": 3,
+        "use": 11,
+        "collect": 4,
+        "steal from": 1,
+        "archive": 4,
+        "in": 4,
+        "contain": 2,
+        "exclude": 1,
+        "be": 1,
+        "over": 1,
+        "transmit": 1,
+        "rc4-encrypt": 1,
+        "from": 5,
+        "write": 1,
+        "add": 1,
+        "have": 1,
+        "hide": 1,
+        "zip": 1,
+        "gather on": 1
+    }
+}

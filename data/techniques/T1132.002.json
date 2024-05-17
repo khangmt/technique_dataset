@@ -1,0 +1,294 @@
+{
+    "id": "T1132.002",
+    "tech_id": "T1132.002",
+    "tech_name": "Non-Standard Encoding",
+    "best_phrases": [],
+    "tactics": [
+        "TA0011"
+    ],
+    "features": [
+        "DATA",
+        "NETWORK",
+        "FUNCTION",
+        "ENCRYPTION",
+        "COMPONENT"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--1dac9ffa-1523-4cab-b28f-2d5642ee08aa",
+        "relationship--361df799-64ee-405f-bd31-788ecc5c8d45",
+        "relationship--5da3452c-3f93-42f0-98fd-54fa7bc0c562",
+        "relationship--5ef6ff08-0567-4366-a1df-13184c460cc4",
+        "relationship--657cb17c-b227-4f97-a19a-e1b0fb7c839d",
+        "relationship--66e16e88-626f-49c6-90f1-8c97286ef5dc",
+        "relationship--6c0aae73-fe06-4aa3-8216-568d78747c6d",
+        "relationship--78f8338a-ac4e-42cf-a887-cc35e842dc11",
+        "relationship--951c72ac-3839-4716-a052-ffa79f5b62fe",
+        "relationship--97da1ec3-e4cd-451e-83be-d53adabb78ed",
+        "relationship--eeb8c856-ed89-47f5-a725-e74e7a2c20c3"
+    ],
+    "graph_nodes": [
+        {
+            "count": 9,
+            "id": 0,
+            "texts": [
+                "OceanSalt",
+                "NightClub",
+                "RDAT",
+                "InvisiMole",
+                "Uroburos",
+                "Bankshot",
+                "ShadowPad",
+                "Cyclops Blink",
+                "PowGoop"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 15,
+            "id": 1,
+            "texts": [
+                "data",
+                "data",
+                "characters",
+                "result",
+                "+ characters",
+                "data",
+                "lowercase letters",
+                "digits",
+                "gzip",
+                "characters",
+                "data",
+                "readable Latin characters",
+                "parameters",
+                "commands",
+                "data"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 11,
+            "id": 2,
+            "texts": [
+                "control server",
+                "tasking traffic",
+                "DNS tunneling",
+                "subdomains",
+                "C2",
+                "subdomain",
+                "C2 requests",
+                "C2 communications",
+                "C2 communications",
+                "control server",
+                "messages"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 11,
+            "id": 3,
+            "texts": [
+                "Sieve",
+                "=",
+                "-s",
+                "-p",
+                "that",
+                "de-facto base32 encoding",
+                "custom base62",
+                "lowercase letters",
+                "digits",
+                "a-z",
+                "that"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 9,
+            "id": 4,
+            "texts": [
+                "custom hex byte swapping encoding scheme",
+                "character substitutions",
+                "Newer variants",
+                "BACKSPACE",
+                "commands",
+                "custom binary scheme",
+                "parameters",
+                "commands",
+                "modified Base64 encoding mechanism"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 8,
+            "id": 5,
+            "texts": [
+                "non-standard encoding",
+                "base64 encoding",
+                "base64",
+                "modified base32 encoding",
+                "de-facto base32 encoding",
+                "custom base62",
+                "gzip",
+                "characters"
+            ],
+            "label": "ENCRYPTION"
+        },
+        {
+            "count": 1,
+            "id": 6,
+            "texts": [
+                "custom system"
+            ],
+            "label": "COMPONENT"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 8
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 3
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 3
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 4
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "5_2",
+            "source": 5,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 4
+        },
+        {
+            "id": "2_5",
+            "source": 2,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "5_4",
+            "source": 5,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "5_3",
+            "source": 5,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "5_1",
+            "source": 5,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "4_2",
+            "source": 4,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "4_6",
+            "source": 4,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "2_6",
+            "source": 2,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 3
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "encode": 6,
+        "send": 2,
+        "to": 1,
+        "use": 9,
+        "obfuscate": 1,
+        "remove": 1,
+        "replace": 1,
+        "in": 3,
+        "from": 3,
+        "of": 3,
+        "with": 8,
+        "by": 1,
+        "utilize": 1,
+        "within": 1,
+        "as": 2
+    }
+}

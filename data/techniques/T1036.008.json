@@ -1,0 +1,165 @@
+{
+    "id": "T1036.008",
+    "tech_id": "T1036.008",
+    "tech_name": "Masquerade File Type",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005"
+    ],
+    "features": [
+        "DATA",
+        "FUNCTION",
+        "NETWORK",
+        "DIRECTORY"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--03927cb1-f80c-4b86-ac8d-f0963141eaa8",
+        "relationship--154d0730-b087-46ce-9ae2-b1a551ff4ab8",
+        "relationship--21b87986-57d0-45a7-9a42-f3e7803cf337",
+        "relationship--2ef7ec01-8704-4c94-9949-c3239167f93b",
+        "relationship--84b29e13-6577-4db2-846c-a42caf068cb8",
+        "relationship--93ae2467-4192-4e69-a63a-00ca8cb055c2",
+        "relationship--b1a27372-01f1-4abf-b586-949e9e796c32",
+        "relationship--f376ba97-3fe5-4c51-aa2c-0c1e35fcfcda"
+    ],
+    "graph_nodes": [
+        {
+            "count": 6,
+            "id": 0,
+            "texts": [
+                "Sandworm Team",
+                "Lazarus Group",
+                "ANDROMEDA",
+                "AvosLocker",
+                "OSX_OCEANLOTUS.D",
+                "attacker"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 4,
+            "id": 1,
+            "texts": [
+                "executables",
+                "detection",
+                "QakBot payload",
+                "Brute Ratel C4"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 18,
+            "id": 2,
+            "texts": [
+                ".txt files",
+                "template files",
+                "JPEG files",
+                "copies",
+                ".gif file extension",
+                "PNG file",
+                "LNK files",
+                "Microsoft File Explorer icon",
+                "LNK file",
+                "Microsoft Word icons",
+                "LNK files",
+                ".jpg file",
+                "true file structure",
+                "application bundle",
+                "special characters",
+                "icon",
+                "filename",
+                "legitimate Word documents"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "Volt Typhoon"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "ntds.dit database"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "folder"
+            ],
+            "label": "DIRECTORY"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 8
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 6
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "2_0",
+            "source": 2,
+            "dest": 0,
+            "count": 2
+        },
+        {
+            "id": "2_5",
+            "source": 2,
+            "dest": 5,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "masquerade": 1,
+        "as": 9,
+        "disguise": 2,
+        "avoid": 1,
+        "append": 1,
+        "with": 2,
+        "of": 2,
+        "within": 1,
+        "use": 3,
+        "deliver": 1,
+        "hide": 1,
+        "add": 1,
+        "to": 1,
+        "for": 1
+    }
+}

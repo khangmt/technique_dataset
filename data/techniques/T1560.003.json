@@ -1,0 +1,435 @@
+{
+    "id": "T1560.003",
+    "tech_id": "T1560.003",
+    "tech_name": "Archive via Custom Method",
+    "best_phrases": [],
+    "tactics": [
+        "TA0009"
+    ],
+    "features": [
+        "DATA",
+        "ENCRYPTION",
+        "FUNCTION",
+        "NETWORK",
+        "COMPONENT",
+        "USER"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--07ab0a67-7c7b-4971-9a3e-45069f234800",
+        "relationship--0c3e8b5e-1908-4a17-ba56-f8df99991cd9",
+        "relationship--0c78e3a7-45c5-454f-8905-a831fbede841",
+        "relationship--0f3af4de-b1cc-4cc2-9eb7-9aa46cdebfcd",
+        "relationship--160d9be2-967e-4116-9c75-44b5b0a8927b",
+        "relationship--23df6015-0167-481c-84aa-3d15d3e38a85",
+        "relationship--292b2a10-ebee-4fbb-b359-2eee16aa46ba",
+        "relationship--2a9fde8d-dbec-42e9-ad73-02f80e765a91",
+        "relationship--33eb3d03-426d-4410-b028-3528b3fefe5c",
+        "relationship--39663ad3-549e-4984-a81b-acce5cb02090",
+        "relationship--3ad041f8-30ca-44bb-bad5-2e5b3e5d6242",
+        "relationship--40e636e8-a891-46fb-ba04-69db00062354",
+        "relationship--53ad6525-7888-4651-bd43-c010b489ccc0",
+        "relationship--609a0483-ac4a-49d6-bc5d-3cb0ff6e8a97",
+        "relationship--71abba24-84a2-449d-811a-ba006382d723",
+        "relationship--7687477f-ea5e-4a3f-806d-e561f5c8adb4",
+        "relationship--78f09c1a-8e37-4b2c-9296-d464be9b46c5",
+        "relationship--87b3ebab-fb4d-44c2-b8ad-9fffbac277f3",
+        "relationship--8b76353e-6ed6-4d20-b52d-ca7dde9dec9b",
+        "relationship--8b95c259-d8eb-4258-aec0-e7c92bf3ac05",
+        "relationship--98d3455f-49cc-4539-ba35-4b11bec0ddcd",
+        "relationship--9ee0e760-3084-4341-b1c3-3f50a0506595",
+        "relationship--a83992e1-5be5-433e-b3f1-d9ccde98c9ca",
+        "relationship--afd03a56-6d2b-4b00-895a-012f5d348898",
+        "relationship--bb11119c-c409-4615-8c3f-8491749f2d3b",
+        "relationship--c0e78590-0266-43e0-8fb5-efd95556c20c",
+        "relationship--ca140f83-3fc6-44e8-b588-806fb60e7e7e",
+        "relationship--cebe7625-3bb7-4353-9b48-cd4251410968",
+        "relationship--cfae5caf-6084-4082-a2a4-8728ea424807",
+        "relationship--d29ff57c-2821-45e9-94b5-beb62f63f8ea",
+        "relationship--d6ddaace-75b2-4ff0-bb94-751095d6a357",
+        "relationship--e7c29485-c988-4313-8081-60241abe1178",
+        "relationship--e9249ab2-eeee-4984-9ee2-78ff52335077",
+        "relationship--f4c346b3-91ec-4edc-a648-a6273c965e02",
+        "relationship--f4c6cb3f-b24c-4a1e-9bba-7b129b89a17a",
+        "relationship--f60afd0d-68d1-4b71-bb07-b943e9542b2d",
+        "relationship--f9669551-29f8-4aaf-83b9-50e541bbdced"
+    ],
+    "graph_nodes": [
+        {
+            "count": 36,
+            "id": 0,
+            "texts": [
+                "Attor",
+                "BLUELIGHT",
+                "FIN6",
+                "Stuxnet",
+                "CopyKittens",
+                "FoggyWeb",
+                "NETWIRE",
+                "Rising Sun",
+                "StrongPity",
+                "RGDoor",
+                "RawPOS",
+                "metaMain",
+                "Ramsay",
+                "Mustang Panda",
+                "Kimsuky",
+                "OopsIE",
+                "SombRAT",
+                "Machete",
+                "Reaver",
+                "HAWKBALL",
+                "attacker",
+                "OwaAuth",
+                "InvisiMole",
+                "T9000",
+                "ADVSTORESHELL",
+                "Squirrelwaffle",
+                "Okrum",
+                "OSX_OCEANLOTUS.D",
+                "FunnyDream",
+                "MESSAGETAP",
+                "SUGARDUMP",
+                "attacker",
+                "attacker",
+                "FrameworkPOS",
+                "Agent.btz",
+                "FLASHFLOOD"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 52,
+            "id": 1,
+            "texts": [
+                "data",
+                "data",
+                "binary blob",
+                "data",
+                "data",
+                "exfiltrated data",
+                "Data SPACESHIP copies",
+                "Bytes",
+                "data",
+                "information",
+                "data",
+                "C2 command output",
+                "legitimate WebP file",
+                "data",
+                "data",
+                "archived files",
+                ".sft files",
+                "files",
+                "credit card data",
+                "files",
+                "documents",
+                "them",
+                "documents",
+                "information",
+                "files",
+                "data",
+                "collected data",
+                "data",
+                "data",
+                "credentials",
+                "log file",
+                "files",
+                "data",
+                "output data",
+                "data",
+                "data",
+                "data",
+                "data",
+                "files",
+                "them",
+                "File names",
+                "compressed file content",
+                "XOR-encrypted and stored contents",
+                "target list",
+                "data",
+                "information",
+                "credit card information",
+                "system information",
+                "XML file",
+                "data",
+                "a simple byte ",
+                "data"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 20,
+            "id": 2,
+            "texts": [
+                "custom implementation",
+                "character permutation",
+                "Duqu",
+                "Modules",
+                "dynamic XOR key",
+                "custom XOR methodology",
+                "custom encryption algorithm",
+                "repeated xor encryption scheme",
+                "exfil",
+                "character replacement scheme",
+                "variation",
+                "custom implementation",
+                "XOR-based algorithm",
+                "custom implementation",
+                "XOR operation",
+                "command line",
+                "Lazarus Group malware sample",
+                "byte based XOR operation",
+                "encoding scheme",
+                "SPACESHIP"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 38,
+            "id": 3,
+            "texts": [
+                "RSA ciphers",
+                "Blowfish",
+                "XOR",
+                "substitution cipher",
+                "single-byte XOR",
+                "0xAA key",
+                "Base64",
+                "static 31-byte long XOR keys",
+                "zlib",
+                "substitute cipher",
+                "dynamic XOR key",
+                "custom XOR methodology",
+                "RC4 encryption",
+                "Base64 encoding",
+                "XOR",
+                "XOR",
+                "XOR-based encryption",
+                "RC4",
+                "WinRAR",
+                "RC4",
+                "RC4 encryption",
+                "AES-256",
+                "hardcoded key",
+                "AES",
+                "incremental XOR key",
+                "XOR",
+                "XOR cipher",
+                "byte XOR key",
+                "Lempel-Ziv-Welch (LZW) algorithm",
+                "AES encryption",
+                "AES",
+                "CBC mode",
+                "zLib",
+                "string key",
+                "XOR",
+                "AES CBC mode",
+                "Base64",
+                "zlib"
+            ],
+            "label": "ENCRYPTION"
+        },
+        {
+            "count": 2,
+            "id": 4,
+            "texts": [
+                "victim",
+                "victim"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 3,
+            "id": 5,
+            "texts": [
+                "that",
+                "four positions",
+                "0x23"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 4,
+            "id": 6,
+            "texts": [
+                "staging area",
+                "staging area",
+                "custom container",
+                "disk"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 5,
+            "id": 7,
+            "texts": [
+                "C2",
+                "C2",
+                "C2",
+                "C2 channel",
+                "SMS messages"
+            ],
+            "label": "NETWORK"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 42
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 11
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 4
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 5
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 22
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 12
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 3
+        },
+        {
+            "id": "5_1",
+            "source": 5,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "5_6",
+            "source": 5,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "1_6",
+            "source": 1,
+            "dest": 6,
+            "count": 4
+        },
+        {
+            "id": "1_7",
+            "source": 1,
+            "dest": 7,
+            "count": 4
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "0_6",
+            "source": 0,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "0_7",
+            "source": 0,
+            "dest": 7,
+            "count": 2
+        },
+        {
+            "id": "7_1",
+            "source": 7,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 3
+        }
+    ],
+    "verbs": {
+        "encrypt": 18,
+        "with": 33,
+        "of": 6,
+        "encode": 6,
+        "into": 6,
+        "use": 20,
+        "gather from": 1,
+        "execute": 1,
+        "copy": 1,
+        "to": 7,
+        "by": 1,
+        "rotate": 1,
+        "exfiltrate": 3,
+        "within": 2,
+        "archive": 1,
+        "from": 2,
+        "collect": 1,
+        "for": 4,
+        "store": 1,
+        "in": 3,
+        "compress": 4,
+        "before": 2,
+        "send": 1,
+        "over": 1,
+        "write": 1,
+        "save": 2,
+        "as": 2,
+        "have": 1,
+        "match": 1,
+        "xor": 1,
+        "basedon": 1,
+        "employ": 1
+    }
+}

@@ -1,0 +1,96 @@
+{
+    "id": "T1587.003",
+    "tech_id": "T1587.003",
+    "tech_name": "Digital Certificates",
+    "best_phrases": [],
+    "tactics": [
+        "TA0042"
+    ],
+    "features": [
+        "DATA",
+        "FUNCTION",
+        "NETWORK"
+    ],
+    "locations": [
+        "PRE"
+    ],
+    "procedures": [
+        "relationship--3bd4bd69-b1f6-426a-a63f-b8107eb57f8e",
+        "relationship--66e5238f-c1f7-4094-8c2e-e8e41a4c12f3",
+        "relationship--f0883623-a612-4e9e-ad46-cfb0964248f0"
+    ],
+    "graph_nodes": [
+        {
+            "count": 3,
+            "id": 0,
+            "texts": [
+                "APT29",
+                "PROMETHIUM",
+                "Transparent Tribe"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 3,
+            "id": 1,
+            "texts": [
+                "self-signed digital certificates",
+                "self-signed digital certificates",
+                "SSL certificates"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 2,
+            "id": 2,
+            "texts": [
+                "mutual TLS authentication",
+                "malware"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 2,
+            "id": 3,
+            "texts": [
+                "HTTPS C2 traffic",
+                "typo-squatted domains"
+            ],
+            "label": "NETWORK"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 2
+        }
+    ],
+    "verbs": {
+        "create": 2,
+        "enable": 1,
+        "for": 1,
+        "in": 2,
+        "establish": 1,
+        "on": 2
+    }
+}

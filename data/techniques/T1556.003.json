@@ -1,0 +1,92 @@
+{
+    "id": "T1556.003",
+    "tech_id": "T1556.003",
+    "tech_name": "Pluggable Authentication Modules",
+    "best_phrases": [],
+    "tactics": [
+        "TA0006",
+        "TA0005",
+        "TA0003"
+    ],
+    "features": [
+        "DATA",
+        "FUNCTION",
+        "COMPONENT"
+    ],
+    "locations": [
+        "Linux",
+        "macOS"
+    ],
+    "procedures": [
+        "relationship--0b7d2693-022f-41be-a8b7-0f433e3ec48d",
+        "relationship--61cfe134-e24e-490e-a298-40612df42832"
+    ],
+    "graph_nodes": [
+        {
+            "count": 2,
+            "id": 0,
+            "texts": [
+                "Ebury",
+                "Skidmap"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 1,
+            "id": 1,
+            "texts": [
+                "PAM modules"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 5,
+            "id": 2,
+            "texts": [
+                "sshd configuration",
+                "pam_unix.so file",
+                "version",
+                "backdoor password",
+                "users"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "infected machine"
+            ],
+            "label": "COMPONENT"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 3
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "deactivate": 1,
+        "tamper": 1,
+        "replace": 1,
+        "with": 2,
+        "on": 1,
+        "accept": 1,
+        "for": 1
+    }
+}

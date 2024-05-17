@@ -1,0 +1,195 @@
+{
+    "id": "T1543.004",
+    "tech_id": "T1543.004",
+    "tech_name": "Launch Daemon",
+    "best_phrases": [],
+    "tactics": [
+        "TA0003",
+        "TA0004"
+    ],
+    "features": [
+        "DATA",
+        "FUNCTION",
+        "DIRECTORY",
+        "NETWORK",
+        "USER"
+    ],
+    "locations": [
+        "macOS"
+    ],
+    "procedures": [
+        "relationship--13dca3a6-ea1f-47eb-8030-18f15e309faf",
+        "relationship--73798ada-f5a4-4029-ac0c-39bcae68df98",
+        "relationship--7398839c-3feb-4162-a3d2-dda8fc2f0375",
+        "relationship--75a7d2f6-fa2c-499c-8e4f-f8d1d2735173",
+        "relationship--a9f9bef5-31f0-44bf-bba5-4c13a5eda5ac",
+        "relationship--c592018f-2dd6-4787-b429-c25e69d6f1cd",
+        "relationship--ce0e6abe-ebdb-45f4-a403-261587e0fa0f",
+        "relationship--f9aa88f9-353c-4cc0-8d58-b5b4b00bfff2"
+    ],
+    "graph_nodes": [
+        {
+            "count": 6,
+            "id": 0,
+            "texts": [
+                "Green Lambert",
+                "LoudMiner",
+                "Dacls",
+                "Bundlore",
+                "XCSSET",
+                "AppleJeus"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 11,
+            "id": 1,
+            "texts": [
+                "plist file",
+                "root privileges",
+                "plist file",
+                "RunAtLoad key",
+                "plist files",
+                "RunAtLoad and KeepAlive keys",
+                "naming format",
+                "root permissions",
+                "persistence file",
+                "privileges",
+                "plist file"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 8,
+            "id": 2,
+            "texts": [
+                "Library",
+                "LaunchDaemons",
+                "ThiefQuest",
+                "com.[random_name].plist",
+                "OSX_OCEANLOTUS.D",
+                "LaunchDaemon",
+                "ssh launchdaemon",
+                "system controls"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 5,
+            "id": 3,
+            "texts": [
+                "/Library/LaunchDaemons/ folder",
+                "/Library/LaunchDaemons folder",
+                "folder",
+                "/Library/LaunchDaemons",
+                "LaunchDaemons folder"
+            ],
+            "label": "DIRECTORY"
+        },
+        {
+            "count": 2,
+            "id": 4,
+            "texts": [
+                "true",
+                "true"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "remote access"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 1,
+            "id": 6,
+            "texts": [
+                "victim"
+            ],
+            "label": "USER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 5
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 4
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 3
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 4
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 5
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "5_6",
+            "source": 5,
+            "dest": 6,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "add": 2,
+        "in": 8,
+        "run": 2,
+        "install": 1,
+        "to": 3,
+        "set": 1,
+        "with": 4,
+        "set to": 1,
+        "create": 1,
+        "by": 1,
+        "use": 1,
+        "elevate": 1,
+        "bypass": 1,
+        "enable": 1,
+        "place": 1,
+        "within": 2
+    }
+}

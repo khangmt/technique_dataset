@@ -1,0 +1,117 @@
+{
+    "id": "T1542.001",
+    "tech_id": "T1542.001",
+    "tech_name": "System Firmware",
+    "best_phrases": [],
+    "tactics": [
+        "TA0003",
+        "TA0005"
+    ],
+    "features": [
+        "FUNCTION",
+        "COMPONENT",
+        "DATA"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--63218f86-09ba-41eb-9ca5-fa78730e94f3",
+        "relationship--89cbf71b-9189-43ac-927f-e5aaf9d66df0",
+        "relationship--aeea094c-6ea6-4b32-b723-bb475cf42681"
+    ],
+    "graph_nodes": [
+        {
+            "count": 4,
+            "id": 0,
+            "texts": [
+                "LoJax",
+                "Trojan.Mebromi",
+                "Hacking Team UEFI Rootkit",
+                "Hacking Team"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 6,
+            "id": 1,
+            "texts": [
+                "UEFI BIOS rootkit",
+                "remote access software",
+                "BIOS modification",
+                "removal",
+                "UEFI BIOS rootkit",
+                "remote access software"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 2,
+            "id": 2,
+            "texts": [
+                "targeted systems",
+                "targeted systems"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "file"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 2,
+            "id": 4,
+            "texts": [
+                "itself",
+                "company"
+            ],
+            "label": "OTHER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 5
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 2
+        }
+    ],
+    "verbs": {
+        "be": 2,
+        "persist": 2,
+        "on": 2,
+        "perform": 1,
+        "execute": 1,
+        "protect": 1,
+        "from": 2,
+        "develop": 2
+    }
+}

@@ -1,0 +1,180 @@
+{
+    "id": "T1036.001",
+    "tech_id": "T1036.001",
+    "tech_name": "Invalid Code Signature",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005"
+    ],
+    "features": [
+        "DATA",
+        "FUNCTION",
+        "COMPONENT",
+        "NETWORK",
+        "REGISTRY"
+    ],
+    "locations": [
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--0c837763-c44c-45cc-8c44-332667481a31",
+        "relationship--469585eb-231d-4ecb-8fc5-fb4f538c3875",
+        "relationship--47109a67-e1af-4f5c-8c58-c1580ff5c6ec",
+        "relationship--490cc52d-1f6d-45d2-aa0e-2221264c0de0",
+        "relationship--893c9a7a-7f2c-4b96-877e-06870d5f989f",
+        "relationship--add09428-6eda-4cb2-8817-008038ed4f00",
+        "relationship--c845732e-054e-4915-81d2-7c5e36da9eb7",
+        "relationship--dc9643aa-7b61-4cb1-b181-3d88c0e9742a"
+    ],
+    "graph_nodes": [
+        {
+            "count": 5,
+            "id": 0,
+            "texts": [
+                "WindTail",
+                "BADNEWS",
+                "APT37",
+                "Windshift",
+                "Gelsemium"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 8,
+            "id": 1,
+            "texts": [
+                "revoked certificates",
+                "invalid Authenticode certificate",
+                "fake certificates",
+                "invalid digital certificates",
+                "revoked certificates",
+                "fake and invalid digital certificates",
+                "invalid certificate",
+                "unverified signatures"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 6,
+            "id": 2,
+            "texts": [
+                "apparent effort",
+                "Regin stage 1 modules",
+                "malware",
+                "malware",
+                "PcShare",
+                "attempt"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "64-bit systems"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 4,
+            "id": 4,
+            "texts": [
+                "Broadcom Corporation",
+                "Microsoft Corporation",
+                "Tencent Technology (Shenzhen) Company",
+                "legitimate"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "NETWIRE client"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 1,
+            "id": 6,
+            "texts": [
+                "DLLs"
+            ],
+            "label": "REGISTRY"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 5
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 3
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "0_6",
+            "source": 0,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "1_6",
+            "source": 1,
+            "dest": 6,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "with": 4,
+        "in": 3,
+        "for": 1,
+        "originate": 1,
+        "sign": 3,
+        "as": 1,
+        "use": 3,
+        "appear": 1,
+        "on": 2
+    }
+}

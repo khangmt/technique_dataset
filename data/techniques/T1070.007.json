@@ -1,0 +1,82 @@
+{
+    "id": "T1070.007",
+    "tech_id": "T1070.007",
+    "tech_name": "Clear Network Connection History and Configurations",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005"
+    ],
+    "features": [
+        "DATA",
+        "NETWORK"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows",
+        "Network"
+    ],
+    "procedures": [
+        "relationship--bf19c419-8736-4a1f-83cf-23ba5438ad4c",
+        "relationship--e961cbae-92dc-48bf-9284-440173292c44"
+    ],
+    "graph_nodes": [
+        {
+            "count": 1,
+            "id": 0,
+            "texts": [
+                "SUNBURST"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 2,
+            "id": 1,
+            "texts": [
+                "firewall rules",
+                "server logs"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 2,
+            "texts": [
+                "Volt Typhoon"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "IPs"
+            ],
+            "label": "NETWORK"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "remove": 2,
+        "inspect": 1
+    }
+}

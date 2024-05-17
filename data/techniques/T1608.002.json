@@ -1,0 +1,101 @@
+{
+    "id": "T1608.002",
+    "tech_id": "T1608.002",
+    "tech_name": "Upload Tool",
+    "best_phrases": [],
+    "tactics": [
+        "TA0042"
+    ],
+    "features": [
+        "FUNCTION",
+        "NETWORK",
+        "COMPONENT"
+    ],
+    "locations": [
+        "PRE"
+    ],
+    "procedures": [
+        "relationship--269bad6d-f72d-4deb-b125-7cb1e032efc8",
+        "relationship--ba2dfbfe-4979-448b-8f87-bdc44a867bbf",
+        "relationship--f2e028ed-49e0-41ec-8400-8f8dc1ae6435"
+    ],
+    "graph_nodes": [
+        {
+            "count": 3,
+            "id": 0,
+            "texts": [
+                "Lazarus Group",
+                "UNC3890 actors",
+                "Threat Group-3390"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 2,
+            "id": 1,
+            "texts": [
+                "servers",
+                "compromised websites"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 5,
+            "id": 2,
+            "texts": [
+                "tools",
+                "tools",
+                "WCE",
+                "tools",
+                "gsecdump"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "infrastructure"
+            ],
+            "label": "COMPONENT"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 3
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 1,
+        "host": 1,
+        "stage": 2,
+        "on": 4
+    }
+}

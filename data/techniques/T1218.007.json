@@ -1,0 +1,296 @@
+{
+    "id": "T1218.007",
+    "tech_id": "T1218.007",
+    "tech_name": "Msiexec",
+    "best_phrases": [
+        "suspended msiexec.exe process",
+        "msiexec.exe command-line utility",
+        "Msiexec",
+        "msiexec",
+        "msiexec.exe",
+        "msiexec.exe process"
+    ],
+    "tactics": [
+        "TA0005"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "NETWORK",
+        "ENCRYPTION",
+        "REGISTRY",
+        "COMPONENT"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--046716ed-d9ea-4416-a3a6-2dfa87584ce4",
+        "relationship--0da9ee24-37ac-4568-b1fc-d784f05dfc97",
+        "relationship--16ad2735-61b3-4cb4-8f23-439df70715c8",
+        "relationship--184ee176-b599-4586-b1fc-5758c91a0c23",
+        "relationship--202e085f-f9aa-48a3-a49a-d033054c8c51",
+        "relationship--24c80905-1afb-43fa-b1c0-e8bf2e7e87e2",
+        "relationship--2e03c99d-473d-406e-b903-1fc9c9a6a5ec",
+        "relationship--2f350d97-8492-4eb4-8640-2c3ae2bc8df1",
+        "relationship--331fcf7d-5663-40a9-b86c-be005221e882",
+        "relationship--3655c6ae-38bf-4cd3-b229-b7e182fe6513",
+        "relationship--6dca4adf-499d-4cea-b3df-48566ff6deeb",
+        "relationship--8d3f505a-35d6-4c79-afc3-88979d9e156c",
+        "relationship--900cbabe-4e55-434b-92ae-f458be38852a",
+        "relationship--bf5b23c2-9b65-4909-ae6c-21b8ccadd930",
+        "relationship--c551c942-a191-4fe9-81a3-cc795d7dea38",
+        "relationship--d220a65b-c4bf-4a23-b62d-6beb81eb646a",
+        "relationship--d3e2ba96-28bb-48be-b46b-3c2349f4d0cd",
+        "relationship--e3540915-e2f8-4f99-8f81-57a566e9d115",
+        "relationship--e3fa0df1-d388-4e74-b561-acc5094a8e1b",
+        "relationship--e8537bf5-f4b6-4b37-948d-57f49eb00984",
+        "relationship--f0966da3-d23d-4949-99d6-ddc680f4a5f3",
+        "relationship--fd1836cc-0329-4501-812a-676dd234679e"
+    ],
+    "graph_nodes": [
+        {
+            "count": 21,
+            "id": 0,
+            "texts": [
+                "Chaes",
+                "Molerats",
+                "Duqu",
+                "Metamorfo",
+                "DEADEYE",
+                "IcedID",
+                "RCSession",
+                "TA505",
+                "Melcoz",
+                "QakBot",
+                "Grandoreiro",
+                "AppleJeus",
+                "Javali",
+                "Ragnar Locker",
+                "Rancor",
+                "ZIRCONIUM",
+                "Machete",
+                "LoudMiner",
+                "Maze",
+                "FlawedAmmyy",
+                "Clop"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 10,
+            "id": 1,
+            "texts": [
+                ".MSI files",
+                "infection chain",
+                "PROPERTY=VALUE pair",
+                "files",
+                "Windows Installer files",
+                "MSI files",
+                "MSI files",
+                "installer files",
+                "MSI files",
+                "MSI files"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 5,
+            "id": 2,
+            "texts": [
+                "initial way",
+                "itself",
+                "that",
+                "which",
+                "some"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 36,
+            "id": 3,
+            "texts": [
+                "msiexec.exe",
+                "MSI payload",
+                "msiexec",
+                "Windows Installer packages",
+                "main payload",
+                "installer packages",
+                "MsiExec.exe",
+                "msiexec.exe",
+                "suspended msiexec.exe process",
+                "beacons",
+                "msiexec.exe process",
+                "msiexec",
+                "embedded VBScript",
+                "MSIExec",
+                "cmd.exe processes",
+                "MSI installer",
+                "MSI installer",
+                "payloads",
+                "unsigned MSI package",
+                "msiexec.exe",
+                "msiexec",
+                "msiexec.exe command-line utility",
+                "msiexec",
+                "Machete malware",
+                "MSI installer",
+                "virtualization software",
+                "components",
+                "ransomware attacks",
+                "command-line",
+                "msiexec",
+                "RemoteUtilities",
+                "Msiexec",
+                "service",
+                "msiexec.exe",
+                "msiexec.exe",
+                "security tools"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "56-bit encryption key"
+            ],
+            "label": "ENCRYPTION"
+        },
+        {
+            "count": 2,
+            "id": 5,
+            "texts": [
+                "C2",
+                "HTTP"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 1,
+            "id": 6,
+            "texts": [
+                "DLLs"
+            ],
+            "label": "REGISTRY"
+        },
+        {
+            "count": 1,
+            "id": 7,
+            "texts": [
+                "system"
+            ],
+            "label": "COMPONENT"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 8
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 24
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 4
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 3
+        },
+        {
+            "id": "3_5",
+            "source": 3,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "0_6",
+            "source": 0,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "3_0",
+            "source": 3,
+            "dest": 0,
+            "count": 2
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "3_7",
+            "source": 3,
+            "dest": 7,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 19,
+        "as": 3,
+        "start": 1,
+        "execute": 8,
+        "contain": 1,
+        "decrypt": 1,
+        "from": 3,
+        "inject": 1,
+        "into": 2,
+        "send": 1,
+        "to": 1,
+        "inside": 1,
+        "with": 2,
+        "spawn": 1,
+        "instal": 2,
+        "over": 1,
+        "install": 3,
+        "deliver": 1,
+        "for": 1,
+        "of": 1,
+        "disable": 1,
+        "on": 1
+    }
+}

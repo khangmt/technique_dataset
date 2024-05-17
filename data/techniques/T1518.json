@@ -1,0 +1,452 @@
+{
+    "id": "T1518",
+    "tech_id": "T1518",
+    "tech_name": "Software Discovery",
+    "best_phrases": [],
+    "tactics": [
+        "TA0007"
+    ],
+    "features": [
+        "FUNCTION",
+        "COMPONENT",
+        "DATA",
+        "REGISTRY",
+        "USER",
+        "NETWORK",
+        "DIRECTORY"
+    ],
+    "locations": [
+        "Windows",
+        "Azure AD",
+        "Office 365",
+        "SaaS",
+        "IaaS",
+        "Linux",
+        "macOS",
+        "Google Workspace"
+    ],
+    "procedures": [
+        "relationship--082b64f6-cc70-4bc8-a49f-bf0f125883f7",
+        "relationship--0ecc1e3a-340a-42b6-9739-c6a243ffaa8f",
+        "relationship--163851e2-5236-41cb-897f-06e33624c3ec",
+        "relationship--16ccf88b-5f28-41d3-bc34-6580be0dbe3f",
+        "relationship--17317bb7-40a1-47a0-8200-c89df3a339b2",
+        "relationship--222ce94a-bb33-476b-b4c3-56b529d9af03",
+        "relationship--2b89f806-5b78-4599-9536-13b47c35d26d",
+        "relationship--2f8394e6-2cf2-473a-b60a-6de2e69c39c8",
+        "relationship--31029adf-2b28-4d7f-bdd3-b07f55374eae",
+        "relationship--3407bbe8-bceb-42f1-824b-d92d9972d917",
+        "relationship--39c98d86-3f44-4a47-b7e5-4cb3e4bf97a7",
+        "relationship--3c9c3d3d-a209-43dc-ae8d-53cd4c1de65c",
+        "relationship--41e8c16e-bfef-415f-b898-b76a1f527cc2",
+        "relationship--4859e904-e404-4bae-a106-d347c9cc2e18",
+        "relationship--54e0e380-aef8-4c63-9792-ebda05affee6",
+        "relationship--70059c24-ccde-4832-854e-3bcb71c294a9",
+        "relationship--715262b6-9d31-4589-ba53-fb5d7be3f1f5",
+        "relationship--77c3f6a1-f25c-4669-bdc1-0f358793dd34",
+        "relationship--794403a3-232e-4cc3-85e2-cc997825dfa8",
+        "relationship--8455e704-68fd-4610-b63d-0d124a660802",
+        "relationship--87d7a5b5-8f45-4a88-bc3c-f73f67a50255",
+        "relationship--87e99b39-e634-477e-b260-6098abc58dc2",
+        "relationship--91038a74-575b-4f2e-9dba-767b50b8e4ab",
+        "relationship--93d35fd7-3a55-4de1-a568-0fa50f81d594",
+        "relationship--ab058a49-a8fc-403d-ae97-9137625c82d7",
+        "relationship--ac2b9eab-5d0e-4ab5-9b5b-eebd454737d6",
+        "relationship--af7ec7e9-08d2-4459-8c05-047185799058",
+        "relationship--c1214ef3-9bff-4702-8f54-4e6ddf955d93",
+        "relationship--c61ca699-62e8-4c42-b20c-3c042c0fb153",
+        "relationship--d066c8bf-591c-4923-8794-5336cd568ab2",
+        "relationship--d07460c8-0d13-4c25-81f7-56e5198f07c5",
+        "relationship--d1a2cd6c-1c7b-4c1a-9416-106e7951642c",
+        "relationship--d3971408-ef1b-4aae-9477-3319a1b97523",
+        "relationship--dd4c57df-6ddc-4a41-b1ee-5f72556fc57d",
+        "relationship--e342ee2b-d7b6-4a48-a689-06a68efe589e",
+        "relationship--e4489924-d87d-4a18-8702-418361f6a2bb",
+        "relationship--e848e92c-af22-4284-a27d-7c2673a4b0fe",
+        "relationship--f372cb23-0736-4cbb-8ba0-3388599226f9",
+        "relationship--f60ed279-c720-4906-9e63-3cd7ce49e1e0",
+        "relationship--f79c163a-25c0-4694-b1ca-50ab1eda8651"
+    ],
+    "graph_nodes": [
+        {
+            "count": 35,
+            "id": 0,
+            "texts": [
+                "Metamorfo",
+                "XCSSET",
+                "Siloscape",
+                "CharmPower",
+                "DustySky",
+                "SUGARDUMP",
+                "ComRAT",
+                "Windigo",
+                "Inception",
+                "Dridex",
+                "SpicyOmelette",
+                "BRONZE BUTLER",
+                "Sidewinder",
+                "Orz",
+                "Windshift",
+                "MuddyWater",
+                "Bazar",
+                "TajMahal",
+                "Wizard Spider",
+                "P.A.S. Webshell",
+                "SideCopy",
+                "Mustang Panda",
+                "InvisiMole",
+                "threat actors",
+                "KGH_SPY",
+                "down_new",
+                "SVCReady",
+                "HotCroissant",
+                "MarkiRAT",
+                "HEXANE",
+                "QakBot",
+                "Dyre",
+                "threat actors",
+                "Woody RAT",
+                "RTM"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 34,
+            "id": 1,
+            "texts": [
+                "compromised system",
+                "system processes",
+                "browsers",
+                "compromised systems",
+                "compromised host",
+                "infected host",
+                "infected machine",
+                "Chrome, Opera, Edge Chromium, and Firefox browsers",
+                "version number",
+                "compromised host",
+                "default browser",
+                "browser",
+                "targeted systems",
+                "compromised systems",
+                "system",
+                "targeted system",
+                "infected host",
+                "target machine",
+                "infected host",
+                "compromised machine",
+                "Safari",
+                "compromised host",
+                "victim system",
+                "system",
+                "victim system",
+                "infected host",
+                "disk",
+                "infected machine",
+                "compromised host",
+                "infected system",
+                "infected host",
+                "victim drives",
+                "machine",
+                "system"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 48,
+            "id": 2,
+            "texts": [
+                "banking applications",
+                "ps aux",
+                "system processes",
+                "browsers",
+                "exfiltration capabilities",
+                "grep command",
+                "kubectl binary",
+                "installed software",
+                "installed applications",
+                "ShimRatReporter",
+                "installed software",
+                "installed software",
+                "communications module",
+                "Cobalt Strike System Profiler",
+                "applications",
+                "Java",
+                "script",
+                "installed software",
+                "installed software",
+                "installed software",
+                "software",
+                "tools",
+                "software",
+                "malware",
+                "installed software",
+                "PowerShell backdoor",
+                "installed applications",
+                "PowerShell script",
+                "Get-DataInfo.ps1",
+                "version",
+                "InstallUtil.exe program",
+                "installed software",
+                "software",
+                "user login",
+                "file",
+                "DeployJava.js",
+                "installed software",
+                "installed applications",
+                "installed software",
+                "applications",
+                "programs",
+                "installed programs",
+                "installed programs",
+                "installed software",
+                "banking software",
+                "actions",
+                "backdoor",
+                "installed software"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 2,
+            "id": 3,
+            "texts": [
+                "Volt Typhoon",
+                "Trooper"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 3,
+            "id": 4,
+            "texts": [
+                "Registry",
+                "Registry",
+                "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\App Paths registry key"
+            ],
+            "label": "REGISTRY"
+        },
+        {
+            "count": 19,
+            "id": 5,
+            "texts": [
+                "information",
+                "Chrome, Opera, Edge Chromium, and Firefox browsers",
+                "version number",
+                "version",
+                "Internet Explorer version",
+                "Internet Explorer (IE) version",
+                "installed backup software information",
+                "PHP server configuration details",
+                "version information",
+                "browser information",
+                "version",
+                "InstallUtil.exe program",
+                "information",
+                "users",
+                "file",
+                "DeployJava.js",
+                "information",
+                "files",
+                ".NET, PowerShell, and Python information"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 2,
+            "id": 6,
+            "texts": [
+                "victim",
+                "victim"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 1,
+            "id": 7,
+            "texts": [
+                "Skype connectivity"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 1,
+            "id": 8,
+            "texts": [
+                "Telegram installation directory"
+            ],
+            "label": "DIRECTORY"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 12
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 32
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 3
+        },
+        {
+            "id": "2_0",
+            "source": 2,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "3_5",
+            "source": 3,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "4_5",
+            "source": 4,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "5_2",
+            "source": 5,
+            "dest": 2,
+            "count": 5
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 17
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 12
+        },
+        {
+            "id": "5_1",
+            "source": 5,
+            "dest": 1,
+            "count": 7
+        },
+        {
+            "id": "1_6",
+            "source": 1,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "2_5",
+            "source": 2,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "5_6",
+            "source": 5,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "0_7",
+            "source": 0,
+            "dest": 7,
+            "count": 1
+        },
+        {
+            "id": "7_1",
+            "source": 7,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "4_2",
+            "source": 4,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "0_8",
+            "source": 0,
+            "dest": 8,
+            "count": 1
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "search": 2,
+        "for": 12,
+        "use": 6,
+        "enumerate": 7,
+        "impact": 1,
+        "with": 1,
+        "of": 6,
+        "query": 2,
+        "on": 21,
+        "list": 4,
+        "gather": 3,
+        "identify": 5,
+        "check": 2,
+        "inject": 1,
+        "discover": 1,
+        "by": 1,
+        "detect": 1,
+        "collect": 7,
+        "instal on": 2,
+        "utilize": 2,
+        "from": 9,
+        "about": 1,
+        "execute on": 1,
+        "execute": 1,
+        "deploy": 1,
+        "fingerprint": 1,
+        "retrieve": 1,
+        "scan": 1,
+        "find": 1,
+        "determine": 1
+    }
+}

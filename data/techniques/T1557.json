@@ -1,0 +1,108 @@
+{
+    "id": "T1557",
+    "tech_id": "T1557",
+    "tech_name": "Adversary-in-the-Middle",
+    "best_phrases": [],
+    "tactics": [
+        "TA0006",
+        "TA0009"
+    ],
+    "features": [
+        "NETWORK",
+        "USER",
+        "DATA",
+        "FUNCTION"
+    ],
+    "locations": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Network"
+    ],
+    "procedures": [
+        "relationship--135df9c1-63cf-4323-a803-6d54a9ac8b22",
+        "relationship--81c1e9d6-f478-4adb-af70-cc92e8094e8a"
+    ],
+    "graph_nodes": [
+        {
+            "count": 2,
+            "id": 0,
+            "texts": [
+                "Dok",
+                "Kimsuky"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 5,
+            "id": 1,
+            "texts": [
+                "web traffic",
+                "victim HTTPs traffic",
+                "web traffic",
+                "accessed website",
+                "victim"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 1,
+            "id": 2,
+            "texts": [
+                "modified versions"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "PHProxy"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 2,
+            "id": 4,
+            "texts": [
+                "accessed website",
+                "victim"
+            ],
+            "label": "USER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "proxie": 1,
+        "alter": 1,
+        "use": 1,
+        "examine": 1,
+        "of": 1,
+        "between": 1
+    }
+}

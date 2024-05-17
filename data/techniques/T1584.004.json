@@ -1,0 +1,185 @@
+{
+    "id": "T1584.004",
+    "tech_id": "T1584.004",
+    "tech_name": "Server",
+    "best_phrases": [
+        "Server",
+        "server"
+    ],
+    "tactics": [
+        "TA0042"
+    ],
+    "features": [
+        "NETWORK",
+        "FUNCTION",
+        "COMPONENT"
+    ],
+    "locations": [
+        "PRE"
+    ],
+    "procedures": [
+        "relationship--0dcce53a-3ac1-4528-8c34-f85569638740",
+        "relationship--12948e09-2774-4b91-b9d1-018b41f7f923",
+        "relationship--20aaed95-65ce-4a0f-9e25-4a4156889a84",
+        "relationship--26bac510-efd4-499c-8272-3cf186d3b4e3",
+        "relationship--65eac98e-82b8-4592-a121-bea99f80dc87",
+        "relationship--82bfe762-9468-458e-801a-13387a271521",
+        "relationship--dd49448e-10e3-4138-916b-1f3ba0727104",
+        "relationship--f5c80a6c-8bbe-449d-80fb-8c5d7035d25d",
+        "relationship--f7d3d7fc-e25f-4b1f-b7ea-7c19adb300bd",
+        "relationship--ff6f4b5b-1b5f-4f8f-9307-345a3c278151"
+    ],
+    "graph_nodes": [
+        {
+            "count": 9,
+            "id": 0,
+            "texts": [
+                "Lazarus Group",
+                "Dragonfly",
+                "threat actors",
+                "campaign",
+                "Turla",
+                "APT16",
+                "threat actors",
+                "Indrik Spider",
+                "Earth Lusca"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 14,
+            "id": 1,
+            "texts": [
+                "servers",
+                "compromised PRTG servers",
+                "C2",
+                "legitimate websites",
+                "malware modules",
+                "C2",
+                "server",
+                "compromised servers",
+                "legitimate sites",
+                "staging servers",
+                "web servers",
+                "C2",
+                "legitimate websites",
+                "compromised web servers"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 5,
+            "id": 2,
+            "texts": [
+                "tools",
+                "malware modules",
+                "C2",
+                "second-stage payloads",
+                "fake updates"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 5,
+            "id": 3,
+            "texts": [
+                "Volt Typhoon",
+                "organizations",
+                "part",
+                "that",
+                "part"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 3,
+            "id": 4,
+            "texts": [
+                "infrastructure",
+                "infrastructure",
+                "operational infrastructure"
+            ],
+            "label": "COMPONENT"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 10
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 3
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "4_0",
+            "source": 4,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "compromise": 6,
+        "stage": 1,
+        "use": 3,
+        "for": 4,
+        "from": 1,
+        "host": 1,
+        "of": 3,
+        "as": 6,
+        "by": 2,
+        "serve": 1
+    }
+}

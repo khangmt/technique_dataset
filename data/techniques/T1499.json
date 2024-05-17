@@ -1,0 +1,116 @@
+{
+    "id": "T1499",
+    "tech_id": "T1499",
+    "tech_name": "Endpoint Denial of Service",
+    "best_phrases": [],
+    "tactics": [
+        "TA0040"
+    ],
+    "features": [
+        "FUNCTION",
+        "NETWORK",
+        "COMPONENT"
+    ],
+    "locations": [
+        "Windows",
+        "Azure AD",
+        "Office 365",
+        "SaaS",
+        "IaaS",
+        "Linux",
+        "macOS",
+        "Google Workspace",
+        "Containers"
+    ],
+    "procedures": [
+        "relationship--5e5b108b-fec6-4d44-ad9a-9302d4f6e368",
+        "relationship--927272db-cc41-45ce-bb38-e3e37ac3a68e",
+        "relationship--dda297c6-2edc-47c5-b32b-0d4ef0f85be4"
+    ],
+    "graph_nodes": [
+        {
+            "count": 3,
+            "id": 0,
+            "texts": [
+                "OnionDuke",
+                "Sandworm Team",
+                "ZxShell"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 6,
+            "id": 1,
+            "texts": [
+                "capability",
+                "Denial of Service module",
+                "Denial",
+                "Service",
+                "service",
+                "feature"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 2,
+            "texts": [
+                "Georgian web hosting provider"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 2,
+            "id": 3,
+            "texts": [
+                "Georgian government, non-government, and private sector websites",
+                "SYN flood attack"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "host"
+            ],
+            "label": "COMPONENT"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "have": 2,
+        "use": 1,
+        "of": 1,
+        "disrupt": 1,
+        "compromise": 1,
+        "to": 1,
+        "perform": 1,
+        "on": 1
+    }
+}

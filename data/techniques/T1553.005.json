@@ -1,0 +1,117 @@
+{
+    "id": "T1553.005",
+    "tech_id": "T1553.005",
+    "tech_name": "Mark-of-the-Web Bypass",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005"
+    ],
+    "features": [
+        "DATA",
+        "FUNCTION",
+        "COMPONENT"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--246e66e1-ddd2-4e51-b54c-1579f6ea1626",
+        "relationship--7a402933-faba-4de0-a7a5-3b44761cc062",
+        "relationship--a05a823c-de82-43ec-b235-4f09e0527811",
+        "relationship--c7602a92-d2d5-488d-b0b7-986ec1ef594d"
+    ],
+    "graph_nodes": [
+        {
+            "count": 4,
+            "id": 0,
+            "texts": [
+                "TA505",
+                "Amadey",
+                "QakBot",
+                "APT29"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 3,
+            "id": 1,
+            "texts": [
+                ".iso files",
+                "ISO files",
+                "Mark of the Web (MOTW) security measures"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 4,
+            "id": 2,
+            "texts": [
+                ".lnk files",
+                "VHDX files",
+                "ISO images",
+                "HTML"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 2,
+            "id": 3,
+            "texts": [
+                ":Zone.Identifier",
+                "zero"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 2,
+            "id": 4,
+            "texts": [
+                "ADS area",
+                "Mark-of-the-Web"
+            ],
+            "label": "COMPONENT"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 3
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 1,
+        "deploy": 1,
+        "modify": 1,
+        "to": 1,
+        "in": 4,
+        "bypass": 1,
+        "embed": 1,
+        "evade": 1
+    }
+}

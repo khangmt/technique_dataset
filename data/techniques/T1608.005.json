@@ -1,0 +1,118 @@
+{
+    "id": "T1608.005",
+    "tech_id": "T1608.005",
+    "tech_name": "Link Target",
+    "best_phrases": [],
+    "tactics": [
+        "TA0042"
+    ],
+    "features": [
+        "NETWORK",
+        "FUNCTION",
+        "DATA"
+    ],
+    "locations": [
+        "PRE"
+    ],
+    "procedures": [
+        "relationship--33119ed3-3f9c-43b1-a371-53a1cfdce144",
+        "relationship--9038cd4b-182b-469f-ac45-83dedf5110c9"
+    ],
+    "graph_nodes": [
+        {
+            "count": 3,
+            "id": 0,
+            "texts": [
+                "LuminousMoth",
+                "Silent Librarian",
+                "credential harvesting campaigns"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 3,
+            "id": 1,
+            "texts": [
+                "link",
+                "victim organization login pages",
+                "staged websites"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 3,
+            "id": 2,
+            "texts": [
+                "that",
+                "later use",
+                "use"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "Dropbox file"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 2,
+            "id": 4,
+            "texts": [
+                "spear-phishing operations",
+                "URL shorteners"
+            ],
+            "label": "FUNCTION"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 3
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "2_0",
+            "source": 2,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "create": 1,
+        "use": 1,
+        "to": 1,
+        "in": 2,
+        "clone": 1,
+        "for": 3,
+        "make": 1,
+        "of": 1
+    }
+}

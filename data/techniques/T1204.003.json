@@ -1,0 +1,64 @@
+{
+    "id": "T1204.003",
+    "tech_id": "T1204.003",
+    "tech_name": "Malicious Image",
+    "best_phrases": [],
+    "tactics": [
+        "TA0002"
+    ],
+    "features": [
+        "DATA",
+        "COMPONENT"
+    ],
+    "locations": [
+        "IaaS",
+        "Containers"
+    ],
+    "procedures": [
+        "relationship--6674eb2b-8295-4af4-b4d2-0659c15d3c71"
+    ],
+    "graph_nodes": [
+        {
+            "count": 1,
+            "id": 0,
+            "texts": [
+                "TeamTNT"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 1,
+            "id": 1,
+            "texts": [
+                "users"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 2,
+            "texts": [
+                "Docker images"
+            ],
+            "label": "COMPONENT"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "on": 1,
+        "execute": 1
+    }
+}

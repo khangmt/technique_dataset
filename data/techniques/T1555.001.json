@@ -1,0 +1,135 @@
+{
+    "id": "T1555.001",
+    "tech_id": "T1555.001",
+    "tech_name": "Keychain",
+    "best_phrases": [
+        "macos keychain",
+        "keychain services api functions",
+        "Keychain"
+    ],
+    "tactics": [
+        "TA0006"
+    ],
+    "features": [
+        "DATA",
+        "FUNCTION",
+        "COMPONENT"
+    ],
+    "locations": [
+        "macOS"
+    ],
+    "procedures": [
+        "relationship--46970d57-04cb-4ffb-9c7e-ff66c0811f25",
+        "relationship--6209bf2d-6ffd-4740-96cb-ef04379ae126",
+        "relationship--86fd8738-ab8f-4b80-8c8d-fc80df9e2c07",
+        "relationship--b32c6aa0-9299-4ada-a626-9805ba1f1610",
+        "relationship--d22b326c-ceaf-424b-b263-e0830bab9bf3",
+        "relationship--f5cf9158-6f25-4167-8263-5a356bf816b9"
+    ],
+    "graph_nodes": [
+        {
+            "count": 5,
+            "id": 0,
+            "texts": [
+                "Green Lambert",
+                "Proton",
+                "MacMa",
+                "Calisto",
+                "iKitten"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 5,
+            "id": 1,
+            "texts": [
+                "Keychain Services API functions",
+                "SecKeychainItemCopyAttributesAndData",
+                "passwords",
+                "SecKeychainFindInternetPassword",
+                "LaZagne"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 12,
+            "id": 2,
+            "texts": [
+                "SecKeychainItemCopyAttributesAndData",
+                "passwords",
+                "SecKeychainFindInternetPassword",
+                "credentials",
+                "files",
+                "keychains",
+                "credentials",
+                "credentials",
+                "Keychain storage data",
+                "passwords/tokens",
+                "file",
+                "keychains"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 3,
+            "id": 3,
+            "texts": [
+                "macOS keychain",
+                "macOS Keychains",
+                "system"
+            ],
+            "label": "COMPONENT"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 8
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 3
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 1,
+        "collect": 3,
+        "gather": 1,
+        "in": 2,
+        "for": 1,
+        "dump": 1,
+        "from": 4,
+        "obtain": 1,
+        "copy": 1,
+        "to": 2,
+        "on": 1
+    }
+}

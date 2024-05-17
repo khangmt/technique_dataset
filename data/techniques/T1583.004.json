@@ -1,0 +1,204 @@
+{
+    "id": "T1583.004",
+    "tech_id": "T1583.004",
+    "tech_name": "Server",
+    "best_phrases": [
+        "Server",
+        "server",
+        "control server"
+    ],
+    "tactics": [
+        "TA0042"
+    ],
+    "features": [
+        "NETWORK",
+        "FUNCTION",
+        "DATA",
+        "COMPONENT",
+        "USER"
+    ],
+    "locations": [
+        "PRE"
+    ],
+    "procedures": [
+        "relationship--35fe4117-1f37-4968-8b9a-21ce4217516f",
+        "relationship--45c9645b-05df-4ec0-9965-293587c3928e",
+        "relationship--546cf516-55b1-49cf-9807-5752c222f906",
+        "relationship--576cbf79-037c-4265-af56-cd0d7a57c1b9",
+        "relationship--5a76872f-862b-414c-a71d-f0dc39a6c3b4",
+        "relationship--b4ae0cf8-ad1f-4813-9e07-fc3faba1454e",
+        "relationship--b923a6b3-acae-4ecf-bb56-63188d0e4553",
+        "relationship--dd033098-eb56-4c17-90d7-c7673f04bcd6"
+    ],
+    "graph_nodes": [
+        {
+            "count": 7,
+            "id": 0,
+            "texts": [
+                "Lazarus Group",
+                "GALLIUM",
+                "Kimsuky",
+                "threat actors",
+                "Sandworm Team",
+                "threat actors",
+                "Earth Lusca"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 9,
+            "id": 1,
+            "texts": [
+                "servers",
+                "Taiwan-based servers",
+                "hosting servers",
+                "servers",
+                "servers",
+                "C2",
+                "control server",
+                "servers",
+                "server"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 5,
+            "id": 2,
+            "texts": [
+                "tools",
+                "operation",
+                "operations",
+                "hosted services",
+                "operations"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 6,
+            "id": 3,
+            "texts": [
+                "prepaid cards",
+                "virtual currency",
+                "Bitcoin",
+                "resellers",
+                "hosting companies",
+                "some"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 4,
+            "id": 4,
+            "texts": [
+                "prepaid cards",
+                "virtual currency",
+                "free account",
+                "role"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "infrastructure"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 1,
+            "id": 6,
+            "texts": [
+                "at least one identified persona"
+            ],
+            "label": "USER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 7
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 4
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 3
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "5_3",
+            "source": 5,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "6_4",
+            "source": 6,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "acquire": 2,
+        "host": 1,
+        "use": 3,
+        "purchase": 3,
+        "with": 3,
+        "lease": 2,
+        "from": 3,
+        "enable": 1,
+        "for": 5,
+        "register": 1,
+        "of": 1
+    }
+}

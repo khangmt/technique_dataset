@@ -1,0 +1,112 @@
+{
+    "id": "T1176",
+    "tech_id": "T1176",
+    "tech_name": "Browser Extensions",
+    "best_phrases": [],
+    "tactics": [
+        "TA0003"
+    ],
+    "features": [
+        "DATA",
+        "USER",
+        "NETWORK",
+        "FUNCTION"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--4c142924-33e7-4920-b1c7-9259d08fbb6e",
+        "relationship--5b5b5650-916b-4519-8cbd-da90589fe7b6",
+        "relationship--a09c5b62-cd6f-40e4-b614-99b3f29de0f5",
+        "relationship--b7366815-256b-4e67-839a-1eb9aba03721"
+    ],
+    "graph_nodes": [
+        {
+            "count": 4,
+            "id": 0,
+            "texts": [
+                "Kimsuky",
+                "OSX/Shlayer",
+                "Grandoreiro",
+                "Bundlore"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 8,
+            "id": 1,
+            "texts": [
+                "Google Chrome browser extensions",
+                "cookies",
+                "passwords",
+                "Safari browser extensions",
+                "browser extensions",
+                "cookies",
+                "user information",
+                "browser extensions"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 2,
+            "texts": [
+                "victims"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "ads"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "user searches"
+            ],
+            "label": "FUNCTION"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 6
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 2,
+        "infect": 1,
+        "steal": 2,
+        "install": 2,
+        "serve": 1,
+        "hijack": 1
+    }
+}

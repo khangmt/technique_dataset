@@ -1,0 +1,453 @@
+{
+    "id": "T1485",
+    "tech_id": "T1485",
+    "tech_name": "Data Destruction",
+    "best_phrases": [],
+    "tactics": [
+        "TA0040"
+    ],
+    "features": [
+        "DATA",
+        "COMPONENT",
+        "DIRECTORY",
+        "FUNCTION",
+        "USER",
+        "NETWORK",
+        "REGISTRY"
+    ],
+    "locations": [
+        "Windows",
+        "IaaS",
+        "Linux",
+        "macOS",
+        "Containers"
+    ],
+    "procedures": [
+        "relationship--063b76d3-a002-44a1-aafa-d626008ee786",
+        "relationship--13576b41-ec77-418c-b581-d3fa461df941",
+        "relationship--16873550-3105-4ce5-92fc-7b8127e47b5d",
+        "relationship--1b996e11-03b7-48fc-9ce2-cd08fdf0d07d",
+        "relationship--1c8208ad-b295-4e39-a928-40fc49f68fb4",
+        "relationship--27323a25-ef80-4519-b934-19f5ff090c70",
+        "relationship--31bf8ae4-e757-462c-aa30-c4a9dd92c677",
+        "relationship--333bd465-8713-4918-b60d-6128c52cbf04",
+        "relationship--40ad3b2e-e88c-43a2-82c5-666e8ae568e4",
+        "relationship--4b4ac061-dee5-44f3-b0f5-021889eae45e",
+        "relationship--5135ba35-04b7-4cfc-bc6c-03f63206e757",
+        "relationship--7767d727-fba8-4b7a-b7fe-137ed9261680",
+        "relationship--77cd972c-459f-4cac-ae21-3cc1a96df09e",
+        "relationship--a2e09ef2-2511-476b-8759-264843b4d772",
+        "relationship--a65cc371-4fa4-48e9-b95d-22ac81d67085",
+        "relationship--cfb4c18a-d76e-47fd-a89b-a4b4fce1c643",
+        "relationship--d5166d3e-246b-473c-9ff0-c5cc97dd91de",
+        "relationship--d7d25f15-7451-4092-acb5-1a22095bc3cd",
+        "relationship--e0cbaae4-9a39-4da4-a0a2-8c60dfa8e0c8",
+        "relationship--e45c0080-ee1c-4ef1-813f-d58b83de4a8b",
+        "relationship--e85a5fe7-cbfe-44b1-b297-d02f531c5fb1",
+        "relationship--f0c53ce3-a265-4da9-a553-c5f2faffa5b8",
+        "relationship--fe2aa2b2-6508-40e1-b0cf-13c66ae43064"
+    ],
+    "graph_nodes": [
+        {
+            "count": 23,
+            "id": 0,
+            "texts": [
+                "Diavol",
+                "WhisperGate",
+                "Industroyer",
+                "LAPSUS$",
+                "Xbash",
+                "Lazarus Group",
+                "REvil",
+                "Kazuar",
+                "HermeticWiper",
+                "Shamoon",
+                "PowerDuke",
+                "attacker",
+                "Olympic Destroyer",
+                "APT38",
+                "Gamaredon Group",
+                "CaddyWiper",
+                "BlackEnergy",
+                "Meteor",
+                "KillDisk",
+                "Sandworm Team",
+                "Proxysvc",
+                "attacker",
+                "StoneDrill"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 63,
+            "id": 1,
+            "texts": [
+                "files",
+                "files",
+                "1 MB",
+                "random extensions",
+                "0xcc",
+                "Windows files",
+                "ICS configuration",
+                "resources",
+                "on-premises",
+                "systems",
+                "file contents",
+                "data",
+                "heap memory",
+                "files",
+                "folders",
+                "files",
+                "random data",
+                "them",
+                "files",
+                "folders",
+                "files",
+                "symbolic links",
+                "random bytes",
+                "AppData folders",
+                "Windows",
+                "Volume Information",
+                "Program Files(x86)",
+                "PerfLogs",
+                "Program Files",
+                "Boot, System",
+                "My Documents",
+                "disk structures",
+                "operating system files",
+                "image files",
+                "generated data",
+                "random data",
+                "file",
+                "files",
+                "remote shares",
+                "files",
+                "folders",
+                "desktops",
+                "profiles",
+                "ownership",
+                "files",
+                "data",
+                "data",
+                "file contents",
+                "protected system locations",
+                "MBR and disk partitions",
+                "data",
+                "files",
+                "directories",
+                "zero-bytes",
+                "them",
+                "real content",
+                "system files",
+                "files",
+                "35 different file extensions",
+                "files",
+                "files",
+                "them",
+                "files"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 18,
+            "id": 2,
+            "texts": [
+                "targeted system",
+                "resources",
+                "on-premises",
+                "systems",
+                "AppData folders",
+                "Windows",
+                "Volume Information",
+                "Program Files(x86)",
+                "PerfLogs",
+                "Program Files",
+                "Boot, System",
+                "drives",
+                "compromised system",
+                "victim hard drives",
+                "protected system locations",
+                "MBR and disk partitions",
+                "Windows-based Human-Machine Interfaces",
+                "Windows"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 17,
+            "id": 3,
+            "texts": [
+                "data wiper module",
+                "ransomware capabilities",
+                "custom secure delete function",
+                "capability",
+                "FSCTL_MOVE_FILE",
+                "later variant",
+                "command",
+                "custom secure delete function",
+                "tools",
+                "SDelete",
+                "\"Destroy\" plug-in",
+                "RawDisk",
+                "Shamoon",
+                "effort",
+                "replacement",
+                "BlackEnergy KillDisk component",
+                "disk wiper module"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "registry keys"
+            ],
+            "label": "REGISTRY"
+        },
+        {
+            "count": 6,
+            "id": 5,
+            "texts": [
+                "resources",
+                "on-premises",
+                "systems",
+                "part",
+                "way",
+                "those"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 3,
+            "id": 6,
+            "texts": [
+                "target",
+                "victims",
+                "victim"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 3,
+            "id": 7,
+            "texts": [
+                "Linux-based databases",
+                "files",
+                "symbolic links"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 18,
+            "id": 8,
+            "texts": [
+                "files",
+                "folders",
+                "files",
+                "folders",
+                "AppData folders",
+                "Windows",
+                "Volume Information",
+                "Program Files(x86)",
+                "PerfLogs",
+                "Program Files",
+                "Boot, System",
+                "files",
+                "folders",
+                "desktops",
+                "profiles",
+                "files",
+                "directories",
+                "Windows directory"
+            ],
+            "label": "DIRECTORY"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 27
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 3
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 4
+        },
+        {
+            "id": "3_0",
+            "source": 3,
+            "dest": 0,
+            "count": 2
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 10
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 2
+        },
+        {
+            "id": "5_6",
+            "source": 5,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "2_6",
+            "source": 2,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "1_6",
+            "source": 1,
+            "dest": 6,
+            "count": 3
+        },
+        {
+            "id": "0_7",
+            "source": 0,
+            "dest": 7,
+            "count": 2
+        },
+        {
+            "id": "7_5",
+            "source": 7,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "5_3",
+            "source": 5,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 9
+        },
+        {
+            "id": "3_8",
+            "source": 3,
+            "dest": 8,
+            "count": 1
+        },
+        {
+            "id": "0_8",
+            "source": 0,
+            "dest": 8,
+            "count": 3
+        },
+        {
+            "id": "8_2",
+            "source": 8,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "8_1",
+            "source": 8,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "1_8",
+            "source": 1,
+            "dest": 8,
+            "count": 2
+        },
+        {
+            "id": "7_1",
+            "source": 7,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "8_6",
+            "source": 8,
+            "dest": 6,
+            "count": 2
+        },
+        {
+            "id": "3_5",
+            "source": 3,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "5_8",
+            "source": 5,
+            "dest": 8,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "delete": 10,
+        "from": 4,
+        "corrupt": 1,
+        "overwrite": 11,
+        "append": 1,
+        "with": 10,
+        "of": 6,
+        "clear": 1,
+        "destroy": 4,
+        "as": 2,
+        "use": 5,
+        "have": 3,
+        "wipe": 1,
+        "in": 8,
+        "for": 1,
+        "write": 2,
+        "across": 1,
+        "on": 4,
+        "by": 1,
+        "take": 1,
+        "contain": 1,
+        "store on": 1,
+        "fill": 1,
+        "basedon": 1,
+        "indicate": 1,
+        "target": 1
+    }
+}

@@ -1,0 +1,82 @@
+{
+    "id": "T1137.002",
+    "tech_id": "T1137.002",
+    "tech_name": "Office Test",
+    "best_phrases": [],
+    "tactics": [
+        "TA0003"
+    ],
+    "features": [
+        "FUNCTION",
+        "REGISTRY",
+        "COMPONENT"
+    ],
+    "locations": [
+        "Windows",
+        "Office 365"
+    ],
+    "procedures": [
+        "relationship--d0560e25-020d-4cd6-b61c-5fc82a757edc"
+    ],
+    "graph_nodes": [
+        {
+            "count": 1,
+            "id": 0,
+            "texts": [
+                "APT28"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 2,
+            "id": 1,
+            "texts": [
+                "Office Test persistence mechanism",
+                "code"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 2,
+            "texts": [
+                "Registry key HKCU\\Software\\Microsoft\\Office test\\Special\\Perf"
+            ],
+            "label": "REGISTRY"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "Microsoft Office"
+            ],
+            "label": "COMPONENT"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 1,
+        "add": 1,
+        "execute": 1,
+        "within": 1
+    }
+}

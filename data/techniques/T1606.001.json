@@ -1,0 +1,91 @@
+{
+    "id": "T1606.001",
+    "tech_id": "T1606.001",
+    "tech_name": "Web Cookies",
+    "best_phrases": [],
+    "tactics": [
+        "TA0006"
+    ],
+    "features": [
+        "DATA",
+        "FUNCTION",
+        "ENCRYPTION"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows",
+        "SaaS",
+        "IaaS"
+    ],
+    "procedures": [
+        "relationship--97ce46f9-4277-4700-99bb-b8bad6dfb393"
+    ],
+    "graph_nodes": [
+        {
+            "count": 1,
+            "id": 0,
+            "texts": [
+                "APT29"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 1,
+            "id": 1,
+            "texts": [
+                "MFA"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 2,
+            "id": 2,
+            "texts": [
+                "cookie value",
+                "OWA accounts"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "stolen secret key"
+            ],
+            "label": "ENCRYPTION"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "bypass": 1,
+        "generate": 1,
+        "set on": 1,
+        "from": 1
+    }
+}

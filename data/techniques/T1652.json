@@ -1,0 +1,101 @@
+{
+    "id": "T1652",
+    "tech_id": "T1652",
+    "tech_name": "Device Driver Discovery",
+    "best_phrases": [],
+    "tactics": [
+        "TA0007"
+    ],
+    "features": [
+        "COMPONENT",
+        "REGISTRY",
+        "FUNCTION"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--04a39f08-17e1-46e8-aba0-db4ef1318ba1",
+        "relationship--d77772ff-ead4-49a6-ba55-15b1ff794bd2"
+    ],
+    "graph_nodes": [
+        {
+            "count": 2,
+            "id": 0,
+            "texts": [
+                "HOPLIGHT",
+                "Remsec"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 2,
+            "id": 1,
+            "texts": [
+                "device drivers",
+                "active drivers"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 2,
+            "id": 2,
+            "texts": [
+                "registry",
+                "HKLM\\Software\\WBEM\\WDM"
+            ],
+            "label": "REGISTRY"
+        },
+        {
+            "count": 2,
+            "id": 3,
+            "texts": [
+                "plugin",
+                "security products"
+            ],
+            "label": "FUNCTION"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "enumerate": 1,
+        "locate in": 1,
+        "at": 1,
+        "have": 1,
+        "detect": 1,
+        "of": 1
+    }
+}

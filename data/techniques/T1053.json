@@ -1,0 +1,128 @@
+{
+    "id": "T1053",
+    "tech_id": "T1053",
+    "tech_name": "Scheduled Task/Job",
+    "best_phrases": [],
+    "tactics": [
+        "TA0002",
+        "TA0003",
+        "TA0004"
+    ],
+    "features": [
+        "FUNCTION",
+        "DIRECTORY",
+        "REGISTRY"
+    ],
+    "locations": [
+        "Windows",
+        "Linux",
+        "macOS",
+        "Containers"
+    ],
+    "procedures": [
+        "relationship--15d6e435-c5ba-47cd-8923-dc877092c79f",
+        "relationship--40e63074-7393-4b47-afe2-afe6d65fd2e3",
+        "relationship--6f1c0538-c9f4-49ad-b934-0714b50c1c45",
+        "relationship--85b5efa3-9bd0-4685-a211-78f17a3747c7",
+        "relationship--b2cf6651-3f2c-4522-9360-dbc5c7af43c5"
+    ],
+    "graph_nodes": [
+        {
+            "count": 5,
+            "id": 0,
+            "texts": [
+                "StrifeWater",
+                "DEADEYE",
+                "Earth Lusca",
+                "Lokibot",
+                "Remsec"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 8,
+            "id": 1,
+            "texts": [
+                "Mozilla\\Firefox Default Browser Agent 409046Z0FF4A39CB",
+                "scheduled task",
+                "scheduled tasks",
+                "command schtasks /Create /SC ONLOgon /TN WindowsUpdateCheck /TR \"[file path]\" /ru system",
+                "timer",
+                "timeSetEvent",
+                "scheduler task",
+                "modules"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 2,
+            "id": 2,
+            "texts": [
+                "and\\Microsoft\\Windows\\WDI\\USOShared",
+                "\\Microsoft\\Windows\\PLA\\Server Manager Performance Monitor,\\Microsoft\\Windows\\Ras\\ManagerMobility,\\Microsoft\\Windows\\WDI\\SrvSetupResults"
+            ],
+            "label": "DIRECTORY"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "second stage DLL"
+            ],
+            "label": "REGISTRY"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "execution one"
+            ],
+            "label": "OTHER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 4
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "3_0",
+            "source": 3,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "create": 2,
+        "use": 5,
+        "of": 2,
+        "set": 1,
+        "schedule": 1
+    }
+}

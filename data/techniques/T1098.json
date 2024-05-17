@@ -1,0 +1,259 @@
+{
+    "id": "T1098",
+    "tech_id": "T1098",
+    "tech_name": "Account Manipulation",
+    "best_phrases": [],
+    "tactics": [
+        "TA0003",
+        "TA0004"
+    ],
+    "features": [
+        "DATA",
+        "USER",
+        "FUNCTION",
+        "NETWORK",
+        "COMPONENT"
+    ],
+    "locations": [
+        "Windows",
+        "Azure AD",
+        "Office 365",
+        "IaaS",
+        "Linux",
+        "macOS",
+        "Google Workspace",
+        "SaaS",
+        "Network",
+        "Containers"
+    ],
+    "procedures": [
+        "relationship--2325c0b2-fb89-44e1-9206-e495811f2907",
+        "relationship--34c81138-a5b5-4158-bdb7-18be1c52acc6",
+        "relationship--373f6762-cda6-4ce7-894f-cac31a09a98b",
+        "relationship--62f16083-efca-477c-8107-e208ca4c75cb",
+        "relationship--6e641c36-188b-480e-b177-e412cd000b34",
+        "relationship--8c4a2bd5-109b-4e49-ae67-a9bf02a029e7",
+        "relationship--a8ad10f7-be41-4fb7-805b-f3b227e56b26",
+        "relationship--a94e85d8-62a1-43a2-8443-245bf61ec115",
+        "relationship--c23d5ed2-f358-41d7-99c3-658f4d584786",
+        "relationship--d2edfaee-154b-4566-b85c-740e591477d9",
+        "relationship--e5a4c386-e9c0-4b59-b1da-1acfece17977",
+        "relationship--f5361de6-c729-4fe3-a37d-2d5ff95b31e2",
+        "relationship--fe56443a-5f0b-4120-9d27-d4d98aae69b8"
+    ],
+    "graph_nodes": [
+        {
+            "count": 8,
+            "id": 0,
+            "texts": [
+                "Lazarus Group malware WhiskeyDelta-Two",
+                "function",
+                "Mimikatz credential dumper",
+                "Skeleton Key domain controller authentication bypass functionality",
+                "sp_addlinkedsrvlogin command",
+                "net localgroup",
+                "remote logins",
+                "permissions"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 20,
+            "id": 1,
+            "texts": [
+                "account",
+                "user accounts",
+                "created accounts",
+                "elevated access",
+                "password hash",
+                "account",
+                "DefaultAccount",
+                "user",
+                "sysadmin role",
+                "created accounts",
+                "servers",
+                "created account",
+                "privileges",
+                "domain accounts",
+                "user",
+                "\"supportaccount",
+                "accounts",
+                "remote logins",
+                "permissions",
+                "users"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 10,
+            "id": 2,
+            "texts": [
+                "administrator",
+                "User and Admin groups",
+                "local Admin groups",
+                "local admin groups",
+                "administrators group",
+                "DefaultAccount",
+                "user",
+                "user",
+                "\"supportaccount",
+                "Remote Desktop Users and Administrators groups"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 10,
+            "id": 3,
+            "texts": [
+                "APT41",
+                "SMOKEDHAM",
+                "Dragonfly",
+                "APT3",
+                "Magic Hound",
+                "Sandworm Team",
+                "HAFNIUM",
+                "ServHelper",
+                "Kimsuky",
+                "Calisto"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 3,
+            "id": 4,
+            "texts": [
+                "Administrators and Remote Desktop Users groups",
+                "FIN13",
+                "groups"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "MS-SQL"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 4,
+            "id": 6,
+            "texts": [
+                "link",
+                "servers",
+                "created account",
+                "network"
+            ],
+            "label": "NETWORK"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 4
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 9
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 5
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "3_0",
+            "source": 3,
+            "dest": 0,
+            "count": 2
+        },
+        {
+            "id": "3_5",
+            "source": 3,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "3_6",
+            "source": 3,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "6_1",
+            "source": 6,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "1_6",
+            "source": 1,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "4_0",
+            "source": 4,
+            "dest": 0,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "contain": 1,
+        "rename": 1,
+        "of": 2,
+        "add": 6,
+        "to": 13,
+        "maintain": 1,
+        "include": 1,
+        "assign": 2,
+        "use": 1,
+        "in": 3,
+        "create": 1,
+        "between": 1,
+        "grant": 1,
+        "with": 1
+    }
+}

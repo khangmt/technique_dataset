@@ -1,0 +1,441 @@
+{
+    "id": "T1489",
+    "tech_id": "T1489",
+    "tech_name": "Service Stop",
+    "best_phrases": [],
+    "tactics": [
+        "TA0040"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "COMPONENT",
+        "NETWORK",
+        "ENCRYPTION",
+        "USER",
+        "REGISTRY",
+        "DIRECTORY"
+    ],
+    "locations": [
+        "Windows",
+        "Linux",
+        "macOS"
+    ],
+    "procedures": [
+        "relationship--056d19a6-8f3c-48a6-a459-69394e39fb9a",
+        "relationship--08bc171a-147c-4888-a0cb-c5fcebdc9b95",
+        "relationship--0f677d2e-2cff-4b9f-ae1b-621a5e856b08",
+        "relationship--1427027f-0fd1-4781-b4b3-06dc8e6e9998",
+        "relationship--1fe61df4-3a67-4c46-87f5-771a42323e53",
+        "relationship--2035eee7-c1c3-4039-9fc0-af85b21a5e3f",
+        "relationship--238f92b3-2573-4332-b290-4685301eae6d",
+        "relationship--24af852e-f761-4c75-8aa0-edc3198bd7eb",
+        "relationship--28038d61-fe2d-443c-a573-2ec1dc1123e2",
+        "relationship--287368b4-d3ed-489d-9fe2-288168763ac4",
+        "relationship--2ee6e8e6-914a-4639-88cc-39c01de5d541",
+        "relationship--3e4f8216-03ef-4e7a-8a4a-28905fb0f474",
+        "relationship--411aae3a-f612-41bb-b2f0-1639d2cbc290",
+        "relationship--4f5efe16-ce46-4e37-9c9d-d45b14d1ab4c",
+        "relationship--50900340-6edc-447c-aa1c-f73f5d72e4c6",
+        "relationship--59cb7691-e0a0-4e34-94ae-63d3e22f21c1",
+        "relationship--60135ffa-b3f7-4aa8-b12e-faa2719dc5d7",
+        "relationship--677ec8f6-e06d-4d84-82de-af20953450ec",
+        "relationship--6e54e834-521f-4da8-b3ae-963185496a60",
+        "relationship--7f58088d-9b5d-46ba-b9e4-fc937ffae294",
+        "relationship--88484d85-3c8e-4ccc-b82b-650c6c9bc825",
+        "relationship--8efafb84-44c7-405d-96b6-55d12f397d01",
+        "relationship--9212f940-021e-49b1-b500-fa1dd76b7132",
+        "relationship--922cc16d-2242-477b-89db-1ba3d5176e12",
+        "relationship--92e19c14-504e-402f-b755-08358333cda0",
+        "relationship--a3a89546-f4fe-47f6-9109-89f6fa5af151",
+        "relationship--b56db835-3b80-49e8-964d-0c1c52d182fe",
+        "relationship--cd283aa1-23f1-4516-9198-9d565bd4a431",
+        "relationship--cdbbaa5b-c1d7-4e94-8a0e-a0be60ec377c",
+        "relationship--d4ac896d-31ac-4c4a-a4d5-3134e6bd8622",
+        "relationship--dcd5b361-b86b-47c7-8ce8-85918e00a224",
+        "relationship--e2763cbf-c068-47b5-a871-3b20a368497f",
+        "relationship--e6a3f7bf-33c3-4d4c-bb27-46bd2842c750"
+    ],
+    "graph_nodes": [
+        {
+            "count": 34,
+            "id": 0,
+            "texts": [
+                "Clop",
+                "Babuk",
+                "SLOTHFULMEDIA",
+                "LookBack",
+                "HotCroissant",
+                "AvosLocker",
+                "Wizard Spider",
+                "EKANS",
+                "Meteor",
+                "WannaCry",
+                "Royal",
+                "Diavol",
+                "Avaddon",
+                "Olympic Destroyer",
+                "Prestige",
+                "Pay2Key",
+                "BlackCat",
+                "RobbinHood",
+                "Lazarus Group",
+                "REvil",
+                "Conti",
+                "Ryuk",
+                "Cuba",
+                "LAPSUS$",
+                "MegaCortex",
+                "Industroyer",
+                "KillDisk",
+                "Ragnar Locker",
+                "Pysa",
+                "HermeticWiper",
+                "Maze",
+                "attacker",
+                "Indrik Spider",
+                "Netwalker"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 62,
+            "id": 1,
+            "texts": [
+                "processes",
+                "services",
+                "backups",
+                "security solutions",
+                "cloud",
+                "services",
+                "backup",
+                "processes",
+                "catalog",
+                "cloud",
+                "services",
+                "backup",
+                "processes",
+                "catalog",
+                "powershell -Command \"Get-WmiObject -class Win32_NetworkAdapter | ForEach { If ($.NetEnabled) { $.Disable() } }\" > NUL",
+                "processes",
+                "RmShutDown",
+                "services",
+                "applications",
+                "services",
+                "Service Control Manager (SCM) API",
+                "database processes",
+                "API call",
+                "ChangeServiceConfigW",
+                "services",
+                "MSSQL Windows service",
+                "C:\\Windows\\System32\\net.exe stop MSSQLSERVER",
+                "MS SQL service",
+                "service",
+                "encryption process",
+                "VM services",
+                "181 Windows services",
+                "encryption process",
+                "MSExchangeIS service",
+                "capability",
+                "services",
+                "processes",
+                "up to 146 Windows services",
+                "net stop",
+                "security, backup, database, and email solutions",
+                "kill.bat",
+                "services",
+                "services",
+                "processes",
+                "processes",
+                "services",
+                "services",
+                "data wiper module",
+                "processes",
+                "services",
+                "business applications",
+                "databases",
+                "applications",
+                "processes",
+                "services",
+                "Volume Shadow Copy service",
+                "SQL services",
+                "PsExec",
+                "services",
+                "services",
+                "system processes",
+                "backup software"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 17,
+            "id": 2,
+            "texts": [
+                "cloud",
+                "services",
+                "backup",
+                "processes",
+                "catalog",
+                "cloud",
+                "services",
+                "backup",
+                "processes",
+                "catalog",
+                "that",
+                "end",
+                "use",
+                "on-premise",
+                "lock",
+                "which",
+                "some"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 16,
+            "id": 3,
+            "texts": [
+                "cloud",
+                "services",
+                "backup",
+                "processes",
+                "catalog",
+                "cloud",
+                "services",
+                "backup",
+                "processes",
+                "catalog",
+                "data stores",
+                "resources",
+                "files",
+                "hardcoded list",
+                "zeros",
+                "files"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 8,
+            "id": 4,
+            "texts": [
+                "network adapters",
+                "MySQL",
+                "Microsoft SQL Server",
+                "Exchange",
+                "compromised networks",
+                "business applications",
+                "databases",
+                "database"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 9,
+            "id": 5,
+            "texts": [
+                "compromised host",
+                "MySQL",
+                "Microsoft SQL Server",
+                "Exchange",
+                "system",
+                "system",
+                "virtual machines",
+                "system",
+                "victim machine"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 2,
+            "id": 6,
+            "texts": [
+                "encryption",
+                "successful encryption"
+            ],
+            "label": "ENCRYPTION"
+        },
+        {
+            "count": 2,
+            "id": 7,
+            "texts": [
+                "victim",
+                "user"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 1,
+            "id": 8,
+            "texts": [
+                "registry keys"
+            ],
+            "label": "REGISTRY"
+        },
+        {
+            "count": 1,
+            "id": 9,
+            "texts": [
+                "SYSTEM\\CurrentControlSet\\Services"
+            ],
+            "label": "DIRECTORY"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 35
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 5
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 5
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "4_5",
+            "source": 4,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 3
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 4
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 4
+        },
+        {
+            "id": "2_6",
+            "source": 2,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "0_6",
+            "source": 0,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 3
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 2
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "2_7",
+            "source": 2,
+            "dest": 7,
+            "count": 1
+        },
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "1_8",
+            "source": 1,
+            "dest": 8,
+            "count": 1
+        },
+        {
+            "id": "3_8",
+            "source": 3,
+            "dest": 8,
+            "count": 1
+        },
+        {
+            "id": "8_9",
+            "source": 8,
+            "dest": 9,
+            "count": 1
+        },
+        {
+            "id": "7_5",
+            "source": 7,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "kill": 6,
+        "relate to": 2,
+        "delete": 1,
+        "disconnect": 1,
+        "use": 9,
+        "on": 7,
+        "encrypt": 2,
+        "associate with": 2,
+        "for": 1,
+        "terminate": 3,
+        "stop": 14,
+        "disable": 3,
+        "ensure": 1,
+        "at": 2,
+        "release": 2,
+        "lock": 1,
+        "of": 6,
+        "begin": 1,
+        "have": 2,
+        "by": 2,
+        "call": 1,
+        "shut": 1,
+        "write": 1,
+        "into": 2,
+        "in": 1,
+        "reboot": 1,
+        "relate": 1,
+        "to": 1
+    }
+}

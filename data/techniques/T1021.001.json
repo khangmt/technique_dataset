@@ -1,0 +1,421 @@
+{
+    "id": "T1021.001",
+    "tech_id": "T1021.001",
+    "tech_name": "Remote Desktop Protocol",
+    "best_phrases": [],
+    "tactics": [
+        "TA0008"
+    ],
+    "features": [
+        "NETWORK",
+        "FUNCTION",
+        "COMPONENT",
+        "DATA",
+        "USER"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--0854ea2c-21b0-49b9-bb90-3653384f2de9",
+        "relationship--094a2284-eeab-47fd-b6fb-6351d98330aa",
+        "relationship--0a26c696-1288-4cb3-a24e-bbd64925b9f7",
+        "relationship--1d37f088-123f-41bb-9367-a1696dbfe895",
+        "relationship--27ead6bc-2bba-49d3-bcfe-667c7654a6fc",
+        "relationship--2816f512-1a04-4cf8-94e9-36720b949c76",
+        "relationship--31a6eec8-0281-4973-a2af-ebf30e317a9f",
+        "relationship--4151f66f-efcc-4c26-b3b6-8650c0a36258",
+        "relationship--419d663c-0fa5-411c-9697-468debf7efc5",
+        "relationship--42ddce39-b653-4466-b7ff-a9554029f1c6",
+        "relationship--43c20c81-984f-418a-9202-252a3afbec46",
+        "relationship--43fabcba-66b6-45dc-b905-926f0a0a2bba",
+        "relationship--4b310a47-e010-4984-afcb-52d9c8c7933a",
+        "relationship--4b6f2524-85b4-4151-9001-32b875cfbb19",
+        "relationship--4bc4f37e-5cdd-4def-a997-1cbb37975a8f",
+        "relationship--58dd2402-7b8a-4ed0-8fd3-7b9656b543b8",
+        "relationship--5cc793b0-cc45-439e-a994-c8884ca55fe7",
+        "relationship--5fa454cd-2fff-41ca-bfd0-0dce49d34f6d",
+        "relationship--608c5d3c-ba27-430d-8655-0ff7830fb5c5",
+        "relationship--66d2bbd8-1a92-4a5a-80d1-4a11860c64f3",
+        "relationship--70f3eaca-179d-4412-ad32-c4e3cf60c27c",
+        "relationship--76f7e81a-4637-4e02-b417-af4d85369432",
+        "relationship--78865095-f63e-461c-9e32-e202d514747d",
+        "relationship--7aef9a3f-82ff-4e2e-bee7-962b49421067",
+        "relationship--7b0a1eb4-9797-41cd-b7a4-610cb9eb2c42",
+        "relationship--7fc56f31-3cf9-411c-a6a2-79bbaab13f29",
+        "relationship--89698142-6c48-465f-9e61-0146d0fa481a",
+        "relationship--8fd19779-990a-4ce7-9b59-173896e518e8",
+        "relationship--9c593e55-8c4d-4705-9e8b-ac83962973df",
+        "relationship--a1dfbc65-48dc-4218-a10c-906fbe33b6db",
+        "relationship--a317b097-b819-441b-b344-9f129ba6cb40",
+        "relationship--a48e7d01-012a-4336-9676-0f34e8501e22",
+        "relationship--a7ee1099-9380-4743-ba98-6590b65420b2",
+        "relationship--aa2e1086-00f6-45f3-9159-72f2cfd50001",
+        "relationship--abd46534-2632-4c12-a9c2-06a2a4116f2c",
+        "relationship--bd78bfa6-f30e-4429-ac06-0039d553a69d",
+        "relationship--c4275eb1-4651-4c47-bc14-82a4b7ceec2b",
+        "relationship--c79796c1-88d6-4cd8-95d3-4f81d3755859",
+        "relationship--d2858dfa-504f-416d-8801-41a1a9561f22",
+        "relationship--d32354c1-0668-4997-825e-7f5652826ab9",
+        "relationship--d4c15cb6-ed2f-4ed0-8e6d-dd69e06c3c3f",
+        "relationship--db5bc5e2-fb3d-42a7-8fbc-b0aff2be6f8f",
+        "relationship--e7bcc9e7-d373-4b1e-a664-886c4fc04bc5",
+        "relationship--e87cff7f-dc75-4dfc-9c45-ec697ff4644a",
+        "relationship--fc2ffb01-2c4e-429d-b4fd-e0d20678504a"
+    ],
+    "graph_nodes": [
+        {
+            "count": 40,
+            "id": 0,
+            "texts": [
+                "Kimsuky",
+                "Cobalt Strike",
+                "zwShell",
+                "Silence",
+                "FIN7",
+                "Fox Kitten",
+                "APT41",
+                "Patchwork",
+                "FIN8",
+                "FIN6",
+                "Dragonfly",
+                "OilRig",
+                "WarzoneRAT",
+                "APT39",
+                "Magic Hound",
+                "Wizard Spider",
+                "Carbanak",
+                "APT29",
+                "threat actors",
+                "Revenge RAT",
+                "ServHelper",
+                "attacker",
+                "HEXANE",
+                "Axiom",
+                "APT1 group",
+                "TEMP.Veles",
+                "Cobalt Group",
+                "SDBbot",
+                "jRAT",
+                "njRAT",
+                "Pysa",
+                "DarkComet",
+                "FIN10",
+                "ZxShell",
+                "Blue Mockingbird",
+                "menuPass",
+                "threat actors",
+                "APT3",
+                "Leviathan",
+                "Chimera"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 38,
+            "id": 1,
+            "texts": [
+                "RDP",
+                "direct remote point-and-click",
+                "VNC-based remote desktop server",
+                "connection",
+                "established C2 channel",
+                "RDP",
+                "Remote Desktop Protocol",
+                "RDP",
+                "RDP",
+                "RDP",
+                "Remote Desktop Services",
+                "RDP",
+                "32467",
+                "46892",
+                "ports",
+                "41578",
+                "RDP connections",
+                "reverse SSH tunnel",
+                "RDP traffic",
+                "RDP",
+                "RDP",
+                "Remote Desktop Protocol",
+                "RDP",
+                "remote desktop",
+                "RDP control",
+                "RDP connections",
+                "RDP connection",
+                "browser web socket client",
+                "RDP",
+                "Remote Desktop Services",
+                "RDS",
+                "Remote Desktop",
+                "RDP connections",
+                "victim network",
+                "RDP",
+                "RDP",
+                "Remote Desktop Protocol",
+                "RDP"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 10,
+            "id": 2,
+            "texts": [
+                "access",
+                "remote desktop access",
+                "remote desktop access",
+                "RDP access",
+                "remote desktop access",
+                "active screen",
+                "files",
+                "interest",
+                "files",
+                "RDP credentials"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 26,
+            "id": 3,
+            "texts": [
+                "QuasarRAT",
+                "module",
+                "tunneling tools",
+                "Imminent Monitor",
+                "module",
+                "rdpwinst tool",
+                "mangement",
+                "sessions",
+                "tools",
+                "ransomware",
+                "concurrent Remote Desktop Protocol (RDP) sessions",
+                "RDP sessions",
+                "plugin",
+                "commands",
+                "remote desktop sessions",
+                "operations",
+                "operation",
+                "Koadic",
+                "module",
+                "Pupy",
+                "remote desktop session",
+                "control",
+                "remote desktop functionality",
+                "Lazarus Group malware SierraCharlie",
+                "propagation",
+                "RDP sessions"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 6,
+            "id": 4,
+            "texts": [
+                "group",
+                "32467",
+                "46892",
+                "ports",
+                "41578",
+                "FIN13"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 17,
+            "id": 5,
+            "texts": [
+                "environment",
+                "infected PC",
+                "targeted systems",
+                "public-facing systems",
+                "machines",
+                "machine",
+                "mouse",
+                "keyboard",
+                "machine",
+                "systems",
+                "victim environment",
+                "compromised environments",
+                "remote hosts",
+                "network hosts",
+                "compromised systems",
+                "victim environment",
+                "targeted systems"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 4,
+            "id": 6,
+            "texts": [
+                "remote desktop user",
+                "victim",
+                "victim",
+                "victim"
+            ],
+            "label": "USER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 25
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 5
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 4
+        },
+        {
+            "id": "4_3",
+            "source": 4,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 2
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 7
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 14
+        },
+        {
+            "id": "3_5",
+            "source": 3,
+            "dest": 5,
+            "count": 4
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 6
+        },
+        {
+            "id": "3_6",
+            "source": 3,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 3
+        },
+        {
+            "id": "5_6",
+            "source": 5,
+            "dest": 6,
+            "count": 3
+        },
+        {
+            "id": "2_5",
+            "source": 2,
+            "dest": 5,
+            "count": 2
+        },
+        {
+            "id": "4_5",
+            "source": 4,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "5_1",
+            "source": 5,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "5_2",
+            "source": 5,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 24,
+        "for": 7,
+        "start": 2,
+        "tunnel": 2,
+        "by": 6,
+        "have": 6,
+        "perform": 4,
+        "into": 1,
+        "control": 1,
+        "employ": 1,
+        "of": 8,
+        "copy": 3,
+        "on": 3,
+        "deploy": 1,
+        "enable": 3,
+        "from": 1,
+        "open": 2,
+        "establish": 1,
+        "add": 1,
+        "send": 1,
+        "to": 2,
+        "during": 2,
+        "utilize": 1,
+        "byout": 2,
+        "connect": 1,
+        "support": 1,
+        "disable": 1,
+        "take": 1,
+        "in": 1,
+        "access": 3,
+        "move": 2,
+        "with": 1,
+        "target": 1
+    }
+}

@@ -1,0 +1,64 @@
+{
+    "id": "T1574.004",
+    "tech_id": "T1574.004",
+    "tech_name": "Dylib Hijacking",
+    "best_phrases": [],
+    "tactics": [
+        "TA0003",
+        "TA0004",
+        "TA0005"
+    ],
+    "features": [
+        "FUNCTION",
+        "DIRECTORY"
+    ],
+    "locations": [
+        "macOS"
+    ],
+    "procedures": [
+        "relationship--c17d90b5-569c-42db-9265-ac99cad32093"
+    ],
+    "graph_nodes": [
+        {
+            "count": 5,
+            "id": 0,
+            "texts": [
+                "Empire",
+                "dylib hijacker module",
+                "dylib",
+                "legitimate dylib",
+                "vulnerable application"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 1,
+            "texts": [
+                "path"
+            ],
+            "label": "DIRECTORY"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "have": 1,
+        "generate": 1,
+        "give": 2,
+        "to": 1,
+        "of": 1
+    }
+}

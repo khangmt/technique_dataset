@@ -1,0 +1,94 @@
+{
+    "id": "T1568.003",
+    "tech_id": "T1568.003",
+    "tech_name": "DNS Calculation",
+    "best_phrases": [],
+    "tactics": [
+        "TA0011"
+    ],
+    "features": [
+        "DATA",
+        "FUNCTION",
+        "NETWORK"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--66647c20-2d76-4711-9eee-07d932e75851"
+    ],
+    "graph_nodes": [
+        {
+            "count": 1,
+            "id": 0,
+            "texts": [
+                "APT12"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 2,
+            "id": 1,
+            "texts": [
+                "variants",
+                "DNS Calculation"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 3,
+            "id": 2,
+            "texts": [
+                "octets",
+                "third octet",
+                "value"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 2,
+            "id": 3,
+            "texts": [
+                "resulting C2 port",
+                "IP address"
+            ],
+            "label": "NETWORK"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 1,
+        "of": 2,
+        "multiply": 1,
+        "add": 1,
+        "get": 1,
+        "to": 1
+    }
+}

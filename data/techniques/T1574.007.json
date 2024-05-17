@@ -1,0 +1,61 @@
+{
+    "id": "T1574.007",
+    "tech_id": "T1574.007",
+    "tech_name": "Path Interception by PATH Environment Variable",
+    "best_phrases": [],
+    "tactics": [
+        "TA0003",
+        "TA0004",
+        "TA0005"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA"
+    ],
+    "locations": [
+        "Windows",
+        "macOS",
+        "Linux"
+    ],
+    "procedures": [
+        "relationship--088d703a-f321-48d2-8090-12fc8179c6ff",
+        "relationship--7f0f21db-5bb8-465c-9141-d1b5172d0756"
+    ],
+    "graph_nodes": [
+        {
+            "count": 6,
+            "id": 0,
+            "texts": [
+                "PowerSploit",
+                "Privesc-PowerUp modules",
+                "path interception opportunities",
+                "Empire",
+                "modules",
+                "path interception opportunities"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 2,
+            "id": 1,
+            "texts": [
+                "PATH environment variable",
+                "PATH environment variable"
+            ],
+            "label": "DATA"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 2
+        }
+    ],
+    "verbs": {
+        "contain": 2,
+        "exploit": 2,
+        "in": 2
+    }
+}

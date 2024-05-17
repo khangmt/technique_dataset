@@ -1,0 +1,112 @@
+{
+    "id": "T1531",
+    "tech_id": "T1531",
+    "tech_name": "Account Access Removal",
+    "best_phrases": [],
+    "tactics": [
+        "TA0040"
+    ],
+    "features": [
+        "DATA",
+        "COMPONENT"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows",
+        "Office 365",
+        "SaaS"
+    ],
+    "procedures": [
+        "relationship--46250897-5a79-4401-b965-da8115a60d7f",
+        "relationship--57385cb2-e3ef-4006-b465-a5a48632d02b",
+        "relationship--9a8901ea-5cb3-431f-9be8-55986ea41448",
+        "relationship--a2798404-09a6-4882-8226-257fe55f788c"
+    ],
+    "graph_nodes": [
+        {
+            "count": 4,
+            "id": 0,
+            "texts": [
+                "MegaCortex",
+                "LockerGoga",
+                "Meteor",
+                "LAPSUS$"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 8,
+            "id": 1,
+            "texts": [
+                "user account passwords",
+                "users",
+                "account passwords",
+                "users",
+                "password",
+                "users",
+                "local users",
+                "global admin accounts"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 2,
+            "id": 2,
+            "texts": [
+                "system",
+                "compromised hosts"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "organization"
+            ],
+            "label": "OTHER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 7
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "change": 3,
+        "log": 3,
+        "off": 2,
+        "of": 2,
+        "on": 1,
+        "remove": 1,
+        "lock": 1
+    }
+}

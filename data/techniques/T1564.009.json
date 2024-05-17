@@ -1,0 +1,118 @@
+{
+    "id": "T1564.009",
+    "tech_id": "T1564.009",
+    "tech_name": "Resource Forking",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "COMPONENT"
+    ],
+    "locations": [
+        "macOS"
+    ],
+    "procedures": [
+        "relationship--4efc1b5d-c1cb-4d94-a4b8-6b0b2b857788",
+        "relationship--950fca51-66e4-43c6-9af0-839e962b8409"
+    ],
+    "graph_nodes": [
+        {
+            "count": 2,
+            "id": 0,
+            "texts": [
+                "Keydnap",
+                "OSX/Shlayer"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 4,
+            "id": 1,
+            "texts": [
+                "resource fork",
+                "executable",
+                "resource fork",
+                "traditional scanners"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 3,
+            "id": 2,
+            "texts": [
+                "macOS JPEG or text file icon",
+                "icon",
+                "compressed binary file"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 2,
+            "id": 3,
+            "texts": [
+                "operating system",
+                "Finder"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 2,
+            "id": 4,
+            "texts": [
+                "itself",
+                "terminal"
+            ],
+            "label": "OTHER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 2,
+        "present": 1,
+        "of": 2,
+        "assign": 1,
+        "hide": 1,
+        "evade": 1,
+        "from": 2
+    }
+}

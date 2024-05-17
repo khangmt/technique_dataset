@@ -1,0 +1,285 @@
+{
+    "id": "T1598.003",
+    "tech_id": "T1598.003",
+    "tech_name": "Spearphishing Link",
+    "best_phrases": [],
+    "tactics": [
+        "TA0043"
+    ],
+    "features": [
+        "NETWORK",
+        "DATA",
+        "USER",
+        "FUNCTION",
+        "VULNERABILITY"
+    ],
+    "locations": [
+        "PRE"
+    ],
+    "procedures": [
+        "relationship--107dc621-6f5d-4b59-9873-54355e55312d",
+        "relationship--33ee917f-8624-4108-91fb-a87d576ac634",
+        "relationship--3954c9eb-1916-43ed-ba79-cc40d084c1a0",
+        "relationship--44866cfd-7d8f-45f6-906b-5b4992aa69e0",
+        "relationship--545efdec-5375-43e9-b369-0f6367b067dd",
+        "relationship--5bb51393-199c-48a1-b1fd-7f851fee0562",
+        "relationship--5bc091f3-0059-4eab-ab68-5e4474108fdf",
+        "relationship--7d101f53-3b5a-467a-aeb8-172cd77e92ce",
+        "relationship--8e03a9bc-a701-4797-8f0e-0eb17f32ddac",
+        "relationship--93885649-e686-4496-96fc-aa901e626ca5",
+        "relationship--9aa9b9f6-a22f-4763-a2ff-7635f5022727",
+        "relationship--bd2f28c5-7687-4d74-b3ad-42d2d62e4548",
+        "relationship--d9b4a18a-955a-4ef8-93b2-61db23e59b75"
+    ],
+    "graph_nodes": [
+        {
+            "count": 12,
+            "id": 0,
+            "texts": [
+                "Sidewinder",
+                "Mustang Panda",
+                "Sandworm Team",
+                "Silent Librarian",
+                "ZIRCONIUM",
+                "APT32",
+                "Kimsuky",
+                "Magic Hound",
+                "SMOKEDHAM",
+                "APT28",
+                "Dragonfly",
+                "Patchwork"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 29,
+            "id": 1,
+            "texts": [
+                "e-mails",
+                "links",
+                "credential harvesting websites",
+                "spearphishing emails",
+                "hyperlinks",
+                "links",
+                "e-mails",
+                "credential harvesting websites",
+                "phishing emails",
+                "links",
+                "e-mails",
+                "attacker-controlled URL",
+                "links",
+                "web pages",
+                "links",
+                "e-mail",
+                "SMS and email messages",
+                "links",
+                "links",
+                "phishing emails",
+                "credential phishing campaigns",
+                "embedded links",
+                "attacker-controlled domains",
+                "spearphishing",
+                "links",
+                "credential harvesting websites",
+                "unique, per-recipient tracking links",
+                "emails",
+                "messages"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 3,
+            "id": 2,
+            "texts": [
+                "web bugs",
+                "web bugs",
+                "embedded image tags"
+            ],
+            "label": "VULNERABILITY"
+        },
+        {
+            "count": 5,
+            "id": 3,
+            "texts": [
+                "intended targets",
+                "unwitting recipients",
+                "victims",
+                "victims",
+                "recipients"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 11,
+            "id": 4,
+            "texts": [
+                "account credentials",
+                "credentials",
+                "users",
+                "hits",
+                "users",
+                "credentials",
+                "account information",
+                "credentials",
+                "PDF attachments",
+                "web bugs",
+                "embedded image tags"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 4,
+            "id": 5,
+            "texts": [
+                "login page",
+                "AADInternals",
+                "web beacons",
+                "purpose"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 3,
+            "id": 6,
+            "texts": [
+                "organization",
+                "'s",
+                "that"
+            ],
+            "label": "OTHER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 9
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 5
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "5_6",
+            "source": 5,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "5_1",
+            "source": 5,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 2
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 5
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 5
+        },
+        {
+            "id": "4_6",
+            "source": 4,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "6_1",
+            "source": 6,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "2_5",
+            "source": 2,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "4_5",
+            "source": 4,
+            "dest": 5,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "send": 2,
+        "with": 7,
+        "to": 7,
+        "deliver": 2,
+        "profile": 1,
+        "craft": 1,
+        "trick": 1,
+        "reveal": 1,
+        "use": 7,
+        "direct": 2,
+        "in": 5,
+        "of": 2,
+        "contain": 2,
+        "collect": 1,
+        "track": 2,
+        "harvest": 1,
+        "steal": 2,
+        "conduct": 1,
+        "redirect": 1,
+        "for": 2,
+        "open": 1
+    }
+}

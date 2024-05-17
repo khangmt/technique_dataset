@@ -1,0 +1,49 @@
+{
+    "id": "T1580",
+    "tech_id": "T1580",
+    "tech_name": "Cloud Infrastructure Discovery",
+    "best_phrases": [],
+    "tactics": [
+        "TA0007"
+    ],
+    "features": [
+        "COMPONENT",
+        "FUNCTION"
+    ],
+    "locations": [
+        "IaaS"
+    ],
+    "procedures": [
+        "relationship--c4cce9f3-6124-4ead-94b2-789464bd2719"
+    ],
+    "graph_nodes": [
+        {
+            "count": 1,
+            "id": 0,
+            "texts": [
+                "Pacu"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 2,
+            "id": 1,
+            "texts": [
+                "EC2 instances",
+                "AWS infrastructure"
+            ],
+            "label": "COMPONENT"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "enumerate": 1
+    }
+}

@@ -1,0 +1,407 @@
+{
+    "id": "T1574.001",
+    "tech_id": "T1574.001",
+    "tech_name": "DLL Search Order Hijacking",
+    "best_phrases": [],
+    "tactics": [
+        "TA0003",
+        "TA0004",
+        "TA0005"
+    ],
+    "features": [
+        "FUNCTION",
+        "REGISTRY",
+        "DATA",
+        "DIRECTORY",
+        "COMPONENT",
+        "NETWORK"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--16dfd169-264f-410f-97bf-a1cdec20c50e",
+        "relationship--16e906b5-011b-476d-a00d-78e514e7354c",
+        "relationship--1762fe5a-0810-4179-bfb0-16d965ffe055",
+        "relationship--191885b6-1282-4173-a2bd-174c30c8a1dc",
+        "relationship--1ad315e2-1693-427a-9a04-a613bd0e2f22",
+        "relationship--2e2daf37-1d3d-4b24-ab46-dfc894f9ef96",
+        "relationship--328825fa-a589-4c16-abef-7e3663f1f6ec",
+        "relationship--38230234-1111-41cf-aa6b-b107577dad61",
+        "relationship--3f8a74a9-55fe-4f9c-bddb-00b715ca3668",
+        "relationship--54c3c155-6347-4dc5-89df-aae2c15d6c7a",
+        "relationship--55e67f6b-600a-4196-b497-63019731e66e",
+        "relationship--67f7ebd0-effb-4169-a184-7d45c614a6ee",
+        "relationship--6ce3735c-bfae-4eec-ab6b-bbf08cb7d60f",
+        "relationship--70b2e51a-c5c4-48af-8f9c-112a4854e18d",
+        "relationship--838b2a37-10a1-42fe-bf71-f298ce28f81f",
+        "relationship--883762ff-5cb3-49af-87a2-6a128a1ce939",
+        "relationship--9bdcaf47-0df8-44a5-ac10-3f0a806a36f3",
+        "relationship--9d7577f9-2003-4cbc-b7cb-58f2dc20714c",
+        "relationship--ae48c7b6-5d12-4526-bf78-79fdf14544dc",
+        "relationship--ae75aace-822c-484e-b25c-7d5f6792928c",
+        "relationship--b2ca0a15-a121-47c0-8123-b3092fe7d8d1",
+        "relationship--dc0cf30b-ec44-4b5a-8c45-f93e48974a05",
+        "relationship--e4e2d35b-83fb-4515-b531-576acb02e1a5",
+        "relationship--e4fe7d70-a0c9-4d2b-ba4a-0d6bc2e08f0e",
+        "relationship--ee1f163e-7d9b-449a-ba71-0d0091abfb8a",
+        "relationship--f2b3374e-d2b4-489a-9c8a-92630ce9b428",
+        "relationship--f318a490-68df-41ee-864e-8611be36c442",
+        "relationship--f4f5b6a4-26d5-4352-a25d-001a51a0a121",
+        "relationship--ffacfdd1-702e-4bb9-b60c-8e5c4cdf2a06",
+        "relationship--ffee4cd1-f193-4dbc-9f47-6fe47e1523eb"
+    ],
+    "graph_nodes": [
+        {
+            "count": 24,
+            "id": 0,
+            "texts": [
+                "RTM",
+                "Tonto Team",
+                "HTTPBrowser",
+                "Hikit",
+                "Whitefly",
+                "Aquatic Panda",
+                "RedLeaves",
+                "PlugX",
+                "Ramsay",
+                "Prikormka",
+                "Astaroth",
+                "Melcoz",
+                "MirageFox",
+                "FoggyWeb",
+                "WastedLocker",
+                "Crutch",
+                "Chaes",
+                "InvisiMole",
+                "Threat Group-3390",
+                "BackdoorDiplomacy",
+                "menuPass",
+                "BOOSTWRITE",
+                "Downdelph",
+                "APT41"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 60,
+            "id": 1,
+            "texts": [
+                "search order hijacking",
+                "legitimate and signed Microsoft executable",
+                "legitimate Symantec anti-virus binary",
+                "VPDN_LU.exe",
+                "Variants",
+                "WEBC2",
+                "DLL search order hijacking",
+                "DLL Search Order Hijacking",
+                "persistence mechanism",
+                "search order hijacking",
+                "loader",
+                "Vcrodat",
+                "FinFisher variant",
+                "DLL search order hijacking",
+                "DLL search-order hijacking",
+                "DLL search order hijacking",
+                "DLL search order hijacking",
+                "installation",
+                "DLL payload",
+                "Evilnum",
+                "malware variant",
+                "TerraTV",
+                "DLL search order hijacking",
+                "DLL Search Order Hijacking",
+                "DLL hijacking",
+                "DLL hijacking",
+                "legitimate McAfee binary",
+                "PowerSploit",
+                "Privesc-PowerUp modules",
+                "DLL hijacking opportunities",
+                "processes",
+                "services",
+                "loader",
+                "DLL Search Order Hijacking",
+                "legitimate version.dll",
+                "code",
+                "Microsoft.IdentityServer.ServiceHost.exe execution process",
+                "DLL hijacking",
+                "DLL search order hijacking",
+                "search order hijacking",
+                "DLL search order hijacking",
+                "Windows Explorer process",
+                "explorer.exe",
+                "DLL search order hijacking",
+                "payload",
+                "DLL search order hijacking",
+                "loading",
+                "gdi library",
+                "gdiplus library",
+                "Empire",
+                "modules",
+                "DLL hijacking opportunities",
+                "Brute Ratel C4",
+                "search order hijacking",
+                "benign application",
+                "search order hijacking",
+                "Windows executable sysprep.exe",
+                "search order hijacking",
+                "Winnti RAT",
+                "payloads"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 2,
+            "texts": [
+                "TeamViewer"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 19,
+            "id": 3,
+            "texts": [
+                "DLL",
+                "DLL",
+                "DLL",
+                "legitimate Symantec DLL",
+                "navlu.dll",
+                "DLL file",
+                "oci.dll",
+                "dll",
+                "DLL",
+                "Windows DLL",
+                "legitimate ntshrui.dll",
+                "ntshrui.dll",
+                "legitimate version.dll",
+                "code",
+                "DLL",
+                "wrapper DLL",
+                "legitimate Dwrite.dll file",
+                "local Dwrite dll",
+                "payload DLL"
+            ],
+            "label": "REGISTRY"
+        },
+        {
+            "count": 8,
+            "id": 4,
+            "texts": [
+                "Windows DLL load order",
+                "exe, dll, and dat files",
+                "memory",
+                "outdated Windows application dependencies",
+                "versions",
+                "dependency",
+                "ISO",
+                "privileges"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 7,
+            "id": 5,
+            "texts": [
+                "to%systemroot%(C:\\WINDOWS\\ntshrui.dll",
+                "TeamViewer directory",
+                "system folder",
+                "System32 subdirectory",
+                "Windows directory",
+                "folder",
+                "startup"
+            ],
+            "label": "DIRECTORY"
+        },
+        {
+            "count": 4,
+            "id": 6,
+            "texts": [
+                "use",
+                "itself",
+                "itself",
+                "which"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 5,
+            "id": 7,
+            "texts": [
+                "targeted systems",
+                "security controls",
+                "Mozilla Firefox",
+                "Google Chrome",
+                "Microsoft OneDrive"
+            ],
+            "label": "COMPONENT"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 27
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 6
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 5
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 6
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "6_0",
+            "source": 6,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "6_1",
+            "source": 6,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "6_3",
+            "source": 6,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "1_7",
+            "source": 1,
+            "dest": 7,
+            "count": 2
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "3_5",
+            "source": 3,
+            "dest": 5,
+            "count": 5
+        },
+        {
+            "id": "0_6",
+            "source": 0,
+            "dest": 6,
+            "count": 2
+        },
+        {
+            "id": "6_5",
+            "source": 6,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "0_7",
+            "source": 0,
+            "dest": 7,
+            "count": 1
+        },
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 2
+        },
+        {
+            "id": "3_6",
+            "source": 3,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "5_1",
+            "source": 5,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 19,
+        "force": 1,
+        "load": 14,
+        "abuse": 2,
+        "launch": 3,
+        "mimic": 2,
+        "of": 6,
+        "copy": 2,
+        "as": 4,
+        "run": 2,
+        "into": 3,
+        "for": 2,
+        "on": 2,
+        "hijack": 1,
+        "with": 2,
+        "place in": 1,
+        "locate in": 1,
+        "save": 1,
+        "before": 1,
+        "save in": 1,
+        "to": 2,
+        "by": 3,
+        "bypass": 1,
+        "contain": 2,
+        "exploit": 3,
+        "in": 3,
+        "during": 2,
+        "perform": 2,
+        "execute": 3,
+        "package in": 1,
+        "escalate": 1
+    }
+}

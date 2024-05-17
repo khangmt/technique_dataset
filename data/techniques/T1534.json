@@ -1,0 +1,189 @@
+{
+    "id": "T1534",
+    "tech_id": "T1534",
+    "tech_name": "Internal Spearphishing",
+    "best_phrases": [],
+    "tactics": [
+        "TA0008"
+    ],
+    "features": [
+        "NETWORK",
+        "USER",
+        "DATA",
+        "COMPONENT",
+        "FUNCTION"
+    ],
+    "locations": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Office 365",
+        "SaaS",
+        "Google Workspace"
+    ],
+    "procedures": [
+        "relationship--109bbda3-f97a-4067-81d6-ed635f251282",
+        "relationship--31f9cd5d-bfb6-4764-a724-8e8f131099d1",
+        "relationship--7064e494-5a32-4a40-b0b1-b19b9a145e73",
+        "relationship--c00b008a-5f2c-4837-811b-21193b70b4ae",
+        "relationship--f6a8aba6-d711-45bd-a99e-7a12b8c72ae0"
+    ],
+    "graph_nodes": [
+        {
+            "count": 5,
+            "id": 0,
+            "texts": [
+                "Gamaredon Group",
+                "Kimsuky",
+                "Lazarus Group",
+                "Leviathan",
+                "HEXANE"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 1,
+            "id": 1,
+            "texts": [
+                "Outlook VBA module"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 5,
+            "id": 2,
+            "texts": [
+                "phishing emails",
+                "internal spearphishing emails",
+                "internal spearphishing",
+                "internal spearphishing",
+                "internal spearphishing attacks"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 2,
+            "id": 3,
+            "texts": [
+                "infected systems",
+                "environment"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 4,
+            "id": 4,
+            "texts": [
+                "attachments",
+                "victim information",
+                "information",
+                "access"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 5,
+            "id": 5,
+            "texts": [
+                "employees",
+                "victim",
+                "HR",
+                "IT personnel",
+                "executives"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 4,
+            "id": 6,
+            "texts": [
+                "organization",
+                "HR",
+                "IT personnel",
+                "executives"
+            ],
+            "label": "OTHER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 5
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "2_5",
+            "source": 2,
+            "dest": 5,
+            "count": 2
+        },
+        {
+            "id": "5_6",
+            "source": 5,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "3_5",
+            "source": 3,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "2_6",
+            "source": 2,
+            "dest": 6,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 1,
+        "send": 2,
+        "on": 1,
+        "with": 1,
+        "to": 1,
+        "within": 3,
+        "steal": 1,
+        "conduct": 3,
+        "of": 1,
+        "gain": 1,
+        "against": 1
+    }
+}

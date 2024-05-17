@@ -1,0 +1,200 @@
+{
+    "id": "T1098.004",
+    "tech_id": "T1098.004",
+    "tech_name": "SSH Authorized Keys",
+    "best_phrases": [],
+    "tactics": [
+        "TA0003",
+        "TA0004"
+    ],
+    "features": [
+        "ENCRYPTION",
+        "DATA",
+        "FUNCTION",
+        "NETWORK",
+        "COMPONENT",
+        "DIRECTORY"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "IaaS",
+        "Network"
+    ],
+    "procedures": [
+        "relationship--1307fdab-a09c-4d48-a917-a76ba0113098",
+        "relationship--13d595d2-9497-4bbe-be74-6e2a3a4dde06",
+        "relationship--5b6ff16b-9958-432c-bad9-5260d549117a",
+        "relationship--6723c87e-f60a-465f-96cd-78d63d17ba01",
+        "relationship--d6e1026a-a33e-46a3-832e-ff9b36d52c07"
+    ],
+    "graph_nodes": [
+        {
+            "count": 5,
+            "id": 0,
+            "texts": [
+                "Earth Lusca",
+                "Skidmap",
+                "XCSSET",
+                "Bundlore",
+                "TeamTNT"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 5,
+            "id": 1,
+            "texts": [
+                "SSH-authorized key",
+                "public key",
+                "ssh key",
+                "created user key",
+                "RSA keys"
+            ],
+            "label": "ENCRYPTION"
+        },
+        {
+            "count": 1,
+            "id": 2,
+            "texts": [
+                "/root/.ssh folder"
+            ],
+            "label": "DIRECTORY"
+        },
+        {
+            "count": 3,
+            "id": 3,
+            "texts": [
+                "compromised server",
+                "SSH",
+                "server"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 2,
+            "id": 4,
+            "texts": [
+                "authorized_keys file",
+                "host"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 4,
+            "id": 5,
+            "texts": [
+                "handlers",
+                "ssh-keygen -t rsa -f $HOME/.ssh/id_rsa -P command",
+                "remote login",
+                "ssh-keygen"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 5,
+            "id": 6,
+            "texts": [
+                "private key file",
+                "password",
+                "key pair",
+                "authorized_keys",
+                "authorized_keys"
+            ],
+            "label": "DATA"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 5
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 2
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 2
+        },
+        {
+            "id": "0_6",
+            "source": 0,
+            "dest": 6,
+            "count": 4
+        },
+        {
+            "id": "6_3",
+            "source": 6,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "4_6",
+            "source": 4,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "6_5",
+            "source": 6,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "1_6",
+            "source": 1,
+            "dest": 6,
+            "count": 2
+        }
+    ],
+    "verbs": {
+        "drop": 2,
+        "in": 6,
+        "access": 2,
+        "with": 4,
+        "add": 2,
+        "to": 4,
+        "of": 1,
+        "create": 2,
+        "upload": 1,
+        "without": 1,
+        "enable": 1
+    }
+}

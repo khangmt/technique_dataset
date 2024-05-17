@@ -1,0 +1,144 @@
+{
+    "id": "T1547.008",
+    "tech_id": "T1547.008",
+    "tech_name": "LSASS Driver",
+    "best_phrases": [],
+    "tactics": [
+        "TA0003",
+        "TA0004"
+    ],
+    "features": [
+        "REGISTRY",
+        "FUNCTION",
+        "COMPONENT",
+        "DATA"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--019eb3cf-35df-4109-a006-1b91331866c3",
+        "relationship--ac89c5e2-ade5-4889-a905-7dbe835ff5fd"
+    ],
+    "graph_nodes": [
+        {
+            "count": 2,
+            "id": 0,
+            "texts": [
+                "Wingbird",
+                "Pasam"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 2,
+            "id": 1,
+            "texts": [
+                "file",
+                "copy"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 4,
+            "id": 2,
+            "texts": [
+                "sspisrv.dll",
+                "sspisrv.dll",
+                "Security Accounts Manager (SAM) DLL",
+                "DLL"
+            ],
+            "label": "REGISTRY"
+        },
+        {
+            "count": 4,
+            "id": 3,
+            "texts": [
+                "lsass.exe",
+                "service",
+                "payload",
+                "entry-point function"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 3,
+            "id": 4,
+            "texts": [
+                "driver",
+                "driver",
+                "disk"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "that"
+            ],
+            "label": "OTHER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 3
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "5_4",
+            "source": 5,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "4_3",
+            "source": 4,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "drop": 2,
+        "alongside": 2,
+        "of": 2,
+        "register": 1,
+        "load": 2,
+        "as": 2,
+        "locate in": 1,
+        "infect": 1,
+        "drop to": 1
+    }
+}

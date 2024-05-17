@@ -1,0 +1,210 @@
+{
+    "id": "T1056.002",
+    "tech_id": "T1056.002",
+    "tech_name": "GUI Input Capture",
+    "best_phrases": [],
+    "tactics": [
+        "TA0009",
+        "TA0006"
+    ],
+    "features": [
+        "DATA",
+        "FUNCTION",
+        "USER",
+        "NETWORK",
+        "DIRECTORY"
+    ],
+    "locations": [
+        "macOS",
+        "Windows",
+        "Linux"
+    ],
+    "procedures": [
+        "relationship--0908b4ce-fcfc-4307-a887-70fc8c27da3a",
+        "relationship--31a72381-c672-404f-afd2-17bfb2aa3078",
+        "relationship--5a56cf34-c344-4b2a-ac9e-4f08f049d7ce",
+        "relationship--7566c29c-f071-40fa-a437-34d2f36eadb6",
+        "relationship--7eef6b42-8c4c-4619-b0ed-fa17f16de722",
+        "relationship--9480dac9-9192-4966-a622-0ca561b59f16",
+        "relationship--a568a6a5-860b-4fe1-9f00-ab6fbbb41a26",
+        "relationship--a7744970-817e-43c6-89e4-86907ac20361",
+        "relationship--b019c5ea-be5e-453a-9ed6-e86384c92259",
+        "relationship--e6553c0d-9f67-412a-8e72-fad7059c35b1"
+    ],
+    "graph_nodes": [
+        {
+            "count": 9,
+            "id": 0,
+            "texts": [
+                "Proton",
+                "Keydnap",
+                "Bundlore",
+                "iKitten",
+                "Dok",
+                "Metamorfo",
+                "Calisto",
+                "FIN4",
+                "XCSSET"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 11,
+            "id": 1,
+            "texts": [
+                "users",
+                "credentials",
+                "credentials",
+                "fake forms",
+                "credentials",
+                "password",
+                "login",
+                "credentials",
+                "credentials",
+                "native macOS dialog box",
+                "credentials"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 6,
+            "id": 2,
+            "texts": [
+                "user",
+                "victims",
+                "user",
+                "victims",
+                "user",
+                "user"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "top"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "banking sites"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 7,
+            "id": 5,
+            "texts": [
+                "input prompt",
+                "password",
+                "login",
+                "spoofed Windows Authentication prompts",
+                "system process",
+                "credphisher.py module",
+                "SILENTTRINITY"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 6,
+            "texts": [
+                "/Applications/Safari.app/Contents/MacOS/SafariForWebKitDevelopment"
+            ],
+            "label": "DIRECTORY"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 7
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 3
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 3
+        },
+        {
+            "id": "5_1",
+            "source": 5,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "5_2",
+            "source": 5,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "2_5",
+            "source": 2,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "0_6",
+            "source": 0,
+            "dest": 6,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "prompt": 4,
+        "for": 6,
+        "display": 1,
+        "on": 2,
+        "intercept": 1,
+        "of": 3,
+        "from": 1,
+        "present": 2,
+        "ask for": 1,
+        "with": 2,
+        "collect": 1,
+        "input": 1,
+        "use": 3
+    }
+}

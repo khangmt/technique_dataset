@@ -1,0 +1,129 @@
+{
+    "id": "T1550",
+    "tech_id": "T1550",
+    "tech_name": "Use Alternate Authentication Material",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005",
+        "TA0008"
+    ],
+    "features": [
+        "FUNCTION",
+        "REGISTRY",
+        "DATA",
+        "NETWORK"
+    ],
+    "locations": [
+        "Windows",
+        "Office 365",
+        "SaaS",
+        "Google Workspace",
+        "IaaS",
+        "Containers"
+    ],
+    "procedures": [
+        "relationship--2a8a7397-8977-4554-abbf-5168074cd4cc",
+        "relationship--6ee04a90-7158-43a6-8133-9b498f1fef2c"
+    ],
+    "graph_nodes": [
+        {
+            "count": 3,
+            "id": 0,
+            "texts": [
+                "actors",
+                "APT29",
+                "FoggyWeb"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 2,
+            "id": 1,
+            "texts": [
+                "forged SAML tokens",
+                "SAML token"
+            ],
+            "label": "REGISTRY"
+        },
+        {
+            "count": 1,
+            "id": 2,
+            "texts": [
+                "users"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 4,
+            "id": 3,
+            "texts": [
+                "MFA",
+                "services",
+                "enterprise cloud applications",
+                "abuse"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "server"
+            ],
+            "label": "NETWORK"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 1,
+        "impersonate": 1,
+        "bypass": 1,
+        "access": 1,
+        "enable": 1,
+        "allow": 1,
+        "of": 2
+    }
+}

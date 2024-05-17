@@ -1,0 +1,292 @@
+{
+    "id": "T1080",
+    "tech_id": "T1080",
+    "tech_name": "Taint Shared Content",
+    "best_phrases": [],
+    "tactics": [
+        "TA0008"
+    ],
+    "features": [
+        "DATA",
+        "FUNCTION",
+        "COMPONENT",
+        "NETWORK",
+        "DIRECTORY",
+        "USER"
+    ],
+    "locations": [
+        "Windows",
+        "Office 365",
+        "SaaS",
+        "Linux",
+        "macOS"
+    ],
+    "procedures": [
+        "relationship--1539eaf6-e4ea-4e9d-af2b-2594d1ca5b38",
+        "relationship--27b05a62-5310-40d9-9e49-b4dce3afad55",
+        "relationship--365f82e7-6fad-44a7-855d-955d4307920f",
+        "relationship--9b2ff8c9-3811-4615-a0c7-d79a14b7ade6",
+        "relationship--bf160f02-ab07-4f2d-8625-5818833bb77f",
+        "relationship--cd99a29c-0364-4d56-97ff-97542ff76fde",
+        "relationship--d9cb5add-4191-4c2e-bcde-25336748804c",
+        "relationship--e0d33a40-a0d1-49fe-bea1-d0e4f000f628",
+        "relationship--e665a033-2893-43f5-ab5f-ba4c91636aba",
+        "relationship--f5faa97f-761c-4978-8535-2d9a42fcdd6f"
+    ],
+    "graph_nodes": [
+        {
+            "count": 10,
+            "id": 0,
+            "texts": [
+                "H1N1",
+                "Darkhotel",
+                "Ramsay",
+                "Gamaredon Group",
+                "BRONZE BUTLER",
+                "InvisiMole",
+                "Conti",
+                "Miner-C",
+                "Stuxnet",
+                "Ursnif"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 11,
+            "id": 1,
+            "texts": [
+                "functionality",
+                "virus",
+                "executables",
+                "portable executable files",
+                "macros",
+                "malware",
+                "legitimate software",
+                "documents",
+                "attempt",
+                "code",
+                "propagation"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 6,
+            "id": 2,
+            "texts": [
+                "itself",
+                "itself",
+                "itself",
+                "itself",
+                "itself",
+                "itself"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 13,
+            "id": 3,
+            "texts": [
+                "network shares",
+                "Word and Excel documents",
+                "file shares",
+                "name",
+                "legitimate documents",
+                "share",
+                "legitimate software",
+                "documents",
+                "versions",
+                "file",
+                "network shares",
+                "WinCC database views",
+                "files"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 7,
+            "id": 4,
+            "texts": [
+                "shared drives",
+                "networks shared drives",
+                "mapped network drives",
+                "network shared drives",
+                "remote machines",
+                "Network Attached Storage (NAS) devices",
+                "network drives"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 3,
+            "id": 5,
+            "texts": [
+                "compromised network",
+                "network",
+                "remote servers"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 1,
+            "id": 6,
+            "texts": [
+                "public folder"
+            ],
+            "label": "DIRECTORY"
+        },
+        {
+            "count": 1,
+            "id": 7,
+            "texts": [
+                "victims"
+            ],
+            "label": "USER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 8
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 4
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 3
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 4
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 8
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 3
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "3_5",
+            "source": 3,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "2_5",
+            "source": 2,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "0_6",
+            "source": 0,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "0_7",
+            "source": 0,
+            "dest": 7,
+            "count": 1
+        },
+        {
+            "id": "2_6",
+            "source": 2,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "6_4",
+            "source": 6,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "7_3",
+            "source": 7,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "5_3",
+            "source": 5,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "have": 1,
+        "copy": 3,
+        "to": 2,
+        "use": 2,
+        "infect": 7,
+        "store on": 1,
+        "spread": 2,
+        "on": 6,
+        "inject": 1,
+        "into": 4,
+        "place": 1,
+        "give": 1,
+        "as": 1,
+        "replace": 1,
+        "with": 3,
+        "in": 4,
+        "propagate": 1,
+        "within": 1,
+        "by": 3,
+        "of": 1,
+        "open": 1,
+        "for": 2
+    }
+}

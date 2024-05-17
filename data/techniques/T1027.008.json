@@ -1,0 +1,76 @@
+{
+    "id": "T1027.008",
+    "tech_id": "T1027.008",
+    "tech_name": "Stripped Payloads",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA"
+    ],
+    "locations": [
+        "macOS",
+        "Linux",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--596ef2d8-53ff-4fde-8dd2-08b53371d0da"
+    ],
+    "graph_nodes": [
+        {
+            "count": 1,
+            "id": 0,
+            "texts": [
+                "macOS.OSAMiner"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 3,
+            "id": 1,
+            "texts": [
+                "Applescripts",
+                "detection",
+                "AppleScript"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 2,
+            "id": 2,
+            "texts": [
+                "compiled and stripped version",
+                "human readable indicators"
+            ],
+            "label": "DATA"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 2,
+        "remove": 1,
+        "evade": 1,
+        "of": 1
+    }
+}

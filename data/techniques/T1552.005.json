@@ -1,0 +1,103 @@
+{
+    "id": "T1552.005",
+    "tech_id": "T1552.005",
+    "tech_name": "Cloud Instance Metadata API",
+    "best_phrases": [],
+    "tactics": [
+        "TA0006"
+    ],
+    "features": [
+        "DATA",
+        "COMPONENT",
+        "FUNCTION"
+    ],
+    "locations": [
+        "IaaS"
+    ],
+    "procedures": [
+        "relationship--51551fb5-48df-4143-9163-9b7ffe35bf8f",
+        "relationship--bc953a16-2049-4050-8790-5efb54be6e34",
+        "relationship--ced41648-7201-4eb8-aaae-c376e05af519"
+    ],
+    "graph_nodes": [
+        {
+            "count": 2,
+            "id": 0,
+            "texts": [
+                "TeamTNT",
+                "Hildegard"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 2,
+            "id": 1,
+            "texts": [
+                "AWS instance metadata service",
+                "query AWS and GCP metadata APIs"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 3,
+            "id": 2,
+            "texts": [
+                "credentials",
+                "secrets",
+                "cloud credentials"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 2,
+            "id": 3,
+            "texts": [
+                "Peirates",
+                "Cloud Instance Metadata API"
+            ],
+            "label": "FUNCTION"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "query": 3,
+        "for": 6
+    }
+}

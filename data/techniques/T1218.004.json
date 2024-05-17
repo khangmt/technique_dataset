@@ -1,0 +1,128 @@
+{
+    "id": "T1218.004",
+    "tech_id": "T1218.004",
+    "tech_name": "InstallUtil",
+    "best_phrases": [
+        "installutil.exe",
+        "InstallUtil"
+    ],
+    "tactics": [
+        "TA0005"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "COMPONENT"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--26372fd8-6298-4da6-b412-5fb155f55786",
+        "relationship--42440c0c-f28b-4c42-94af-dc4cad6a8dd7",
+        "relationship--4854028c-5924-478c-b274-a37f3ad5d7d2",
+        "relationship--70fa0bd3-3fbb-4fda-9de2-2b751f9552e7",
+        "relationship--e3ac1997-f11f-4f3d-8339-8e077ab00149"
+    ],
+    "graph_nodes": [
+        {
+            "count": 5,
+            "id": 0,
+            "texts": [
+                "Chaes",
+                "Mustang Panda",
+                "WhisperGate",
+                "menuPass",
+                "Saint Bot"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 9,
+            "id": 1,
+            "texts": [
+                "Installutill",
+                "InstallUtil.exe",
+                "Beacon stager",
+                "InstallUtil.exe",
+                "process",
+                "InstallUtil.exe",
+                "software",
+                "InstallUtil.exe",
+                "executables"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 2,
+            "texts": [
+                "content"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "part"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "Windows Defender"
+            ],
+            "label": "COMPONENT"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 8
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 5,
+        "download": 1,
+        "execute": 2,
+        "as": 2,
+        "disable": 1,
+        "of": 1,
+        "deploy": 1
+    }
+}

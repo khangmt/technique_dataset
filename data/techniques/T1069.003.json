@@ -1,0 +1,100 @@
+{
+    "id": "T1069.003",
+    "tech_id": "T1069.003",
+    "tech_name": "Cloud Groups",
+    "best_phrases": [],
+    "tactics": [
+        "TA0007"
+    ],
+    "features": [
+        "DATA",
+        "COMPONENT",
+        "FUNCTION"
+    ],
+    "locations": [
+        "Azure AD",
+        "Office 365",
+        "SaaS",
+        "IaaS",
+        "Google Workspace"
+    ],
+    "procedures": [
+        "relationship--11f6bf91-2330-4490-831d-3c84982a2280",
+        "relationship--5b550a59-f036-4a4e-87f8-2125d2fe7c11",
+        "relationship--73b54501-4907-45ec-b64a-4465a2f07a96",
+        "relationship--97115dbf-de19-4816-8c5a-5cb8b7103e8a"
+    ],
+    "graph_nodes": [
+        {
+            "count": 1,
+            "id": 0,
+            "texts": [
+                "Scattered Spider"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 3,
+            "id": 1,
+            "texts": [
+                "Azure AD",
+                "Azure AD groups",
+                "Azure AD groups"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 4,
+            "id": 2,
+            "texts": [
+                "bulk lists",
+                "Active Directory attributes",
+                "group members",
+                "IAM permissions"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 3,
+            "id": 3,
+            "texts": [
+                "ROADTools",
+                "AADInternals",
+                "Pacu"
+            ],
+            "label": "FUNCTION"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "access": 1,
+        "download": 1,
+        "of": 1,
+        "enumerate": 3
+    }
+}

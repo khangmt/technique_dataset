@@ -1,0 +1,100 @@
+{
+    "id": "T1587.002",
+    "tech_id": "T1587.002",
+    "tech_name": "Code Signing Certificates",
+    "best_phrases": [],
+    "tactics": [
+        "TA0042"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA"
+    ],
+    "locations": [
+        "PRE"
+    ],
+    "procedures": [
+        "relationship--4ac5b593-8f47-46cc-9af3-fcb0eb20f66e",
+        "relationship--9319fb2f-88df-4195-a42e-2a6a983a4840",
+        "relationship--96ff6190-cb11-4473-a194-abbf317205b8"
+    ],
+    "graph_nodes": [
+        {
+            "count": 3,
+            "id": 0,
+            "texts": [
+                "PROMETHIUM",
+                "Patchwork",
+                "Lazarus Group"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 2,
+            "id": 1,
+            "texts": [
+                "self-signed certificates",
+                "self-signed certificates"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 4,
+            "id": 2,
+            "texts": [
+                "installers",
+                "malware",
+                "malware",
+                "dbxcli utility"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 2,
+            "id": 3,
+            "texts": [
+                "that",
+                "fictitious and spoofed legitimate software companies"
+            ],
+            "label": "OTHER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "create": 2,
+        "sign": 3,
+        "use": 1,
+        "from": 1
+    }
+}

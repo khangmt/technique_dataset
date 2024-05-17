@@ -1,0 +1,166 @@
+{
+    "id": "T1021.006",
+    "tech_id": "T1021.006",
+    "tech_name": "Windows Remote Management",
+    "best_phrases": [],
+    "tactics": [
+        "TA0008"
+    ],
+    "features": [
+        "FUNCTION",
+        "NETWORK",
+        "COMPONENT",
+        "DATA",
+        "USER"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--0f9b73b7-734d-4ceb-8a93-776652626c73",
+        "relationship--3c40e9a1-72fd-4c7d-8a69-df574c54441e",
+        "relationship--571c83a5-0a53-4f57-93bc-52356b6cc741",
+        "relationship--7779c4b8-d007-439a-81b7-b56efb8742ea",
+        "relationship--c5bab3a0-69b6-4ef6-97b3-3f3aecd710f8",
+        "relationship--db1f0baf-27ee-4e1c-9d8f-6a82918b5f0f",
+        "relationship--df8350d6-a7a7-421d-a9e8-64d7e0cc0653",
+        "relationship--f947ae1c-1042-469d-b00e-84784e406cec"
+    ],
+    "graph_nodes": [
+        {
+            "count": 1,
+            "id": 0,
+            "texts": [
+                "FIN13"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 4,
+            "id": 1,
+            "texts": [
+                "SQL servers",
+                "application servers",
+                "victim network",
+                "Window Remote Management"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 13,
+            "id": 2,
+            "texts": [
+                "WMI",
+                "Brute Ratel C4",
+                "WinRM",
+                "pivoting",
+                "WinRM",
+                "WinRM",
+                "payloads",
+                "commands",
+                "PowerShell",
+                "WinRM",
+                "payload",
+                "SILENTTRINITY",
+                "WinRM"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 5,
+            "id": 3,
+            "texts": [
+                "Threat Group-3390",
+                "Chimera",
+                "APT29",
+                "Cobalt Strike",
+                "Wizard Spider"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 2,
+            "id": 4,
+            "texts": [
+                "remote hosts",
+                "remote host"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "TrustedHosts"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 6,
+            "texts": [
+                "targets"
+            ],
+            "label": "USER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 5
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "2_5",
+            "source": 2,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "2_6",
+            "source": 2,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "6_2",
+            "source": 6,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 2
+        }
+    ],
+    "verbs": {
+        "use": 8,
+        "for": 2,
+        "execute": 2,
+        "by": 2,
+        "on": 2,
+        "track": 1,
+        "to": 1
+    }
+}

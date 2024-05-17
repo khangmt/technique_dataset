@@ -1,0 +1,120 @@
+{
+    "id": "T1505.004",
+    "tech_id": "T1505.004",
+    "tech_name": "IIS Components",
+    "best_phrases": [],
+    "tactics": [
+        "TA0003"
+    ],
+    "features": [
+        "FUNCTION",
+        "NETWORK",
+        "COMPONENT",
+        "REGISTRY"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--2c0b0d7b-239c-4514-9f32-1abb8aa44dbc",
+        "relationship--652ba0d5-1bd3-4dcb-93c5-f339ffdae886",
+        "relationship--a2c0d9fd-5ce9-4df1-8218-771b111bc1e4",
+        "relationship--c1884e62-7b2e-45a1-89fd-c76b1b717f50"
+    ],
+    "graph_nodes": [
+        {
+            "count": 4,
+            "id": 0,
+            "texts": [
+                "RGDoor",
+                "IceApple",
+                "Lazarus Group",
+                "OwaAuth"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 8,
+            "id": 1,
+            "texts": [
+                "IIS module",
+                "IIS post-exploitation framework",
+                "18 modules",
+                "functionalities",
+                "Windows servers",
+                "C2 components",
+                "ISAPI filter",
+                "IIS w3wp.exe process"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 2,
+            "texts": [
+                "Internet Information Systems"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 2,
+            "id": 3,
+            "texts": [
+                "IIS",
+                "Exchange servers"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "DLL"
+            ],
+            "label": "REGISTRY"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 5
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "as": 2,
+        "be": 1,
+        "consist of": 1,
+        "provide": 1,
+        "target": 1,
+        "install": 1,
+        "run": 2,
+        "onto": 1,
+        "load": 1
+    }
+}

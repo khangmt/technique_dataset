@@ -1,0 +1,165 @@
+{
+    "id": "T1098.005",
+    "tech_id": "T1098.005",
+    "tech_name": "Device Registration",
+    "best_phrases": [],
+    "tactics": [
+        "TA0003",
+        "TA0004"
+    ],
+    "features": [
+        "COMPONENT",
+        "FUNCTION",
+        "NETWORK",
+        "DATA",
+        "USER"
+    ],
+    "locations": [
+        "Azure AD",
+        "Windows",
+        "SaaS"
+    ],
+    "procedures": [
+        "relationship--3bd11b5b-4dba-4612-98e0-0f3e18686123",
+        "relationship--5124a13e-f7a3-43ad-88e4-c73c380cb6f7",
+        "relationship--a05709f5-d61c-40cf-8fdc-d821eafce194",
+        "relationship--a7392d5f-d653-4b74-bf08-d95beb5fabcc"
+    ],
+    "graph_nodes": [
+        {
+            "count": 1,
+            "id": 0,
+            "texts": [
+                "APT29"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 6,
+            "id": 1,
+            "texts": [
+                "device",
+                "Azure AD environment",
+                "device",
+                "Azure AD",
+                "devices",
+                "devices"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 6,
+            "id": 2,
+            "texts": [
+                "successful password guessing attack",
+                "MFA",
+                "AADInternals",
+                "Set-CASMailbox",
+                "command",
+                "MFA"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "dormant account"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 2,
+            "id": 4,
+            "texts": [
+                "mailbox syncing",
+                "VPN"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "Scattered Spider"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 1,
+            "id": 6,
+            "texts": [
+                "victims"
+            ],
+            "label": "USER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 3
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "4_2",
+            "source": 4,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "5_1",
+            "source": 5,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "4_6",
+            "source": 4,
+            "dest": 6,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "enrol": 1,
+        "to": 4,
+        "follow": 2,
+        "in": 1,
+        "against": 1,
+        "register": 2,
+        "enable": 1,
+        "by": 2,
+        "for": 1,
+        "of": 1
+    }
+}

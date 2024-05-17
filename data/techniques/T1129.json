@@ -1,0 +1,290 @@
+{
+    "id": "T1129",
+    "tech_id": "T1129",
+    "tech_name": "Shared Modules",
+    "best_phrases": [],
+    "tactics": [
+        "TA0002"
+    ],
+    "features": [
+        "FUNCTION",
+        "REGISTRY",
+        "DATA",
+        "NETWORK",
+        "COMPONENT"
+    ],
+    "locations": [
+        "Windows",
+        "macOS",
+        "Linux"
+    ],
+    "procedures": [
+        "relationship--02d4ee3d-adb9-49fc-8e91-3379c508692b",
+        "relationship--15455c48-f71c-480d-91b8-e41f12608705",
+        "relationship--163c1ca5-c5cb-4cc8-b9e4-d0a137d41e52",
+        "relationship--261e7ed2-9252-40ea-9f06-abc45797c004",
+        "relationship--30c9343b-bb15-494a-a1cf-4449131ec216",
+        "relationship--75640de7-9608-4c19-a0b3-6fb4816ec56a",
+        "relationship--79cb18f3-0640-4b9d-9e93-62e3300f99d8",
+        "relationship--7bbc0809-d6ba-4be5-9397-e44b9481f317",
+        "relationship--831513ed-bbf2-406f-ab74-bfffa8a376b7",
+        "relationship--91d0f880-8928-4173-bb2f-518876a8c0b3",
+        "relationship--9da28d8d-5111-491a-9557-bee7004fc3a6",
+        "relationship--a2c141ff-d733-4d73-96af-618ed26b7547",
+        "relationship--a7ec0d1d-462b-4909-acee-f2aa1f9199b1",
+        "relationship--b4ef6c6e-d7aa-451a-b071-faf0138cfbff",
+        "relationship--db3b37f1-9c85-4e52-bbd7-4b71ad68400d",
+        "relationship--e07d9070-6989-43e7-aee0-1b18aff1ffbe",
+        "relationship--e6e81473-84f4-40f0-b7a1-122599f801e6",
+        "relationship--f77738b8-e17c-4b6b-98fc-ffcc569cc008"
+    ],
+    "graph_nodes": [
+        {
+            "count": 18,
+            "id": 0,
+            "texts": [
+                "gh0st RAT",
+                "remote attackers",
+                "Hydraq",
+                "PUNCHBUGGY",
+                "Stuxnet",
+                "Astaroth",
+                "KillDisk",
+                "Metamorfo",
+                "DarkWatchman",
+                "Attor",
+                "FoggyWeb",
+                "RotaJakiro",
+                "BLINDINGCAN",
+                "Bumblebee",
+                "TajMahal",
+                "BOOSTWRITE",
+                "Dtrack",
+                "PipeMon"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 10,
+            "id": 1,
+            "texts": [
+                "DLLs",
+                "DLL",
+                "DLL",
+                "DLL",
+                "DLLs",
+                "respective DLLs",
+                "FoggyWeb dll",
+                "DLLs",
+                "GdiPlus.dll",
+                "LoadLibrary call template DLL"
+            ],
+            "label": "REGISTRY"
+        },
+        {
+            "count": 6,
+            "id": 2,
+            "texts": [
+                "memory",
+                "exports",
+                "files",
+                "memory",
+                "file",
+                "function pointer"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 6,
+            "id": 3,
+            "texts": [
+                "which",
+                "dlopen",
+                "dlsym",
+                "dlopen",
+                "(",
+                "dlsym"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 31,
+            "id": 4,
+            "texts": [
+                "DLL functions",
+                "backdoor",
+                "LoadLibrary API",
+                "LoadLibrary",
+                "LoadLibraryExW() function",
+                "modules",
+                "functions",
+                "AutoIt",
+                "DLL payload",
+                "dispatcher",
+                "plugins",
+                "loader",
+                "load() function",
+                "linked shared libraries",
+                "functionality",
+                "runtime",
+                "LoadLibrary",
+                "processes",
+                "DWriteCreateFactory() function",
+                "modules",
+                "function",
+                "GetProcAddress",
+                "LoadLibrary",
+                "OSX_OCEANLOTUS.D",
+                "dynamic library",
+                "shared library",
+                "call",
+                "installer",
+                "custom shellcode",
+                "reflective loading",
+                "LoadLibrary"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 3,
+            "id": 5,
+            "texts": [
+                "Application Domain",
+                "compromised AD FS server",
+                "network communications"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 1,
+            "id": 6,
+            "texts": [
+                "victim machine"
+            ],
+            "label": "COMPONENT"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 7
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 4
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 21
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "4_0",
+            "source": 4,
+            "dest": 0,
+            "count": 2
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 2
+        },
+        {
+            "id": "0_6",
+            "source": 0,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "1_6",
+            "source": 1,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "4_5",
+            "source": 4,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "4_2",
+            "source": 4,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "4_3",
+            "source": 4,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "load": 11,
+        "into": 5,
+        "by": 1,
+        "call": 4,
+        "create": 1,
+        "use": 13,
+        "execute": 8,
+        "from": 3,
+        "of": 2,
+        "on": 3,
+        "in": 2,
+        "during": 2,
+        "inject": 1,
+        "contain": 1,
+        "for": 1,
+        "obtain": 1,
+        "to": 1
+    }
+}

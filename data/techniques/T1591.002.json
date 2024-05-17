@@ -1,0 +1,131 @@
+{
+    "id": "T1591.002",
+    "tech_id": "T1591.002",
+    "tech_name": "Business Relationships",
+    "best_phrases": [],
+    "tactics": [
+        "TA0043"
+    ],
+    "features": [
+        "DATA",
+        "FUNCTION",
+        "NETWORK"
+    ],
+    "locations": [
+        "PRE"
+    ],
+    "procedures": [
+        "relationship--16d72046-2569-4517-9a8f-c9f4377df7ab",
+        "relationship--7e27f405-1e18-44d7-81d7-bbad57cba9b7",
+        "relationship--c2ebda8d-2f91-440c-85b1-36fa969300a5"
+    ],
+    "graph_nodes": [
+        {
+            "count": 3,
+            "id": 0,
+            "texts": [
+                "Dragonfly",
+                "LAPSUS$",
+                "Sandworm Team"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 4,
+            "id": 1,
+            "texts": [
+                "open source information",
+                "relationships",
+                "detailed knowledge",
+                "supply chain relationships"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 5,
+            "id": 2,
+            "texts": [
+                "organizations",
+                "organization",
+                "online research",
+                "2018 Winter Olympics",
+                "partner organizations"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 3,
+            "id": 3,
+            "texts": [
+                "targeting purposes",
+                "preparation",
+                "attack"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "official PyeongChang Olympics partnership site"
+            ],
+            "label": "NETWORK"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "collect": 1,
+        "identify": 1,
+        "between": 1,
+        "for": 2,
+        "gather": 1,
+        "of": 2,
+        "in": 1,
+        "conduct": 1,
+        "against": 1,
+        "list on": 1
+    }
+}

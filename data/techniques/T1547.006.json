@@ -1,0 +1,93 @@
+{
+    "id": "T1547.006",
+    "tech_id": "T1547.006",
+    "tech_name": "Kernel Modules and Extensions",
+    "best_phrases": [],
+    "tactics": [
+        "TA0003",
+        "TA0004"
+    ],
+    "features": [
+        "FUNCTION",
+        "REGISTRY",
+        "COMPONENT"
+    ],
+    "locations": [
+        "macOS",
+        "Linux"
+    ],
+    "procedures": [
+        "relationship--2cc2c087-e567-462a-80e6-059fd1276199",
+        "relationship--513128aa-573e-4185-b0dc-88738edacb65",
+        "relationship--e6a1906d-43d1-454c-8150-053759421b74"
+    ],
+    "graph_nodes": [
+        {
+            "count": 3,
+            "id": 0,
+            "texts": [
+                "Drovorub",
+                "Skidmap",
+                "attackers"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 3,
+            "id": 1,
+            "texts": [
+                "kernel modules",
+                "loadable kernel modules",
+                "signed kernel rootkit"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 2,
+            "texts": [
+                "LKMs"
+            ],
+            "label": "REGISTRY"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "infected machines"
+            ],
+            "label": "COMPONENT"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 2,
+        "install": 2,
+        "on": 2
+    }
+}

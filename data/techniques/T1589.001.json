@@ -1,0 +1,211 @@
+{
+    "id": "T1589.001",
+    "tech_id": "T1589.001",
+    "tech_name": "Credentials",
+    "best_phrases": [
+        "Credentials"
+    ],
+    "tactics": [
+        "TA0043"
+    ],
+    "features": [
+        "DATA",
+        "USER",
+        "NETWORK",
+        "FUNCTION",
+        "COMPONENT"
+    ],
+    "locations": [
+        "PRE"
+    ],
+    "procedures": [
+        "relationship--05f6442b-1ba8-4356-9e3a-17edc6236a10",
+        "relationship--078fb58f-0b5b-4021-8467-800893c35d08",
+        "relationship--2de94367-a058-4a31-b19b-fddebe02ca64",
+        "relationship--68b21708-d862-42ba-8067-7fdca0bd1455",
+        "relationship--a30f4d65-bb33-4c5f-b278-e8ec73de5bb1",
+        "relationship--ddc692ea-33e8-493d-a5e3-ce0de48da15c",
+        "relationship--e0d494d7-f081-4195-92c6-95aae2f2cadc"
+    ],
+    "graph_nodes": [
+        {
+            "count": 6,
+            "id": 0,
+            "texts": [
+                "APT28",
+                "Magic Hound",
+                "Leviathan",
+                "APT29",
+                "LAPSUS$",
+                "Chimera"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 11,
+            "id": 1,
+            "texts": [
+                "login credentials",
+                "credentials",
+                "credentials",
+                "compromised credentials",
+                "credentials",
+                "access",
+                "credentials",
+                "user identities",
+                "credentials",
+                "credentials",
+                "credentials"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 4,
+            "id": 2,
+            "texts": [
+                "user",
+                "victims",
+                "victim",
+                "target"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 4,
+            "id": 3,
+            "texts": [
+                "over 900 Fortinet VPN servers",
+                "75 different websites",
+                "SMS",
+                "phishing messages"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 8,
+            "id": 4,
+            "texts": [
+                "that",
+                "US",
+                "Israel",
+                "Europe",
+                "organization",
+                "group",
+                "target organization",
+                "Scattered Spider"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 4,
+            "id": 5,
+            "texts": [
+                "targeting efforts",
+                "credential theft operations",
+                "breaches",
+                "bruteforce attacks"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 6,
+            "texts": [
+                "victim environments"
+            ],
+            "label": "COMPONENT"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 7
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 3
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "4_3",
+            "source": 4,
+            "dest": 3,
+            "count": 3
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 2
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 2
+        },
+        {
+            "id": "1_6",
+            "source": 1,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "4_2",
+            "source": 4,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "harvest": 1,
+        "of": 3,
+        "gather": 2,
+        "collect": 3,
+        "from": 5,
+        "validate": 1,
+        "across": 1,
+        "in": 2,
+        "for": 2,
+        "conduct": 1,
+        "obtain": 1,
+        "to": 1,
+        "reset": 1,
+        "by": 2,
+        "send": 1,
+        "steal": 1
+    }
+}

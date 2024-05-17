@@ -1,0 +1,115 @@
+{
+    "id": "T1110.004",
+    "tech_id": "T1110.004",
+    "tech_name": "Credential Stuffing",
+    "best_phrases": [],
+    "tactics": [
+        "TA0006"
+    ],
+    "features": [
+        "FUNCTION",
+        "NETWORK",
+        "DATA",
+        "USER"
+    ],
+    "locations": [
+        "Windows",
+        "Azure AD",
+        "Office 365",
+        "SaaS",
+        "IaaS",
+        "Linux",
+        "macOS",
+        "Google Workspace",
+        "Containers"
+    ],
+    "procedures": [
+        "relationship--bfc3568d-1304-43ce-be97-5fc4209d8a79",
+        "relationship--c9932124-c6dd-4c26-a762-bde5be25bed7"
+    ],
+    "graph_nodes": [
+        {
+            "count": 2,
+            "id": 0,
+            "texts": [
+                "Chimera",
+                "TrickBot"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 3,
+            "id": 1,
+            "texts": [
+                "credential stuffing",
+                "brute-force attack",
+                "rdpscanDll module"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 2,
+            "id": 2,
+            "texts": [
+                "remote services",
+                "RDP"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "valid accounts"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "victim"
+            ],
+            "label": "USER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 2,
+        "against": 4,
+        "obtain": 1,
+        "of": 1,
+        "with": 2
+    }
+}

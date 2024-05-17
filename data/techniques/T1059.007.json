@@ -1,0 +1,431 @@
+{
+    "id": "T1059.007",
+    "tech_id": "T1059.007",
+    "tech_name": "JavaScript",
+    "best_phrases": [
+        "javascript and node.js information stealer script",
+        "javascript code",
+        "javascript file",
+        "encoded html and javascript/vbscript code",
+        "javascript files",
+        "javascript payloads",
+        "various javascript",
+        "arbitrary javascript code",
+        "javascript scripts",
+        "javascript scriptlets",
+        "javascript",
+        "javascript-based backdoors",
+        "JavaScript"
+    ],
+    "tactics": [
+        "TA0002"
+    ],
+    "features": [
+        "FUNCTION",
+        "COMPONENT",
+        "USER",
+        "DATA",
+        "NETWORK"
+    ],
+    "locations": [
+        "Windows",
+        "macOS",
+        "Linux"
+    ],
+    "procedures": [
+        "relationship--06a82ed9-c3c3-412a-98f7-838442f4e1cc",
+        "relationship--072552be-9c74-4ee8-972c-46454a2c78c0",
+        "relationship--07f72efd-7960-4530-92f3-6ced33087212",
+        "relationship--0c4e4578-3bb1-4c9a-9dc8-af3b7368ada9",
+        "relationship--18771b0e-2d4b-4f76-ae1e-9cdac1c77cd0",
+        "relationship--2a94575a-8e47-4d69-964b-f96210a673bd",
+        "relationship--31221040-295a-437a-ac4a-d85e0b5d9122",
+        "relationship--326d0ed6-35a6-452e-a8a2-ab2a7e034faa",
+        "relationship--3281ad27-8a05-4389-9438-f0ffce776346",
+        "relationship--396056dc-8657-418c-9c7a-4468878af204",
+        "relationship--4142d0fd-6c96-417f-8725-17eabf444854",
+        "relationship--435c288d-1e10-4610-bf41-531390e5a650",
+        "relationship--4504384f-f832-4ec2-87b0-b8dfc2208083",
+        "relationship--58801cab-349a-4f09-b449-149b19bcf085",
+        "relationship--60989b47-4725-4077-8aed-fb5f990fda22",
+        "relationship--67d072c0-3439-4a61-9a67-fb3f2b72d04e",
+        "relationship--6b58b7e3-4588-45a6-9ff4-7f6ead315ac5",
+        "relationship--6be48603-8603-45dd-8423-294169ca45a6",
+        "relationship--6f57b4eb-ba87-4755-9b96-3715e1da1de1",
+        "relationship--7105dbb9-fcb2-41f7-a740-a19d539758fb",
+        "relationship--71ec5140-320c-452c-8512-6a787af027c8",
+        "relationship--72b1c4ab-81ca-47a4-a541-ceb44580c87b",
+        "relationship--7667e829-3602-410b-b3ea-614ed8d55607",
+        "relationship--80516f0f-53de-4058-9ae5-d426adb9e99e",
+        "relationship--8be670ce-f8bd-4f67-9f84-3e278235325a",
+        "relationship--8dd45f3b-a005-40b3-a6ef-c1ef208e8504",
+        "relationship--8e8bebc7-14ff-4c84-a2a4-472446c5897a",
+        "relationship--8ef60c8b-f178-4b78-b5c4-76747e075d84",
+        "relationship--98b90b49-f152-4eb5-8bb7-3b6c68bf9646",
+        "relationship--9e6ca313-671b-4157-89f5-377d81c1355d",
+        "relationship--a28ed204-7e5c-4090-a0c5-0a056ef602fe",
+        "relationship--ab55f99b-5239-4aea-93f7-e1002520bf05",
+        "relationship--b8fbce12-deae-4655-ac96-e23ebbeef624",
+        "relationship--cb36459a-d37c-424f-8130-55cf8d29417e",
+        "relationship--cbba2f85-d5f4-4306-a219-5eea6c59dbb6",
+        "relationship--ccc14a82-43bc-4eea-b19f-95aba6bdb5e6",
+        "relationship--cd45bd64-3793-49e7-82d0-9cdabf417d61",
+        "relationship--cea08e8e-2209-4d29-bc76-722091344259",
+        "relationship--d70ae3e8-39e2-4835-9ba6-56dee8d028fc",
+        "relationship--ea3b16db-6b34-4171-9dec-7ce618f49dee",
+        "relationship--eb17d12e-721b-4ebb-a4ff-8fe62a3189ca",
+        "relationship--eb2b318e-2968-485e-8459-1b40c74baf83",
+        "relationship--f3f85cfd-557c-45c1-82ae-a9e349c8714c",
+        "relationship--fdbd14e9-fffa-4120-a979-24eead47ffa4"
+    ],
+    "graph_nodes": [
+        {
+            "count": 38,
+            "id": 0,
+            "texts": [
+                "AppleSeed",
+                "Metamorfo",
+                "Turla",
+                "APT32",
+                "NanHaiShu",
+                "FIN6",
+                "Sidewinder",
+                "Avaddon",
+                "MuddyWater",
+                "Earth Lusca",
+                "GRIFFON",
+                "Silence",
+                "LazyScripter",
+                "EnvyScout",
+                "Valak",
+                "TA505",
+                "InvisiMole",
+                "DarkWatchman",
+                "Astaroth",
+                "FIN7",
+                "JSS Loader",
+                "APT41",
+                "Xbash",
+                "Cobalt Group",
+                "Higaisa",
+                "Kimsuky",
+                "Ember Bear",
+                "jRAT",
+                "SpicyOmelette",
+                "Indrik Spider",
+                "POWERSTATS",
+                "Molerats",
+                "Chaes",
+                "KONNI",
+                "threat actors",
+                "Bundlore",
+                "threat actors",
+                "KOPILUWAK"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 73,
+            "id": 1,
+            "texts": [
+                "JavaScript",
+                "PowerShell",
+                "Cobalt Strike System Profiler",
+                "JavaScript",
+                "reconnaissance actions",
+                "payloads",
+                "JavaScript",
+                "JavaScript-based backdoors",
+                "various JavaScript",
+                "JavaScript",
+                "drive-by downloads",
+                "C2 communications",
+                "Jscript code",
+                "JavaScript",
+                "JavaScript",
+                "malware loaders",
+                "QakBot web inject module",
+                "Java Script",
+                "JavaScript",
+                "malware",
+                "JScript downloader",
+                "JavaScript files",
+                "POWERSTATS payload",
+                "JavaScript code",
+                "watering hole operations",
+                "JavaScript",
+                "JS scripts",
+                "JavaScript",
+                "attacks",
+                "JavaScript",
+                "open-source tool",
+                "FileSaver",
+                "JavaScript",
+                "JavaScript",
+                "code",
+                "JavaScript file",
+                "JavaScript",
+                "core functionalities",
+                "JavaScript scripts",
+                "tasks",
+                "JavaScript files",
+                "JScript web shells",
+                "JScript",
+                "JavaScript",
+                "Donut",
+                "JavaScript payloads",
+                "JavaScript scriptlets",
+                "JavaScript",
+                "JScript",
+                "tools",
+                "JavaScript",
+                "code",
+                "HTA files",
+                "JScript",
+                "arbitrary JavaScript code",
+                "JavaScript files",
+                "components",
+                "attack",
+                "JavaScript code",
+                "those",
+                "implants",
+                "JS",
+                "JavaScript and Node.Js information stealer script",
+                "node process",
+                "JavaScript code",
+                "JavaScript code",
+                "JavaScript",
+                "Evilnum",
+                "JavaScript files",
+                "HTA file",
+                "encoded HTML and JavaScript/VBScript code",
+                "Javascript",
+                "core functions"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 6,
+            "id": 2,
+            "texts": [
+                "drive-by downloads",
+                "C2 communications",
+                "e-commerce sites",
+                "web banking pages",
+                "HTML pages",
+                "legitimate websites"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 11,
+            "id": 3,
+            "texts": [
+                "machine",
+                "disk",
+                "machine",
+                "compromised systems",
+                "machine",
+                "machine",
+                "machine",
+                "compromised host",
+                "target machines",
+                "browser",
+                "machine"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 9,
+            "id": 4,
+            "texts": [
+                "victim",
+                "victim",
+                "victim",
+                "victim",
+                "victim",
+                "victim",
+                "Leafminer infected victims",
+                "victim",
+                "victim"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 8,
+            "id": 5,
+            "texts": [
+                "payment card data",
+                "files",
+                "modified version",
+                "configuration data",
+                "execution chain",
+                "shellcode outputs",
+                "files",
+                "data"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 7,
+            "id": 6,
+            "texts": [
+                "MoustachedBouncer",
+                "part",
+                "part",
+                "that",
+                "those",
+                "implants",
+                "mix"
+            ],
+            "label": "OTHER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 47
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 4
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 7
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 11
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 7
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 4
+        },
+        {
+            "id": "5_2",
+            "source": 5,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "4_2",
+            "source": 4,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "6_1",
+            "source": 6,
+            "dest": 1,
+            "count": 6
+        },
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "1_6",
+            "source": 1,
+            "dest": 6,
+            "count": 3
+        },
+        {
+            "id": "5_3",
+            "source": 5,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "5_1",
+            "source": 5,
+            "dest": 1,
+            "count": 4
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 3
+        },
+        {
+            "id": "0_6",
+            "source": 0,
+            "dest": 6,
+            "count": 2
+        },
+        {
+            "id": "6_5",
+            "source": 6,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "6_3",
+            "source": 6,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 28,
+        "execute": 15,
+        "perform": 4,
+        "include": 1,
+        "write in": 1,
+        "basedon": 1,
+        "for": 4,
+        "on": 16,
+        "of": 13,
+        "steal": 1,
+        "from": 1,
+        "inject": 2,
+        "into": 3,
+        "visit": 1,
+        "deliver": 1,
+        "host on": 1,
+        "manipulate": 1,
+        "as": 5,
+        "in": 2,
+        "write": 1,
+        "to": 2,
+        "with": 3,
+        "contain": 2,
+        "deploy": 1,
+        "generate": 1,
+        "by": 1,
+        "download": 1,
+        "build with": 1,
+        "exfiltrate": 1
+    }
+}

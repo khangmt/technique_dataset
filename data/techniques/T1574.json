@@ -1,0 +1,161 @@
+{
+    "id": "T1574",
+    "tech_id": "T1574",
+    "tech_name": "Hijack Execution Flow",
+    "best_phrases": [],
+    "tactics": [
+        "TA0003",
+        "TA0004",
+        "TA0005"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "REGISTRY",
+        "COMPONENT"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--28291398-1281-404e-9603-8aae5a5a9919",
+        "relationship--58238854-4649-4cea-a43d-aae442dc60a6",
+        "relationship--70ed2026-90af-4236-8180-2c095bbce0fe",
+        "relationship--84f6c3c2-8758-4179-98ca-74e9f726fe7d"
+    ],
+    "graph_nodes": [
+        {
+            "count": 1,
+            "id": 0,
+            "texts": [
+                "One"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 9,
+            "id": 1,
+            "texts": [
+                "Dtrack",
+                "normal flow",
+                "code",
+                "migwiz.exe",
+                "SearchIndexer.exe",
+                "SearchProtocolHost.exe",
+                "modifications",
+                "libraries",
+                "legitimate Microsoft binaries"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 3,
+            "id": 2,
+            "texts": [
+                "ShimRat",
+                "Denis",
+                "APT41"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 2,
+            "id": 3,
+            "texts": [
+                "cryptbase.dll",
+                "nonexistent Windows DLL \"msfte.dll"
+            ],
+            "label": "REGISTRY"
+        },
+        {
+            "count": 4,
+            "id": 4,
+            "texts": [
+                "privileges",
+                "version",
+                "Import Address Table",
+                "IAT"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "UAC controls"
+            ],
+            "label": "COMPONENT"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "2_5",
+            "source": 2,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 3
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "of": 1,
+        "replace": 2,
+        "with": 4,
+        "hijack": 1,
+        "escalate": 1,
+        "bypass": 1,
+        "within": 2,
+        "load": 2,
+        "use": 1,
+        "to": 2,
+        "by": 1
+    }
+}

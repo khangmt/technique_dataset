@@ -1,0 +1,558 @@
+{
+    "id": "T1070.006",
+    "tech_id": "T1070.006",
+    "tech_name": "Timestomp",
+    "best_phrases": [
+        "Timestomp"
+    ],
+    "tactics": [
+        "TA0005"
+    ],
+    "features": [
+        "DATA",
+        "FUNCTION",
+        "REGISTRY",
+        "DIRECTORY",
+        "COMPONENT",
+        "USER",
+        "NETWORK",
+        "ENCRYPTION"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--0d4d42e9-0473-42fc-b018-c79b54c7a87f",
+        "relationship--1036833a-1d4c-4d9e-b716-1e52606ab684",
+        "relationship--10b32db9-57a8-4baa-b540-3d26f9c7137b",
+        "relationship--1dfbe8fe-0e7a-42a7-85f0-a94b086b470b",
+        "relationship--237283ca-5cae-48c3-9a5a-3dc17725cd5f",
+        "relationship--26352538-769c-42c0-9e38-0338c5891432",
+        "relationship--3017cf15-f6a8-4281-8c74-9dd8f7c2666f",
+        "relationship--37804b22-63b4-4b24-846e-6541688d9213",
+        "relationship--51eb8d9b-1ca4-4a9e-9df4-9415e54e8aff",
+        "relationship--553dbb57-1174-494c-9cfd-dbc83ecc74f6",
+        "relationship--5793708d-b25a-4276-9b0b-697a8494e0f8",
+        "relationship--60137eb6-ed8c-41ce-bf75-6b45cdafe751",
+        "relationship--61e9d783-571b-49d4-a30b-8fde8a13d4c0",
+        "relationship--630ef5c5-438d-4681-b4e9-b9dee3934848",
+        "relationship--63dc6102-8405-4273-8e73-7df7ef6c2514",
+        "relationship--6d562520-86bb-4251-9431-a4958bec097c",
+        "relationship--6deeb486-90c3-4279-8549-17c81ea2466b",
+        "relationship--6fa3a8bd-3a66-4f48-9439-97e5ae3dcac9",
+        "relationship--71a8ae5e-3a78-49b5-9857-e202d636cedf",
+        "relationship--7bc61687-f105-403f-b83f-91168c8f41ad",
+        "relationship--8343b346-e529-4f28-a569-ae5f9a862ddf",
+        "relationship--8f8618b7-f197-4869-bb35-3ca58d171be0",
+        "relationship--914526ae-3322-440f-b79e-780bb0c84cf5",
+        "relationship--95ac6b41-2594-48a0-8437-c7d93111ed66",
+        "relationship--9bbfc21c-17ab-4f9a-bd8c-5079ee9b180f",
+        "relationship--9d8296bb-40a0-4a08-a01a-f6dd4409c6f1",
+        "relationship--a1da2d38-1c36-46bb-9245-ec4f650ef101",
+        "relationship--a2db7220-d784-485f-bc77-046b90c02daf",
+        "relationship--a4a0c78e-6f15-4304-9e40-36c09a532a05",
+        "relationship--a6350331-0c0d-4d0d-90a3-d5cc3e420875",
+        "relationship--b039a79c-8df3-4e89-95ad-03d27b16a13c",
+        "relationship--bf3726ed-c160-4f94-9b48-65a7da2a4ed3",
+        "relationship--bf833c53-a60f-4e92-92b4-9987334e7f85",
+        "relationship--cafe602e-c163-451c-8d61-69907e59968c",
+        "relationship--d275fe0c-3769-4fb1-80ee-2f8477019123",
+        "relationship--d2fa2382-dcfc-4cff-969b-2b5ec12dc406",
+        "relationship--d35f6c6f-c1ed-4b0d-b95f-9fd762eb3ac7",
+        "relationship--d43315b0-d708-4197-b3ed-0a0b1199e434",
+        "relationship--d57d1a71-6ac7-4028-ba73-86e5df98395f",
+        "relationship--d8a7ec97-b262-489d-bc4b-e2c7007f75bc",
+        "relationship--ea964313-8f60-4cff-800c-2ea49e2c19d7",
+        "relationship--ebf68107-a2b8-4ff1-916f-e1861a20914a",
+        "relationship--ecbe0204-b205-47d5-ba6a-ef5c29737eda",
+        "relationship--f082a4e1-b454-4528-9470-a2799215b235",
+        "relationship--ff14431c-bf82-44be-b12a-a65e88d5347a"
+    ],
+    "graph_nodes": [
+        {
+            "count": 37,
+            "id": 0,
+            "texts": [
+                "TAINTEDSCRIBE",
+                "APT28",
+                "Cyclops Blink",
+                "Stuxnet",
+                "Bankshot",
+                "FALLCHILL",
+                "OwaAuth",
+                "NightClub",
+                "USBStealer",
+                "BitPaymer",
+                "Cobalt Strike",
+                "OSX_OCEANLOTUS.D",
+                "PowerStallion",
+                "SEASHARPEE",
+                "Elise",
+                "APT38",
+                "APT32",
+                "Kimsuky",
+                "KeyBoy",
+                "EVILNUM",
+                "BLINDINGCAN",
+                "MacMa",
+                "Kobalos",
+                "PingPull",
+                "APT29",
+                "Attor",
+                "APT29",
+                "authors",
+                "Gelsemium",
+                "TEMP.Veles",
+                "Chimera",
+                "3PARA RAT",
+                "POSHSPY",
+                "Psylo",
+                "Shamoon",
+                "metaMain",
+                "Rocke"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 93,
+            "id": 1,
+            "texts": [
+                "timestamp",
+                "filenames",
+                "victim files",
+                "timestamps",
+                "modified firmware update images",
+                "compilation timestamp",
+                "early Gazer versions",
+                "driver files",
+                "times",
+                "legitimate files",
+                "time",
+                "file",
+                "file or directory timestamps",
+                "file",
+                "directory",
+                "Creation, Access, and Write timestamps",
+                "timestamps",
+                "last-access and last-write timestamps",
+                "dropper files",
+                "timestamp",
+                "files",
+                "payloads",
+                "timestamps",
+                "MAC times",
+                "local log files",
+                "desktop.ini file",
+                "files",
+                "data timestamps",
+                "files",
+                "scheduled task raw XML",
+                "random value",
+                "timestamp",
+                "backdated timestamp",
+                "June",
+                "creation time",
+                "file",
+                "clientID",
+                "timestamps",
+                "creation",
+                "compilation dates",
+                "creation date",
+                "files",
+                "modified file and directory timestamps",
+                "file timestamps",
+                "timestamps",
+                "sshd",
+                "replaced files",
+                "ssh",
+                "file",
+                "Standard Information timestamps",
+                "files",
+                "time",
+                "access",
+                "files",
+                "registry keys",
+                "timestamps",
+                "legitimate Windows files",
+                "timestamp",
+                "files",
+                "PE timestamps",
+                "zero values",
+                "file times",
+                "files",
+                "timestamps",
+                "$STANDARD_INFORMATION attribute",
+                "Windows version",
+                "date",
+                "time stamp",
+                "file creation time",
+                "creation time",
+                "Lazarus Group malware families",
+                "write timestamp",
+                "timestamp",
+                "random date",
+                "dropped files",
+                "attributes",
+                "creation/modification timestamps",
+                "files",
+                "timestamps",
+                "selected file",
+                "timestamps",
+                "file",
+                "system file",
+                "default PE compile timestamp",
+                "file",
+                "modified time",
+                "files",
+                "CreationTime, LastAccessTime, and LastWriteTime file time attributes",
+                "SYSTEM privileges",
+                "files",
+                "payloads",
+                "time stamp",
+                "files"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 53,
+            "id": 2,
+            "texts": [
+                "timestomping",
+                "Linux API function utime",
+                "command",
+                "standard Windows library",
+                "executable",
+                "decryption tool",
+                "Derusbi malware",
+                "timestomping",
+                "files",
+                "payloads",
+                "touch -t command",
+                "Web shell",
+                "timestomping",
+                "exploit",
+                "creation",
+                "compilation dates",
+                "anti-forensics",
+                "detection",
+                "capability",
+                "sshd",
+                "replaced files",
+                "ssh",
+                "added credential stealer",
+                "timestomping",
+                "web shells",
+                "backdoors",
+                "server component",
+                "InvisiMole samples",
+                "InvisiMole",
+                "built-in command",
+                "timestomping",
+                "Winnti",
+                "worker and service components",
+                "cmd.exe",
+                "timestomping",
+                "tools",
+                "Linux touch command",
+                "TDTESS",
+                "service",
+                "legitimate svchost.exe file",
+                "timestomping",
+                "legitimate .exe files",
+                "calc.exe",
+                "mspaint.exe",
+                "command",
+                "executables",
+                "command",
+                "timestomping",
+                "Misdat samples",
+                "forensic detection",
+                "Empire",
+                "files",
+                "payloads"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 5,
+            "id": 3,
+            "texts": [
+                "file",
+                "directory",
+                "folder",
+                "directory",
+                "System32 directory"
+            ],
+            "label": "DIRECTORY"
+        },
+        {
+            "count": 9,
+            "id": 4,
+            "texts": [
+                "those",
+                "that",
+                "that",
+                "2016",
+                "group",
+                "Chopper",
+                "that",
+                "those",
+                "Borland Delphi"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 8,
+            "id": 5,
+            "texts": [
+                "DLLs",
+                "genuine Windows DLL user32.dll",
+                "kernel32.dll",
+                "DLL",
+                "files",
+                "registry keys",
+                "DLLs",
+                "Registry key"
+            ],
+            "label": "REGISTRY"
+        },
+        {
+            "count": 5,
+            "id": 6,
+            "texts": [
+                "system",
+                "target machine",
+                "targeted systems",
+                "Windows",
+                "target machine"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 3,
+            "id": 7,
+            "texts": [
+                "victim",
+                "victims",
+                "victim"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 1,
+            "id": 8,
+            "texts": [
+                "CAB file"
+            ],
+            "label": "ENCRYPTION"
+        },
+        {
+            "count": 3,
+            "id": 9,
+            "texts": [
+                "sshd",
+                "replaced files",
+                "ssh"
+            ],
+            "label": "NETWORK"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 39
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 17
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 15
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 5
+        },
+        {
+            "id": "4_5",
+            "source": 4,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 16
+        },
+        {
+            "id": "2_6",
+            "source": 2,
+            "dest": 6,
+            "count": 5
+        },
+        {
+            "id": "2_0",
+            "source": 2,
+            "dest": 0,
+            "count": 2
+        },
+        {
+            "id": "1_6",
+            "source": 1,
+            "dest": 6,
+            "count": 2
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 6
+        },
+        {
+            "id": "1_7",
+            "source": 1,
+            "dest": 7,
+            "count": 2
+        },
+        {
+            "id": "2_8",
+            "source": 2,
+            "dest": 8,
+            "count": 1
+        },
+        {
+            "id": "4_3",
+            "source": 4,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "4_2",
+            "source": 4,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "1_9",
+            "source": 1,
+            "dest": 9,
+            "count": 1
+        },
+        {
+            "id": "9_2",
+            "source": 9,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "9_0",
+            "source": 9,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 4
+        },
+        {
+            "id": "0_6",
+            "source": 0,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "2_7",
+            "source": 2,
+            "dest": 7,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "change": 8,
+        "of": 35,
+        "perform": 3,
+        "on": 9,
+        "use": 10,
+        "for": 8,
+        "write": 1,
+        "match": 9,
+        "modify": 15,
+        "have": 6,
+        "timestop": 1,
+        "set": 7,
+        "to": 8,
+        "choose on": 1,
+        "restore": 1,
+        "support": 1,
+        "timestomp": 4,
+        "place on": 2,
+        "mimic": 1,
+        "be": 1,
+        "with": 2,
+        "drop": 1,
+        "store": 1,
+        "manipulate": 2,
+        "defeat": 1,
+        "time-stompe": 1,
+        "evade": 2,
+        "deploy": 1,
+        "alter": 1,
+        "in": 2,
+        "timestompe": 1,
+        "create": 1,
+        "copy": 1,
+        "conduct": 1,
+        "mangle": 1,
+        "execute": 1
+    }
+}

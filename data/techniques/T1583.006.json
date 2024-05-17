@@ -1,0 +1,274 @@
+{
+    "id": "T1583.006",
+    "tech_id": "T1583.006",
+    "tech_name": "Web Services",
+    "best_phrases": [],
+    "tactics": [
+        "TA0042"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "NETWORK",
+        "COMPONENT"
+    ],
+    "locations": [
+        "PRE"
+    ],
+    "procedures": [
+        "relationship--0167e4ad-b828-4813-88bf-f5b03b4d3268",
+        "relationship--079eaba3-fdea-4551-b126-6e824136e6f5",
+        "relationship--1a51277b-0f14-4d8a-88cb-6616da7b4a98",
+        "relationship--1c44fd69-456d-43af-ae85-73239e295ff0",
+        "relationship--41ca57db-9736-4adf-ac5d-ea2be2ab4860",
+        "relationship--47987857-8c6b-40d2-a294-860b8a4dec58",
+        "relationship--511e186f-2a71-4fb2-9a54-12fd80e2cd50",
+        "relationship--53a6a12f-04f2-445b-b733-8392ade1a7e5",
+        "relationship--64f76b74-cafc-4cf5-9c86-f7305fbaf61c",
+        "relationship--7396416a-39cf-4a41-b04b-79172bd032b0",
+        "relationship--78a7e89b-4560-4105-adfb-47393c39625b",
+        "relationship--7e2b9c63-69ac-4050-b057-2fe16ef1d355",
+        "relationship--9c070a22-d1cc-4565-918f-e0b85fe4bab3",
+        "relationship--a000579c-9149-4696-942f-e115d98eb96f",
+        "relationship--ba747d29-53c9-4841-bbbe-93527c789e63",
+        "relationship--c16c1ef2-2356-4987-bd9e-2cdaa007281a",
+        "relationship--ccc79ae5-de3c-4955-8179-2c4aa652613d",
+        "relationship--e0ef0f63-9418-4258-8f0a-f752e4b4b1a0",
+        "relationship--f1caf188-3c6b-4b5c-82a5-38a37149f1b1",
+        "relationship--ff9932dc-6afa-4aa6-834b-4ff1ac6d96bb"
+    ],
+    "graph_nodes": [
+        {
+            "count": 19,
+            "id": 0,
+            "texts": [
+                "Earth Lusca",
+                "HAFNIUM",
+                "Turla",
+                "ZIRCONIUM",
+                "APT17",
+                "MuddyWater",
+                "APT28",
+                "APT29",
+                "FIN7",
+                "threat actors",
+                "Lazarus Group",
+                "Lazarus Group",
+                "Confucius",
+                "IndigoZebra",
+                "POLONIUM",
+                "APT32",
+                "Kimsuky",
+                "Magic Hound",
+                "LazyScripter"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 13,
+            "id": 1,
+            "texts": [
+                "GitHub accounts",
+                "information",
+                "web accounts",
+                "document",
+                "first-stage downloader",
+                "lure documents",
+                "cloud storage service accounts",
+                "stolen data",
+                "Dropbox accounts",
+                "legitimate Microsoft OneDrive accounts",
+                "content",
+                "files",
+                "GitHub accounts"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 25,
+            "id": 2,
+            "texts": [
+                "malware",
+                "web services",
+                "C2",
+                "exfiltration",
+                "C2",
+                "document exfiltration",
+                "malware",
+                "tools",
+                "credential harvesting operations",
+                "generated Twitter handles",
+                "operations",
+                "malware",
+                "HAMMERTOSS",
+                "digital products",
+                "first-stage downloader",
+                "lure documents",
+                "downloads",
+                "operations",
+                "operations",
+                "downloads",
+                "web services",
+                "Blogspot",
+                "efforts",
+                "platforms",
+                "toolsets"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 13,
+            "id": 3,
+            "texts": [
+                "C2",
+                "exfiltration",
+                "C2",
+                "document exfiltration",
+                "spearphishing e-mails",
+                "profile pages",
+                "Microsoft TechNet",
+                "C2 infrastructure",
+                "newly-created Blogspot pages",
+                "C2",
+                "web services",
+                "Blogspot",
+                "C2"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 12,
+            "id": 4,
+            "texts": [
+                "GitHub",
+                "file sharing services",
+                "Amazon S3 buckets",
+                "Dropbox",
+                "file hosting services",
+                "OneDrive",
+                "DropBox",
+                "Github",
+                "Dropbox",
+                "Google Drive",
+                "Amazon S3",
+                "Amazon S3 buckets"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 3,
+            "id": 5,
+            "texts": [
+                "that",
+                "that",
+                "TA2541"
+            ],
+            "label": "OTHER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 10
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 8
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 13
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 3
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 8
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 3
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "5_3",
+            "source": 5,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "5_1",
+            "source": 5,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "5_2",
+            "source": 5,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "4_3",
+            "source": 4,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "establish": 2,
+        "host": 10,
+        "acquire": 2,
+        "exfiltrate": 2,
+        "in": 6,
+        "create": 3,
+        "for": 8,
+        "use": 10,
+        "link in": 1,
+        "as": 1,
+        "distribute": 1,
+        "register": 1,
+        "set": 2,
+        "on": 4,
+        "obtain": 1,
+        "target": 1,
+        "by": 1
+    }
+}

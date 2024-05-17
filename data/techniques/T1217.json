@@ -1,0 +1,205 @@
+{
+    "id": "T1217",
+    "tech_id": "T1217",
+    "tech_name": "Browser Information Discovery",
+    "best_phrases": [],
+    "tactics": [
+        "TA0007"
+    ],
+    "features": [
+        "DATA",
+        "COMPONENT",
+        "FUNCTION",
+        "NETWORK",
+        "DIRECTORY"
+    ],
+    "locations": [
+        "Linux",
+        "Windows",
+        "macOS"
+    ],
+    "procedures": [
+        "relationship--0fd71bed-d22f-44f8-aef2-4c5e55aca422",
+        "relationship--1be14720-a61a-4ac6-a6f6-f84c74c60d43",
+        "relationship--334ae43c-2c0b-4a7a-aab5-6ff59005dbf5",
+        "relationship--4a4ff6a4-c6b1-4bb4-87f4-c28059c7dd39",
+        "relationship--4b83387a-bba5-44a9-9dc4-3aae9a916d24",
+        "relationship--52ecf0cd-4e5f-4331-b4d8-42618f155c5c",
+        "relationship--658f822e-f11c-4c36-8097-8dd21f45b42e",
+        "relationship--7e160715-2735-4d96-8918-14036c2804a7",
+        "relationship--87590696-bf1c-4d42-8ef7-851fb10d8053",
+        "relationship--88427fdf-9d70-49d2-a7ca-4c79ee387d3d",
+        "relationship--a0020049-7688-4c0a-8844-dece3bed614c",
+        "relationship--c8786a8c-9c40-4df3-874f-952b814baec9",
+        "relationship--f01bad7e-e96c-43fe-8ac9-63c4863e8c76"
+    ],
+    "graph_nodes": [
+        {
+            "count": 12,
+            "id": 0,
+            "texts": [
+                "Calisto",
+                "Dtrack",
+                "Lizar",
+                "DarkWatchman",
+                "Machete",
+                "PowerLess",
+                "Fox Kitten",
+                "APT38",
+                "Mafalda",
+                "SUGARDUMP",
+                "MobileOrder",
+                "Chimera"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 23,
+            "id": 1,
+            "texts": [
+                "information",
+                "bookmarks",
+                "browser history",
+                "database files",
+                "user profile data",
+                "browsers",
+                "Chrome and Edge browser database files",
+                "Google Chrome bookmarks",
+                "assets",
+                "internal resources",
+                "browser bookmark information",
+                "personal information",
+                "details",
+                "users",
+                "internal network resources",
+                "contents",
+                "%userprofile%\\AppData\\Local\\Google\\Chrome\\User Data\\LocalState file",
+                "visited sites",
+                "bookmarks",
+                "browser data",
+                "browser bookmark and history information",
+                "C2 victim browser bookmarks",
+                "bookmark"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 6,
+            "id": 2,
+            "texts": [
+                "Google Chrome",
+                "user profile data",
+                "browsers",
+                "Chrome and Firefox browsers",
+                "assets",
+                "internal resources"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 4,
+            "id": 3,
+            "texts": [
+                "browser info stealer module",
+                "Empire",
+                "command",
+                "type \\\\<hostname>\\c$\\Users\\%username%\\Favorites\\Links\\Bookmarks bar\\Imported From IE\\*citrix*"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "more"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "%userprofile%\\AppData\\Local\\Google\\Chrome\\User Data\\LocalState file"
+            ],
+            "label": "DIRECTORY"
+        },
+        {
+            "count": 3,
+            "id": 6,
+            "texts": [
+                "visited sites",
+                "bookmarks",
+                "browser data"
+            ],
+            "label": "NETWORK"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 11
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 4
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 3
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "3_6",
+            "source": 3,
+            "dest": 6,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "collect": 4,
+        "from": 4,
+        "on": 1,
+        "retrieve": 2,
+        "have": 2,
+        "read": 1,
+        "use": 2,
+        "identify": 1,
+        "learn": 1,
+        "obtain": 1,
+        "acquire": 1,
+        "about": 2,
+        "of": 1,
+        "gather": 1,
+        "upload": 1,
+        "discover": 1
+    }
+}

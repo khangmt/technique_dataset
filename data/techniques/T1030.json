@@ -1,0 +1,261 @@
+{
+    "id": "T1030",
+    "tech_id": "T1030",
+    "tech_name": "Data Transfer Size Limits",
+    "best_phrases": [],
+    "tactics": [
+        "TA0010"
+    ],
+    "features": [
+        "DATA",
+        "NETWORK",
+        "FUNCTION",
+        "ENCRYPTION"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--07a569f4-ecb0-45b2-a880-3542508e9835",
+        "relationship--0b36c1d0-d016-4c12-bf61-6dc14b29c7e0",
+        "relationship--1abf4f3f-85e7-4bd1-9432-bddd40a0ad75",
+        "relationship--3e497bf1-4fdc-40a2-b8a2-3492c1d605e5",
+        "relationship--42d043a1-0b6f-4acd-aea2-553579eb49c2",
+        "relationship--45852cf6-f0e8-45b8-9636-0dee90f7d2fc",
+        "relationship--681857ae-6461-4070-a2b8-1fb53972ab38",
+        "relationship--6aae6da8-eaf5-4139-a773-25075c4e0cc6",
+        "relationship--909b065a-d857-48dc-9d6b-f7847bf613e6",
+        "relationship--98cc96c2-b876-4e1b-bec9-cb7ea8a8e532",
+        "relationship--a901b584-c676-4419-9357-943de685114e",
+        "relationship--ac603ee0-cb62-4ad5-852a-29b70b225c5f",
+        "relationship--b351cd80-323d-4e67-a539-547a76d9e257",
+        "relationship--b4c27a33-0669-4b10-a801-eb81e3563260",
+        "relationship--ca476de5-e17e-4011-9e5b-b438299c385c",
+        "relationship--f4182c2a-c2b3-4866-9f7e-f29e0229dead",
+        "relationship--f81274dc-2f5b-47f7-b91f-70a4ebdfde95"
+    ],
+    "graph_nodes": [
+        {
+            "count": 15,
+            "id": 0,
+            "texts": [
+                "LuminousMoth",
+                "Threat Group-3390 actors",
+                "OopsIE",
+                "POSHSPY",
+                "threat actors",
+                "Kessel",
+                "Kevin",
+                "ObliqueRAT",
+                "AppleSeed",
+                "Cobalt Strike",
+                "RDAT",
+                "APT28",
+                "threat actors",
+                "Carbanak",
+                "Helminth"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 41,
+            "id": 1,
+            "texts": [
+                "archived files",
+                "5MB limit",
+                "information",
+                "command output",
+                "files",
+                "1500-byte blocks",
+                "data",
+                "2048-byte chunks",
+                "3MB parts",
+                "information",
+                "information",
+                "stolen files",
+                "data",
+                "data",
+                "27-character chunks",
+                "files",
+                "smaller chunks",
+                "interest",
+                "files",
+                "size",
+                "0x1000000 bytes",
+                "data sets",
+                "smaller chunks",
+                "file",
+                "102,400-byte portions",
+                "81,920-byte portions",
+                "custom chunk sizes",
+                "files",
+                "files",
+                "size limits",
+                "smaller chunks",
+                "archived exfiltration files",
+                "chunks",
+                "bandwidth setting",
+                "information",
+                "data",
+                "compressed chunks",
+                "data",
+                "chunks",
+                "data",
+                "23 bytes"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 3,
+            "id": 2,
+            "texts": [
+                "parts",
+                "parts",
+                "split"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 2,
+            "id": 3,
+            "texts": [
+                "RAR files",
+                "encrypted archives"
+            ],
+            "label": "ENCRYPTION"
+        },
+        {
+            "count": 7,
+            "id": 4,
+            "texts": [
+                "C2",
+                "subdomains",
+                "C2",
+                "HTTP POST response",
+                "C2",
+                "C2",
+                "C2"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 6,
+            "id": 5,
+            "texts": [
+                "DNS queries",
+                "Mythic",
+                "Rclone \"chunker\" overlay",
+                "upload",
+                "Rclone",
+                "DNS queries"
+            ],
+            "label": "FUNCTION"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 30
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 6
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 6
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "4_5",
+            "source": 4,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "5_1",
+            "source": 5,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 3
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "split": 8,
+        "into": 15,
+        "bypass": 1,
+        "exfiltrate": 6,
+        "collect": 1,
+        "to": 9,
+        "in": 11,
+        "upload": 3,
+        "contain": 1,
+        "of": 3,
+        "break": 2,
+        "divide": 1,
+        "be": 1,
+        "by": 2,
+        "download": 1,
+        "from": 2,
+        "support": 1,
+        "circumvent": 1,
+        "during": 1,
+        "limit": 1,
+        "send": 1,
+        "up": 1
+    }
+}

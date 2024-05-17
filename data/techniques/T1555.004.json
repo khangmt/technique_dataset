@@ -1,0 +1,230 @@
+{
+    "id": "T1555.004",
+    "tech_id": "T1555.004",
+    "tech_name": "Windows Credential Manager",
+    "best_phrases": [],
+    "tactics": [
+        "TA0006"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "COMPONENT",
+        "USER",
+        "NETWORK"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--024593ae-03a1-4ffa-a5fc-fc2fe43e6ebf",
+        "relationship--04a6eba6-71d7-47d1-91f1-c728ada6b7b5",
+        "relationship--13c82683-dea9-418b-9112-a801c4cebc64",
+        "relationship--2188382d-d557-4a81-9713-7ef4cc675e76",
+        "relationship--250af0e7-a45e-4cbe-9cad-5445e8669022",
+        "relationship--5d925633-c463-4ca8-afb7-888505c70633",
+        "relationship--6f3b9887-80cb-4b36-b228-91e360d83962",
+        "relationship--ae8375ef-1dd7-4b03-9fc9-ade303030cae",
+        "relationship--bc0367d2-ad95-4197-b3b4-432e8bba6fec",
+        "relationship--c92047b8-50d6-4fde-8acd-98132dcdc32f",
+        "relationship--d041fce9-6e05-4f74-a97e-c71f1b270fb8",
+        "relationship--da4e4583-7382-4a38-a922-9b5f6c61b8a7",
+        "relationship--e8e8e281-398c-4cec-bcc5-d12d28bada31"
+    ],
+    "graph_nodes": [
+        {
+            "count": 8,
+            "id": 0,
+            "texts": [
+                "OilRig",
+                "Valak",
+                "KGH_SPY",
+                "Turla",
+                "Lizar",
+                "ROKRAT",
+                "RainyDay",
+                "Wizard Spider"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 22,
+            "id": 1,
+            "texts": [
+                "VALUEVAULT",
+                "credential dumping tool",
+                "Windows Credential Manager",
+                "Stealth Falcon malware",
+                "exchgrabber",
+                ".NET compiled module",
+                "Credential Manager",
+                "Windows Credential Manager",
+                "Windows Credential Manager tool",
+                "LaZagne",
+                "plugin",
+                "vaultcmd.exe",
+                "CredEnumerateW function",
+                "Windows Vault mechanism",
+                "QuarksPwDump tool",
+                "SILENTTRINITY",
+                "Mimikatz",
+                "functionality",
+                "Windows Credential Manager",
+                "PowerSploit",
+                "Exfiltration modules",
+                "Credential Manager"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 18,
+            "id": 2,
+            "texts": [
+                "VALUEVAULT",
+                "credential dumping tool",
+                "credentials",
+                "passwords",
+                "credentials",
+                "credentials",
+                "credentials",
+                "Vault files",
+                "credentials",
+                "RDP access credentials",
+                "credentials",
+                "local passwords",
+                "domain cached credentials",
+                "Windows Vault credentials",
+                "credentials",
+                "credentials",
+                "Windows vault credential objects",
+                "Windows credentials"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "Windows Credential Vault"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 2,
+            "id": 4,
+            "texts": [
+                "Microsoft Edge",
+                "Internet Explorer"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 4,
+            "id": 5,
+            "texts": [
+                "that",
+                "another",
+                "that",
+                "PowerShell cmdlet Invoke-WCMDump"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 1,
+            "id": 6,
+            "texts": [
+                "compromised network"
+            ],
+            "label": "NETWORK"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 6
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 7
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 5
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 7
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "5_4",
+            "source": 5,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "5_2",
+            "source": 5,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "5_1",
+            "source": 5,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "2_6",
+            "source": 2,
+            "dest": 6,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 7,
+        "steal": 2,
+        "from": 13,
+        "gather": 3,
+        "enumerate": 2,
+        "obtain": 2,
+        "have": 1,
+        "retrieve": 1,
+        "collect": 1,
+        "contain": 2,
+        "acquire": 1,
+        "harvest": 1,
+        "in": 2
+    }
+}

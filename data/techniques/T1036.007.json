@@ -1,0 +1,94 @@
+{
+    "id": "T1036.007",
+    "tech_id": "T1036.007",
+    "tech_name": "Double File Extension",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--d667c620-28cb-4c86-83f7-33d6c154369c",
+        "relationship--e90de84d-a394-4797-834a-12e5849b9e68",
+        "relationship--eb76155e-39de-4952-857b-bf53a1586810"
+    ],
+    "graph_nodes": [
+        {
+            "count": 5,
+            "id": 0,
+            "texts": [
+                "Bazar loader",
+                "dual-extension executable files",
+                "PreviewReport.DOC.exe",
+                "executable",
+                "companycatalog.exe.config"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 4,
+            "id": 1,
+            "texts": [
+                "dual-extension executable files",
+                "PreviewReport.DOC.exe",
+                "filename extension",
+                "true file type"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 2,
+            "id": 2,
+            "texts": [
+                "Mustang Panda",
+                "Milan"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "benign"
+            ],
+            "label": "OTHER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "2_0",
+            "source": 2,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 3,
+        "hide": 1,
+        "appear": 1
+    }
+}

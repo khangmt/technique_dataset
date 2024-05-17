@@ -1,0 +1,160 @@
+{
+    "id": "T1205.001",
+    "tech_id": "T1205.001",
+    "tech_name": "Port Knocking",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005",
+        "TA0003",
+        "TA0011"
+    ],
+    "features": [
+        "FUNCTION",
+        "NETWORK",
+        "COMPONENT",
+        "DATA"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows",
+        "Network"
+    ],
+    "procedures": [
+        "relationship--16a59f96-4c5c-4625-a776-61162ac9c6c1",
+        "relationship--b92d6b45-e211-4168-ac32-80427bf1b9d2",
+        "relationship--fbaf2482-7ab9-4feb-bb88-06646559d9ca"
+    ],
+    "graph_nodes": [
+        {
+            "count": 3,
+            "id": 0,
+            "texts": [
+                "Mafalda",
+                "PROMETHIUM",
+                "metaMain"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 7,
+            "id": 1,
+            "texts": [
+                "port-knocking",
+                "indirect connection",
+                "C2",
+                "knockd service",
+                "firewall",
+                "C2 connections",
+                "knock ports"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 2,
+            "id": 2,
+            "texts": [
+                "itself",
+                "itself"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 8,
+            "id": 3,
+            "texts": [
+                "Cryshell",
+                "implant",
+                "script",
+                "knockd service",
+                "firewall",
+                "port knocking and handshake procedure",
+                "implant",
+                "Cryshell"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "systems"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "sequence"
+            ],
+            "label": "DATA"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 4
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 3
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "4_5",
+            "source": 4,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "5_1",
+            "source": 5,
+            "dest": 1,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 3,
+        "authenticate": 2,
+        "establish": 1,
+        "to": 5,
+        "accept": 1,
+        "from": 2,
+        "of": 1,
+        "by": 2
+    }
+}

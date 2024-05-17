@@ -1,0 +1,326 @@
+{
+    "id": "T1020",
+    "tech_id": "T1020",
+    "tech_name": "Automated Exfiltration",
+    "best_phrases": [],
+    "tactics": [
+        "TA0010"
+    ],
+    "features": [
+        "DATA",
+        "NETWORK",
+        "FUNCTION",
+        "COMPONENT",
+        "DIRECTORY"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows",
+        "Network"
+    ],
+    "procedures": [
+        "relationship--0e3ea008-1a5e-4f58-aaa9-4da690539908",
+        "relationship--2b1fb532-84e3-4f77-962c-038c798d239e",
+        "relationship--2caa19fb-fe02-4365-b53a-1ff554a13889",
+        "relationship--3d2736f6-5ce8-48ba-8be0-e8d8ab0a3a9c",
+        "relationship--45608b9a-ddd8-45f9-9152-bed384a1c8c3",
+        "relationship--4a007e42-2efb-4ace-aa08-950bbee11df7",
+        "relationship--59261bc8-0220-4e37-8018-7a3618a5dd1b",
+        "relationship--667592ad-e249-4efd-933f-75a53b25567a",
+        "relationship--672f33f6-bdc1-40b2-a208-888d1002cc25",
+        "relationship--6cf0d062-e441-48ca-b675-2f01ae333b74",
+        "relationship--6ff6558d-3efb-4219-8d47-ecf82755ccf1",
+        "relationship--78ad31db-6b8e-4433-88b8-49c22994a2ab",
+        "relationship--9cc4cd5d-7b10-4dd7-8fd9-90288aa8b5be",
+        "relationship--ae8a95fa-c0ad-40b4-a573-a9441ed94fab",
+        "relationship--be7f2951-ce33-4d48-ad9c-69071e54ae18",
+        "relationship--c4f1371c-8f23-49b7-9572-d226ee2dbade",
+        "relationship--c623d41f-3af0-4e3a-bf4f-8550bec85b37",
+        "relationship--d894e46e-1967-4499-83d5-626a8e49a97a",
+        "relationship--d8ac067b-f246-40bb-98bd-fcff74092139",
+        "relationship--f49a45b8-6efb-4ac5-8714-9dfd9b31edbd",
+        "relationship--ff922dd7-21b6-4f95-bb8b-080d0dee6655"
+    ],
+    "graph_nodes": [
+        {
+            "count": 20,
+            "id": 0,
+            "texts": [
+                "StrongPity",
+                "LightNeuron",
+                "adversary",
+                "threat actors",
+                "Sidewinder",
+                "actors",
+                "Doki",
+                "Rover",
+                "OutSteel",
+                "Peppy",
+                "Machete",
+                "Ebury",
+                "Ke3chang",
+                "TajMahal",
+                "USBStealer",
+                "Crutch",
+                "Tropic Trooper",
+                "Gamaredon Group",
+                "Attor",
+                "attacker"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 33,
+            "id": 1,
+            "texts": [
+                "documents",
+                "files",
+                "information",
+                "files",
+                "data",
+                "information",
+                "hardcoded list",
+                "files",
+                "list",
+                "screenshots",
+                "keylogger files",
+                "regular timeframe",
+                "file extensions",
+                "files",
+                "files",
+                "keylogs",
+                "collected files",
+                "gathered SSH credentials",
+                "frequent and scheduled data",
+                "egress files",
+                "commands",
+                "files",
+                "stolen files",
+                "sensitive data",
+                "gathered documents",
+                "system and network information",
+                "report",
+                "files",
+                "log files",
+                "data",
+                "document",
+                "extensions",
+                "configuration"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 15,
+            "id": 2,
+            "texts": [
+                "C2",
+                "C2",
+                "attacker controlled servers",
+                "C2",
+                "Ngrok URL",
+                "IP addresses",
+                "C2",
+                "C2",
+                "remote servers",
+                "C2",
+                "adversary-controlled C2",
+                "FTP",
+                "remote servers",
+                "C2",
+                "C2"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "directory"
+            ],
+            "label": "DIRECTORY"
+        },
+        {
+            "count": 6,
+            "id": 4,
+            "texts": [
+                "which",
+                "that",
+                "automated queue",
+                "that",
+                "that",
+                "one"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 15,
+            "id": 5,
+            "texts": [
+                "Empire",
+                "tools",
+                "Empire",
+                "script",
+                "files",
+                "keylogs",
+                "frequent and scheduled data",
+                "egress files",
+                "commands",
+                "copy function",
+                "modules",
+                "ShimRatReporter",
+                "CosmicDuke exfiltrates",
+                "file uploader plugin",
+                "TINYTYPHON"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 7,
+            "id": 6,
+            "texts": [
+                "local drives",
+                "removable media",
+                "infected device",
+                "air-gapped victim machine",
+                "Dropbox",
+                "USB storage",
+                "air-gapped systems"
+            ],
+            "label": "COMPONENT"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 15
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 4
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 14
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "4_2",
+            "source": 4,
+            "dest": 2,
+            "count": 4
+        },
+        {
+            "id": "2_0",
+            "source": 2,
+            "dest": 0,
+            "count": 2
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 7
+        },
+        {
+            "id": "5_1",
+            "source": 5,
+            "dest": 1,
+            "count": 7
+        },
+        {
+            "id": "5_2",
+            "source": 5,
+            "dest": 2,
+            "count": 5
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "1_6",
+            "source": 1,
+            "dest": 6,
+            "count": 4
+        },
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "4_5",
+            "source": 4,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "0_6",
+            "source": 0,
+            "dest": 6,
+            "count": 3
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "5_0",
+            "source": 5,
+            "dest": 0,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "exfiltrate": 9,
+        "to": 26,
+        "under": 1,
+        "collect": 2,
+        "send": 6,
+        "by": 3,
+        "of": 7,
+        "configure": 1,
+        "use": 4,
+        "gather": 1,
+        "upload": 4,
+        "from": 3,
+        "for": 1,
+        "base": 1,
+        "on": 3,
+        "manage": 1,
+        "compile into": 1,
+        "over": 2,
+        "have": 1,
+        "match": 1,
+        "in": 1
+    }
+}

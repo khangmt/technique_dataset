@@ -1,0 +1,116 @@
+{
+    "id": "T1546.016",
+    "tech_id": "T1546.016",
+    "tech_name": "Installer Packages",
+    "best_phrases": [],
+    "tactics": [
+        "TA0004",
+        "TA0003"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "DIRECTORY"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--0e078567-e5b6-45b6-a1c7-3b1f8ac3e2a8"
+    ],
+    "graph_nodes": [
+        {
+            "count": 5,
+            "id": 0,
+            "texts": [
+                "installation process",
+                "postinstall scripts",
+                "hidden plist",
+                "application",
+                "LaunchDaemon"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 1,
+            "texts": [
+                "AppleJeus"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 2,
+            "id": 2,
+            "texts": [
+                "plist file",
+                "elevated permissions"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "/Resources folder"
+            ],
+            "label": "DIRECTORY"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 3
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "3_0",
+            "source": 3,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "2_0",
+            "source": 2,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "of": 2,
+        "during": 1,
+        "use": 1,
+        "extract": 1,
+        "execute": 1,
+        "from": 1,
+        "as": 1,
+        "with": 1
+    }
+}

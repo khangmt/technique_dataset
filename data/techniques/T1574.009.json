@@ -1,0 +1,56 @@
+{
+    "id": "T1574.009",
+    "tech_id": "T1574.009",
+    "tech_name": "Path Interception by Unquoted Path",
+    "best_phrases": [],
+    "tactics": [
+        "TA0003",
+        "TA0004",
+        "TA0005"
+    ],
+    "features": [
+        "FUNCTION",
+        "VULNERABILITY"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--2e202038-196d-41c7-8fdf-27b4fcf88830",
+        "relationship--63092968-deca-4af9-bda5-a3e05b4db40f"
+    ],
+    "graph_nodes": [
+        {
+            "count": 4,
+            "id": 0,
+            "texts": [
+                "PowerSploit",
+                "Privesc-PowerUp modules",
+                "Empire",
+                "modules"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 2,
+            "id": 1,
+            "texts": [
+                "unquoted path vulnerabilities",
+                "unquoted path vulnerabilities"
+            ],
+            "label": "VULNERABILITY"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 2
+        }
+    ],
+    "verbs": {
+        "contain": 2,
+        "exploit": 2
+    }
+}

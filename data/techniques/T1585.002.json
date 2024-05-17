@@ -1,0 +1,281 @@
+{
+    "id": "T1585.002",
+    "tech_id": "T1585.002",
+    "tech_name": "Email Accounts",
+    "best_phrases": [],
+    "tactics": [
+        "TA0042"
+    ],
+    "features": [
+        "DATA",
+        "NETWORK",
+        "FUNCTION",
+        "USER"
+    ],
+    "locations": [
+        "PRE"
+    ],
+    "procedures": [
+        "relationship--02838a73-1e42-4fda-a27b-044d14f303d9",
+        "relationship--09583053-9fab-47bb-b07c-76d75cbb5c30",
+        "relationship--1a163c8a-7a12-4cd4-813f-38f5a05ba98d",
+        "relationship--27257b64-c32c-49cd-a4ce-f804c251829d",
+        "relationship--2a13b64a-2173-4565-aca6-bbf3edfdc499",
+        "relationship--3a3956aa-6756-4682-aa1b-c5199c0f3540",
+        "relationship--5cc7c5ef-f170-4147-8703-03ea34d40d12",
+        "relationship--83219112-6e5b-43ea-a7a7-78213f28397f",
+        "relationship--88d72a6e-091f-48ff-9ad4-fd05d748d956",
+        "relationship--9b14bfc1-2c78-4ec9-ad02-aeed6f1cf83e",
+        "relationship--a28b6a04-5562-4550-91bd-6397c0c9fe3f",
+        "relationship--ad5e568c-376c-4ab8-be50-e965feb0c160",
+        "relationship--bc156b29-534a-4156-b188-8f4a426a0e6c",
+        "relationship--d3ac0edb-8e56-440f-a844-be61b6045901",
+        "relationship--d992890d-5725-4bed-8d33-51dfbff77087",
+        "relationship--dc64a0c1-9302-4816-8b1d-b6b348f12efb",
+        "relationship--eea8a891-7ebb-4589-9d36-6a801ff00818"
+    ],
+    "graph_nodes": [
+        {
+            "count": 23,
+            "id": 0,
+            "texts": [
+                "attackers",
+                "Kimsuky",
+                "Magic Hound",
+                "Lazarus Group",
+                "HEXANE",
+                "EXOTIC LILY",
+                "threat actors",
+                "Leviathan",
+                "Lazarus Group",
+                "HEXANE",
+                "EXOTIC LILY",
+                "Leviathan",
+                "campaign",
+                "Lazarus Group",
+                "Mustang Panda",
+                "Silent Librarian",
+                "APT1",
+                "Wizard Spider",
+                "Indrik Spider",
+                "Sandworm Team",
+                "threat actors",
+                "campaign",
+                "threat actors"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 11,
+            "id": 1,
+            "texts": [
+                "email addresses",
+                "control server",
+                "phishing campaigns",
+                "e-mails",
+                "social engineering",
+                "phishing",
+                "domains",
+                "ProtonMail email addresses",
+                "domains",
+                "email addresses",
+                "domains"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 15,
+            "id": 2,
+            "texts": [
+                "free account",
+                "email accounts",
+                "email accounts",
+                "email accounts",
+                "e-mail accounts",
+                "fake email accounts",
+                "email accounts",
+                "e-mail accounts",
+                "compromised accounts",
+                "email accounts",
+                "ransom notes",
+                "email accounts",
+                "payment and decryption details",
+                "email accounts",
+                "identified email account"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 11,
+            "id": 3,
+            "texts": [
+                "implants",
+                "phishing operations",
+                "spearphishing operations",
+                "BEC attempt",
+                "legitimate email marketing service",
+                "SMTP2Go",
+                "social engineering",
+                "phishing",
+                "Ryuk ransomware",
+                "spearphishing operations",
+                "operations"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 4,
+            "id": 4,
+            "texts": [
+                "fake personas",
+                "fake LinkedIn personas",
+                "victim",
+                "ransomware victims"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 6,
+            "id": 5,
+            "texts": [
+                "those",
+                "part",
+                "later use",
+                "legitimate organizations",
+                "that",
+                "that"
+            ],
+            "label": "OTHER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 7
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 12
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "4_3",
+            "source": 4,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "2_0",
+            "source": 2,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 4
+        },
+        {
+            "id": "2_5",
+            "source": 2,
+            "dest": 5,
+            "count": 3
+        },
+        {
+            "id": "5_4",
+            "source": 5,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "5_3",
+            "source": 5,
+            "dest": 3,
+            "count": 4
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 3
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "5_1",
+            "source": 5,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "5_0",
+            "source": 5,
+            "dest": 0,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "create": 6,
+        "register": 5,
+        "for": 10,
+        "use for": 1,
+        "establish": 5,
+        "use": 6,
+        "correspond": 1,
+        "match": 1,
+        "as": 2,
+        "of": 2,
+        "receive": 1,
+        "forward from": 1,
+        "in": 3,
+        "deliver": 1,
+        "communicate": 1,
+        "provide": 1,
+        "mimic": 1,
+        "during": 1
+    }
+}

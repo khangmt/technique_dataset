@@ -1,0 +1,265 @@
+{
+    "id": "T1587.001",
+    "tech_id": "T1587.001",
+    "tech_name": "Malware",
+    "best_phrases": [
+        "destructive malware",
+        "unique malware",
+        "malware",
+        "custom malware",
+        "Malware"
+    ],
+    "tactics": [
+        "TA0042"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "NETWORK",
+        "COMPONENT",
+        "USER"
+    ],
+    "locations": [
+        "PRE"
+    ],
+    "procedures": [
+        "relationship--062f7bee-8b54-4edd-aca9-11437b7cbc8b",
+        "relationship--09e3c20a-eb8a-4731-9d9b-39f08cc2ecc7",
+        "relationship--0b5cb547-b027-4a30-84de-d9d1df2495d0",
+        "relationship--107d896b-a618-42fe-a453-76bc4b7d7330",
+        "relationship--1754cf51-f712-4e7c-9108-fa276b9f1543",
+        "relationship--3e26385f-0aa0-44a3-8830-978610a1680d",
+        "relationship--3e925289-8c29-4e14-ac5e-dd4ab927b113",
+        "relationship--4e7404a5-2d19-48cc-b906-ab1aca4f4b08",
+        "relationship--65656d55-1f2f-43f9-b29f-084b9024841c",
+        "relationship--6ce6e5d1-a9e1-43bb-a296-e6bd188081f4",
+        "relationship--7dbfb31d-8ac7-44c5-ad9b-f22e07e95d7e",
+        "relationship--8a6f7d54-3165-4fd2-a2f8-a6357d231192",
+        "relationship--8b9d30d9-7546-4fc0-87cb-1e432fe788e8",
+        "relationship--a36264d2-5bb2-4268-8ce1-3de9fbdf2862",
+        "relationship--a8cfb738-65ac-4d5a-8ef7-d3a21eab02ea",
+        "relationship--b865d0be-c46c-4677-b66e-fe19e1fa9f31",
+        "relationship--caa820b8-5a7b-4704-88d9-380efff5a7a3",
+        "relationship--cb727277-5491-422f-ab40-1bd1be973d1e",
+        "relationship--d1bd6ce6-eb5f-41a1-b26f-4fe0d83e51ea",
+        "relationship--f2f8d56c-4a10-4be4-884d-7982931bd303",
+        "relationship--fe8004eb-df5b-43c5-bf5a-1cbe028e8663"
+    ],
+    "graph_nodes": [
+        {
+            "count": 19,
+            "id": 0,
+            "texts": [
+                "Turla",
+                "Kimsuky",
+                "Sandworm Team",
+                "FIN7",
+                "Indrik Spider",
+                "threat actors",
+                "Aoqin Dragon",
+                "Lazarus Group",
+                "LuminousMoth",
+                "APT29",
+                "APT29",
+                "Cleaver",
+                "APT29",
+                "Moses Staff",
+                "UNC3890 actors",
+                "threat actors",
+                "threat actors",
+                "Ke3chang",
+                "TeamTNT"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 55,
+            "id": 1,
+            "texts": [
+                "unique malware",
+                "MailFetch.py",
+                "operations",
+                "custom malware",
+                "ransomware",
+                "destructive malware",
+                "creation",
+                "malware",
+                "mobile applications",
+                "operations",
+                "WastedLocker",
+                "NotPetya",
+                "Olympic Destroyer",
+                "creation",
+                "BitPaymer",
+                "malware",
+                "custom webshells",
+                "Torisma",
+                "custom tools",
+                "DBLL Dropper",
+                "Sumarta",
+                "Heyoka Backdoor",
+                "DRATzarus",
+                "custom malware",
+                "Mongall",
+                "operations",
+                "unique malware",
+                "information theft",
+                "exfiltration",
+                "unique malware",
+                "numerous pieces",
+                "TEARDROP",
+                "SUNSPOT",
+                "SUNBURST",
+                "Raindrop",
+                "malware",
+                "payloads",
+                "customized tools",
+                "functions",
+                "strains",
+                "malware",
+                "DCSrv",
+                "malware",
+                "PyDCrypt",
+                "SUGARDUMP",
+                "SUGARUSH",
+                "SombRAT",
+                "unique malware",
+                "CostaBricks",
+                "custom malware",
+                "PS1",
+                "Rising Sun modular backdoor",
+                "custom malware",
+                "Hildegard",
+                "custom malware"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 5,
+            "id": 2,
+            "texts": [
+                "FIN13",
+                "information theft",
+                "exfiltration",
+                "many",
+                "that"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 2,
+            "id": 3,
+            "texts": [
+                "compromised servers",
+                "victim networks"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 6,
+            "id": 4,
+            "texts": [
+                "information",
+                "numerous pieces",
+                "TEARDROP",
+                "SUNSPOT",
+                "SUNBURST",
+                "Raindrop"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "machines"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 1,
+            "id": 6,
+            "texts": [
+                "victims"
+            ],
+            "label": "USER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 17
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "5_6",
+            "source": 5,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "develop": 7,
+        "in": 5,
+        "utilize": 1,
+        "for": 4,
+        "as": 1,
+        "upload": 1,
+        "use": 6,
+        "exfiltrate": 1,
+        "of": 3,
+        "create": 1,
+        "build": 1,
+        "target": 1,
+        "on": 1
+    }
+}

@@ -1,0 +1,257 @@
+{
+    "id": "T1110",
+    "tech_id": "T1110",
+    "tech_name": "Brute Force",
+    "best_phrases": [],
+    "tactics": [
+        "TA0006"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "COMPONENT",
+        "NETWORK",
+        "USER"
+    ],
+    "locations": [
+        "Windows",
+        "Azure AD",
+        "Office 365",
+        "SaaS",
+        "IaaS",
+        "Linux",
+        "macOS",
+        "Google Workspace",
+        "Containers",
+        "Network"
+    ],
+    "procedures": [
+        "relationship--1b4baaaa-f08e-4f67-8d32-a7facb21eb7b",
+        "relationship--2cc576f4-9d7d-47e4-a6c5-a6910f8b5b62",
+        "relationship--49c17cdc-72a5-442d-b153-2cc9f9cf059d",
+        "relationship--4cf22fd0-af3a-41b7-b0ad-07b73b6d5516",
+        "relationship--5682d524-80f0-4fd8-9960-6f54eeafce96",
+        "relationship--5a9197b3-c5fb-4288-9fdf-684fa289435b",
+        "relationship--62192379-d052-4618-be33-8511d636c67c",
+        "relationship--6b429676-7b77-4453-a6ce-2d6a6cb0dfe7",
+        "relationship--6c56201e-f348-43ea-8b51-8230d2bf0970",
+        "relationship--7efb7077-5119-4508-b467-f7da76cc6df6",
+        "relationship--7f7226d7-6980-402a-b10e-e81b50c7ee09",
+        "relationship--8303719d-b2ed-4860-9af4-57b636c4f865",
+        "relationship--91fd8374-eeba-4243-a8de-ff7353236024",
+        "relationship--c4a566d6-69ce-4284-809d-433663e3e2fa",
+        "relationship--cbfa121a-bf32-42fe-917a-d3533a6697bb",
+        "relationship--d9bdae16-d3b3-4260-b1ef-2624cf4e836c",
+        "relationship--e9c00323-e4de-41ac-9051-55860ecfa8a0",
+        "relationship--fb0a3153-dbd8-4f32-8583-6a7e2fade337",
+        "relationship--fb719ee1-0be9-41c5-bb52-56c033091e99"
+    ],
+    "graph_nodes": [
+        {
+            "count": 17,
+            "id": 0,
+            "texts": [
+                "Fox Kitten",
+                "HEXANE",
+                "Chaos",
+                "Caterpillar WebShell",
+                "Turla",
+                "DarkVishnya",
+                "Lazarus Group",
+                "FIN5",
+                "Kinsing",
+                "APT38",
+                "APT28",
+                "QakBot",
+                "OilRig",
+                "APT39",
+                "Sandworm Team",
+                "Dragonfly",
+                "Pysa"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 21,
+            "id": 1,
+            "texts": [
+                "bruteforced RDP credentials",
+                "valid credentials",
+                "net use commands",
+                "collection",
+                "list",
+                "data",
+                "passwords",
+                "login data",
+                "administrator accounts",
+                "hard-coded credentials",
+                "remote login",
+                "account access",
+                "credentials",
+                "local administrator and AD user accounts",
+                "credentials",
+                "credentials",
+                "access",
+                "Active Directory accounts",
+                "central management console",
+                "supplied user credentials",
+                "network range"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 26,
+            "id": 2,
+            "texts": [
+                "bruteforce attacks",
+                "bruteforce attacks",
+                "SSH services",
+                "module",
+                "bruteforce attacks",
+                "net use commands",
+                "collection",
+                "list",
+                "brute-force attack",
+                "bruteforce attacks",
+                "tool",
+                "GET2 Penetrator",
+                "hard-coded credentials",
+                "remote login",
+                "bruteforce techniques",
+                "bruteforce techniques",
+                "bruteforce attacks",
+                "PoshC2",
+                "modules",
+                "Ncrack",
+                "script",
+                "RPC authentication",
+                "bruteforce attempts",
+                "Active Directory accounts",
+                "central management console",
+                "CrackMapExec"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 4,
+            "id": 3,
+            "texts": [
+                "system",
+                "systems",
+                "hosts",
+                "hosts"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 3,
+            "id": 4,
+            "texts": [
+                "net use commands",
+                "collection",
+                "list"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 2,
+            "id": 5,
+            "texts": [
+                "network",
+                "SSH"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 1,
+            "id": 6,
+            "texts": [
+                "victim"
+            ],
+            "label": "USER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 12
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 16
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "3_5",
+            "source": 3,
+            "dest": 5,
+            "count": 2
+        },
+        {
+            "id": "5_6",
+            "source": 5,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 6
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "have": 3,
+        "use": 11,
+        "compromise": 1,
+        "conduct": 1,
+        "against": 5,
+        "perform": 2,
+        "on": 1,
+        "connect": 1,
+        "collect": 1,
+        "within": 1,
+        "of": 2,
+        "obtain": 2,
+        "find": 1,
+        "bruteforce": 4,
+        "over": 1,
+        "attempt": 2,
+        "reveal": 1,
+        "gain": 1,
+        "across": 2
+    }
+}

@@ -1,0 +1,230 @@
+{
+    "id": "T1087.003",
+    "tech_id": "T1087.003",
+    "tech_name": "Email Account",
+    "best_phrases": [],
+    "tactics": [
+        "TA0007"
+    ],
+    "features": [
+        "DATA",
+        "NETWORK",
+        "FUNCTION",
+        "COMPONENT"
+    ],
+    "locations": [
+        "Windows",
+        "Office 365",
+        "Google Workspace"
+    ],
+    "procedures": [
+        "relationship--02c88228-8275-42a7-9c3a-d5393556bceb",
+        "relationship--45ce4803-9ed5-4960-ac34-7fe3b22919d5",
+        "relationship--6231644a-5a32-4458-b950-444f84e1b476",
+        "relationship--7e6e46e1-6990-4d37-87cb-9ef6a488a8a1",
+        "relationship--8a03f60e-bb09-4f4d-815e-88d86192042f",
+        "relationship--98abda72-4760-4e8c-ab6c-5ed080868cfc",
+        "relationship--9b5e38b3-31b5-4734-bef2-c05904479430",
+        "relationship--a23d8e4f-6e3c-4b07-a63a-216764d61ec0",
+        "relationship--c7c8b431-77bb-45ac-9826-bd92828c2f85",
+        "relationship--d2437ab0-888b-4490-a825-f70a490b7192",
+        "relationship--d3dbd171-a82c-4fef-ba16-2355dd9b513e",
+        "relationship--f9b023e8-5a77-4b2d-a4b3-30a0d66b9956"
+    ],
+    "graph_nodes": [
+        {
+            "count": 9,
+            "id": 0,
+            "texts": [
+                "TA505",
+                "Magic Hound",
+                "Grandoreiro",
+                "Sandworm Team",
+                "Backdoor.Oldrea",
+                "TrickBot",
+                "Lizar",
+                "Emotet",
+                "BoomBox"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 9,
+            "id": 1,
+            "texts": [
+                "tool",
+                "EmailStealer",
+                "Powershell",
+                "malware",
+                "Ruler",
+                "MailSniper",
+                "Get-GlobalAddressList cmdlet",
+                "module",
+                "LDAP query"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 13,
+            "id": 2,
+            "texts": [
+                "lists",
+                "email accounts",
+                "Outlook .pst files",
+                "email settings",
+                "passwords",
+                "usernames",
+                "address book information",
+                "email accounts",
+                "Exchange users",
+                "GAL",
+                "account names",
+                "e-mail accounts",
+                "domain users"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 11,
+            "id": 3,
+            "texts": [
+                "e-mail addresses",
+                "remote server",
+                "e-mail addresses",
+                "email settings",
+                "passwords",
+                "usernames",
+                "email addresses",
+                "email addresses",
+                "Office",
+                "Exchange",
+                "email addresses"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 5,
+            "id": 4,
+            "texts": [
+                "M.E.Doc application",
+                "Scattered Spider",
+                "Office",
+                "Exchange",
+                "that"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 6,
+            "id": 5,
+            "texts": [
+                "Azure AD",
+                "Outlook",
+                "Outlook",
+                "Mozilla Thunderbird",
+                "Microsoft Outlook",
+                "Outlook"
+            ],
+            "label": "COMPONENT"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 6
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 7
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 3
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 3
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "4_5",
+            "source": 4,
+            "dest": 5,
+            "count": 2
+        },
+        {
+            "id": "4_3",
+            "source": 4,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 3
+        },
+        {
+            "id": "2_5",
+            "source": 2,
+            "dest": 5,
+            "count": 2
+        },
+        {
+            "id": "3_5",
+            "source": 3,
+            "dest": 5,
+            "count": 2
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 3
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 6,
+        "send": 1,
+        "of": 1,
+        "to": 1,
+        "discover": 2,
+        "parse": 1,
+        "extract": 1,
+        "enumerate": 2,
+        "from": 10,
+        "access": 1,
+        "identify": 1,
+        "collect": 3,
+        "dump": 1,
+        "obtain": 1,
+        "scrape": 1,
+        "execute": 1,
+        "for": 1
+    }
+}

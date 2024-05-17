@@ -1,0 +1,279 @@
+{
+    "id": "T1027.005",
+    "tech_id": "T1027.005",
+    "tech_name": "Indicator Removal from Tools",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "NETWORK",
+        "COMPONENT"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--03e6e755-12a2-4261-b95d-caea6b2bf051",
+        "relationship--10b3228c-b96b-4a34-8da8-4d1fd3fa37d0",
+        "relationship--1a273c5c-b362-4126-b684-7751b85cbf5c",
+        "relationship--26eca19b-1c55-49b5-8a07-a4131c577874",
+        "relationship--4d68b3eb-9689-4a6d-b6ab-367fbc5ddade",
+        "relationship--60d2b385-14cf-454a-ac92-0d41e3ec397a",
+        "relationship--919f6143-eb8c-48cd-8741-118040c372ab",
+        "relationship--ab009520-dffe-4494-9468-0189060cca01",
+        "relationship--b71e1e23-5fc2-46af-ab0b-afa442c24b66",
+        "relationship--b82cbc8a-72b9-4f2b-a978-88b066a73cfb",
+        "relationship--e041070a-ff38-47ee-aebd-8d1bc714231e",
+        "relationship--e79c65f4-f9d2-4568-96a4-b6e00d3bad71",
+        "relationship--e88a2959-311f-40c9-adc9-895f38bb1dd7",
+        "relationship--f0894796-a4ed-48c4-94fc-7fc42175416d",
+        "relationship--fb6ffb5c-5405-4515-a120-7a34414933ea",
+        "relationship--fe9c9381-99d7-4798-ab41-3e5cdbda5e21",
+        "relationship--febbf503-d7e5-4896-90b9-35b6a811b19b"
+    ],
+    "graph_nodes": [
+        {
+            "count": 14,
+            "id": 0,
+            "texts": [
+                "author",
+                "Cobalt Strike",
+                "Patchwork",
+                "Deep Panda",
+                "TEMP.Veles",
+                "GALLIUM",
+                "Penquin",
+                "threat actors",
+                "QakBot",
+                "Waterbear",
+                "InvisiMole",
+                "OilRig",
+                "Turla",
+                "APT3"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 35,
+            "id": 1,
+            "texts": [
+                "GravityRAT",
+                "samples",
+                "code",
+                "capability",
+                "Beacon payload",
+                "signatures",
+                "unpacking methods",
+                "NDiskMonitor samples",
+                "likely attempt",
+                "Find-AVSignature AntivirusBypass module",
+                "PowerSploit",
+                "malware",
+                "detection",
+                "apparent attempt",
+                "open-source project",
+                "cryptcat",
+                "payload",
+                "packers",
+                "binaries",
+                "automated detection",
+                "changes",
+                "functions",
+                "Analysis",
+                "Daserf",
+                "anti-virus detection",
+                "SUNBURST source code",
+                "attempt",
+                "detection",
+                "malware samples",
+                "AV detection",
+                "samples",
+                "effort",
+                "malware",
+                "tools",
+                "compromise"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 2,
+            "texts": [
+                "VirusTotal"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 7,
+            "id": 3,
+            "texts": [
+                "testing",
+                "part",
+                "Impacket suite",
+                "itself",
+                "regular technical improvements",
+                "comparison",
+                "that"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 24,
+            "id": 4,
+            "texts": [
+                "DDE object",
+                "document",
+                "signatures",
+                "unpacking methods",
+                "four bytes",
+                "random letters",
+                "file hashes",
+                "byte anti-virus signatures",
+                "hash values",
+                "files",
+                "AV detection rates",
+                "unique hash",
+                "types",
+                "strings",
+                "variable names",
+                "checksum and hash value",
+                "pre-obfuscated strings",
+                "generic variable names",
+                "developer comments",
+                "Gazer versions",
+                "strings",
+                "named pipe",
+                "mutex name",
+                "indicators"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 3,
+            "id": 5,
+            "texts": [
+                "strings",
+                "named pipe",
+                "mutex name"
+            ],
+            "label": "NETWORK"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 17
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 5
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 9
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "4_3",
+            "source": 4,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 9
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 10
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "5_1",
+            "source": 5,
+            "dest": 1,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "of": 9,
+        "submit": 1,
+        "to": 4,
+        "for": 2,
+        "modify": 5,
+        "hide": 1,
+        "in": 8,
+        "include": 1,
+        "eliminate": 1,
+        "alter": 1,
+        "add": 1,
+        "change": 3,
+        "locate": 1,
+        "evade": 3,
+        "base on": 2,
+        "decrease": 1,
+        "have": 1,
+        "use": 3,
+        "remove": 2,
+        "from": 4,
+        "edit": 1,
+        "avoid": 1,
+        "within": 1,
+        "make": 2,
+        "scramble": 1,
+        "undergo": 1,
+        "test": 1,
+        "determine": 1,
+        "base": 1,
+        "obfuscate": 1
+    }
+}

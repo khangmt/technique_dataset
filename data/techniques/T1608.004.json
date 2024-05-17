@@ -1,0 +1,266 @@
+{
+    "id": "T1608.004",
+    "tech_id": "T1608.004",
+    "tech_name": "Drive-by Target",
+    "best_phrases": [],
+    "tactics": [
+        "TA0042"
+    ],
+    "features": [
+        "NETWORK",
+        "FUNCTION",
+        "DATA",
+        "USER",
+        "COMPONENT"
+    ],
+    "locations": [
+        "PRE"
+    ],
+    "procedures": [
+        "relationship--087c222c-4108-4fbf-ac8f-983cd71548fa",
+        "relationship--28f7e7c9-76ef-48c7-b027-f32256ad2907",
+        "relationship--461ddc5d-889d-4879-ade3-27ff78d7e442",
+        "relationship--6c4a3ef5-8aee-4fe8-b2c6-386f90c057a4",
+        "relationship--75270994-ea95-4744-a383-056eb96ab50d",
+        "relationship--7acc1226-d784-448e-8aeb-7f58e343c4da",
+        "relationship--8d172b4c-7732-4315-852a-958a1cd08025"
+    ],
+    "graph_nodes": [
+        {
+            "count": 7,
+            "id": 0,
+            "texts": [
+                "Transparent Tribe",
+                "LuminousMoth",
+                "Dragonfly",
+                "APT32",
+                "FIN7",
+                "Threat Group-3390",
+                "threat actors"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 13,
+            "id": 1,
+            "texts": [
+                "websites",
+                "hyperlinks",
+                "iframes",
+                "webpage",
+                "websites",
+                "traffic",
+                "websites",
+                "Internet",
+                "pages",
+                "digital product website",
+                "download links",
+                "websites",
+                "IP address"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 3,
+            "id": 2,
+            "texts": [
+                "targeted victims",
+                "potential victim",
+                "victim"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 7,
+            "id": 3,
+            "texts": [
+                "hyperlinks",
+                "iframes",
+                "numerous articles",
+                "content",
+                "versions",
+                "interest",
+                "visitor information"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 11,
+            "id": 4,
+            "texts": [
+                "Crimson",
+                "tools",
+                "njRAT",
+                "HTML injection",
+                "exploit kits",
+                "JavaScript",
+                "fake software update",
+                "offered digital products",
+                "code",
+                "login page",
+                "watering hole"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 2,
+            "id": 5,
+            "texts": [
+                "compromised machines",
+                "browser"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 2,
+            "id": 6,
+            "texts": [
+                "some",
+                "legitimate Israeli shipping company"
+            ],
+            "label": "OTHER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 9
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 5
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 2
+        },
+        {
+            "id": "5_1",
+            "source": 5,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "5_4",
+            "source": 5,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "4_2",
+            "source": 4,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "6_1",
+            "source": 6,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "6_4",
+            "source": 6,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "4_6",
+            "source": 4,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "4_3",
+            "source": 4,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "set": 1,
+        "infect": 1,
+        "with": 2,
+        "by": 3,
+        "redirect": 2,
+        "to": 2,
+        "compromise": 3,
+        "host": 1,
+        "use": 1,
+        "profile": 1,
+        "stand": 1,
+        "contain": 1,
+        "scrape from": 1,
+        "of": 4,
+        "include": 1,
+        "modify": 1,
+        "point": 1,
+        "embed": 1,
+        "into": 2,
+        "screen": 1,
+        "exploit": 1,
+        "be": 1,
+        "establish": 1,
+        "collect": 1
+    }
+}

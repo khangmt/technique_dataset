@@ -1,0 +1,243 @@
+{
+    "id": "T1071.003",
+    "tech_id": "T1071.003",
+    "tech_name": "Mail Protocols",
+    "best_phrases": [],
+    "tactics": [
+        "TA0011"
+    ],
+    "features": [
+        "NETWORK",
+        "FUNCTION",
+        "DATA",
+        "USER"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--0b2b0719-c82e-4d1f-b34c-7ed5dd5c8968",
+        "relationship--12918fb6-9b92-4644-a4c2-4f2f471e9b2c",
+        "relationship--17049a4f-810d-4928-a0a0-84d4a732ca08",
+        "relationship--3126e151-051a-45ba-bc52-ca6f0f646fbb",
+        "relationship--31462755-d050-4875-9d0b-0a7eeb276326",
+        "relationship--3632ab1c-caa3-4d65-a665-7da325f4b7ac",
+        "relationship--3ce884c7-71c5-4f46-b09c-1abb45d8341b",
+        "relationship--4dd8150f-e20d-4ed0-a12e-c94641d1ba64",
+        "relationship--560a7947-3823-4f2b-8b84-238f9a9a2552",
+        "relationship--5d1d94e9-c0fd-421f-867f-1a426b0dff99",
+        "relationship--5e7e3226-1583-48de-9376-946fa88b6d15",
+        "relationship--62391d2c-56de-42e3-a937-fb9ffa3a4308",
+        "relationship--68a91212-caee-45f3-ba09-95ed43f80af6",
+        "relationship--6e2a0844-3618-41a7-b45d-12ad690f60a1",
+        "relationship--76ec3407-84df-4bc9-8679-09564ca9329e",
+        "relationship--804fb819-6b91-4295-aec9-b9299fb3472b",
+        "relationship--887ca054-848e-4a94-b299-2b625cb739df",
+        "relationship--a1fe7df1-7c20-422e-8e86-042cd11b3501",
+        "relationship--a573685b-3135-44ae-9f9a-844dfc5bdaa2",
+        "relationship--c5401268-6b27-4088-9f2e-5439f68685d9",
+        "relationship--c81124ac-5df7-4443-9760-95208d19e599",
+        "relationship--db937076-3d30-471f-ad39-9565d61b614f"
+    ],
+    "graph_nodes": [
+        {
+            "count": 20,
+            "id": 0,
+            "texts": [
+                "ComRAT",
+                "OLDBAIT",
+                "Zebrocy",
+                "LightNeuron",
+                "CORESHELL",
+                "BadPatch",
+                "Remsec",
+                "Turla",
+                "Uroburos",
+                "JPIN",
+                "NavRAT",
+                "Agent Tesla",
+                "SilverTerrier",
+                "Cannon",
+                "APT32",
+                "RDAT",
+                "NightClub",
+                "APT28",
+                "Kimsuky",
+                "Goopy"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 5,
+            "id": 1,
+            "texts": [
+                "email attachments",
+                "email attachments",
+                "email attachments",
+                "self-registered Google Mail accounts",
+                "exfiltrated data"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 35,
+            "id": 2,
+            "texts": [
+                "C2",
+                "SMTP",
+                "POP3",
+                "C2",
+                "SMTP",
+                "POP3",
+                "C2",
+                "C2",
+                "custom communications protocols",
+                "SMTP",
+                "SMTP",
+                "email",
+                "C2 communications",
+                "SMTP",
+                "SMTP",
+                "C2 communications",
+                "SMTP/S",
+                "POP3",
+                "C2 communications",
+                "emails",
+                "email",
+                "C2",
+                "C2 communications",
+                "emails",
+                "C2 communications",
+                "IMAP",
+                "SMTP",
+                "POP3",
+                "communication channel",
+                "compromised email servers",
+                "e-mail",
+                "C2s",
+                "C2",
+                "SMTP",
+                "C2"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 8,
+            "id": 3,
+            "texts": [
+                "implementations",
+                "CHOPSTICK",
+                "backdoors",
+                "email platform",
+                "Office macro",
+                "implants",
+                "Microsoft Outlook backdoor macro",
+                "SUGARDUMP variant"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 4,
+            "id": 4,
+            "texts": [
+                "which",
+                "that",
+                "Naver",
+                "S"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "victims"
+            ],
+            "label": "USER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 4
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 22
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 3
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 6
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 4
+        },
+        {
+            "id": "4_2",
+            "source": 4,
+            "dest": 2,
+            "count": 3
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "2_5",
+            "source": 2,
+            "dest": 5,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 19,
+        "for": 21,
+        "over": 4,
+        "of": 2,
+        "with": 2,
+        "communicate": 2,
+        "by": 3,
+        "ride": 1,
+        "send": 2,
+        "receive": 1,
+        "in": 1,
+        "to": 1
+    }
+}

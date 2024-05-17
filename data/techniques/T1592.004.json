@@ -1,0 +1,87 @@
+{
+    "id": "T1592.004",
+    "tech_id": "T1592.004",
+    "tech_name": "Client Configurations",
+    "best_phrases": [],
+    "tactics": [
+        "TA0043"
+    ],
+    "features": [
+        "USER",
+        "DATA",
+        "COMPONENT"
+    ],
+    "locations": [
+        "PRE"
+    ],
+    "procedures": [
+        "relationship--02c3ea88-c33c-47d8-a34a-532ed5498a3d"
+    ],
+    "graph_nodes": [
+        {
+            "count": 1,
+            "id": 0,
+            "texts": [
+                "HAFNIUM"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 2,
+            "id": 1,
+            "texts": [
+                "Office 365 tenants",
+                "target"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 1,
+            "id": 2,
+            "texts": [
+                "details"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "environments"
+            ],
+            "label": "COMPONENT"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "with": 1,
+        "gather": 1,
+        "regard": 1,
+        "of": 1
+    }
+}

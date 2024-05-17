@@ -1,0 +1,124 @@
+{
+    "id": "T1087.004",
+    "tech_id": "T1087.004",
+    "tech_name": "Cloud Account",
+    "best_phrases": [],
+    "tactics": [
+        "TA0007"
+    ],
+    "features": [
+        "DATA",
+        "FUNCTION",
+        "COMPONENT"
+    ],
+    "locations": [
+        "Azure AD",
+        "Office 365",
+        "SaaS",
+        "IaaS",
+        "Google Workspace"
+    ],
+    "procedures": [
+        "relationship--050f4038-bed5-4353-970c-d32be292a037",
+        "relationship--51046675-9dcd-416e-a43d-09ae7d589a18",
+        "relationship--ce26fb61-137e-489c-8c69-d2ac5a9f59ce",
+        "relationship--ceed81ff-99e9-45d2-8118-8f2ada6d13d3",
+        "relationship--ed3fa28d-54ff-4b21-9924-58e5dcd94ac1"
+    ],
+    "graph_nodes": [
+        {
+            "count": 6,
+            "id": 0,
+            "texts": [
+                "Scattered Spider",
+                "Azure AD users",
+                "Azure AD users",
+                "IAM users",
+                "roles",
+                "groups"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 1,
+            "id": 1,
+            "texts": [
+                "Azure AD"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 7,
+            "id": 2,
+            "texts": [
+                "bulk lists",
+                "privileged users",
+                "group members",
+                "Azure AD accounts",
+                "IAM users",
+                "roles",
+                "groups"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 4,
+            "id": 3,
+            "texts": [
+                "ROADTools",
+                "AADInternals",
+                "enumeration",
+                "Pacu"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "APT29"
+            ],
+            "label": "ACTOR"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "3_0",
+            "source": 3,
+            "dest": 0,
+            "count": 3
+        },
+        {
+            "id": "4_3",
+            "source": 4,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 2
+        }
+    ],
+    "verbs": {
+        "access": 1,
+        "download": 1,
+        "identify": 1,
+        "of": 2,
+        "enumerate": 3,
+        "conduct": 1
+    }
+}

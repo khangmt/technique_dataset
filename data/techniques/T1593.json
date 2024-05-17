@@ -1,0 +1,114 @@
+{
+    "id": "T1593",
+    "tech_id": "T1593",
+    "tech_name": "Search Open Websites/Domains",
+    "best_phrases": [],
+    "tactics": [
+        "TA0043"
+    ],
+    "features": [
+        "FUNCTION",
+        "NETWORK",
+        "DATA"
+    ],
+    "locations": [
+        "PRE"
+    ],
+    "procedures": [
+        "relationship--fac15889-5e75-4d1d-b624-294581c299ca"
+    ],
+    "graph_nodes": [
+        {
+            "count": 1,
+            "id": 0,
+            "texts": [
+                "Sandworm Team"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 2,
+            "id": 1,
+            "texts": [
+                "\"EDRPOU\" number",
+                "unique legal entity identifier"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 3,
+            "id": 2,
+            "texts": [
+                "queries",
+                "preparation",
+                "NotPetya attack"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 3,
+            "id": 3,
+            "texts": [
+                "third-party websites",
+                "credible spearphishing emails",
+                "EDRPOU website"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "Ukraine"
+            ],
+            "label": "OTHER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "research": 2,
+        "run": 1,
+        "in": 2,
+        "craft": 1,
+        "of": 1,
+        "on": 1,
+        "for": 1
+    }
+}

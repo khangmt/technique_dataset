@@ -1,0 +1,50 @@
+{
+    "id": "T1567.001",
+    "tech_id": "T1567.001",
+    "tech_name": "Exfiltration to Code Repository",
+    "best_phrases": [],
+    "tactics": [
+        "TA0010"
+    ],
+    "features": [
+        "FUNCTION",
+        "COMPONENT"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--74779612-4c9b-4b23-8138-763f84362f8f"
+    ],
+    "graph_nodes": [
+        {
+            "count": 1,
+            "id": 0,
+            "texts": [
+                "Empire"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 1,
+            "texts": [
+                "GitHub"
+            ],
+            "label": "COMPONENT"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 1
+    }
+}

@@ -1,0 +1,53 @@
+{
+    "id": "T1546.002",
+    "tech_id": "T1546.002",
+    "tech_name": "Screensaver",
+    "best_phrases": [
+        "Screensaver",
+        "system screensaver"
+    ],
+    "tactics": [
+        "TA0004",
+        "TA0003"
+    ],
+    "features": [
+        "FUNCTION"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--b4f8c479-aab5-481d-aa04-922677da108a"
+    ],
+    "graph_nodes": [
+        {
+            "count": 1,
+            "id": 0,
+            "texts": [
+                "Gazer"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 2,
+            "id": 1,
+            "texts": [
+                "system screensaver",
+                "malware"
+            ],
+            "label": "FUNCTION"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 2
+        }
+    ],
+    "verbs": {
+        "by": 1,
+        "execute": 1
+    }
+}

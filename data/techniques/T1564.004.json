@@ -1,0 +1,263 @@
+{
+    "id": "T1564.004",
+    "tech_id": "T1564.004",
+    "tech_name": "NTFS File Attributes",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005"
+    ],
+    "features": [
+        "DATA",
+        "FUNCTION",
+        "NETWORK",
+        "COMPONENT",
+        "REGISTRY",
+        "USER",
+        "DIRECTORY"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--1ee44004-6aaa-4b22-934d-4f4ef82cbbd4",
+        "relationship--1eeb08cb-8b06-45a7-bf74-fb8bdaa4b02f",
+        "relationship--1fdd4a0b-fe6d-4fb1-a6ab-7f5063b6ecc3",
+        "relationship--328ab5f5-017c-4d4c-ab52-078257e39bd7",
+        "relationship--5181727e-706d-4e57-8a41-628a27e03c6c",
+        "relationship--78775a68-6973-43b1-a3d9-a1c9c93c5a3f",
+        "relationship--91f59958-db5f-429c-9608-a033ea68486b",
+        "relationship--bc829687-1a36-46f3-9196-79e62f84d005",
+        "relationship--bc838675-63af-45c5-9a30-081b5f5ac0d7",
+        "relationship--c3e7ca65-d0b0-43bd-ae13-047c361f3a79",
+        "relationship--c42f802b-394c-4d6f-bc3f-bf039c971cae",
+        "relationship--cb11ee03-ac58-417a-a50b-4c3229e226a5",
+        "relationship--d2d11e48-91f9-4ebf-82b7-c194c0bee9b5",
+        "relationship--e584ec5f-af99-4d61-8b02-3dbacae4adf4",
+        "relationship--f3f777de-db0e-4bde-b347-9c5727ef6bb7"
+    ],
+    "graph_nodes": [
+        {
+            "count": 17,
+            "id": 0,
+            "texts": [
+                "Regin malware platform",
+                "encrypted executables",
+                "payloads",
+                "ability",
+                "esentutl",
+                "Expand",
+                "DEADEYE.EMBED variant",
+                "DEADEYE",
+                "payload",
+                "PowerShell",
+                "POWERSOURCE",
+                "decoded payload",
+                "payloads",
+                "ADSs",
+                "variants",
+                "Zeroaccess Trojan",
+                "NTFS"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 23,
+            "id": 1,
+            "texts": [
+                "Extended Attributes",
+                "NTFS alternate data streams",
+                "files",
+                "alternate data streams",
+                "alternate data streams",
+                "file",
+                "alternate data stream",
+                "alternate data stream",
+                "alternate data stream",
+                "local file",
+                "kernel32.dll",
+                "alternate data stream",
+                "files",
+                "alternate data stream",
+                ":bin alternate data stream",
+                "created file",
+                "alternate data streams",
+                "content",
+                "configuration items",
+                "alternate data streams",
+                "data",
+                "Extended Attributes",
+                "files"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 9,
+            "id": 2,
+            "texts": [
+                "APT32",
+                "Valak",
+                "LoJax",
+                "PowerDuke",
+                "WastedLocker",
+                "BitPaymer",
+                "Astaroth",
+                "Gazer",
+                "Anchor"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 4,
+            "id": 3,
+            "texts": [
+                "ADS",
+                "ADS",
+                "ADS",
+                "ADS"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 2,
+            "id": 4,
+            "texts": [
+                "embedded NTFS DXE driver",
+                "NTFS partitions"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 3,
+            "id": 5,
+            "texts": [
+                "many",
+                "that",
+                "itself"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 1,
+            "id": 6,
+            "texts": [
+                "victim"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 2,
+            "id": 7,
+            "texts": [
+                "kernel32.dll",
+                "alternate data stream"
+            ],
+            "label": "REGISTRY"
+        },
+        {
+            "count": 1,
+            "id": 8,
+            "texts": [
+                "%PROGRAMDATA%\\Windows\\"
+            ],
+            "label": "DIRECTORY"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 9
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 10
+        },
+        {
+            "id": "2_0",
+            "source": 2,
+            "dest": 0,
+            "count": 3
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "2_5",
+            "source": 2,
+            "dest": 5,
+            "count": 2
+        },
+        {
+            "id": "6_0",
+            "source": 6,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "0_7",
+            "source": 0,
+            "dest": 7,
+            "count": 2
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "5_8",
+            "source": 5,
+            "dest": 8,
+            "count": 1
+        },
+        {
+            "id": "5_1",
+            "source": 5,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 2
+        }
+    ],
+    "verbs": {
+        "use": 4,
+        "store": 4,
+        "hide": 3,
+        "have": 1,
+        "execute": 2,
+        "as": 5,
+        "load": 1,
+        "write": 3,
+        "copy": 2,
+        "into": 1,
+        "in": 8,
+        "of": 4,
+        "embed": 1,
+        "to": 5,
+        "abuse": 2,
+        "for": 1
+    }
+}

@@ -1,0 +1,308 @@
+{
+    "id": "T1090.003",
+    "tech_id": "T1090.003",
+    "tech_name": "Multi-hop Proxy",
+    "best_phrases": [],
+    "tactics": [
+        "TA0011"
+    ],
+    "features": [
+        "NETWORK",
+        "FUNCTION",
+        "DATA",
+        "COMPONENT",
+        "USER"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows",
+        "Network"
+    ],
+    "procedures": [
+        "relationship--02e4c930-ffc1-4bcb-a989-12db90671f90",
+        "relationship--0e113a7f-2aba-4dc6-b4fc-4c0f0d013c3d",
+        "relationship--0f97d56a-3484-47fb-a232-5a20121fa89c",
+        "relationship--186ee163-fb1f-4a7d-b7d9-3c01efbb2be0",
+        "relationship--278b9898-50c6-4c6d-9a35-7079ed580e78",
+        "relationship--2b6195a4-72f8-4d31-9824-a7c8a7018134",
+        "relationship--2b6b93eb-6664-4a70-82a9-e56a416b9e61",
+        "relationship--3bd9165f-6f5f-4c1a-bdbf-47c733d577a8",
+        "relationship--3c4401bf-7a45-4d1d-a4ee-ea00788cd2aa",
+        "relationship--3d02f381-1402-430e-aacd-5e9350df2505",
+        "relationship--48aaad9e-bd08-4730-bf58-2c760a113ed4",
+        "relationship--50f68fb8-1e59-4b3a-b389-9c2797f4d347",
+        "relationship--516c98bb-bef8-4f24-ac69-acb3b662a870",
+        "relationship--54188543-7746-4158-9a9f-5556bb99ec7a",
+        "relationship--92e4cc06-5708-4486-92cc-0d25d9a755d4",
+        "relationship--a9bf9268-1c45-4293-a5c2-c493556ad546",
+        "relationship--aa498c95-d53a-4ab7-96ba-26d7111d71d0",
+        "relationship--c1d36d2e-a8ab-4132-8690-e97628a07a0f",
+        "relationship--c9fbbab5-c6f1-4aed-bf1f-ea7c83e4d1f2",
+        "relationship--cf498579-a7c9-4d06-949b-fb75bf762990",
+        "relationship--e496b3d5-3608-49e6-9567-86b370abeeb3",
+        "relationship--fdc0030c-ed38-49b0-afcc-266e19aa363e"
+    ],
+    "graph_nodes": [
+        {
+            "count": 21,
+            "id": 0,
+            "texts": [
+                "Keydnap",
+                "Ursnif",
+                "MacSpy",
+                "Siloscape",
+                "GreyEnergy",
+                "Attor",
+                "APT28",
+                "threat actors",
+                "Inception",
+                "Leviathan",
+                "threat actors",
+                "Uroburos",
+                "FIN4",
+                "APT29",
+                "Dok",
+                "Cyclops Blink",
+                "StrongPity",
+                "Dridex",
+                "Industroyer",
+                "WannaCry",
+                "Kobalos"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 4,
+            "id": 1,
+            "texts": [
+                "copy",
+                "chains",
+                "source",
+                "email accounts"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 42,
+            "id": 2,
+            "texts": [
+                "HTTPS communications",
+                "tor2web proxy",
+                "Tor",
+                "C2",
+                "C2s",
+                "Tor",
+                "C2 communication",
+                "Tor and VPN servers",
+                "traffic",
+                "C2 communications",
+                "proxies",
+                "C2 communications",
+                "compromised routers",
+                "multi-hop proxies",
+                "traffic",
+                "Tor exit nodes",
+                "communications",
+                "worldwide P2P network",
+                "Tor",
+                "Tor hidden service",
+                "TOR",
+                "traffic",
+                "remote access",
+                "Tor client",
+                "local ports",
+                "SMB",
+                "RDP",
+                "network",
+                "Traffic",
+                "Tor network",
+                "nodes",
+                "Tor network",
+                "Tor",
+                "Tor nodes",
+                "C2 traffic",
+                "terminal nodes",
+                "proxy servers",
+                "Tor nodes",
+                "C2",
+                "Tor",
+                "C2 traffic",
+                "proxies"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 9,
+            "id": 3,
+            "texts": [
+                "Tor relays",
+                "activities",
+                "installed web shell",
+                "commands",
+                "implants",
+                "backdoor",
+                "Tor hidden service",
+                "TOR",
+                "homebrew"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 4,
+            "id": 4,
+            "texts": [
+                "layer",
+                "cloud service providers",
+                "445",
+                "layers"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 3,
+            "id": 5,
+            "texts": [
+                "compromised machines",
+                "infrastructure",
+                "compromised machines"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 2,
+            "id": 6,
+            "texts": [
+                "victims",
+                "final targets"
+            ],
+            "label": "USER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 23
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 4
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 7
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 5
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "4_2",
+            "source": 4,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "3_5",
+            "source": 3,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "1_6",
+            "source": 1,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "2_5",
+            "source": 2,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "0_6",
+            "source": 0,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "5_2",
+            "source": 5,
+            "dest": 2,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 14,
+        "for": 14,
+        "of": 6,
+        "over": 2,
+        "route": 1,
+        "obfuscate": 1,
+        "manage": 1,
+        "proxy": 2,
+        "between": 2,
+        "disguise": 1,
+        "by": 7,
+        "execute": 1,
+        "on": 1,
+        "create": 1,
+        "forward": 1,
+        "enable": 1,
+        "from": 2,
+        "to": 5,
+        "traverse": 1,
+        "exit": 1,
+        "install": 1,
+        "hide": 1,
+        "in": 1,
+        "chain": 1,
+        "as": 2,
+        "reach": 1
+    }
+}

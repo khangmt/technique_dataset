@@ -1,0 +1,124 @@
+{
+    "id": "T1583.002",
+    "tech_id": "T1583.002",
+    "tech_name": "DNS Server",
+    "best_phrases": [],
+    "tactics": [
+        "TA0042"
+    ],
+    "features": [
+        "FUNCTION",
+        "USER",
+        "DATA",
+        "NETWORK",
+        "COMPONENT"
+    ],
+    "locations": [
+        "PRE"
+    ],
+    "procedures": [
+        "relationship--7a51cf35-ac6e-4954-8864-8aa48a4bebbf",
+        "relationship--f635daec-033b-4d91-afa6-4a6f44f9dddb"
+    ],
+    "graph_nodes": [
+        {
+            "count": 2,
+            "id": 0,
+            "texts": [
+                "Axiom",
+                "HEXANE"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 3,
+            "id": 1,
+            "texts": [
+                "dynamic DNS services",
+                "targeting",
+                "commands"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 2,
+            "texts": [
+                "intended victims"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "TXT records"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "custom DNS servers"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "compromised hosts"
+            ],
+            "label": "COMPONENT"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "acquire": 1,
+        "in": 2,
+        "of": 1,
+        "use": 1,
+        "set": 1,
+        "send": 1,
+        "to": 1,
+        "by": 1
+    }
+}

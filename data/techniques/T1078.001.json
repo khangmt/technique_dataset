@@ -1,0 +1,155 @@
+{
+    "id": "T1078.001",
+    "tech_id": "T1078.001",
+    "tech_name": "Default Accounts",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005",
+        "TA0003",
+        "TA0004",
+        "TA0001"
+    ],
+    "features": [
+        "DATA",
+        "COMPONENT",
+        "NETWORK",
+        "FUNCTION"
+    ],
+    "locations": [
+        "Windows",
+        "Azure AD",
+        "Office 365",
+        "SaaS",
+        "IaaS",
+        "Linux",
+        "macOS",
+        "Google Workspace",
+        "Containers"
+    ],
+    "procedures": [
+        "relationship--0afa86ee-1253-4f15-87a8-abb46422313b",
+        "relationship--3f23a228-4817-44a0-9d08-210c23057b42",
+        "relationship--815e257d-f4bf-4124-8063-634d6710d66f",
+        "relationship--9c8be5c7-5f72-4c60-aaf7-f1f62eaf91f2"
+    ],
+    "graph_nodes": [
+        {
+            "count": 4,
+            "id": 0,
+            "texts": [
+                "FIN13",
+                "QLogic web management interface",
+                "myWebMethods",
+                "WMS"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 6,
+            "id": 1,
+            "texts": [
+                "default credentials",
+                "default credentials",
+                "IPC$ shares",
+                "default system managed account",
+                "DefaultAccount",
+                "hardcoded database server password"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 3,
+            "id": 2,
+            "texts": [
+                "QLogic web management interface",
+                "myWebMethods",
+                "WinCC machines"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 3,
+            "id": 3,
+            "texts": [
+                "HyperStack",
+                "Magic Hound",
+                "Stuxnet"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 2,
+            "id": 4,
+            "texts": [
+                "RDP",
+                "targeted Exchange server"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "\"powershell.exe\" /c net user DefaultAccount /active:yes"
+            ],
+            "label": "FUNCTION"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 2
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 5
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 5,
+        "authenticate": 2,
+        "connect": 2,
+        "by": 3,
+        "infect": 1
+    }
+}

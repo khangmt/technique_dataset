@@ -1,0 +1,88 @@
+{
+    "id": "T1590.004",
+    "tech_id": "T1590.004",
+    "tech_name": "Network Topology",
+    "best_phrases": [],
+    "tactics": [
+        "TA0043"
+    ],
+    "features": [
+        "COMPONENT",
+        "FUNCTION",
+        "NETWORK"
+    ],
+    "locations": [
+        "PRE"
+    ],
+    "procedures": [
+        "relationship--b79256c4-9067-44ed-8e96-8b11a4c348e8"
+    ],
+    "graph_nodes": [
+        {
+            "count": 1,
+            "id": 0,
+            "texts": [
+                "FIN13"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 2,
+            "id": 1,
+            "texts": [
+                "infrastructure",
+                "environment"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 1,
+            "id": 2,
+            "texts": [
+                "remote access"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 2,
+            "id": 3,
+            "texts": [
+                "targeting",
+                "efforts"
+            ],
+            "label": "FUNCTION"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 2
+        }
+    ],
+    "verbs": {
+        "for": 2,
+        "provide": 1,
+        "to": 1,
+        "target": 1
+    }
+}

@@ -1,0 +1,154 @@
+{
+    "id": "T1546.010",
+    "tech_id": "T1546.010",
+    "tech_name": "AppInit DLLs",
+    "best_phrases": [],
+    "tactics": [
+        "TA0004",
+        "TA0003"
+    ],
+    "features": [
+        "REGISTRY",
+        "FUNCTION",
+        "DATA",
+        "USER"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--19785182-3304-4954-9545-30560d159ae2",
+        "relationship--3d16b34f-f58b-4469-a0ef-7585f88d6001",
+        "relationship--cb4af413-9bd7-4f1a-a693-57d11ffccbf5",
+        "relationship--f96794d1-0707-4897-9de1-08546b605bf0"
+    ],
+    "graph_nodes": [
+        {
+            "count": 2,
+            "id": 0,
+            "texts": [
+                "APT39",
+                "Ramsay"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 8,
+            "id": 1,
+            "texts": [
+                "malware",
+                "T9000",
+                "AppInit_DLL functionality",
+                "user mode process",
+                "variants",
+                "Cherry Picker",
+                "AppInit_DLLs",
+                "applications"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 10,
+            "id": 2,
+            "texts": [
+                "LoadAppInit_DLLs",
+                "Registry key SOFTWARE\\Microsoft\\WindowsNT\\CurrentVersion\\Windows",
+                "Registry keys",
+                "HKLM\\Software\\Microsoft\\WindowsNT\\CurrentVersion\\Windows\\LoadAppInit_DLLs - 0x1",
+                "HKLM\\Software\\Microsoft\\WindowsNT\\CurrentVersion\\Windows\\AppInit_DLLs - %appdata%\\Intel\\ResN32.dll",
+                "DLL",
+                "ResN32.dll",
+                "Registry key",
+                "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\WindowsNT\\CurrentVersion\\Windows \"AppInit_DLLs\"=\"pserver32.dll\"",
+                "AppInit DLL Registry key"
+            ],
+            "label": "REGISTRY"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "victim"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 2,
+            "id": 4,
+            "texts": [
+                "criteria",
+                "address space"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "itself"
+            ],
+            "label": "OTHER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 6
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "5_4",
+            "source": 5,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 4,
+        "set": 1,
+        "in": 1,
+        "meet": 1,
+        "create": 4,
+        "load": 2,
+        "of": 2,
+        "insert": 1,
+        "into": 2
+    }
+}

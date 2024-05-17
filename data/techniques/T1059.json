@@ -1,0 +1,380 @@
+{
+    "id": "T1059",
+    "tech_id": "T1059",
+    "tech_name": "Command and Scripting Interpreter",
+    "best_phrases": [],
+    "tactics": [
+        "TA0002"
+    ],
+    "features": [
+        "FUNCTION",
+        "COMPONENT",
+        "DATA",
+        "USER",
+        "NETWORK",
+        "ENCRYPTION",
+        "DIRECTORY"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows",
+        "Network",
+        "Office 365",
+        "Azure AD",
+        "IaaS",
+        "Google Workspace"
+    ],
+    "procedures": [
+        "relationship--00fb61de-33f5-4e85-aca3-8e4016aa0bf8",
+        "relationship--0d63f3cf-bace-4210-9b76-199c5cdb8764",
+        "relationship--1332e859-38be-45ed-9ebc-09efd7117c17",
+        "relationship--1d1eaec4-ceeb-4fda-b177-f92fad7d3e44",
+        "relationship--1f764874-0e08-4799-9487-a9e12c499c13",
+        "relationship--2a9d9c0a-1c8b-4f80-bdd2-9ba8394cb625",
+        "relationship--2b4b6861-7143-4155-aaac-60213a314abd",
+        "relationship--2fa20fad-4ede-42f4-8ce5-7f5a6ce83ed8",
+        "relationship--34351a4f-ea7c-4420-9063-1d8644073ea7",
+        "relationship--35887eab-0306-4e28-910d-2235207cc621",
+        "relationship--39590383-ba69-4d8f-9520-e893cd4ebcdf",
+        "relationship--3ba2b8bc-1c5b-4cb3-8234-a7dc7b7552d0",
+        "relationship--45c4d1f9-414f-4542-8272-c783f7314514",
+        "relationship--46da305e-d59a-42a4-9d2b-cdd223c69664",
+        "relationship--4f2e62d0-5345-45dc-9e9d-46bb11c5f35d",
+        "relationship--68852bf2-c3cf-4d59-b1c1-f6af8fb61be6",
+        "relationship--768a6678-4823-4af5-bfd9-1a92c562b9f2",
+        "relationship--769a2214-5e04-4290-a172-b770f8bb223e",
+        "relationship--7e3bdb4d-76b3-42ce-8f68-587320e39ec7",
+        "relationship--819a5c4e-2bd6-4d9b-844c-21dc31e85a67",
+        "relationship--89e07be1-6d8b-4886-ab3d-68fb23275c8c",
+        "relationship--92b00f56-c9ac-4e48-9890-40b78ab0c361",
+        "relationship--9317c15e-44ae-4d00-9f2b-ad1b07ff52b5",
+        "relationship--9b174c9b-eab5-4715-aa31-915689054baa",
+        "relationship--a1c62ce5-2f11-415f-bca1-c9021530c090",
+        "relationship--a5a63d5c-acf7-4720-866d-fcf6e576a58f",
+        "relationship--b906b0a1-12a3-4d6f-82ec-d72a4ef711b4",
+        "relationship--bea0bf7c-62c8-4334-b523-5cc6ec8b36c8",
+        "relationship--c14e629a-c0cd-4600-873b-924d04d8b627",
+        "relationship--e3c9ddee-8ace-4847-81ea-f7dfb8936d3b",
+        "relationship--e8ce10b4-3b00-40c1-983a-1d87ff9a68ee",
+        "relationship--ee448e12-4b71-4c0c-bcca-daff26072d41",
+        "relationship--f56f953d-7df2-4eee-93b6-f2c8377153bb"
+    ],
+    "graph_nodes": [
+        {
+            "count": 29,
+            "id": 0,
+            "texts": [
+                "Fox Kitten",
+                "FIN7",
+                "DarkComet",
+                "FIN6",
+                "Melcoz",
+                "threat actors",
+                "CHOPSTICK",
+                "FIVEHANDS",
+                "FIN5",
+                "Matryoshka",
+                "Kessel",
+                "APT19",
+                "gh0st RAT",
+                "APT32",
+                "Dragonfly",
+                "P.A.S. Webshell",
+                "WINERACK",
+                "Bandook",
+                "Whitefly",
+                "Zeus Panda",
+                "SpeakUp",
+                "APT39",
+                "Ke3chang",
+                "APT37",
+                "Windigo",
+                "Get2",
+                "PoetRAT",
+                "OilRig",
+                "Bonadan"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 54,
+            "id": 1,
+            "texts": [
+                "Perl reverse shell",
+                "Stealth Falcon malware",
+                "WMI",
+                "SQL scripts",
+                "tasks",
+                "scripts",
+                "scripting",
+                "AutoIt loader script",
+                "Nullsoft Scriptable Install System (NSIS) scripts",
+                "malware",
+                "remote command",
+                "Donut",
+                "processes",
+                "automated scripts",
+                "Imminent Monitor",
+                "CommandPromptPacket and ScriptPacket modules",
+                "remote shell",
+                "scripts",
+                "reverse shell",
+                "code",
+                "SCT file",
+                "remote shell",
+                "commands",
+                "COM scriptlets",
+                "Cobalt Strike beacons",
+                "command line",
+                "command",
+                "reverse shells",
+                "Perl scripts",
+                "reverse shell",
+                "statically-linked Wine cmd.exe code",
+                "Windows command prompt commands",
+                "commands",
+                "Java-based payloads",
+                "remote shell tool",
+                "commands",
+                "remote scripts",
+                "Perl scripts",
+                "custom scripts",
+                "AutoIt",
+                "internal reconnaissance",
+                "Malware",
+                "commands",
+                "Ruby scripts",
+                "payloads",
+                "Perl script",
+                "information gathering",
+                "executables",
+                "Lua script",
+                "Lua interpreter",
+                "command",
+                "scripting",
+                "Empire",
+                "bind and reverse shells"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 2,
+            "id": 2,
+            "texts": [
+                "C2",
+                "C2"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 13,
+            "id": 3,
+            "texts": [
+                "machine",
+                "machine",
+                "compromised PoS systems",
+                "victim systems",
+                "environment",
+                "infected host",
+                "system",
+                "machine",
+                "command-line interface",
+                "Windows",
+                "command-line interface",
+                "systems",
+                "infected system"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 3,
+            "id": 4,
+            "texts": [
+                "victim",
+                "victim",
+                "victim"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 10,
+            "id": 5,
+            "texts": [
+                "types",
+                "data",
+                "data files",
+                "log file",
+                "shellcode outputs",
+                "command line argument",
+                "results",
+                "Meterpreter shell access",
+                "command-line arguments",
+                "types"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 2,
+            "id": 6,
+            "texts": [
+                "Ruby",
+                "that"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 1,
+            "id": 7,
+            "texts": [
+                "file encryption"
+            ],
+            "label": "ENCRYPTION"
+        },
+        {
+            "count": 1,
+            "id": 8,
+            "texts": [
+                "directories"
+            ],
+            "label": "DIRECTORY"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 36
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 10
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 3
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 7
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 4
+        },
+        {
+            "id": "5_1",
+            "source": 5,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "5_3",
+            "source": 5,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "5_6",
+            "source": 5,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 2
+        },
+        {
+            "id": "5_7",
+            "source": 5,
+            "dest": 7,
+            "count": 1
+        },
+        {
+            "id": "7_8",
+            "source": 7,
+            "dest": 8,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "6_2",
+            "source": 6,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "6_1",
+            "source": 6,
+            "dest": 1,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 15,
+        "communicate": 1,
+        "perform": 2,
+        "on": 10,
+        "of": 5,
+        "execute": 9,
+        "iterate": 1,
+        "copy": 1,
+        "remove": 1,
+        "to": 3,
+        "distribute": 1,
+        "install": 1,
+        "any": 1,
+        "generate": 1,
+        "receive": 1,
+        "limit": 1,
+        "scan": 1,
+        "pull": 1,
+        "in": 1,
+        "provide": 1,
+        "have": 1,
+        "create": 5,
+        "between": 1,
+        "launch": 2,
+        "within": 2,
+        "open": 1,
+        "download": 1,
+        "with": 3,
+        "utilize": 2,
+        "emulate": 1,
+        "support": 1,
+        "call": 1,
+        "wait": 1,
+        "for": 4,
+        "run": 2,
+        "by": 1,
+        "interact": 1
+    }
+}

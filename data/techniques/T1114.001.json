@@ -1,0 +1,306 @@
+{
+    "id": "T1114.001",
+    "tech_id": "T1114.001",
+    "tech_name": "Local Email Collection",
+    "best_phrases": [],
+    "tactics": [
+        "TA0009"
+    ],
+    "features": [
+        "NETWORK",
+        "DATA",
+        "FUNCTION",
+        "DIRECTORY",
+        "COMPONENT",
+        "USER",
+        "ENCRYPTION"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--25d65c10-5fa3-40c1-9e25-936894446178",
+        "relationship--3d8e97f7-9c58-47e1-b2c9-2cc55cca974f",
+        "relationship--5c736aad-9847-4059-9d1e-dc2f551952d0",
+        "relationship--64e3196b-50c6-47d9-8841-1b7902a1546a",
+        "relationship--757bed64-558b-4ea7-84b9-b82d8b23f9b2",
+        "relationship--892ff1d1-3da9-489e-89c3-374ab07a417b",
+        "relationship--90839ffa-293e-4fe3-98d2-e8edfd55be2c",
+        "relationship--9c98640e-0307-48bb-aafc-af14a774fd5b",
+        "relationship--a8730dc5-9f3b-449d-8b17-f5a6638aaac4",
+        "relationship--ac772e5c-ef7b-433a-bc12-4125635699b1",
+        "relationship--b6336d7c-e869-4491-9e8a-5ea5847a58ae",
+        "relationship--bcb8ac03-4f58-4cd8-af58-c3df991c8af5",
+        "relationship--c69d17b1-c261-44c6-9da5-c310cf20f91b",
+        "relationship--ea023f09-6a7d-445c-a39d-5e57eea2706b"
+    ],
+    "graph_nodes": [
+        {
+            "count": 11,
+            "id": 0,
+            "texts": [
+                "Smoke Loader",
+                "QakBot",
+                "Carbanak",
+                "APT1",
+                "Crimson",
+                "threat actors",
+                "Chimera",
+                "KGH_SPY",
+                "Magic Hound",
+                "CosmicDuke",
+                "Emotet"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 17,
+            "id": 1,
+            "texts": [
+                "inbox",
+                "directories",
+                "Outlook files",
+                "stored emails",
+                "thread hijacking phishing campaigns",
+                "emails",
+                "folders",
+                "C2",
+                "GETMAIL",
+                "MAPIGET",
+                "email",
+                "emails",
+                "emails",
+                "emails",
+                "e-mail",
+                "mail clients",
+                "e-mails"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 6,
+            "id": 2,
+            "texts": [
+                "inbox",
+                "directories",
+                "Outlook files",
+                "emails",
+                "folders",
+                "user directories"
+            ],
+            "label": "DIRECTORY"
+        },
+        {
+            "count": 12,
+            "id": 3,
+            "texts": [
+                "inbox",
+                "directories",
+                "Outlook files",
+                "Outlook personal storage tables (PST) files",
+                "archived Outlook .pst files",
+                "data",
+                "data",
+                "Microsoft Outlook data files",
+                "extensions",
+                ".ost",
+                ".pst",
+                "email data"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 11,
+            "id": 4,
+            "texts": [
+                "Pupy",
+                "Outlook session",
+                "utilities",
+                "GETMAIL",
+                "MAPIGET",
+                "command",
+                "RAT malware",
+                "Empire",
+                "command",
+                "Out1",
+                "module"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 2,
+            "id": 5,
+            "texts": [
+                "victim",
+                "victim"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 4,
+            "id": 6,
+            "texts": [
+                "Outlook",
+                "target system",
+                "target machine",
+                "Outlook"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 1,
+            "id": 7,
+            "texts": [
+                "email archives"
+            ],
+            "label": "ENCRYPTION"
+        },
+        {
+            "count": 2,
+            "id": 8,
+            "texts": [
+                ".PST archives",
+                "that"
+            ],
+            "label": "OTHER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 9
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 6
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 4
+        },
+        {
+            "id": "4_2",
+            "source": 4,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "4_5",
+            "source": 4,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 6
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "1_6",
+            "source": 1,
+            "dest": 6,
+            "count": 3
+        },
+        {
+            "id": "0_7",
+            "source": 0,
+            "dest": 7,
+            "count": 1
+        },
+        {
+            "id": "4_6",
+            "source": 4,
+            "dest": 6,
+            "count": 2
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "0_8",
+            "source": 0,
+            "dest": 8,
+            "count": 1
+        },
+        {
+            "id": "4_3",
+            "source": 4,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "3_6",
+            "source": 3,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "8_6",
+            "source": 8,
+            "dest": 6,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "by": 2,
+        "steal": 2,
+        "support": 1,
+        "with": 3,
+        "of": 2,
+        "for": 2,
+        "to": 2,
+        "send": 1,
+        "within": 1,
+        "use": 4,
+        "extract": 1,
+        "from": 9,
+        "contain": 1,
+        "exfiltrate": 2,
+        "collect": 2,
+        "on": 4,
+        "harvest": 2,
+        "execute": 1,
+        "parse": 1,
+        "scrape": 1
+    }
+}

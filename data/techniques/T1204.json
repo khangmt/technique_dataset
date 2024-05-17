@@ -1,0 +1,140 @@
+{
+    "id": "T1204",
+    "tech_id": "T1204",
+    "tech_name": "User Execution",
+    "best_phrases": [],
+    "tactics": [
+        "TA0002"
+    ],
+    "features": [
+        "FUNCTION",
+        "USER",
+        "DATA",
+        "NETWORK",
+        "COMPONENT"
+    ],
+    "locations": [
+        "Linux",
+        "Windows",
+        "macOS",
+        "IaaS",
+        "Containers"
+    ],
+    "procedures": [
+        "relationship--64c83ccd-f074-4ff2-80c9-05d03f8fc9d3"
+    ],
+    "graph_nodes": [
+        {
+            "count": 2,
+            "id": 0,
+            "texts": [
+                "LAPSUS$",
+                "contractors"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 1,
+            "id": 1,
+            "texts": [
+                "target organization employees"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 3,
+            "id": 2,
+            "texts": [
+                "control",
+                "associated MFA prompt",
+                "remote management software"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "credentials"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "corporate workstation"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "who"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 1,
+            "id": 6,
+            "texts": [
+                "authenticated system"
+            ],
+            "label": "COMPONENT"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "5_4",
+            "source": 5,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "2_6",
+            "source": 2,
+            "dest": 6,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "recruit": 1,
+        "take": 1,
+        "provide": 1,
+        "approve": 1,
+        "install": 1,
+        "onto": 2,
+        "of": 1
+    }
+}

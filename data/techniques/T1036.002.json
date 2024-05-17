@@ -1,0 +1,120 @@
+{
+    "id": "T1036.002",
+    "tech_id": "T1036.002",
+    "tech_name": "Right-to-Left Override",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "USER"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--54501ca8-7205-4b83-87cb-b2235bc0ec71",
+        "relationship--8c5e20b3-b15c-4c08-84fe-eeacd9209375",
+        "relationship--a5aebe97-98cc-46a5-b3f9-1a0497bc72ba",
+        "relationship--d617132e-68a7-489a-887f-1c40b147ea62",
+        "relationship--ff6fd36b-bc49-4df7-86f0-62b9d1fc9754"
+    ],
+    "graph_nodes": [
+        {
+            "count": 5,
+            "id": 0,
+            "texts": [
+                "Ferocious Kitten",
+                "BlackTech",
+                "Ke3chang",
+                "Scarlet Mimic",
+                "BRONZE BUTLER"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 11,
+            "id": 1,
+            "texts": [
+                "override",
+                "right-to-left",
+                "executables",
+                "right-to-left-override",
+                "right-to-left",
+                ".scr and .exe files",
+                "left-to-right",
+                "Right-to-Left",
+                "Override",
+                "strains",
+                "malware"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 8,
+            "id": 2,
+            "texts": [
+                "names",
+                "file extensions",
+                "filenames",
+                "e-mail attachments",
+                "override character",
+                "spearphishing attachment names",
+                "override character",
+                "RAR archive spearphishing attachment file names"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 2,
+            "id": 3,
+            "texts": [
+                "targets",
+                "victims"
+            ],
+            "label": "USER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 9
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 5
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 2
+        }
+    ],
+    "verbs": {
+        "use": 9,
+        "reverse": 1,
+        "of": 3,
+        "have": 1,
+        "obfuscate": 1,
+        "trick": 1,
+        "execute": 2,
+        "in": 1,
+        "self-extracte": 1,
+        "deceive": 1
+    }
+}

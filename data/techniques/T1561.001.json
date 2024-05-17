@@ -1,0 +1,201 @@
+{
+    "id": "T1561.001",
+    "tech_id": "T1561.001",
+    "tech_name": "Disk Content Wipe",
+    "best_phrases": [],
+    "tactics": [
+        "TA0040"
+    ],
+    "features": [
+        "DATA",
+        "COMPONENT",
+        "FUNCTION",
+        "NETWORK"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--774a6b5c-bbba-4094-bac3-0fa5e664bf2a",
+        "relationship--78ca7fcf-95b9-485c-a87b-2ac083312885",
+        "relationship--7fa1a7c8-0dfb-4bd5-a34f-509ba24da5be",
+        "relationship--8550e43c-ca91-416e-a75a-b6f5f979d457",
+        "relationship--d2041a67-d846-4a1b-b704-4e437baa731a",
+        "relationship--d687171f-152f-4211-95bb-e051dc61575f",
+        "relationship--d9af5e2e-3ac5-451a-bc63-c3e26ca6371e"
+    ],
+    "graph_nodes": [
+        {
+            "count": 6,
+            "id": 0,
+            "texts": [
+                "WhisperGate",
+                "Lazarus Group",
+                "MegaCortex",
+                "StoneDrill",
+                "HermeticWiper",
+                "BlackCat"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 12,
+            "id": 1,
+            "texts": [
+                "sectors",
+                "hard drive",
+                "host",
+                "drive",
+                "logical drives",
+                "drive",
+                "hard disk",
+                "drives",
+                "accessible physical or logical drives",
+                "infected machine",
+                "disk partitions",
+                "VM snapshots"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 13,
+            "id": 2,
+            "texts": [
+                "periodic offsets",
+                "64MB",
+                "static and random buffers",
+                "content",
+                "byte",
+                "4.9MB",
+                "1.5MB",
+                "132MB",
+                "sized portions",
+                "disk content",
+                "deleted data",
+                "raw disk access",
+                "data"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 6,
+            "id": 3,
+            "texts": [
+                "malware",
+                "WhiskeyAlfa",
+                "process",
+                "WhiskeyBravo",
+                "RawDisk",
+                "cipher.exe"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "mix"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "compromised networks"
+            ],
+            "label": "NETWORK"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 5
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 5
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 4
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 5
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "4_2",
+            "source": 4,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 5
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "overwrite": 5,
+        "at": 2,
+        "of": 9,
+        "use": 4,
+        "with": 3,
+        "wipe": 5,
+        "in": 1,
+        "on": 3,
+        "from": 3,
+        "access": 1,
+        "corrupt": 1,
+        "obtain": 1,
+        "destroy": 1
+    }
+}

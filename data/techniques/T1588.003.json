@@ -1,0 +1,197 @@
+{
+    "id": "T1588.003",
+    "tech_id": "T1588.003",
+    "tech_name": "Code Signing Certificates",
+    "best_phrases": [],
+    "tactics": [
+        "TA0042"
+    ],
+    "features": [
+        "DATA",
+        "FUNCTION",
+        "NETWORK",
+        "COMPONENT",
+        "ENCRYPTION"
+    ],
+    "locations": [
+        "PRE"
+    ],
+    "procedures": [
+        "relationship--00a88d6f-fa8c-48bf-a028-fb75ca04e000",
+        "relationship--06bf8477-fed1-410b-8fc9-2655758eed41",
+        "relationship--2d2849f2-b34a-455f-a5c7-b4b42920f36a",
+        "relationship--3b72eb79-c499-4f2a-b6aa-464bb3bbd42d",
+        "relationship--443ee76b-8fd4-4485-bdbb-4a562f348be0",
+        "relationship--8a78d2b1-e15c-4985-a1a4-fb2af9824f33",
+        "relationship--d14513b4-9c60-49cd-88ee-0cb2ffde394a"
+    ],
+    "graph_nodes": [
+        {
+            "count": 7,
+            "id": 0,
+            "texts": [
+                "Wizard Spider",
+                "BlackTech",
+                "Ember Bear",
+                "FIN8",
+                "MegaCortex",
+                "Lazarus Group",
+                "Threat Group-3390"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 10,
+            "id": 1,
+            "texts": [
+                "code signing certificates",
+                "stolen code-signing certificates",
+                "legitimate certificates",
+                "expired open-source X.509 certificate",
+                "code signing certificates",
+                "code signing certificates",
+                "Youdu",
+                "stolen valid certificates",
+                "Chinese instant messaging application",
+                "VMProtect"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 10,
+            "id": 2,
+            "texts": [
+                "malware payloads",
+                "payloads",
+                "payloads",
+                "tools",
+                "malware",
+                "Youdu",
+                "stolen valid certificates",
+                "Chinese instant messaging application",
+                "VMProtect",
+                "operations"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 5,
+            "id": 3,
+            "texts": [
+                "GlobalSign",
+                "DigiCert",
+                "COMOOD",
+                "testing",
+                "some"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 5,
+            "id": 4,
+            "texts": [
+                "C2s",
+                "Youdu",
+                "stolen valid certificates",
+                "Chinese instant messaging application",
+                "VMProtect"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "security controls"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 1,
+            "id": 6,
+            "texts": [
+                "Sectigo RSA"
+            ],
+            "label": "ENCRYPTION"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 7
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 4
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 4
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "6_1",
+            "source": 6,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "4_2",
+            "source": 4,
+            "dest": 2,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "obtain": 2,
+        "for": 10,
+        "sign": 2,
+        "use": 4,
+        "steal": 1,
+        "connect": 1,
+        "bypass": 1,
+        "issue": 1,
+        "of": 1
+    }
+}

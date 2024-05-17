@@ -1,0 +1,248 @@
+{
+    "id": "T1029",
+    "tech_id": "T1029",
+    "tech_name": "Scheduled Transfer",
+    "best_phrases": [],
+    "tactics": [
+        "TA0010"
+    ],
+    "features": [
+        "DATA",
+        "NETWORK",
+        "FUNCTION",
+        "COMPONENT"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--0d7811d3-d4ee-4114-b841-c0463f2274be",
+        "relationship--15d6c37f-f34f-4431-b73c-0a1f0f64e37a",
+        "relationship--1803860a-88df-4af5-8c82-ebbe237bc370",
+        "relationship--20c556ad-adcd-4b60-bde1-c3eff06c0593",
+        "relationship--44671cd3-9bdd-4e9f-a7d1-a322d0abf659",
+        "relationship--4563af55-57dc-44fc-b57b-76e2f10f3b9a",
+        "relationship--55465e2f-104a-440e-aa6b-24f1476fc86d",
+        "relationship--5eb253cb-2e81-4f51-bd0e-d1734283491c",
+        "relationship--66f2ff8f-abc2-4a6c-9652-89d7c824422c",
+        "relationship--6d5dfa51-1e2b-4da5-9db8-ae8e8f00ea9d",
+        "relationship--7060e30c-cbb6-4b79-ad52-5e1619e030f0",
+        "relationship--76b62130-29f5-4e3a-ace1-146a228a08a9",
+        "relationship--853f320a-e611-4a23-9784-e0054f74b9e3",
+        "relationship--8a62bb3c-2019-4747-a5e8-137c788fca77",
+        "relationship--a6af8abf-a60f-47f7-9112-aa527db087c7",
+        "relationship--b7113807-356f-455b-aaba-5c2822dd1394",
+        "relationship--c6c3192b-f541-4f19-b7b9-f2ad026c8ffb"
+    ],
+    "graph_nodes": [
+        {
+            "count": 17,
+            "id": 0,
+            "texts": [
+                "jRAT",
+                "Flagpro",
+                "Shark",
+                "LightNeuron",
+                "POWERSTATS",
+                "Dipsind",
+                "ComRAT",
+                "ADVSTORESHELL",
+                "remote attackers",
+                "Linfo",
+                "Cobalt Strike",
+                "Machete",
+                "Higaisa",
+                "ShadowPad",
+                "TinyTurla",
+                "Chrommme",
+                "Kazuar"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 20,
+            "id": 1,
+            "texts": [
+                "intervals",
+                "time interval",
+                "time",
+                "data",
+                "nighttime or working hours",
+                "given number",
+                "seconds",
+                "normal working hours",
+                "local business hours",
+                "Monday",
+                "Friday",
+                "data",
+                "frequency",
+                "stolen data",
+                "victim computer identifier",
+                "User-Agent string",
+                "data",
+                "configuration",
+                "time",
+                "intervals"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 6,
+            "id": 2,
+            "texts": [
+                "commands",
+                "backdoor",
+                "Beacon payload",
+                "scheduled timing",
+                "sleep",
+                "command"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 10,
+            "id": 3,
+            "texts": [
+                "C2",
+                "C2 communications",
+                "normal traffic",
+                "C2",
+                "remote C2 infrastructure",
+                "C2",
+                "C2",
+                "C2",
+                "C2",
+                "C2"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 5,
+            "id": 4,
+            "texts": [
+                "which",
+                "9",
+                "which",
+                "which",
+                "itself"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "compromised hosts"
+            ],
+            "label": "COMPONENT"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 15
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 3
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "4_3",
+            "source": 4,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 3
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 4
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 5
+        },
+        {
+            "id": "5_4",
+            "source": 5,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "5_3",
+            "source": 5,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "4_2",
+            "source": 4,
+            "dest": 2,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "reconnect": 1,
+        "for": 5,
+        "execute": 1,
+        "from": 2,
+        "pause": 1,
+        "exfiltrate": 2,
+        "during": 1,
+        "of": 1,
+        "run": 1,
+        "distinguish": 1,
+        "sleep": 3,
+        "to": 8,
+        "by": 1,
+        "change": 1,
+        "create": 1,
+        "at": 1,
+        "contact": 2,
+        "set": 2,
+        "send": 3,
+        "in": 1,
+        "base": 1,
+        "set in": 1,
+        "request": 1,
+        "communicate": 1
+    }
+}

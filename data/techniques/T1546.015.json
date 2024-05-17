@@ -1,0 +1,234 @@
+{
+    "id": "T1546.015",
+    "tech_id": "T1546.015",
+    "tech_name": "Component Object Model Hijacking",
+    "best_phrases": [],
+    "tactics": [
+        "TA0004",
+        "TA0003"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "REGISTRY",
+        "DIRECTORY",
+        "COMPONENT"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--075e7d33-8d5c-4016-9a24-dc6e61f56fcd",
+        "relationship--1cc6adf5-a09d-4878-b816-22af0770d3c1",
+        "relationship--54d3eadf-0363-47d1-b51d-a16d6a99c42e",
+        "relationship--56ec7ed1-99a1-44bf-8106-d3c23ce16dc8",
+        "relationship--581061d3-6216-4a58-aa46-3640d8e94b02",
+        "relationship--64309b21-2dc2-4369-9c70-66f47f5c4b56",
+        "relationship--71e7aad7-c81e-4035-bec0-323b7dc51d57",
+        "relationship--810f3029-bbb2-4630-8032-1e1d47824973",
+        "relationship--8604868a-8226-4c03-a5b2-bedfc4020865",
+        "relationship--8793b289-4b74-4119-8561-a9ad27dacdff",
+        "relationship--962b8434-1beb-4774-bb9e-3a5b10d84fe3",
+        "relationship--988cb889-b385-4e8f-be06-7d41c4da0dd7"
+    ],
+    "graph_nodes": [
+        {
+            "count": 21,
+            "id": 0,
+            "texts": [
+                "variants",
+                "ADVSTORESHELL",
+                "payload",
+                "ComSysApp service",
+                "DLL payload",
+                "COM hijacking",
+                "payload",
+                "PcShare",
+                "COM hijacking",
+                "COM hijacking",
+                "method",
+                "COM hijacking",
+                "COM hijacking",
+                "replacement",
+                "MruPidlList",
+                "Microsoft WBEM New Event Subsystem",
+                "SILENTTRINITY",
+                "COM hijacking",
+                "class",
+                "MMDeviceEnumerator",
+                "payload"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 9,
+            "id": 1,
+            "texts": [
+                "Shell Icon Overlay handler COM object",
+                "legitimate MMDeviceEnumerator object",
+                "DelegateExecute parameter",
+                "which hijack COM objects",
+                "CPU architecture",
+                "COM object",
+                "F3130CDB-AA52-4C3A-AB32-85FFC23AF9C1",
+                "42aedc87-2188-41fd-b9a3-0c966feabec1",
+                "Shell Icon Overlay handler COM object"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 8,
+            "id": 2,
+            "texts": [
+                "KONNI",
+                "APT28",
+                "WarzoneRAT",
+                "SVCReady",
+                "Mosquito",
+                "Ferocious",
+                "BBSRAT",
+                "JHUHUGIT"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 6,
+            "id": 3,
+            "texts": [
+                "HKCU\\\\Software\\\\Classes\\\\CLSID\\\\{42aedc87-2188-41fd-b9a3-0c966feabec1}\\\\InprocServer32 Registry key",
+                "HKCU\\Software\\Classes\\Folder\\shell\\open\\command key",
+                "shell32.dll",
+                "registry location HKCU\\Software\\Classes\\CLSID\\{42aedc87-2188-41fd-b9a3-0c966feabec1}\\InprocServer32",
+                "HKEY_CURRENT_USER\\Software\\Classes\\CLSID\\{E6D34FFC-AD32-4d6a-934C-D387FA873A19} Registry key",
+                "CLSID key"
+            ],
+            "label": "REGISTRY"
+        },
+        {
+            "count": 2,
+            "id": 4,
+            "texts": [
+                "path",
+                "path"
+            ],
+            "label": "DIRECTORY"
+        },
+        {
+            "count": 2,
+            "id": 5,
+            "texts": [
+                "itself",
+                "3543619C-D563-43f7-95EA-4DA7E1CC396A"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 1,
+            "id": 6,
+            "texts": [
+                "system"
+            ],
+            "label": "COMPONENT"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "2_0",
+            "source": 2,
+            "dest": 0,
+            "count": 12
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 2
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "4_5",
+            "source": 4,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "4_3",
+            "source": 4,
+            "dest": 3,
+            "count": 3
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "1_6",
+            "source": 1,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "of": 3,
+        "register": 2,
+        "as": 5,
+        "modify": 1,
+        "load": 1,
+        "use": 4,
+        "replace": 2,
+        "with": 2,
+        "create": 2,
+        "perform": 1,
+        "set": 1,
+        "to": 3,
+        "in": 1,
+        "by": 2,
+        "depend": 1,
+        "for": 3,
+        "add": 1,
+        "hijack": 1
+    }
+}

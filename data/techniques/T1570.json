@@ -1,0 +1,419 @@
+{
+    "id": "T1570",
+    "tech_id": "T1570",
+    "tech_name": "Lateral Tool Transfer",
+    "best_phrases": [],
+    "tactics": [
+        "TA0008"
+    ],
+    "features": [
+        "FUNCTION",
+        "NETWORK",
+        "COMPONENT",
+        "DATA",
+        "DIRECTORY"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--0694d72f-cf4b-4355-b485-ccbd8d3a22b2",
+        "relationship--0bca4956-d4c5-4149-a493-c0596701dd9a",
+        "relationship--1ecf4ac9-faad-4d2d-9a01-2618a7a54806",
+        "relationship--287c3024-f58d-4fab-87a7-54d4b52f5a5c",
+        "relationship--2dd1c028-bebc-4631-b17b-3dd27a595c00",
+        "relationship--338c0224-eb50-4027-925a-637ee765b187",
+        "relationship--33c8fb30-3515-4582-ad29-34fa0d7e15e5",
+        "relationship--349bc11d-b377-410b-9232-2c5f0fbde031",
+        "relationship--3b10d114-ce08-4c8f-b8c6-e2ed13e04912",
+        "relationship--427a272e-4500-4216-8816-a6c7d4492f3e",
+        "relationship--4893fd0f-c256-4b74-a3d8-aef48794550a",
+        "relationship--4f243ab6-812f-4fd3-9607-8d94409a94c1",
+        "relationship--56ad8893-2933-4b3b-a84d-026d9afb7dcb",
+        "relationship--578433f2-d3d3-4434-8b6c-986c14204b92",
+        "relationship--698b7d6f-1198-4b8a-bc9c-8d0baa162b2b",
+        "relationship--6aa9250e-cbe8-4f47-9aef-bb178c2b6677",
+        "relationship--778297c2-55a2-4f80-8216-daa25bd148a9",
+        "relationship--7e8101ce-f787-45f7-a593-62b664fbe08d",
+        "relationship--839d6bf7-6a63-48c0-8433-0d8d6c7ea61f",
+        "relationship--89697f9e-cfd2-4273-a5d6-04354f0c3e7c",
+        "relationship--8ab5ee87-6fdf-447a-b622-0a68ed34e330",
+        "relationship--9e0ca319-ad80-48f8-812e-fe7f9e0e77c4",
+        "relationship--9f5c68fe-a32e-405d-ae58-0965f04855cb",
+        "relationship--a8fb73d8-e4c0-4f3f-86e7-a13768fae22b",
+        "relationship--ad5f49b0-8b92-43d1-99f3-c691ccb7a8ac",
+        "relationship--c2d06b1b-823c-4f94-9b11-79892bca9f4e",
+        "relationship--c39edafb-5a90-43a3-af9f-6865c5a6a71f",
+        "relationship--d80bbf0c-2fb4-4272-a878-65662452d3ca",
+        "relationship--da63f54a-e6a4-414b-9d54-404b0a63d2f6",
+        "relationship--e7187197-205f-496f-b41c-34d57c52a997",
+        "relationship--fb866766-d3a5-46f6-9d0e-afc6bd1c7962",
+        "relationship--fe78de3a-107f-4870-b5a1-c60289d68dec"
+    ],
+    "graph_nodes": [
+        {
+            "count": 25,
+            "id": 0,
+            "texts": [
+                "Emotet",
+                "BlackCat",
+                "APT32",
+                "Aoqin Dragon",
+                "FIN10",
+                "adversaries",
+                "Lucifer",
+                "Wizard Spider",
+                "threat actors",
+                "Sandworm Team",
+                "Chimera",
+                "Shamoon",
+                "Olympic Destroyer",
+                "threat actors",
+                "GALLIUM",
+                "Magic Hound",
+                "HermeticWizard",
+                "DustySky",
+                "Sandworm Team",
+                "Sandworm Team",
+                "LockerGoga",
+                "actors",
+                "Stuxnet",
+                "threat actors",
+                "WannaCry"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 9,
+            "id": 1,
+            "texts": [
+                "itself",
+                "service.exe filename",
+                "itself",
+                "Volt Typhoon",
+                "itself",
+                "itself",
+                "them",
+                "payloads--such",
+                "itself"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 22,
+            "id": 2,
+            "texts": [
+                "remote systems",
+                "removable devices",
+                "accessible systems",
+                "Meterpreter stagers",
+                "SplinterRAT instances",
+                "systems",
+                "compromised environment",
+                "Windows hosts",
+                "targeted environments",
+                "victim machines",
+                "machines",
+                "compromised hosts",
+                "remote machines",
+                "hosts",
+                "machines",
+                "network drives",
+                "removable media",
+                "computer",
+                "computer",
+                "hosts",
+                "connected internal system",
+                "remote computers"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 42,
+            "id": 3,
+            "texts": [
+                "psexec",
+                "tools",
+                "malware",
+                "modules",
+                "Operators",
+                "Netwalker",
+                "psexec",
+                "Netwalker payload",
+                "BITSAdmin",
+                "BITS Jobs",
+                "Meterpreter stagers",
+                "SplinterRAT instances",
+                "files",
+                "tools",
+                "esentutl",
+                "certutil",
+                "propagation",
+                "web shells",
+                "tools",
+                "domain controllers",
+                "Turla RPC backdoors",
+                "tools",
+                "SoftPerfect Network Scanner",
+                "AnyDesk",
+                "PDQ Deploy",
+                "move",
+                "Expand",
+                "tools",
+                "PsExec",
+                "tools",
+                "PsExec",
+                "move",
+                "Active Directory Domain Controller",
+                "tools",
+                "ransomware",
+                "support",
+                "file dropping routine",
+                "payload version updates",
+                "WMI",
+                "Cobalt Strike",
+                "cmd",
+                "SMB exploit"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 25,
+            "id": 4,
+            "texts": [
+                "connected servers",
+                "target networks",
+                "SMB file servers",
+                "victim network",
+                "ftp",
+                "intranets",
+                "servers",
+                "local network",
+                "network",
+                "AnyDesk",
+                "PDQ Deploy",
+                "SMB",
+                "network",
+                "SMB",
+                "target network",
+                "RDP",
+                "compromised network",
+                "compromised network",
+                "corporate network",
+                "SMB",
+                "victim network",
+                "RPC server",
+                "P2P communications",
+                "victim network",
+                "compromised network"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 20,
+            "id": 5,
+            "texts": [
+                "administrative accounts",
+                "files",
+                "files",
+                "tools",
+                "files",
+                "stolen credentials",
+                "files",
+                "files",
+                "network share",
+                "network share",
+                "file",
+                "files",
+                "network share",
+                "file",
+                "files",
+                "files",
+                "network share",
+                "files",
+                "files",
+                "access"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 2,
+            "id": 6,
+            "texts": [
+                "folders",
+                "the%temp%directory"
+            ],
+            "label": "DIRECTORY"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 8
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 9
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 3
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 20
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 11
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 8
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 6
+        },
+        {
+            "id": "3_6",
+            "source": 3,
+            "dest": 6,
+            "count": 2
+        },
+        {
+            "id": "6_2",
+            "source": 6,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 6
+        },
+        {
+            "id": "3_5",
+            "source": 3,
+            "dest": 5,
+            "count": 8
+        },
+        {
+            "id": "5_4",
+            "source": 5,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 9
+        },
+        {
+            "id": "4_3",
+            "source": 4,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "4_5",
+            "source": 4,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "5_2",
+            "source": 5,
+            "dest": 2,
+            "count": 6
+        },
+        {
+            "id": "4_2",
+            "source": 4,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "6_3",
+            "source": 6,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "5_3",
+            "source": 5,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "copy": 16,
+        "to": 15,
+        "use": 17,
+        "by": 4,
+        "replicate": 1,
+        "across": 3,
+        "deploy": 3,
+        "spread": 1,
+        "in": 7,
+        "as": 1,
+        "create": 1,
+        "download": 1,
+        "from": 1,
+        "abuse": 1,
+        "transfer": 5,
+        "between": 5,
+        "within": 7,
+        "for": 5,
+        "on": 5,
+        "into": 1,
+        "of": 1,
+        "upload": 2,
+        "over": 2,
+        "duplicate": 1,
+        "onto": 2,
+        "move": 1,
+        "around": 1,
+        "behind": 1,
+        "form": 2,
+        "contain": 1,
+        "load": 1,
+        "gain": 1
+    }
+}

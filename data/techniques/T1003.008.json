@@ -1,0 +1,72 @@
+{
+    "id": "T1003.008",
+    "tech_id": "T1003.008",
+    "tech_name": "/etc/passwd and /etc/shadow",
+    "best_phrases": [],
+    "tactics": [
+        "TA0006"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "DIRECTORY"
+    ],
+    "locations": [
+        "Linux"
+    ],
+    "procedures": [
+        "relationship--3822f934-0b93-417b-bb1d-06218d51922e"
+    ],
+    "graph_nodes": [
+        {
+            "count": 2,
+            "id": 0,
+            "texts": [
+                "LaZagne",
+                "shadow.py module"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 1,
+            "texts": [
+                "credential information"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 2,
+            "texts": [
+                "/etc/shadow"
+            ],
+            "label": "DIRECTORY"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "obtain": 1,
+        "from": 2,
+        "use": 1
+    }
+}

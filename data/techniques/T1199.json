@@ -1,0 +1,276 @@
+{
+    "id": "T1199",
+    "tech_id": "T1199",
+    "tech_name": "Trusted Relationship",
+    "best_phrases": [],
+    "tactics": [
+        "TA0001"
+    ],
+    "features": [
+        "DATA",
+        "COMPONENT",
+        "USER",
+        "NETWORK",
+        "DIRECTORY",
+        "FUNCTION"
+    ],
+    "locations": [
+        "Windows",
+        "SaaS",
+        "IaaS",
+        "Linux",
+        "macOS",
+        "Office 365"
+    ],
+    "procedures": [
+        "relationship--1567be6a-0231-4605-b92b-ae1bc5e1bb4e",
+        "relationship--565d2d07-0e2e-44e5-bc37-5a64e49394ee",
+        "relationship--690c6d2a-3e02-4eb9-b835-079c50c64adf",
+        "relationship--9528abfe-4897-4171-8e01-a0ceeb376a9a",
+        "relationship--99a96ac0-c93d-488b-8439-04d97716682c",
+        "relationship--a246ff9a-6414-461f-b392-ac37bc3716c0",
+        "relationship--ae93611e-8520-4c12-8fbe-7437f33a4092",
+        "relationship--b0e3680e-6099-4f33-a45e-5e938a7e7085",
+        "relationship--e2e2fb8d-6b89-4d49-bea9-cca54ae3e56d"
+    ],
+    "graph_nodes": [
+        {
+            "count": 9,
+            "id": 0,
+            "texts": [
+                "GOLD SOUTHFIELD",
+                "APT28",
+                "Threat Group-3390",
+                "Sandworm Team",
+                "menuPass",
+                "APT29",
+                "APT29",
+                "POLONIUM",
+                "LAPSUS$"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 14,
+            "id": 1,
+            "texts": [
+                "Managed Service Providers",
+                "group",
+                "third party service providers",
+                "victim organization",
+                "separate organization",
+                "cloud solution partners",
+                "Mimecast",
+                "managed services providers",
+                "cloud services",
+                "IT company",
+                "Okta",
+                "Azure Active Directory",
+                "internet-facing identity providers",
+                "organizations"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 8,
+            "id": 2,
+            "texts": [
+                "MSP",
+                "environments",
+                "Mimecast customer systems",
+                "managed services providers",
+                "cloud services",
+                "Okta",
+                "Azure Active Directory",
+                "internet-facing identity providers"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 2,
+            "id": 3,
+            "texts": [
+                "malware",
+                "subsequent operations"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 5,
+            "id": 4,
+            "texts": [
+                "MSP customers",
+                "victim",
+                "victims",
+                "customers",
+                "downstream customers"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 11,
+            "id": 5,
+            "texts": [
+                "access",
+                "access",
+                "access",
+                "unauthorized access",
+                "legitimate access",
+                "interest",
+                "access",
+                "compromised certificates",
+                "compromised accounts",
+                "broad access",
+                "compromised credentials"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 3,
+            "id": 6,
+            "texts": [
+                "DCCC network",
+                "DNC network",
+                "dedicated network connections"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 3,
+            "id": 7,
+            "texts": [
+                "Okta",
+                "Azure Active Directory",
+                "internet-facing identity providers"
+            ],
+            "label": "DIRECTORY"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 5
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 4
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "5_6",
+            "source": 5,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 8
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 2
+        },
+        {
+            "id": "1_6",
+            "source": 1,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "5_2",
+            "source": 5,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "0_6",
+            "source": 0,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "6_1",
+            "source": 6,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "5_1",
+            "source": 5,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "4_5",
+            "source": 4,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "5_4",
+            "source": 5,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "5_3",
+            "source": 5,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "0_7",
+            "source": 0,
+            "dest": 7,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "breach": 2,
+        "deliver": 1,
+        "to": 5,
+        "gain": 5,
+        "use": 5,
+        "compromise": 3,
+        "of": 2,
+        "from": 2,
+        "access": 2,
+        "authenticate": 1,
+        "by": 1,
+        "at": 1,
+        "issue": 1,
+        "for": 1,
+        "target": 2
+    }
+}

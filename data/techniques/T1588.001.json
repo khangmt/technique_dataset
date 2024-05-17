@@ -1,0 +1,179 @@
+{
+    "id": "T1588.001",
+    "tech_id": "T1588.001",
+    "tech_name": "Malware",
+    "best_phrases": [
+        "malware",
+        "leaked malware",
+        "unique malware",
+        "Malware"
+    ],
+    "tactics": [
+        "TA0042"
+    ],
+    "features": [
+        "FUNCTION",
+        "NETWORK",
+        "DATA"
+    ],
+    "locations": [
+        "PRE"
+    ],
+    "procedures": [
+        "relationship--05581e74-e78f-40e1-aa13-c990a99cbac3",
+        "relationship--113fbb20-8dd7-4ba6-b5a8-486e46d9abeb",
+        "relationship--1ae7391e-c622-45ee-8f8d-dca29b8bfea8",
+        "relationship--3c2faef1-3fa6-4942-be18-460a8e6ec815",
+        "relationship--5a86948b-4058-453a-aa8d-47cdc4346f41",
+        "relationship--67c23a08-47ef-4c09-8500-b1d7305ed6b7",
+        "relationship--7b817a81-02a9-48f0-8166-9e25b6860a76",
+        "relationship--82697b12-31e0-4a9f-a394-d5555b0da05f",
+        "relationship--89446c0a-0f1b-4d04-92fb-a04c6b16e474",
+        "relationship--9b55c1b3-94fd-436f-8910-9d0519d3b5b4",
+        "relationship--aaeef068-5853-45c9-922a-9ff779041cbe",
+        "relationship--b359d367-d52c-4835-b242-1073d8a55bc3",
+        "relationship--ba6536dd-2c36-4057-bae9-e71e1076e69b",
+        "relationship--bfb6dc5a-786f-47e8-ab9c-848a643df423",
+        "relationship--e607a77e-5c5c-4f3e-a62d-82124a434911",
+        "relationship--ed5bd47a-cdc4-4962-b956-dd3ae7c00024"
+    ],
+    "graph_nodes": [
+        {
+            "count": 15,
+            "id": 0,
+            "texts": [
+                "Earth Lusca",
+                "LuminousMoth",
+                "threat actors",
+                "threat actors",
+                "LAPSUS$",
+                "TA505",
+                "Aquatic Panda",
+                "Metador",
+                "APT1",
+                "LazyScripter",
+                "OilRig",
+                "threat actors",
+                "Turla",
+                "Andariel",
+                "BackdoorDiplomacy"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 35,
+            "id": 1,
+            "texts": [
+                "Cobalt Strike",
+                "njRAT",
+                "Remcos",
+                "malware",
+                "AsyncRAT",
+                "Trojans",
+                "strains",
+                "malware",
+                "Redline password stealer",
+                "operations",
+                "Cobalt Strike",
+                "njRAT",
+                "metaMain",
+                "Mafalda",
+                "unique malware",
+                "malware",
+                "Azorult",
+                "operations",
+                "malware",
+                "open-source remote access Trojans",
+                "operations",
+                "Cobalt Strike",
+                "Conti ransomware",
+                "malware",
+                "backdoor",
+                "FunnyDream",
+                "publicly-available remote access Trojans",
+                "RATs",
+                "operations",
+                "EternalSynergy",
+                "EternalBlue",
+                "DoublePulsar",
+                "EternalRocks",
+                "leaked malware",
+                "operations"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 2,
+            "id": 2,
+            "texts": [
+                "underground hacker websites",
+                "criminal forums"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 2,
+            "id": 3,
+            "texts": [
+                "TA2541",
+                "purchase"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "privilege"
+            ],
+            "label": "DATA"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 15
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 11,
+        "from": 2,
+        "of": 1,
+        "on": 1,
+        "in": 6,
+        "escalate": 1,
+        "for": 4
+    }
+}

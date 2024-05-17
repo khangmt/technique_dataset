@@ -1,0 +1,197 @@
+{
+    "id": "T1542.003",
+    "tech_id": "T1542.003",
+    "tech_name": "Bootkit",
+    "best_phrases": [
+        "bootkit",
+        "volume boot record (vbr) bootkit",
+        "master boot record (mbr) bootkit",
+        "Bootkit"
+    ],
+    "tactics": [
+        "TA0003",
+        "TA0005"
+    ],
+    "features": [
+        "FUNCTION",
+        "COMPONENT",
+        "DATA",
+        "NETWORK"
+    ],
+    "locations": [
+        "Linux",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--02c3d977-d797-4105-9535-11682d4896e9",
+        "relationship--03ecffe3-d09c-40f5-bbc8-ffa4acc4bdb4",
+        "relationship--20adc21a-7721-470f-82d4-8a4cfb59a8c1",
+        "relationship--44b56e08-7cd1-442c-8806-c69bb65fd231",
+        "relationship--48132286-7b7d-42cf-956b-95c75eeff1e3",
+        "relationship--63d53308-7d7d-4777-a1cc-c7100735609c",
+        "relationship--753093c1-6586-4a17-9068-25648111ef33",
+        "relationship--7ca1b40d-d1de-48ab-b8ad-023ad9877def",
+        "relationship--9e90e4a5-844c-4516-9044-6f35bbf27806"
+    ],
+    "graph_nodes": [
+        {
+            "count": 7,
+            "id": 0,
+            "texts": [
+                "Carberp",
+                "WhisperGate",
+                "TrickBot",
+                "ROCKBOOT",
+                "APT41",
+                "BOOTRASH",
+                "APT28"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 16,
+            "id": 1,
+            "texts": [
+                "bootkit",
+                "bootloader component",
+                "destructive wiping operations",
+                "code",
+                "Master Boot Record (MBR) bootkit",
+                "Master Boot Record bootkits",
+                "malware",
+                "Volume Boot Record (VBR) bootkit",
+                "FinFisher variants",
+                "MBR rootkit",
+                "Lazarus Group malware WhiskeyAlfa-Three",
+                "bootkit",
+                "Downdelph",
+                "code",
+                "variants",
+                "BlackEnergy"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 8,
+            "id": 2,
+            "texts": [
+                "system",
+                "MBR",
+                "hard drives",
+                "device",
+                "MBR",
+                "Windows systems",
+                "sector",
+                "MBR"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 3,
+            "id": 3,
+            "texts": [
+                "fake ransom note",
+                "VBR",
+                "Master Boot Record"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "that"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "firmware"
+            ],
+            "label": "NETWORK"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 8
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 3
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 5
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "4_2",
+            "source": 4,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "5_2",
+            "source": 5,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "instal": 1,
+        "on": 6,
+        "overwrite": 1,
+        "with": 4,
+        "perform": 1,
+        "display": 1,
+        "implant": 1,
+        "into": 2,
+        "of": 4,
+        "be": 2,
+        "use": 2,
+        "deploy": 2,
+        "hide": 1,
+        "incorporate": 1,
+        "modify": 1,
+        "along": 1,
+        "share": 1
+    }
+}

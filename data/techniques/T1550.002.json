@@ -1,0 +1,257 @@
+{
+    "id": "T1550.002",
+    "tech_id": "T1550.002",
+    "tech_name": "Pass the Hash",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005",
+        "TA0008"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "NETWORK",
+        "COMPONENT",
+        "DIRECTORY",
+        "USER"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--0743264d-1356-4f9e-96cc-8698f5e0e862",
+        "relationship--0f5b5d67-44f6-4725-951e-ce614385c361",
+        "relationship--1dc42b4c-4a93-4fc6-bad3-b5498ad500b1",
+        "relationship--22ccfcb8-cb4a-4b9e-bc2d-c0bd2701e2e9",
+        "relationship--34cb1bf0-c738-4637-84cc-c0472b105669",
+        "relationship--3b35fec9-ee0d-4c2d-9936-0aa06ad6a49a",
+        "relationship--43fec1ed-cc26-4036-95c0-1598150f3916",
+        "relationship--4973496a-2a49-4428-b2db-0629a97df9d3",
+        "relationship--64f33d8d-6060-40ab-8fbb-bd8b249702f7",
+        "relationship--6b83bc1e-edfc-4c6a-961f-d3757ae6a234",
+        "relationship--80e06d13-4c96-464c-9b9f-d0cb2b5fac18",
+        "relationship--872c6f1b-aa4f-4d43-b35d-c4216d2f4559",
+        "relationship--8a86cd72-8386-4c75-8362-7b9020add12b",
+        "relationship--b33a7611-2426-434d-873a-6d74a8f91974",
+        "relationship--be8c0014-e10e-4854-8a5b-8a06e35a8623",
+        "relationship--c4cd588d-264a-468d-a472-8667b363d819",
+        "relationship--ee4d1b24-603f-40df-8f21-3c053fba275f"
+    ],
+    "graph_nodes": [
+        {
+            "count": 11,
+            "id": 0,
+            "texts": [
+                "APT28",
+                "Cobalt Strike",
+                "APT1 group",
+                "APT32",
+                "Chimera",
+                "Wizard Spider",
+                "HOPLIGHT",
+                "Kimsuky",
+                "BADHATCH",
+                "threat actors",
+                "GALLIUM"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 16,
+            "id": 1,
+            "texts": [
+                "hash",
+                "hash",
+                "password hashes",
+                "stolen password hashes",
+                "Hash",
+                "hash",
+                "password hash",
+                "hash",
+                "hash",
+                "hash",
+                "hash",
+                "x64 versions",
+                "hash",
+                "authenticated access",
+                "dumped hashes",
+                "hash"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 20,
+            "id": 2,
+            "texts": [
+                "Pass-The-Hash Toolkit",
+                "pass the hash authentication attacks",
+                "hash authentication",
+                "Invoke-SMBExec PowerShell cmdlet",
+                "pass-the-hash technique",
+                "APIs",
+                "PoshC2",
+                "modules",
+                "SEKURLSA::Pth module",
+                "Mimikatz",
+                "arbitrary commands",
+                "authentication",
+                "remote access software",
+                "Empire",
+                "pass the hash attacks",
+                "PowerShell utility",
+                "pass the hash method",
+                "CrackMapExec",
+                "pass-the-hash",
+                "tools"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 2,
+            "id": 3,
+            "texts": [
+                "Pass",
+                "FIN13"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "user"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 4,
+            "id": 5,
+            "texts": [
+                "C2",
+                "SMB",
+                "sensitive internal desktops",
+                "servers"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 2,
+            "id": 6,
+            "texts": [
+                "compromised machines",
+                "machines"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 2,
+            "id": 7,
+            "texts": [
+                "sensitive internal desktops",
+                "servers"
+            ],
+            "label": "DIRECTORY"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 8
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 6
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 8
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "2_5",
+            "source": 2,
+            "dest": 5,
+            "count": 2
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "0_6",
+            "source": 0,
+            "dest": 6,
+            "count": 2
+        },
+        {
+            "id": "6_1",
+            "source": 6,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "1_7",
+            "source": 1,
+            "dest": 7,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "pass": 11,
+        "dump": 1,
+        "in": 2,
+        "use": 5,
+        "execute": 3,
+        "utilize": 1,
+        "load": 1,
+        "associate with": 1,
+        "have": 1,
+        "of": 1,
+        "impersonate": 1,
+        "with": 2,
+        "for": 1,
+        "to": 2,
+        "use in": 1,
+        "perform": 1,
+        "on": 1,
+        "authenticate": 2,
+        "obtain": 1
+    }
+}

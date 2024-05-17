@@ -1,0 +1,151 @@
+{
+    "id": "T1574.006",
+    "tech_id": "T1574.006",
+    "tech_name": "Dynamic Linker Hijacking",
+    "best_phrases": [],
+    "tactics": [
+        "TA0003",
+        "TA0004",
+        "TA0005"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "DIRECTORY"
+    ],
+    "locations": [
+        "Linux",
+        "macOS"
+    ],
+    "procedures": [
+        "relationship--47b95300-a51c-4d91-9bbe-e40956df2081",
+        "relationship--4a607e33-3970-4605-af5e-36be82bd142a",
+        "relationship--5a4c3eb5-9ea2-4e7d-ae9d-d4f0a45c4803",
+        "relationship--7af3fbea-cdb1-42e3-a5f0-8ad2e418baff",
+        "relationship--7f9fe6d5-79ba-44ca-bf19-c980e5c2fc11",
+        "relationship--d3102278-dab8-485c-9cd2-52f80c4da8bd"
+    ],
+    "graph_nodes": [
+        {
+            "count": 6,
+            "id": 0,
+            "texts": [
+                "Rocke",
+                "Hildegard",
+                "HiddenWasp",
+                "XCSSET",
+                "APT41",
+                "Ebury"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 3,
+            "id": 1,
+            "texts": [
+                "/etc/ld.so.preload",
+                "/etc/ld.so.preload",
+                "file paths"
+            ],
+            "label": "DIRECTORY"
+        },
+        {
+            "count": 11,
+            "id": 2,
+            "texts": [
+                "libc functions",
+                "mining software",
+                "installed dropper",
+                "shared library import functions",
+                "code",
+                "payloads",
+                "LD_PRELOAD",
+                "LD_PRELOAD",
+                "dynamic library",
+                "descendent processes",
+                "sshd"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 4,
+            "id": 3,
+            "texts": [
+                "process lists",
+                "shared object",
+                "LD_PRELOAD environment variable",
+                "DYLD_FRAMEWORK_PATH and DYLD_LIBRARY_PATH environment variables"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "itself"
+            ],
+            "label": "OTHER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 8
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "4_3",
+            "source": 4,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "modify": 2,
+        "hook": 1,
+        "hide": 1,
+        "in": 1,
+        "intercept": 1,
+        "add": 2,
+        "as": 2,
+        "to": 3,
+        "execute": 1,
+        "load": 1,
+        "configure": 1,
+        "by": 2,
+        "inject": 1,
+        "into": 2,
+        "of": 1
+    }
+}

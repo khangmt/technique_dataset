@@ -1,0 +1,259 @@
+{
+    "id": "T1221",
+    "tech_id": "T1221",
+    "tech_name": "Template Injection",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005"
+    ],
+    "features": [
+        "DATA",
+        "FUNCTION",
+        "NETWORK",
+        "USER",
+        "REGISTRY"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--26c62507-1a2b-4235-b80c-d5f7f52d1c95",
+        "relationship--38467bd5-4afc-4c64-b8c0-8c7140ac9e58",
+        "relationship--55323dcc-68cb-4e92-bcf3-33c7d26f9b5e",
+        "relationship--56a866fd-1a37-4750-89e6-2e26ed69cb27",
+        "relationship--73321011-c231-402e-a6bb-b9fd6cf6b658",
+        "relationship--7457d1f4-9829-4f60-a12e-e6b9952b55f1",
+        "relationship--7cabf1a6-5ad3-4c5d-83e8-161d49e082ac",
+        "relationship--9c22b1e4-df62-417d-a64f-c6f690ebe566",
+        "relationship--c597beea-3bcd-45ee-a400-5b615f9ae621",
+        "relationship--d04d88d0-541d-4da2-ac58-888f1d418f20",
+        "relationship--e3a3186e-2ce7-4d46-836e-dc024464ede7"
+    ],
+    "graph_nodes": [
+        {
+            "count": 11,
+            "id": 0,
+            "texts": [
+                "Dragonfly",
+                "Confucius",
+                "Lazarus Group",
+                "Tropic Trooper",
+                "APT28",
+                "threat actors",
+                "Gamaredon Group",
+                "Chaes",
+                "Inception",
+                "WarzoneRAT",
+                "DarkHydrus"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 5,
+            "id": 1,
+            "texts": [
+                "SMB URLs",
+                "adversary-controlled website",
+                "URL",
+                "HTTP",
+                "remote template URLs"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 18,
+            "id": 2,
+            "texts": [
+                "Word spearphishing attachments",
+                "weaponized Microsoft Word document",
+                "DOCX files",
+                "document template/DOTM file",
+                "documents",
+                "XLSX extension",
+                "OpenXML documents",
+                "file",
+                "OLE (XLS) document",
+                "weaponized Microsoft Word documents",
+                "documents",
+                "DOCX files",
+                "field",
+                "settings.xml file",
+                "Word document",
+                "decoy documents",
+                "template RTF",
+                "Microsoft Word documents"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 15,
+            "id": 3,
+            "texts": [
+                "Forced Authentication",
+                "embedded RTF exploit",
+                "macro",
+                "remote template function",
+                "remote templates",
+                "DOT document templates",
+                "payloads",
+                "remote templates",
+                "macros",
+                "payload",
+                "remote payloads",
+                "template injection",
+                "open-source tool",
+                "Phishery",
+                "Forced Authentication"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 3,
+            "id": 4,
+            "texts": [
+                "itself",
+                "that",
+                "RTF template injection"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 2,
+            "id": 5,
+            "texts": [
+                "template target",
+                "victims"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 1,
+            "id": 6,
+            "texts": [
+                "DLL"
+            ],
+            "label": "REGISTRY"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 4
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 11
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 11
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 3
+        },
+        {
+            "id": "4_2",
+            "source": 4,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "5_2",
+            "source": 5,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "6_0",
+            "source": 6,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "6_2",
+            "source": 6,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "inject": 3,
+        "into": 5,
+        "initiate": 1,
+        "use": 11,
+        "with": 5,
+        "retrieve": 3,
+        "deliver": 1,
+        "be": 2,
+        "abuse": 1,
+        "from": 2,
+        "download": 2,
+        "change": 1,
+        "populate": 1,
+        "of": 2,
+        "embed in": 1,
+        "load": 1,
+        "by": 2,
+        "install": 1,
+        "embed within": 1,
+        "enable": 1,
+        "to": 1
+    }
+}

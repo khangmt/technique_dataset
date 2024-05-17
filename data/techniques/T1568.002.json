@@ -1,0 +1,316 @@
+{
+    "id": "T1568.002",
+    "tech_id": "T1568.002",
+    "tech_name": "Domain Generation Algorithms",
+    "best_phrases": [],
+    "tactics": [
+        "TA0011"
+    ],
+    "features": [
+        "FUNCTION",
+        "NETWORK",
+        "DATA",
+        "COMPONENT",
+        "ENCRYPTION"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--17bfea1d-e3c8-4bf9-8102-576e7c87883e",
+        "relationship--24e3a295-5894-48e0-b1d8-3c6e3df4de18",
+        "relationship--26c10016-0df4-4dc0-a74b-4b0d51876965",
+        "relationship--430e71be-1fd2-4ff6-977d-bc4c8a7222e5",
+        "relationship--489a8a76-4264-462f-be66-217e57d3e907",
+        "relationship--6be9fb86-54b4-4979-95f8-c2a27cba785c",
+        "relationship--7bfc7122-2dc2-4fd3-be98-2ab87ba4a530",
+        "relationship--8488f2ee-be97-458c-894b-830add635fa8",
+        "relationship--93656c66-acfc-43b4-af66-bf328256b7b8",
+        "relationship--98339175-97d1-4a17-985f-914efffa2a4e",
+        "relationship--a72ce53b-311d-43f2-b145-784c322306c1",
+        "relationship--aa962ede-f581-49c2-ade1-ed2eb91ed8ac",
+        "relationship--ab589bd1-49d3-422e-ac25-c24d2964b258",
+        "relationship--b4e22ba1-a639-4d70-896c-5f063dbdb049",
+        "relationship--c4674c67-09ca-4ac2-8166-1b61c6e863ef",
+        "relationship--cd24838b-45b2-405d-b932-9ac49eca8d4a",
+        "relationship--d2b70f03-3c52-4bf9-b545-7b912348f55e",
+        "relationship--e9d51358-7606-4598-8185-8ad978e87d71",
+        "relationship--ec60f1d2-2bb3-459d-8095-5bda47927226",
+        "relationship--fbc1faff-226a-4ea3-a08a-81b64066496d",
+        "relationship--fbe56c62-5123-4783-8e66-7457c8cf66a2",
+        "relationship--fc0433bf-560f-4b5f-879c-f87581d7f504"
+    ],
+    "graph_nodes": [
+        {
+            "count": 22,
+            "id": 0,
+            "texts": [
+                "Aria-body",
+                "Astaroth",
+                "QakBot",
+                "Doki",
+                "MiniDuke",
+                "POSHSPY",
+                "Ebury",
+                "Ursnif",
+                "DarkWatchman",
+                "BONDUPDATER",
+                "APT41",
+                "TA551",
+                "Conficker",
+                "CHOPSTICK",
+                "Milan",
+                "SombRAT",
+                "CCBkdr",
+                "Grandoreiro",
+                "use",
+                "ShadowPad",
+                "Bazar",
+                "Shark"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 25,
+            "id": 1,
+            "texts": [
+                "DGA",
+                "domain generation algorithms",
+                "DGA",
+                "DynDNS service",
+                "Dogecoin blockchain",
+                "DGA",
+                "DGA",
+                "DGA",
+                "DGA",
+                "DGAs",
+                "DGA",
+                "executed macros",
+                "DGA",
+                "DGA",
+                "ngrok",
+                "DGA",
+                "domain generation algorithms",
+                "custom DGA",
+                "DGA",
+                "use",
+                "DGA",
+                "algorithm",
+                "DGA",
+                "DGA",
+                "unique domain generation algorithm"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 23,
+            "id": 2,
+            "texts": [
+                "C2 communications",
+                "C2 communication",
+                "C2 domains",
+                "Twitter URLs",
+                "C2",
+                "C2 URLs",
+                "C2",
+                "C2s",
+                "C2s",
+                "URLs",
+                "domains",
+                "Fallback Channels",
+                "domains",
+                "C2s",
+                "hardcoded domains",
+                "subdomain",
+                "C2",
+                "Fallback Channels",
+                "communications",
+                "primary C2",
+                "C2 addresses",
+                "C2s",
+                "DNS C2 communications"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 11,
+            "id": 3,
+            "texts": [
+                "word list",
+                "domain names",
+                "domain name",
+                "UTC victim system date",
+                "lists",
+                "random URL strings",
+                "input",
+                "day",
+                "month",
+                "date",
+                "seed variable"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 5,
+            "id": 4,
+            "texts": [
+                "that",
+                "use",
+                "use",
+                "DGA",
+                "that"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "words"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 1,
+            "id": 6,
+            "texts": [
+                "user-specific key"
+            ],
+            "label": "ENCRYPTION"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 18
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 15
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 6
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 3
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "4_3",
+            "source": 4,
+            "dest": 3,
+            "count": 3
+        },
+        {
+            "id": "2_5",
+            "source": 2,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "5_3",
+            "source": 5,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "4_0",
+            "source": 4,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "1_6",
+            "source": 1,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "4_2",
+            "source": 4,
+            "dest": 2,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 18,
+        "for": 13,
+        "in": 2,
+        "generate": 6,
+        "base on": 1,
+        "derive": 1,
+        "from": 3,
+        "communicate": 1,
+        "change": 1,
+        "seed": 1,
+        "with": 3,
+        "concatenate": 1,
+        "by": 2,
+        "provide": 1,
+        "of": 3,
+        "as": 4,
+        "hide": 1,
+        "on": 1,
+        "implement": 1,
+        "send": 1
+    }
+}

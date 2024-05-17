@@ -1,0 +1,97 @@
+{
+    "id": "T1552",
+    "tech_id": "T1552",
+    "tech_name": "Unsecured Credentials",
+    "best_phrases": [],
+    "tactics": [
+        "TA0006"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA"
+    ],
+    "locations": [
+        "Windows",
+        "Azure AD",
+        "Office 365",
+        "SaaS",
+        "IaaS",
+        "Linux",
+        "macOS",
+        "Google Workspace",
+        "Containers",
+        "Network"
+    ],
+    "procedures": [
+        "relationship--7d5cc26f-780f-4897-bae0-811e6b8bfa30",
+        "relationship--be30816a-854a-4568-ade5-8baa60fa087c"
+    ],
+    "graph_nodes": [
+        {
+            "count": 6,
+            "id": 0,
+            "texts": [
+                "Pacu",
+                "Code Build environment variables",
+                "EC2 user data",
+                "Cloud Formation templates",
+                "external software",
+                "NetPass"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 6,
+            "id": 1,
+            "texts": [
+                "sensitive data",
+                "example",
+                "Code Build environment variables",
+                "EC2 user data",
+                "Cloud Formation templates",
+                "passwords"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 2,
+            "texts": [
+                "Astaroth"
+            ],
+            "label": "ACTOR"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "2_0",
+            "source": 2,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "for": 2,
+        "in": 1,
+        "use": 1,
+        "recover": 1
+    }
+}

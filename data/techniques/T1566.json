@@ -1,0 +1,161 @@
+{
+    "id": "T1566",
+    "tech_id": "T1566",
+    "tech_name": "Phishing",
+    "best_phrases": [],
+    "tactics": [
+        "TA0001"
+    ],
+    "features": [
+        "NETWORK",
+        "USER",
+        "DATA",
+        "COMPONENT"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows",
+        "SaaS",
+        "Office 365",
+        "Google Workspace"
+    ],
+    "procedures": [
+        "relationship--0866161a-0753-44ab-bb14-a977654ddc68",
+        "relationship--d738cc0a-6d6f-41d9-88d0-9fe83bacad55",
+        "relationship--eb4bcd20-8bd2-4dd2-bbac-f784058ee9dc",
+        "relationship--f7aab529-962c-4bb8-812b-d63e0f8df494"
+    ],
+    "graph_nodes": [
+        {
+            "count": 4,
+            "id": 0,
+            "texts": [
+                "spear phishing",
+                "spear phishing",
+                "phishing campaigns",
+                "email"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 5,
+            "id": 1,
+            "texts": [
+                "Hikit",
+                "Axiom",
+                "Royal",
+                "spam (malspam) campaigns",
+                "GOLD SOUTHFIELD"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 3,
+            "id": 2,
+            "texts": [
+                "victims",
+                "victims",
+                "victim"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "use"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 2,
+            "id": 4,
+            "texts": [
+                "number",
+                "access"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "machines"
+            ],
+            "label": "COMPONENT"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "3_0",
+            "source": 3,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "4_5",
+            "source": 4,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "5_2",
+            "source": 5,
+            "dest": 2,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "spread": 2,
+        "use": 1,
+        "compromise": 1,
+        "of": 2,
+        "call": 1,
+        "provide": 1,
+        "gain": 1,
+        "to": 1
+    }
+}

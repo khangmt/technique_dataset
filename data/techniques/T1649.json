@@ -1,0 +1,122 @@
+{
+    "id": "T1649",
+    "tech_id": "T1649",
+    "tech_name": "Steal or Forge Authentication Certificates",
+    "best_phrases": [],
+    "tactics": [
+        "TA0006"
+    ],
+    "features": [
+        "DATA",
+        "FUNCTION",
+        "COMPONENT"
+    ],
+    "locations": [
+        "Windows",
+        "Linux",
+        "macOS",
+        "Azure AD"
+    ],
+    "procedures": [
+        "relationship--234867ce-57bb-41c6-beb5-af9cc00e1a39",
+        "relationship--ca1a0b5b-f07e-4017-8d9e-da784a75dc37",
+        "relationship--ed48d88f-840e-4653-84df-7181afc6dfd3"
+    ],
+    "graph_nodes": [
+        {
+            "count": 4,
+            "id": 0,
+            "texts": [
+                "AADInternals",
+                "misconfigured AD CS certificate templates",
+                "CRYPTO module",
+                "Mimikatz"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 2,
+            "id": 1,
+            "texts": [
+                "those",
+                "authentication certificates"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 6,
+            "id": 2,
+            "texts": [
+                "those",
+                "authentication certificates",
+                "admin users",
+                "authentication certificates",
+                "types",
+                "authentication certificates"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "Azure AD joined/registered devices"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "APT29"
+            ],
+            "label": "ACTOR"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "4_0",
+            "source": 4,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "4_2",
+            "source": 4,
+            "dest": 2,
+            "count": 2
+        }
+    ],
+    "verbs": {
+        "export": 2,
+        "associate with": 1,
+        "abuse": 1,
+        "impersonate": 1,
+        "create": 1,
+        "of": 2
+    }
+}

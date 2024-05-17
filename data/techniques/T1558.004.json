@@ -1,0 +1,50 @@
+{
+    "id": "T1558.004",
+    "tech_id": "T1558.004",
+    "tech_name": "AS-REP Roasting",
+    "best_phrases": [],
+    "tactics": [
+        "TA0006"
+    ],
+    "features": [
+        "DATA",
+        "FUNCTION"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--865d4dac-1c58-46ed-8b86-58ec6c2633ec"
+    ],
+    "graph_nodes": [
+        {
+            "count": 1,
+            "id": 0,
+            "texts": [
+                "Rubeus"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 2,
+            "id": 1,
+            "texts": [
+                "credentials",
+                "accounts"
+            ],
+            "label": "DATA"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "reveal": 1,
+        "of": 1
+    }
+}

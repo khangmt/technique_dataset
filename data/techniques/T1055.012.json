@@ -1,0 +1,388 @@
+{
+    "id": "T1055.012",
+    "tech_id": "T1055.012",
+    "tech_name": "Process Hollowing",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005",
+        "TA0004"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "REGISTRY",
+        "DIRECTORY",
+        "VULNERABILITY",
+        "COMPONENT",
+        "USER"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--07e8c425-2d17-48ea-98ca-40a2aac8cc10",
+        "relationship--17af5c1a-7912-40af-b7b9-f68f0a15977d",
+        "relationship--1bd9ad06-bb44-423c-b670-65b8a8510e1e",
+        "relationship--1e285f16-a145-46f5-aad3-0ea33392f147",
+        "relationship--1fdf1686-f498-460a-8948-a5ca46f52b62",
+        "relationship--202ed36b-9052-4464-b6a0-34258ba7a9ab",
+        "relationship--28139c5b-be96-44d2-8e54-425311d108d6",
+        "relationship--30e18b95-a311-4ab5-aa59-a31a20f65f66",
+        "relationship--315cd644-875d-4761-b440-f2cf48badbe0",
+        "relationship--33a464ab-cc0d-436d-9bcd-9d6e08994370",
+        "relationship--372642cf-1598-46a0-a791-2f6d2d2d8987",
+        "relationship--3cc0af18-2897-4008-a2b0-0234df50acde",
+        "relationship--72cf04c6-5e0b-4743-9386-88f1f1f45899",
+        "relationship--87a90347-6f15-461c-a44c-9acf503a606b",
+        "relationship--8906c905-87ff-48bf-b17e-1b8397ef062e",
+        "relationship--8b289eb7-6960-45c4-bea8-bbd9ace81055",
+        "relationship--9d53b4b9-999a-48e9-b90f-0030bbdae18d",
+        "relationship--a5b4d08c-963a-48fe-8f22-ba344835d00e",
+        "relationship--a821988a-269f-452b-ab59-5cbb3357f2f6",
+        "relationship--ad7592fd-f5d3-4802-9217-dffe89a6c8eb",
+        "relationship--b1df64c9-782d-4452-8c4a-5ef933503c13",
+        "relationship--b58eb56c-9992-4fcd-ae4f-b7a1301667f0",
+        "relationship--d7e049fb-ac90-4e93-8907-eca54ba04ebd",
+        "relationship--ddee8f55-feed-4474-b996-b80bbe5209a4",
+        "relationship--e039e3d4-2e3d-4e6e-902e-5e1834abe8e4",
+        "relationship--e0ce4a5f-ac3b-4d61-b540-c5c3c434beb0",
+        "relationship--e1ba1028-0125-4f0e-8ccd-9273deac9d18",
+        "relationship--e5bfb355-b834-48db-8d79-9067127ed82b",
+        "relationship--ea187577-25ce-458f-a26b-9ee71d3879fd",
+        "relationship--ec6074e4-4137-42a4-86c8-1ea95ce54df6",
+        "relationship--f64acb43-91b8-431a-ad0a-ad22afe5851a"
+    ],
+    "graph_nodes": [
+        {
+            "count": 87,
+            "id": 0,
+            "texts": [
+                "Gorgon Group malware",
+                "process hollowing",
+                "trojans",
+                "process",
+                "Threat Group-3390 tool",
+                "svchost.exe",
+                "payload",
+                "process",
+                "hollowed svchost.exe process",
+                "API calls",
+                "CreateRemoteThread",
+                "Wow64SetThreadContext",
+                "ResumeThread",
+                "process hollowing",
+                "suspended notepad process",
+                "shellcode",
+                "NtWriteVirtualMemory",
+                "suspended process",
+                "payload",
+                "suspended process",
+                "decrypted payload",
+                "process",
+                "Patchwork payload",
+                "process hollowing",
+                "svchost.exe",
+                "process hollowing",
+                "main payload",
+                "process hollowing",
+                "process hollowing",
+                "legitimate Windows process",
+                "payloads",
+                "hollowed Windows process",
+                "iexplore.exe",
+                "payload",
+                "executable code",
+                "malware",
+                "process",
+                "targeted legitimate process",
+                "code",
+                "process hollowing shellcode",
+                "processes",
+                "process hollowing",
+                "CyberGate malware",
+                "suspended process",
+                "legitimate Windows utility",
+                "InstallUtil.exe",
+                "command",
+                ".exe",
+                "process hollowing",
+                "process",
+                "process hollowing",
+                "binaries",
+                "process hollowing",
+                "RedLeaves implant",
+                "iexplore.exe",
+                "created process",
+                "RegASM.exe",
+                "payload",
+                "hollowed process",
+                "Saint Bot loader",
+                "API calls",
+                "MSBuild.exe",
+                "decrypted Saint Bot binary",
+                "process hollowing",
+                "NETWIRE payload",
+                "benign Microsoft executables",
+                "sections",
+                "process hollowing",
+                "processes",
+                "code",
+                "MockDll",
+                "embedded DLL",
+                "Regsvr32",
+                "process hollowing",
+                "payload",
+                "svchost.exe process",
+                "process hollowing",
+                "child processes",
+                "process hollowing",
+                "benign process",
+                "payload",
+                "target process",
+                "process hollowing",
+                "process hollowing",
+                "msiexec.exe",
+                "process hollowing",
+                "executable code"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 7,
+            "id": 1,
+            "texts": [
+                "one",
+                "itself",
+                "itself",
+                "itself",
+                "RunPE",
+                "TA2541",
+                "fourth stage"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 24,
+            "id": 2,
+            "texts": [
+                "RCSession",
+                "Denis",
+                "Woody RAT",
+                "Azorult",
+                "QakBot",
+                "Cobalt Strike",
+                "Lokibot",
+                "Snip3",
+                "Bandook",
+                "Smoke Loader",
+                "Astaroth",
+                "Dtrack",
+                "WhisperGate",
+                "BADNEWS",
+                "Clambling",
+                "menuPass",
+                "ISMInjector",
+                "Agent Tesla",
+                "TrickBot",
+                "Ursnif",
+                "Kimsuky",
+                "Bazar",
+                "BBSRAT",
+                "Duqu"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 11,
+            "id": 3,
+            "texts": [
+                "file",
+                "memory",
+                "copy",
+                "memory",
+                "memory",
+                "suspended state",
+                "list",
+                "suspended state",
+                "space",
+                "unmapped memory",
+                "Orz versions"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "UAC bypass vulnerability exploitation"
+            ],
+            "label": "VULNERABILITY"
+        },
+        {
+            "count": 2,
+            "id": 5,
+            "texts": [
+                "c:\\windows\\syswow64\\explorer.exe",
+                "%system32%"
+            ],
+            "label": "DIRECTORY"
+        },
+        {
+            "count": 3,
+            "id": 6,
+            "texts": [
+                "MockDll",
+                "embedded DLL",
+                "file injector DLL"
+            ],
+            "label": "REGISTRY"
+        },
+        {
+            "count": 1,
+            "id": 7,
+            "texts": [
+                "system"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 1,
+            "id": 8,
+            "texts": [
+                "victim"
+            ],
+            "label": "USER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 7
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 4
+        },
+        {
+            "id": "2_0",
+            "source": 2,
+            "dest": 0,
+            "count": 46
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 6
+        },
+        {
+            "id": "3_0",
+            "source": 3,
+            "dest": 0,
+            "count": 5
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 5
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "4_0",
+            "source": 4,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "3_5",
+            "source": 3,
+            "dest": 5,
+            "count": 2
+        },
+        {
+            "id": "3_6",
+            "source": 3,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "6_0",
+            "source": 6,
+            "dest": 0,
+            "count": 2
+        },
+        {
+            "id": "2_6",
+            "source": 2,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "0_7",
+            "source": 0,
+            "dest": 7,
+            "count": 2
+        },
+        {
+            "id": "7_8",
+            "source": 7,
+            "dest": 8,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 20,
+        "inject": 10,
+        "of": 7,
+        "into": 18,
+        "spawn": 4,
+        "launch": 1,
+        "from": 5,
+        "by": 9,
+        "perform": 1,
+        "create": 5,
+        "write": 1,
+        "delete": 1,
+        "decrypt": 1,
+        "to": 2,
+        "hide": 1,
+        "inside": 1,
+        "execute": 5,
+        "within": 1,
+        "start": 1,
+        "with": 5,
+        "replace": 1,
+        "in": 4,
+        "unmap": 1,
+        "target": 1,
+        "have": 2,
+        "download": 1,
+        "load": 3,
+        "hollow": 2,
+        "manipulate": 1,
+        "reallocate": 1,
+        "on": 1
+    }
+}

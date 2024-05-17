@@ -1,0 +1,108 @@
+{
+    "id": "T1547",
+    "tech_id": "T1547",
+    "tech_name": "Boot or Logon Autostart Execution",
+    "best_phrases": [],
+    "tactics": [
+        "TA0003",
+        "TA0004"
+    ],
+    "features": [
+        "REGISTRY",
+        "FUNCTION",
+        "DATA"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--1858731f-2e82-4704-acba-b8de57dcfc4f",
+        "relationship--2e9d5640-a88d-4812-b2dc-a94621a95959",
+        "relationship--323eed81-9e09-44fb-9dea-bad6aae88e7f",
+        "relationship--99070a6a-e0c3-455b-8e4b-9239206e56ec",
+        "relationship--9c63a942-eb05-401b-a49a-39dc05ef1dd9"
+    ],
+    "graph_nodes": [
+        {
+            "count": 4,
+            "id": 0,
+            "texts": [
+                "xCaon",
+                "Dtrack",
+                "Misdat",
+                "Mis-Type"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 11,
+            "id": 1,
+            "texts": [
+                "Registry key HKEY_CURRENT_USER\\Software\\Microsoft\\WindowsNT\\CurrentVersion\\Windows\\load",
+                "HKCU\\Software\\Backtsaleht\\StubPath",
+                "HKCU\\Software\\bkfouerioyou",
+                "HKLM\\SOFTWARE\\Microsoft\\Active Setup\\Installed Components\\{3ef41072-a2f1-21c8-c5c1-70c2c3bc7905}",
+                "HKLM\\SOFTWARE\\Microsoft\\Active Setup\\Installed. Components\\{3bf41072-b2b1-21c8-b5c1-bd56d32fbda7}",
+                "HKLM\\SOFTWARE\\Microsoft\\Active Setup\\Installed Components\\{6afa8072-b2b1-31a8-b5c1-{Unique Identifier}",
+                "HKLM\\SOFTWARE\\Microsoft\\Active Setup\\Installed Components\\{3BF41072-B2B1-31A8-B5C1-{Unique Identifier}",
+                "HKCU\\Software\\dnimtsoleht\\StubPath",
+                "registry keys",
+                "HKCU\\Software\\snimtsOleht\\StubPath",
+                "HKEY_CURRENT_USER\\Software\\Microsoft\\WindowsNT\\CurrentVersion\\Windows\\load registry key"
+            ],
+            "label": "REGISTRY"
+        },
+        {
+            "count": 2,
+            "id": 2,
+            "texts": [
+                "RAT",
+                "executable"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "persistent target file"
+            ],
+            "label": "DATA"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "2_0",
+            "source": 2,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "any": 1,
+        "of": 1,
+        "make": 1,
+        "create": 1,
+        "to": 1
+    }
+}

@@ -1,0 +1,63 @@
+{
+    "id": "T1595.001",
+    "tech_id": "T1595.001",
+    "tech_name": "Scanning IP Blocks",
+    "best_phrases": [],
+    "tactics": [
+        "TA0043"
+    ],
+    "features": [
+        "DATA",
+        "NETWORK"
+    ],
+    "locations": [
+        "PRE"
+    ],
+    "procedures": [
+        "relationship--8b212643-e625-436c-943f-911be8e87c3a"
+    ],
+    "graph_nodes": [
+        {
+            "count": 1,
+            "id": 0,
+            "texts": [
+                "TeamTNT"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 1,
+            "id": 1,
+            "texts": [
+                "lists"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 2,
+            "texts": [
+                "target IP addresses"
+            ],
+            "label": "NETWORK"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "scan": 1,
+        "of": 1
+    }
+}

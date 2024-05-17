@@ -1,0 +1,100 @@
+{
+    "id": "T1526",
+    "tech_id": "T1526",
+    "tech_name": "Cloud Service Discovery",
+    "best_phrases": [],
+    "tactics": [
+        "TA0007"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "COMPONENT"
+    ],
+    "locations": [
+        "Azure AD",
+        "Office 365",
+        "SaaS",
+        "IaaS",
+        "Google Workspace"
+    ],
+    "procedures": [
+        "relationship--16c64146-61e6-4be5-bdc3-1fa97870a080",
+        "relationship--3c9a5581-9199-4612-8840-06844b23cd1d",
+        "relationship--7a980213-1df8-481f-af86-ed105781c573"
+    ],
+    "graph_nodes": [
+        {
+            "count": 8,
+            "id": 0,
+            "texts": [
+                "AADInternals",
+                "ROADTools",
+                "Azure AD applications",
+                "service principals",
+                "Pacu",
+                "CloudWatch",
+                "AWS services",
+                "CloudTrail"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 5,
+            "id": 1,
+            "texts": [
+                "information",
+                "Office 365",
+                "cloud services",
+                "OpenID Configurations",
+                "Sharepoint instances"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 4,
+            "id": 2,
+            "texts": [
+                "Office 365",
+                "cloud services",
+                "OpenID Configurations",
+                "Sharepoint instances"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 3,
+            "id": 3,
+            "texts": [
+                "CloudWatch",
+                "AWS services",
+                "CloudTrail"
+            ],
+            "label": "OTHER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "enumerate": 3,
+        "about": 1
+    }
+}

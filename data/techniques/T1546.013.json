@@ -1,0 +1,48 @@
+{
+    "id": "T1546.013",
+    "tech_id": "T1546.013",
+    "tech_name": "PowerShell Profile",
+    "best_phrases": [],
+    "tactics": [
+        "TA0004",
+        "TA0003"
+    ],
+    "features": [
+        "DATA"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--18983529-5998-4f76-be90-f6e9cdd9f33d"
+    ],
+    "graph_nodes": [
+        {
+            "count": 1,
+            "id": 0,
+            "texts": [
+                "Turla"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 1,
+            "id": 1,
+            "texts": [
+                "PowerShell profiles"
+            ],
+            "label": "DATA"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 1
+    }
+}

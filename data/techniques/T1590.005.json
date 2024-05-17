@@ -1,0 +1,116 @@
+{
+    "id": "T1590.005",
+    "tech_id": "T1590.005",
+    "tech_name": "IP Addresses",
+    "best_phrases": [],
+    "tactics": [
+        "TA0043"
+    ],
+    "features": [
+        "NETWORK",
+        "FUNCTION",
+        "DATA",
+        "USER"
+    ],
+    "locations": [
+        "PRE"
+    ],
+    "procedures": [
+        "relationship--4ee087c3-92d0-4886-bc90-167e7ab8926d",
+        "relationship--62fe41c2-3ee6-45eb-a38e-a6c27d151933",
+        "relationship--c8a0a286-1296-4f87-bc6e-322cd956fb73"
+    ],
+    "graph_nodes": [
+        {
+            "count": 3,
+            "id": 0,
+            "texts": [
+                "Andariel",
+                "Magic Hound",
+                "HAFNIUM"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 1,
+            "id": 1,
+            "texts": [
+                "watering hole attacks"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 2,
+            "texts": [
+                "IP address ranges"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 4,
+            "id": 3,
+            "texts": [
+                "IP addresses",
+                "phishing sites",
+                "IP addresses",
+                "publicly-accessible Exchange servers"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "visitors"
+            ],
+            "label": "USER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "4_3",
+            "source": 4,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "limit": 1,
+        "to": 3,
+        "capture": 1,
+        "of": 1,
+        "obtain": 1,
+        "for": 1
+    }
+}

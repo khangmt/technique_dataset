@@ -1,0 +1,100 @@
+{
+    "id": "T1114.003",
+    "tech_id": "T1114.003",
+    "tech_name": "Email Forwarding Rule",
+    "best_phrases": [],
+    "tactics": [
+        "TA0009"
+    ],
+    "features": [
+        "DATA",
+        "NETWORK",
+        "USER"
+    ],
+    "locations": [
+        "Office 365",
+        "Windows",
+        "Google Workspace",
+        "macOS",
+        "Linux"
+    ],
+    "procedures": [
+        "relationship--67f029d5-c44b-446b-9efe-0e0e0d85192a",
+        "relationship--7647807e-71b6-41e4-b0aa-f23e68b411cd",
+        "relationship--e8523d2e-2552-4d14-8980-dde0923c803d"
+    ],
+    "graph_nodes": [
+        {
+            "count": 3,
+            "id": 0,
+            "texts": [
+                "Silent Librarian",
+                "LAPSUS$",
+                "Kimsuky"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 6,
+            "id": 1,
+            "texts": [
+                "auto forwarding rules",
+                "compromised e-mail accounts",
+                "Office 365 tenant level mail transport rule",
+                "created account",
+                "auto-forward rules",
+                "e-mail accounts"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 2,
+            "texts": [
+                "mail"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "victim"
+            ],
+            "label": "USER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 4
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "set": 3,
+        "on": 3,
+        "send": 1,
+        "to": 1,
+        "of": 1
+    }
+}

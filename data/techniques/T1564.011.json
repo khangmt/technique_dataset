@@ -1,0 +1,78 @@
+{
+    "id": "T1564.011",
+    "tech_id": "T1564.011",
+    "tech_name": "Ignore Process Interrupts",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--270284ac-af4d-47dc-9218-26fbecd2ed9a",
+        "relationship--7a012427-6f85-45b5-b1b2-439c72f7efb4"
+    ],
+    "graph_nodes": [
+        {
+            "count": 4,
+            "id": 0,
+            "texts": [
+                "GoldMax Linux variant",
+                "nohup command",
+                "nohup command",
+                "executed payloads"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 2,
+            "id": 1,
+            "texts": [
+                "hangup signals",
+                "hangup signals"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 2,
+            "texts": [
+                "OSX/Shlayer"
+            ],
+            "label": "ACTOR"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "2_0",
+            "source": 2,
+            "dest": 0,
+            "count": 2
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "with": 1,
+        "ignore": 3,
+        "use": 1,
+        "instruct": 1
+    }
+}

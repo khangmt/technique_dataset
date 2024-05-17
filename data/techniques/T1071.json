@@ -1,0 +1,175 @@
+{
+    "id": "T1071",
+    "tech_id": "T1071",
+    "tech_name": "Application Layer Protocol",
+    "best_phrases": [],
+    "tactics": [
+        "TA0011"
+    ],
+    "features": [
+        "NETWORK",
+        "FUNCTION",
+        "COMPONENT"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--24f1177a-971a-457f-a9b6-36de5fc65d42",
+        "relationship--2b5af448-59a1-4888-a05f-aee6105872a5",
+        "relationship--32abb557-d923-4a6d-bda6-79a95063f298",
+        "relationship--37327da8-efd3-48c0-9f91-38f384f8579e",
+        "relationship--79fd974c-b51b-45d4-b220-6f532ec6bc63",
+        "relationship--89544a80-5144-443a-9560-ab8b7a87fa96",
+        "relationship--8d0d938e-2e4c-49e8-9290-6bfb86161260",
+        "relationship--924d69bd-a87f-4fda-a2cb-73355331aa87",
+        "relationship--bfc5ca31-5d92-4c51-be33-e610df85055a",
+        "relationship--d0e68e5d-66a1-4f7d-ace6-8ad5d028fa20"
+    ],
+    "graph_nodes": [
+        {
+            "count": 9,
+            "id": 0,
+            "texts": [
+                "Hildegard",
+                "Adversaries",
+                "Rocke",
+                "Siloscape",
+                "QUIETEXIT",
+                "Duqu",
+                "Clambling",
+                "Lucifer",
+                "TeamTNT"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 22,
+            "id": 1,
+            "texts": [
+                "IRC channel",
+                "C2 communications",
+                "IRC",
+                "C2",
+                "RDP connection",
+                "TCP/7519",
+                "C2",
+                "IRC server",
+                "C2",
+                "inverse negotiated SSH connection",
+                "C2",
+                "custom C2 protocol",
+                "used ports",
+                "application layer protocols",
+                "Telnet",
+                "communication",
+                "Stratum protocol",
+                "communication",
+                "port",
+                "mining server",
+                "cryptojacking bot",
+                "C2 communications"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 7,
+            "id": 2,
+            "texts": [
+                "Magic Hound malware",
+                "NETEAGLE",
+                "controller",
+                "wget requests",
+                "mining server",
+                "cryptojacking bot",
+                "IRC bot"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "infected systems"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 2,
+            "id": 4,
+            "texts": [
+                "part",
+                "that"
+            ],
+            "label": "OTHER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 11
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 5
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 3
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 2
+        }
+    ],
+    "verbs": {
+        "use": 8,
+        "for": 11,
+        "establish": 1,
+        "with": 1,
+        "over": 2,
+        "issue": 1,
+        "from": 1,
+        "to": 2,
+        "as": 2,
+        "of": 1,
+        "communicate": 1,
+        "encapsulate": 1,
+        "on": 1,
+        "between": 1
+    }
+}

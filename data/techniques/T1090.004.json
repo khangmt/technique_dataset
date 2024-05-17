@@ -1,0 +1,162 @@
+{
+    "id": "T1090.004",
+    "tech_id": "T1090.004",
+    "tech_name": "Domain Fronting",
+    "best_phrases": [],
+    "tactics": [
+        "TA0011"
+    ],
+    "features": [
+        "NETWORK",
+        "DATA",
+        "FUNCTION"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--0023f0a7-26ae-40ec-ac6e-9dacf5217fb9",
+        "relationship--27e7f34e-9750-4cf0-8260-33f2996ee38c",
+        "relationship--b1334535-019a-4d6a-88c1-8bb6741f152b",
+        "relationship--f0d8c9a9-48bb-4369-9631-f33fe2aa189e",
+        "relationship--f1e3ae26-843a-4094-a8df-aef50d983b54"
+    ],
+    "graph_nodes": [
+        {
+            "count": 3,
+            "id": 0,
+            "texts": [
+                "Cobalt Strike",
+                "APT29",
+                "SMOKEDHAM"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 3,
+            "id": 1,
+            "texts": [
+                "value",
+                "HTTP Host Header",
+                "custom request headers"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 10,
+            "id": 2,
+            "texts": [
+                "domain fronting",
+                "Tor",
+                "C2 traffic",
+                "Domain Fronting",
+                "network traffic",
+                "server",
+                "Content Delivery Network",
+                "domain fronting",
+                "fronted domain",
+                "hard-coded C2 domain"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 3,
+            "id": 3,
+            "texts": [
+                "meek domain fronting plugin",
+                "meek",
+                "Mythic"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 4,
+            "id": 4,
+            "texts": [
+                "destination",
+                "destination",
+                "that",
+                "intended destination"
+            ],
+            "label": "OTHER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 3
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 3
+        },
+        {
+            "id": "4_2",
+            "source": 4,
+            "dest": 2,
+            "count": 4
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "accept": 1,
+        "enable": 1,
+        "for": 2,
+        "use": 3,
+        "hide": 1,
+        "of": 2,
+        "disguise": 1,
+        "as": 2,
+        "in": 1,
+        "by": 2,
+        "support": 1,
+        "obfuscate": 1
+    }
+}

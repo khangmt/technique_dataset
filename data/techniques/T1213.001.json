@@ -1,0 +1,106 @@
+{
+    "id": "T1213.001",
+    "tech_id": "T1213.001",
+    "tech_name": "Confluence",
+    "best_phrases": [],
+    "tactics": [
+        "TA0009"
+    ],
+    "features": [
+        "NETWORK",
+        "FUNCTION",
+        "DATA",
+        "USER"
+    ],
+    "locations": [
+        "SaaS"
+    ],
+    "procedures": [
+        "relationship--0d9523d3-ab60-48df-b5c5-2778e1727439"
+    ],
+    "graph_nodes": [
+        {
+            "count": 1,
+            "id": 0,
+            "texts": [
+                "LAPSUS$"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 4,
+            "id": 1,
+            "texts": [
+                "network",
+                "collaboration platforms",
+                "JIRA",
+                "Confluence"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 3,
+            "id": 2,
+            "texts": [
+                "collaboration platforms",
+                "JIRA",
+                "Confluence"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "high-privilege account credentials"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "victim"
+            ],
+            "label": "USER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "search": 1,
+        "for": 2,
+        "discover": 1,
+        "of": 1
+    }
+}

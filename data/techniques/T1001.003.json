@@ -1,0 +1,270 @@
+{
+    "id": "T1001.003",
+    "tech_id": "T1001.003",
+    "tech_name": "Protocol Impersonation",
+    "best_phrases": [],
+    "tactics": [
+        "TA0011"
+    ],
+    "features": [
+        "NETWORK",
+        "FUNCTION",
+        "DATA",
+        "ENCRYPTION"
+    ],
+    "locations": [
+        "Linux",
+        "Windows",
+        "macOS"
+    ],
+    "procedures": [
+        "relationship--0b255cef-7177-48b8-ade1-752314f90b7e",
+        "relationship--5179f874-72fb-4743-bd51-3f3fdb660038",
+        "relationship--5292f0c1-e65e-4233-aa97-ab75354d74a9",
+        "relationship--63920a70-160d-46b3-a55f-05e8d7d30ba1",
+        "relationship--74fe4149-c5df-43a3-809a-5ece230b1cd7",
+        "relationship--8da08b47-36bd-4d74-91df-6fdae6d1bfff",
+        "relationship--945a3286-2197-4984-8838-837afcd7925c",
+        "relationship--9e193b3a-3f21-43aa-b373-6fcec59ff2c7",
+        "relationship--a4ceb321-f21d-4c62-9b49-cb0c64f0008e",
+        "relationship--ac71c15a-3c61-4e73-9663-fb35dc0a1a66",
+        "relationship--b315cea7-6ca6-4d59-83e5-c91f635bbeb4",
+        "relationship--c0011483-66e7-4f74-a397-d391efc421dc",
+        "relationship--d8c5b193-b49d-4c0e-a9da-072302ff47a0",
+        "relationship--f77c9b92-0800-4631-b669-524c8ab23772",
+        "relationship--fcd3bc09-f88b-43d7-989d-10f7058e655e"
+    ],
+    "graph_nodes": [
+        {
+            "count": 16,
+            "id": 0,
+            "texts": [
+                "Lazarus Group malware",
+                "encryption method",
+                "FakeTLS method",
+                "custom SSL libraries",
+                "FakeTLS session",
+                "session authentication",
+                "false TLS handshake",
+                "custom communication methodologies",
+                "stealthy passive backdoor",
+                "LOWKEY.PASSIVE",
+                "detection",
+                "legitimate messenger applications",
+                "MSN and Yahoo! messengers",
+                "variants",
+                "FakeM",
+                "HTTP requests"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 35,
+            "id": 1,
+            "texts": [
+                "FakeTLS",
+                "unique form",
+                "TLS",
+                "HTTP protocol",
+                "C2 communication",
+                "URI",
+                "C2",
+                "SSL",
+                "C2 traffic",
+                "C2 communications",
+                "FakeTLS",
+                "C2 network communications",
+                "FakeTLS",
+                "C2",
+                "protocols",
+                "normal network traffic",
+                "network traffic",
+                "Orion Improvement Program (OIP) protocol",
+                "URL endpoints",
+                "normal web application traffic",
+                "infected server",
+                "HTTP protocol",
+                "ZVVP",
+                "HIDE",
+                "NOP",
+                "FakeM C2 traffic",
+                "legitimate messenger applications",
+                "MSN and Yahoo! messengers",
+                "communications",
+                "C2s",
+                "TLS",
+                "C2",
+                "HTTP protocol",
+                "messages",
+                "C2 communication"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 9,
+            "id": 2,
+            "texts": [
+                "FakeTLS",
+                "unique form",
+                "data",
+                "transaction body",
+                "HTTP header",
+                "URI parameter",
+                "public certificate",
+                "data",
+                "Cookie and Set-Cookie headers"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 2,
+            "id": 3,
+            "texts": [
+                "communication encryption",
+                "SSL traffic inspection/decryption"
+            ],
+            "label": "ENCRYPTION"
+        },
+        {
+            "count": 13,
+            "id": 4,
+            "texts": [
+                "Cobalt Strike",
+                "BADCALL",
+                "KeyBoy",
+                "Higaisa",
+                "TAINTEDSCRIBE",
+                "Bankshot",
+                "HARDRAIN",
+                "Uroburos",
+                "SUNBURST",
+                "APT41",
+                "InvisiMole",
+                "FALLCHILL",
+                "Okrum"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 3,
+            "id": 5,
+            "texts": [
+                "that",
+                "custom HTTP \"verbs",
+                "fake Transport Layer Security"
+            ],
+            "label": "OTHER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 5
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 3
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 5
+        },
+        {
+            "id": "2_0",
+            "source": 2,
+            "dest": 0,
+            "count": 2
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 17
+        },
+        {
+            "id": "4_2",
+            "source": 4,
+            "dest": 2,
+            "count": 3
+        },
+        {
+            "id": "4_0",
+            "source": 4,
+            "dest": 0,
+            "count": 6
+        },
+        {
+            "id": "5_1",
+            "source": 5,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "4_5",
+            "source": 4,
+            "dest": 5,
+            "count": 2
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 3
+        }
+    ],
+    "verbs": {
+        "use": 12,
+        "of": 5,
+        "mimic": 4,
+        "evade": 2,
+        "hide": 2,
+        "append": 1,
+        "for": 8,
+        "in": 5,
+        "to": 2,
+        "during": 2,
+        "impersonate": 1,
+        "generate": 2,
+        "disguise": 1,
+        "communicate": 2,
+        "ride": 1,
+        "blend": 1,
+        "over": 1,
+        "masquerade": 1,
+        "as": 2,
+        "configure": 1,
+        "on": 1,
+        "with": 3,
+        "resemble": 1
+    }
+}

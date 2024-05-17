@@ -1,0 +1,56 @@
+{
+    "id": "T1021.003",
+    "tech_id": "T1021.003",
+    "tech_name": "Distributed Component Object Model",
+    "best_phrases": [],
+    "tactics": [
+        "TA0008"
+    ],
+    "features": [
+        "FUNCTION"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--04878c23-0ba8-4893-acd7-f0594241b66f",
+        "relationship--bcef3835-1388-4bb7-850b-d248f4c1810f",
+        "relationship--e1a8fd78-3712-4951-8ebc-af5fe271295d"
+    ],
+    "graph_nodes": [
+        {
+            "count": 6,
+            "id": 0,
+            "texts": [
+                "Empire",
+                "Invoke-DCOM",
+                "SILENTTRINITY",
+                "System namespace methods",
+                "DCOM",
+                "Beacon payloads"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 1,
+            "texts": [
+                "Cobalt Strike"
+            ],
+            "label": "ACTOR"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "utilize": 1,
+        "use": 2,
+        "deliver": 1
+    }
+}

@@ -1,0 +1,141 @@
+{
+    "id": "T1484.001",
+    "tech_id": "T1484.001",
+    "tech_name": "Group Policy Modification",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005",
+        "TA0004"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "COMPONENT",
+        "NETWORK"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--11285325-82f3-489a-9d10-05bd6564b423",
+        "relationship--2b7d386f-57b6-4ed2-a5bf-bcc20c92c95b",
+        "relationship--39266465-987d-46f6-8680-4149a5bfea50",
+        "relationship--89500cd9-c663-4b3e-bb20-b8fe1860891a",
+        "relationship--e50d74be-2705-4937-9bd9-7b0913901e27",
+        "relationship--f9b7c51c-fcb1-4cf7-b19d-ecd92291326c"
+    ],
+    "graph_nodes": [
+        {
+            "count": 5,
+            "id": 0,
+            "texts": [
+                "Prestige",
+                "HermeticWiper",
+                "Indrik Spider",
+                "Egregor",
+                "Meteor"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 6,
+            "id": 1,
+            "texts": [
+                "Default Domain Group Policy Object",
+                "default domain policy",
+                "GPO",
+                "Group Policy Objects",
+                "GPO",
+                "group policy"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 7,
+            "id": 2,
+            "texts": [
+                "Active Directory Domain Controller",
+                "Empire",
+                "New-GPOImmediateTask",
+                "Scheduled Task/Job",
+                "batch scripts",
+                "detection",
+                "scheduled task"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 2,
+            "id": 3,
+            "texts": [
+                "system",
+                "network machines"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "AD"
+            ],
+            "label": "NETWORK"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 5
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 3
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 4,
+        "from": 2,
+        "by": 1,
+        "of": 1,
+        "modify": 2,
+        "execute": 1,
+        "deploy": 1,
+        "evade": 1,
+        "push": 1,
+        "to": 1
+    }
+}

@@ -1,0 +1,93 @@
+{
+    "id": "T1200",
+    "tech_id": "T1200",
+    "tech_name": "Hardware Additions",
+    "best_phrases": [],
+    "tactics": [
+        "TA0001"
+    ],
+    "features": [
+        "COMPONENT",
+        "NETWORK"
+    ],
+    "locations": [
+        "Windows",
+        "Linux",
+        "macOS"
+    ],
+    "procedures": [
+        "relationship--04d1a31c-97c2-4cdd-8fb7-391c984e2fad"
+    ],
+    "graph_nodes": [
+        {
+            "count": 1,
+            "id": 0,
+            "texts": [
+                "DarkVishnya"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 5,
+            "id": 1,
+            "texts": [
+                "netbooks",
+                "Bash Bunny",
+                "Raspberry Pi",
+                "inexpensive laptops",
+                "company"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 4,
+            "id": 2,
+            "texts": [
+                "netbooks",
+                "Bash Bunny",
+                "Raspberry Pi",
+                "inexpensive laptops"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "local network"
+            ],
+            "label": "NETWORK"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 1,
+        "connect": 1,
+        "of": 1
+    }
+}

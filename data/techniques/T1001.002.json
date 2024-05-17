@@ -1,0 +1,246 @@
+{
+    "id": "T1001.002",
+    "tech_id": "T1001.002",
+    "tech_name": "Steganography",
+    "best_phrases": [
+        "significant bit (lsb) steganography",
+        "steganography",
+        "Steganography"
+    ],
+    "tactics": [
+        "TA0011"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "NETWORK",
+        "ENCRYPTION",
+        "USER"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--0c393451-a750-4c8a-81be-4d0e9e84a6eb",
+        "relationship--34c4b497-00e3-415c-8e09-3b73667d9bbe",
+        "relationship--41b7f3d7-b42e-4301-ac9e-ecad27e826a0",
+        "relationship--42868389-76f1-4dbf-9b7e-f657d6c8e0cc",
+        "relationship--4ae58878-d6b9-4f0d-bca1-f2f3b5e2adce",
+        "relationship--4be17eba-9ee0-46ff-b019-ce32c25ad146",
+        "relationship--84f88ed3-28fe-4936-8ea2-2d4f6d015c0c",
+        "relationship--a566127b-1d88-4b38-84dd-4686e2837399",
+        "relationship--a760c63f-6459-430d-88ce-291513c47d11",
+        "relationship--c0905059-1f3c-414c-8027-b8ec2e4b3c89",
+        "relationship--f01cbea5-8528-45e8-afdf-d1f382980d8a"
+    ],
+    "graph_nodes": [
+        {
+            "count": 8,
+            "id": 0,
+            "texts": [
+                "Axiom",
+                "HAMMERTOSS",
+                "APT29",
+                "Zox",
+                "LightNeuron",
+                "ZeroT",
+                "Daserf",
+                "RDAT"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 4,
+            "id": 1,
+            "texts": [
+                "steganography",
+                "steganography",
+                "Significant Bit (LSB) steganography",
+                "steganography"
+            ],
+            "label": "ENCRYPTION"
+        },
+        {
+            "count": 10,
+            "id": 2,
+            "texts": [
+                "C2 communications",
+                "C2 communication",
+                "communications",
+                "C2",
+                "implants",
+                "C2 communications",
+                "messages",
+                "Duqu C2",
+                "HTTPS",
+                "HTTP"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 12,
+            "id": 3,
+            "texts": [
+                "commands",
+                "Sliver",
+                "C2",
+                "implants",
+                "commands",
+                "steganographic methods",
+                "stage 2 payloads",
+                "code",
+                "C2 commands",
+                "Duqu",
+                "controller",
+                ".NET assemblies"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 11,
+            "id": 4,
+            "texts": [
+                "image files",
+                "binary data",
+                ".PNG file",
+                ".PNG file format",
+                "PDFs",
+                "Bitmap images",
+                "steganographic images",
+                "BMP images",
+                "blank JPG file",
+                "data",
+                "benign XML"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 2,
+            "id": 5,
+            "texts": [
+                "that",
+                "that"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 1,
+            "id": 6,
+            "texts": [
+                "victim"
+            ],
+            "label": "USER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 4
+        },
+        {
+            "id": "3_0",
+            "source": 3,
+            "dest": 0,
+            "count": 2
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 5
+        },
+        {
+            "id": "5_4",
+            "source": 5,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "4_2",
+            "source": 4,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 4
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 4
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "3_6",
+            "source": 3,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "4_3",
+            "source": 4,
+            "dest": 3,
+            "count": 2
+        }
+    ],
+    "verbs": {
+        "use": 6,
+        "hide": 3,
+        "control": 2,
+        "to": 5,
+        "encode": 1,
+        "into": 3,
+        "for": 4,
+        "between": 1,
+        "retrieve": 1,
+        "as": 2,
+        "download to": 1,
+        "process": 1,
+        "receive": 1,
+        "embed": 1,
+        "within": 2,
+        "communicate": 1,
+        "attach to": 1,
+        "over": 1,
+        "upload": 1,
+        "append": 1,
+        "relate to": 1
+    }
+}

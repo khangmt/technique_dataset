@@ -1,0 +1,110 @@
+{
+    "id": "T1546.001",
+    "tech_id": "T1546.001",
+    "tech_name": "Change Default File Association",
+    "best_phrases": [],
+    "tactics": [
+        "TA0004",
+        "TA0003"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "REGISTRY"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--1c40e6c8-1a0e-41f7-8aa7-9ae294712fbe",
+        "relationship--b967963e-5dd4-42a3-a94e-8b3d17250aec"
+    ],
+    "graph_nodes": [
+        {
+            "count": 4,
+            "id": 0,
+            "texts": [
+                "SILENTTRINITY",
+                "image hijack",
+                "UAC bypass process",
+                "HWP document stealer module"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 2,
+            "id": 1,
+            "texts": [
+                "part",
+                "default program association"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 2,
+            "id": 2,
+            "texts": [
+                ".msc file extension",
+                "HWP documents"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "Kimsuky"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "registry"
+            ],
+            "label": "REGISTRY"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "3_0",
+            "source": 3,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "conduct": 1,
+        "as": 2,
+        "of": 2,
+        "have": 1,
+        "change": 1,
+        "open": 1,
+        "in": 1
+    }
+}

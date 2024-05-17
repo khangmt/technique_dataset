@@ -1,0 +1,292 @@
+{
+    "id": "T1010",
+    "tech_id": "T1010",
+    "tech_name": "Application Window Discovery",
+    "best_phrases": [],
+    "tactics": [
+        "TA0007"
+    ],
+    "features": [
+        "COMPONENT",
+        "DATA",
+        "FUNCTION",
+        "NETWORK",
+        "USER"
+    ],
+    "locations": [
+        "macOS",
+        "Windows",
+        "Linux"
+    ],
+    "procedures": [
+        "relationship--0dfdfffc-2d1b-487f-91e0-66d81b185367",
+        "relationship--10c6cc56-a028-4c2a-b24e-38d97fb4ebb7",
+        "relationship--13e89239-af0e-4f3c-9bb9-42b113f64873",
+        "relationship--149d6bae-0322-40b2-a361-e0d94db0601e",
+        "relationship--14a2bfd9-8be1-47f9-bced-b05ba2179eb5",
+        "relationship--170e2f76-5b6a-4eee-8ea4-d1171368b4a9",
+        "relationship--25bfb4d8-c401-4064-9ee4-24091cb86ba6",
+        "relationship--42c6147c-8626-4ea1-bc69-7b35ea69e2ed",
+        "relationship--43d85ed6-223e-4402-bd29-be10a872359d",
+        "relationship--47ba2c60-f295-4a91-bcd1-ac17292f4e7e",
+        "relationship--5ab058a1-4c88-481f-a7a8-77855ee916e6",
+        "relationship--5adc78d2-a013-4a4e-afda-9a7dd38fb5fa",
+        "relationship--69f45e5e-2ebe-4cce-a4cd-e1db67bdff1a",
+        "relationship--8ab5954b-d36f-40c3-8f90-7e4862d38f43",
+        "relationship--911beb36-2a36-4c26-9e0d-bea35f6497b6",
+        "relationship--ac0b0f1f-a9c8-4890-aa2f-6012b75a9c52",
+        "relationship--afa84fd1-e910-4bc7-8270-1e9f9b02b53f",
+        "relationship--b2cf2404-a612-4832-8dff-9f5572776785",
+        "relationship--b640dfee-9502-4ffb-92e4-f153f8726383",
+        "relationship--bbc31a33-f55f-43d4-a3fd-23426c5fc638",
+        "relationship--c8a01e1c-dac0-4a47-bda3-3b5684bd3d47",
+        "relationship--ce071226-7abc-492c-918d-96cc195f928d",
+        "relationship--d1285ef9-fb7b-4d9b-9915-0b033e768a52",
+        "relationship--d80a85fa-5261-4274-b50e-bb82461562af",
+        "relationship--d93fb52b-985e-4012-9b9f-8638e35c18a0",
+        "relationship--e2a901d9-61a4-49df-8441-3ae622879cdf",
+        "relationship--e8713274-bcbc-4c18-bf06-2c2a0c01d2ba",
+        "relationship--e98a5dc7-707a-4933-801a-b98b2e44b309",
+        "relationship--f436f533-1116-499f-b073-9cc7698e18b0",
+        "relationship--fde8c63b-13e7-47d0-836f-f8b5291bf2bd"
+    ],
+    "graph_nodes": [
+        {
+            "count": 27,
+            "id": 0,
+            "texts": [
+                "Catchamas",
+                "Attor",
+                "DarkWatchman",
+                "NetTraveler",
+                "PLEAD",
+                "Cadelspy",
+                "Flagpro",
+                "njRAT",
+                "Trojan.Karagany",
+                "PowerDuke",
+                "InvisiMole",
+                "QakBot",
+                "Aria-body",
+                "Grandoreiro",
+                "WINERACK",
+                "Machete",
+                "NightClub",
+                "NETWIRE",
+                "Kazuar",
+                "Remexi",
+                "SOUNDBITE",
+                "HotCroissant",
+                "Metamorfo",
+                "ROKRAT",
+                "HEXANE",
+                "PoisonIvy",
+                "FunnyDream"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 21,
+            "id": 1,
+            "texts": [
+                "application windows titles",
+                "application window titles",
+                "window names",
+                "application context",
+                "keylogger information",
+                "name",
+                "information",
+                "title",
+                "title",
+                "titles",
+                "keywords",
+                "text",
+                "titles",
+                "window names",
+                "window names",
+                "information",
+                "window titles",
+                "information",
+                "names",
+                "window title",
+                "window titles"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 15,
+            "id": 2,
+            "texts": [
+                "Screen Capture",
+                "initial infection",
+                "Lazarus Group malware",
+                "IndiaIndia",
+                "process",
+                "command",
+                "installed security tools",
+                "GetForegroundWindow",
+                "command",
+                "discovery modules",
+                "Duqu",
+                "GetForegroundWindow and GetWindowText APIs",
+                "SILENTTRINITY",
+                "keylogging",
+                "PowerShell-based keylogging tool"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 27,
+            "id": 3,
+            "texts": [
+                "open windows",
+                "compromised host",
+                "window",
+                "system",
+                "opened windows",
+                "window",
+                "open windows",
+                "foreground window",
+                "child windows",
+                "windows",
+                "compromised host",
+                "windows",
+                "active windows",
+                "active window",
+                "windows",
+                "controlled systems",
+                "opened windows",
+                "active windows",
+                "machine",
+                "application windows",
+                "open windows",
+                "open windows",
+                "infected host",
+                "windows",
+                "machine",
+                "active Window",
+                "application windows"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "C2"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "foreground"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 1,
+            "id": 6,
+            "texts": [
+                "victim"
+            ],
+            "label": "USER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 14
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 7
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 8
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 9
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 3
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 6
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "4_5",
+            "source": 4,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "3_6",
+            "source": 3,
+            "dest": 6,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "obtain": 1,
+        "perform": 1,
+        "report": 2,
+        "provide": 1,
+        "along": 1,
+        "identify": 4,
+        "on": 7,
+        "check": 1,
+        "of": 8,
+        "display on": 1,
+        "gather": 2,
+        "about": 2,
+        "during": 3,
+        "send": 2,
+        "to": 1,
+        "for": 1,
+        "in": 1,
+        "monitor": 1,
+        "have": 2,
+        "get": 1,
+        "enumerate": 6,
+        "base": 1,
+        "save": 1,
+        "use": 3,
+        "close": 1,
+        "capture": 3,
+        "retrieve": 1,
+        "use with": 1,
+        "collect": 1,
+        "list": 1,
+        "discover": 1
+    }
+}

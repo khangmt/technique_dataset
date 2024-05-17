@@ -1,0 +1,56 @@
+{
+    "id": "T1574.008",
+    "tech_id": "T1574.008",
+    "tech_name": "Path Interception by Search Order Hijacking",
+    "best_phrases": [],
+    "tactics": [
+        "TA0003",
+        "TA0004",
+        "TA0005"
+    ],
+    "features": [
+        "FUNCTION",
+        "VULNERABILITY"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--70386a3a-6ea5-4a2b-9989-2356ee9cf770",
+        "relationship--9d038aa7-af97-4f60-ad5c-f74d20200c18"
+    ],
+    "graph_nodes": [
+        {
+            "count": 4,
+            "id": 0,
+            "texts": [
+                "Empire",
+                "modules",
+                "PowerSploit",
+                "Privesc-PowerUp modules"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 2,
+            "id": 1,
+            "texts": [
+                "search order hijacking vulnerabilities",
+                "search order hijacking vulnerabilities"
+            ],
+            "label": "VULNERABILITY"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 2
+        }
+    ],
+    "verbs": {
+        "contain": 2,
+        "exploit": 2
+    }
+}

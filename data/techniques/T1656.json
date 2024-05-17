@@ -1,0 +1,185 @@
+{
+    "id": "T1656",
+    "tech_id": "T1656",
+    "tech_name": "Impersonation",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005"
+    ],
+    "features": [
+        "USER",
+        "DATA",
+        "NETWORK",
+        "FUNCTION"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows",
+        "Office 365",
+        "SaaS",
+        "Google Workspace"
+    ],
+    "procedures": [
+        "relationship--570495a2-c010-4180-abb7-682e6e6528a3",
+        "relationship--8ebf7956-a41c-4f3c-b586-a38a107518d6",
+        "relationship--ad4bc41d-9079-4885-b986-1d558990fb46"
+    ],
+    "graph_nodes": [
+        {
+            "count": 2,
+            "id": 0,
+            "texts": [
+                "LAPSUS$",
+                "Lazarus Group"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 3,
+            "id": 1,
+            "texts": [
+                "help desk",
+                "interviews",
+                "Scattered Spider"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 4,
+            "id": 2,
+            "texts": [
+                "legitimate users",
+                "gathered information",
+                "access",
+                "privileged accounts"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 7,
+            "id": 3,
+            "texts": [
+                "victims",
+                "HR hiring personnel",
+                "them",
+                "victims",
+                "legitimate IT personnel",
+                "victims",
+                "victims"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 4,
+            "id": 4,
+            "texts": [
+                "LinkedIn messages",
+                "phone calls",
+                "text messages",
+                "credential harvesting site"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 4,
+            "id": 5,
+            "texts": [
+                "malware",
+                "phone calls",
+                "text messages",
+                "commercial remote monitoring and management (RMM) tools"
+            ],
+            "label": "FUNCTION"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 3
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 3
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 3
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "3_5",
+            "source": 3,
+            "dest": 5,
+            "count": 2
+        },
+        {
+            "id": "4_3",
+            "source": 4,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "5_3",
+            "source": 5,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "call": 1,
+        "impersonate": 3,
+        "with": 3,
+        "gain": 1,
+        "of": 1,
+        "to": 2,
+        "by": 2,
+        "conduct": 1,
+        "deceive": 1,
+        "download": 1,
+        "in": 2,
+        "direct": 1,
+        "run": 1
+    }
+}

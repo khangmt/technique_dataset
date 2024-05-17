@@ -1,0 +1,50 @@
+{
+    "id": "T1552.007",
+    "tech_id": "T1552.007",
+    "tech_name": "Container API",
+    "best_phrases": [],
+    "tactics": [
+        "TA0006"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA"
+    ],
+    "locations": [
+        "Containers"
+    ],
+    "procedures": [
+        "relationship--8be7c428-5ef7-43ff-8a68-2ac3f577bb4b"
+    ],
+    "graph_nodes": [
+        {
+            "count": 2,
+            "id": 0,
+            "texts": [
+                "Peirates",
+                "Kubernetes API"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 1,
+            "texts": [
+                "secrets"
+            ],
+            "label": "DATA"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 2
+        }
+    ],
+    "verbs": {
+        "query": 1,
+        "for": 2
+    }
+}

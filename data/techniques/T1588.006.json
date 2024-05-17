@@ -1,0 +1,93 @@
+{
+    "id": "T1588.006",
+    "tech_id": "T1588.006",
+    "tech_name": "Vulnerabilities",
+    "best_phrases": [
+        "Vulnerabilities",
+        "vulnerabilities"
+    ],
+    "tactics": [
+        "TA0042"
+    ],
+    "features": [
+        "VULNERABILITY",
+        "NETWORK"
+    ],
+    "locations": [
+        "PRE"
+    ],
+    "procedures": [
+        "relationship--02804eca-a840-4ffe-8abd-60705d3456e4"
+    ],
+    "graph_nodes": [
+        {
+            "count": 1,
+            "id": 0,
+            "texts": [
+                "Sandworm Team"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 5,
+            "id": 1,
+            "texts": [
+                "2017",
+                "technical research",
+                "Korean Sport and Olympic Committee",
+                "Korean power company",
+                "Korean airport"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 1,
+            "id": 2,
+            "texts": [
+                "vulnerabilities"
+            ],
+            "label": "VULNERABILITY"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "websites"
+            ],
+            "label": "NETWORK"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "in": 1,
+        "conduct": 1,
+        "relate to": 1,
+        "associate with": 1,
+        "use": 1
+    }
+}

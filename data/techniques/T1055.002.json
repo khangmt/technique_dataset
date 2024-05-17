@@ -1,0 +1,160 @@
+{
+    "id": "T1055.002",
+    "tech_id": "T1055.002",
+    "tech_name": "Portable Executable Injection",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005",
+        "TA0004"
+    ],
+    "features": [
+        "FUNCTION",
+        "COMPONENT",
+        "DATA"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--0ed82dd2-9b78-49a7-990b-d59ad7fa40a1",
+        "relationship--5950182b-4e27-4d5e-87bb-c8598314622c",
+        "relationship--5de38b67-dbc7-46bf-bb73-91cd0e069d05",
+        "relationship--88078d5c-bbc9-4c34-858f-e18d472d38d4",
+        "relationship--9e13c22e-5758-4e8f-920c-7dbab940b02b",
+        "relationship--b37c1e66-774b-45ff-9c2a-b24ea9784963",
+        "relationship--da69efe7-e99e-4d79-a455-c59f4c087b22"
+    ],
+    "graph_nodes": [
+        {
+            "count": 7,
+            "id": 0,
+            "texts": [
+                "InvisiMole",
+                "Carbanak",
+                "Rocke",
+                "Lizar",
+                "GreyEnergy",
+                "Zeus Panda",
+                "attacker"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 20,
+            "id": 1,
+            "texts": [
+                "backdoor",
+                "portable executable",
+                "target process",
+                "executable",
+                "process",
+                "miner",
+                "TermsHost.exe",
+                "Windows processes",
+                "Notepad.exe",
+                "Gorgon Group malware",
+                "remote access tool",
+                "ShiftyBug",
+                "process",
+                "PE files",
+                "process",
+                "module",
+                "PE binary",
+                "remote process",
+                "processes",
+                "process"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 2,
+            "id": 2,
+            "texts": [
+                "defenses",
+                "system"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "itself"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 2,
+            "id": 4,
+            "texts": [
+                "address space",
+                "necessary requirements"
+            ],
+            "label": "DATA"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 10
+        },
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 2
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 3
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "inject": 5,
+        "as": 2,
+        "into": 8,
+        "download": 3,
+        "of": 3,
+        "evade": 2,
+        "execute": 1,
+        "in": 2,
+        "have": 1,
+        "check": 1,
+        "on": 1,
+        "meet": 1
+    }
+}

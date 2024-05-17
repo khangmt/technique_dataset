@@ -1,0 +1,59 @@
+{
+    "id": "T1556.006",
+    "tech_id": "T1556.006",
+    "tech_name": "Multi-Factor Authentication",
+    "best_phrases": [],
+    "tactics": [
+        "TA0006",
+        "TA0005",
+        "TA0003"
+    ],
+    "features": [
+        "FUNCTION",
+        "USER"
+    ],
+    "locations": [
+        "Windows",
+        "Azure AD",
+        "Office 365",
+        "SaaS",
+        "IaaS",
+        "Google Workspace",
+        "Linux",
+        "macOS"
+    ],
+    "procedures": [
+        "relationship--d5e008e5-28ff-4f0a-8e09-ab637c733646"
+    ],
+    "graph_nodes": [
+        {
+            "count": 2,
+            "id": 0,
+            "texts": [
+                "AADInternals Set-AADIntUserMFA command",
+                "MFA"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 1,
+            "texts": [
+                "user"
+            ],
+            "label": "USER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "disable": 1,
+        "for": 1
+    }
+}

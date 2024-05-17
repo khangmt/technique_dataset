@@ -1,0 +1,117 @@
+{
+    "id": "T1021",
+    "tech_id": "T1021",
+    "tech_name": "Remote Services",
+    "best_phrases": [],
+    "tactics": [
+        "TA0008"
+    ],
+    "features": [
+        "FUNCTION",
+        "NETWORK",
+        "DATA"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows",
+        "IaaS"
+    ],
+    "procedures": [
+        "relationship--4340d15d-5577-4b4e-8e5b-570b9ab3a147",
+        "relationship--6a076d46-bd2f-4572-b993-36b4c1fb25d3",
+        "relationship--9a340fa8-70c5-4bf6-a8c2-6e28e3fc8b59",
+        "relationship--a51ea812-182b-47d8-94c2-331e4d9973f5",
+        "relationship--df3c4e4d-9766-4673-ab1f-2210ecc50764"
+    ],
+    "graph_nodes": [
+        {
+            "count": 4,
+            "id": 0,
+            "texts": [
+                "Wizard Spider",
+                "MacMa",
+                "Kivars",
+                "Stuxnet"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 6,
+            "id": 1,
+            "texts": [
+                "WebDAV protocol",
+                "RPC",
+                "peer-to-peer",
+                "updates",
+                "communication",
+                "RPC"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 7,
+            "id": 2,
+            "texts": [
+                "Ryuk payloads",
+                "remote screen sessions",
+                "Brute Ratel C4",
+                "keyboard input",
+                "mouse clicks",
+                "updates",
+                "communication"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 3,
+            "id": 3,
+            "texts": [
+                "network file shares",
+                "keyboard input",
+                "mouse clicks"
+            ],
+            "label": "DATA"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 4
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 4
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 3,
+        "execute": 1,
+        "host on": 1,
+        "manage": 1,
+        "trigger": 1,
+        "by": 2
+    }
+}

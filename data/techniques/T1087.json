@@ -1,0 +1,177 @@
+{
+    "id": "T1087",
+    "tech_id": "T1087",
+    "tech_name": "Account Discovery",
+    "best_phrases": [],
+    "tactics": [
+        "TA0007"
+    ],
+    "features": [
+        "DATA",
+        "FUNCTION",
+        "COMPONENT",
+        "USER",
+        "NETWORK"
+    ],
+    "locations": [
+        "Windows",
+        "Azure AD",
+        "Office 365",
+        "SaaS",
+        "IaaS",
+        "Linux",
+        "macOS",
+        "Google Workspace"
+    ],
+    "procedures": [
+        "relationship--52741f41-28c6-4533-bd26-6dc21f6b0794",
+        "relationship--642039f8-984e-432d-a6a3-bc6b4469bba0",
+        "relationship--e481bd6a-3143-4fd6-b1d9-97d1060f423d",
+        "relationship--ecdd1bee-29eb-4f72-a506-6c33777a094f",
+        "relationship--ff16c592-9eae-4c27-97a5-444e148883cd"
+    ],
+    "graph_nodes": [
+        {
+            "count": 2,
+            "id": 0,
+            "texts": [
+                "ShimRatReporter",
+                "Get-ManagementRoleAssignment"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 9,
+            "id": 1,
+            "texts": [
+                "non-privileged and privileged accounts",
+                "administrator accounts",
+                "accounts",
+                "Evernote, AppleID, Telegram, Skype, and WeChat data",
+                "locations",
+                "users",
+                "roles",
+                "users",
+                "roles"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 3,
+            "id": 2,
+            "texts": [
+                "Woody RAT",
+                "XCSSET",
+                "APT29"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 2,
+            "id": 3,
+            "texts": [
+                "infected machine",
+                "main treasury system"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 2,
+            "id": 4,
+            "texts": [
+                "user",
+                "victim"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "Exchange server"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 1,
+            "id": 6,
+            "texts": [
+                "FIN13"
+            ],
+            "label": "OTHER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "2_5",
+            "source": 2,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "2_0",
+            "source": 2,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "6_1",
+            "source": 6,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "6_3",
+            "source": 6,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "list": 1,
+        "identify": 1,
+        "on": 1,
+        "discover": 1,
+        "from": 5,
+        "of": 2,
+        "obtain": 1,
+        "use": 1,
+        "enumerate": 1
+    }
+}

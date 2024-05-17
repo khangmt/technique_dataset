@@ -1,0 +1,152 @@
+{
+    "id": "T1553.004",
+    "tech_id": "T1553.004",
+    "tech_name": "Install Root Certificate",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "NETWORK",
+        "DIRECTORY"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--542bb806-3e73-42f5-8a3e-86b498093f4b",
+        "relationship--97c225e6-64ad-42af-8cc4-4fb4deea39fc",
+        "relationship--9a78f409-0f6b-41fd-a18f-f38366e4703e",
+        "relationship--af74c0ec-0bbe-4538-a3a3-1e967afd3d51"
+    ],
+    "graph_nodes": [
+        {
+            "count": 6,
+            "id": 0,
+            "texts": [
+                "certutil",
+                "precursor",
+                "Adversary-in-the-Middle actions",
+                "command add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.keychain /tmp/filename",
+                "certmgr.exe -add GlobalSign.cer -c -s -r localMachine Root",
+                "certmgr.exe -add GlobalSign.cer -c -s -r localMachineTrustedPublisher"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 6,
+            "id": 1,
+            "texts": [
+                "browser root certificates",
+                "root certificate",
+                "self-generated certificate",
+                "Trusted Publisher",
+                "root CA",
+                "certificate"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 3,
+            "id": 2,
+            "texts": [
+                "Adversary-in-the-Middle",
+                "connections",
+                "banking websites"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 3,
+            "id": 3,
+            "texts": [
+                "Dok",
+                "Hikit",
+                "RTM"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 2,
+            "id": 4,
+            "texts": [
+                "local trust store",
+                "Windows store"
+            ],
+            "label": "DIRECTORY"
+        },
+        {
+            "count": 2,
+            "id": 5,
+            "texts": [
+                "Trusted Publisher",
+                "root CA"
+            ],
+            "label": "OTHER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "3_0",
+            "source": 3,
+            "dest": 0,
+            "count": 3
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "install": 3,
+        "as": 2,
+        "perform": 1,
+        "between": 1,
+        "to": 4,
+        "aid": 1,
+        "use": 2,
+        "add": 1
+    }
+}

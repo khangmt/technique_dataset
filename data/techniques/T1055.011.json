@@ -1,0 +1,119 @@
+{
+    "id": "T1055.011",
+    "tech_id": "T1055.011",
+    "tech_name": "Extra Window Memory Injection",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005",
+        "TA0004"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "COMPONENT"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--7a1a5bda-170c-44fd-8094-7f78b7f803c9",
+        "relationship--c56de8bc-ad9e-415a-8840-ae294ed4f88a"
+    ],
+    "graph_nodes": [
+        {
+            "count": 2,
+            "id": 0,
+            "texts": [
+                "Epic",
+                "Power Loader"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 3,
+            "id": 1,
+            "texts": [
+                "function pointer",
+                "context",
+                "return-oriented programming (ROP) chain"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 8,
+            "id": 2,
+            "texts": [
+                "code",
+                "Shell_TrayWnd",
+                "Explorer",
+                "explorer.exe process",
+                "Explorer",
+                "NTDLL function",
+                "thread",
+                "Explorer.exe"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 2,
+            "id": 3,
+            "texts": [
+                "extra window memory",
+                "Shell_TrayWnd extra window memory"
+            ],
+            "label": "COMPONENT"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "overwrite": 2,
+        "execute": 2,
+        "in": 2,
+        "of": 4,
+        "create": 1,
+        "within": 1
+    }
+}

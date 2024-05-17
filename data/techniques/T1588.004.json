@@ -1,0 +1,153 @@
+{
+    "id": "T1588.004",
+    "tech_id": "T1588.004",
+    "tech_name": "Digital Certificates",
+    "best_phrases": [],
+    "tactics": [
+        "TA0042"
+    ],
+    "features": [
+        "DATA",
+        "FUNCTION",
+        "NETWORK",
+        "COMPONENT"
+    ],
+    "locations": [
+        "PRE"
+    ],
+    "procedures": [
+        "relationship--1a2119a2-6a39-4062-b90c-bffd15b259ec",
+        "relationship--41c193c1-8269-4a2e-9ed8-9dd51489a03f",
+        "relationship--989a5b4d-14d3-4942-8326-91d677e4d38a",
+        "relationship--ea4a70c8-5952-4a61-86a2-bdc801a64dc8",
+        "relationship--ff9691d7-91dd-4549-b997-d5abf327ef1f"
+    ],
+    "graph_nodes": [
+        {
+            "count": 5,
+            "id": 0,
+            "texts": [
+                "Silent Librarian",
+                "Lazarus Group",
+                "threat actors",
+                "LuminousMoth",
+                "BlackTech"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 5,
+            "id": 1,
+            "texts": [
+                "free Let's Encrypt SSL certificates",
+                "SSL certificates",
+                "digital signature",
+                "valid digital certificate",
+                "valid, stolen digital certificates"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 2,
+            "id": 2,
+            "texts": [
+                "phishing pages",
+                "C2 domains"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "Adobe Systems"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 4,
+            "id": 4,
+            "texts": [
+                "MaoCheng dropper",
+                "malware",
+                "tools",
+                "malware"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 2,
+            "id": 5,
+            "texts": [
+                "some",
+                "some"
+            ],
+            "label": "OTHER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 5
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 2
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 2
+        },
+        {
+            "id": "5_4",
+            "source": 5,
+            "dest": 4,
+            "count": 2
+        }
+    ],
+    "verbs": {
+        "obtain": 2,
+        "on": 2,
+        "for": 5,
+        "steal": 1,
+        "from": 2,
+        "use": 3,
+        "of": 2
+    }
+}

@@ -1,0 +1,137 @@
+{
+    "id": "T1550.001",
+    "tech_id": "T1550.001",
+    "tech_name": "Application Access Token",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005",
+        "TA0008"
+    ],
+    "features": [
+        "DATA",
+        "FUNCTION",
+        "NETWORK",
+        "COMPONENT"
+    ],
+    "locations": [
+        "Office 365",
+        "SaaS",
+        "Google Workspace",
+        "Containers",
+        "IaaS",
+        "Azure AD"
+    ],
+    "procedures": [
+        "relationship--238e1f61-36d8-41a9-b480-bb35cb30d21d",
+        "relationship--5fb6065d-398f-4655-9c57-cc4174f7a1a9",
+        "relationship--7b2cc5e3-11c3-4620-a787-04f2273bcbb8",
+        "relationship--ae0b56df-e692-4210-85e4-8ded095cdbc3"
+    ],
+    "graph_nodes": [
+        {
+            "count": 5,
+            "id": 0,
+            "texts": [
+                "Peirates",
+                "operations",
+                "compromised service principals",
+                "changes",
+                "applications"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 8,
+            "id": 1,
+            "texts": [
+                "stolen service account tokens",
+                "valid service accounts",
+                "legitimate OAuth refresh tokens",
+                "access",
+                "OAuth access tokens",
+                "target email accounts",
+                "Gmail",
+                "Yahoo Mail"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 4,
+            "id": 2,
+            "texts": [
+                "adversaries",
+                "CreepyDrive",
+                "APT29",
+                "APT28"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 2,
+            "id": 3,
+            "texts": [
+                "OneDrive",
+                "Office 365 environment"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 3,
+            "id": 4,
+            "texts": [
+                "target email accounts",
+                "Gmail",
+                "Yahoo Mail"
+            ],
+            "label": "NETWORK"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "2_0",
+            "source": 2,
+            "dest": 0,
+            "count": 3
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 4,
+        "perform": 1,
+        "switch": 1,
+        "authenticate": 1,
+        "make": 1,
+        "to": 2,
+        "gain": 1,
+        "abuse": 1
+    }
+}

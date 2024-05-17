@@ -1,0 +1,188 @@
+{
+    "id": "T1543.002",
+    "tech_id": "T1543.002",
+    "tech_name": "Systemd Service",
+    "best_phrases": [],
+    "tactics": [
+        "TA0003",
+        "TA0004"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "DIRECTORY",
+        "NETWORK",
+        "COMPONENT",
+        "USER"
+    ],
+    "locations": [
+        "Linux"
+    ],
+    "procedures": [
+        "relationship--1f75578e-22d5-4f91-9de5-3309ffe107d5",
+        "relationship--69b71b4b-fec9-4850-b002-4a44b875a814",
+        "relationship--8c9c075a-0c9a-45ef-a4cb-53095c2664a7",
+        "relationship--95954093-498a-4f5f-93b4-904632fdfbbb",
+        "relationship--9a0137e5-82d0-4419-961a-9b0eb47b2d79",
+        "relationship--9a24e972-81d5-4cfc-81ed-3e7752e3b463",
+        "relationship--a430e3fa-bfc0-4ea8-8264-217f6aa015fc",
+        "relationship--eff691e3-85de-4b98-8534-da2333370856"
+    ],
+    "graph_nodes": [
+        {
+            "count": 5,
+            "id": 0,
+            "texts": [
+                "TeamTNT",
+                "Fysbis",
+                "SysUpdate",
+                "Rocke",
+                "Hildegard"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 13,
+            "id": 1,
+            "texts": [
+                "creation",
+                "cryptocurrency mining system service",
+                "systemctl",
+                "Pupy",
+                "systemd service",
+                "systemd service",
+                "RotaJakiro",
+                "Linux distribution",
+                "script",
+                "ExecStart directive",
+                "Exaramel",
+                "systemd service script",
+                "monero service"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 5,
+            "id": 2,
+            "texts": [
+                "root permissions",
+                ".service file",
+                "file",
+                "privileges",
+                "hardcoded location"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 5,
+            "id": 3,
+            "texts": [
+                "/lib/systemd/system/ folder",
+                "user owned /usr/lib/systemd/system/ directory",
+                "root owned directory",
+                "/etc/ystem/system",
+                "systemd"
+            ],
+            "label": "DIRECTORY"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "symlink"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "Linux"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 1,
+            "id": 6,
+            "texts": [
+                "root"
+            ],
+            "label": "USER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 6
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 5
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "4_3",
+            "source": 4,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "1_6",
+            "source": 1,
+            "dest": 6,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "by": 1,
+        "of": 2,
+        "use": 4,
+        "depend": 1,
+        "execute": 1,
+        "under": 2,
+        "copy": 1,
+        "to": 2,
+        "in": 2,
+        "with": 1,
+        "map to": 2,
+        "elevate": 1,
+        "for": 1,
+        "have": 1,
+        "as": 1,
+        "instal": 1,
+        "start": 1
+    }
+}

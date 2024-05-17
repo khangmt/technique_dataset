@@ -1,0 +1,48 @@
+{
+    "id": "T1505.002",
+    "tech_id": "T1505.002",
+    "tech_name": "Transport Agent",
+    "best_phrases": [],
+    "tactics": [
+        "TA0003"
+    ],
+    "features": [
+        "FUNCTION"
+    ],
+    "locations": [
+        "Linux",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--be55801c-82ed-4abe-960f-9bca9d704ffc"
+    ],
+    "graph_nodes": [
+        {
+            "count": 1,
+            "id": 0,
+            "texts": [
+                "LightNeuron"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 1,
+            "id": 1,
+            "texts": [
+                "Microsoft Exchange transport agent"
+            ],
+            "label": "FUNCTION"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 1
+    }
+}

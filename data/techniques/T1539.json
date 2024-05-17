@@ -1,0 +1,223 @@
+{
+    "id": "T1539",
+    "tech_id": "T1539",
+    "tech_name": "Steal Web Session Cookie",
+    "best_phrases": [],
+    "tactics": [
+        "TA0006"
+    ],
+    "features": [
+        "DATA",
+        "FUNCTION",
+        "COMPONENT",
+        "USER",
+        "NETWORK",
+        "DIRECTORY"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows",
+        "Office 365",
+        "SaaS",
+        "Google Workspace"
+    ],
+    "procedures": [
+        "relationship--002f1039-f4c5-4c60-b8ac-ced374bec2ac",
+        "relationship--1e526bd3-f353-4b05-a9c9-1f8ddc59bc33",
+        "relationship--3fd05c59-c28b-418a-be56-87ff52d4771c",
+        "relationship--474e148d-4f4a-41d4-994e-d6425c7445f3",
+        "relationship--7f92fc3c-044c-4095-be4b-f6482a5619d1",
+        "relationship--8785b9f9-52dd-4bf5-8e88-b80c4c28dc7f",
+        "relationship--8f6ffa28-0a5d-4adc-8789-17f3d83446a0",
+        "relationship--953091ba-9d00-41ba-8727-014f6d11b5d3",
+        "relationship--95add276-6a4d-4281-82e5-7857b615742b",
+        "relationship--acfadf9a-afa5-413e-8855-a96947c5ab26",
+        "relationship--b9b622ad-856a-48f9-a768-ef05bd2914fe"
+    ],
+    "graph_nodes": [
+        {
+            "count": 10,
+            "id": 0,
+            "texts": [
+                "LuminousMoth",
+                "Grandoreiro",
+                "CookieMiner",
+                "QakBot",
+                "EVILNUM",
+                "Chaes",
+                "BLUELIGHT",
+                "APT29",
+                "XCSSET",
+                "TajMahal"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 6,
+            "id": 1,
+            "texts": [
+                "unnamed post-exploitation tool",
+                "active session",
+                "Evilnum",
+                "script",
+                "scp",
+                "Internet Explorer, Netscape Navigator, FireFox and RealNetworks applications"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 13,
+            "id": 2,
+            "texts": [
+                "cookies",
+                "cookies",
+                "session information",
+                "cookies",
+                "Google Chrome and Apple Safari browser cookies",
+                "web session cookies",
+                "cookies",
+                "them",
+                "web session cookie",
+                "cookies",
+                "Chrome browser cookies",
+                "targeted users",
+                "web session cookies"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 5,
+            "id": 3,
+            "texts": [
+                "Chrome browser",
+                "device",
+                "browsers",
+                "machine",
+                "Internet Explorer, Edge, Chrome, and Naver Whale browsers"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 2,
+            "id": 4,
+            "texts": [
+                "victim",
+                "victim"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 2,
+            "id": 5,
+            "texts": [
+                "C2",
+                "C2"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 2,
+            "id": 6,
+            "texts": [
+                "Chrome profile directories",
+                "~/Library/Cookies/Cookies.binarycookies file"
+            ],
+            "label": "DIRECTORY"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 5
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 9
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 4
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "2_5",
+            "source": 2,
+            "dest": 5,
+            "count": 2
+        },
+        {
+            "id": "0_6",
+            "source": 0,
+            "dest": 6,
+            "count": 2
+        },
+        {
+            "id": "6_2",
+            "source": 6,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 3,
+        "steal": 6,
+        "from": 10,
+        "duplicate": 1,
+        "of": 3,
+        "capture": 1,
+        "harvest": 2,
+        "upload": 1,
+        "to": 3,
+        "extract": 1,
+        "copy": 1,
+        "access": 1
+    }
+}

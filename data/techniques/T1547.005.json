@@ -1,0 +1,84 @@
+{
+    "id": "T1547.005",
+    "tech_id": "T1547.005",
+    "tech_name": "Security Support Provider",
+    "best_phrases": [],
+    "tactics": [
+        "TA0003",
+        "TA0004"
+    ],
+    "features": [
+        "FUNCTION",
+        "REGISTRY"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--41f04732-8fdc-4b2f-9e22-7b78ff650e5d",
+        "relationship--5b162339-4155-4757-8ec1-11834a613c8a",
+        "relationship--be2d0ead-f24c-4b76-bdd9-695d163bcbf3"
+    ],
+    "graph_nodes": [
+        {
+            "count": 13,
+            "id": 0,
+            "texts": [
+                "Mimikatz credential dumper",
+                "implementation",
+                "SSP",
+                "Empire",
+                "SSPs",
+                "Install-SSP",
+                "Invoke-Mimikatz",
+                "SSPs",
+                "log authentication events",
+                "PowerSploit",
+                "Install-SSP",
+                "PowerSploit",
+                "Install-SSP Persistence module"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 3,
+            "id": 1,
+            "texts": [
+                "Security Support Providers",
+                "SSPs",
+                "log authentication events"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 1,
+            "id": 2,
+            "texts": [
+                "SSP DLL"
+            ],
+            "label": "REGISTRY"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "contain": 1,
+        "of": 3,
+        "enumerate": 2,
+        "utilize": 1,
+        "install": 1,
+        "instal": 1
+    }
+}

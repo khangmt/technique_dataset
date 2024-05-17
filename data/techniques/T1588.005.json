@@ -1,0 +1,65 @@
+{
+    "id": "T1588.005",
+    "tech_id": "T1588.005",
+    "tech_name": "Exploits",
+    "best_phrases": [
+        "Exploits"
+    ],
+    "tactics": [
+        "TA0042"
+    ],
+    "features": [
+        "FUNCTION",
+        "VULNERABILITY"
+    ],
+    "locations": [
+        "PRE"
+    ],
+    "procedures": [
+        "relationship--c26aa411-a68f-4093-b681-c899694cfa19"
+    ],
+    "graph_nodes": [
+        {
+            "count": 1,
+            "id": 0,
+            "texts": [
+                "Kimsuky"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 1,
+            "id": 1,
+            "texts": [
+                "exploit code"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 2,
+            "texts": [
+                "CVEs"
+            ],
+            "label": "VULNERABILITY"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "obtain": 1,
+        "for": 1
+    }
+}

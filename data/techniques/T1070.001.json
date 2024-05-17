@@ -1,0 +1,339 @@
+{
+    "id": "T1070.001",
+    "tech_id": "T1070.001",
+    "tech_name": "Clear Windows Event Logs",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005"
+    ],
+    "features": [
+        "DATA",
+        "FUNCTION",
+        "COMPONENT",
+        "NETWORK",
+        "REGISTRY",
+        "USER",
+        "DIRECTORY"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--0fa4f714-e906-4878-b556-788946a453b0",
+        "relationship--1083404f-57df-48dc-a3b9-8c60fb5fd2f7",
+        "relationship--10bb3d29-fe7d-49a4-a03b-ba1f78993af8",
+        "relationship--12c24e26-9415-45ef-b844-2bea03ee709e",
+        "relationship--3246b73c-ac8e-44ab-adf8-189c0086ae12",
+        "relationship--3fa2041f-f2dc-4fa6-8e01-f0bb065f8ca0",
+        "relationship--4684788a-b196-4a91-b4ad-18e93beb9ffb",
+        "relationship--4b8d211d-4969-4c0f-8b01-fd176c8172d1",
+        "relationship--4cbd1250-5e79-46c0-b38f-83bd5942f44c",
+        "relationship--4ceb5590-5539-424c-9859-1a35d62bbf04",
+        "relationship--4d880164-0891-4721-b393-7e3a3bcc0fd9",
+        "relationship--4e45ac56-f9c8-4271-a3c8-1a618817945b",
+        "relationship--69b349cf-c086-497b-8339-514d4a448bfe",
+        "relationship--6a8f9492-678f-42c7-8f61-a335c78ee85c",
+        "relationship--6c7285ce-7ae2-4d85-a629-4f6eab659fb1",
+        "relationship--716cdd64-44c3-433d-a5eb-7934b6ea713e",
+        "relationship--768ba293-130e-4f0e-935f-f477187524ae",
+        "relationship--7e6ebf2b-26f1-4bba-8f7e-619ffb14a649",
+        "relationship--885cd1fe-9e7b-4e94-a6cc-01bb8ad655fd",
+        "relationship--99c1668e-3e9c-4da1-8019-59b6c30f010e",
+        "relationship--9b43f780-6a8b-477f-826f-c45e867749c9",
+        "relationship--ad696f42-0631-43fb-893b-a5616f14f93f",
+        "relationship--af009cfc-2b1f-4c4c-8712-0c13a2884d8e",
+        "relationship--c84e0640-82fe-4bb7-b0e1-99b6a746970c",
+        "relationship--c887c671-d467-45a1-952b-8fd20cd77ec1",
+        "relationship--c9dca829-6417-4121-9462-650ac852b8c2",
+        "relationship--e36a58ff-f436-41de-a5bb-ac9748f9ee38",
+        "relationship--f295f6a5-914a-4699-ae82-0607c6d81a0d"
+    ],
+    "graph_nodes": [
+        {
+            "count": 27,
+            "id": 0,
+            "texts": [
+                "Meteor",
+                "Olympic Destroyer",
+                "FIN8",
+                "gh0st RAT",
+                "SynAck",
+                "Lucifer",
+                "NotPetya",
+                "Mafalda",
+                "Chimera",
+                "APT28",
+                "APT41",
+                "Indrik Spider",
+                "APT38",
+                "Dragonfly",
+                "actors",
+                "FinFisher",
+                "BlackCat",
+                "ZxShell",
+                "HermeticWizard",
+                "APT32",
+                "KillDisk",
+                "FIN5",
+                "remote attackers",
+                "Hydraq",
+                "RunningRAT",
+                "threat actors",
+                "HermeticWiper"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 31,
+            "id": 1,
+            "texts": [
+                "wevtutil",
+                "Wevtutil",
+                "post compromise cleanup activities",
+                "wevtutil",
+                "OpenEventLogW and ClearEventLogW functions",
+                "Wevtutil",
+                "commands",
+                "wevtutil cl System",
+                "wevtutil cl Security",
+                "Windows security and system events",
+                "activity",
+                "Cobalt Strike",
+                "tools",
+                "remote services",
+                "audit logs",
+                "system",
+                "terminal services",
+                "security",
+                " OpenEventLog/ClearEventLog APIs ",
+                "wevtutil.exe",
+                "command",
+                "wevtutil cl system",
+                "backdoor",
+                "Pupy",
+                "module",
+                "PowerShell",
+                "code",
+                "BlackEnergy component",
+                "KillDisk",
+                "/Q /c wevtutil cl security",
+                "/Q /c wevtutil cl system"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 32,
+            "id": 2,
+            "texts": [
+                "System and Security event logs",
+                "Security, System and Application Event Viewer logs",
+                "logs",
+                "event logs",
+                "Windows event logs",
+                "Windows Event logs",
+                "system and security event logs",
+                "event logs",
+                "event logs",
+                "log files",
+                "Sysmon logs",
+                "Window Event logs",
+                "Windows event logs",
+                "logs",
+                "tools",
+                "remote services",
+                "audit logs",
+                "system",
+                "terminal services",
+                "security",
+                "system event logs",
+                "Windows event logs",
+                "system event logs",
+                "event logs",
+                "select event log entries",
+                "Application, Security, Setup, and System Windows Event Logs",
+                "event logs",
+                "system event logs",
+                "event logs",
+                "event logs",
+                "Windows Event Logs",
+                "Windows system and security event logs"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 10,
+            "id": 3,
+            "texts": [
+                "system",
+                "compromised hosts",
+                "system",
+                "tools",
+                "remote services",
+                "audit logs",
+                "system",
+                "terminal services",
+                "security",
+                "targeted system"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 3,
+            "id": 4,
+            "texts": [
+                "evidence",
+                "some",
+                "which"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "Registry keys"
+            ],
+            "label": "REGISTRY"
+        },
+        {
+            "count": 6,
+            "id": 6,
+            "texts": [
+                "tools",
+                "remote services",
+                "audit logs",
+                "system",
+                "terminal services",
+                "security"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 1,
+            "id": 7,
+            "texts": [
+                "victims"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 1,
+            "id": 8,
+            "texts": [
+                "C:\\Windows\\System32\\winevt\\Logs file"
+            ],
+            "label": "DIRECTORY"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 15
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 18
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 7
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 3
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "6_2",
+            "source": 6,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "0_7",
+            "source": 0,
+            "dest": 7,
+            "count": 1
+        },
+        {
+            "id": "2_7",
+            "source": 2,
+            "dest": 7,
+            "count": 1
+        },
+        {
+            "id": "0_8",
+            "source": 0,
+            "dest": 8,
+            "count": 1
+        },
+        {
+            "id": "8_3",
+            "source": 8,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 9,
+        "remove": 2,
+        "clear": 18,
+        "during": 2,
+        "delete": 6,
+        "invoke": 1,
+        "from": 5,
+        "on": 3,
+        "of": 1,
+        "empty": 1,
+        "produce": 1,
+        "have": 2,
+        "by": 1,
+        "create": 1,
+        "with": 1,
+        "contain": 1,
+        "overwrite": 1
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "id": "T1648",
+    "tech_id": "T1648",
+    "tech_name": "Serverless Execution",
+    "best_phrases": [],
+    "tactics": [
+        "TA0002"
+    ],
+    "features": [
+        "FUNCTION"
+    ],
+    "locations": [
+        "SaaS",
+        "IaaS",
+        "Office 365"
+    ],
+    "procedures": [
+        "relationship--04f8f862-049b-40d6-8250-68ed30cd4e92"
+    ],
+    "graph_nodes": [
+        {
+            "count": 2,
+            "id": 0,
+            "texts": [
+                "Pacu",
+                "Lambda functions"
+            ],
+            "label": "FUNCTION"
+        }
+    ],
+    "graph_edges": [],
+    "verbs": {
+        "create": 1
+    }
+}

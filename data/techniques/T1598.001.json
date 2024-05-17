@@ -1,0 +1,79 @@
+{
+    "id": "T1598.001",
+    "tech_id": "T1598.001",
+    "tech_name": "Spearphishing Service",
+    "best_phrases": [],
+    "tactics": [
+        "TA0043"
+    ],
+    "features": [
+        "NETWORK",
+        "USER",
+        "DATA"
+    ],
+    "locations": [
+        "PRE"
+    ],
+    "procedures": [
+        "relationship--91df24f7-6089-4f42-a63e-6ecaa5d4af8e"
+    ],
+    "graph_nodes": [
+        {
+            "count": 1,
+            "id": 0,
+            "texts": [
+                "Scattered Spider"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 1,
+            "id": 1,
+            "texts": [
+                "Telegram messages"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 1,
+            "id": 2,
+            "texts": [
+                "IT personnel"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "credentials"
+            ],
+            "label": "DATA"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "send": 1,
+        "impersonate": 1,
+        "harvest": 1
+    }
+}

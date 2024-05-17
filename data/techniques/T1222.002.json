@@ -1,0 +1,175 @@
+{
+    "id": "T1222.002",
+    "tech_id": "T1222.002",
+    "tech_name": "Linux and Mac File and Directory Permissions Modification",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005"
+    ],
+    "features": [
+        "DATA",
+        "FUNCTION"
+    ],
+    "locations": [
+        "macOS",
+        "Linux"
+    ],
+    "procedures": [
+        "relationship--08c69567-a511-4a07-ab5d-a5bf77594129",
+        "relationship--0d40b95c-629c-46bf-bafc-2558a180fedc",
+        "relationship--3062f5f2-8a0d-4a1b-ac64-aa6c3b06a1a5",
+        "relationship--4723be88-3553-4c1c-8cd1-8c68b161c1cf",
+        "relationship--544cc12a-53c4-4a56-b480-bfc79beee93c",
+        "relationship--8097b8e6-73f2-44f4-9234-dffa4794e0c6",
+        "relationship--8cb06251-a974-439f-8c36-a3fc65b7d154",
+        "relationship--9021af47-45ef-4021-a697-d76ccb790f07",
+        "relationship--a2f88508-4177-4294-b287-6a3494f6e738",
+        "relationship--a4409632-996c-4f20-bdb0-a8e92c98307f",
+        "relationship--c270ebd7-56e2-4ede-bd45-57da4a0065f2",
+        "relationship--f19f6015-ffbe-4998-ad82-403fcfc2e649"
+    ],
+    "graph_nodes": [
+        {
+            "count": 11,
+            "id": 0,
+            "texts": [
+                "TeamTNT",
+                "OSX_OCEANLOTUS.D",
+                "P.A.S. Webshell",
+                "Kinsing",
+                "OSX/Shlayer",
+                "Dok",
+                "XCSSET",
+                "Rocke",
+                "APT32",
+                "Penquin",
+                "Bundlore"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 21,
+            "id": 1,
+            "texts": [
+                "permissions",
+                "permissions",
+                "file permissions",
+                "permissions",
+                "key files",
+                "file",
+                "chmod +x",
+                "chmod 777",
+                "permissions",
+                "targeted files",
+                "users",
+                "execute permissions",
+                "executable permissions",
+                "file",
+                "file permissions",
+                "files",
+                "permission",
+                "file",
+                "executable flag",
+                "file",
+                "permissions"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 19,
+            "id": 2,
+            "texts": [
+                "binaries",
+                "chattr",
+                "executable",
+                "second-stage payload",
+                "chmod",
+                "chmod",
+                "chmod utility",
+                "file",
+                "chmod +x",
+                "chmod 777",
+                "executable",
+                "Black Basta binary",
+                "chmod",
+                "command chmod +x /Users/Shared/AppStore.app",
+                "application",
+                "chmod +x command",
+                "macOS backdoor",
+                "command chmod -R 755",
+                "payload"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 2,
+            "id": 3,
+            "texts": [
+                "use",
+                "755"
+            ],
+            "label": "OTHER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 12
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 6
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 7
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "2_0",
+            "source": 2,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "modify": 3,
+        "on": 2,
+        "with": 1,
+        "change": 4,
+        "to": 8,
+        "of": 5,
+        "by": 1,
+        "use": 6,
+        "for": 2,
+        "set": 1,
+        "as": 1,
+        "gain": 1,
+        "give": 2,
+        "grant": 1,
+        "add": 1
+    }
+}

@@ -1,0 +1,111 @@
+{
+    "id": "T1548.003",
+    "tech_id": "T1548.003",
+    "tech_name": "Sudo and Sudo Caching",
+    "best_phrases": [],
+    "tactics": [
+        "TA0004",
+        "TA0005"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "USER",
+        "DIRECTORY"
+    ],
+    "locations": [
+        "Linux",
+        "macOS"
+    ],
+    "procedures": [
+        "relationship--00991be5-e2c2-4645-b743-e9e4af3d38b9",
+        "relationship--5408c62f-55e0-4480-8449-ec3c191b66b8",
+        "relationship--a1ca87ad-0cfc-48e7-a0e4-cee3d81cf917"
+    ],
+    "graph_nodes": [
+        {
+            "count": 3,
+            "id": 0,
+            "texts": [
+                "Cobalt Strike",
+                "Proton",
+                "Dok"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 1,
+            "id": 1,
+            "texts": [
+                "sudo"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 2,
+            "id": 2,
+            "texts": [
+                "command",
+                "admin ALL=(ALL) NOPASSWD: ALL"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 2,
+            "id": 3,
+            "texts": [
+                "tty_tickets line",
+                "sudoers file"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "/etc/sudoers file"
+            ],
+            "label": "DIRECTORY"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 1,
+        "run": 1,
+        "modify": 1,
+        "in": 1,
+        "add": 1,
+        "to": 2
+    }
+}

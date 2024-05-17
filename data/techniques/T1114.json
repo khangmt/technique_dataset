@@ -1,0 +1,134 @@
+{
+    "id": "T1114",
+    "tech_id": "T1114",
+    "tech_name": "Email Collection",
+    "best_phrases": [],
+    "tactics": [
+        "TA0009"
+    ],
+    "features": [
+        "DATA",
+        "NETWORK",
+        "FUNCTION",
+        "COMPONENT"
+    ],
+    "locations": [
+        "Windows",
+        "Office 365",
+        "Google Workspace",
+        "macOS",
+        "Linux"
+    ],
+    "procedures": [
+        "relationship--406fbbc1-408a-4f59-8f0c-0f670eb60879",
+        "relationship--76d0dcb7-046a-40d7-80ec-e0e571359f51",
+        "relationship--966e98f6-1460-4305-8993-57ee3f3f5654"
+    ],
+    "graph_nodes": [
+        {
+            "count": 3,
+            "id": 0,
+            "texts": [
+                "Silent Librarian",
+                "Emotet",
+                "Magic Hound"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 2,
+            "id": 1,
+            "texts": [
+                "entire mailboxes",
+                "email addresses"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 3,
+            "id": 2,
+            "texts": [
+                "compromised accounts",
+                "email credentials",
+                "sensitive data"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "module"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "Outlook"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "that"
+            ],
+            "label": "OTHER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 3
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "5_4",
+            "source": 5,
+            "dest": 4,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "exfiltrate": 1,
+        "from": 4,
+        "use": 1,
+        "scrape": 1,
+        "compromise": 1,
+        "steal": 1
+    }
+}

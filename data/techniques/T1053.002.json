@@ -1,0 +1,170 @@
+{
+    "id": "T1053.002",
+    "tech_id": "T1053.002",
+    "tech_name": "At",
+    "best_phrases": [
+        "remote at jobs",
+        "native at windows task scheduler tool",
+        "At",
+        "at"
+    ],
+    "tactics": [
+        "TA0002",
+        "TA0003",
+        "TA0004"
+    ],
+    "features": [
+        "FUNCTION",
+        "COMPONENT",
+        "ENCRYPTION",
+        "USER",
+        "NETWORK"
+    ],
+    "locations": [
+        "Windows",
+        "Linux",
+        "macOS"
+    ],
+    "procedures": [
+        "relationship--17594ffb-af22-4cdc-8849-ca31d2019a9e",
+        "relationship--54b3abf5-bc7c-4e8a-b51d-058cc313a3c9",
+        "relationship--67f19627-27a5-4898-bab5-7b235aa4ad77",
+        "relationship--9ef58dda-688d-4461-b5fc-25f2ba3a9c54",
+        "relationship--a5f43f22-7157-4e5a-8d08-d700471f1993",
+        "relationship--d4d35e55-6a09-47ef-8de5-160468276025"
+    ],
+    "graph_nodes": [
+        {
+            "count": 4,
+            "id": 0,
+            "texts": [
+                "Threat Group-3390 actors",
+                "APT18 actors",
+                "BRONZE BUTLER",
+                "MURKYTOP"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 18,
+            "id": 1,
+            "texts": [
+                "at",
+                "tasks",
+                "PlugX",
+                "HTTPBrowser",
+                "CrackMapExec",
+                "scheduled task",
+                "commands",
+                "at",
+                "native at Windows task scheduler tool",
+                "scheduled tasks",
+                "command",
+                "at",
+                "scheduled task",
+                "malware",
+                "capability",
+                "remote AT jobs",
+                "at",
+                "task"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 2,
+            "texts": [
+                "self-extracting RAR archives"
+            ],
+            "label": "ENCRYPTION"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "victims"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "network"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "which"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 2,
+            "id": 6,
+            "texts": [
+                "target system",
+                "system"
+            ],
+            "label": "COMPONENT"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 9
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "5_3",
+            "source": 5,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "1_6",
+            "source": 1,
+            "dest": 6,
+            "count": 3
+        }
+    ],
+    "verbs": {
+        "use": 5,
+        "schedule": 3,
+        "run": 1,
+        "install": 1,
+        "on": 6,
+        "set": 1,
+        "execute": 3,
+        "register": 1,
+        "have": 1
+    }
+}

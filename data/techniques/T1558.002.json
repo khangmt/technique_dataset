@@ -1,0 +1,65 @@
+{
+    "id": "T1558.002",
+    "tech_id": "T1558.002",
+    "tech_name": "Silver Ticket",
+    "best_phrases": [],
+    "tactics": [
+        "TA0006"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--6a2ade56-5413-424b-9d8e-ba91267fade7",
+        "relationship--ae78b837-1698-44a4-a81a-8eece005ea9f",
+        "relationship--bf080191-d58e-4834-8b4f-7315df4d76bf",
+        "relationship--fde62a7a-0ed1-4077-8275-ebb63eecdd2a"
+    ],
+    "graph_nodes": [
+        {
+            "count": 7,
+            "id": 0,
+            "texts": [
+                "Rubeus",
+                "AADInternals",
+                "kerberos module",
+                "Mimikatz",
+                "Empire",
+                "implementation",
+                "Mimikatz"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 6,
+            "id": 1,
+            "texts": [
+                "silver tickets",
+                "Kerberos tickets",
+                "password hash",
+                "AZUREADSSOACC account",
+                "silver tickets",
+                "silver tickets"
+            ],
+            "label": "DATA"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 5
+        }
+    ],
+    "verbs": {
+        "create": 2,
+        "forge": 1,
+        "use": 3,
+        "of": 3
+    }
+}

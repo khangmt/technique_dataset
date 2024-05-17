@@ -1,0 +1,217 @@
+{
+    "id": "T1553.001",
+    "tech_id": "T1553.001",
+    "tech_name": "Gatekeeper Bypass",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "COMPONENT",
+        "DIRECTORY",
+        "NETWORK",
+        "VULNERABILITY"
+    ],
+    "locations": [
+        "macOS"
+    ],
+    "procedures": [
+        "relationship--3a72e519-b85c-4dec-9ffd-74eec8af03ca",
+        "relationship--60a6f8ce-1ee6-4770-8d83-9c2717d53fc3",
+        "relationship--dc8fa1fa-6aff-45f7-a425-2f62bf729324",
+        "relationship--e735944e-9387-4cfb-bf2c-0a1c27d93bce",
+        "relationship--f4eabef1-c66d-45b2-a7c7-6c4cefe4862b"
+    ],
+    "graph_nodes": [
+        {
+            "count": 4,
+            "id": 0,
+            "texts": [
+                "XCSSET",
+                "MacMa",
+                "OSX_OCEANLOTUS.D",
+                "CoinTicker"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 13,
+            "id": 1,
+            "texts": [
+                "applet",
+                "security checks",
+                "app",
+                "launched app",
+                "launch apps",
+                "OSX/Shlayer",
+                "spctl command",
+                "successful passing",
+                "bash scripts",
+                "DMG file",
+                "command xattr -d com.apple.quarantine",
+                "EggShell mach-o binary",
+                "curl"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 2,
+            "id": 2,
+            "texts": [
+                ".../Contents/MacOS/ folder",
+                "$TMPDIR/airportpaird"
+            ],
+            "label": "DIRECTORY"
+        },
+        {
+            "count": 6,
+            "id": 3,
+            "texts": [
+                "Gatekeeper",
+                "Gatekeeper protection",
+                "Gatekeeper",
+                "macOS",
+                "later versions",
+                "Gatekeeper"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 7,
+            "id": 4,
+            "texts": [
+                "elevated privileges",
+                "file",
+                "macOS",
+                "later versions",
+                "com.apple.quarantineattribute",
+                "dropped file",
+                "quarantine file attribute"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "system links"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 1,
+            "id": 6,
+            "texts": [
+                "flaw"
+            ],
+            "label": "VULNERABILITY"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 5
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 3
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "1_6",
+            "source": 1,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "5_1",
+            "source": 5,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "6_3",
+            "source": 6,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "6_4",
+            "source": 6,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 3
+        },
+        {
+            "id": "4_2",
+            "source": 4,
+            "dest": 2,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "drop": 1,
+        "into": 2,
+        "bypass": 3,
+        "of": 4,
+        "on": 1,
+        "run": 1,
+        "use": 5,
+        "disable": 1,
+        "result": 1,
+        "for": 1,
+        "point to": 1,
+        "in": 1,
+        "patch in": 1,
+        "notarize": 1,
+        "remove": 2,
+        "from": 3,
+        "download": 1
+    }
+}

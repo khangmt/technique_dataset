@@ -1,0 +1,150 @@
+{
+    "id": "T1659",
+    "tech_id": "T1659",
+    "tech_name": "Content Injection",
+    "best_phrases": [],
+    "tactics": [
+        "TA0001",
+        "TA0011"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "COMPONENT",
+        "USER"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--3f32468a-13b6-484b-b292-47702e470df1",
+        "relationship--fac1ed8a-a5a8-4b4f-a6ca-bc6a19d001a3"
+    ],
+    "graph_nodes": [
+        {
+            "count": 1,
+            "id": 0,
+            "texts": [
+                "Disco"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 3,
+            "id": 1,
+            "texts": [
+                "content injection",
+                "malware",
+                "fake Windows Update page"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 3,
+            "id": 2,
+            "texts": [
+                "DNS, HTTP, and SMB replies",
+                "MoustachedBouncer",
+                "DNS, HTTP, and SMB replies"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "targeted hosts"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 2,
+            "id": 4,
+            "texts": [
+                "files",
+                "content"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "specifically-targeted victims"
+            ],
+            "label": "USER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "2_5",
+            "source": 2,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "4_2",
+            "source": 4,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "5_1",
+            "source": 5,
+            "dest": 1,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "by": 1,
+        "into": 2,
+        "to": 2,
+        "download": 2,
+        "redirect": 2,
+        "inject": 1
+    }
+}

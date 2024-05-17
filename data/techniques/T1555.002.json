@@ -1,0 +1,64 @@
+{
+    "id": "T1555.002",
+    "tech_id": "T1555.002",
+    "tech_name": "Securityd Memory",
+    "best_phrases": [],
+    "tactics": [
+        "TA0006"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA"
+    ],
+    "locations": [
+        "Linux",
+        "macOS"
+    ],
+    "procedures": [
+        "relationship--433418bb-0771-4b2d-9d6c-a153f6819798"
+    ],
+    "graph_nodes": [
+        {
+            "count": 1,
+            "id": 0,
+            "texts": [
+                "Keydnap"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 1,
+            "id": 1,
+            "texts": [
+                "keychaindump project"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 2,
+            "texts": [
+                "securityd memory"
+            ],
+            "label": "DATA"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 1,
+        "read": 1
+    }
+}

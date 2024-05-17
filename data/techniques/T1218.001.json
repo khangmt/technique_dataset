@@ -1,0 +1,131 @@
+{
+    "id": "T1218.001",
+    "tech_id": "T1218.001",
+    "tech_name": "Compiled HTML File",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005"
+    ],
+    "features": [
+        "DATA",
+        "FUNCTION",
+        "USER",
+        "NETWORK"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--352e990d-48be-4d1a-bd8a-bc27d641aa1f",
+        "relationship--543dce32-6988-4e49-ad83-4405d1a143ae",
+        "relationship--68602080-9968-4a36-9a5e-130343e61566",
+        "relationship--c4c08678-eee9-475c-9a67-67b15278ec54",
+        "relationship--cbd7249a-918d-436b-805a-0199eed6567a",
+        "relationship--e94d140f-9345-48bc-9fb9-f48a117e0739"
+    ],
+    "graph_nodes": [
+        {
+            "count": 6,
+            "id": 0,
+            "texts": [
+                "OilRig",
+                "Dark Caracal",
+                "Silence",
+                "APT41",
+                "APT38",
+                "Astaroth"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 5,
+            "id": 1,
+            "texts": [
+                "CHM payload",
+                "command",
+                "executable",
+                "targeting",
+                "concealed payloads"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 6,
+            "id": 2,
+            "texts": [
+                "file",
+                "compiled HTML file",
+                "CHM files",
+                "compiled HTML (.chm) files",
+                "CHM files",
+                "ActiveX objects"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "victim"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "phishing campaigns"
+            ],
+            "label": "NETWORK"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 6
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 5,
+        "execute": 1,
+        "deliver": 1,
+        "contain": 1,
+        "run": 1,
+        "weaponize": 1,
+        "in": 2,
+        "for": 2,
+        "move": 1
+    }
+}

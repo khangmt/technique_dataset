@@ -1,0 +1,133 @@
+{
+    "id": "T1546.008",
+    "tech_id": "T1546.008",
+    "tech_name": "Accessibility Features",
+    "best_phrases": [],
+    "tactics": [
+        "TA0004",
+        "TA0003"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "DIRECTORY",
+        "COMPONENT"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--47899da0-29da-4518-b94a-0f08bc01e5c9",
+        "relationship--728c2a84-ac7d-4b17-a287-4c692d717065",
+        "relationship--a92197a8-ec5c-4366-92af-f45078a3bfd7",
+        "relationship--ab069468-3dff-4c77-9293-adb0b2627a4e",
+        "relationship--b9f4c6ef-d0bd-4651-9445-4705e1fd85f2",
+        "relationship--df898edd-0829-4222-b50b-e7cbf75a0fb4",
+        "relationship--e65112dc-8a58-486f-9f3b-5a84925a3e53"
+    ],
+    "graph_nodes": [
+        {
+            "count": 15,
+            "id": 0,
+            "texts": [
+                "Empire",
+                "WMI debugging",
+                "Magnify.exe",
+                "Utilman.exe",
+                "sethc.exe",
+                "binaries",
+                "cmd.exe",
+                "sticky keys",
+                "sticky-keys technique",
+                "intrusions",
+                "Sticky Keys replacement",
+                "RDP sessions",
+                "sticky keys",
+                "command prompt",
+                "sticky-keys"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 6,
+            "id": 1,
+            "texts": [
+                "APT41",
+                "APT3",
+                "Deep Panda",
+                "Axiom actors",
+                "Fox Kitten",
+                "APT29"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 1,
+            "id": 2,
+            "texts": [
+                "Sticky Keys binary C:\\Windows\\System32\\sethc.exe"
+            ],
+            "label": "DIRECTORY"
+        },
+        {
+            "count": 2,
+            "id": 3,
+            "texts": [
+                "RDP login screen",
+                "unauthenticated, privileged console access"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "remote systems"
+            ],
+            "label": "COMPONENT"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 6
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "3_0",
+            "source": 3,
+            "dest": 0,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 6,
+        "replace": 2,
+        "with": 1,
+        "bypass": 1,
+        "on": 1,
+        "during": 1,
+        "within": 1,
+        "launch": 1,
+        "obtain": 1
+    }
+}

@@ -1,0 +1,247 @@
+{
+    "id": "T1213",
+    "tech_id": "T1213",
+    "tech_name": "Data from Information Repositories",
+    "best_phrases": [],
+    "tactics": [
+        "TA0009"
+    ],
+    "features": [
+        "NETWORK",
+        "DATA",
+        "COMPONENT",
+        "FUNCTION",
+        "DIRECTORY",
+        "USER"
+    ],
+    "locations": [
+        "Linux",
+        "Windows",
+        "macOS",
+        "SaaS",
+        "Office 365",
+        "Google Workspace",
+        "IaaS"
+    ],
+    "procedures": [
+        "relationship--23749a96-a086-4e14-b6c1-44bc9c7d99c1",
+        "relationship--5377ce7e-ae13-4902-a7f9-98e83d04808b",
+        "relationship--628054bd-e758-4528-a1fb-40983ecec149",
+        "relationship--8d07ed87-6692-4010-8c94-c12cbf3885ca",
+        "relationship--b3e2abaa-f431-4791-95d0-d44f3a74a73f",
+        "relationship--c0a23c9d-a972-46a9-9a86-a440bbfd5d1f",
+        "relationship--cba11c5f-afe2-42e1-8995-8b1105d75e7a"
+    ],
+    "graph_nodes": [
+        {
+            "count": 7,
+            "id": 0,
+            "texts": [
+                "FIN6",
+                "APT29",
+                "Fox Kitten",
+                "APT28",
+                "Turla",
+                "LAPSUS$",
+                "P.A.S. Webshell"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 4,
+            "id": 1,
+            "texts": [
+                "user accounts",
+                "schemas",
+                "wikis",
+                "organization"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 8,
+            "id": 2,
+            "texts": [
+                "user accounts",
+                "schemas",
+                "sensitive corporate information",
+                "valuable information",
+                "files",
+                "documents",
+                "high-privilege account credentials",
+                "data"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 4,
+            "id": 3,
+            "texts": [
+                "systems",
+                "victim security",
+                "Microsoft Teams",
+                "IT environments"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 10,
+            "id": 4,
+            "texts": [
+                "SQL Server",
+                "victim security",
+                "Microsoft Teams",
+                "IT environments",
+                "internal central database",
+                "network",
+                "Slack",
+                "organization collaboration channels",
+                "MS Teams",
+                "SQL databases"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 2,
+            "id": 5,
+            "texts": [
+                "internal knowledge repositories",
+                "information repositories"
+            ],
+            "label": "DIRECTORY"
+        },
+        {
+            "count": 2,
+            "id": 6,
+            "texts": [
+                "victims",
+                "victim"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 4,
+            "id": 7,
+            "texts": [
+                "services",
+                "internal business operations",
+                "products",
+                "custom .NET tool"
+            ],
+            "label": "FUNCTION"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 7
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 2
+        },
+        {
+            "id": "5_6",
+            "source": 5,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "1_6",
+            "source": 1,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "2_7",
+            "source": 2,
+            "dest": 7,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 4
+        },
+        {
+            "id": "2_5",
+            "source": 2,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "0_7",
+            "source": 0,
+            "dest": 7,
+            "count": 1
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "4_6",
+            "source": 4,
+            "dest": 6,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "collect": 3,
+        "from": 7,
+        "run": 1,
+        "access": 3,
+        "view": 1,
+        "of": 4,
+        "on": 1,
+        "mine": 1,
+        "use": 1,
+        "search": 1,
+        "for": 2,
+        "discover": 1,
+        "extract": 1
+    }
+}

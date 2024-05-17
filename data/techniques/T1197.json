@@ -1,0 +1,210 @@
+{
+    "id": "T1197",
+    "tech_id": "T1197",
+    "tech_name": "BITS Jobs",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005",
+        "TA0003"
+    ],
+    "features": [
+        "FUNCTION",
+        "COMPONENT",
+        "NETWORK",
+        "REGISTRY",
+        "DATA"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--0ff081b9-5dde-4b48-a90f-3baf26b32a16",
+        "relationship--19cc1620-de41-4076-b5b8-9d64364a578a",
+        "relationship--2296f1da-0910-46ee-81f7-5d10cb8753cd",
+        "relationship--2d0748e3-7427-4847-9861-75680f6aacb3",
+        "relationship--35e66e21-edaf-46ed-8cec-32ba4ce92aa4",
+        "relationship--45d8c4f2-27e4-4063-9eec-d8023c61c74b",
+        "relationship--4f290a4e-983c-460f-b00c-e1bc8dd4d413",
+        "relationship--94e040f2-c1e7-4159-839f-c4a2497232f3",
+        "relationship--b5894858-3f86-48f4-8ae0-7fcb8c19c36b",
+        "relationship--c6b51e0c-d6a8-4815-b1fe-fb065ac0bcaa",
+        "relationship--cdf7492f-4cdd-4119-aa5e-0d94a07a3965",
+        "relationship--d316289b-26fa-49d7-8ed0-3fa56cc858b7",
+        "relationship--fb229043-04d8-40e8-a155-bd2471bfc5c3"
+    ],
+    "graph_nodes": [
+        {
+            "count": 11,
+            "id": 0,
+            "texts": [
+                "MarkiRAT",
+                "Patchwork",
+                "Bazar",
+                "Cobalt Strike",
+                "Egregor",
+                "UBoatRAT",
+                "ProLock",
+                "Leviathan",
+                "APT39",
+                "APT41",
+                "Wizard Spider"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 25,
+            "id": 1,
+            "texts": [
+                "BITS Utility",
+                "BITS jobs",
+                "payloads",
+                "Windows BITS functionality",
+                "hosted \"beacon\" payload",
+                "BITSAdmin",
+                "BITSadmin",
+                "JPIN variant",
+                "BITS service",
+                "backdoor payload",
+                "/SetNotifyCmdLine option",
+                "BITSAdmin",
+                "BITS jobs",
+                "payload",
+                "BITSAdmin",
+                "tools",
+                "BITSAdmin",
+                "BITS Jobs",
+                "process",
+                "BITSAdmin",
+                "payloads",
+                "batch scripts",
+                "WMIC",
+                "BITSAdmin transfer",
+                "ransomware payload"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 2,
+            "id": 2,
+            "texts": [
+                "C2",
+                "BITS protocol"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "DLLs"
+            ],
+            "label": "REGISTRY"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "advantage"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 3,
+            "id": 5,
+            "texts": [
+                "system",
+                "compromised host",
+                "compromised machine"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 1,
+            "id": 6,
+            "texts": [
+                "stolen data"
+            ],
+            "label": "DATA"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 14
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_6",
+            "source": 0,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "6_5",
+            "source": 6,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 9,
+        "connect": 1,
+        "download": 6,
+        "execute": 2,
+        "by": 2,
+        "take": 1,
+        "of": 3,
+        "run": 1,
+        "in": 1,
+        "exfiltrate": 1,
+        "from": 1,
+        "create": 1,
+        "launch": 1,
+        "install": 1,
+        "utilize": 1,
+        "to": 1
+    }
+}

@@ -1,0 +1,133 @@
+{
+    "id": "T1484.002",
+    "tech_id": "T1484.002",
+    "tech_name": "Domain Trust Modification",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005",
+        "TA0004"
+    ],
+    "features": [
+        "DATA",
+        "NETWORK",
+        "FUNCTION",
+        "USER",
+        "REGISTRY"
+    ],
+    "locations": [
+        "Windows",
+        "Azure AD"
+    ],
+    "procedures": [
+        "relationship--6ea91f17-6015-4339-9b86-2bf51977a7aa",
+        "relationship--e43b9163-36cb-469a-9c47-9e4bd8af1383"
+    ],
+    "graph_nodes": [
+        {
+            "count": 2,
+            "id": 0,
+            "texts": [
+                "AADInternals",
+                "backdoor"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 3,
+            "id": 1,
+            "texts": [
+                "domain",
+                "federated domain",
+                "domain"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 2,
+            "id": 2,
+            "texts": [
+                "user",
+                "tenant"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 4,
+            "id": 3,
+            "texts": [
+                "DesktopSSO information",
+                "domain federation trust settings",
+                "Azure AD administrative permissions",
+                "authorization tokens"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "APT29"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "SAML signing certificate"
+            ],
+            "label": "REGISTRY"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "4_3",
+            "source": 4,
+            "dest": 3,
+            "count": 3
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "5_3",
+            "source": 5,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "create": 1,
+        "convert": 1,
+        "to": 1,
+        "authenticate": 1,
+        "across": 1,
+        "modify": 1,
+        "change": 1,
+        "use": 1,
+        "configure": 1,
+        "accept": 1,
+        "sign": 1
+    }
+}

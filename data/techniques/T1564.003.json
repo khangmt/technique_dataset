@@ -1,0 +1,397 @@
+{
+    "id": "T1564.003",
+    "tech_id": "T1564.003",
+    "tech_name": "Hidden Window",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005"
+    ],
+    "features": [
+        "FUNCTION",
+        "COMPONENT",
+        "DATA",
+        "USER",
+        "DIRECTORY",
+        "REGISTRY",
+        "NETWORK"
+    ],
+    "locations": [
+        "macOS",
+        "Windows",
+        "Linux"
+    ],
+    "procedures": [
+        "relationship--05491bb5-e209-4480-a1a8-9b385efe14ad",
+        "relationship--0ac2c282-04a7-4fb7-b6ac-ec8a9bac6db1",
+        "relationship--1248ffe0-ad3b-43a6-a358-763d8eab7fba",
+        "relationship--17ac7d6e-828c-4b8c-84de-4e0575f1703a",
+        "relationship--1c1296da-4504-4f00-b16a-8ecc29820ea9",
+        "relationship--27e91ac8-9463-4a7a-8f1f-89abeba1b02d",
+        "relationship--2e6e8722-d09d-402e-9ea8-ccf8412339d0",
+        "relationship--3339e98d-9078-496e-bc24-8bcf5f86ac33",
+        "relationship--3877277b-ae7c-4cb8-b564-3263b235c1e7",
+        "relationship--393b11b3-cf22-48e0-afb6-e9c05411b400",
+        "relationship--41664428-398a-4b71-9418-b1bd1e4cefc4",
+        "relationship--527e03b3-5b14-4a6c-ab05-0e18bac0357d",
+        "relationship--52ba680e-2884-4874-a0ea-470c96c4af51",
+        "relationship--57cb89ed-ead5-46b1-ade9-68e580274f65",
+        "relationship--5b17eed1-2db5-4c35-b04e-cbb0b7edb8d4",
+        "relationship--5c9bea96-819a-4a39-9814-62f3473530a4",
+        "relationship--673bf715-0ccc-48fd-93b5-570b417cc41a",
+        "relationship--75bd34c6-c8b3-4b5e-aac4-9e410515169c",
+        "relationship--783f71a1-8a2b-4dbe-9011-a24042f36c88",
+        "relationship--7ded147e-f252-490a-b0d7-d8b3492c84eb",
+        "relationship--85a1a7f3-bdcc-4473-ba3c-46d6946d6996",
+        "relationship--948a5d37-65d1-403f-99bb-0f08186aeebc",
+        "relationship--9f434edb-a9f5-4306-9868-0914efbb1b8a",
+        "relationship--a195cd11-43dc-4ad8-a48d-a1c705bb8b90",
+        "relationship--a987bd4f-dcb3-4fa8-8ca3-b76cfea921f6",
+        "relationship--ab3cf933-236f-4255-9ca6-24826f9bbe99",
+        "relationship--b1aab9dc-267d-4208-b1bc-14396d7e0d8d",
+        "relationship--c3e3d9d3-6fd2-43a0-ba72-bf7c259768d5",
+        "relationship--c9076ac7-11d9-44fc-91dc-0f927d62497f",
+        "relationship--cc1a0331-2b30-489c-ab4d-8853cff3a0b0",
+        "relationship--ce0e4e49-3c40-4bce-96bd-460df4cb2124",
+        "relationship--db8530c2-ce41-4943-8a17-91502187fd06",
+        "relationship--dca41ced-2af1-4cec-8ed2-a1c77bc535ed",
+        "relationship--e60f4fce-425c-45f5-a6f3-ee6c3f808fb9",
+        "relationship--e8ab5495-dbc7-470a-b3e7-cbbfbf29094e",
+        "relationship--ec5259f2-5a6c-4d42-bf21-f91c2df64f61",
+        "relationship--ef934eda-a3ad-40fb-8923-fc2f72fb8f6e",
+        "relationship--fa0705b0-8006-4e73-9a7c-aa051320f8b4",
+        "relationship--fbc96b86-2c57-40b6-89f7-d7a755275a45",
+        "relationship--fcd9b8a1-60c0-4d6b-9742-77f9104f8e56"
+    ],
+    "graph_nodes": [
+        {
+            "count": 32,
+            "id": 0,
+            "texts": [
+                "Astaroth",
+                "QuietSieve",
+                "StrongPity",
+                "Kevin",
+                "HAMMERTOSS",
+                "DarkHydrus",
+                "CopyKittens",
+                "APT3",
+                "APT28",
+                "APT32",
+                "Gorgon Group",
+                "APT19",
+                "Deep Panda",
+                "KeyBoy",
+                "Agent Tesla",
+                "SharpDisco",
+                "KOCTOPUS",
+                "BONDUPDATER",
+                "Kivars",
+                "QUIETCANARY",
+                "Higaisa",
+                "Gamaredon Group",
+                "AvosLocker",
+                "Meteor",
+                "InvisiMole",
+                "Kimsuky",
+                "PowerShower",
+                "Snip3",
+                "WindTail",
+                "Metamorfo",
+                "Cuba",
+                "HotCroissant"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 34,
+            "id": 1,
+            "texts": [
+                "module",
+                "application",
+                "payloads",
+                "document search module",
+                "ShowWindow API function",
+                "Koadic",
+                "command Powershell.exe -ExecutionPolicy Bypass -WindowStyle Hidden",
+                "SILENTTRINITY",
+                "QuasarRAT",
+                "payload",
+                "ProcessWindowStyle.Hidden",
+                "MCMD",
+                "processes",
+                "them",
+                "payload",
+                "AsyncRAT",
+                "ProcessWindowStyle.Hidden",
+                "activity",
+                "processes",
+                "payload",
+                "hidcon",
+                "batch files",
+                "ShowWindow API function",
+                "PowerShell",
+                "legitimate tools",
+                "information gathering module",
+                "future powershell.exe instances",
+                "Magic Hound malware",
+                "function",
+                "PowerShell scripts",
+                "ShowWindow() WINAPI call",
+                "operations",
+                "Ursnif droppers",
+                "malware"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 12,
+            "id": 2,
+            "texts": [
+                "XSL script parameter",
+                "vShow",
+                "WindowStyle parameter",
+                "WindowStyle parameter",
+                "window state",
+                "user-agent string Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",
+                "default",
+                "coordinates",
+                "window position",
+                "dropped file",
+                "given file",
+                "COM properties"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 14,
+            "id": 3,
+            "texts": [
+                "zero",
+                "which",
+                "-WindowStyle Hidden",
+                "-windowstyle hidden",
+                "-WindowStyle hidden",
+                "-w hidden",
+                "-W Hidden",
+                "-w hidden",
+                "-w Hidden",
+                "-WindowsStyle Hidden",
+                "-windowstyle hidden",
+                "visibility",
+                "Nomadic Octopus",
+                "that"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 30,
+            "id": 4,
+            "texts": [
+                "hidden window",
+                "hidden window",
+                "console window",
+                "window",
+                "PowerShell windows",
+                "PowerShell windows",
+                "PowerShell windows",
+                "window",
+                "process windows",
+                "Windows systems",
+                "PowerShell window",
+                "windows",
+                "command window",
+                "PowerShell window",
+                "active windows",
+                "hidden window",
+                "hidden window",
+                "hidden console window",
+                "console window",
+                "console window",
+                "hidden window",
+                "hidden windows",
+                "AV software window",
+                "hidden window",
+                "hidden window",
+                "OS",
+                "GUI",
+                "hidden PowerShell windows",
+                "window",
+                "hidden windows"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 4,
+            "id": 5,
+            "texts": [
+                "user",
+                "targeted user",
+                "victim",
+                "victim"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 2,
+            "id": 6,
+            "texts": [
+                "hidden",
+                "hidden"
+            ],
+            "label": "DIRECTORY"
+        },
+        {
+            "count": 1,
+            "id": 7,
+            "texts": [
+                "registry key"
+            ],
+            "label": "REGISTRY"
+        },
+        {
+            "count": 1,
+            "id": 8,
+            "texts": [
+                "C2"
+            ],
+            "label": "NETWORK"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 14
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 3
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 8
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 13
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 20
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 2
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 5
+        },
+        {
+            "id": "4_5",
+            "source": 4,
+            "dest": 5,
+            "count": 3
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 6
+        },
+        {
+            "id": "2_6",
+            "source": 2,
+            "dest": 6,
+            "count": 2
+        },
+        {
+            "id": "3_5",
+            "source": 3,
+            "dest": 5,
+            "count": 2
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_7",
+            "source": 0,
+            "dest": 7,
+            "count": 1
+        },
+        {
+            "id": "8_2",
+            "source": 8,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "load": 1,
+        "with": 7,
+        "set to": 1,
+        "open": 1,
+        "execute": 8,
+        "in": 13,
+        "hide": 12,
+        "from": 6,
+        "for": 3,
+        "by": 3,
+        "use": 15,
+        "conceal": 6,
+        "set": 2,
+        "to": 3,
+        "on": 1,
+        "download": 2,
+        "modify": 1,
+        "prevent": 1,
+        "create": 1,
+        "run": 1,
+        "decrease": 1,
+        "add": 1,
+        "have": 1,
+        "instruct": 1,
+        "perform on": 1
+    }
+}

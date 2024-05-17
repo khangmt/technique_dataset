@@ -1,0 +1,158 @@
+{
+    "id": "T1583.003",
+    "tech_id": "T1583.003",
+    "tech_name": "Virtual Private Server",
+    "best_phrases": [],
+    "tactics": [
+        "TA0042"
+    ],
+    "features": [
+        "NETWORK",
+        "COMPONENT",
+        "FUNCTION",
+        "USER",
+        "DATA"
+    ],
+    "locations": [
+        "PRE"
+    ],
+    "procedures": [
+        "relationship--3e375d96-bc20-431e-ab35-f2e05fb88343",
+        "relationship--a12a296d-3cdb-4a49-840a-4ecd073b5312",
+        "relationship--ae28ef39-1e4f-41e5-9ffa-877030753852",
+        "relationship--c024f146-ef3e-4220-8658-b5ad312e1df1",
+        "relationship--fedcb717-2453-4c77-8f05-8a28f934725e"
+    ],
+    "graph_nodes": [
+        {
+            "count": 6,
+            "id": 0,
+            "texts": [
+                "LAPSUS$",
+                "Axiom",
+                "Dragonfly",
+                "campaigns",
+                "TEMP.Veles",
+                "HAFNIUM"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 2,
+            "id": 1,
+            "texts": [
+                "VPS hosting providers",
+                "VPS hosting providers"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 1,
+            "id": 2,
+            "texts": [
+                "infrastructure"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "targeting"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "intended victims"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 4,
+            "id": 5,
+            "texts": [
+                "VPS infrastructure",
+                "Virtual Private Server (VPS) infrastructure",
+                "leased virtual private servers",
+                "VPS"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 1,
+            "id": 6,
+            "texts": [
+                "United States"
+            ],
+            "label": "DATA"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 4
+        },
+        {
+            "id": "5_0",
+            "source": 5,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "0_6",
+            "source": 0,
+            "dest": 6,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 3,
+        "for": 2,
+        "in": 5,
+        "of": 1,
+        "acquire": 1,
+        "from": 1,
+        "operate": 1
+    }
+}

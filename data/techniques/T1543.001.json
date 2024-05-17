@@ -1,0 +1,309 @@
+{
+    "id": "T1543.001",
+    "tech_id": "T1543.001",
+    "tech_name": "Launch Agent",
+    "best_phrases": [],
+    "tactics": [
+        "TA0003",
+        "TA0004"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "DIRECTORY",
+        "COMPONENT",
+        "NETWORK",
+        "ENCRYPTION",
+        "USER"
+    ],
+    "locations": [
+        "macOS"
+    ],
+    "procedures": [
+        "relationship--02e0a0a6-2b51-4266-ba4e-1af344f20f62",
+        "relationship--1308cf20-40b9-4163-bb68-b3f08b0f53b8",
+        "relationship--22a54751-c1f2-498a-bae0-fa4736c86bf5",
+        "relationship--32b0dfd5-4909-490e-83a4-963a30b44104",
+        "relationship--4065a71f-ae1b-4dfc-9825-56d2af6d589c",
+        "relationship--4c391d8f-4db1-43b3-857e-b8c507f27bdb",
+        "relationship--4f8c284a-faa2-4f58-be3b-e27f6ed84423",
+        "relationship--5a872d22-22e6-49b1-8ddd-7efc6c403ad6",
+        "relationship--72df7e88-84ce-449b-ae0f-a8ceb9316964",
+        "relationship--979bd2a9-bc77-4741-bc79-0badc9e1e98c",
+        "relationship--9c59b652-09bc-4457-8342-949a87c1fafa",
+        "relationship--ad257565-2097-4cdc-9a52-3e54a7188f02",
+        "relationship--b6f451a7-f3a8-4d62-a449-21af7731d369",
+        "relationship--e1f316bc-b215-4a72-9108-7c5bd69f0454",
+        "relationship--e230326e-186e-490e-9299-fbc000d33d0a",
+        "relationship--e42547e7-0bf9-4a29-b3af-f80bd0b78e38",
+        "relationship--eeae0ab0-541c-401f-aa7c-af674bacdc6c",
+        "relationship--feccb439-0a34-4224-ba12-62e11215d5a5"
+    ],
+    "graph_nodes": [
+        {
+            "count": 17,
+            "id": 0,
+            "texts": [
+                "Calisto",
+                "MacSpy",
+                "FruitFly",
+                "Proton",
+                "Keydnap",
+                "CrossRAT",
+                "Dok",
+                "Dacls",
+                "Bundlore",
+                "MacMa",
+                "OSX_OCEANLOTUS.D",
+                "ThiefQuest",
+                "macOS.OSAMiner",
+                "CoinTicker",
+                "Green Lambert",
+                "CookieMiner",
+                "NETWIRE"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 12,
+            "id": 1,
+            "texts": [
+                ".plist file",
+                "generated name",
+                "plist file",
+                "format",
+                "com.apple.softwareupdate.plist file",
+                "root privileges",
+                "RunAtLoad value",
+                "persistence file",
+                "launch item",
+                "plist file",
+                "plist extension",
+                "RunAtLoad key-value pair"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 7,
+            "id": 2,
+            "texts": [
+                "/Library/LaunchAgents folder",
+                "/LaunchAgents folder",
+                "folder",
+                "/Library/LaunchAgents",
+                "~/Library/LaunchAgents/ folder",
+                "~/Library/ folder",
+                "folder"
+            ],
+            "label": "DIRECTORY"
+        },
+        {
+            "count": 18,
+            "id": 3,
+            "texts": [
+                "Launch Agent",
+                "Launch Agent",
+                "com.random.name.plist",
+                "LaunchAgent",
+                "variations",
+                "embedded encrypted launch agent property list template",
+                "persistent binary",
+                "Stripped Payloads",
+                "Agent",
+                ".espl.plist",
+                "user launch agents",
+                "com.apple.[random",
+                "Launch Agent",
+                "Launch Agents",
+                "Komplex trojan",
+                "with",
+                "persistent launch agent",
+                "launch agents"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "macOS"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 11,
+            "id": 5,
+            "texts": [
+                "LaunchAgents",
+                "true",
+                "value Aqua",
+                "there",
+                ".espl.plist",
+                "user launch agents",
+                "com.apple.[random",
+                "string].plist",
+                "true",
+                "with",
+                "persistent launch agent"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 1,
+            "id": 6,
+            "texts": [
+                "network traffic"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 1,
+            "id": 7,
+            "texts": [
+                "LimitLoadToSessionType key"
+            ],
+            "label": "ENCRYPTION"
+        },
+        {
+            "count": 1,
+            "id": 8,
+            "texts": [
+                "logged in GUI user"
+            ],
+            "label": "USER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 6
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 5
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 5
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 9
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 3
+        },
+        {
+            "id": "0_6",
+            "source": 0,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "6_1",
+            "source": 6,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 2
+        },
+        {
+            "id": "3_7",
+            "source": 3,
+            "dest": 7,
+            "count": 1
+        },
+        {
+            "id": "7_5",
+            "source": 7,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "5_8",
+            "source": 5,
+            "dest": 8,
+            "count": 1
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "3_5",
+            "source": 3,
+            "dest": 5,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "add": 1,
+        "to": 3,
+        "by": 2,
+        "create": 6,
+        "on": 2,
+        "install": 3,
+        "redirect": 1,
+        "with": 7,
+        "for": 1,
+        "maintain": 2,
+        "in": 8,
+        "from": 1,
+        "set": 1,
+        "include": 1,
+        "be": 1,
+        "use": 2,
+        "locate in": 1,
+        "place": 1,
+        "of": 1,
+        "set to": 1,
+        "instal": 1
+    }
+}

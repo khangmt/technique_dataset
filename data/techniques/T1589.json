@@ -1,0 +1,194 @@
+{
+    "id": "T1589",
+    "tech_id": "T1589",
+    "tech_name": "Gather Victim Identity Information",
+    "best_phrases": [],
+    "tactics": [
+        "TA0043"
+    ],
+    "features": [
+        "USER",
+        "DATA",
+        "NETWORK",
+        "FUNCTION"
+    ],
+    "locations": [
+        "PRE"
+    ],
+    "procedures": [
+        "relationship--037e2e7e-5d23-48d6-90e6-796693a0caea",
+        "relationship--1503d568-e350-4021-ac47-a0913f6f4f1d",
+        "relationship--56547ce9-04bc-4540-8865-69082bac4e63",
+        "relationship--5e3036ee-9d90-4fbb-a435-ff6caf9d38c6",
+        "relationship--7133e850-c3f2-48c2-b610-22e3501354df",
+        "relationship--96797e47-8984-40f8-ac55-af9fd0fecf55",
+        "relationship--d0946a00-610b-44d3-aec6-be292cfac52a"
+    ],
+    "graph_nodes": [
+        {
+            "count": 6,
+            "id": 0,
+            "texts": [
+                "LAPSUS$",
+                "HEXANE",
+                "Lazarus Group",
+                "APT32",
+                "threat actors",
+                "Magic Hound"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 3,
+            "id": 1,
+            "texts": [
+                "detailed information",
+                "privileges",
+                "organizational roles"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 3,
+            "id": 2,
+            "texts": [
+                "social engineering lures",
+                "social engineering attacks",
+                "mobile phone numbers"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 7,
+            "id": 3,
+            "texts": [
+                "target employees",
+                "potential victims",
+                "employees",
+                "potential targets",
+                "activists",
+                "bloggers",
+                "potential targets"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 6,
+            "id": 4,
+            "texts": [
+                "targeted organizations",
+                "FIN13",
+                "extensive reconnaissance research",
+                "activists",
+                "bloggers",
+                "people"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 3,
+            "id": 5,
+            "texts": [
+                "targeted surveillance",
+                "mobile malware",
+                "phishing operations"
+            ],
+            "label": "FUNCTION"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 3
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "4_3",
+            "source": 4,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "5_4",
+            "source": 5,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "5_3",
+            "source": 5,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "2_5",
+            "source": 2,
+            "dest": 5,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "gather": 1,
+        "enhance": 1,
+        "of": 2,
+        "identify": 1,
+        "at": 2,
+        "research": 1,
+        "target": 2,
+        "conduct": 2,
+        "on": 1,
+        "against": 1,
+        "base": 1,
+        "acquire": 1,
+        "for": 1
+    }
+}

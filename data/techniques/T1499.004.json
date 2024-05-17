@@ -1,0 +1,103 @@
+{
+    "id": "T1499.004",
+    "tech_id": "T1499.004",
+    "tech_name": "Application or System Exploitation",
+    "best_phrases": [
+        "CVE-2015-5374"
+    ],
+    "tactics": [
+        "TA0040"
+    ],
+    "features": [
+        "FUNCTION",
+        "VULNERABILITY",
+        "NETWORK",
+        "COMPONENT"
+    ],
+    "locations": [
+        "Windows",
+        "Azure AD",
+        "Office 365",
+        "SaaS",
+        "IaaS",
+        "Linux",
+        "macOS",
+        "Google Workspace"
+    ],
+    "procedures": [
+        "relationship--db95e799-2b1b-48bc-b27e-7c7af554250b"
+    ],
+    "graph_nodes": [
+        {
+            "count": 1,
+            "id": 0,
+            "texts": [
+                "Industroyer"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 1,
+            "id": 1,
+            "texts": [
+                "custom DoS tool"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 2,
+            "texts": [
+                "CVE-2015-5374"
+            ],
+            "label": "VULNERABILITY"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "hardcoded IP addresses"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "Siemens SIPROTEC devices"
+            ],
+            "label": "COMPONENT"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 2,
+        "target": 1,
+        "of": 1
+    }
+}

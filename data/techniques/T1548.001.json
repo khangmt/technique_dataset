@@ -1,0 +1,104 @@
+{
+    "id": "T1548.001",
+    "tech_id": "T1548.001",
+    "tech_name": "Setuid and Setgid",
+    "best_phrases": [],
+    "tactics": [
+        "TA0004",
+        "TA0005"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "COMPONENT"
+    ],
+    "locations": [
+        "Linux",
+        "macOS"
+    ],
+    "procedures": [
+        "relationship--72b7d86e-5e78-4bc6-a16e-c4380d12d627",
+        "relationship--c8a0012e-9b2c-4fef-8aeb-7bc77d1b16c3"
+    ],
+    "graph_nodes": [
+        {
+            "count": 1,
+            "id": 0,
+            "texts": [
+                "Keydnap"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 3,
+            "id": 1,
+            "texts": [
+                "setuid flag",
+                "future",
+                "high privileges"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 5,
+            "id": 2,
+            "texts": [
+                "binary",
+                "Exaramel",
+                "binary",
+                "commands",
+                "setuid functionality"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "Linux"
+            ],
+            "label": "COMPONENT"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "add": 1,
+        "to": 2,
+        "in": 1,
+        "by": 2,
+        "for": 1,
+        "execute": 1,
+        "with": 2
+    }
+}

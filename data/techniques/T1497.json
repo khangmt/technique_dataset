@@ -1,0 +1,302 @@
+{
+    "id": "T1497",
+    "tech_id": "T1497",
+    "tech_name": "Virtualization/Sandbox Evasion",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005",
+        "TA0007"
+    ],
+    "features": [
+        "FUNCTION",
+        "COMPONENT",
+        "DATA",
+        "NETWORK",
+        "ENCRYPTION"
+    ],
+    "locations": [
+        "Windows",
+        "macOS",
+        "Linux"
+    ],
+    "procedures": [
+        "relationship--02a35538-7a82-4b30-94ac-e943c19acfe4",
+        "relationship--061f0d25-40fd-440a-b7e8-54ad0209f5f4",
+        "relationship--20dfecf8-b324-4584-9526-9de6a14dfa27",
+        "relationship--2c112e41-be75-4f99-84ac-ce7776f88fca",
+        "relationship--2f5dca6b-3cd3-4b2a-b097-7eddd80bc366",
+        "relationship--3ff416c3-63dd-4050-82f9-fcf4820a7b12",
+        "relationship--4d63c2b7-03e6-4747-81f2-9197faccd5fc",
+        "relationship--4f7680e9-3dd7-4365-a1cc-75342808e2c2",
+        "relationship--5edc2d20-2e9a-4587-9656-dfe38eb1d66d",
+        "relationship--6176ae5b-cd96-4b15-8539-5fb6e230fd5d",
+        "relationship--6515b62c-af1a-4b22-baca-0710ac898815",
+        "relationship--73d5e6ab-9d0c-4884-9db0-02033523e61a",
+        "relationship--7cc93842-6c19-4d5c-8e9b-81dfa58e859e",
+        "relationship--89ef773b-6d5d-482e-9afd-bc892eb8093e",
+        "relationship--8f88490e-346b-4462-b077-0211707c21a3",
+        "relationship--bb97930f-9c3a-4fac-84b1-8f954633aef0",
+        "relationship--c9a7b01c-5ba6-41db-944a-ed5ba8531398",
+        "relationship--e9be6f26-bcc8-49b2-b1aa-e8ce664a1fcb",
+        "relationship--f60f8552-3c43-4b43-ad23-2b00b6172b00"
+    ],
+    "graph_nodes": [
+        {
+            "count": 16,
+            "id": 0,
+            "texts": [
+                "StoneDrill",
+                "Agent Tesla",
+                "Carberp",
+                "Black Basta",
+                "threat actors",
+                "Bazar",
+                "Gelsemium",
+                "CHOPSTICK",
+                "Metamorfo",
+                "Bumblebee",
+                "attacker",
+                "Egregor",
+                "Kevin",
+                "Pteranodon",
+                "Squirrelwaffle",
+                "Hancitor"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 31,
+            "id": 1,
+            "texts": [
+                "anti-emulation techniques",
+                "sandboxes",
+                "emulators",
+                "anti-sandboxing and anti-virtualization checks",
+                "hooks",
+                "bootkit",
+                "trojan",
+                "sandbox analysis",
+                "analysis software",
+                "calls",
+                "kernel32.beep function",
+                "droppers",
+                "anti-analysis checks",
+                "malware",
+                "1550 calls",
+                "printf",
+                "junk code",
+                "random activity",
+                "malware behavior",
+                "runtime checks",
+                "\"vmdetect.exe\" executable",
+                "anti-virtualization checks",
+                "Darkhotel malware",
+                "sandbox detection",
+                "anti-analysis and anti-sandbox techniques",
+                "CozyCar",
+                "C2 communication attempts",
+                "anti-detection functions",
+                "analysis platforms",
+                "sandboxes",
+                "macro"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 19,
+            "id": 2,
+            "texts": [
+                "automated analysis",
+                "sandboxes",
+                "emulators",
+                "compromised system",
+                "VMware",
+                "sandbox analysis",
+                "analysis software",
+                "compromised host",
+                "sandbox analysis",
+                "analysis environment",
+                "virtual machines",
+                "sandbox",
+                "virtualized analysis environment",
+                "automated analysis",
+                "sandboxes",
+                "virtual machine",
+                "sandbox environments",
+                "analysis platforms",
+                "sandboxes"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 6,
+            "id": 3,
+            "texts": [
+                "random number",
+                "strings",
+                "versions",
+                "time interval",
+                "hardcoded list",
+                "ActiveDocument shape object"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 3,
+            "id": 4,
+            "texts": [
+                "log analysis",
+                "beginning",
+                "that"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "decryption"
+            ],
+            "label": "ENCRYPTION"
+        },
+        {
+            "count": 2,
+            "id": 6,
+            "texts": [
+                "IP addresses",
+                "lure message"
+            ],
+            "label": "NETWORK"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 16
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 6
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 3
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 4
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "5_3",
+            "source": 5,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "3_6",
+            "source": 3,
+            "dest": 6,
+            "count": 2
+        },
+        {
+            "id": "6_2",
+            "source": 6,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "6_1",
+            "source": 6,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "4_2",
+            "source": 4,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 6,
+        "prevent": 2,
+        "by": 2,
+        "perform": 2,
+        "on": 2,
+        "remove": 1,
+        "instal": 1,
+        "evade": 2,
+        "make": 1,
+        "hinder": 2,
+        "of": 4,
+        "to": 3,
+        "run": 1,
+        "execute": 1,
+        "overload": 1,
+        "send": 1,
+        "generate": 1,
+        "obscure": 1,
+        "include": 1,
+        "identify": 3,
+        "embed": 1,
+        "at": 1,
+        "within": 1,
+        "employ": 1,
+        "inside": 1,
+        "for": 1,
+        "between": 1,
+        "contain": 1,
+        "belong": 1,
+        "in": 1
+    }
+}

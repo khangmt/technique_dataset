@@ -1,0 +1,361 @@
+{
+    "id": "T1027.011",
+    "tech_id": "T1027.011",
+    "tech_name": "Fileless Storage",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005"
+    ],
+    "features": [
+        "REGISTRY",
+        "DATA",
+        "FUNCTION",
+        "ENCRYPTION",
+        "NETWORK",
+        "COMPONENT",
+        "DIRECTORY"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--19151c17-b3cb-436f-88dc-16aabd96e04f",
+        "relationship--1b45a635-4384-4cce-ac50-49826659dcb2",
+        "relationship--2e9e3384-b624-46aa-9a15-eff8eae2b6e1",
+        "relationship--3a11bfd9-1c27-4f54-926d-883cfa9b69cd",
+        "relationship--414a365a-e24b-44f2-8130-77435f2e18ef",
+        "relationship--4459b6fe-e1d0-40cb-b6f1-efc0e4431442",
+        "relationship--4fba775c-148d-4fc5-b56a-d5600b23654d",
+        "relationship--59336377-92b2-4a82-97a1-414710a0a3dc",
+        "relationship--596099b1-11a9-43c3-ae21-d5a31233e5c2",
+        "relationship--5f3176fa-827b-4c3c-ba71-6e8ef6cdebb9",
+        "relationship--5f488c35-1d8c-4596-985c-11f0ee37b004",
+        "relationship--64cf2e56-3d7e-4999-a0ae-eb856b8e8f20",
+        "relationship--690d1b72-9fb0-426a-9db4-075abf045688",
+        "relationship--73aee1df-5faf-456f-8bde-74b531c1c2b9",
+        "relationship--8a6bfa36-adff-402d-9913-be2e45bc22aa",
+        "relationship--8cc515c2-01b6-4cd7-a928-1131ffe5f11c",
+        "relationship--91aa29c1-28a9-414a-aa3c-a6293b8d078f",
+        "relationship--9d9b0e66-5b9d-4711-8e5a-23e2807ce7ef",
+        "relationship--9de8aee7-1867-48a4-9a78-3076853e43ac",
+        "relationship--a2648a96-b282-4624-a91c-f97688c2f3b1",
+        "relationship--a40a85bf-69d3-4164-a735-fb9ecc7b656e",
+        "relationship--ab4acf2d-7761-4f78-92eb-cbd4fea45929",
+        "relationship--b44bf5b1-42f8-4c70-9108-9699e8fa66ec",
+        "relationship--bd437a82-65df-42d7-a73b-6ed63a4cdd63",
+        "relationship--d8f956ea-84ef-4232-b281-59c40f019753",
+        "relationship--df891390-43d8-4201-aebc-51c20cae5897",
+        "relationship--e27416ae-e9f1-4b3f-90b2-6cb4a1a6abf4",
+        "relationship--f292f16f-ab6e-42ef-94f5-d65792fe5df8",
+        "relationship--f37a0b65-043e-45f9-9e70-06ad9d75e856"
+    ],
+    "graph_nodes": [
+        {
+            "count": 27,
+            "id": 0,
+            "texts": [
+                "DarkWatchman",
+                "PolyglotDuke",
+                "QakBot",
+                "TYPEFRAME",
+                "ComRAT",
+                "ShadowPad",
+                "Gelsemium",
+                "Uroburos",
+                "SysUpdate",
+                "Grandoreiro",
+                "NETWIRE",
+                "Pillowmint",
+                "TinyTurla",
+                "CHOPSTICK",
+                "APT32",
+                "QUADAGENT",
+                "RegDuke",
+                "ThreatNeedle",
+                "threat actors",
+                "Valak",
+                "Volgmer",
+                "Turla",
+                "RCSession",
+                "Sibot",
+                "PipeMon",
+                "REvil",
+                "Mosquito"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 20,
+            "id": 1,
+            "texts": [
+                "keylogger",
+                "output",
+                "configuration strings",
+                "components",
+                "encrypted orchestrator code",
+                "payloads",
+                "components",
+                "kernel driver and kernel driver loader components",
+                "Exaramel",
+                "backdoor",
+                "compressed payload",
+                "backdoor",
+                "payloads",
+                "C2",
+                "downloads",
+                "Chaes",
+                "instructions",
+                "encrypted and encoded payloads",
+                "second-stage script",
+                "encrypted payload"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 32,
+            "id": 2,
+            "texts": [
+                "keylogger",
+                "output",
+                "configuration strings",
+                "encrypted JSON configuration files",
+                "configuration information",
+                "encrypted configuration data",
+                "virtual file system",
+                "configuration block",
+                "configuration information",
+                "encrypted blob",
+                "encoded configuration file",
+                "configuration",
+                "XML format",
+                "configuration",
+                "changing names",
+                "ToolTech-RM",
+                "configuration information",
+                "configuration parameters",
+                "RC4 encrypted configuration information",
+                "configuration",
+                "session identifier",
+                "pre-shared key",
+                "configuration data",
+                "Windows CLFS (Common Log File System) transactional logs",
+                "information",
+                "encoded configuration file",
+                "versions",
+                "instructions.ini file",
+                "obfuscated configuration file",
+                "system information",
+                "encryption parameters",
+                "configuration values"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 40,
+            "id": 3,
+            "texts": [
+                "Registry",
+                "Registry",
+                "named subkey",
+                "HKCU\\Software\\Microsoft",
+                "Registry key",
+                "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\PrintConfigs",
+                "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\ShellCompatibility\\Applications\\laxhost.dll",
+                "Registry",
+                "Registry",
+                "Registry",
+                "HKLM:\\SOFTWARE\\Classes\\.wav\\OpenWithProgIds",
+                "Software\\Classes\\scConfig",
+                "HKEY_LOCAL_MACHINE",
+                "HKEY_CURRENT_USER",
+                "Registry",
+                "Registry",
+                "HKCU\\Software\\",
+                "Registry",
+                "HKCU:\\Software\\Netwire",
+                "Registry key HKLM\\SOFTWARE\\Microsoft\\DRM",
+                "Registry",
+                "Windows Registry",
+                "registry key",
+                "HKCU\\Office365DCOMCheck",
+                "Registry key",
+                "Registry",
+                "RC4-encrypted Registry key",
+                "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\GameCon",
+                "Registry key HKCU\\Software\\ApplicationContainer\\Appsw64",
+                "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\WMI\\Security",
+                "Registry",
+                "Registry",
+                "Registry",
+                "HKCU\\SOFTWARE\\Plus",
+                "HKLM\\SOFTWARE\\Plus",
+                "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\sibot registry key",
+                "Registry",
+                "HKLM\\SOFTWARE\\Microsoft\\Print\\Components\\",
+                "Registry",
+                "Registry key HKCU\\Software\\Microsoft\\[dllname]"
+            ],
+            "label": "REGISTRY"
+        },
+        {
+            "count": 2,
+            "id": 4,
+            "texts": [
+                "virtual file system",
+                "configuration block"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 2,
+            "id": 5,
+            "texts": [
+                "Windows stores",
+                "including%username%and"
+            ],
+            "label": "DIRECTORY"
+        },
+        {
+            "count": 3,
+            "id": 6,
+            "texts": [
+                "session identifier",
+                "pre-shared key",
+                "encryption key"
+            ],
+            "label": "ENCRYPTION"
+        },
+        {
+            "count": 3,
+            "id": 7,
+            "texts": [
+                "C2 communications",
+                "C2",
+                "downloads"
+            ],
+            "label": "NETWORK"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 8
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 21
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 28
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 9
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 25
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 6
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "4_3",
+            "source": 4,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 5
+        },
+        {
+            "id": "2_5",
+            "source": 2,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "0_6",
+            "source": 0,
+            "dest": 6,
+            "count": 2
+        },
+        {
+            "id": "6_7",
+            "source": 6,
+            "dest": 7,
+            "count": 1
+        },
+        {
+            "id": "2_7",
+            "source": 2,
+            "dest": 7,
+            "count": 2
+        },
+        {
+            "id": "7_3",
+            "source": 7,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "6_3",
+            "source": 6,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "store": 22,
+        "in": 50,
+        "of": 4,
+        "under": 18,
+        "maintain": 1,
+        "for": 3,
+        "find at": 1,
+        "within": 3,
+        "at": 1,
+        "save": 3,
+        "decrypt": 1,
+        "as": 2,
+        "stroe": 1,
+        "regard": 1,
+        "use": 1,
+        "instal": 1
+    }
+}

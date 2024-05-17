@@ -1,0 +1,347 @@
+{
+    "id": "T1003.003",
+    "tech_id": "T1003.003",
+    "tech_name": "NTDS",
+    "best_phrases": [
+        "msadcs.exe \"ntds.dit\" -s \"system\" -p recordedtv_pdmp.txt --users-csv recordedtv_users.csv",
+        "ntds.dit",
+        "ntds",
+        "ntds.dit active directory database",
+        "NTDS",
+        "ntds.dit files"
+    ],
+    "tactics": [
+        "TA0006"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "NETWORK",
+        "REGISTRY",
+        "COMPONENT",
+        "DIRECTORY",
+        "USER"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--01e22d76-e2ee-407a-834f-e3428df142ba",
+        "relationship--10ecbc19-10ab-4564-a637-cc4f6773e533",
+        "relationship--342fb7f0-ef23-4b17-8550-750cbe5c8723",
+        "relationship--47f8da55-c38f-4cec-b1c6-241ecb3dd8b8",
+        "relationship--4faa4943-e54e-420d-a391-350ef629e766",
+        "relationship--56f53206-d15a-4b4d-8391-9d5dd5e0e403",
+        "relationship--582f4641-f68d-4dad-96e0-eb4da4128bbf",
+        "relationship--5ffaf9bf-10a0-477f-88ff-5b9e7d5831cc",
+        "relationship--64abef3c-d453-4782-b084-25f684b3f7ae",
+        "relationship--6d0fb103-d6f6-4259-a62f-296735020176",
+        "relationship--71b92fe6-dd99-4192-b327-8ef27b790123",
+        "relationship--a1e10048-626c-4e64-9bdb-fd576be8c19f",
+        "relationship--a291d185-31c8-4458-a3fc-9af617af28d9",
+        "relationship--a359e758-a95c-4064-b8d7-b8351489409e",
+        "relationship--b6da41e9-9925-4b83-b9a7-d29509b852de",
+        "relationship--c031bd06-453b-4f80-9a04-98e74a420323",
+        "relationship--d1197689-ff2e-4a0e-ad1e-69bb14c8822d",
+        "relationship--d17f93ce-f419-4297-a6dd-9d745df31b92"
+    ],
+    "graph_nodes": [
+        {
+            "count": 13,
+            "id": 0,
+            "texts": [
+                "APT28",
+                "Sandworm Team",
+                "FIN6",
+                "menuPass",
+                "Chimera",
+                "Attacker",
+                "Fox Kitten",
+                "Wizard Spider",
+                "Dragonfly",
+                "Mustang Panda",
+                "Ke3chang",
+                "HAFNIUM",
+                "LAPSUS$"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 37,
+            "id": 1,
+            "texts": [
+                "ntdsutil.exe utility",
+                "CrackMapExec",
+                "Directory Replication Services API",
+                "Volume Shadow Copy",
+                "DRSUAPI",
+                "ntdsutil.exe",
+                "Impacket tool",
+                "compromised domain controller",
+                "esentutl",
+                "ntds.dit",
+                "Volume Shadow Copy service",
+                "PsExec NTDSGRAB module",
+                "Metasploit",
+                "Ntdsutil",
+                "msadcs.exe \"NTDS.dit\" -s \"SYSTEM\" -p RecordedTV_pdmp.txt --users-csv RecordedTV_users.csv",
+                "NtdsAudit tool",
+                "ntdsutil",
+                "SecretsDump and Mimikatz modules",
+                "Impacket",
+                "credential dumping",
+                "NTDS.dit",
+                "NTDS",
+                "batch script file",
+                "NTDS.dit",
+                "Windows utility",
+                "ntdsutil",
+                "SecretsDump",
+                "ntds.dit",
+                "domain controllers",
+                "Koadic",
+                "NTDS",
+                "vssadmin",
+                "NTDSDump",
+                "password dumping tools",
+                "NTDS.DIT",
+                "Windows built-in tool",
+                "ntdsutil"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 7,
+            "id": 2,
+            "texts": [
+                "Active Directory database",
+                "Active Directory database",
+                "Active Directory database",
+                "Active Directory database",
+                "ntds.dit Active Directory database",
+                "Active Directory database",
+                "Active Directory (AD) database"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 28,
+            "id": 3,
+            "texts": [
+                "credential",
+                "hashed passwords",
+                "Directory Replication Services API",
+                "Volume Shadow Copy",
+                "credential",
+                "NTDS.DIT file",
+                "copy",
+                "usernames",
+                "password hashes",
+                "credentials",
+                "SYSTEM registry",
+                "ntds.dit files",
+                "domain users",
+                "account and password information",
+                "Volume Shadow Copy",
+                "credential information",
+                "exported copies",
+                "access",
+                "volume shadow copy",
+                "credentials",
+                "password hashes",
+                "hashed passwords",
+                "domain controller hashes",
+                "volume shadow copy",
+                "NTDS.dit file",
+                "NTDS.dit file",
+                "credentials",
+                "copies"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "Active Directory"
+            ],
+            "label": "DIRECTORY"
+        },
+        {
+            "count": 2,
+            "id": 5,
+            "texts": [
+                "Windows",
+                "target systems"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 3,
+            "id": 6,
+            "texts": [
+                "FIN13",
+                "domain controller installation media",
+                "use"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 1,
+            "id": 7,
+            "texts": [
+                "victim"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 4,
+            "id": 8,
+            "texts": [
+                "SYSTEM registry",
+                "ntds.dit files",
+                "reg save",
+                "SYSTEM file Registry location"
+            ],
+            "label": "REGISTRY"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 14
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 4
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 16
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 5
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 2
+        },
+        {
+            "id": "3_5",
+            "source": 3,
+            "dest": 5,
+            "count": 2
+        },
+        {
+            "id": "6_3",
+            "source": 6,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "6_1",
+            "source": 6,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 3
+        },
+        {
+            "id": "2_7",
+            "source": 2,
+            "dest": 7,
+            "count": 1
+        },
+        {
+            "id": "0_8",
+            "source": 0,
+            "dest": 8,
+            "count": 3
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 2
+        },
+        {
+            "id": "8_5",
+            "source": 8,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "5_3",
+            "source": 5,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "5_1",
+            "source": 5,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 6
+        },
+        {
+            "id": "1_6",
+            "source": 1,
+            "dest": 6,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 18,
+        "export": 1,
+        "access": 3,
+        "dump": 4,
+        "associate with": 1,
+        "of": 11,
+        "back": 1,
+        "harvest": 1,
+        "on": 3,
+        "copy": 2,
+        "obtain": 3,
+        "contain": 1,
+        "gather": 4,
+        "from": 7,
+        "by": 3,
+        "within": 1,
+        "perform": 1,
+        "gain": 1,
+        "create": 2,
+        "collect": 1,
+        "to": 1,
+        "with": 1,
+        "execute": 1,
+        "retrieve": 1,
+        "extract": 2,
+        "steal": 1
+    }
+}

@@ -1,0 +1,255 @@
+{
+    "id": "T1021.004",
+    "tech_id": "T1021.004",
+    "tech_name": "SSH",
+    "best_phrases": [
+        "encrypted ssh-based tunnels",
+        "SSH",
+        "ssh"
+    ],
+    "tactics": [
+        "TA0008"
+    ],
+    "features": [
+        "FUNCTION",
+        "NETWORK",
+        "COMPONENT",
+        "DATA"
+    ],
+    "locations": [
+        "Linux",
+        "macOS"
+    ],
+    "procedures": [
+        "relationship--15d87b47-837d-4f62-9d78-4ec092c111d2",
+        "relationship--1cf34ba1-c2e4-4277-86fc-b511ae416a0e",
+        "relationship--25e695b0-1110-43ab-be79-5e89e3951759",
+        "relationship--55b0cb4d-1109-449c-82f6-ed42317df209",
+        "relationship--5daee125-eb83-4529-889e-18de7115f688",
+        "relationship--75c238d1-f2dc-413a-89c3-66797a65da90",
+        "relationship--7db7f665-6e29-4789-8a3d-d6cb8d0af31e",
+        "relationship--857e24ad-248e-4068-b142-4421bc9254c4",
+        "relationship--90893c7e-5080-40ff-92b2-d9c86e74b72c",
+        "relationship--91b41079-6c44-439e-a76c-2a128a792e17",
+        "relationship--9420a4b5-d246-4b9e-81d0-3f0551a73a15",
+        "relationship--bd83109f-198a-43b0-a4c9-c13dd671c2da",
+        "relationship--e76f8463-45ca-489b-86e8-ee854c2a0f71",
+        "relationship--f16c18f0-c5ac-4ea2-bfd0-222e63c09018",
+        "relationship--fa69ac7a-8031-4fac-91e2-65e90f378cd1",
+        "relationship--fe8bc44b-805d-440c-a447-96091033439d"
+    ],
+    "graph_nodes": [
+        {
+            "count": 14,
+            "id": 0,
+            "texts": [
+                "FIN7",
+                "Lazarus Group",
+                "Leviathan",
+                "BlackTech",
+                "Cobalt Strike",
+                "GCMAN",
+                "TEMP.Veles",
+                "Kinsing",
+                "Fox Kitten",
+                "TeamTNT",
+                "OilRig",
+                "menuPass",
+                "Rocke",
+                "APT39"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 5,
+            "id": 1,
+            "texts": [
+                "victim environments",
+                "victim machines",
+                "victim hosts",
+                "compromised systems",
+                "compromised environments"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 15,
+            "id": 2,
+            "texts": [
+                "SSH",
+                "PuTTy PSCP utility",
+                "SSH",
+                "compromised network",
+                "ssh",
+                "remote access",
+                "SSH",
+                "remote service",
+                "encrypted SSH-based tunnels",
+                "SSH",
+                "SSH",
+                "SSH",
+                "SSH",
+                "SSH",
+                "SSH"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 20,
+            "id": 3,
+            "texts": [
+                "PuTTy PSCP utility",
+                "SSH",
+                "internal reconnaissance",
+                "Putty",
+                "modules",
+                "in-memory",
+                "commands",
+                "Empire",
+                "VNC agent injection",
+                "Putty",
+                "tools",
+                "PuTTY and Plink tools",
+                "tools",
+                "payloads",
+                "Putty",
+                "secure shell",
+                "Putty Secure Copy Client",
+                "PSCP",
+                "coinminer",
+                "secure shell"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 2,
+            "id": 4,
+            "texts": [
+                "access",
+                "data"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 5,
+            "id": 5,
+            "texts": [
+                "restricted segment",
+                "modules",
+                "in-memory",
+                "remote command/program",
+                "FIN13"
+            ],
+            "label": "OTHER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 4
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 11
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 12
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "4_5",
+            "source": 4,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "5_2",
+            "source": 5,
+            "dest": 2,
+            "count": 3
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 4
+        },
+        {
+            "id": "5_3",
+            "source": 5,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "3_5",
+            "source": 3,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "5_1",
+            "source": 5,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 17,
+        "gain": 1,
+        "to": 2,
+        "of": 1,
+        "for": 4,
+        "execute": 3,
+        "contain": 2,
+        "over": 1,
+        "on": 1,
+        "transfer": 4,
+        "connect": 1,
+        "onto": 1,
+        "access": 2,
+        "by": 5,
+        "spread": 1
+    }
+}

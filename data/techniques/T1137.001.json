@@ -1,0 +1,111 @@
+{
+    "id": "T1137.001",
+    "tech_id": "T1137.001",
+    "tech_name": "Office Template Macros",
+    "best_phrases": [],
+    "tactics": [
+        "TA0003"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA"
+    ],
+    "locations": [
+        "Windows",
+        "Office 365"
+    ],
+    "procedures": [
+        "relationship--07af222c-dbd5-4ea4-b94b-a0fe8bdefcee",
+        "relationship--66ce5052-08d8-4160-a8c9-f3e6b9e5cd1f",
+        "relationship--f7232e30-bc04-476a-871a-5048a0ada06c"
+    ],
+    "graph_nodes": [
+        {
+            "count": 3,
+            "id": 0,
+            "texts": [
+                "MuddyWater",
+                "BackConfig",
+                "Cobalt Strike"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 6,
+            "id": 1,
+            "texts": [
+                "Word Template",
+                "hidden columns",
+                "executable files",
+                "commands",
+                "Excel spreadsheets",
+                "user permission"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 7,
+            "id": 2,
+            "texts": [
+                "Normal.dotm",
+                "executable files",
+                "commands",
+                "VBA macros",
+                "Excel Workbook",
+                "code",
+                "macros"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "Office"
+            ],
+            "label": "OTHER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 5
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 4,
+        "store": 1,
+        "in": 1,
+        "for": 1,
+        "execute": 1,
+        "enable": 1,
+        "trust": 1,
+        "without": 1
+    }
+}

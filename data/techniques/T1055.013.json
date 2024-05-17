@@ -1,0 +1,93 @@
+{
+    "id": "T1055.013",
+    "tech_id": "T1055.013",
+    "tech_name": "Process Doppelg\u00e4nging",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005",
+        "TA0004"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "COMPONENT"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--41ac0542-9215-466a-ba43-05bd8b9e330b",
+        "relationship--506751ad-9b0d-4dc5-a6a5-b25521e66a1a",
+        "relationship--926c11f2-853f-4393-9faf-2f3af174e578"
+    ],
+    "graph_nodes": [
+        {
+            "count": 3,
+            "id": 0,
+            "texts": [
+                "SynAck",
+                "Bazar",
+                "Leafminer"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 1,
+            "id": 1,
+            "texts": [
+                "NTFS transactions"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 6,
+            "id": 2,
+            "texts": [
+                "processes",
+                "target process",
+                "process doppelga\u0308nging",
+                "Process Doppelga\u0308nging",
+                "security software",
+                "tools"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "compromised systems"
+            ],
+            "label": "COMPONENT"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 6
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "abuse": 1,
+        "conceal": 1,
+        "into": 1,
+        "use": 2,
+        "evade": 1,
+        "deploy": 1,
+        "on": 1
+    }
+}

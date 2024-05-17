@@ -1,0 +1,266 @@
+{
+    "id": "T1110.003",
+    "tech_id": "T1110.003",
+    "tech_name": "Password Spraying",
+    "best_phrases": [],
+    "tactics": [
+        "TA0006"
+    ],
+    "features": [
+        "DATA",
+        "FUNCTION",
+        "NETWORK",
+        "USER",
+        "COMPONENT"
+    ],
+    "locations": [
+        "Windows",
+        "Azure AD",
+        "Office 365",
+        "SaaS",
+        "IaaS",
+        "Linux",
+        "macOS",
+        "Google Workspace",
+        "Containers"
+    ],
+    "procedures": [
+        "relationship--0b8b803a-69e3-4da4-bed6-a28de4c964da",
+        "relationship--11027c06-b55a-4b0f-957c-f9f67daf21a7",
+        "relationship--1cf57140-fe45-4c26-8946-071252ae8276",
+        "relationship--6c4b2975-6cad-4a10-8006-1e2e973a8a8b",
+        "relationship--76ef2eb1-a94c-4dd8-be1e-ccb63d577d9e",
+        "relationship--83ba5b2c-b3fd-4558-a3f8-cef4c31e02bd",
+        "relationship--8b5691c7-1815-4d76-a7dd-dfd827043bb9",
+        "relationship--93edbfc7-c1be-4c2c-aa2c-9b15f53f6528",
+        "relationship--a8519c68-ab22-4254-bd22-c76b71de1b9e",
+        "relationship--b85cff83-6468-4c63-9b25-4ac75fcb0e10",
+        "relationship--c47b3759-8c59-45f7-8ae1-66b49a5359f8",
+        "relationship--d6958d59-7b54-407c-8bd9-00891c580acc"
+    ],
+    "graph_nodes": [
+        {
+            "count": 23,
+            "id": 0,
+            "texts": [
+                "infpub.dat file",
+                "NTLM login credentials",
+                "supplied list",
+                "password",
+                "usernames",
+                "SSH passwords",
+                "access",
+                "valid credentials",
+                "Windows shares",
+                "generated list",
+                "usernames",
+                "weak passwords",
+                "permutations",
+                "username",
+                "access",
+                "lists",
+                "names",
+                "e-mail accounts",
+                "valid user and administrator accounts",
+                "weeks",
+                "days",
+                "hour",
+                "targeted account"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 5,
+            "id": 1,
+            "texts": [
+                "Rabbit",
+                "which",
+                "Office",
+                "Exchange",
+                "modes"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 2,
+            "id": 2,
+            "texts": [
+                "Windows machines",
+                "target systems"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 21,
+            "id": 3,
+            "texts": [
+                "CrackMapExec",
+                "credential authentication",
+                "malware",
+                "bruteforce password spray attacks",
+                "password spraying attacks",
+                "Lazarus Group malware",
+                "weak passwords",
+                "permutations",
+                "password spraying",
+                "password spraying attacks",
+                "password spraying attacks",
+                "MailSniper",
+                "password spraying",
+                "SMB BruteForcer",
+                "tool",
+                "internal password spraying",
+                "course",
+                "brute-force/password-spray tooling",
+                "distributed, large-scale password spray attacks",
+                "password-spraying mode",
+                "four authentication attempts"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 8,
+            "id": 4,
+            "texts": [
+                "Linux Rabbit",
+                "APT29",
+                "HEXANE",
+                "APT33",
+                "Silent Librarian",
+                "Chimera",
+                "Leafminer",
+                "APT28"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 5,
+            "id": 5,
+            "texts": [
+                "server",
+                "remote services",
+                "Office",
+                "Exchange",
+                "Kubernetes cluster"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 3,
+            "id": 6,
+            "texts": [
+                "Administrator",
+                "private sector targets",
+                "victim"
+            ],
+            "label": "USER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "3_0",
+            "source": 3,
+            "dest": 0,
+            "count": 7
+        },
+        {
+            "id": "4_0",
+            "source": 4,
+            "dest": 0,
+            "count": 6
+        },
+        {
+            "id": "4_3",
+            "source": 4,
+            "dest": 3,
+            "count": 10
+        },
+        {
+            "id": "3_5",
+            "source": 3,
+            "dest": 5,
+            "count": 3
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "3_6",
+            "source": 3,
+            "dest": 6,
+            "count": 2
+        },
+        {
+            "id": "0_6",
+            "source": 0,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "5_6",
+            "source": 5,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "4_5",
+            "source": 4,
+            "dest": 5,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "of": 8,
+        "use": 10,
+        "bruteforce": 3,
+        "gain": 2,
+        "install": 1,
+        "onto": 1,
+        "conduct": 3,
+        "obtain": 2,
+        "connect": 1,
+        "center": 1,
+        "around": 1,
+        "to": 1,
+        "in": 3,
+        "against": 3,
+        "for": 1,
+        "perform": 1,
+        "operate": 1,
+        "over": 2,
+        "per": 2
+    }
+}

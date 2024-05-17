@@ -1,0 +1,252 @@
+{
+    "id": "T1134",
+    "tech_id": "T1134",
+    "tech_name": "Access Token Manipulation",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005",
+        "TA0004"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "COMPONENT"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--2a41b67c-60d5-4784-a5a8-99a60a3f9202",
+        "relationship--339e74c4-5e3a-4272-966f-f5542d255d0a",
+        "relationship--56b59fda-e96d-443d-9f45-e4cc967c911a",
+        "relationship--57aa85a9-8484-4a1a-947f-3d266d2b3c7d",
+        "relationship--5a25798a-eca1-4841-b422-95aa3bf025e3",
+        "relationship--671cfed4-4809-4f53-a6b0-ff4da289e406",
+        "relationship--6d3d48ff-ea37-4626-8148-4111163e95e3",
+        "relationship--93d83b03-8367-4655-84a5-9abaee885700",
+        "relationship--968610c5-7fa5-4840-b9bb-2f70eecd87fa",
+        "relationship--9bd9e08d-efda-4710-8158-9e915dce16d9",
+        "relationship--ba218c07-3cde-4555-a150-0c8daff51cee",
+        "relationship--c280ba3f-7210-4608-b895-d29932938fe7",
+        "relationship--c353c2cd-cc78-4d7c-a3b0-5aa1d927368b",
+        "relationship--c372d356-6d5d-4454-b6b4-8297d0da1579",
+        "relationship--cb498ebf-bdb4-476c-9b7a-1a83c19d03fb",
+        "relationship--d68ff9e8-0766-49ea-8ddc-4308347c5bac",
+        "relationship--d84bda97-a8d5-4886-8172-c5a794b681af",
+        "relationship--fa049cca-da7d-4d89-ac34-cab537ce0235",
+        "relationship--fcfb5392-d5d3-451d-be1f-3cdb5ee264d8",
+        "relationship--fe3bcb4a-bb14-4068-a9d3-be2f68137f51"
+    ],
+    "graph_nodes": [
+        {
+            "count": 17,
+            "id": 0,
+            "texts": [
+                "HermeticWiper",
+                "SUNSPOT",
+                "AppleSeed",
+                "FIN6",
+                "Blue Mockingbird",
+                "SslMM",
+                "Duqu",
+                "Gelsemium",
+                "Mafalda",
+                "Cuba",
+                "APT41",
+                "remote attackers",
+                "Hydraq",
+                "KillDisk",
+                "MegaCortex",
+                "Ryuk",
+                "BlackCat"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 35,
+            "id": 1,
+            "texts": [
+                "AdjustTokenPrivileges",
+                "SeDebugPrivilege",
+                "backups",
+                "SeBackupPrivilege",
+                "SeLoadDriverPrivilege",
+                "SeShutdownPrivilege",
+                "SeDebugPrivilege",
+                "Invoke-TokenManipulation Exfiltration module",
+                "PowerSploit",
+                "SeDebugPrivilege",
+                "AdjustTokenPrivilege API",
+                "Sliver",
+                "named-pipe impersonation technique",
+                "Metasploit",
+                "JuicyPotato",
+                "feature",
+                "system processes",
+                "processes",
+                "Empire",
+                "Invoke-TokenManipulation",
+                "PowerSploit",
+                "token manipulation",
+                "SeDebugPrivilege",
+                "AdjustTokenPrivileges",
+                "ConfuserEx obfuscated BADPOTATO exploit",
+                "named-pipe impersonation",
+                "local NTAuthority\\SYSTEM privilege",
+                "PoshC2",
+                "Invoke-TokenManipulation",
+                "backdoor",
+                "OpenProcessToken",
+                "process",
+                "AdjustTokenPrivileges",
+                "SeDebugPrivilege",
+                "ability"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 3,
+            "id": 2,
+            "texts": [
+                "itself",
+                "itself",
+                "which"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 25,
+            "id": 3,
+            "texts": [
+                "privileges",
+                "security token",
+                "debugging privileges",
+                "tokens",
+                "system level privilege",
+                "user tokens",
+                "privileges",
+                "SeImpersonate token privilege",
+                "web application pool accounts",
+                "tokens",
+                "process privileges",
+                "tokens",
+                "token",
+                "system privileges",
+                "administrative privileges",
+                "access tokens",
+                "privileges",
+                "local NTAuthority\\SYSTEM privilege",
+                "tokens",
+                "token privileges",
+                "access token",
+                "access token",
+                "token privileges",
+                "token privileges",
+                "access tokens"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 5,
+            "id": 4,
+            "texts": [
+                "drivers",
+                "local system",
+                "targeted Windows systems",
+                "UAC",
+                "Windows7 systems"
+            ],
+            "label": "COMPONENT"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 16
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 3
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 16
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 6
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 3
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 7
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 8,
+        "grant": 2,
+        "debug": 1,
+        "create": 2,
+        "load": 1,
+        "shut": 1,
+        "with": 4,
+        "modify": 3,
+        "grants": 2,
+        "add": 1,
+        "of": 4,
+        "manipulate": 5,
+        "gain": 1,
+        "pass": 1,
+        "to": 1,
+        "on": 3,
+        "escalate": 3,
+        "abuse": 2,
+        "contain": 1,
+        "examine": 1,
+        "for": 2,
+        "copy": 1,
+        "have": 3,
+        "start": 1,
+        "steal": 1,
+        "acquire": 1,
+        "bypass": 1,
+        "elevate": 1,
+        "by": 1,
+        "adjust": 2,
+        "get": 2,
+        "call": 1
+    }
+}

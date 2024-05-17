@@ -1,0 +1,436 @@
+{
+    "id": "T1102",
+    "tech_id": "T1102",
+    "tech_name": "Web Service",
+    "best_phrases": [],
+    "tactics": [
+        "TA0011"
+    ],
+    "features": [
+        "FUNCTION",
+        "NETWORK",
+        "COMPONENT",
+        "DATA",
+        "USER",
+        "REGISTRY"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--08f2da07-4e03-46bd-a3d9-c79ef7dd9a45",
+        "relationship--16d59476-9fff-413f-9dbe-5c9e43c3860d",
+        "relationship--1b40e3b0-a862-4c79-a8e6-a008e71f6028",
+        "relationship--1ef0015d-f4ab-49fe-a5b2-89e601ea5cfa",
+        "relationship--29552ed5-ecfd-4a97-a6c9-d6da25181e1a",
+        "relationship--3614b421-b869-4b33-a979-0c09f0bc275f",
+        "relationship--3a200957-9a8b-407e-a23f-cea1ef8236e6",
+        "relationship--3bdacd96-1c94-4af2-b0b3-d44542c31ccd",
+        "relationship--41ba13d1-5681-402e-a847-08b7e7b12f42",
+        "relationship--49543c25-bc04-49ba-820e-aa45546c414f",
+        "relationship--4e348b41-b607-4227-8734-06ef01d40f27",
+        "relationship--54e5545a-6fdc-4bfe-af74-2c80416ed936",
+        "relationship--63b1af38-765d-4181-add0-dbd3f31941ff",
+        "relationship--68a9519f-c65a-451e-9126-5946ac6844c6",
+        "relationship--81fcae09-a738-4922-9553-aad21e2b940b",
+        "relationship--9094f15c-c60c-4366-8c1b-22f21e1156b8",
+        "relationship--9f3ded7a-feef-4180-b89c-baca3c08f96c",
+        "relationship--9ffd4ba1-1114-4df9-875c-14cacda87b21",
+        "relationship--a02d2ae6-bdeb-4fa0-b1b9-5a0de2b03b6a",
+        "relationship--a23f92a2-b88c-4cb0-b028-1883a5a38377",
+        "relationship--a99df039-f5ee-4060-b3ba-b1224acee970",
+        "relationship--b0fee298-25cc-450d-ab7e-a7430c6b3f02",
+        "relationship--b110013b-35e5-470e-9e17-470c7071fa80",
+        "relationship--b14227d3-b032-482d-a19a-6dcdc0f10c9c",
+        "relationship--b94f2e1a-a364-4bf1-af63-f9ce2b7de89b",
+        "relationship--c1b5996f-e0f9-4986-9ee1-c5c9dc85d8e5",
+        "relationship--cebec7e0-7be7-4bcf-936f-bd7622d559c7",
+        "relationship--d452da85-b408-458f-ad25-937605de4611",
+        "relationship--d5f0ff09-374d-45f6-b7d8-45466bf0ecf0",
+        "relationship--e0e492ef-c67d-4a02-be8d-2e9a650ea6f0",
+        "relationship--eac3f09f-fdd0-4bbd-965b-4e22276f4021",
+        "relationship--fa7887c3-d49d-4499-9ee4-f9a504ce7dec",
+        "relationship--fdf8d947-f896-4797-9c6f-00b211a602a6",
+        "relationship--ff4440ce-f6b6-4e59-9333-4f4a3b96a2e4",
+        "relationship--ff500c79-fa27-4fe3-a3c2-8c5d20031824"
+    ],
+    "graph_nodes": [
+        {
+            "count": 6,
+            "id": 0,
+            "texts": [
+                "Scattered Spider",
+                "five different cloud service providers",
+                "part",
+                "part",
+                "PlugX.",
+                "group"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 36,
+            "id": 1,
+            "texts": [
+                "tools",
+                "payloads",
+                "web services",
+                "C2 commands",
+                "legitimate web service",
+                "detection",
+                "payloads",
+                "operations",
+                "payloads",
+                "operators",
+                "backdoor",
+                "instructions",
+                "free IP to domain mapping service",
+                "scripts",
+                "file-sharing services",
+                "payloads",
+                "free IP to domain mapping service",
+                "domain mapping",
+                "scripts",
+                "malware",
+                "web services",
+                "payloads",
+                "modules",
+                "payloads",
+                "ngrok",
+                "primary payload",
+                "dogechain.info API",
+                "Brute Ratel C4",
+                "malware",
+                "Bazar downloads",
+                "legitimate web services",
+                "variants",
+                "downloaders",
+                ".NET executable",
+                "downloads",
+                "Cloudflare services"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 35,
+            "id": 2,
+            "texts": [
+                "sites",
+                "C2 infrastructure",
+                "C2",
+                "links",
+                "spam campaigns",
+                "DropBox",
+                "social media platform",
+                "Simplenote",
+                "Facebook",
+                "sslip.io",
+                "IP",
+                "domain",
+                "C2",
+                "sslip.io",
+                "IP",
+                "C2 channels",
+                "legitimate compromised website",
+                "content delivery network",
+                "CDN",
+                "Discord",
+                "Discord channel",
+                "C2 connections",
+                "ngrok service subdomains",
+                "public sites",
+                "Textbin",
+                "Pastebin",
+                "C2 address",
+                "legitimate websites",
+                "external C2 channels",
+                "C2",
+                "C2 communications",
+                "DropBox URLs",
+                "C2 communications",
+                "iplogger.org",
+                "C2"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 32,
+            "id": 3,
+            "texts": [
+                "Inception",
+                "Snip3",
+                "Carbon",
+                "Rocke",
+                "BoomBox",
+                "SharpStage",
+                "threat actors",
+                "FIN6",
+                "SMOKEDHAM",
+                "LazyScripter",
+                "DropBook",
+                "Bumblebee",
+                "FIN8",
+                "Hildegard",
+                "EXOTIC LILY",
+                "BADHATCH",
+                "Sibot",
+                "Ember Bear",
+                "NETWIRE",
+                "CharmPower",
+                "WhisperGate",
+                "threat actors",
+                "DarkTortilla",
+                "Doki",
+                "GuLoader",
+                "Fox Kitten",
+                "Turla",
+                "Mustang Panda",
+                "Gamaredon Group",
+                "APT32",
+                "APT41",
+                "TeamTNT"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 32,
+            "id": 4,
+            "texts": [
+                "Pastebin",
+                "GitLab",
+                "Pastebin",
+                "Gitee",
+                "Dropbox",
+                "OneDrive",
+                "MediaFire",
+                "Pastebin",
+                "Google Storage",
+                "Dropbox",
+                "Google Drive",
+                "GitHub",
+                "DropBox",
+                "social media platform",
+                "Simplenote",
+                "machines",
+                "OneDrive",
+                "GitHub",
+                "machine",
+                "compromised host",
+                "Amazon S3 buckets",
+                "public sites",
+                "Textbin",
+                "Pastebin",
+                "Google Drive",
+                "Amazon Web Services",
+                "Google Docs",
+                "GitHub repositories",
+                "compromised system",
+                "Dropbox",
+                "Google Drive",
+                "Amazon S3"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 6,
+            "id": 5,
+            "texts": [
+                "files",
+                "hardcoded access token",
+                "content",
+                "files",
+                "fake accounts",
+                "data"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 3,
+            "id": 6,
+            "texts": [
+                "victims",
+                "victim",
+                "victim"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 1,
+            "id": 7,
+            "texts": [
+                "DLLs"
+            ],
+            "label": "REGISTRY"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 4
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 8
+        },
+        {
+            "id": "3_0",
+            "source": 3,
+            "dest": 0,
+            "count": 2
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 16
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 27
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 17
+        },
+        {
+            "id": "4_2",
+            "source": 4,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "3_5",
+            "source": 3,
+            "dest": 5,
+            "count": 5
+        },
+        {
+            "id": "5_4",
+            "source": 5,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "5_1",
+            "source": 5,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "6_5",
+            "source": 6,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "2_5",
+            "source": 2,
+            "dest": 5,
+            "count": 2
+        },
+        {
+            "id": "4_5",
+            "source": 4,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "4_6",
+            "source": 4,
+            "dest": 6,
+            "count": 2
+        },
+        {
+            "id": "2_0",
+            "source": 2,
+            "dest": 0,
+            "count": 2
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 7
+        },
+        {
+            "id": "3_7",
+            "source": 3,
+            "dest": 7,
+            "count": 1
+        },
+        {
+            "id": "7_4",
+            "source": 7,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 2
+        },
+        {
+            "id": "5_2",
+            "source": 5,
+            "dest": 2,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "download": 10,
+        "from": 15,
+        "incorporate": 1,
+        "into": 2,
+        "use": 25,
+        "receive": 2,
+        "for": 10,
+        "evade": 1,
+        "host": 7,
+        "operate": 1,
+        "with": 1,
+        "exploit": 2,
+        "create": 1,
+        "control": 1,
+        "to": 7,
+        "of": 8,
+        "as": 3,
+        "deliver": 3,
+        "abuse": 2,
+        "host on": 1,
+        "proxy": 1,
+        "retrieve": 1,
+        "generate": 1,
+        "on": 2,
+        "obtain": 1,
+        "send": 1
+    }
+}

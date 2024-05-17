@@ -1,0 +1,356 @@
+{
+    "id": "T1125",
+    "tech_id": "T1125",
+    "tech_name": "Video Capture",
+    "best_phrases": [],
+    "tactics": [
+        "TA0009"
+    ],
+    "features": [
+        "DATA",
+        "FUNCTION",
+        "COMPONENT",
+        "USER",
+        "NETWORK",
+        "DIRECTORY"
+    ],
+    "locations": [
+        "Windows",
+        "macOS",
+        "Linux"
+    ],
+    "procedures": [
+        "relationship--03d08c76-d8ce-435a-bac1-9cb77cdbaa0c",
+        "relationship--07939f42-c9ce-442f-a922-6c3560ac5ddc",
+        "relationship--0ebd7231-9228-44b6-a4d8-9131eb40bbb3",
+        "relationship--15c3f3a3-03c9-4591-a2d2-64b5eafbd4a7",
+        "relationship--17bee216-d5ff-4e66-b221-0129be41b4f5",
+        "relationship--1efc9685-b2ab-46fb-91a9-a305d6c1f335",
+        "relationship--2043a8a7-d365-4f5c-9ee3-5b9be710f14d",
+        "relationship--293f103b-ab5f-46ee-b51e-c111370f3b79",
+        "relationship--2dc986cb-ed76-42ba-9dd9-edaba07b0cc7",
+        "relationship--30b85048-ba1f-4b43-b9bc-69c27e426039",
+        "relationship--30be2552-9794-4eef-b3b6-fa663f68784b",
+        "relationship--49efe6c7-aec6-4e54-bc7d-212816e23347",
+        "relationship--52ad9918-ffba-4897-bbdc-261504094339",
+        "relationship--5e60c70a-7b2f-45b8-b7d4-80e214acfb2d",
+        "relationship--62bf12af-cf11-48e7-8963-4fdf3e23fea0",
+        "relationship--63c952f9-1fec-46db-a2f3-f87114180f25",
+        "relationship--6782d7bb-5e81-4656-9445-fbd6ae1f2bdb",
+        "relationship--79852ad8-86ff-4747-97c0-1c7faa5fa69d",
+        "relationship--84094d38-2a22-4d9a-b570-72e45baf17ab",
+        "relationship--88d48848-1f23-4d91-8934-045d04b219ea",
+        "relationship--91926031-c1b4-462b-8597-20b10e7211ef",
+        "relationship--aa9b33a5-81b2-4126-b8f5-0182ec365fc8",
+        "relationship--aba4daa2-5022-4fe9-8359-7c0af1f58b86",
+        "relationship--c18f83e7-979e-4bd8-80bb-d0a4e8146a21",
+        "relationship--c4f9c2ad-f740-4b08-9788-c058b98f2094",
+        "relationship--c73f5693-e40c-48a9-b41c-8207f7180523",
+        "relationship--d2067a75-0d5d-4899-9d9f-6537d98296c1",
+        "relationship--d953a664-5a8f-45a9-a3e6-819cb2cef2c7",
+        "relationship--e31c20e8-f6f7-4ebb-89e0-51c34597c379",
+        "relationship--e5a2a20c-1ef7-49a9-a9fa-2b89231793b8",
+        "relationship--f3c0c3c1-e7a9-46ae-94cf-e128120a7c5f",
+        "relationship--fd9c0570-d19a-49b6-a354-d3eaa25b00f2"
+    ],
+    "graph_nodes": [
+        {
+            "count": 22,
+            "id": 0,
+            "texts": [
+                "Empire",
+                "feature",
+                "capability",
+                "Bewmac",
+                "Python tool",
+                "bank employees day to day activities",
+                "Imminent Monitor",
+                "remote webcam monitoring capability",
+                "ConnectWise",
+                "capability",
+                "AsyncRAT",
+                "custom video recording capability",
+                "operations",
+                "command",
+                "video device spying",
+                "Pupy",
+                "modules",
+                "Remcos",
+                "Skype API",
+                "QuasarRAT",
+                "PcShare",
+                "collection process"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 43,
+            "id": 1,
+            "texts": [
+                "webcam data",
+                "screen content",
+                "AVI format",
+                "webcam video",
+                "webcam video",
+                "webcam",
+                "webcam",
+                "webcam",
+                "data",
+                "video",
+                "webcam",
+                "photos",
+                "web camera",
+                "webcam",
+                "pictures",
+                "webcam",
+                "webcam",
+                "video",
+                "webcam",
+                "videos",
+                "day",
+                "day",
+                "video",
+                "video",
+                "images",
+                "webcam",
+                "screen content",
+                "video",
+                "webcam",
+                "connected webcam",
+                "pictures",
+                "video",
+                "webcam",
+                "webcam",
+                "pictures",
+                "webcam",
+                "content",
+                "video",
+                "images",
+                "webcams",
+                "encrypted data",
+                "webcam viewing",
+                "camera video"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 13,
+            "id": 2,
+            "texts": [
+                "Windows and macOS systems",
+                "targeted systems",
+                "machine",
+                "computer",
+                "compromised hosts",
+                "remote hosts",
+                "victim machine",
+                "targeted systems",
+                "compromised host",
+                "environment",
+                "machine",
+                "system",
+                "compromised hosts"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 24,
+            "id": 3,
+            "texts": [
+                "Clambling",
+                "Crimson",
+                "Revenge RAT",
+                "TajMahal",
+                "Cobian RAT",
+                "NanoCore",
+                "jRAT",
+                "Machete",
+                "DarkComet",
+                "njRAT",
+                "Agent Tesla",
+                "PoetRAT",
+                "Silence",
+                "EvilGrab",
+                "Kazuar",
+                "SDBbot",
+                "FIN7",
+                "ZxShell",
+                "WarzoneRAT",
+                "Bandook",
+                "InvisiMole",
+                "Derusbi",
+                "ObliqueRAT",
+                "T9000"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 10,
+            "id": 4,
+            "texts": [
+                "victim",
+                "victim",
+                "victim",
+                "victim",
+                "victim",
+                "victims",
+                "victim",
+                "victim",
+                "victim",
+                "victim"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 3,
+            "id": 5,
+            "texts": [
+                "that",
+                "that",
+                "part"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 1,
+            "id": 6,
+            "texts": [
+                "audio and video calls"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 1,
+            "id": 7,
+            "texts": [
+                "%appdata%\\Intel\\Skype"
+            ],
+            "label": "DIRECTORY"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 13
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 4
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 12
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 24
+        },
+        {
+            "id": "3_0",
+            "source": 3,
+            "dest": 0,
+            "count": 9
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 3
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 7
+        },
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "3_5",
+            "source": 3,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "5_1",
+            "source": 5,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "3_6",
+            "source": 3,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "3_7",
+            "source": 3,
+            "dest": 7,
+            "count": 1
+        },
+        {
+            "id": "1_7",
+            "source": 1,
+            "dest": 7,
+            "count": 1
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "5_0",
+            "source": 5,
+            "dest": 0,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "capture": 13,
+        "on": 13,
+        "record": 7,
+        "in": 3,
+        "have": 6,
+        "access": 8,
+        "of": 13,
+        "from": 9,
+        "take": 3,
+        "use": 3,
+        "make": 1,
+        "observe": 2,
+        "to": 3,
+        "create": 1,
+        "monitor": 1,
+        "perform": 2,
+        "activate": 1,
+        "write": 1,
+        "as": 2
+    }
+}

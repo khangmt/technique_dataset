@@ -1,0 +1,172 @@
+{
+    "id": "T1074",
+    "tech_id": "T1074",
+    "tech_name": "Data Staged",
+    "best_phrases": [],
+    "tactics": [
+        "TA0009"
+    ],
+    "features": [
+        "DATA",
+        "DIRECTORY",
+        "FUNCTION",
+        "ENCRYPTION"
+    ],
+    "locations": [
+        "Windows",
+        "IaaS",
+        "Linux",
+        "macOS"
+    ],
+    "procedures": [
+        "relationship--2c54816e-5dd1-4723-99f5-29c80a2fc171",
+        "relationship--2f9e7f23-979c-4d7f-a19c-907dc94504aa",
+        "relationship--773e62aa-8b0a-4ed2-9954-1886c789e926",
+        "relationship--a87a63cc-7920-4b23-a804-d1ad94ffc120",
+        "relationship--b2e0fa0b-ccc4-4bd9-a981-2aa198491333",
+        "relationship--f3b14839-81b5-436f-87b0-f5b8bd10c07c"
+    ],
+    "graph_nodes": [
+        {
+            "count": 5,
+            "id": 0,
+            "texts": [
+                "Wizard Spider",
+                "Kobalos",
+                "Kevin",
+                "QUIETCANARY",
+                "Shark"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 10,
+            "id": 1,
+            "texts": [
+                "credentials",
+                "network enumeration information",
+                "data",
+                "captured SSH connection credentials",
+                "file",
+                ".pid extension",
+                "data",
+                "logs",
+                "data",
+                "information"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 2,
+            "texts": [
+                "networkdll and psfin TrickBot modules"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 4,
+            "id": 3,
+            "texts": [
+                "Volt Typhoon",
+                "U2",
+                "folders",
+                "U1"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "password-protected archives"
+            ],
+            "label": "ENCRYPTION"
+        },
+        {
+            "count": 5,
+            "id": 5,
+            "texts": [
+                "/var/run directory",
+                "directories",
+                "U2",
+                "folders",
+                "U1"
+            ],
+            "label": "DIRECTORY"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 5
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 2
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 2
+        },
+        {
+            "id": "5_1",
+            "source": 5,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "stage": 3,
+        "use": 1,
+        "in": 4,
+        "write": 1,
+        "to": 2,
+        "under": 1,
+        "with": 1,
+        "create": 1,
+        "store": 2
+    }
+}

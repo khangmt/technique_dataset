@@ -1,0 +1,117 @@
+{
+    "id": "T1565.001",
+    "tech_id": "T1565.001",
+    "tech_name": "Stored Data Manipulation",
+    "best_phrases": [],
+    "tactics": [
+        "TA0040"
+    ],
+    "features": [
+        "DATA",
+        "FUNCTION",
+        "NETWORK"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--41d6749b-9bd1-47f6-80c4-52652b965e78",
+        "relationship--d032ba7f-4dee-4a98-b400-86e2eb0ee918"
+    ],
+    "graph_nodes": [
+        {
+            "count": 3,
+            "id": 0,
+            "texts": [
+                "SUNSPOT",
+                "attacker",
+                "APT38"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 9,
+            "id": 1,
+            "texts": [
+                "copy",
+                "content",
+                "filename",
+                "filename",
+                "SolarWinds Orion software source file",
+                ".bk extension",
+                ".cs extension",
+                "records",
+                "SWIFT transactions"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 5,
+            "id": 2,
+            "texts": [
+                "SUNBURST",
+                "SUNBURST",
+                "MoveFileEx",
+                "Orion software",
+                "DYEPACK"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "databases"
+            ],
+            "label": "NETWORK"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 5
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 5
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "create": 1,
+        "backup": 1,
+        "write": 1,
+        "use": 3,
+        "move": 1,
+        "to": 2,
+        "of": 1,
+        "with": 2,
+        "within": 1,
+        "alter": 1,
+        "in": 1,
+        "use for": 1
+    }
+}

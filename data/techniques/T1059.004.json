@@ -1,0 +1,382 @@
+{
+    "id": "T1059.004",
+    "tech_id": "T1059.004",
+    "tech_name": "Unix Shell",
+    "best_phrases": [
+        "CVE-2019-19781"
+    ],
+    "tactics": [
+        "TA0002"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "COMPONENT",
+        "DIRECTORY",
+        "NETWORK",
+        "USER",
+        "VULNERABILITY"
+    ],
+    "locations": [
+        "macOS",
+        "Linux"
+    ],
+    "procedures": [
+        "relationship--0f363688-a168-4e9f-94e6-75142875c802",
+        "relationship--14ba8b29-133b-456d-b85d-139de4510bb1",
+        "relationship--2063f611-1da2-4a62-bbb6-38b37580679f",
+        "relationship--228c84a6-e6fa-45f3-9f89-36a0c95fb1e7",
+        "relationship--2398e409-24d3-4dd9-9353-8b6cf9eee81d",
+        "relationship--2df3ee99-0ad3-4da8-b25e-bbb47bb8562c",
+        "relationship--31e01486-8827-41cd-a21b-dc420554d1bb",
+        "relationship--3268cdc0-7cee-4fe5-92cc-2c3cdc06712b",
+        "relationship--4847b10f-f9da-4a35-8df8-e235c6244ba2",
+        "relationship--49eef071-24e0-456b-b4e7-618ab601c6f4",
+        "relationship--4f9fef8b-1ceb-4a10-b6ea-ff2a9680154f",
+        "relationship--51adc4b0-bf1b-4c55-ac6c-72b46560e833",
+        "relationship--55aa08a3-d33a-465b-8d48-d25566ce0957",
+        "relationship--60da816d-f78b-4566-9587-b572ad579e15",
+        "relationship--6b4a458b-d87a-4dc4-a375-46f4c1e6449a",
+        "relationship--6ea74151-62ea-462e-988e-7704db70ec87",
+        "relationship--79b95cda-7281-4a71-ac67-007615653d1b",
+        "relationship--7a9e9275-44c2-40c9-9eb3-cafc54503874",
+        "relationship--7c9e8275-a3d5-42cf-9202-5737f98362ee",
+        "relationship--7d20cbaf-a154-4192-9a97-ef2662d07246",
+        "relationship--a8b93875-6ad4-492e-afa1-0549ada7d7ca",
+        "relationship--abb80a28-3fc0-4e1f-8d39-83567be53835",
+        "relationship--b3bcdaeb-e4d7-403d-902e-df55aa5b6bb9",
+        "relationship--c08ebacd-b5e4-48c3-8ee6-389c635801da",
+        "relationship--c3d3bb7d-65cc-4915-bc28-492d341e6dbd",
+        "relationship--db451851-13b7-4aec-9146-2a770115140a",
+        "relationship--dcbe360b-c7d3-45bd-a1ef-a13bc2a562fe",
+        "relationship--de1f13d3-a6a0-4170-947d-81b59d1262ef",
+        "relationship--ee998ebb-2960-45db-bced-7c8081dfc030",
+        "relationship--f90759fc-14cb-4f29-a2b6-221d6fb0e884",
+        "relationship--ff9e0633-9618-4616-a303-f9bb059f6289"
+    ],
+    "graph_nodes": [
+        {
+            "count": 30,
+            "id": 0,
+            "texts": [
+                "NETWIRE",
+                "Turian",
+                "Hildegard",
+                "Green Lambert",
+                "TeamTNT",
+                "Bundlore",
+                "Penquin",
+                "Kinsing",
+                "Kobalos",
+                "Rocke",
+                "Derusbi",
+                "Chaos",
+                "Drovorub",
+                "OSX_OCEANLOTUS.D",
+                "Anchor",
+                "LoudMiner",
+                "AppleJeus",
+                "WindTail",
+                "OSX/Shlayer",
+                "Kazuar",
+                "Doki",
+                "CoinTicker",
+                "APT41",
+                "Skidmap",
+                "MacMa",
+                "CallMe",
+                "CookieMiner",
+                "XCSSET",
+                "Proton",
+                "Fysbis"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 7,
+            "id": 1,
+            "texts": [
+                "/bin/sh",
+                "/bin/bash",
+                "/bin/sh",
+                "/bin/bash",
+                "/tmp folder",
+                "/bin/bash",
+                "/bin/sh"
+            ],
+            "label": "DIRECTORY"
+        },
+        {
+            "count": 60,
+            "id": 2,
+            "texts": [
+                "commands",
+                "/bin/sh -c",
+                "shell scripts",
+                "command",
+                "commands",
+                "remote commands",
+                "bash scripts",
+                "Unix shell scripts",
+                "commands",
+                "arbitrary commands",
+                "command prompt",
+                "shell scripts",
+                "commands",
+                "cryptocurrency mining malware",
+                "remote Bash shell",
+                "commands",
+                "arbitrary commands",
+                "shell script",
+                "main executable",
+                "embedded base64-encoded payload",
+                "shell scripting",
+                "payloads",
+                "shell scripts",
+                "services",
+                "QEMU virtualization",
+                "installation",
+                "shell scripts",
+                "commands",
+                "persistence mechanisms",
+                "open command",
+                "application",
+                "bash scripts",
+                "payloads",
+                "payloads",
+                "commands",
+                "shell scripts",
+                "bash script",
+                "reverse shell",
+                "file /bin/pwd",
+                "activity",
+                "pm.sh",
+                "main payload",
+                "supplied shell commands",
+                "bash scripts",
+                "actions",
+                "capability",
+                "reverse shell",
+                "Exaramel",
+                "command",
+                "shell command",
+                "Unix shell script",
+                "commands",
+                "shell script",
+                "osacompile commands",
+                "osacompile -x -o xcode.app main.applescript",
+                "Mach-o files",
+                "actions",
+                "commands",
+                "remote shell",
+                "CLI"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 8,
+            "id": 3,
+            "texts": [
+                "victim machine",
+                "victim environment",
+                "compromised system",
+                "machine",
+                "Linux",
+                "system",
+                "macOS",
+                "macOS"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 3,
+            "id": 4,
+            "texts": [
+                "pseudo-terminal",
+                "8338",
+                "/"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 3,
+            "id": 5,
+            "texts": [
+                "reverse shell connection",
+                "TCP",
+                "Citrix devices"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 3,
+            "id": 6,
+            "texts": [
+                "root",
+                "victim",
+                "victims"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 11,
+            "id": 7,
+            "texts": [
+                "app bundle",
+                "macOS version",
+                "bytes",
+                "files",
+                "bytes",
+                "offset",
+                "file",
+                "osacompile commands",
+                "osacompile -x -o xcode.app main.applescript",
+                "Mach-o files",
+                ".command file type"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 8,
+            "texts": [
+                "CVE-2019-19781"
+            ],
+            "label": "VULNERABILITY"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 5
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 53
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 7
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "5_4",
+            "source": 5,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "0_6",
+            "source": 0,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "2_6",
+            "source": 2,
+            "dest": 6,
+            "count": 2
+        },
+        {
+            "id": "2_7",
+            "source": 2,
+            "dest": 7,
+            "count": 1
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "0_7",
+            "source": 0,
+            "dest": 7,
+            "count": 5
+        },
+        {
+            "id": "3_6",
+            "source": 3,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "2_8",
+            "source": 2,
+            "dest": 8,
+            "count": 1
+        },
+        {
+            "id": "8_5",
+            "source": 8,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "7_3",
+            "source": 7,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 20,
+        "execute": 20,
+        "on": 9,
+        "in": 5,
+        "spawn": 1,
+        "at": 3,
+        "run": 2,
+        "create": 2,
+        "provide": 1,
+        "as": 4,
+        "drop": 1,
+        "to": 2,
+        "inside": 1,
+        "by": 2,
+        "launch": 1,
+        "stop": 1,
+        "set": 1,
+        "after": 1,
+        "check": 1,
+        "download": 2,
+        "extract": 2,
+        "from": 2,
+        "into": 1,
+        "of": 2,
+        "with": 2,
+        "establish": 1,
+        "exploit": 1,
+        "against": 1,
+        "install": 1,
+        "perform": 1,
+        "have": 2,
+        "for": 2,
+        "target": 1,
+        "script": 1
+    }
+}

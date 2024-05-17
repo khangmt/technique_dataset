@@ -1,0 +1,159 @@
+{
+    "id": "T1621",
+    "tech_id": "T1621",
+    "tech_name": "Multi-Factor Authentication Request Generation",
+    "best_phrases": [],
+    "tactics": [
+        "TA0006"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "USER",
+        "NETWORK"
+    ],
+    "locations": [
+        "Windows",
+        "Office 365",
+        "Linux",
+        "macOS",
+        "IaaS",
+        "SaaS",
+        "Azure AD",
+        "Google Workspace"
+    ],
+    "procedures": [
+        "relationship--0cb7daf3-9c55-4210-a2a8-c5e40cf4ffbd",
+        "relationship--952ee3df-24da-4537-9e36-583e8f178f50",
+        "relationship--a3fef23a-9f22-4d7c-b9f1-3f05372e9d87",
+        "relationship--a72a96fc-c76e-4c55-9ea6-4315246c15db"
+    ],
+    "graph_nodes": [
+        {
+            "count": 2,
+            "id": 0,
+            "texts": [
+                "APT29",
+                "LAPSUS$"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 5,
+            "id": 1,
+            "texts": [
+                "repeated MFA requests",
+                "multifactor authentication (MFA) fatigue",
+                "repeated MFA authentication requests",
+                "MFA prompts",
+                "necessary approval"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 5,
+            "id": 2,
+            "texts": [
+                "access",
+                "victim accounts",
+                "access",
+                "target users",
+                "hope"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 2,
+            "id": 3,
+            "texts": [
+                "Scattered Spider",
+                "Scattered Spider"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "MFA messages"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 3,
+            "id": 5,
+            "texts": [
+                "victim",
+                "targets",
+                "legitimate user"
+            ],
+            "label": "USER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 3
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "4_5",
+            "source": 4,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "5_1",
+            "source": 5,
+            "dest": 1,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 2,
+        "gain": 2,
+        "to": 3,
+        "send": 2,
+        "spamme": 1,
+        "with": 2,
+        "in": 2,
+        "grant": 2
+    }
+}

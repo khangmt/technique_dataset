@@ -1,0 +1,395 @@
+{
+    "id": "T1547.009",
+    "tech_id": "T1547.009",
+    "tech_name": "Shortcut Modification",
+    "best_phrases": [],
+    "tactics": [
+        "TA0003",
+        "TA0004"
+    ],
+    "features": [
+        "DATA",
+        "FUNCTION",
+        "DIRECTORY",
+        "COMPONENT",
+        "NETWORK",
+        "USER",
+        "REGISTRY"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--0040312a-e85d-4066-8203-2e66f8aa5288",
+        "relationship--07921720-429b-432c-8147-187162326ff2",
+        "relationship--09962c1d-38be-43f6-83bc-a63d1bebdb2d",
+        "relationship--0fee8bfd-aec2-44a7-8182-530a648006f3",
+        "relationship--17a834a6-8d77-4fee-bd02-539d93f6fa5c",
+        "relationship--25557d9f-bfa0-4da7-8352-ab56b82b475b",
+        "relationship--3537c31f-bd6f-4cad-97ac-4ec3d8a9478b",
+        "relationship--410bd9e9-8ca7-4c3d-b517-e4d5b516333f",
+        "relationship--583d2c3b-dd25-4f83-812a-d38cee3cdeef",
+        "relationship--728dce0a-125c-4d66-8622-36d4d909352b",
+        "relationship--79ecf1f6-a17d-4374-a84c-811669e39261",
+        "relationship--7b4ee7bc-3a27-4142-a9bd-f65787193e8b",
+        "relationship--7cb37ba3-3a4b-45e5-974c-e337301e71a2",
+        "relationship--7ec988a7-712a-45ae-b6b3-db26a6515b80",
+        "relationship--8200c438-ec29-4f0e-81c3-9a058c735748",
+        "relationship--8a48e090-ab8c-414e-b559-7a0437c92850",
+        "relationship--8ce2219f-6c25-46a2-8215-a78871e2773a",
+        "relationship--8d34f263-bd94-44a4-b8ec-b6cae06dcdd2",
+        "relationship--907df22e-fdfe-4b93-8b18-ebf66f83868c",
+        "relationship--97ff5931-f27f-4774-b595-312f5771f91a",
+        "relationship--a1ec1602-33d6-45be-8eda-2020094e93a4",
+        "relationship--c327c333-46c4-4e23-81e0-2f0e07c24c11",
+        "relationship--cfc64939-1c2c-4bc0-bfac-3492667b1bcd",
+        "relationship--db61e886-9295-4df7-a9db-25d7b9879b82",
+        "relationship--e394c235-8567-4198-9559-fb3952672fe0",
+        "relationship--e57361ca-1d03-4171-86e2-09f8c32cb319",
+        "relationship--ed61e0a2-f6a7-43b1-b58e-aa0ab9c51c4e",
+        "relationship--f26c53f1-b346-4301-9951-22ffd96ee762",
+        "relationship--fc572a1d-a44d-4588-b31d-1c54116d12f4"
+    ],
+    "graph_nodes": [
+        {
+            "count": 24,
+            "id": 0,
+            "texts": [
+                "RogueRobin",
+                "SHIPSHAPE",
+                "RedLeaves",
+                "Reaver",
+                "Okrum",
+                "Grandoreiro",
+                "APT39",
+                "Micropsia",
+                "Helminth",
+                "MarkiRAT",
+                "Leviathan",
+                "SslMM",
+                "Comnie",
+                "Gazer",
+                "SPACESHIP",
+                "TinyZBot",
+                "Astaroth",
+                "S-Type",
+                "BACKSPACE",
+                "SeaDuke",
+                "InvisiMole",
+                "FELIXROOT",
+                "Bazar",
+                "Kazuar"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 34,
+            "id": 1,
+            "texts": [
+                "shortcut",
+                ".LNK file",
+                "shortcut file",
+                "shortcut",
+                ".lnk shortcut",
+                "browser shortcuts",
+                "browser extensions",
+                "LNK shortcuts",
+                "shortcut",
+                "shortcut",
+                "shortcut file",
+                "\" \"Yahoo Talk",
+                ",\" \"MSN Gaming Z0ne",
+                "\"Office Start",
+                "\"MSN Talk\" shortcut",
+                "LNK shortcut",
+                ".lnk file",
+                ".lnk files",
+                ".lnk shortcut",
+                "file",
+                "shortcut",
+                "shortcut",
+                ".LNK file",
+                "file",
+                ".lnk file",
+                "shortcut",
+                ".lnk file",
+                ".lnk shortcut",
+                ".LNK file",
+                "version",
+                "Windows shortcut",
+                "shortcuts",
+                ".LNK file",
+                ".lnk file"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 17,
+            "id": 2,
+            "texts": [
+                "script",
+                "payload",
+                "legitimate executable",
+                "JavaScript",
+                "main backdoor",
+                "executable",
+                "Lazarus Group malware",
+                "cmd.exe",
+                "malware",
+                "BlackEnergy 3 variant",
+                "main DLL component",
+                "initial payload",
+                "msdtc.exe file",
+                "Gorgon Group malware",
+                "KONNI",
+                "Empire",
+                "backdoor"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 17,
+            "id": 3,
+            "texts": [
+                "Windows startup folder",
+                "Startup folder",
+                "Startup folder",
+                "path",
+                "Startup folder",
+                "Start Menu Startup directory",
+                "Startup folder",
+                "startup path",
+                "startup folder",
+                "Startup folder",
+                "Windows startup folder",
+                "%homepath%\\Start Menu\\Programs\\Startup\\Realtek {Unique Identifier}.lnk",
+                "%CommonFiles% directory",
+                "CSIDL_STARTUP directory",
+                "Startup directory",
+                "Windows Startup folder",
+                "Windows startup folder"
+            ],
+            "label": "DIRECTORY"
+        },
+        {
+            "count": 5,
+            "id": 4,
+            "texts": [
+                "itself",
+                "launching",
+                "that",
+                "which",
+                "itself"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 6,
+            "id": 5,
+            "texts": [
+                "Telegram",
+                "link",
+                "\" \"Yahoo Talk",
+                ",\" \"MSN Gaming Z0ne",
+                "\"Office Start",
+                "\"MSN Talk\" shortcut"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 8,
+            "id": 6,
+            "texts": [
+                "\" \"Yahoo Talk",
+                ",\" \"MSN Gaming Z0ne",
+                "\"Office Start",
+                "\"MSN Talk\" shortcut",
+                "system",
+                "Start menu",
+                "Control Panel",
+                "machine"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 4,
+            "id": 7,
+            "texts": [
+                "user",
+                "victim",
+                "user",
+                "victim"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 1,
+            "id": 8,
+            "texts": [
+                "Registry Run key"
+            ],
+            "label": "REGISTRY"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 20
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 4
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 12
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 6
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 3
+        },
+        {
+            "id": "4_2",
+            "source": 4,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "5_2",
+            "source": 5,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "2_5",
+            "source": 2,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "2_6",
+            "source": 2,
+            "dest": 6,
+            "count": 2
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 6
+        },
+        {
+            "id": "3_7",
+            "source": 3,
+            "dest": 7,
+            "count": 3
+        },
+        {
+            "id": "1_6",
+            "source": 1,
+            "dest": 6,
+            "count": 4
+        },
+        {
+            "id": "2_0",
+            "source": 2,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "2_8",
+            "source": 2,
+            "dest": 8,
+            "count": 1
+        },
+        {
+            "id": "6_7",
+            "source": 6,
+            "dest": 7,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "create": 15,
+        "run": 1,
+        "in": 12,
+        "add": 3,
+        "to": 9,
+        "modify": 5,
+        "enable": 1,
+        "of": 7,
+        "replace": 1,
+        "launch": 2,
+        "with": 1,
+        "use": 3,
+        "point": 2,
+        "identify": 1,
+        "drop": 3,
+        "as": 1,
+        "on": 3,
+        "execute": 1,
+        "by": 2,
+        "be": 1,
+        "create in": 1,
+        "store in": 1,
+        "for": 1,
+        "write": 1,
+        "include": 1
+    }
+}

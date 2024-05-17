@@ -1,0 +1,282 @@
+{
+    "id": "T1589.002",
+    "tech_id": "T1589.002",
+    "tech_name": "Email Addresses",
+    "best_phrases": [],
+    "tactics": [
+        "TA0043"
+    ],
+    "features": [
+        "NETWORK",
+        "DATA",
+        "FUNCTION",
+        "USER",
+        "COMPONENT"
+    ],
+    "locations": [
+        "PRE"
+    ],
+    "procedures": [
+        "relationship--297ca26b-2074-46ea-b81d-a0a5c6fe5ac0",
+        "relationship--2a292158-5cb0-4ae6-a2e4-5bb454e090b1",
+        "relationship--7104b56f-06ef-4888-ab9b-fac77fea3097",
+        "relationship--76bef74f-4820-4838-b56e-b59ae71ac170",
+        "relationship--76ecca4d-15ba-4285-baa9-1cf03799dbeb",
+        "relationship--87661f05-f448-49be-afa8-d8198a1c0092",
+        "relationship--9801b87a-29e0-4252-81e6-50bbc32d1940",
+        "relationship--a43dfdcf-380a-43ae-877f-891a01ed1c53",
+        "relationship--a57d19ce-7a9a-4be5-ae59-a0b331bcc03a",
+        "relationship--c2b48ab4-6a4f-4252-a40c-7f870276b5a7",
+        "relationship--cbf49a08-de8a-483a-9732-230f9cc93002",
+        "relationship--dcb3ae1c-c1a5-4a28-b206-40f8387804ac",
+        "relationship--f425ddf8-fc3b-41d5-ba2e-66291ba16329"
+    ],
+    "graph_nodes": [
+        {
+            "count": 12,
+            "id": 0,
+            "texts": [
+                "TA551",
+                "MuddyWater",
+                "Lazarus Group",
+                "HAFNIUM",
+                "Magic Hound",
+                "Silent Librarian",
+                "Kimsuky",
+                "HEXANE",
+                "LAPSUS$",
+                "EXOTIC LILY",
+                "APT32",
+                "Sandworm Team"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 17,
+            "id": 1,
+            "texts": [
+                "spoofed company emails",
+                "email clients",
+                "spearphishing e-mails",
+                "email addresses",
+                "follow-on phishing campaigns",
+                "e-mail addresses",
+                "e-mail addresses",
+                "valid email addresses",
+                "spearphishing campaigns",
+                "user email addresses",
+                "spearphishing",
+                "employee email addresses",
+                "personal accounts",
+                "e-mail addresses",
+                "e-mail addresses",
+                "valid emails addresses",
+                "spearphishing campaigns"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 7,
+            "id": 2,
+            "texts": [
+                "individuals",
+                "government agency employees",
+                "IT personnel",
+                "human resources staff",
+                "executives",
+                "individuals",
+                "activists"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 14,
+            "id": 3,
+            "texts": [
+                "that",
+                "which",
+                "departments",
+                "journalism",
+                "national security",
+                "NGO",
+                "foreign policy",
+                "academia",
+                "targeted organizations",
+                "that",
+                "website contact forms",
+                "open source research",
+                "research",
+                "that"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 6,
+            "id": 4,
+            "texts": [
+                "infected hosts",
+                "journalism",
+                "national security",
+                "NGO",
+                "foreign policy",
+                "academia"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 11,
+            "id": 5,
+            "texts": [
+                "users",
+                "high-value email accounts",
+                "journalism",
+                "national security",
+                "NGO",
+                "foreign policy",
+                "academia",
+                "employee email addresses",
+                "personal accounts",
+                "website contact forms",
+                "open source research"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 8,
+            "id": 6,
+            "texts": [
+                "targeting",
+                "open Internet searches",
+                "AADInternals",
+                "existence",
+                "public Microsoft APIs",
+                "social engineering",
+                "initial access efforts",
+                "spyware"
+            ],
+            "label": "FUNCTION"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 11
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 3
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 6
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 4
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 3
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 2
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 3
+        },
+        {
+            "id": "5_3",
+            "source": 5,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "5_4",
+            "source": 5,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "5_6",
+            "source": 5,
+            "dest": 6,
+            "count": 2
+        },
+        {
+            "id": "0_6",
+            "source": 0,
+            "dest": 6,
+            "count": 2
+        },
+        {
+            "id": "1_6",
+            "source": 1,
+            "dest": 6,
+            "count": 3
+        },
+        {
+            "id": "6_1",
+            "source": 6,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "2_6",
+            "source": 2,
+            "dest": 6,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 5,
+        "target": 4,
+        "acquire": 1,
+        "from": 5,
+        "on": 1,
+        "with": 4,
+        "collect": 5,
+        "belong to": 1,
+        "in": 4,
+        "for": 7,
+        "identify": 1,
+        "of": 2,
+        "gather": 2,
+        "by": 2,
+        "obtain": 1,
+        "conduct": 1
+    }
+}

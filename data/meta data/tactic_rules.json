@@ -1,0 +1,153 @@
+{
+    "TA0043":{
+        "name":"Reconnaissance",
+        "info": [
+            {
+                "start": "AttackerSide",
+                "end":"same"
+            }
+        ]
+    },
+    "TA0042":{
+        "name":"Resource Development",
+        "info": [
+            {
+                "start": "AttackerSide",
+                "end":"same"
+            }
+        ]
+    },
+    "TA0001":{
+        "name":"Initial Access",
+        "info": [
+            {
+                "start": "AttackerSide",
+                "end":"VictimSide"
+            }
+        ]
+    },
+    "TA0002":{
+        "name":"Execution",
+        "info": [
+            {
+                "start": "Node",
+                "end":"same"
+            }
+        ]
+    },
+    "TA0003":{
+        "name": "Persistence",
+        "info": [
+            {
+                "start": "Node",
+                "end":"same"
+            }
+        ]
+    },
+    "TA0004":{
+        "name":"Privilege Escalation",
+        "info": [
+            {
+                "start": "Node",
+                "end":"same"
+            }
+        ]
+    },
+    "TA0005":{
+        "name":"Defense Evasion",
+        "info": [
+            {
+                "start": "Node",
+                "end":"same"
+            }
+        ]
+    },
+    "TA0006":{
+        "name":"Credential Access",
+        "info": [
+            {
+                "start": "Node",
+                "end":"same"
+            },
+            {
+                "start": "Node",
+                "end":"Edge"
+            }
+        ]
+    },
+    "TA0007":{
+        "name":"Discovery",
+        "info": [
+            {
+                "start": "Node",
+                "end":"same"
+            },
+            {
+                "start": "Node",
+                "end":"Edge"
+            }
+        ]
+    },
+    "TA0008":{
+        "name":"Lateral Movement",
+        "info": [
+            {
+                "start": "Node",
+                "end":"Node"
+            },
+            {
+                "start": "Edge",
+                "end":"Node"
+            }
+        ]
+    },
+    "TA0009":{
+        "name":"Collection",
+        "info": [
+            {
+                "start": "Node",
+                "end":"same"
+            },
+            {
+                "start": "Node",
+                "end":"Edge"
+            }
+        ]
+    },
+    "TA0011":{
+        "name":"Command and Control",
+        "info": [
+            {
+                "start": "AttackerSide",
+                "end":"Node"
+            },
+            {
+                "start": "Node",
+                "end":"AttackerSide"
+            }
+        ]
+    },
+    "TA0010":{
+        "name":"Exfiltration",
+        "info": [
+            {
+                "start": "VictimSide",
+                "end":"AttackerSide"
+            }
+        ]
+    },
+    "TA0040":{
+        "name":"Impact",
+        "info": [
+            {
+                "start": "Node",
+                "end":"same"
+            },
+            {
+                "start": "Edge",
+                "end":"Node"
+            }
+        ]
+    }
+
+}

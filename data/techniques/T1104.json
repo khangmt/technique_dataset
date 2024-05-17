@@ -1,0 +1,281 @@
+{
+    "id": "T1104",
+    "tech_id": "T1104",
+    "tech_name": "Multi-Stage Channels",
+    "best_phrases": [],
+    "tactics": [
+        "TA0011"
+    ],
+    "features": [
+        "FUNCTION",
+        "NETWORK",
+        "DATA",
+        "COMPONENT",
+        "USER",
+        "REGISTRY"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--1258536b-6cf4-4cfe-98c7-e9c1d30c5a34",
+        "relationship--25ad5783-c7fe-4715-b4ce-c03b36ccdfa8",
+        "relationship--3cf183ef-05aa-47ad-b691-654c0648326a",
+        "relationship--48e3f4e2-0506-4b5c-b40c-2c6edc92b0a5",
+        "relationship--711879b6-a9ac-42c6-a6a0-244b03890cec",
+        "relationship--8f060861-0206-4dcc-9f46-c55bde63ae40",
+        "relationship--a2006705-7f1b-4081-a074-5313f1d8c7af",
+        "relationship--a3a7d091-49bb-4fd1-9442-d02e83a48ea1",
+        "relationship--a6962782-1942-42f5-a627-f205376e2ec2",
+        "relationship--d4f7fac4-ddc0-40fa-8b16-c61b1de30072",
+        "relationship--f234930f-f7d1-458d-8c79-c73538990f97"
+    ],
+    "graph_nodes": [
+        {
+            "count": 21,
+            "id": 0,
+            "texts": [
+                "APT3 downloader",
+                "TechNet Web portal",
+                "control",
+                "multi-stage malware components",
+                "separate processes",
+                "modules",
+                "malwcan",
+                "Bazar loader",
+                "Bazar backdoor",
+                "payloads",
+                "modules",
+                "Individual Uroburos implants",
+                "operation",
+                "enumeration scripts",
+                "detection",
+                "\"louder\" interactions",
+                "malware",
+                "Chaos",
+                "initial compromise",
+                "permanent presence",
+                "secondary backdoor"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 19,
+            "id": 1,
+            "texts": [
+                "SOCKS5 connection",
+                "TCP port",
+                "192.157.198[.]103",
+                "connection",
+                "TCP port",
+                "192.184.60[.]229",
+                "IP address",
+                "IP address",
+                "C2",
+                "C2",
+                "encoded IP address",
+                "TechNet",
+                "separate C2 channels",
+                "separate communication channels",
+                "communication channels",
+                "C2",
+                "C2",
+                "stage C2",
+                "second stage server"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 9,
+            "id": 2,
+            "texts": [
+                "server response",
+                "Microsoft",
+                "later stages",
+                "that",
+                "modules",
+                "malwcan",
+                "one",
+                "four available modes",
+                "second stage"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 7,
+            "id": 3,
+            "texts": [
+                "BLACKCOFFEE",
+                "Lazarus Group",
+                "Valak",
+                "Snip3",
+                "MuddyWater",
+                "BACKSPACE",
+                "APT41"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 3,
+            "id": 4,
+            "texts": [
+                "encoded tag",
+                "web logs",
+                "data"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 2,
+            "id": 5,
+            "texts": [
+                "machines",
+                "system"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 1,
+            "id": 6,
+            "texts": [
+                "victims"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 1,
+            "id": 7,
+            "texts": [
+                "storescyncsvc.dll BEACON backdoor"
+            ],
+            "label": "REGISTRY"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 4
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "3_0",
+            "source": 3,
+            "dest": 0,
+            "count": 7
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 6
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 3
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "4_0",
+            "source": 4,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 2
+        },
+        {
+            "id": "5_6",
+            "source": 5,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "2_0",
+            "source": 2,
+            "dest": 0,
+            "count": 3
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "3_7",
+            "source": 3,
+            "dest": 7,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "establish": 2,
+        "use": 7,
+        "to": 3,
+        "request": 1,
+        "on": 4,
+        "obtain": 2,
+        "with": 2,
+        "of": 5,
+        "contain": 1,
+        "for": 1,
+        "update": 1,
+        "maintain": 1,
+        "discover": 1,
+        "inject": 1,
+        "into": 2,
+        "download": 3,
+        "execute": 2,
+        "over": 2,
+        "base on": 1,
+        "monitor": 1,
+        "send back": 1,
+        "avoid": 1,
+        "check": 1,
+        "perform": 1,
+        "after": 1
+    }
+}

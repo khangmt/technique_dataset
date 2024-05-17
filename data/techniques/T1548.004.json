@@ -1,0 +1,80 @@
+{
+    "id": "T1548.004",
+    "tech_id": "T1548.004",
+    "tech_name": "Elevated Execution with Prompt",
+    "best_phrases": [],
+    "tactics": [
+        "TA0004",
+        "TA0005"
+    ],
+    "features": [
+        "DATA",
+        "USER"
+    ],
+    "locations": [
+        "macOS"
+    ],
+    "procedures": [
+        "relationship--c9d727db-88ac-4729-bf8a-98d99a83534d"
+    ],
+    "graph_nodes": [
+        {
+            "count": 1,
+            "id": 0,
+            "texts": [
+                "OSX/Shlayer"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 2,
+            "id": 1,
+            "texts": [
+                "privileges",
+                "credentials"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 2,
+            "id": 2,
+            "texts": [
+                "root",
+                "user"
+            ],
+            "label": "USER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "escalate": 1,
+        "to": 2,
+        "ask": 1,
+        "for": 1
+    }
+}

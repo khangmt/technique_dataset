@@ -1,0 +1,130 @@
+{
+    "id": "T1134.005",
+    "tech_id": "T1134.005",
+    "tech_name": "SID-History Injection",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005",
+        "TA0004"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "USER",
+        "NETWORK"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--3e5cf341-4707-4de3-bb06-43530ee3e90f",
+        "relationship--62785ee1-44c5-4938-a479-3f1546531032"
+    ],
+    "graph_nodes": [
+        {
+            "count": 7,
+            "id": 0,
+            "texts": [
+                "MISC::AddSid module",
+                "Mimikatz",
+                "SID-History Injection",
+                "generated Kerberos Golden Tickets",
+                "DCSync",
+                "components",
+                "Empire"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 6,
+            "id": 1,
+            "texts": [
+                "SID or user/group account",
+                "SID-History",
+                "generated Kerberos Golden Tickets",
+                "DCSync",
+                "components",
+                "SID-History"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 2,
+            "texts": [
+                "scope"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 2,
+            "id": 3,
+            "texts": [
+                "user",
+                "user"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "domain"
+            ],
+            "label": "NETWORK"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "2_0",
+            "source": 2,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "of": 3,
+        "append": 1,
+        "to": 4,
+        "utilize": 1,
+        "expand": 1,
+        "beyond": 1,
+        "add": 1
+    }
+}

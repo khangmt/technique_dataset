@@ -1,0 +1,95 @@
+{
+    "id": "T1037",
+    "tech_id": "T1037",
+    "tech_name": "Boot or Logon Initialization Scripts",
+    "best_phrases": [],
+    "tactics": [
+        "TA0003",
+        "TA0004"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "DIRECTORY"
+    ],
+    "locations": [
+        "macOS",
+        "Windows",
+        "Linux"
+    ],
+    "procedures": [
+        "relationship--555ccfc5-909a-455d-a39a-446020b22f88",
+        "relationship--6a1d81fb-2a8e-44d4-a827-9b0c5e41d078",
+        "relationship--6b1cc49f-8d94-4f59-a723-2a70c3edf760"
+    ],
+    "graph_nodes": [
+        {
+            "count": 2,
+            "id": 0,
+            "texts": [
+                "APT29",
+                "Rocke"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 6,
+            "id": 1,
+            "texts": [
+                "legitimate application-specific startup scripts",
+                "malware",
+                "system startup",
+                "RotaJakiro",
+                "Linux distribution",
+                "\"init.d\" startup script"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 2,
+            "id": 2,
+            "texts": [
+                "root permissions",
+                ".conf file"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "/etc/init/ folder"
+            ],
+            "label": "DIRECTORY"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 4
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "hijack": 1,
+        "enable": 1,
+        "execute": 2,
+        "depend": 1,
+        "use": 1,
+        "in": 1,
+        "instal": 1
+    }
+}

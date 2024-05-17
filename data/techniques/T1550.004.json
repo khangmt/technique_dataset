@@ -1,0 +1,78 @@
+{
+    "id": "T1550.004",
+    "tech_id": "T1550.004",
+    "tech_name": "Web Session Cookie",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005",
+        "TA0008"
+    ],
+    "features": [
+        "DATA",
+        "FUNCTION"
+    ],
+    "locations": [
+        "Office 365",
+        "SaaS",
+        "Google Workspace",
+        "IaaS"
+    ],
+    "procedures": [
+        "relationship--9b03dca3-8d3f-42a6-9df1-44fdd732d393"
+    ],
+    "graph_nodes": [
+        {
+            "count": 1,
+            "id": 0,
+            "texts": [
+                "APT29"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 4,
+            "id": 1,
+            "texts": [
+                "stolen cookies",
+                "cloud resources",
+                "forged duo-sid cookie",
+                "email account"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 2,
+            "texts": [
+                "MFA"
+            ],
+            "label": "FUNCTION"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 1,
+        "access": 1,
+        "bypass": 1,
+        "set on": 1
+    }
+}

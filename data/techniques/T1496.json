@@ -1,0 +1,197 @@
+{
+    "id": "T1496",
+    "tech_id": "T1496",
+    "tech_name": "Resource Hijacking",
+    "best_phrases": [],
+    "tactics": [
+        "TA0040"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "COMPONENT",
+        "USER"
+    ],
+    "locations": [
+        "Windows",
+        "IaaS",
+        "Linux",
+        "macOS",
+        "Containers"
+    ],
+    "procedures": [
+        "relationship--0493bf17-29a1-4825-b1a2-6e037288637f",
+        "relationship--0bb4fb8a-0b0f-46c6-820b-d46c5f98fa12",
+        "relationship--46af303d-51d3-4b85-90e2-ee75f62c022c",
+        "relationship--46c37037-00da-4cf5-bde1-4296e10e6483",
+        "relationship--6c0d9758-34f0-49b4-ad12-91329b4398e2",
+        "relationship--774302ff-3ab9-4328-a434-6188efe0928a",
+        "relationship--8042dc21-37e4-4a60-aef1-457179f346e5",
+        "relationship--8f0e7661-fa5d-47c4-84b0-44cd31b49764",
+        "relationship--8f4e363a-ce2b-4a36-92fb-791d8ffc30d5",
+        "relationship--9ebc2d8a-a945-4b5d-805f-56e16bcc6676",
+        "relationship--ae8d16f8-ba51-4b17-987b-5fbeedfc1780",
+        "relationship--fdf3767f-49ad-43f3-943c-486099ffa3a8"
+    ],
+    "graph_nodes": [
+        {
+            "count": 11,
+            "id": 0,
+            "texts": [
+                "LoudMiner",
+                "Lucifer",
+                "Skidmap",
+                "CookieMiner",
+                "Rocke",
+                "Bonadan",
+                "Blue Mockingbird",
+                "TeamTNT",
+                "APT41",
+                "Hildegard",
+                "Kinsing"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 8,
+            "id": 1,
+            "texts": [
+                "system resources",
+                "cryptocurrency",
+                "Koto cryptocurrency",
+                "cryptocurrency mining extension",
+                "cryptocurrency",
+                "cryptocurrency",
+                "cryptocurrency",
+                "cryptocurrency"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 16,
+            "id": 2,
+            "texts": [
+                "XMRig",
+                "kernel-mode rootkit",
+                "cryptocurrency mining",
+                "coinmining software",
+                "cryptomining malware",
+                "module",
+                "XMRIG",
+                "Imminent Monitor",
+                "capability",
+                "cryptocurrency miner",
+                "XMRig",
+                "RainbowMiner",
+                "lolMiner",
+                "Monero cryptocurrency mining tool",
+                "xmrig",
+                "Bitcoin cryptocurrency miner"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "Monero"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 5,
+            "id": 4,
+            "texts": [
+                "systems",
+                "victim systems",
+                "victim machine",
+                "XMRig Docker images",
+                "environment"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "victim"
+            ],
+            "label": "USER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 7
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 11
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 4
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 3
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "4_2",
+            "source": 4,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "4_5",
+            "source": 4,
+            "dest": 5,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 4,
+        "mine": 7,
+        "drop": 1,
+        "be": 1,
+        "use for": 1,
+        "load": 1,
+        "onto": 2,
+        "distribute": 1,
+        "download": 1,
+        "have": 2,
+        "on": 2,
+        "run": 2,
+        "deploy": 2,
+        "infect": 1,
+        "with": 2,
+        "in": 2,
+        "of": 1
+    }
+}

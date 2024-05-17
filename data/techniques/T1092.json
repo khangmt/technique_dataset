@@ -1,0 +1,194 @@
+{
+    "id": "T1092",
+    "tech_id": "T1092",
+    "tech_name": "Communication Through Removable Media",
+    "best_phrases": [],
+    "tactics": [
+        "TA0011"
+    ],
+    "features": [
+        "COMPONENT",
+        "FUNCTION",
+        "DATA",
+        "USER",
+        "NETWORK"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--167d7b11-01f3-42d5-bb8a-78306dc80243",
+        "relationship--c569059f-8a7d-4777-a111-d3ab62d178ca",
+        "relationship--c612eb88-d7e0-46cc-a9bc-d0da2977ff00"
+    ],
+    "graph_nodes": [
+        {
+            "count": 3,
+            "id": 0,
+            "texts": [
+                "Part",
+                "itself",
+                "that"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 4,
+            "id": 1,
+            "texts": [
+                "operation",
+                "CHOPSTICK modules",
+                "tool",
+                "commands"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 4,
+            "id": 2,
+            "texts": [
+                "files",
+                "command traffic",
+                "data",
+                "information"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 2,
+            "id": 3,
+            "texts": [
+                "command traffic",
+                "data"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 3,
+            "id": 4,
+            "texts": [
+                "APT28",
+                "APT28",
+                "USBStealer"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 8,
+            "id": 5,
+            "texts": [
+                "air-gapped machines",
+                "USB sticks",
+                "infected USB",
+                "USB",
+                "air-gapped computers",
+                "network-connected computer",
+                "removable media drive",
+                "drive"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 3,
+            "id": 6,
+            "texts": [
+                "second victim",
+                "victim",
+                "second victim"
+            ],
+            "label": "USER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 3
+        },
+        {
+            "id": "2_5",
+            "source": 2,
+            "dest": 5,
+            "count": 4
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 2
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "4_5",
+            "source": 4,
+            "dest": 5,
+            "count": 2
+        },
+        {
+            "id": "1_6",
+            "source": 1,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "5_6",
+            "source": 5,
+            "dest": 6,
+            "count": 2
+        }
+    ],
+    "verbs": {
+        "of": 2,
+        "use": 4,
+        "transfer": 1,
+        "to": 3,
+        "write to": 1,
+        "capture": 1,
+        "insert": 1,
+        "from": 1,
+        "by": 2,
+        "drop": 1,
+        "onto": 2,
+        "for": 1,
+        "insert into": 1,
+        "into": 1
+    }
+}

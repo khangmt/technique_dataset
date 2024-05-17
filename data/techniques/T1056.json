@@ -1,0 +1,133 @@
+{
+    "id": "T1056",
+    "tech_id": "T1056",
+    "tech_name": "Input Capture",
+    "best_phrases": [],
+    "tactics": [
+        "TA0009",
+        "TA0006"
+    ],
+    "features": [
+        "NETWORK",
+        "FUNCTION",
+        "DATA",
+        "COMPONENT"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows",
+        "Network"
+    ],
+    "procedures": [
+        "relationship--69d4f4f9-adb0-41fc-952d-88579ab5b46b",
+        "relationship--6eb97f82-c49f-465d-b788-15a789f928b5",
+        "relationship--a74d38f5-92dc-4944-b840-0ab567f8f3ab",
+        "relationship--ae3897f5-099d-46b0-b645-81a9a45445fa",
+        "relationship--cf2df7c3-3efe-49d9-9c49-e35978d784c4",
+        "relationship--f11ab582-8ea8-4ed7-9b1e-2b31dce390da"
+    ],
+    "graph_nodes": [
+        {
+            "count": 6,
+            "id": 0,
+            "texts": [
+                "FlawedAmmyy",
+                "metaMain",
+                "Mafalda",
+                "Chaes",
+                "Kobalos",
+                "APT39"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 5,
+            "id": 1,
+            "texts": [
+                "mouse events",
+                "mouse event logging",
+                "module",
+                "API hooking",
+                "tools"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 6,
+            "id": 2,
+            "texts": [
+                "compromised SSH client",
+                "username",
+                "port",
+                "password",
+                "hostname",
+                "SSH connection"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 5,
+            "id": 3,
+            "texts": [
+                "username",
+                "port",
+                "password",
+                "hostname",
+                "mouse movements"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "compromised host"
+            ],
+            "label": "COMPONENT"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 4
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "log": 1,
+        "conduct": 1,
+        "have": 1,
+        "perform": 1,
+        "use": 1,
+        "capture": 2,
+        "establish": 1,
+        "from": 1,
+        "utilize": 1
+    }
+}

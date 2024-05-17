@@ -1,0 +1,187 @@
+{
+    "id": "T1622",
+    "tech_id": "T1622",
+    "tech_name": "Debugger Evasion",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005",
+        "TA0007"
+    ],
+    "features": [
+        "FUNCTION",
+        "COMPONENT",
+        "DATA"
+    ],
+    "locations": [
+        "Windows",
+        "Linux",
+        "macOS"
+    ],
+    "procedures": [
+        "relationship--0324f691-2708-4272-86a5-e0cb40aeba9e",
+        "relationship--4eb00375-3ee3-43c7-845a-2206e1eff114",
+        "relationship--50446870-ba6c-4d0c-b657-586a6cba8903",
+        "relationship--6bc08584-0dc8-494f-967f-50adc9464843",
+        "relationship--885a3674-5a25-42e4-aa7f-148a41493861",
+        "relationship--bcf36359-e8be-4842-8174-489a679f32a4",
+        "relationship--c6cc5a76-522d-4b48-ae5b-4867fa87f2c6",
+        "relationship--cce43f73-d564-4c60-9492-52b3f7039b7b",
+        "relationship--e711d51c-94d3-4a20-ae11-d3584bae36d9",
+        "relationship--f015b898-b057-40e4-9add-c4fa1e100f7e"
+    ],
+    "graph_nodes": [
+        {
+            "count": 30,
+            "id": 0,
+            "texts": [
+                "AsyncRAT",
+                "CheckRemoteDebuggerPresent function",
+                "presence",
+                "debugger",
+                "debugging tools",
+                "IsDebuggerPresent",
+                "Black Basta dropper",
+                "process timing",
+                "CPU instructions",
+                "system flags",
+                "APIs",
+                "CPU registers",
+                "system libraries",
+                "is_debugger_present",
+                "environmental checks",
+                "tools",
+                "IsDebuggerPresent call",
+                "debuggers",
+                "debuggers",
+                "DebuggerIsAttached",
+                "functions",
+                "DebuggerIsLogging",
+                "profilers",
+                "debugging tools",
+                "function",
+                "is_debugging",
+                "anti-debugging logic",
+                "debugging",
+                "tools",
+                "static analysis"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 8,
+            "id": 1,
+            "texts": [
+                "ROKRAT",
+                "DRATzarus",
+                "Saint Bot",
+                "Lazarus Group",
+                "DarkTortilla",
+                "Mafalda",
+                "ThiefQuest",
+                "Bumblebee"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 7,
+            "id": 2,
+            "texts": [
+                "process timing",
+                "CPU instructions",
+                "system flags",
+                "APIs",
+                "CPU registers",
+                "system libraries",
+                "compromised host"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 7,
+            "id": 3,
+            "texts": [
+                "process timing",
+                "CPU instructions",
+                "system flags",
+                "APIs",
+                "CPU registers",
+                "system libraries",
+                "returned value"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "part"
+            ],
+            "label": "OTHER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 13
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 3
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "4_0",
+            "source": 4,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "3_0",
+            "source": 3,
+            "dest": 0,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 7,
+        "detect": 4,
+        "of": 3,
+        "for": 3,
+        "check": 2,
+        "as": 2,
+        "on": 1,
+        "perform": 1,
+        "call": 1,
+        "prevent": 1,
+        "invoke": 1,
+        "with": 1,
+        "use in": 1
+    }
+}

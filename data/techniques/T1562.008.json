@@ -1,0 +1,74 @@
+{
+    "id": "T1562.008",
+    "tech_id": "T1562.008",
+    "tech_name": "Disable or Modify Cloud Logs",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005"
+    ],
+    "features": [
+        "FUNCTION",
+        "COMPONENT",
+        "DATA"
+    ],
+    "locations": [
+        "IaaS",
+        "SaaS",
+        "Google Workspace",
+        "Azure AD",
+        "Office 365"
+    ],
+    "procedures": [
+        "relationship--38eefeb2-1a2f-437c-a0eb-c7d49cd5dcb6"
+    ],
+    "graph_nodes": [
+        {
+            "count": 4,
+            "id": 0,
+            "texts": [
+                "Pacu",
+                "AWS CloudTrail",
+                "VPC flow logs",
+                "AWS logging services"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 3,
+            "id": 1,
+            "texts": [
+                "AWS CloudTrail",
+                "VPC flow logs",
+                "AWS logging services"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 3,
+            "id": 2,
+            "texts": [
+                "AWS CloudTrail",
+                "VPC flow logs",
+                "AWS logging services"
+            ],
+            "label": "DATA"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "restrict": 1
+    }
+}

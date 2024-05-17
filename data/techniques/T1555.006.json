@@ -1,0 +1,58 @@
+{
+    "id": "T1555.006",
+    "tech_id": "T1555.006",
+    "tech_name": "Cloud Secrets Management Stores",
+    "best_phrases": [],
+    "tactics": [
+        "TA0006"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA"
+    ],
+    "locations": [
+        "IaaS"
+    ],
+    "procedures": [
+        "relationship--bb3c2843-b51f-4cfd-8189-0312337b8eb3"
+    ],
+    "graph_nodes": [
+        {
+            "count": 3,
+            "id": 0,
+            "texts": [
+                "Pacu",
+                "enum_secrets module",
+                "AWS Secrets Manager"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 1,
+            "texts": [
+                "secrets"
+            ],
+            "label": "DATA"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 2
+        }
+    ],
+    "verbs": {
+        "by": 2,
+        "retrieve": 1,
+        "from": 2
+    }
+}

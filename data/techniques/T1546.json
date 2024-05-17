@@ -1,0 +1,77 @@
+{
+    "id": "T1546",
+    "tech_id": "T1546",
+    "tech_name": "Event Triggered Execution",
+    "best_phrases": [],
+    "tactics": [
+        "TA0004",
+        "TA0003"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "COMPONENT"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows",
+        "SaaS",
+        "IaaS",
+        "Office 365"
+    ],
+    "procedures": [
+        "relationship--804f7690-6bf2-41dc-a6d2-59c3d4394ce5"
+    ],
+    "graph_nodes": [
+        {
+            "count": 5,
+            "id": 0,
+            "texts": [
+                "Pacu",
+                "Lambda function",
+                "Lambda functions",
+                "CloudFormation template",
+                "creation"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 1,
+            "texts": [
+                "S3 bucket notifications"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 2,
+            "texts": [
+                "bucket"
+            ],
+            "label": "COMPONENT"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "set": 1,
+        "trigger": 1,
+        "create": 1,
+        "to": 1,
+        "of": 1
+    }
+}

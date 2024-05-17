@@ -1,0 +1,195 @@
+{
+    "id": "T1070.009",
+    "tech_id": "T1070.009",
+    "tech_name": "Clear Persistence",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005"
+    ],
+    "features": [
+        "REGISTRY",
+        "FUNCTION",
+        "COMPONENT",
+        "DATA"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--39080ec2-9914-4f83-a83e-18573da1b776",
+        "relationship--3c385d99-72c8-40b8-8eb5-f844c2b191c8",
+        "relationship--50d9747b-7dee-4daf-8611-b4190ecd7e35",
+        "relationship--7e6700e2-4a06-4583-933b-53d3a2761af7",
+        "relationship--81d62795-b28f-4146-b4ff-b74da5cf514b",
+        "relationship--a5848605-3931-4dc8-a3e4-299683258c0f",
+        "relationship--aeb4ffa0-24f7-4812-aa4d-553ac5e954de",
+        "relationship--b01cdac9-edae-4952-9bba-351d6d7ef5f5",
+        "relationship--ba583cf4-b162-4fbd-bf94-ad9f8cc5f642",
+        "relationship--f7873bae-95b2-4463-808f-8f9d5c9deb8e"
+    ],
+    "graph_nodes": [
+        {
+            "count": 9,
+            "id": 0,
+            "texts": [
+                "SUNBURST",
+                "Bazar",
+                "Pillowmint",
+                "Misdat",
+                "S-Type",
+                "njRAT",
+                "KOCTOPUS",
+                "GrimAgent",
+                "RTM"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 8,
+            "id": 1,
+            "texts": [
+                "IFEO registry values",
+                "those",
+                "set Registry Keys",
+                "Registry keys",
+                "those",
+                "registry keys",
+                "created registry keys",
+                "Registry entries"
+            ],
+            "label": "REGISTRY"
+        },
+        {
+            "count": 2,
+            "id": 2,
+            "texts": [
+                "traces",
+                "accounts"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 7,
+            "id": 3,
+            "texts": [
+                "MCMD",
+                "loader",
+                "scheduled tasks",
+                "malware",
+                "service",
+                "cleanup procedure",
+                "created tasks"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 5,
+            "id": 4,
+            "texts": [
+                "those",
+                "set Registry Keys",
+                "those",
+                "registry keys",
+                "part"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 3,
+            "id": 5,
+            "texts": [
+                "instance",
+                "infected machine",
+                "compromised host"
+            ],
+            "label": "COMPONENT"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 5
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "3_0",
+            "source": 3,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "5_3",
+            "source": 5,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "3_5",
+            "source": 3,
+            "dest": 5,
+            "count": 2
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "4_3",
+            "source": 4,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "remove": 3,
+        "clean": 1,
+        "of": 3,
+        "delete": 6,
+        "create": 1,
+        "uninstall": 1,
+        "from": 2,
+        "as": 2,
+        "on": 1
+    }
+}

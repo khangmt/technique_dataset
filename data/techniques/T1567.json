@@ -1,0 +1,129 @@
+{
+    "id": "T1567",
+    "tech_id": "T1567",
+    "tech_name": "Exfiltration Over Web Service",
+    "best_phrases": [],
+    "tactics": [
+        "TA0010"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "COMPONENT",
+        "NETWORK"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows",
+        "Office 365",
+        "SaaS",
+        "Google Workspace"
+    ],
+    "procedures": [
+        "relationship--043ea873-396a-4ba8-a3e3-1f9af11c986e",
+        "relationship--2cbaf5dd-8b53-427f-ae00-9cda47125d5b",
+        "relationship--6e6910db-1606-43a2-9812-22b5597d8472",
+        "relationship--82a28d75-1f8e-45fa-9988-af46ed102cab",
+        "relationship--8c273532-e27f-4424-a369-5373ce3652b9",
+        "relationship--cb68b950-31f1-4ed7-b184-b9208588648a"
+    ],
+    "graph_nodes": [
+        {
+            "count": 6,
+            "id": 0,
+            "texts": [
+                "Magic Hound",
+                "APT28",
+                "DropBook",
+                "AppleSeed",
+                "threat actors",
+                "APT41"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 6,
+            "id": 1,
+            "texts": [
+                "Telegram API",
+                "sendMessage",
+                "legitimate web services",
+                "web services",
+                "ngrok",
+                "Cloudflare services"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 6,
+            "id": 2,
+            "texts": [
+                "data",
+                "data",
+                "data",
+                "files",
+                "data",
+                "data"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 2,
+            "id": 3,
+            "texts": [
+                "compromised devices",
+                "Google Drive"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "servers"
+            ],
+            "label": "NETWORK"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 6
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 6
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 6,
+        "relay": 1,
+        "on": 1,
+        "over": 2,
+        "exfiltrate": 5,
+        "configure": 1
+    }
+}

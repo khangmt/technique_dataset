@@ -1,0 +1,154 @@
+{
+    "id": "T1558.003",
+    "tech_id": "T1558.003",
+    "tech_name": "Kerberoasting",
+    "best_phrases": [
+        "Kerberoasting",
+        "kerberoasting",
+        "kerberoasting powershell commands"
+    ],
+    "tactics": [
+        "TA0006"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "ENCRYPTION"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--0253908e-87d0-4804-994c-2ab58c3d3111",
+        "relationship--5d4113cb-f652-4214-9585-388422528960",
+        "relationship--5f1cf52c-f565-4325-9d4f-4a961c642a0f",
+        "relationship--72b30ddb-137c-4799-bacd-ab17aa2d01fc",
+        "relationship--827cbddc-3e19-4aff-a27a-5cce63812d44",
+        "relationship--91dc0049-df2a-4dc0-b6b4-863a9a733c7a",
+        "relationship--aa84d43a-4f79-485c-95ea-a375d5f52838",
+        "relationship--aaa0e944-7158-4baa-b45b-c687f7b161b5",
+        "relationship--df3c2022-f649-45f5-a987-5ba7a766a058",
+        "relationship--fb20c1f3-aa1e-49f3-9793-e07e0d430f5d"
+    ],
+    "graph_nodes": [
+        {
+            "count": 20,
+            "id": 0,
+            "texts": [
+                "Rubeus",
+                "KerberosRequestorSecurityToken.GetRequest method",
+                "GetUserSPNs",
+                "Impacket modules",
+                "Empire",
+                "Invoke-Kerberoast",
+                "PowerSploit",
+                "Invoke-Kerberoast cmdlet",
+                "MimiKatz Kerberos module",
+                "Rubeus",
+                "Invoke-Kerberoast module",
+                "PowerSploit",
+                "SILENTTRINITY",
+                "module",
+                "Invoke-Kerberoast module",
+                "PowerSploit",
+                "Kerberoasting PowerShell commands",
+                "Invoke-Kerberoast",
+                "Brute Ratel C4",
+                "subsequent cracking"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 16,
+            "id": 1,
+            "texts": [
+                "kerberoastable service tickets",
+                "Service Principal Names",
+                "SPNs",
+                "user accounts",
+                "service tickets",
+                "crackable ticket hashes",
+                "AES hashes",
+                "encrypted service tickets",
+                "passwords",
+                "Windows service accounts",
+                "Ticket Granting Service (TGS) tickets",
+                "service tickets",
+                "crackable ticket hashes",
+                "credential",
+                "Kerberos 5 tickets",
+                "hashcat format"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 5,
+            "id": 2,
+            "texts": [
+                "Wizard Spider",
+                "threat actors",
+                "APT29",
+                "FIN7",
+                "attacker"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "Kerberoasting"
+            ],
+            "label": "ENCRYPTION"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 9
+        },
+        {
+            "id": "2_0",
+            "source": 2,
+            "dest": 0,
+            "count": 4
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 6
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 5,
+        "request": 4,
+        "get": 2,
+        "for": 3,
+        "return": 2,
+        "of": 4,
+        "steal": 1,
+        "bruteforce": 1,
+        "contain": 1,
+        "conduct": 1,
+        "obtain": 1,
+        "access": 1,
+        "decode": 1,
+        "convert": 1,
+        "to": 2
+    }
+}

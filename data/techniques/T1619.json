@@ -1,0 +1,71 @@
+{
+    "id": "T1619",
+    "tech_id": "T1619",
+    "tech_name": "Cloud Storage Object Discovery",
+    "best_phrases": [],
+    "tactics": [
+        "TA0007"
+    ],
+    "features": [
+        "COMPONENT",
+        "DATA",
+        "FUNCTION"
+    ],
+    "locations": [
+        "IaaS"
+    ],
+    "procedures": [
+        "relationship--64d9fee3-d0c8-40e5-b295-d43ec719bb81",
+        "relationship--9f2ee173-a4b2-45d9-8dfe-537f1fc82ef4"
+    ],
+    "graph_nodes": [
+        {
+            "count": 2,
+            "id": 0,
+            "texts": [
+                "Pacu",
+                "Peirates"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 4,
+            "id": 1,
+            "texts": [
+                "AWS storage services",
+                "S3 buckets",
+                "Elastic Block Store volumes",
+                "AWS S3 buckets"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 3,
+            "id": 2,
+            "texts": [
+                "AWS storage services",
+                "S3 buckets",
+                "Elastic Block Store volumes"
+            ],
+            "label": "DATA"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "enumerate": 1,
+        "list": 1
+    }
+}

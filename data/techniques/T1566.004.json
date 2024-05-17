@@ -1,0 +1,102 @@
+{
+    "id": "T1566.004",
+    "tech_id": "T1566.004",
+    "tech_name": "Spearphishing Voice",
+    "best_phrases": [],
+    "tactics": [
+        "TA0001"
+    ],
+    "features": [
+        "USER",
+        "FUNCTION",
+        "COMPONENT"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows",
+        "Office 365",
+        "SaaS",
+        "Google Workspace"
+    ],
+    "procedures": [
+        "relationship--f417c73d-20a3-447c-8839-5897e01d2a90"
+    ],
+    "graph_nodes": [
+        {
+            "count": 1,
+            "id": 0,
+            "texts": [
+                "Scattered Spider"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 2,
+            "id": 1,
+            "texts": [
+                "legitimate IT personnel",
+                "victims"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 2,
+            "id": 2,
+            "texts": [
+                "phone calls",
+                "remote monitoring and management (RMM) tool"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "adversary"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "system"
+            ],
+            "label": "COMPONENT"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "impersonate": 1,
+        "in": 2,
+        "direct": 1,
+        "download": 1,
+        "control": 1
+    }
+}

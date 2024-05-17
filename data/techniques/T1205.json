@@ -1,0 +1,247 @@
+{
+    "id": "T1205",
+    "tech_id": "T1205",
+    "tech_name": "Traffic Signaling",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005",
+        "TA0003",
+        "TA0011"
+    ],
+    "features": [
+        "FUNCTION",
+        "NETWORK",
+        "DATA",
+        "COMPONENT",
+        "USER"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows",
+        "Network"
+    ],
+    "procedures": [
+        "relationship--5488dd31-2a28-4250-89ff-963214f46b92",
+        "relationship--5d9b14c3-70ea-46b3-9b0d-1595c215efec",
+        "relationship--76625152-3f62-4a1e-a769-5503811b0276",
+        "relationship--788ec1d9-9192-46c9-8bc3-7397ccb854df",
+        "relationship--85af8200-2e4c-4253-a334-0390ac4065f8",
+        "relationship--894e96b2-2dac-4958-8f14-8eacf169b9b6",
+        "relationship--8f27fb1d-f888-4167-a08c-781dde29755d",
+        "relationship--9fb463af-4ad8-48b5-89cf-68bac34a68d7",
+        "relationship--d71ad22f-7e01-4140-9080-bce4ae880880"
+    ],
+    "graph_nodes": [
+        {
+            "count": 7,
+            "id": 0,
+            "texts": [
+                "Penquin",
+                "SYNful Knock",
+                "Umbreon",
+                "Kobalos",
+                "Pandora",
+                "Ryuk",
+                "Uroburos"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 14,
+            "id": 1,
+            "texts": [
+                "C2",
+                "TCP or UDP packets",
+                "special packets",
+                "messages",
+                "packet",
+                "port",
+                "special packet",
+                "incoming TCP connection",
+                "source port",
+                "traffic",
+                "incoming HTTP traffic",
+                "client to server packet",
+                "packet",
+                "server"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 9,
+            "id": 2,
+            "texts": [
+                "\"magic packet\" value",
+                "conditions",
+                "magic value",
+                "receipt",
+                "special string",
+                "access",
+                "receipt",
+                "token",
+                "correct unique value"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 17,
+            "id": 3,
+            "texts": [
+                "instructions",
+                "functionality",
+                "Code",
+                "functionality",
+                "Winnti",
+                "passive listener",
+                "secondary C2 mechanism",
+                "tasking",
+                "backdoor Espeon",
+                "reverse shell",
+                "legitimate service",
+                "received command",
+                "Wake-on-Lan",
+                "3-way TCP handshake",
+                "legitimate listening application",
+                "Uroburos implant",
+                "TCP session"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 2,
+            "id": 4,
+            "texts": [
+                "Linux",
+                "turned off systems"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "client"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 1,
+            "id": 6,
+            "texts": [
+                "rest"
+            ],
+            "label": "OTHER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 4
+        },
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 2
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 3
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 4
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "5_1",
+            "source": 5,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "6_3",
+            "source": 6,
+            "dest": 3,
+            "count": 2
+        }
+    ],
+    "verbs": {
+        "to": 5,
+        "sniff": 1,
+        "in": 3,
+        "match": 1,
+        "send": 1,
+        "change": 1,
+        "for": 3,
+        "use": 3,
+        "as": 2,
+        "identify": 1,
+        "execute": 1,
+        "of": 3,
+        "with": 1,
+        "send to": 1,
+        "provide": 2,
+        "upon": 1,
+        "trigger": 1,
+        "from": 1,
+        "intercept": 3,
+        "contain": 2,
+        "process": 1,
+        "power": 1
+    }
+}

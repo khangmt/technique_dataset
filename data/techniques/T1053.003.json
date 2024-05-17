@@ -1,0 +1,179 @@
+{
+    "id": "T1053.003",
+    "tech_id": "T1053.003",
+    "tech_name": "Cron",
+    "best_phrases": [
+        "Cron",
+        "cron",
+        "cron tasks",
+        "cron job"
+    ],
+    "tactics": [
+        "TA0002",
+        "TA0003",
+        "TA0004"
+    ],
+    "features": [
+        "FUNCTION",
+        "COMPONENT",
+        "DATA",
+        "NETWORK"
+    ],
+    "locations": [
+        "Linux",
+        "macOS"
+    ],
+    "procedures": [
+        "relationship--15e5ddeb-ad28-44c0-a7a7-0fe69e05456d",
+        "relationship--36df9345-1175-4425-af6f-e40e393fc182",
+        "relationship--3ec34d16-a4e6-4fc7-b819-5a041605aa42",
+        "relationship--40f49d74-4d0f-467a-be79-cd57559d8230",
+        "relationship--49a68076-c596-412d-a8af-3e238dfef960",
+        "relationship--52c32b71-1b7c-45e9-b082-7f3f16b90f2b",
+        "relationship--629775bc-6ca5-499c-b756-69017c064f37",
+        "relationship--67f336eb-31e7-4904-9ed4-07ca68cd3838",
+        "relationship--7bd145ae-5ad2-48cc-8438-5b9ec8ed5414",
+        "relationship--b817a0c2-e93a-4bbd-ad96-b8a820562bc1",
+        "relationship--dedf19b5-f91d-4555-93fe-c551f9ca6302",
+        "relationship--e28ddc1d-83a4-4382-a4dc-e55a60aa399d"
+    ],
+    "graph_nodes": [
+        {
+            "count": 10,
+            "id": 0,
+            "texts": [
+                "SpeakUp",
+                "Anchor",
+                "Janicab",
+                "Skidmap",
+                "Rocke",
+                "Xbash",
+                "NETWIRE",
+                "Penquin",
+                "Kinsing",
+                "APT38"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 16,
+            "id": 1,
+            "texts": [
+                "cron tasks",
+                "cron job",
+                "cron job",
+                "crontab",
+                "cron job",
+                "cronjob",
+                "crontabs",
+                "GoldMax Linux variant",
+                "Cron",
+                "periodic and pre-scheduled background jobs",
+                "crontab",
+                "shell scripts",
+                "cron",
+                "pre-scheduled and periodic background jobs",
+                "Exaramel",
+                "crontab"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 2,
+            "id": 2,
+            "texts": [
+                "itself",
+                "itself"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 4,
+            "id": 3,
+            "texts": [
+                "Mac devices",
+                "Linux system",
+                "Linux system",
+                "Linux"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 3,
+            "id": 4,
+            "texts": [
+                "files",
+                "crontab entry",
+                "@reboot line"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "C2"
+            ],
+            "label": "NETWORK"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 13
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 3
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "4_5",
+            "source": 4,
+            "dest": 5,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 8,
+        "install": 1,
+        "as": 2,
+        "on": 3,
+        "by": 2,
+        "instal": 2,
+        "execute": 1,
+        "from": 1,
+        "create": 3,
+        "be": 1,
+        "with": 1,
+        "run": 1,
+        "for": 1
+    }
+}

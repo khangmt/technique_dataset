@@ -1,0 +1,132 @@
+{
+    "id": "T1591",
+    "tech_id": "T1591",
+    "tech_name": "Gather Victim Org Information",
+    "best_phrases": [],
+    "tactics": [
+        "TA0043"
+    ],
+    "features": [
+        "DATA",
+        "FUNCTION",
+        "USER"
+    ],
+    "locations": [
+        "PRE"
+    ],
+    "procedures": [
+        "relationship--2b9855a9-f381-4a3e-a0c2-80310374b165",
+        "relationship--44468587-67b5-4c44-8c2b-ed2b4769f055",
+        "relationship--63603405-b343-4e11-9ae0-3ece75611894"
+    ],
+    "graph_nodes": [
+        {
+            "count": 3,
+            "id": 0,
+            "texts": [
+                "Lazarus Group",
+                "Lazarus Group",
+                "Kimsuky"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 7,
+            "id": 1,
+            "texts": [
+                "information",
+                "victim organization information",
+                "victim organization information",
+                "others",
+                "organization hierarchy",
+                "functions",
+                "press releases"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 7,
+            "id": 2,
+            "texts": [
+                "targeted organization",
+                "departments",
+                "individuals",
+                "others",
+                "organization hierarchy",
+                "functions",
+                "press releases"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 5,
+            "id": 3,
+            "texts": [
+                "spearphishing efforts",
+                "others",
+                "organization hierarchy",
+                "functions",
+                "press releases"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 3,
+            "id": 4,
+            "texts": [
+                "departments",
+                "individuals",
+                "targets"
+            ],
+            "label": "USER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "study": 1,
+        "about": 1,
+        "tailor": 1,
+        "against": 1,
+        "gather": 1,
+        "identify": 1,
+        "collect": 1,
+        "limit": 1
+    }
+}

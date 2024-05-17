@@ -1,0 +1,128 @@
+{
+    "id": "T1562.002",
+    "tech_id": "T1562.002",
+    "tech_name": "Disable Windows Event Logging",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005"
+    ],
+    "features": [
+        "FUNCTION",
+        "COMPONENT",
+        "DATA",
+        "NETWORK"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--5b125600-b528-49d4-9d1b-28eae9f8c8a9",
+        "relationship--6f884bda-0c39-4d3b-97e3-29ae9099fa45",
+        "relationship--8f6be9bc-b570-442e-9feb-7802a87c161e",
+        "relationship--c4252024-1997-4d07-8c48-e2b9d27d4e30",
+        "relationship--e9dcd224-c2c4-4bee-a1ac-51d656653237"
+    ],
+    "graph_nodes": [
+        {
+            "count": 6,
+            "id": 0,
+            "texts": [
+                "Wevtutil",
+                "appcmd.exe",
+                "logging",
+                "scripts",
+                "AUDITPOL",
+                "event logging"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 1,
+            "texts": [
+                "event logs"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 2,
+            "id": 2,
+            "texts": [
+                "system",
+                "compromised systems"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 4,
+            "id": 3,
+            "texts": [
+                "Threat Group-3390",
+                "Magic Hound",
+                "APT29",
+                "Sandworm Team"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "victim server"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "event log service"
+            ],
+            "label": "OTHER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "3_0",
+            "source": 3,
+            "dest": 0,
+            "count": 5
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "disable": 4,
+        "on": 3,
+        "use": 2,
+        "execute": 1
+    }
+}

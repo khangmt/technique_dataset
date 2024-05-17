@@ -1,0 +1,110 @@
+{
+    "id": "T1136.003",
+    "tech_id": "T1136.003",
+    "tech_name": "Cloud Account",
+    "best_phrases": [],
+    "tactics": [
+        "TA0003"
+    ],
+    "features": [
+        "COMPONENT",
+        "DATA",
+        "FUNCTION"
+    ],
+    "locations": [
+        "Azure AD",
+        "Office 365",
+        "IaaS",
+        "Google Workspace",
+        "SaaS"
+    ],
+    "procedures": [
+        "relationship--3920af52-2820-42e8-a6a8-2182c3a3908a",
+        "relationship--7344f9ce-b2ec-4754-b980-4d8d1464d35d",
+        "relationship--7a5c8052-723b-47e1-943f-0731b9177730"
+    ],
+    "graph_nodes": [
+        {
+            "count": 2,
+            "id": 0,
+            "texts": [
+                "APT29",
+                "LAPSUS$"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 2,
+            "id": 1,
+            "texts": [
+                "Azure AD",
+                "cloud instances"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 2,
+            "id": 2,
+            "texts": [
+                "users",
+                "global admin accounts"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 2,
+            "id": 3,
+            "texts": [
+                "organization",
+                "Azure AD users"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "AADInternals"
+            ],
+            "label": "FUNCTION"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "4_3",
+            "source": 4,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "by": 2,
+        "create": 3,
+        "in": 2,
+        "of": 1
+    }
+}

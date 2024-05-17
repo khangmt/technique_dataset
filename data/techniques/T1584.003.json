@@ -1,0 +1,55 @@
+{
+    "id": "T1584.003",
+    "tech_id": "T1584.003",
+    "tech_name": "Virtual Private Server",
+    "best_phrases": [],
+    "tactics": [
+        "TA0042"
+    ],
+    "features": [
+        "NETWORK"
+    ],
+    "locations": [
+        "PRE"
+    ],
+    "procedures": [
+        "relationship--e424b236-8c54-482b-b390-a15345f5c35c"
+    ],
+    "graph_nodes": [
+        {
+            "count": 2,
+            "id": 0,
+            "texts": [
+                "Turla",
+                "compromised Iranian threat actors"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 1,
+            "id": 1,
+            "texts": [
+                "VPS infrastructure"
+            ],
+            "label": "NETWORK"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 1,
+        "of": 1
+    }
+}

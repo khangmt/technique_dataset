@@ -1,0 +1,276 @@
+{
+    "id": "T1568",
+    "tech_id": "T1568",
+    "tech_name": "Dynamic Resolution",
+    "best_phrases": [],
+    "tactics": [
+        "TA0011"
+    ],
+    "features": [
+        "NETWORK",
+        "FUNCTION",
+        "DATA",
+        "COMPONENT"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--03f288cd-a189-4de9-abd4-6b10bda138a4",
+        "relationship--0869b511-3211-4f90-86fa-d145fa42cc3a",
+        "relationship--1e04ed60-7e43-4bad-a4c2-462b0b001dda",
+        "relationship--20e1f501-0932-40d2-a41b-386a8b9d463d",
+        "relationship--23041edc-3136-49b7-8d08-311321455aa7",
+        "relationship--24fadb92-7a18-450b-b4ca-f5dd019ce54c",
+        "relationship--25eb9cd3-80e1-4116-bfd3-fa3819dc2079",
+        "relationship--2c57efb7-0a7a-4b75-bbe1-e6f243713bee",
+        "relationship--406afc1a-4ea7-45c5-b137-7784f9ed53f3",
+        "relationship--67cf9a5c-3ecf-4280-9808-a027680f7444",
+        "relationship--6a521aa4-d389-4ef4-bd24-442d8af23333",
+        "relationship--6a56f549-3835-4f1f-8ece-fb8400f04432",
+        "relationship--6d550704-4ccb-485b-8e79-519d13768afa",
+        "relationship--b965ddc5-3017-4857-9a3d-44aaf24b6bfd",
+        "relationship--e101388f-ea73-4d02-b07f-c89a17dfa4a5",
+        "relationship--eb77b635-6f00-4975-b36e-63c7a5c48e3c",
+        "relationship--ebe49c13-057f-4dc4-b04b-f19ac2480c4a",
+        "relationship--f974cb59-0c30-43a3-bb3e-58ebc1007d6d"
+    ],
+    "graph_nodes": [
+        {
+            "count": 16,
+            "id": 0,
+            "texts": [
+                "Tomiris",
+                "Gelsemium",
+                "threat actors",
+                "threat actors",
+                "Bisonal",
+                "Transparent Tribe",
+                "BITTER",
+                "RTM",
+                "APT29",
+                "NETEAGLE",
+                "APT29",
+                "Maze",
+                "threat actors",
+                "threat actors",
+                "Gamaredon Group",
+                "SUNBURST"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 34,
+            "id": 1,
+            "texts": [
+                "signalization server",
+                "C2",
+                "URL",
+                "port",
+                "C2",
+                "DNS Exit",
+                "dynamic DNS services",
+                "Duck DNS",
+                "C2 infrastructure",
+                "C2 infrastructure",
+                "C2",
+                "C2 communications",
+                "Pony C2 IP addresses",
+                "IP addresses",
+                "malware C2 infrastructure",
+                "HTTP",
+                "port number pair",
+                "IP address",
+                "C2",
+                "randomly-generated subdomains",
+                "C2",
+                "connection",
+                "C2",
+                "dynamic DNS",
+                "ClouDNS dynamic DNS subdomain",
+                "dynamic DNS domains",
+                "free providers",
+                "3322",
+                "No-IP",
+                "Oray",
+                "dynamic DNS domains",
+                "C2 infrastructure",
+                "randomly-generated subdomains",
+                "parent domain"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 13,
+            "id": 2,
+            "texts": [
+                "GET request",
+                "DNS Exit",
+                "dynamic DNS services",
+                "Duck DNS",
+                "dynamic DNS services",
+                "dynamic DNS services",
+                "dynamic DNS service",
+                "DDNS",
+                "Namecoin blockchain",
+                "dynamic DNS resolution",
+                "detection efforts",
+                "AsyncRAT",
+                "ANDROMEDA"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 8,
+            "id": 3,
+            "texts": [
+                "dynamic DNS domain names",
+                "Bitcoin blockchain transaction data",
+                "octets",
+                "resources",
+                "port number pair",
+                "IP address",
+                "POST strings",
+                "random choice"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 9,
+            "id": 4,
+            "texts": [
+                "part",
+                "TA2541",
+                "Dynamic DNS providers",
+                "that",
+                "possibilities",
+                "free providers",
+                "3322",
+                "No-IP",
+                "Oray"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "infrastructure"
+            ],
+            "label": "COMPONENT"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 17
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 6
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 5
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 4
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 4
+        },
+        {
+            "id": "4_2",
+            "source": 4,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "to": 4,
+        "send": 1,
+        "establish": 1,
+        "provide": 1,
+        "use": 11,
+        "in": 4,
+        "as": 2,
+        "of": 1,
+        "for": 10,
+        "set": 1,
+        "resolve": 3,
+        "convert": 1,
+        "access": 1,
+        "within": 2,
+        "download": 1,
+        "contain": 1,
+        "forge": 1,
+        "make": 1,
+        "hinder": 2,
+        "with": 2,
+        "from": 2,
+        "re-registere": 1,
+        "incorporate": 1
+    }
+}

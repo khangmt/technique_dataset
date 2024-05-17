@@ -1,0 +1,284 @@
+{
+    "id": "T1040",
+    "tech_id": "T1040",
+    "tech_name": "Network Sniffing",
+    "best_phrases": [],
+    "tactics": [
+        "TA0006",
+        "TA0007"
+    ],
+    "features": [
+        "DATA",
+        "FUNCTION",
+        "NETWORK",
+        "COMPONENT"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows",
+        "Network",
+        "IaaS"
+    ],
+    "procedures": [
+        "relationship--03f1e3ee-5c1b-4897-8631-d15ed48a0730",
+        "relationship--0f36ee85-8906-40c6-be53-87bc96499763",
+        "relationship--191d6679-d6a8-42e3-b5ff-84a8d5bfb1dd",
+        "relationship--306eba85-eeb9-4fcb-8b23-ce38b09bbf24",
+        "relationship--3318f441-6593-4a7b-bb7f-53ab15a1a672",
+        "relationship--899c49f0-4a1b-44d8-81e6-fd927a252bd6",
+        "relationship--9148cfab-450f-4aa7-a427-3ddf8e8d686a",
+        "relationship--98b8b974-ac4f-4286-b657-f34f813c1d12",
+        "relationship--9be360bb-8ac4-4357-8795-0736b447293c",
+        "relationship--9c012fcf-876b-4101-aa28-6af8b00a51d2",
+        "relationship--aa6d74b0-3db2-4679-bf1c-03d3dd7561b0",
+        "relationship--b1ca60ac-cef2-467e-843c-5732d8885626",
+        "relationship--c2ba1f7a-1951-47df-855b-3f42a60a9901",
+        "relationship--cb69217e-f063-4093-bcf0-f051ecd42e25",
+        "relationship--f9fb0958-7f80-4bd5-80c2-9665124f1d0e",
+        "relationship--fcfe071b-e527-44e9-9970-9243a354f563"
+    ],
+    "graph_nodes": [
+        {
+            "count": 13,
+            "id": 0,
+            "texts": [
+                "Sandworm Team",
+                "Kimsuky",
+                "MESSAGETAP",
+                "Sandworm Team",
+                "Penquin",
+                "FoggyWeb",
+                "actor",
+                "Emotet",
+                "APT33",
+                "DarkVishnya",
+                "APT28",
+                "APT28 close-access teams",
+                "Regin"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 20,
+            "id": 1,
+            "texts": [
+                "intercepter-NG",
+                "Nirsoft SniffPass network sniffer",
+                "Impacket",
+                "NBTscan",
+                "libpcap library",
+                "network sniffer module",
+                "BlackEnergy",
+                "custom listeners",
+                "incoming HTTP GET and POST requests",
+                "HTTP requests",
+                "Empire",
+                "Responder",
+                "SniffPass",
+                "network sniffing",
+                "open source tool",
+                "Responder",
+                "NetBIOS Name Service poisoning",
+                "PoshC2",
+                "module",
+                "functionality"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 21,
+            "id": 2,
+            "texts": [
+                "passwords",
+                "passwords",
+                "whole packet content",
+                "routing metadata",
+                "SMS message data",
+                "user credentials",
+                "conditions",
+                "custom URI patterns",
+                "packet captures",
+                "hashes",
+                "credentials",
+                "credentials",
+                "login data",
+                "user credentials",
+                "Wi-Fi signals",
+                "usernames",
+                "passwords",
+                "access",
+                "legitimate credentials",
+                "packet captures",
+                "credentials"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 19,
+            "id": 3,
+            "texts": [
+                "network traffic",
+                "non-secure protocols",
+                "raw socket",
+                "interface",
+                "network traffic",
+                "traffic",
+                "network protocols",
+                "Ethernet and IP layers",
+                "network",
+                "industrial control systems",
+                "local LAN",
+                "network traffic",
+                "packets",
+                "AD FS server",
+                "network traffic",
+                "network traffic",
+                "HTTP",
+                "SMTP",
+                "SMB"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 7,
+            "id": 4,
+            "texts": [
+                "raw socket",
+                "interface",
+                "industrial control systems",
+                "local LAN",
+                "target hosts",
+                "system",
+                "compromised hosts"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 2,
+            "id": 5,
+            "texts": [
+                "grid",
+                "network APIs"
+            ],
+            "label": "OTHER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 14
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 7
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 4
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 3
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 8
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 6
+        },
+        {
+            "id": "3_5",
+            "source": 3,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "4_5",
+            "source": 4,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 3
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 8,
+        "sniff": 5,
+        "in": 1,
+        "send over": 1,
+        "obtain": 2,
+        "by": 1,
+        "print": 1,
+        "listen": 1,
+        "parse": 2,
+        "extract": 1,
+        "start with": 1,
+        "over": 1,
+        "between": 1,
+        "send": 1,
+        "of": 2,
+        "find": 1,
+        "match": 2,
+        "configure": 1,
+        "monitor": 2,
+        "intercept": 2,
+        "send to": 1,
+        "define": 1,
+        "conduct": 2,
+        "on": 2,
+        "capture": 2,
+        "to": 2,
+        "hook": 1,
+        "collect": 1,
+        "deploy": 2,
+        "hash": 1,
+        "allow": 1,
+        "contain": 1,
+        "take": 1,
+        "pass over": 1,
+        "have": 1
+    }
+}

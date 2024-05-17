@@ -1,0 +1,69 @@
+{
+    "id": "T1211",
+    "tech_id": "T1211",
+    "tech_name": "Exploitation for Defense Evasion",
+    "best_phrases": [
+        "CVE-2015-4902"
+    ],
+    "tactics": [
+        "TA0005"
+    ],
+    "features": [
+        "VULNERABILITY",
+        "FUNCTION"
+    ],
+    "locations": [
+        "Linux",
+        "Windows",
+        "macOS",
+        "SaaS",
+        "IaaS"
+    ],
+    "procedures": [
+        "relationship--e5706e1a-33a9-4404-9ef8-c8aa428363ec"
+    ],
+    "graph_nodes": [
+        {
+            "count": 1,
+            "id": 0,
+            "texts": [
+                "APT28"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 1,
+            "id": 1,
+            "texts": [
+                "CVE-2015-4902"
+            ],
+            "label": "VULNERABILITY"
+        },
+        {
+            "count": 1,
+            "id": 2,
+            "texts": [
+                "security features"
+            ],
+            "label": "FUNCTION"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 1,
+        "bypass": 1
+    }
+}

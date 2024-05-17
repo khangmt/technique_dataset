@@ -1,0 +1,170 @@
+{
+    "id": "T1111",
+    "tech_id": "T1111",
+    "tech_name": "Multi-Factor Authentication Interception",
+    "best_phrases": [],
+    "tactics": [
+        "TA0006"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "NETWORK",
+        "USER"
+    ],
+    "locations": [
+        "Linux",
+        "Windows",
+        "macOS"
+    ],
+    "procedures": [
+        "relationship--2b6da092-7380-4bd3-bd4c-f136a5b9b4cc",
+        "relationship--381a628b-5401-43d0-853a-c2b0dbce83c3",
+        "relationship--58996a9f-ab17-4942-9afd-bb336af9a15b",
+        "relationship--e925337d-e878-48ad-a53c-3a3f4656849e",
+        "relationship--fc5c0e5f-b730-4396-9922-7e2e91b4a106"
+    ],
+    "graph_nodes": [
+        {
+            "count": 5,
+            "id": 0,
+            "texts": [
+                "Sykipot",
+                "threat actors",
+                "Kimsuky",
+                "Chimera",
+                "LAPSUS$"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 9,
+            "id": 1,
+            "texts": [
+                "functionality",
+                "targeting",
+                "authentication",
+                "custom collection method",
+                "proprietary tool",
+                "two-factor authentication",
+                "2FA codes",
+                "simple-approval MFA prompts",
+                "necessary approval"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 2,
+            "texts": [
+                "smart card technologies"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 3,
+            "id": 3,
+            "texts": [
+                "connections",
+                "SMS",
+                "alternate phone numbers"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 8,
+            "id": 4,
+            "texts": [
+                "detected hardware tokens",
+                "restricted network resources",
+                "two-factor authentication soft tokens",
+                "time passwords",
+                "compromised users",
+                "stolen session token",
+                "passwords",
+                "hope"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "legitimate user"
+            ],
+            "label": "USER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 4
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 3
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 3
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "5_1",
+            "source": 5,
+            "dest": 1,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "contain": 1,
+        "of": 1,
+        "proxy": 1,
+        "for": 2,
+        "use": 3,
+        "to": 1,
+        "intercept": 3,
+        "require for": 1,
+        "send by": 1,
+        "register": 1,
+        "replay": 1,
+        "trigger": 1,
+        "in": 1,
+        "grant": 1
+    }
+}

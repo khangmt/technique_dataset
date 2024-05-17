@@ -1,0 +1,286 @@
+{
+    "id": "T1185",
+    "tech_id": "T1185",
+    "tech_name": "Browser Session Hijacking",
+    "best_phrases": [],
+    "tactics": [
+        "TA0009"
+    ],
+    "features": [
+        "DATA",
+        "FUNCTION",
+        "NETWORK",
+        "COMPONENT",
+        "USER"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--20cf444d-b538-4971-b054-3d749aa945f0",
+        "relationship--3f3fffec-6c91-45e2-8c4c-d1c7bdcde76b",
+        "relationship--4c7a0e49-6b38-417a-881b-6f9474ea4ec2",
+        "relationship--577796a0-efbb-4023-9083-a76f97bec6f8",
+        "relationship--5bbbd951-0c4a-4293-b0a8-27751b953882",
+        "relationship--7ac62413-be9a-40ef-996d-017c04f04d5b",
+        "relationship--a64c16bf-284e-4a74-a5c9-bcaee4d36313",
+        "relationship--ad7f635b-7775-4706-8577-eee00612c996",
+        "relationship--c5e3e18d-124e-4ae2-a95c-9db8f6d53000",
+        "relationship--cf130e28-dbd6-4312-ba0a-a3cbcf05c064",
+        "relationship--eafddae6-8e14-491b-82af-40ddaccb99c6"
+    ],
+    "graph_nodes": [
+        {
+            "count": 11,
+            "id": 0,
+            "texts": [
+                "TrickBot",
+                "Dridex",
+                "Carberp",
+                "Melcoz",
+                "Agent Tesla",
+                "Grandoreiro",
+                "QakBot",
+                "Cobalt Strike",
+                "IcedID",
+                "Chaes",
+                "Ursnif"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 18,
+            "id": 1,
+            "texts": [
+                "browser redirection",
+                "web injects",
+                "web injects",
+                "browser attacks",
+                "SSL session",
+                "login",
+                "online banking sessions",
+                "session",
+                "browser activity",
+                "online banking actions",
+                "advanced web injects",
+                "browser pivoting",
+                "authenticated HTTP sessions",
+                "cookies",
+                "client SSL certificates",
+                "web injection attacks",
+                "Puppeteer module",
+                "HTML codes"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 5,
+            "id": 2,
+            "texts": [
+                "user",
+                "user",
+                "victim",
+                "user",
+                "victims"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 24,
+            "id": 3,
+            "texts": [
+                "login credentials",
+                "credentials",
+                "cookies",
+                "information",
+                "certificates",
+                "credentials",
+                "background",
+                "data",
+                "web data forms",
+                "full-screen overlay images",
+                "user access",
+                "data fields",
+                "web banking credentials",
+                "authenticated HTTP sessions",
+                "cookies",
+                "client SSL certificates",
+                "self signed TLS certificate",
+                "correct URL",
+                "certificates",
+                "banking and other credentials",
+                "user information",
+                "sensitive online banking information",
+                "passwords",
+                "usernames"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 10,
+            "id": 4,
+            "texts": [
+                "fake or modified web page",
+                "intended site",
+                "connection",
+                "live connection",
+                "correct URL",
+                "certificates",
+                "spoofed sites",
+                "spoofed site",
+                "legitimate site",
+                "banking sites"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 6,
+            "id": 5,
+            "texts": [
+                "browser",
+                "overlay window",
+                "browser",
+                "browser",
+                "Chrome web browser",
+                "infected hosts"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 1,
+            "id": 6,
+            "texts": [
+                "form-grabbing"
+            ],
+            "label": "OTHER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 12
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 13
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 3
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 4
+        },
+        {
+            "id": "5_2",
+            "source": 5,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "5_1",
+            "source": 5,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "0_6",
+            "source": 0,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 4
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "4_3",
+            "source": 4,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "4_5",
+            "source": 4,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "3_5",
+            "source": 3,
+            "dest": 5,
+            "count": 2
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 6,
+        "trick": 1,
+        "provide": 1,
+        "on": 1,
+        "by": 4,
+        "perform": 3,
+        "steal": 3,
+        "capture": 1,
+        "monitor": 3,
+        "for": 3,
+        "display": 3,
+        "manipulate": 1,
+        "of": 2,
+        "in": 4,
+        "extract": 1,
+        "from": 2,
+        "block": 1,
+        "present": 1,
+        "to": 2,
+        "into": 3,
+        "inherit": 1,
+        "redirect": 1,
+        "maintain": 1,
+        "harvest": 1,
+        "with": 2,
+        "collect": 1,
+        "inject": 1,
+        "ex": 1
+    }
+}

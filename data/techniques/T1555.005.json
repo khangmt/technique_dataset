@@ -1,0 +1,161 @@
+{
+    "id": "T1555.005",
+    "tech_id": "T1555.005",
+    "tech_name": "Password Managers",
+    "best_phrases": [],
+    "tactics": [
+        "TA0006"
+    ],
+    "features": [
+        "DATA",
+        "COMPONENT",
+        "NETWORK",
+        "FUNCTION"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--13e7416a-7a02-438f-a708-598f132ea394",
+        "relationship--2c036695-32e2-458f-a0f1-25cd2e8b9fbd",
+        "relationship--70fe7f39-41de-4d7d-b691-4ac17c1a4c58",
+        "relationship--95e80511-d9ec-4001-8f49-37bc4ed71379",
+        "relationship--a95c8f0a-a7ba-4af0-b3ac-5abaf44ff563",
+        "relationship--bc016a10-a594-495b-8822-ca054050f144",
+        "relationship--de075e77-f83e-4156-a40f-e7e475e15469"
+    ],
+    "graph_nodes": [
+        {
+            "count": 7,
+            "id": 0,
+            "texts": [
+                "threat actors",
+                "Threat Group-3390",
+                "Fox Kitten",
+                "MarkiRAT",
+                "Proton",
+                "TrickBot",
+                "LAPSUS$"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 7,
+            "id": 1,
+            "texts": [
+                "credentials",
+                "credential information",
+                "information",
+                "credentials",
+                "files",
+                "passwords",
+                "credentials"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 6,
+            "id": 2,
+            "texts": [
+                "password managers",
+                "compromised host",
+                "Keepass password manager",
+                "KeePass open source password manager",
+                "local password managers",
+                "databases"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 5,
+            "id": 3,
+            "texts": [
+                "KeePass database",
+                "KeePass database",
+                "local password managers",
+                "databases",
+                "compromised network"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "scripts"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "1password"
+            ],
+            "label": "OTHER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 7
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 5
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 3
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "collect": 1,
+        "from": 10,
+        "obtain": 2,
+        "use": 1,
+        "access": 2,
+        "gather": 2,
+        "in": 2,
+        "for": 1,
+        "steal": 1
+    }
+}

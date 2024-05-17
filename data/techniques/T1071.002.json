@@ -1,0 +1,238 @@
+{
+    "id": "T1071.002",
+    "tech_id": "T1071.002",
+    "tech_name": "File Transfer Protocols",
+    "best_phrases": [],
+    "tactics": [
+        "TA0011"
+    ],
+    "features": [
+        "NETWORK",
+        "FUNCTION",
+        "DATA",
+        "COMPONENT"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--0a0c827d-98ba-4f95-a6ef-b0a34765d0f4",
+        "relationship--2cd69fd0-d5ad-41db-aaee-fd58e46bfaaa",
+        "relationship--364f1a31-7710-4b81-91ce-919a89cdedcf",
+        "relationship--4b569311-24d2-439d-badb-a5076955cda3",
+        "relationship--5e23c694-3f4a-43f7-823b-8ea36558c928",
+        "relationship--685856c8-227b-41b3-841d-9a7be6389eb9",
+        "relationship--785abba4-fdb4-4aad-9049-5a0c748cc965",
+        "relationship--7bde54d7-257c-4c68-920e-bd78fe282f14",
+        "relationship--7c44064a-f697-413c-b0b1-a6b92bf3cfc3",
+        "relationship--93f46e6e-cabc-4274-b50e-63bda692d01e",
+        "relationship--942ced7d-f5a7-4c8d-ba66-e28479f7447a",
+        "relationship--9d7fb3cf-ccee-4f04-b7ef-ee42c320e513",
+        "relationship--a18f1ae0-dbc8-4f6d-9c88-ab284ce2bf0c",
+        "relationship--a43b5d19-a2d5-4440-b0c6-6d4819edb77e",
+        "relationship--bac1d1a4-14f7-4f68-8035-e322e94f92c9",
+        "relationship--bceb819a-0ab5-412b-9671-de67e980cb77",
+        "relationship--cff191ef-39ba-4126-b039-12a7fe327665",
+        "relationship--d31bacda-9a8f-4807-b0d6-51a47f0af986",
+        "relationship--d979fd42-450e-4bd3-a6f8-74b8c8f8fb7b",
+        "relationship--e6bcb612-8e5c-493e-902e-0eb92a796a81",
+        "relationship--eabe052b-cecc-4d80-92c9-150e8c8dbcdd",
+        "relationship--ebd87b4c-eca9-4680-9608-a49ec74b5c4b"
+    ],
+    "graph_nodes": [
+        {
+            "count": 19,
+            "id": 0,
+            "texts": [
+                "PoetRAT",
+                "ShadowPad",
+                "SYSCON",
+                "NOKKI",
+                "SilverTerrier",
+                "APT41",
+                "Machete",
+                "Kazuar",
+                "XAgentOSX",
+                "JPIN",
+                "Attor",
+                "SharpDisco",
+                "threat actors",
+                "ZxShell",
+                "Dragonfly",
+                "BADHATCH",
+                "Cobalt Strike",
+                "Disco",
+                "Kimsuky"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 28,
+            "id": 1,
+            "texts": [
+                "FTP",
+                "C2 communications",
+                "ftp",
+                "FTP",
+                "C2 communications",
+                "SMB",
+                "standard protocols",
+                "FTP",
+                "FTPS",
+                "C2",
+                "FTP",
+                "FTP protocol",
+                "C2 communication",
+                "FTP",
+                "C2",
+                "FTP",
+                "C2 connections",
+                "SMB",
+                "C2",
+                "FTP server",
+                "C2s",
+                "communication",
+                "peer-to-peer",
+                "pipes",
+                "SMB protocol",
+                "standard assigned ports",
+                "SMB",
+                "FTP"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 9,
+            "id": 2,
+            "texts": [
+                "exploit payloads",
+                "download",
+                "Mythic",
+                "CARROTBALL",
+                "Regin malware platform",
+                "ftpUpload function",
+                "FTPManager:uploadFile method",
+                "ability",
+                "malware"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 5,
+            "id": 3,
+            "texts": [
+                "SMB-based peer-to-peer C2 profiles",
+                "files",
+                "data",
+                "SMB shares",
+                "files"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 4,
+            "id": 4,
+            "texts": [
+                "FTP",
+                "FTPS",
+                "target system",
+                "target machine"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "Windows named"
+            ],
+            "label": "OTHER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 19
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 4
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 5
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 3
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 2
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 12,
+        "for": 11,
+        "initiate": 1,
+        "by": 1,
+        "support": 2,
+        "in": 2,
+        "contain": 1,
+        "upload": 1,
+        "from": 1,
+        "over": 3,
+        "transfer": 2,
+        "between": 2,
+        "have": 1,
+        "emulate": 1,
+        "connect": 1,
+        "conduct": 2,
+        "name": 1,
+        "encapsulate in": 1,
+        "download": 1,
+        "to": 1
+    }
+}

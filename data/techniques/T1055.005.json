@@ -1,0 +1,52 @@
+{
+    "id": "T1055.005",
+    "tech_id": "T1055.005",
+    "tech_name": "Thread Local Storage",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005",
+        "TA0004"
+    ],
+    "features": [
+        "FUNCTION"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--6e8621ee-9a1f-4a61-86f4-aae3c3d20d0c"
+    ],
+    "graph_nodes": [
+        {
+            "count": 1,
+            "id": 0,
+            "texts": [
+                "Ursnif"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 3,
+            "id": 1,
+            "texts": [
+                "thread local storage callbacks",
+                "code",
+                "target processes"
+            ],
+            "label": "FUNCTION"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 3
+        }
+    ],
+    "verbs": {
+        "by": 2,
+        "inject": 1,
+        "into": 2
+    }
+}

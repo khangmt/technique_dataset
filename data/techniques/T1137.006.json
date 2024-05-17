@@ -1,0 +1,111 @@
+{
+    "id": "T1137.006",
+    "tech_id": "T1137.006",
+    "tech_name": "Add-ins",
+    "best_phrases": [
+        "Add-ins"
+    ],
+    "tactics": [
+        "TA0003"
+    ],
+    "features": [
+        "FUNCTION",
+        "DIRECTORY",
+        "DATA",
+        "COMPONENT"
+    ],
+    "locations": [
+        "Windows",
+        "Office 365"
+    ],
+    "procedures": [
+        "relationship--40dc38ff-1daf-4c3b-823d-377ae4d3a505",
+        "relationship--6f38eb77-da3f-4a35-b048-32a4fa6c6fbc"
+    ],
+    "graph_nodes": [
+        {
+            "count": 1,
+            "id": 0,
+            "texts": [
+                ".wll extension"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 2,
+            "id": 1,
+            "texts": [
+                "Bisonal",
+                "Naikon"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 2,
+            "id": 2,
+            "texts": [
+                " %appdata%\\microsoft\\word\\startup\\ repository",
+                "Word Startup folder"
+            ],
+            "label": "DIRECTORY"
+        },
+        {
+            "count": 3,
+            "id": 3,
+            "texts": [
+                "RoyalRoad exploit builder",
+                "second stage loader",
+                "intel.wll"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "compromised host"
+            ],
+            "label": "COMPONENT"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 3
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "load": 1,
+        "add to": 1,
+        "use": 1,
+        "drop": 2,
+        "into": 1,
+        "on": 1
+    }
+}

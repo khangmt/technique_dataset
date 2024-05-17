@@ -1,0 +1,174 @@
+{
+    "id": "T1584.001",
+    "tech_id": "T1584.001",
+    "tech_name": "Domains",
+    "best_phrases": [
+        "apt29 compromised domains",
+        "legitimate but compromised domains",
+        "Domains",
+        "compromised domains",
+        "domains"
+    ],
+    "tactics": [
+        "TA0042"
+    ],
+    "features": [
+        "NETWORK",
+        "FUNCTION",
+        "USER",
+        "COMPONENT",
+        "DATA"
+    ],
+    "locations": [
+        "PRE"
+    ],
+    "procedures": [
+        "relationship--134cc6c4-30f8-4b85-8ea1-da19c3e92af9",
+        "relationship--171a96b6-1680-408b-b90d-356b393a3dea",
+        "relationship--2389113c-9a72-4633-aa52-8f77c3df564a",
+        "relationship--2a27a98e-ee19-49f3-96e4-a5c9ee6e65ed",
+        "relationship--2c095f1e-211d-4e84-b521-9cef12f1e83f",
+        "relationship--44e0a8c6-ccb4-4d4e-bcf0-0709f10dec51",
+        "relationship--57e9b366-fac5-4320-bb76-da81953de2dc",
+        "relationship--976a08e5-40b0-4b9f-a453-a1d0b33c3080",
+        "relationship--c1c2c530-a2d2-4c2f-bcff-ceda0277de59"
+    ],
+    "graph_nodes": [
+        {
+            "count": 9,
+            "id": 0,
+            "texts": [
+                "Magic Hound",
+                "SideCopy",
+                "Transparent Tribe",
+                "targeted malicious campaigns",
+                "Lazarus Group",
+                "threat actors",
+                "UNC3890 actors",
+                "Kimsuky",
+                "APT1"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 13,
+            "id": 1,
+            "texts": [
+                "compromised domains",
+                "links",
+                "domains",
+                "APT29 compromised domains",
+                "C2",
+                "domains",
+                "domains",
+                "C2 infrastructure",
+                "legitimate but compromised domains",
+                "domain",
+                "legitimate sites",
+                "FQDNs",
+                "legitimate websites"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 1,
+            "id": 2,
+            "texts": [
+                "phishing victims"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 4,
+            "id": 3,
+            "texts": [
+                "some",
+                "Italy",
+                "countries",
+                "legitimate Israeli shipping company"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "infrastructure"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 2,
+            "id": 5,
+            "texts": [
+                "payloads",
+                "malware"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 6,
+            "texts": [
+                "hop points"
+            ],
+            "label": "DATA"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 10
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 3
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 2
+        },
+        {
+            "id": "6_1",
+            "source": 6,
+            "dest": 1,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 2,
+        "host": 3,
+        "target to": 1,
+        "compromise": 5,
+        "for": 4,
+        "of": 2,
+        "in": 3,
+        "distribute": 1,
+        "hijack": 1,
+        "associate with": 1
+    }
+}

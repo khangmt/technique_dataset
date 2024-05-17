@@ -1,0 +1,216 @@
+{
+    "id": "T1052.001",
+    "tech_id": "T1052.001",
+    "tech_name": "Exfiltration over USB",
+    "best_phrases": [],
+    "tactics": [
+        "TA0010"
+    ],
+    "features": [
+        "COMPONENT",
+        "DATA",
+        "FUNCTION",
+        "NETWORK",
+        "USER",
+        "DIRECTORY"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--04e2c418-8f6c-453c-8e17-4d3aeec0f755",
+        "relationship--137e1ddc-403b-49b5-a214-20b82bab446e",
+        "relationship--2b97e16e-8c39-4e5e-ad90-15c10f15d923",
+        "relationship--6971d7f3-8161-4399-b587-acab5d8820f1",
+        "relationship--6f8d9c8d-750d-40c2-9722-c000b1efda13",
+        "relationship--8b96fb11-8b54-4bed-9e6c-cd93b29c5c20",
+        "relationship--9ceaecae-f85d-4eb7-a518-fb98b2b71c66"
+    ],
+    "graph_nodes": [
+        {
+            "count": 9,
+            "id": 0,
+            "texts": [
+                "SPACESHIP copies",
+                "staged data",
+                "data",
+                "files",
+                "data",
+                "documents",
+                "file",
+                "thumb.dd",
+                "files"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 10,
+            "id": 1,
+            "texts": [
+                "removable drives",
+                "system",
+                "removable USB device",
+                "Internet-connected systems",
+                "removable media",
+                "USB storage devices",
+                "USB flash drives",
+                "infected system",
+                "drive",
+                "removable drive"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 5,
+            "id": 2,
+            "texts": [
+                "Remsec",
+                "Tropic Trooper",
+                "Mustang Panda",
+                "Agent.btz",
+                "Machete"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 4,
+            "id": 3,
+            "texts": [
+                "module",
+                "USBStealer exfiltrates",
+                "customized PlugX variant",
+                "feature"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 2,
+            "id": 4,
+            "texts": [
+                "airgapped networks",
+                "air-gapped networks"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 2,
+            "id": 5,
+            "texts": [
+                "air-gapped victims",
+                "victim"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 1,
+            "id": 6,
+            "texts": [
+                "which"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 1,
+            "id": 7,
+            "texts": [
+                "hidden folder"
+            ],
+            "label": "DIRECTORY"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 9
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 3
+        },
+        {
+            "id": "3_0",
+            "source": 3,
+            "dest": 0,
+            "count": 4
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "3_5",
+            "source": 3,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "2_0",
+            "source": 2,
+            "dest": 0,
+            "count": 2
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "6_4",
+            "source": 6,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "1_7",
+            "source": 1,
+            "dest": 7,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "to": 3,
+        "into": 1,
+        "contain": 2,
+        "move": 1,
+        "use": 3,
+        "from": 6,
+        "by": 2,
+        "collect": 1,
+        "exfiltrate": 2,
+        "create": 1,
+        "on": 2,
+        "connect to": 1,
+        "about": 1,
+        "have": 1,
+        "copy": 1,
+        "onto": 1,
+        "in": 1
+    }
+}

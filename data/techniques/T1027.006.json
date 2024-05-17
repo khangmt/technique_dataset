@@ -1,0 +1,144 @@
+{
+    "id": "T1027.006",
+    "tech_id": "T1027.006",
+    "tech_name": "HTML Smuggling",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "ENCRYPTION",
+        "COMPONENT"
+    ],
+    "locations": [
+        "Windows",
+        "Linux",
+        "macOS"
+    ],
+    "procedures": [
+        "relationship--4a759577-622f-4ef0-bff1-ef047aa5a687",
+        "relationship--5bc4476e-9693-424c-b4d1-fd3a9ca996f3",
+        "relationship--a6006789-f164-4616-9a1f-20fd2b34113f"
+    ],
+    "graph_nodes": [
+        {
+            "count": 5,
+            "id": 0,
+            "texts": [
+                "HTML smuggling",
+                "ISO file",
+                "malware",
+                "JavaScript code",
+                "JavaScript code"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 3,
+            "id": 1,
+            "texts": [
+                "QakBot",
+                "APT29",
+                "EnvyScout"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 1,
+            "id": 2,
+            "texts": [
+                "ZIP files"
+            ],
+            "label": "ENCRYPTION"
+        },
+        {
+            "count": 3,
+            "id": 3,
+            "texts": [
+                "HTML attachment",
+                "encoded blob",
+                "HTML body"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "disk"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "that"
+            ],
+            "label": "OTHER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 3
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "5_3",
+            "source": 5,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "5_4",
+            "source": 5,
+            "dest": 4,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "deliver": 1,
+        "in": 1,
+        "embed": 1,
+        "within": 2,
+        "execute": 1,
+        "contain": 2,
+        "extract": 1,
+        "from": 2,
+        "to": 2
+    }
+}

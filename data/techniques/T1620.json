@@ -1,0 +1,282 @@
+{
+    "id": "T1620",
+    "tech_id": "T1620",
+    "tech_name": "Reflective Code Loading",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "REGISTRY",
+        "NETWORK",
+        "COMPONENT"
+    ],
+    "locations": [
+        "macOS",
+        "Linux",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--04a55a4d-7888-4e52-8d6f-6befbc82f6f2",
+        "relationship--0a2872da-8858-45d4-bd78-8ac41fc376eb",
+        "relationship--1040d9b9-96a4-4bea-9e8a-543befd50ebd",
+        "relationship--1da7a099-122d-4c26-b27f-f8acabdd7b44",
+        "relationship--203e48b0-5175-4cc9-9e49-8cae08f26f52",
+        "relationship--28e6612e-5f92-42b0-b722-a49a43a75908",
+        "relationship--507d0a52-450a-4bb9-8667-e787f8c589f2",
+        "relationship--510616c2-f124-49b2-83a2-cac81d2d4155",
+        "relationship--586b8b1d-109f-4f35-bcf8-589993d18681",
+        "relationship--79c5870a-c93f-47c5-a382-e26a23666209",
+        "relationship--9b7f7aab-6ee4-4205-bd25-39cd63216777",
+        "relationship--9d67040f-625a-49bd-aacb-48024fc7c4b2",
+        "relationship--a7cba2fb-a90f-4dd1-ae33-3747d5a9c873",
+        "relationship--b92542f4-97bc-4e75-9f92-328c25a007ef",
+        "relationship--cd85bffe-6371-4fd9-b327-469647ebb420",
+        "relationship--d11da8db-b528-4d1f-a7f4-ba8bafb80a3d",
+        "relationship--dbeb509e-58a9-41f9-bd08-95b3b1075edf"
+    ],
+    "graph_nodes": [
+        {
+            "count": 13,
+            "id": 0,
+            "texts": [
+                "BADHATCH",
+                "WhisperGate",
+                "Uroburos",
+                "Lokibot",
+                "Gelsemium",
+                "metaMain",
+                "Lazarus Group",
+                "Cuba",
+                "IceApple",
+                "Emotet",
+                "Sardonic",
+                "ThiefQuest",
+                "FoggyWeb"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 15,
+            "id": 1,
+            "texts": [
+                "byte array",
+                "process memory",
+                "third stage file bytes",
+                "file",
+                "memory",
+                "memory",
+                "memory",
+                "orchestrator file",
+                "memory protection permissions",
+                "memory",
+                "memory",
+                "memory",
+                "memory",
+                "memory",
+                "memory"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 35,
+            "id": 2,
+            "texts": [
+                "call",
+                "64-bit shellcode",
+                "downloader",
+                ".NET assembly",
+                "modules",
+                "Load Modules Mem command",
+                "PowerSploit",
+                "Windows PE file",
+                "process",
+                "custom shellcode",
+                "memory DLL function code",
+                "shellcode",
+                "KernelCallbackTable hijacking",
+                "macros",
+                "runtime",
+                "payload",
+                "PowerShell",
+                "execute-assembly command",
+                ".NET executable",
+                "CLR",
+                "sacrificial process",
+                "Brute Ratel C4",
+                "reflective loading",
+                "reflective code loading",
+                ".NET assemblies",
+                "MSExchangeOWAAppPool",
+                "Donut",
+                "code modules",
+                "payloads",
+                "functions",
+                "NSCreateObjectFileImageFromMemory",
+                "API functions",
+                "payloads",
+                "loader",
+                ".NET-based assembly/payloads"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 6,
+            "id": 3,
+            "texts": [
+                "CreateThread",
+                "overwritten",
+                "Strike",
+                "in-memory",
+                "that",
+                "in-memory"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 5,
+            "id": 4,
+            "texts": [
+                "decoded DLL",
+                "embedded DLLs",
+                "DLL",
+                "DLLs",
+                "made DLLs"
+            ],
+            "label": "REGISTRY"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "targeted Exchange servers"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 1,
+            "id": 6,
+            "texts": [
+                "plugin system"
+            ],
+            "label": "COMPONENT"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 7
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 14
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 4
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 4
+        },
+        {
+            "id": "2_0",
+            "source": 2,
+            "dest": 0,
+            "count": 2
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 10
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 3
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 4
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "2_5",
+            "source": 2,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "0_6",
+            "source": 0,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "6_4",
+            "source": 6,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "6_2",
+            "source": 6,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "copy": 1,
+        "into": 19,
+        "with": 2,
+        "of": 5,
+        "to": 1,
+        "reverse": 1,
+        "load": 12,
+        "as": 2,
+        "use": 7,
+        "map": 2,
+        "change": 1,
+        "overwrite": 1,
+        "execute": 3,
+        "within": 3,
+        "at": 1,
+        "run": 1,
+        "on": 1,
+        "generate": 1,
+        "enable": 1,
+        "have": 1,
+        "link": 2
+    }
+}

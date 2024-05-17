@@ -1,0 +1,91 @@
+{
+    "id": "T1574.012",
+    "tech_id": "T1574.012",
+    "tech_name": "COR_PROFILER",
+    "best_phrases": [
+        "COR_PROFILER"
+    ],
+    "tactics": [
+        "TA0003",
+        "TA0004",
+        "TA0005"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "REGISTRY"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--0e7ce20c-1a4f-4361-a954-1d7a164baca1",
+        "relationship--35dde9bf-4f03-4244-ae30-d2ddfdc450b1"
+    ],
+    "graph_nodes": [
+        {
+            "count": 2,
+            "id": 0,
+            "texts": [
+                "Blue Mockingbird",
+                "DarkTortilla"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 5,
+            "id": 1,
+            "texts": [
+                "Windows Registry modifications",
+                "wmic.exe",
+                "process",
+                ".NET CLR",
+                "profilers"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 2,
+            "texts": [
+                "COR_PROFILER environment variable"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "DLL"
+            ],
+            "label": "REGISTRY"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 1,
+        "set": 1,
+        "execute": 1,
+        "load": 1,
+        "detect": 1
+    }
+}

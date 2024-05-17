@@ -1,0 +1,246 @@
+{
+    "id": "T1078.004",
+    "tech_id": "T1078.004",
+    "tech_name": "Cloud Accounts",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005",
+        "TA0003",
+        "TA0004",
+        "TA0001"
+    ],
+    "features": [
+        "DATA",
+        "FUNCTION",
+        "NETWORK",
+        "COMPONENT",
+        "USER"
+    ],
+    "locations": [
+        "Azure AD",
+        "Office 365",
+        "SaaS",
+        "IaaS",
+        "Google Workspace"
+    ],
+    "procedures": [
+        "relationship--00fe17bc-f783-4cba-9171-e1fde2fa0efa",
+        "relationship--44ba0ff1-3858-4b2e-933d-e5dc00b4ca27",
+        "relationship--64fe5b69-1b3b-44a3-a952-0dc22091ea3a",
+        "relationship--72f52cf0-dc68-4a4b-8025-724b2691c449",
+        "relationship--86c9276e-1144-42b9-971f-8ba4eefec3be",
+        "relationship--c37d24cf-8ea8-4212-831e-bc3f37c10893",
+        "relationship--e47bf587-4bac-4f6b-ac2b-9ca462e95d0a",
+        "relationship--e93a3bf7-2ca4-42ed-872a-f9f0f8458936",
+        "relationship--ec5caf8f-0fb8-4c3b-bd31-08804ff2214e",
+        "relationship--f7ed42df-01c4-4441-95ce-68228e157abf"
+    ],
+    "graph_nodes": [
+        {
+            "count": 6,
+            "id": 0,
+            "texts": [
+                "APT29",
+                "APT29",
+                "APT28",
+                "APT33",
+                "LAPSUS$",
+                "Ke3chang"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 15,
+            "id": 1,
+            "texts": [
+                "compromised O365 administrator account",
+                "access",
+                "Service Principal credentials",
+                "global administrator account",
+                "valid cloud credentials",
+                "compromised Office 365 service accounts",
+                "Global Administrator privileges",
+                "user inboxes",
+                "compromised credentials",
+                "victim users",
+                "stolen service account tokens",
+                "compromised Office 365 accounts",
+                "compromised credentials",
+                "compromised credentials",
+                "Microsoft 365 accounts"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 11,
+            "id": 2,
+            "texts": [
+                "Service Principal",
+                "Service Principal credentials",
+                "ROADTools",
+                "enumeration operations",
+                "internal Azure AD Graph API",
+                "Peirates",
+                "operations",
+                "Pacu",
+                "Ruler",
+                "attempt",
+                "control"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 3,
+            "id": 3,
+            "texts": [
+                "Exchange",
+                "email",
+                "endpoints"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 3,
+            "id": 4,
+            "texts": [
+                "Azure AD",
+                "valid cloud accounts",
+                "cloud assets"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 3,
+            "id": 5,
+            "texts": [
+                "Scattered Spider",
+                "most",
+                "target organization"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 2,
+            "id": 6,
+            "texts": [
+                "Azure tenants",
+                "victims"
+            ],
+            "label": "USER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 8
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 4
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "5_1",
+            "source": 5,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "5_6",
+            "source": 5,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "2_5",
+            "source": 2,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "4_5",
+            "source": 4,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "1_6",
+            "source": 1,
+            "dest": 6,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 11,
+        "create": 1,
+        "gain": 2,
+        "in": 5,
+        "to": 1,
+        "perform": 3,
+        "collect": 1,
+        "with": 3,
+        "from": 2,
+        "authenticate": 1,
+        "of": 2,
+        "access": 1,
+        "within": 1,
+        "sign": 1
+    }
+}

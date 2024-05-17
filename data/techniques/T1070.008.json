@@ -1,0 +1,88 @@
+{
+    "id": "T1070.008",
+    "tech_id": "T1070.008",
+    "tech_name": "Clear Mailbox Data",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005"
+    ],
+    "features": [
+        "NETWORK",
+        "FUNCTION"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows",
+        "Office 365",
+        "Google Workspace"
+    ],
+    "procedures": [
+        "relationship--baa60d8d-eff3-45d5-863a-b87ce3c7b468",
+        "relationship--e30d2085-62df-4c4a-9828-a9b6d5396136"
+    ],
+    "graph_nodes": [
+        {
+            "count": 2,
+            "id": 0,
+            "texts": [
+                "Goopy",
+                "APT29"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 2,
+            "id": 1,
+            "texts": [
+                "emails",
+                "C2"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 1,
+            "id": 2,
+            "texts": [
+                "evidence"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 2,
+            "id": 3,
+            "texts": [
+                "email export requests",
+                "Remove-MailboxExportRequest"
+            ],
+            "label": "FUNCTION"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "delete": 1,
+        "use for": 1,
+        "remove": 1,
+        "of": 1,
+        "use": 1
+    }
+}

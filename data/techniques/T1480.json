@@ -1,0 +1,339 @@
+{
+    "id": "T1480",
+    "tech_id": "T1480",
+    "tech_name": "Execution Guardrails",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005"
+    ],
+    "features": [
+        "DATA",
+        "FUNCTION",
+        "COMPONENT",
+        "DIRECTORY",
+        "REGISTRY",
+        "NETWORK",
+        "USER",
+        "ENCRYPTION",
+        "VULNERABILITY"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--03cb8f9a-7ad7-4aa8-966f-bf768023eb89",
+        "relationship--1a1e8bdb-bcb5-41ec-a151-c2f5ebc90ab2",
+        "relationship--1cc1c2b0-5fb8-420e-8285-db4616a9fab2",
+        "relationship--25e7301f-2207-4d02-aa69-772c222dab70",
+        "relationship--27fd8291-3fba-49e9-a2e0-d3a76a584471",
+        "relationship--37599333-0974-4442-976e-6f8d8c3ceac7",
+        "relationship--3790f831-7228-4de1-9272-3d304dd7328c",
+        "relationship--6a92b1de-a2f2-4e68-aabc-a5568614f18c",
+        "relationship--70d81631-4f33-4fd0-98ac-15b57b8c1ed1",
+        "relationship--8ece1131-5221-498b-9370-30b3b459203e",
+        "relationship--b704b2b0-50c5-4fba-ab6c-db346b3524c7"
+    ],
+    "graph_nodes": [
+        {
+            "count": 11,
+            "id": 0,
+            "texts": [
+                "DEADEYE",
+                "Anchor",
+                "BitPaymer",
+                "VaporRage",
+                "EnvyScout",
+                "Torisma",
+                "attacker",
+                "Stuxnet",
+                "SUNSPOT",
+                "BoomBox",
+                "NativeZone"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 4,
+            "id": 1,
+            "texts": [
+                "volume serial number",
+                "hostname",
+                "DNS domain",
+                "IP address"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 18,
+            "id": 2,
+            "texts": [
+                "volume serial number",
+                "hostname",
+                "DNS domain",
+                "file names",
+                "paths",
+                "directory names",
+                "excluded names",
+                "embedded files",
+                "allow-list",
+                "word Platypus",
+                "Registry keys",
+                "32-bit machines",
+                "dates",
+                "MD5 checksums",
+                "backdoored replacement source code",
+                "source code file",
+                "hardcoded values",
+                "file"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 6,
+            "id": 3,
+            "texts": [
+                "intended systems",
+                "compromised host",
+                "operating systems",
+                "Registry keys",
+                "32-bit machines",
+                "dates"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 2,
+            "id": 4,
+            "texts": [
+                "victim",
+                "victim"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 2,
+            "id": 5,
+            "texts": [
+                "itself",
+                "rest"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 5,
+            "id": 6,
+            "texts": [
+                "file names",
+                "paths",
+                "C: drive",
+                "working directory",
+                "directory"
+            ],
+            "label": "DIRECTORY"
+        },
+        {
+            "count": 1,
+            "id": 7,
+            "texts": [
+                "encryption"
+            ],
+            "label": "ENCRYPTION"
+        },
+        {
+            "count": 10,
+            "id": 8,
+            "texts": [
+                "presence",
+                "window.location.pathname",
+                "command line",
+                "SolarWinds Orion source code",
+                "backdoored replacement source code",
+                "source code file",
+                "presence",
+                "presence",
+                "components",
+                "malware"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 5,
+            "id": 9,
+            "texts": [
+                "DLL",
+                "Registry keys",
+                "32-bit machines",
+                "dates",
+                "KM.EkeyAlmaz1C.dll"
+            ],
+            "label": "REGISTRY"
+        },
+        {
+            "count": 1,
+            "id": 10,
+            "texts": [
+                "vulnerabilities"
+            ],
+            "label": "VULNERABILITY"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 3
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 3
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "0_6",
+            "source": 0,
+            "dest": 6,
+            "count": 3
+        },
+        {
+            "id": "0_7",
+            "source": 0,
+            "dest": 7,
+            "count": 1
+        },
+        {
+            "id": "6_2",
+            "source": 6,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "6_7",
+            "source": 6,
+            "dest": 7,
+            "count": 1
+        },
+        {
+            "id": "2_7",
+            "source": 2,
+            "dest": 7,
+            "count": 1
+        },
+        {
+            "id": "0_8",
+            "source": 0,
+            "dest": 8,
+            "count": 4
+        },
+        {
+            "id": "8_9",
+            "source": 8,
+            "dest": 9,
+            "count": 2
+        },
+        {
+            "id": "2_6",
+            "source": 2,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "2_0",
+            "source": 2,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "2_8",
+            "source": 2,
+            "dest": 8,
+            "count": 2
+        },
+        {
+            "id": "0_10",
+            "source": 0,
+            "dest": 10,
+            "count": 1
+        },
+        {
+            "id": "3_9",
+            "source": 3,
+            "dest": 9,
+            "count": 1
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "8_2",
+            "source": 8,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "6_5",
+            "source": 6,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "5_8",
+            "source": 5,
+            "dest": 8,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "identify": 1,
+        "on": 3,
+        "of": 8,
+        "terminate": 1,
+        "compare": 1,
+        "to": 4,
+        "during": 2,
+        "for": 4,
+        "call": 1,
+        "from": 1,
+        "be": 2,
+        "replace": 1,
+        "match": 1,
+        "check": 1,
+        "as": 1
+    }
+}

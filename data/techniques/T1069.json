@@ -1,0 +1,195 @@
+{
+    "id": "T1069",
+    "tech_id": "T1069",
+    "tech_name": "Permission Groups Discovery",
+    "best_phrases": [],
+    "tactics": [
+        "TA0007"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "USER",
+        "COMPONENT"
+    ],
+    "locations": [
+        "Windows",
+        "Azure AD",
+        "Office 365",
+        "SaaS",
+        "IaaS",
+        "Linux",
+        "macOS",
+        "Google Workspace",
+        "Containers"
+    ],
+    "procedures": [
+        "relationship--34a06e23-b81c-45c7-96bc-7e08d31a4a44",
+        "relationship--3bda9db3-3532-429c-86a4-8ff3ee32f59f",
+        "relationship--7657acc8-12ba-4e39-a739-011674d94f58",
+        "relationship--887d8bb3-1bd5-4010-81dc-fe479690e72d",
+        "relationship--975739e9-bb45-49d6-a67f-bc770845b4bf",
+        "relationship--a9a39a39-b339-41d9-9790-198ac9352bfd",
+        "relationship--c403720d-da66-45c4-bb35-93b3b35c87c3",
+        "relationship--e590aaaa-40fd-4f61-93f3-f2d6daee65a4",
+        "relationship--e869a744-8bc5-4c01-960f-11e850a5c38e",
+        "relationship--fcddadbd-d32b-4cc6-afd4-de3c8629f260"
+    ],
+    "graph_nodes": [
+        {
+            "count": 8,
+            "id": 0,
+            "texts": [
+                "IcedID",
+                "Carbon",
+                "APT29",
+                "TrickBot",
+                "MURKYTOP",
+                "TA505",
+                "APT3",
+                "Siloscape"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 8,
+            "id": 1,
+            "texts": [
+                "Workgroup membership",
+                "information",
+                "members",
+                "local privileges",
+                "permissions",
+                "Kubernetes node permissions",
+                "users",
+                "roles"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 9,
+            "id": 2,
+            "texts": [
+                "net group command",
+                "Get-ManagementRoleAssignment PowerShell cmdlet",
+                "Exchange management role assignments",
+                "Exchange Management Shell",
+                "capability",
+                "TinyMet",
+                "net group /domain",
+                "ShimRatReporter",
+                "tool"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 4,
+            "id": 3,
+            "texts": [
+                "groups",
+                "groups",
+                "privileged groups",
+                "FIN13"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 3,
+            "id": 4,
+            "texts": [
+                "user",
+                "Windows groups",
+                "victim"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 3,
+            "id": 5,
+            "texts": [
+                "compromised host",
+                "infected host",
+                "main treasury system"
+            ],
+            "label": "COMPONENT"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 7
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "4_5",
+            "source": 4,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 2
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "5_4",
+            "source": 5,
+            "dest": 4,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "identify": 2,
+        "use": 3,
+        "enumerate": 4,
+        "by": 1,
+        "on": 1,
+        "have": 2,
+        "retrieve": 1,
+        "about": 1,
+        "run": 1,
+        "of": 2,
+        "gather": 1,
+        "for": 2,
+        "associate with": 1,
+        "from": 1
+    }
+}

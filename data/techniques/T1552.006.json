@@ -1,0 +1,121 @@
+{
+    "id": "T1552.006",
+    "tech_id": "T1552.006",
+    "tech_name": "Group Policy Preferences",
+    "best_phrases": [],
+    "tactics": [
+        "TA0006"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--0f43dcda-56ff-4ac2-b79a-82b09a90944f",
+        "relationship--3837e91f-47d5-4b30-b11b-76a91450c4ef",
+        "relationship--3ca3a169-177b-44aa-b9c1-40e605f8edad",
+        "relationship--5c98e0bb-7451-4c61-a798-4306b89b1e61"
+    ],
+    "graph_nodes": [
+        {
+            "count": 10,
+            "id": 0,
+            "texts": [
+                "SILENTTRINITY",
+                "module",
+                "PowerSploit",
+                "Exfiltration modules",
+                "Group Policy Preferences",
+                "Gpppassword",
+                "tools",
+                "PowerShell cmdlets",
+                "Get-GPPPassword",
+                "Find-GPOPassword"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 5,
+            "id": 1,
+            "texts": [
+                "cached GPP passwords",
+                "credentials",
+                "credentials",
+                "unsecured credentials",
+                "compromised network group policy"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 3,
+            "id": 2,
+            "texts": [
+                "that",
+                "Get-GPPPassword",
+                "Find-GPOPassword"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 2,
+            "id": 3,
+            "texts": [
+                "APT33",
+                "Wizard Spider"
+            ],
+            "label": "ACTOR"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "2_0",
+            "source": 2,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "3_0",
+            "source": 3,
+            "dest": 0,
+            "count": 3
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "have": 1,
+        "extract": 1,
+        "contain": 1,
+        "harvest": 1,
+        "from": 2,
+        "use": 3,
+        "gather": 1,
+        "find": 1,
+        "in": 1
+    }
+}

@@ -1,0 +1,141 @@
+{
+    "id": "T1591.004",
+    "tech_id": "T1591.004",
+    "tech_name": "Identify Roles",
+    "best_phrases": [],
+    "tactics": [
+        "TA0043"
+    ],
+    "features": [
+        "USER",
+        "DATA",
+        "FUNCTION"
+    ],
+    "locations": [
+        "PRE"
+    ],
+    "procedures": [
+        "relationship--3f152371-cef7-405b-b586-ec87e774ccb4",
+        "relationship--7ab5eaf4-49de-4680-88f2-6d4c876934b8",
+        "relationship--ecce47d4-c937-4feb-8ebf-4e2eb496725d"
+    ],
+    "graph_nodes": [
+        {
+            "count": 3,
+            "id": 0,
+            "texts": [
+                "LAPSUS$",
+                "Lazarus Group",
+                "HEXANE"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 3,
+            "id": 1,
+            "texts": [
+                "detailed knowledge",
+                "team structures",
+                "tailored job vacancy announcements"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 5,
+            "id": 2,
+            "texts": [
+                "target organization",
+                "organization",
+                "HR",
+                "executives",
+                "victim organizations"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 4,
+            "id": 3,
+            "texts": [
+                "individuals",
+                "HR",
+                "executives",
+                "staff"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "targeting"
+            ],
+            "label": "FUNCTION"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 3
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "gather": 1,
+        "of": 1,
+        "within": 2,
+        "target": 1,
+        "with": 2,
+        "identify": 2,
+        "for": 2,
+        "at": 1
+    }
+}

@@ -1,0 +1,189 @@
+{
+    "id": "T1136.002",
+    "tech_id": "T1136.002",
+    "tech_name": "Domain Account",
+    "best_phrases": [],
+    "tactics": [
+        "TA0003"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "COMPONENT",
+        "USER",
+        "NETWORK"
+    ],
+    "locations": [
+        "Windows",
+        "macOS",
+        "Linux"
+    ],
+    "procedures": [
+        "relationship--3aab83a8-eeda-4fdd-a103-d7f1e8d02989",
+        "relationship--433ccc4b-5a1f-49e2-9517-f8f899646cab",
+        "relationship--8a14f269-467e-49f8-a53f-ba1ad7fe5731",
+        "relationship--970860bd-6183-4728-8f34-a5a1ad199655",
+        "relationship--bbdea723-700c-409e-8992-e15c4bd16654",
+        "relationship--c6e308b7-18ac-43c6-bba7-dea71d8f9d67",
+        "relationship--cf17ef95-3173-4bfd-be73-1cd920e8c2da",
+        "relationship--d814a304-f957-4e7c-9890-30a6d5be39bd",
+        "relationship--f3f4558a-a0bd-4162-92e4-be986ec1511d"
+    ],
+    "graph_nodes": [
+        {
+            "count": 9,
+            "id": 0,
+            "texts": [
+                "Pupy",
+                "\"net user\" commands",
+                "user PowerView",
+                "PsExec",
+                "net user username \\password \\domain commands",
+                "Net",
+                "domain matching local operation",
+                "Empire",
+                "module"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 9,
+            "id": 1,
+            "texts": [
+                "domain accounts",
+                "high-privileged domain user accounts",
+                "access",
+                "privileged domain accounts",
+                "accounts",
+                "accounts",
+                "domain account",
+                "accounts",
+                "domain accounts"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 5,
+            "id": 2,
+            "texts": [
+                "GALLIUM",
+                "Sandworm Team",
+                "Wizard Spider",
+                "Sandworm Team",
+                "HAFNIUM"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "victim networks"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 3,
+            "id": 4,
+            "texts": [
+                "Active Directory environment",
+                "target systems",
+                "System"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 2,
+            "id": 5,
+            "texts": [
+                "victim",
+                "domain user"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 2,
+            "id": 6,
+            "texts": [
+                "\"admin",
+                "\"\u0441\u0438\u0441\u0442\u0435\u043c\u0430"
+            ],
+            "label": "OTHER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 4
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 6
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "4_5",
+            "source": 4,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "2_6",
+            "source": 2,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "2_0",
+            "source": 2,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "execute": 2,
+        "create": 11,
+        "maintain": 1,
+        "to": 2,
+        "use": 1,
+        "within": 1,
+        "of": 1,
+        "on": 2,
+        "in": 1,
+        "assign": 1,
+        "have": 1
+    }
+}

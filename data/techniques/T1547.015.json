@@ -1,0 +1,84 @@
+{
+    "id": "T1547.015",
+    "tech_id": "T1547.015",
+    "tech_name": "Login Items",
+    "best_phrases": [],
+    "tactics": [
+        "TA0003",
+        "TA0004"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA"
+    ],
+    "locations": [
+        "macOS"
+    ],
+    "procedures": [
+        "relationship--93139a4e-d7cb-44cf-8612-46532c85cfba",
+        "relationship--cdd0980f-f3a8-456c-acf7-39fcd702bbb2",
+        "relationship--d3e06c85-ec0b-4e6d-b1f0-f65ff9bc5e3a"
+    ],
+    "graph_nodes": [
+        {
+            "count": 3,
+            "id": 0,
+            "texts": [
+                "Green Lambert",
+                "NETWIRE",
+                "Dok"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 3,
+            "id": 1,
+            "texts": [
+                "Login Items",
+                "Login items",
+                "login Item"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 4,
+            "id": 2,
+            "texts": [
+                "startup options",
+                "AppleScript",
+                "Apple events",
+                "System Events process"
+            ],
+            "label": "FUNCTION"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 3
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "add": 1,
+        "by": 1,
+        "for": 1,
+        "use": 1,
+        "install": 1,
+        "send": 1,
+        "to": 1
+    }
+}

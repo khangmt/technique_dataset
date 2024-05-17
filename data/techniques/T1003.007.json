@@ -1,0 +1,76 @@
+{
+    "id": "T1003.007",
+    "tech_id": "T1003.007",
+    "tech_name": "Proc Filesystem",
+    "best_phrases": [],
+    "tactics": [
+        "TA0006"
+    ],
+    "features": [
+        "DATA",
+        "FUNCTION",
+        "COMPONENT"
+    ],
+    "locations": [
+        "Linux"
+    ],
+    "procedures": [
+        "relationship--bb9706eb-de51-4200-ac38-d7d658f90ea9",
+        "relationship--d3b810ed-0be4-448b-b1ac-aa3a7dd16c91"
+    ],
+    "graph_nodes": [
+        {
+            "count": 2,
+            "id": 0,
+            "texts": [
+                "LaZagne",
+                "MimiPenguin"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 7,
+            "id": 1,
+            "texts": [
+                "<PID>/maps and <PID>/mem files",
+                "regex patterns",
+                "cleartext passwords",
+                "process memory",
+                "<PID>/maps and <PID>/mem file",
+                "regex patterns",
+                "process memory"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 2,
+            "texts": [
+                "browser"
+            ],
+            "label": "COMPONENT"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 6
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 2,
+        "identify": 1,
+        "dump": 2,
+        "from": 1,
+        "of": 1,
+        "search": 1
+    }
+}

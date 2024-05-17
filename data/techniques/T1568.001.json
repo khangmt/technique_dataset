@@ -1,0 +1,136 @@
+{
+    "id": "T1568.001",
+    "tech_id": "T1568.001",
+    "tech_name": "Fast Flux DNS",
+    "best_phrases": [],
+    "tactics": [
+        "TA0011"
+    ],
+    "features": [
+        "NETWORK",
+        "FUNCTION",
+        "DATA"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--1d91840d-b419-4d9f-9bba-8a9f18728854",
+        "relationship--50b623c1-828f-4a2b-bb9e-38600b071563",
+        "relationship--53356453-2cf1-46d9-ac8f-77fc3a2274d9",
+        "relationship--b2876820-3402-45e3-a0af-f85237a23ae6",
+        "relationship--e1bf83d4-90ce-4773-9b44-340c69e17de8"
+    ],
+    "graph_nodes": [
+        {
+            "count": 4,
+            "id": 0,
+            "texts": [
+                "Amadey",
+                "menuPass",
+                "TA505",
+                "njRAT"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 8,
+            "id": 1,
+            "texts": [
+                "fast flux DNS",
+                "C2",
+                "domains",
+                "IPs",
+                "dynamic DNS",
+                "C2",
+                "changing IP addresses",
+                "fast flux DNS"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 1,
+            "id": 2,
+            "texts": [
+                "dynamic DNS service providers"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 5,
+            "id": 3,
+            "texts": [
+                "fast flux",
+                "botnets",
+                "payloads",
+                "gh0st RAT operators",
+                "C2 IP resolution"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "true location"
+            ],
+            "label": "DATA"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 4
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 4
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 5,
+        "for": 4,
+        "host": 1,
+        "mask": 2,
+        "distribute": 1,
+        "across": 1,
+        "of": 1,
+        "behind": 1
+    }
+}

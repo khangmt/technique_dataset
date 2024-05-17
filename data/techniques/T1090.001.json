@@ -1,0 +1,412 @@
+{
+    "id": "T1090.001",
+    "tech_id": "T1090.001",
+    "tech_name": "Internal Proxy",
+    "best_phrases": [],
+    "tactics": [
+        "TA0011"
+    ],
+    "features": [
+        "NETWORK",
+        "COMPONENT",
+        "FUNCTION",
+        "DATA",
+        "USER"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--1057a87e-4ae4-4317-b655-0fab5a17e7e2",
+        "relationship--1451c4a3-5dc6-4744-8120-197f3a3134c1",
+        "relationship--177d06e3-7e2f-47a1-8bbf-18a4787af5c7",
+        "relationship--252c0e02-0da6-4812-b147-81d9cfb3c998",
+        "relationship--37e781a4-8ac2-49c9-956d-2c78a5cef3df",
+        "relationship--3ff468a6-c444-439e-b095-dda4648f3561",
+        "relationship--406ca789-682f-4e08-bb7e-60421923ee09",
+        "relationship--49a11d2f-7945-4603-b409-d66420b94533",
+        "relationship--54b14853-fe7e-484e-ac14-849da168706c",
+        "relationship--5a5914f0-4e99-494b-bcf3-b199f623e36d",
+        "relationship--62f3aaef-917b-42fa-9fe9-e21f674caa90",
+        "relationship--6476b9fe-dc7f-4578-a39d-beebc8390af2",
+        "relationship--6e1e9f11-ab28-48cc-b392-f2863707fe11",
+        "relationship--733eae48-a5e2-4e82-b4a6-950c7a660e7e",
+        "relationship--75367678-910c-4715-9fc8-ee503f8e41e5",
+        "relationship--7cbedb9a-666f-47eb-b70e-905bcf80940a",
+        "relationship--828d0030-009d-4612-ae30-9dfa3d139e26",
+        "relationship--8eafddf4-a5ae-43a0-8129-966de05fefb0",
+        "relationship--90974f03-7f61-479e-bceb-6f26872d4812",
+        "relationship--97bf5604-4b99-4851-85ea-83018d90c82c",
+        "relationship--9a462c0e-a60e-4983-8839-1f0e41cc133a",
+        "relationship--af9720b7-fef3-4b8d-b2ad-073355523866",
+        "relationship--d7c40b1d-efe6-4869-9754-6494d45f51f1",
+        "relationship--e2ebd73f-9198-49c7-b446-00478a466e78",
+        "relationship--e3549420-15ec-4747-9988-7dfdbdb1e7d7"
+    ],
+    "graph_nodes": [
+        {
+            "count": 17,
+            "id": 0,
+            "texts": [
+                "machines",
+                "infected hosts",
+                "hosts",
+                "public-facing systems",
+                "instance",
+                "compromised assets",
+                "remote host",
+                "infected hosts",
+                "compromised machine",
+                "compromised machines",
+                "machines",
+                "remote machines",
+                "infected hosts",
+                "compromised systems",
+                "internal network systems",
+                "infected systems",
+                "infected hosts"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 51,
+            "id": 1,
+            "texts": [
+                "compromised network",
+                "communications",
+                "C2",
+                "peer-to-peer",
+                "network",
+                "network pipe",
+                "SMB",
+                "proxy server",
+                "C2",
+                "victims",
+                "port forwarding rule",
+                "network traffic",
+                "network",
+                "peer-to-peer",
+                "network",
+                "named pipe",
+                "named pipe-based C2",
+                "peer-to-peer",
+                "Windows HTTP/S C2 mode",
+                "local proxy",
+                "local servers",
+                "internal proxy nodes",
+                "Internet access",
+                "local network",
+                "network",
+                "named pipe",
+                "communications",
+                "pipes",
+                "internal nodes",
+                "C2 communications",
+                "compromised network",
+                "traffic",
+                "built-in netsh port proxy command",
+                "proxies",
+                "proxy",
+                "forward traffic",
+                "C2",
+                "proxy",
+                "server",
+                "communication",
+                "client",
+                "C2",
+                "compromised router",
+                "proxy",
+                "network",
+                "traffic",
+                "peer connections",
+                "custom protocol proxies",
+                "SOCK5",
+                "RPC server",
+                "P2P communications"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 14,
+            "id": 2,
+            "texts": [
+                "reverse proxy pivot points",
+                "access",
+                "egress points",
+                "system proxy settings",
+                "data",
+                "C2 profile",
+                "data",
+                "Internet access",
+                "local network",
+                "direct Internet access",
+                "internet access",
+                "restricted internet access",
+                "Internet access",
+                "access"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 16,
+            "id": 3,
+            "texts": [
+                "commands",
+                "SSH port forwarding capabilities",
+                "Cobalt Strike",
+                "proxy tool",
+                "agent module",
+                "client module",
+                "commands",
+                "Mythic",
+                "agents",
+                "Winnti",
+                "\"ZJ link\" infections",
+                "\"ZJ\" variant",
+                "BACKSPACE",
+                "ZJ listen",
+                "built-in netsh port proxy command",
+                "custom tools"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 9,
+            "id": 4,
+            "texts": [
+                "some",
+                "FIN13",
+                "This",
+                "use",
+                "parts",
+                "Volt Typhoon",
+                "corporate and restricted segments",
+                "custom protocol proxies",
+                "SOCK5"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 17,
+            "id": 5,
+            "texts": [
+                "APT29",
+                "CHOPSTICK",
+                "Drovorub",
+                "Higaisa",
+                "Mafalda",
+                "metaMain",
+                "Strider",
+                "MiniDuke",
+                "FatDuke",
+                "Kazuar",
+                "Turla",
+                "InvisiMole",
+                "Lazarus Group",
+                "threat actors",
+                "Hikit",
+                "APT39",
+                "Stuxnet"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 4,
+            "id": 6,
+            "texts": [
+                "C2",
+                "victims",
+                "client",
+                "C2"
+            ],
+            "label": "USER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 3
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 8
+        },
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 8
+        },
+        {
+            "id": "4_0",
+            "source": 4,
+            "dest": 0,
+            "count": 3
+        },
+        {
+            "id": "5_3",
+            "source": 5,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "5_0",
+            "source": 5,
+            "dest": 0,
+            "count": 4
+        },
+        {
+            "id": "5_1",
+            "source": 5,
+            "dest": 1,
+            "count": 19
+        },
+        {
+            "id": "3_0",
+            "source": 3,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "1_6",
+            "source": 1,
+            "dest": 6,
+            "count": 2
+        },
+        {
+            "id": "4_3",
+            "source": 4,
+            "dest": 3,
+            "count": 3
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 3
+        },
+        {
+            "id": "4_2",
+            "source": 4,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 3
+        },
+        {
+            "id": "5_2",
+            "source": 5,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 5
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "2_0",
+            "source": 2,
+            "dest": 0,
+            "count": 2
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "5_4",
+            "source": 5,
+            "dest": 4,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "in": 1,
+        "as": 6,
+        "with": 5,
+        "over": 5,
+        "of": 10,
+        "use": 13,
+        "on": 6,
+        "configure": 1,
+        "between": 5,
+        "utilize": 1,
+        "communicate": 1,
+        "relay": 3,
+        "by": 3,
+        "to": 5,
+        "limit": 1,
+        "provide": 1,
+        "discover": 1,
+        "create": 4,
+        "send": 1,
+        "for": 4,
+        "make": 1,
+        "exfiltrate": 1,
+        "from": 4,
+        "without": 1,
+        "forward": 1,
+        "connect": 1,
+        "facilitate": 1,
+        "compromise": 1,
+        "proxie": 1,
+        "support": 1,
+        "install": 1
+    }
+}

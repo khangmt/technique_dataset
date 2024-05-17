@@ -1,0 +1,131 @@
+{
+    "id": "T1011.001",
+    "tech_id": "T1011.001",
+    "tech_name": "Exfiltration Over Bluetooth",
+    "best_phrases": [],
+    "tactics": [
+        "TA0010"
+    ],
+    "features": [
+        "FUNCTION",
+        "COMPONENT",
+        "NETWORK",
+        "DATA"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--2858ec3b-5814-4515-9dda-f8009fbf4cd3"
+    ],
+    "graph_nodes": [
+        {
+            "count": 2,
+            "id": 0,
+            "texts": [
+                "ways",
+                "vicinity"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 1,
+            "id": 1,
+            "texts": [
+                "Bluetooth protocol"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 1,
+            "id": 2,
+            "texts": [
+                "encoded information"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 2,
+            "id": 3,
+            "texts": [
+                "Bluetooth devices",
+                "infected system"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "Flame"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 3,
+            "id": 5,
+            "texts": [
+                "module",
+                "BeetleJuice",
+                "Bluetooth functionality"
+            ],
+            "label": "FUNCTION"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "4_5",
+            "source": 4,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "3_0",
+            "source": 3,
+            "dest": 0,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 1,
+        "transmit": 1,
+        "identify": 1,
+        "have": 1,
+        "contain": 1,
+        "from": 1,
+        "over": 1,
+        "in": 1
+    }
+}

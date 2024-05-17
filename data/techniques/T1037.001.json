@@ -1,0 +1,136 @@
+{
+    "id": "T1037.001",
+    "tech_id": "T1037.001",
+    "tech_name": "Logon Script (Windows)",
+    "best_phrases": [],
+    "tactics": [
+        "TA0003",
+        "TA0004"
+    ],
+    "features": [
+        "FUNCTION",
+        "REGISTRY",
+        "DATA"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--237d098d-f796-49a0-bdc8-61909cd74feb",
+        "relationship--29e33373-f05e-421b-9b5d-fc2d617b36af",
+        "relationship--70d5a73c-cc14-410a-a430-5948cd21532f",
+        "relationship--89bed5a5-b40c-4d27-87c7-a077d1cb2e59",
+        "relationship--a0f218db-2d79-43b7-b2b8-ef1199ada766",
+        "relationship--f9283994-d216-4796-989d-a375eb4834a9"
+    ],
+    "graph_nodes": [
+        {
+            "count": 7,
+            "id": 0,
+            "texts": [
+                "APT28 loader Trojan",
+                "dispatcher",
+                "logon script",
+                "Windows shell script",
+                "logon scripts",
+                "logon script",
+                "stage malware"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 7,
+            "id": 1,
+            "texts": [
+                "Registry key HKCU\\Environment\\UserInitMprLogonScript",
+                "Registry key",
+                "HKEY_CURRENT_USER\\Environment \"UserInitMprLogonScript\" ",
+                "Registry key HKCU\\Environment\\UserInitMprLogonScript",
+                "HKCU\\Environment\\UserInitMprLogonScript Registry key",
+                "Registry key HKCU\\Environment\\UserInitMprLogonScript",
+                "HKCU\\Environment\\UserInitMprLogonScript"
+            ],
+            "label": "REGISTRY"
+        },
+        {
+            "count": 5,
+            "id": 2,
+            "texts": [
+                "Attor",
+                "JHUHUGIT",
+                "KGH_SPY",
+                "Zebrocy",
+                "Cobalt Group"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "file name"
+            ],
+            "label": "DATA"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "2_0",
+            "source": 2,
+            "dest": 0,
+            "count": 3
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "3_0",
+            "source": 3,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "add": 3,
+        "of": 1,
+        "with": 3,
+        "register": 2,
+        "under": 3,
+        "set": 1,
+        "execute": 1,
+        "for": 1
+    }
+}

@@ -1,0 +1,97 @@
+{
+    "id": "T1016.002",
+    "tech_id": "T1016.002",
+    "tech_name": "Wi-Fi Discovery",
+    "best_phrases": [],
+    "tactics": [
+        "TA0007"
+    ],
+    "features": [
+        "DATA",
+        "NETWORK",
+        "FUNCTION"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--11087b2c-2d00-4a57-a974-045010c7bab5",
+        "relationship--fd348c91-a296-4bd0-b31c-894141a2827c",
+        "relationship--fe8a52b2-b1b8-4193-a637-abd9ec219e6a"
+    ],
+    "graph_nodes": [
+        {
+            "count": 3,
+            "id": 0,
+            "texts": [
+                "Agent Tesla",
+                "Magic Hound",
+                "Emotet"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 3,
+            "id": 1,
+            "texts": [
+                "names",
+                "passwords",
+                "names"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 3,
+            "id": 2,
+            "texts": [
+                "Wi-Fi networks",
+                "networks",
+                "reachable Wi-Fi networks"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "brute-force attack"
+            ],
+            "label": "FUNCTION"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "collect": 1,
+        "of": 2,
+        "extract": 1,
+        "perform": 1,
+        "spread": 1
+    }
+}

@@ -1,0 +1,317 @@
+{
+    "id": "T1219",
+    "tech_id": "T1219",
+    "tech_name": "Remote Access Software",
+    "best_phrases": [],
+    "tactics": [
+        "TA0011"
+    ],
+    "features": [
+        "FUNCTION",
+        "NETWORK",
+        "COMPONENT",
+        "DATA",
+        "USER"
+    ],
+    "locations": [
+        "Linux",
+        "Windows",
+        "macOS"
+    ],
+    "procedures": [
+        "relationship--03527dc8-25a6-479d-b00f-90b543944da1",
+        "relationship--11d5cf7f-7b0c-49b3-b8d0-9906f440d2d0",
+        "relationship--14e8774f-a443-4065-b44d-5bb13b467c7c",
+        "relationship--2a5341b9-e987-4687-b8f2-6c798f1ac0ae",
+        "relationship--3d32be2c-02cd-4210-879a-429ca9d21f99",
+        "relationship--42684416-c3f0-4668-9c86-77482740179e",
+        "relationship--4e341596-3bc3-4d9e-a9a3-2aceccfebe35",
+        "relationship--4fc9c0a5-952f-4726-8c53-39fbf40a67e3",
+        "relationship--52f31493-1654-4516-960d-c79018f1efd8",
+        "relationship--58a574e4-ba44-4472-92fe-c50a9a9cbb49",
+        "relationship--685a8409-db59-4ef3-b4de-786b87be8839",
+        "relationship--7fa238de-37c5-4224-b760-bf9f00001051",
+        "relationship--96934e69-6d38-4ebd-970d-3d9bf88e03e3",
+        "relationship--9f372adb-777a-4635-9310-cbb8f432f08e",
+        "relationship--a0084acb-4ede-4dac-af86-857d5f381dac",
+        "relationship--aa308c15-3c8d-4df7-a6b2-0a4f61ef8d03",
+        "relationship--ad949bd4-7ffd-4712-91d8-4a8523db6b50",
+        "relationship--af1514c0-0e58-4878-a409-9804a7ce5e0b",
+        "relationship--d35f97c3-2776-4f7a-9dfa-be39009ea5c0",
+        "relationship--d39f49f7-3e63-4625-b6e9-e3fdbd0ae013",
+        "relationship--de071e4d-eee7-4ad5-96b6-fe83bfe3e25a",
+        "relationship--df1b67d2-8a37-4803-a05d-9bbdb0f30819",
+        "relationship--e74cdd3d-4ac7-42c5-a7ac-e2f58371fc5b"
+    ],
+    "graph_nodes": [
+        {
+            "count": 22,
+            "id": 0,
+            "texts": [
+                "Hildegard",
+                "TeamTNT",
+                "Dridex",
+                "RTM",
+                "EVILNUM",
+                "Mustang Panda",
+                "FIN7",
+                "threat actors",
+                "Kimsuky",
+                "Thrip",
+                "GOLD SOUTHFIELD",
+                "RTM",
+                "Carbanak",
+                "DarkVishnya",
+                "TrickBot",
+                "Sandworm Team",
+                "Carbanak",
+                "threat actors",
+                "threat actors",
+                "Egregor",
+                "MuddyWater",
+                "Cobalt Group"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 37,
+            "id": 1,
+            "texts": [
+                "tmate sessions",
+                "module",
+                "capability",
+                "VNC module",
+                "malware variant",
+                "TerraTV",
+                "legitimate TeamViewer application",
+                "remote management tool",
+                "malware",
+                "tools",
+                "LogMeIn",
+                "cloud-based remote access software",
+                "attacks",
+                "cloud-based remote management and monitoring tool",
+                "\"ConnectWise Control",
+                "REvil",
+                "TeamViewer",
+                "Remote Utilities",
+                "plugin",
+                "VNC",
+                "Ammyy Admin Tool",
+                "vncDll module",
+                "remote monitoring and management (RMM) tools",
+                "remote administration tools",
+                "remote industrial control system client software",
+                "electricity breakers",
+                "command",
+                "AmmyyAdmin",
+                "legitimate programs",
+                "Team Viewer",
+                "AnyDesk remote desktop application",
+                "remote administration tools",
+                "attempt",
+                "legitimate application",
+                "TeamViewer",
+                "Ammyy Admin tool",
+                "Cobalt Strike module"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 26,
+            "id": 2,
+            "texts": [
+                "C2 communications",
+                "VNC",
+                "C2",
+                "TeamViewer",
+                "AnyDesk",
+                "modified TeamViewer client",
+                "C2 channel",
+                "LogMeIn",
+                "cloud-based remote access software",
+                "remote access",
+                "TeamViewer",
+                "Remote Utilities",
+                "VNC",
+                "Ammyy Admin Tool",
+                "DameWare Mini Remote Control",
+                "AmmyyAdmin",
+                "legitimate programs",
+                "Team Viewer",
+                "remote interactive C2",
+                "compromised network",
+                "persistent infiltration channels",
+                "ScreenConnect",
+                "TeamViewer",
+                "Ammyy Admin tool",
+                "remote access",
+                "remote access"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 7,
+            "id": 3,
+            "texts": [
+                "compromrised machines",
+                "targeted systems",
+                "compromised system",
+                "systems",
+                "victim machine",
+                "remote machines",
+                "systems"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 2,
+            "id": 4,
+            "texts": [
+                "Atera",
+                "Scattered Spider"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 3,
+            "id": 5,
+            "texts": [
+                "modified version",
+                "LogMein event log",
+                "files"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 6,
+            "texts": [
+                "victims"
+            ],
+            "label": "USER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 26
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 8
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 3
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 14
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 3
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 2
+        },
+        {
+            "id": "5_2",
+            "source": 5,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "5_1",
+            "source": 5,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "4_6",
+            "source": 4,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "5_3",
+            "source": 5,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "establish": 1,
+        "for": 12,
+        "contain": 1,
+        "have": 2,
+        "download": 2,
+        "from": 1,
+        "use": 16,
+        "run": 2,
+        "connect": 1,
+        "instal": 2,
+        "on": 2,
+        "utilize": 2,
+        "to": 1,
+        "transfer": 1,
+        "between": 1,
+        "as": 4,
+        "deploy": 1,
+        "of": 1,
+        "control": 1,
+        "direct": 1,
+        "release": 1,
+        "execute": 1,
+        "onto": 2,
+        "in": 2,
+        "encrypt": 1,
+        "manage": 1,
+        "lose": 1,
+        "preserve": 1
+    }
+}

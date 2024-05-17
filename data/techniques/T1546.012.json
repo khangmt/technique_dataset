@@ -1,0 +1,121 @@
+{
+    "id": "T1546.012",
+    "tech_id": "T1546.012",
+    "tech_name": "Image File Execution Options Injection",
+    "best_phrases": [],
+    "tactics": [
+        "TA0004",
+        "TA0003"
+    ],
+    "features": [
+        "FUNCTION",
+        "REGISTRY",
+        "DATA"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--173ba3ee-3bec-4849-b6a2-94ee5bce5f8e",
+        "relationship--78fce2a1-4d92-4e67-8e9b-c684f33b4536",
+        "relationship--91e86813-270d-4ee6-8dff-9b87e3d9fae4"
+    ],
+    "graph_nodes": [
+        {
+            "count": 3,
+            "id": 0,
+            "texts": [
+                "TEMP.Veles",
+                "SUNBURST",
+                "SDBbot"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 1,
+            "id": 1,
+            "texts": [
+                "entries"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 2,
+            "id": 2,
+            "texts": [
+                "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\WindowsNT\\CurrentVersion\\Image File Execution Options",
+                "Image File Execution Options (IFEO) Debugger registry value"
+            ],
+            "label": "REGISTRY"
+        },
+        {
+            "count": 4,
+            "id": 3,
+            "texts": [
+                "installation",
+                "process dllhost.exe",
+                "Cobalt Strike",
+                "image file execution options"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 2,
+            "id": 4,
+            "texts": [
+                "admin privileges",
+                "Windows version"
+            ],
+            "label": "DATA"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 2
+        }
+    ],
+    "verbs": {
+        "add": 1,
+        "within": 1,
+        "create": 1,
+        "trigger": 1,
+        "for": 1,
+        "of": 1,
+        "use": 1,
+        "with": 1,
+        "on": 1
+    }
+}

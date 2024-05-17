@@ -1,0 +1,1003 @@
+[
+    {
+        "first": {
+            "id": "TA0043",
+            "name": "Reconnaissance"
+        },
+        "second": {
+            "id": "TA0042",
+            "name": "Resource Development"
+        },
+        "status": 0
+    },
+    {
+        "first": {
+            "id": "TA0043",
+            "name": "Reconnaissance"
+        },
+        "second": {
+            "id": "TA0001",
+            "name": "Initial Access"
+        },
+        "status": 1
+    },
+    {
+        "first": {
+            "id": "TA0043",
+            "name": "Reconnaissance"
+        },
+        "second": {
+            "id": "TA0002",
+            "name": "Execution"
+        },
+        "status": 1
+    },
+    {
+        "first": {
+            "id": "TA0043",
+            "name": "Reconnaissance"
+        },
+        "second": {
+            "id": "TA0003",
+            "name": "Persistence"
+        },
+        "status": 1
+    },
+    {
+        "first": {
+            "id": "TA0043",
+            "name": "Reconnaissance"
+        },
+        "second": {
+            "id": "TA0004",
+            "name": "Privilege Escalation"
+        },
+        "status": 1
+    },
+    {
+        "first": {
+            "id": "TA0043",
+            "name": "Reconnaissance"
+        },
+        "second": {
+            "id": "TA0005",
+            "name": "Defense Evasion"
+        },
+        "status": 1
+    },
+    {
+        "first": {
+            "id": "TA0043",
+            "name": "Reconnaissance"
+        },
+        "second": {
+            "id": "TA0006",
+            "name": "Credential Access"
+        },
+        "status": 1
+    },
+    {
+        "first": {
+            "id": "TA0043",
+            "name": "Reconnaissance"
+        },
+        "second": {
+            "id": "TA0007",
+            "name": "Discovery"
+        },
+        "status": 1
+    },
+    {
+        "first": {
+            "id": "TA0043",
+            "name": "Reconnaissance"
+        },
+        "second": {
+            "id": "TA0008",
+            "name": "Lateral Movement"
+        },
+        "status": 1
+    },
+    {
+        "first": {
+            "id": "TA0043",
+            "name": "Reconnaissance"
+        },
+        "second": {
+            "id": "TA0009",
+            "name": "Collection"
+        },
+        "status": 1
+    },
+    {
+        "first": {
+            "id": "TA0043",
+            "name": "Reconnaissance"
+        },
+        "second": {
+            "id": "TA0011",
+            "name": "Command and Control"
+        },
+        "status": 1
+    },
+    {
+        "first": {
+            "id": "TA0043",
+            "name": "Reconnaissance"
+        },
+        "second": {
+            "id": "TA0010",
+            "name": "Exfiltration"
+        },
+        "status": 1
+    },
+    {
+        "first": {
+            "id": "TA0043",
+            "name": "Reconnaissance"
+        },
+        "second": {
+            "id": "TA0040",
+            "name": "Impact"
+        },
+        "status": 1
+    },
+    {
+        "first": {
+            "id": "TA0042",
+            "name": "Resource Development"
+        },
+        "second": {
+            "id": "TA0001",
+            "name": "Initial Access"
+        },
+        "status": 1
+    },
+    {
+        "first": {
+            "id": "TA0042",
+            "name": "Resource Development"
+        },
+        "second": {
+            "id": "TA0002",
+            "name": "Execution"
+        },
+        "status": 1
+    },
+    {
+        "first": {
+            "id": "TA0042",
+            "name": "Resource Development"
+        },
+        "second": {
+            "id": "TA0003",
+            "name": "Persistence"
+        },
+        "status": 1
+    },
+    {
+        "first": {
+            "id": "TA0042",
+            "name": "Resource Development"
+        },
+        "second": {
+            "id": "TA0004",
+            "name": "Privilege Escalation"
+        },
+        "status": 1
+    },
+    {
+        "first": {
+            "id": "TA0042",
+            "name": "Resource Development"
+        },
+        "second": {
+            "id": "TA0005",
+            "name": "Defense Evasion"
+        },
+        "status": 1
+    },
+    {
+        "first": {
+            "id": "TA0042",
+            "name": "Resource Development"
+        },
+        "second": {
+            "id": "TA0006",
+            "name": "Credential Access"
+        },
+        "status": 1
+    },
+    {
+        "first": {
+            "id": "TA0042",
+            "name": "Resource Development"
+        },
+        "second": {
+            "id": "TA0007",
+            "name": "Discovery"
+        },
+        "status": 1
+    },
+    {
+        "first": {
+            "id": "TA0042",
+            "name": "Resource Development"
+        },
+        "second": {
+            "id": "TA0008",
+            "name": "Lateral Movement"
+        },
+        "status": 1
+    },
+    {
+        "first": {
+            "id": "TA0042",
+            "name": "Resource Development"
+        },
+        "second": {
+            "id": "TA0009",
+            "name": "Collection"
+        },
+        "status": 1
+    },
+    {
+        "first": {
+            "id": "TA0042",
+            "name": "Resource Development"
+        },
+        "second": {
+            "id": "TA0011",
+            "name": "Command and Control"
+        },
+        "status": 1
+    },
+    {
+        "first": {
+            "id": "TA0042",
+            "name": "Resource Development"
+        },
+        "second": {
+            "id": "TA0010",
+            "name": "Exfiltration"
+        },
+        "status": 1
+    },
+    {
+        "first": {
+            "id": "TA0042",
+            "name": "Resource Development"
+        },
+        "second": {
+            "id": "TA0040",
+            "name": "Impact"
+        },
+        "status": 1
+    },
+    {
+        "first": {
+            "id": "TA0001",
+            "name": "Initial Access"
+        },
+        "second": {
+            "id": "TA0002",
+            "name": "Execution"
+        },
+        "status": 1
+    },
+    {
+        "first": {
+            "id": "TA0001",
+            "name": "Initial Access"
+        },
+        "second": {
+            "id": "TA0003",
+            "name": "Persistence"
+        },
+        "status": 1
+    },
+    {
+        "first": {
+            "id": "TA0001",
+            "name": "Initial Access"
+        },
+        "second": {
+            "id": "TA0004",
+            "name": "Privilege Escalation"
+        },
+        "status": 1
+    },
+    {
+        "first": {
+            "id": "TA0001",
+            "name": "Initial Access"
+        },
+        "second": {
+            "id": "TA0005",
+            "name": "Defense Evasion"
+        },
+        "status": 1
+    },
+    {
+        "first": {
+            "id": "TA0001",
+            "name": "Initial Access"
+        },
+        "second": {
+            "id": "TA0006",
+            "name": "Credential Access"
+        },
+        "status": 0
+    },
+    {
+        "first": {
+            "id": "TA0001",
+            "name": "Initial Access"
+        },
+        "second": {
+            "id": "TA0007",
+            "name": "Discovery"
+        },
+        "status": 1
+    },
+    {
+        "first": {
+            "id": "TA0001",
+            "name": "Initial Access"
+        },
+        "second": {
+            "id": "TA0008",
+            "name": "Lateral Movement"
+        },
+        "status": 1
+    },
+    {
+        "first": {
+            "id": "TA0001",
+            "name": "Initial Access"
+        },
+        "second": {
+            "id": "TA0009",
+            "name": "Collection"
+        },
+        "status": 1
+    },
+    {
+        "first": {
+            "id": "TA0001",
+            "name": "Initial Access"
+        },
+        "second": {
+            "id": "TA0011",
+            "name": "Command and Control"
+        },
+        "status": 0
+    },
+    {
+        "first": {
+            "id": "TA0001",
+            "name": "Initial Access"
+        },
+        "second": {
+            "id": "TA0010",
+            "name": "Exfiltration"
+        },
+        "status": 1
+    },
+    {
+        "first": {
+            "id": "TA0001",
+            "name": "Initial Access"
+        },
+        "second": {
+            "id": "TA0040",
+            "name": "Impact"
+        },
+        "status": 1
+    },
+    {
+        "first": {
+            "id": "TA0002",
+            "name": "Execution"
+        },
+        "second": {
+            "id": "TA0003",
+            "name": "Persistence"
+        },
+        "status": 1
+    },
+    {
+        "first": {
+            "id": "TA0002",
+            "name": "Execution"
+        },
+        "second": {
+            "id": "TA0004",
+            "name": "Privilege Escalation"
+        },
+        "status": 0
+    },
+    {
+        "first": {
+            "id": "TA0002",
+            "name": "Execution"
+        },
+        "second": {
+            "id": "TA0005",
+            "name": "Defense Evasion"
+        },
+        "status": 0
+    },
+    {
+        "first": {
+            "id": "TA0002",
+            "name": "Execution"
+        },
+        "second": {
+            "id": "TA0006",
+            "name": "Credential Access"
+        },
+        "status": 0
+    },
+    {
+        "first": {
+            "id": "TA0002",
+            "name": "Execution"
+        },
+        "second": {
+            "id": "TA0007",
+            "name": "Discovery"
+        },
+        "status": 1
+    },
+    {
+        "first": {
+            "id": "TA0002",
+            "name": "Execution"
+        },
+        "second": {
+            "id": "TA0008",
+            "name": "Lateral Movement"
+        },
+        "status": 1
+    },
+    {
+        "first": {
+            "id": "TA0002",
+            "name": "Execution"
+        },
+        "second": {
+            "id": "TA0009",
+            "name": "Collection"
+        },
+        "status": 1
+    },
+    {
+        "first": {
+            "id": "TA0002",
+            "name": "Execution"
+        },
+        "second": {
+            "id": "TA0011",
+            "name": "Command and Control"
+        },
+        "status": 0
+    },
+    {
+        "first": {
+            "id": "TA0002",
+            "name": "Execution"
+        },
+        "second": {
+            "id": "TA0010",
+            "name": "Exfiltration"
+        },
+        "status": 1
+    },
+    {
+        "first": {
+            "id": "TA0002",
+            "name": "Execution"
+        },
+        "second": {
+            "id": "TA0040",
+            "name": "Impact"
+        },
+        "status": 1
+    },
+    {
+        "first": {
+            "id": "TA0003",
+            "name": "Persistence"
+        },
+        "second": {
+            "id": "TA0004",
+            "name": "Privilege Escalation"
+        },
+        "status": 2
+    },
+    {
+        "first": {
+            "id": "TA0003",
+            "name": "Persistence"
+        },
+        "second": {
+            "id": "TA0005",
+            "name": "Defense Evasion"
+        },
+        "status": 0
+    },
+    {
+        "first": {
+            "id": "TA0003",
+            "name": "Persistence"
+        },
+        "second": {
+            "id": "TA0006",
+            "name": "Credential Access"
+        },
+        "status": 2
+    },
+    {
+        "first": {
+            "id": "TA0003",
+            "name": "Persistence"
+        },
+        "second": {
+            "id": "TA0007",
+            "name": "Discovery"
+        },
+        "status": 0
+    },
+    {
+        "first": {
+            "id": "TA0003",
+            "name": "Persistence"
+        },
+        "second": {
+            "id": "TA0008",
+            "name": "Lateral Movement"
+        },
+        "status": 1
+    },
+    {
+        "first": {
+            "id": "TA0003",
+            "name": "Persistence"
+        },
+        "second": {
+            "id": "TA0009",
+            "name": "Collection"
+        },
+        "status": 0
+    },
+    {
+        "first": {
+            "id": "TA0003",
+            "name": "Persistence"
+        },
+        "second": {
+            "id": "TA0011",
+            "name": "Command and Control"
+        },
+        "status": 2
+    },
+    {
+        "first": {
+            "id": "TA0003",
+            "name": "Persistence"
+        },
+        "second": {
+            "id": "TA0010",
+            "name": "Exfiltration"
+        },
+        "status": 0
+    },
+    {
+        "first": {
+            "id": "TA0003",
+            "name": "Persistence"
+        },
+        "second": {
+            "id": "TA0040",
+            "name": "Impact"
+        },
+        "status": 1
+    },
+    {
+        "first": {
+            "id": "TA0004",
+            "name": "Privilege Escalation"
+        },
+        "second": {
+            "id": "TA0005",
+            "name": "Defense Evasion"
+        },
+        "status": 1
+    },
+    {
+        "first": {
+            "id": "TA0004",
+            "name": "Privilege Escalation"
+        },
+        "second": {
+            "id": "TA0006",
+            "name": "Credential Access"
+        },
+        "status": 2
+    },
+    {
+        "first": {
+            "id": "TA0004",
+            "name": "Privilege Escalation"
+        },
+        "second": {
+            "id": "TA0007",
+            "name": "Discovery"
+        },
+        "status": 1
+    },
+    {
+        "first": {
+            "id": "TA0004",
+            "name": "Privilege Escalation"
+        },
+        "second": {
+            "id": "TA0008",
+            "name": "Lateral Movement"
+        },
+        "status": 1
+    },
+    {
+        "first": {
+            "id": "TA0004",
+            "name": "Privilege Escalation"
+        },
+        "second": {
+            "id": "TA0009",
+            "name": "Collection"
+        },
+        "status": 1
+    },
+    {
+        "first": {
+            "id": "TA0004",
+            "name": "Privilege Escalation"
+        },
+        "second": {
+            "id": "TA0011",
+            "name": "Command and Control"
+        },
+        "status": 2
+    },
+    {
+        "first": {
+            "id": "TA0004",
+            "name": "Privilege Escalation"
+        },
+        "second": {
+            "id": "TA0010",
+            "name": "Exfiltration"
+        },
+        "status": 1
+    },
+    {
+        "first": {
+            "id": "TA0004",
+            "name": "Privilege Escalation"
+        },
+        "second": {
+            "id": "TA0040",
+            "name": "Impact"
+        },
+        "status": 1
+    },
+    {
+        "first": {
+            "id": "TA0005",
+            "name": "Defense Evasion"
+        },
+        "second": {
+            "id": "TA0006",
+            "name": "Credential Access"
+        },
+        "status": 2
+    },
+    {
+        "first": {
+            "id": "TA0005",
+            "name": "Defense Evasion"
+        },
+        "second": {
+            "id": "TA0007",
+            "name": "Discovery"
+        },
+        "status": 1
+    },
+    {
+        "first": {
+            "id": "TA0005",
+            "name": "Defense Evasion"
+        },
+        "second": {
+            "id": "TA0008",
+            "name": "Lateral Movement"
+        },
+        "status": 1
+    },
+    {
+        "first": {
+            "id": "TA0005",
+            "name": "Defense Evasion"
+        },
+        "second": {
+            "id": "TA0009",
+            "name": "Collection"
+        },
+        "status": 1
+    },
+    {
+        "first": {
+            "id": "TA0005",
+            "name": "Defense Evasion"
+        },
+        "second": {
+            "id": "TA0011",
+            "name": "Command and Control"
+        },
+        "status": 2
+    },
+    {
+        "first": {
+            "id": "TA0005",
+            "name": "Defense Evasion"
+        },
+        "second": {
+            "id": "TA0010",
+            "name": "Exfiltration"
+        },
+        "status": 1
+    },
+    {
+        "first": {
+            "id": "TA0005",
+            "name": "Defense Evasion"
+        },
+        "second": {
+            "id": "TA0040",
+            "name": "Impact"
+        },
+        "status": 1
+    },
+    {
+        "first": {
+            "id": "TA0006",
+            "name": "Credential Access"
+        },
+        "second": {
+            "id": "TA0007",
+            "name": "Discovery"
+        },
+        "status": 1
+    },
+    {
+        "first": {
+            "id": "TA0006",
+            "name": "Credential Access"
+        },
+        "second": {
+            "id": "TA0008",
+            "name": "Lateral Movement"
+        },
+        "status": 1
+    },
+    {
+        "first": {
+            "id": "TA0006",
+            "name": "Credential Access"
+        },
+        "second": {
+            "id": "TA0009",
+            "name": "Collection"
+        },
+        "status": 1
+    },
+    {
+        "first": {
+            "id": "TA0006",
+            "name": "Credential Access"
+        },
+        "second": {
+            "id": "TA0011",
+            "name": "Command and Control"
+        },
+        "status": 0
+    },
+    {
+        "first": {
+            "id": "TA0006",
+            "name": "Credential Access"
+        },
+        "second": {
+            "id": "TA0010",
+            "name": "Exfiltration"
+        },
+        "status": 1
+    },
+    {
+        "first": {
+            "id": "TA0006",
+            "name": "Credential Access"
+        },
+        "second": {
+            "id": "TA0040",
+            "name": "Impact"
+        },
+        "status": 1
+    },
+    {
+        "first": {
+            "id": "TA0007",
+            "name": "Discovery"
+        },
+        "second": {
+            "id": "TA0008",
+            "name": "Lateral Movement"
+        },
+        "status": 1
+    },
+    {
+        "first": {
+            "id": "TA0007",
+            "name": "Discovery"
+        },
+        "second": {
+            "id": "TA0009",
+            "name": "Collection"
+        },
+        "status": 1
+    },
+    {
+        "first": {
+            "id": "TA0007",
+            "name": "Discovery"
+        },
+        "second": {
+            "id": "TA0011",
+            "name": "Command and Control"
+        },
+        "status": 2
+    },
+    {
+        "first": {
+            "id": "TA0007",
+            "name": "Discovery"
+        },
+        "second": {
+            "id": "TA0010",
+            "name": "Exfiltration"
+        },
+        "status": 1
+    },
+    {
+        "first": {
+            "id": "TA0007",
+            "name": "Discovery"
+        },
+        "second": {
+            "id": "TA0040",
+            "name": "Impact"
+        },
+        "status": 1
+    },
+    {
+        "first": {
+            "id": "TA0008",
+            "name": "Lateral Movement"
+        },
+        "second": {
+            "id": "TA0009",
+            "name": "Collection"
+        },
+        "status": 2
+    },
+    {
+        "first": {
+            "id": "TA0008",
+            "name": "Lateral Movement"
+        },
+        "second": {
+            "id": "TA0011",
+            "name": "Command and Control"
+        },
+        "status": 2
+    },
+    {
+        "first": {
+            "id": "TA0008",
+            "name": "Lateral Movement"
+        },
+        "second": {
+            "id": "TA0010",
+            "name": "Exfiltration"
+        },
+        "status": 2
+    },
+    {
+        "first": {
+            "id": "TA0008",
+            "name": "Lateral Movement"
+        },
+        "second": {
+            "id": "TA0040",
+            "name": "Impact"
+        },
+        "status": 2
+    },
+    {
+        "first": {
+            "id": "TA0009",
+            "name": "Collection"
+        },
+        "second": {
+            "id": "TA0011",
+            "name": "Command and Control"
+        },
+        "status": 2
+    },
+    {
+        "first": {
+            "id": "TA0009",
+            "name": "Collection"
+        },
+        "second": {
+            "id": "TA0010",
+            "name": "Exfiltration"
+        },
+        "status": 1
+    },
+    {
+        "first": {
+            "id": "TA0009",
+            "name": "Collection"
+        },
+        "second": {
+            "id": "TA0040",
+            "name": "Impact"
+        },
+        "status": 1
+    },
+    {
+        "first": {
+            "id": "TA0011",
+            "name": "Command and Control"
+        },
+        "second": {
+            "id": "TA0010",
+            "name": "Exfiltration"
+        },
+        "status": 1
+    },
+    {
+        "first": {
+            "id": "TA0011",
+            "name": "Command and Control"
+        },
+        "second": {
+            "id": "TA0040",
+            "name": "Impact"
+        },
+        "status": 1
+    },
+    {
+        "first": {
+            "id": "TA0010",
+            "name": "Exfiltration"
+        },
+        "second": {
+            "id": "TA0040",
+            "name": "Impact"
+        },
+        "status": 0
+    }
+]

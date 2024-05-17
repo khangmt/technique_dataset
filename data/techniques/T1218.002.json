@@ -1,0 +1,108 @@
+{
+    "id": "T1218.002",
+    "tech_id": "T1218.002",
+    "tech_name": "Control Panel",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005"
+    ],
+    "features": [
+        "DATA",
+        "FUNCTION",
+        "NETWORK"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--593e12bb-dcef-4773-a80d-274c10095d12",
+        "relationship--6cef3b8e-24de-41f0-b568-531211e0268a",
+        "relationship--ad4bd339-7416-45de-8202-f91c6909be05"
+    ],
+    "graph_nodes": [
+        {
+            "count": 3,
+            "id": 0,
+            "texts": [
+                "control panel files",
+                "CPL",
+                "CPL file"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 1,
+            "texts": [
+                "e-mail"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 3,
+            "id": 2,
+            "texts": [
+                "Ember Bear",
+                "InvisiMole",
+                "Reaver"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 2,
+            "id": 3,
+            "texts": [
+                "command",
+                "payload"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "itself"
+            ],
+            "label": "OTHER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "2_0",
+            "source": 2,
+            "dest": 0,
+            "count": 3
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "deliver by": 1,
+        "use": 2,
+        "execute": 2,
+        "register": 1,
+        "as": 2
+    }
+}

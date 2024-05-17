@@ -1,0 +1,312 @@
+{
+    "id": "T1123",
+    "tech_id": "T1123",
+    "tech_name": "Audio Capture",
+    "best_phrases": [],
+    "tactics": [
+        "TA0009"
+    ],
+    "features": [
+        "DATA",
+        "FUNCTION",
+        "COMPONENT",
+        "USER",
+        "NETWORK",
+        "ENCRYPTION",
+        "DIRECTORY"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--07d16181-ba82-42c8-a67b-8d7d5adef52d",
+        "relationship--0e8f2301-2758-43b3-8b3e-615281100eff",
+        "relationship--1148c339-09f2-4518-9562-c6aa11d5474f",
+        "relationship--2a32c434-c3ef-42ee-a0b6-c64c589355c3",
+        "relationship--2c219416-4576-4215-80ac-1aebfadefd8b",
+        "relationship--404dfda0-7019-4f0e-a831-4b7c594916e8",
+        "relationship--49f3c807-a801-4cfe-ad1c-6966bea2fc8a",
+        "relationship--5599906d-5be3-420c-9f84-e762d85c2511",
+        "relationship--721b7c0a-4774-4b09-882f-be7ba1cab7a5",
+        "relationship--72e501db-419e-4fe9-9f10-fa8f266d829b",
+        "relationship--77171992-6bae-442a-a790-b22982a29c8d",
+        "relationship--7aa65075-fd72-460e-bded-8f0f5620d515",
+        "relationship--842f8f4b-9d90-4533-850f-777f33ef8257",
+        "relationship--86e8f395-3c57-4602-8e7c-30058d05a655",
+        "relationship--8b5d4742-35a6-4ab7-993c-e20831ab0020",
+        "relationship--97d2fa02-bccc-43c3-8c1d-e3667b710e5e",
+        "relationship--9fde631f-9e22-40fe-b6bb-071bd689c8f9",
+        "relationship--ade8894f-e9fd-4391-98c3-d43ad2d7ab9c",
+        "relationship--b93d69f2-32a2-43a8-9b45-693d82a51c6b",
+        "relationship--b9f6e673-8c15-465e-9ef0-2bcc8efc586e",
+        "relationship--be12c965-ec79-4871-94de-c8421436c30c",
+        "relationship--c068603b-bfab-4efd-92c2-01f8d696ea88",
+        "relationship--cdc0bf25-e132-4214-b3e0-c784da6cfbeb",
+        "relationship--cdd356f2-bd44-497c-b02d-30ad9ed869a2",
+        "relationship--ce85be06-0f74-480e-b55a-df92f6989902",
+        "relationship--cff7d7e5-a279-4499-9b03-0cb47ac6b25c",
+        "relationship--d12ef54e-bf2b-4c78-acb9-69a41287f6e0",
+        "relationship--e66427b2-f353-446a-aedf-decccb926172",
+        "relationship--eb5510f9-e2ec-4a57-9a96-93dc3028bcea"
+    ],
+    "graph_nodes": [
+        {
+            "count": 25,
+            "id": 0,
+            "texts": [
+                "Flame",
+                "ROKRAT",
+                "Bandook",
+                "VERMIN",
+                "TajMahal",
+                "EvilGrab",
+                "Cadelspy",
+                "NanoCore",
+                "Crimson",
+                "MacMa",
+                "T9000",
+                "Machete",
+                "Janicab",
+                "Cobian RAT",
+                "InvisiMole",
+                "Revenge RAT",
+                "Derusbi",
+                "DarkComet",
+                "MacSpy",
+                "DOGCALL",
+                "jRAT",
+                "Micropsia",
+                "NightClub",
+                "APT37",
+                "Attor"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 32,
+            "id": 1,
+            "texts": [
+                "audio",
+                "audio",
+                "system microphone audio",
+                "audio capture",
+                "VoiceIP application audio",
+                "sound",
+                "microphone",
+                "audio",
+                "audio",
+                "audio feeds",
+                "microphones",
+                "audio",
+                "encrypted data",
+                "audio",
+                "microphone",
+                "audio",
+                "voice recording",
+                "sound",
+                "audio captures",
+                "microphone",
+                "conversations",
+                "sounds",
+                "microphones",
+                "microphone data",
+                "microphone recordings",
+                "data",
+                "microphone",
+                "microphone recording",
+                "audio",
+                "microphone input",
+                "audio",
+                "input sound devices"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 12,
+            "id": 2,
+            "texts": [
+                "hardware recording devices",
+                "infected host",
+                "victim machine",
+                "compromised host",
+                "system",
+                "computer",
+                "machine",
+                "input audio devices",
+                "system",
+                "computer",
+                "machine",
+                "system"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 18,
+            "id": 3,
+            "texts": [
+                "audio capture and eavesdropping module",
+                "modules",
+                "Get-MicrophoneAudio Exfiltration module",
+                "PowerSploit",
+                "Pupy",
+                "capability",
+                "audio surveillance",
+                "Skype API",
+                "feature",
+                "plugin",
+                "microphone interception",
+                "Imminent Monitor",
+                "remote microphone monitoring capability",
+                "Remcos",
+                "module",
+                "SOUNDWAVE",
+                "audio capturing utility",
+                "plugin"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 2,
+            "id": 4,
+            "texts": [
+                "audio and video calls",
+                "C2"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "%appdata%\\Intel\\Skype"
+            ],
+            "label": "DIRECTORY"
+        },
+        {
+            "count": 3,
+            "id": 6,
+            "texts": [
+                "victim",
+                "victims",
+                "victim"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 2,
+            "id": 7,
+            "texts": [
+                "mciSendStringW",
+                "LAME encoder"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 2,
+            "id": 8,
+            "texts": [
+                "mciSendStringW",
+                "LAME encoder"
+            ],
+            "label": "ENCRYPTION"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 21
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 5
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 10
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 11
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 10
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "2_6",
+            "source": 2,
+            "dest": 6,
+            "count": 2
+        },
+        {
+            "id": "1_6",
+            "source": 1,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "0_7",
+            "source": 0,
+            "dest": 7,
+            "count": 1
+        },
+        {
+            "id": "0_8",
+            "source": 0,
+            "dest": 8,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "record": 9,
+        "use": 7,
+        "have": 7,
+        "capture": 11,
+        "of": 7,
+        "perform": 5,
+        "on": 4,
+        "with": 2,
+        "from": 12,
+        "write": 1,
+        "to": 5,
+        "for": 1,
+        "by": 1,
+        "load": 1
+    }
+}

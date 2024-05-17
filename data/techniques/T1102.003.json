@@ -1,0 +1,185 @@
+{
+    "id": "T1102.003",
+    "tech_id": "T1102.003",
+    "tech_name": "One-Way Communication",
+    "best_phrases": [],
+    "tactics": [
+        "TA0011"
+    ],
+    "features": [
+        "NETWORK",
+        "FUNCTION",
+        "COMPONENT",
+        "DATA",
+        "ENCRYPTION"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--184f018e-cb09-4da4-a599-bc7de09e262e",
+        "relationship--1cabd067-2229-488f-a244-03aa087b7e54",
+        "relationship--68e18f32-aae3-4bd6-b8e5-6ec2ec3d4173",
+        "relationship--6b39985b-2e2f-4d54-9211-aef4d94b318f",
+        "relationship--c7420523-7dc0-4118-a075-93f9c0268627"
+    ],
+    "graph_nodes": [
+        {
+            "count": 4,
+            "id": 0,
+            "texts": [
+                "EVILNUM",
+                "Leviathan",
+                "Metamorfo",
+                "OnionDuke"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 9,
+            "id": 1,
+            "texts": [
+                "one-way communication method",
+                "C2 instructions",
+                "\"tDiscoverer\" variant",
+                "HAMMERTOSS",
+                "Twitter",
+                "GitHub",
+                "Web services",
+                "HAMMERTOSS binaries",
+                "instructions"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 10,
+            "id": 2,
+            "texts": [
+                "C2",
+                "Github",
+                "TechNet",
+                "legitimate websites",
+                "Twitter",
+                "backup C2",
+                "C2 channel",
+                "Twitter",
+                "GitHub",
+                "Web services"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 8,
+            "id": 3,
+            "texts": [
+                "Digital Point",
+                "GitLab",
+                "Github",
+                "TechNet",
+                "legitimate websites",
+                "Twitter",
+                "GitHub",
+                "Web services"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 4,
+            "id": 4,
+            "texts": [
+                "Digital Point",
+                "GitLab",
+                "user profiles",
+                "resources"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "zip file"
+            ],
+            "label": "ENCRYPTION"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 3
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 3
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "4_2",
+            "source": 4,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "4_3",
+            "source": 4,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 2
+        }
+    ],
+    "verbs": {
+        "use": 2,
+        "perform": 1,
+        "by": 1,
+        "receive": 1,
+        "from": 3,
+        "create on": 1,
+        "download": 2,
+        "as": 2,
+        "of": 1,
+        "establish": 1,
+        "contain": 1,
+        "generate": 1,
+        "for": 1
+    }
+}

@@ -1,0 +1,119 @@
+{
+    "id": "T1562.003",
+    "tech_id": "T1562.003",
+    "tech_name": "Impair Command History Logging",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "COMPONENT"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows",
+        "Network"
+    ],
+    "procedures": [
+        "relationship--5c7716d2-cf4b-43cd-a544-0c94ebf69e23",
+        "relationship--dc509494-ad76-4986-b6bd-39a30f1d9336"
+    ],
+    "graph_nodes": [
+        {
+            "count": 1,
+            "id": 0,
+            "texts": [
+                "APT38"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 3,
+            "id": 1,
+            "texts": [
+                "space",
+                "traces",
+                "memory"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 2,
+            "texts": [
+                "all"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 4,
+            "id": 3,
+            "texts": [
+                "terminal commands",
+                "SILENTTRINITY",
+                "ScriptBlock logging",
+                "unmanaged PowerShell code"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "HISTCONTROL environment"
+            ],
+            "label": "COMPONENT"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "prepende": 1,
+        "to": 2,
+        "leave": 1,
+        "of": 1,
+        "in": 1,
+        "bypass": 1,
+        "execute": 1,
+        "from": 1
+    }
+}

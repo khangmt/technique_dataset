@@ -1,0 +1,53 @@
+{
+    "id": "T1006",
+    "tech_id": "T1006",
+    "tech_name": "Direct Volume Access",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--18d36fff-42e8-4b33-b747-9b898a594eb2"
+    ],
+    "graph_nodes": [
+        {
+            "count": 4,
+            "id": 0,
+            "texts": [
+                "esentutl",
+                "Volume Shadow Copy service",
+                "ntds.dit",
+                "locked files"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 2,
+            "id": 1,
+            "texts": [
+                "ntds.dit",
+                "locked files"
+            ],
+            "label": "DATA"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 1,
+        "copy": 1
+    }
+}

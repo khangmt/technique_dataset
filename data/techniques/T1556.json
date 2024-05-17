@@ -1,0 +1,157 @@
+{
+    "id": "T1556",
+    "tech_id": "T1556",
+    "tech_name": "Modify Authentication Process",
+    "best_phrases": [],
+    "tactics": [
+        "TA0006",
+        "TA0005",
+        "TA0003"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "ENCRYPTION",
+        "NETWORK"
+    ],
+    "locations": [
+        "Windows",
+        "Linux",
+        "macOS",
+        "Network",
+        "Azure AD",
+        "Google Workspace",
+        "IaaS",
+        "Office 365",
+        "SaaS"
+    ],
+    "procedures": [
+        "relationship--5b5a618e-3a67-4223-a158-af4ce7e0c7d9",
+        "relationship--70f37bdd-dd94-46de-b41b-dd5e04997d3b",
+        "relationship--8544d4c3-e2e5-44c6-b57d-a169143f49eb",
+        "relationship--df6b68c8-17b5-45b9-8ad1-908c89074531"
+    ],
+    "graph_nodes": [
+        {
+            "count": 2,
+            "id": 0,
+            "texts": [
+                "Ebury",
+                "Kessel"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 1,
+            "id": 1,
+            "texts": [
+                "private keys"
+            ],
+            "label": "ENCRYPTION"
+        },
+        {
+            "count": 8,
+            "id": 2,
+            "texts": [
+                "ssh-add function",
+                "SILENTTRINITY",
+                "backdoor",
+                "KeePass",
+                "registry hook",
+                "<sode>ssh_login</code> and user-auth_pubkey functions",
+                "legitimate KeePass binaries",
+                "numerous applications"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 4,
+            "id": 3,
+            "texts": [
+                "config file",
+                "plaintext credentials",
+                "versions",
+                "passwords"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "TortoiseSVN"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "FIN13"
+            ],
+            "label": "OTHER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "5_2",
+            "source": 5,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "5_3",
+            "source": 5,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "intercept": 1,
+        "use": 3,
+        "create": 1,
+        "in": 3,
+        "trojanize": 1,
+        "steal": 1,
+        "replace": 1,
+        "with": 2,
+        "collect": 1,
+        "from": 1
+    }
+}

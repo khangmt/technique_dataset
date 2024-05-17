@@ -1,0 +1,91 @@
+{
+    "id": "T1218.003",
+    "tech_id": "T1218.003",
+    "tech_name": "CMSTP",
+    "best_phrases": [
+        "command cmstp.exe /s /ns c:\\users\\admini~w\\appdata\\local\\temp\\xknqbpzl.txt",
+        "cmstp.exe",
+        "CMSTP"
+    ],
+    "tactics": [
+        "TA0005"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "COMPONENT"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--3dad318f-b446-49c6-a62b-f0596b63a9c5",
+        "relationship--5dbd040e-0433-42ca-8e03-b3741be31cb2"
+    ],
+    "graph_nodes": [
+        {
+            "count": 2,
+            "id": 0,
+            "texts": [
+                "MuddyWater",
+                "Cobalt Group"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 5,
+            "id": 1,
+            "texts": [
+                "CMSTP.exe",
+                "INF",
+                "POWERSTATS payload",
+                "command cmstp.exe /s /ns C:\\Users\\ADMINI~W\\AppData\\Local\\Temp\\XKNqbpzl.txt",
+                "script"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 2,
+            "id": 2,
+            "texts": [
+                "CMSTP.exe",
+                "INF"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "AppLocker"
+            ],
+            "label": "COMPONENT"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 4
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 2,
+        "execute": 1,
+        "bypass": 1,
+        "launch": 1
+    }
+}

@@ -1,0 +1,95 @@
+{
+    "id": "T1543",
+    "tech_id": "T1543",
+    "tech_name": "Create or Modify System Process",
+    "best_phrases": [],
+    "tactics": [
+        "TA0003",
+        "TA0004"
+    ],
+    "features": [
+        "COMPONENT",
+        "FUNCTION",
+        "DATA",
+        "USER"
+    ],
+    "locations": [
+        "Windows",
+        "macOS",
+        "Linux"
+    ],
+    "procedures": [
+        "relationship--5a832b2f-7aa5-4a11-a06a-5cd22fb7f457"
+    ],
+    "graph_nodes": [
+        {
+            "count": 3,
+            "id": 0,
+            "texts": [
+                "Exaramel",
+                "Upstart",
+                "System V"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 4,
+            "id": 1,
+            "texts": [
+                "Linux",
+                "startup system",
+                "Upstart",
+                "System V"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 1,
+            "id": 2,
+            "texts": [
+                "hardcoded location"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "root"
+            ],
+            "label": "USER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "for": 1,
+        "have": 1,
+        "as": 1,
+        "be": 1
+    }
+}

@@ -1,0 +1,254 @@
+{
+    "id": "T1195.002",
+    "tech_id": "T1195.002",
+    "tech_name": "Compromise Software Supply Chain",
+    "best_phrases": [],
+    "tactics": [
+        "TA0001"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "USER",
+        "COMPONENT",
+        "NETWORK",
+        "ENCRYPTION"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--10d118e8-c421-486f-a56a-bbe1ed621c62",
+        "relationship--23fe4e74-9a8e-40e6-99c0-25eb00775a89",
+        "relationship--689b0bff-7eb4-4678-997b-64794c56add0",
+        "relationship--6edbc35f-fc02-43ba-84d2-17ff8100f094",
+        "relationship--84c6ce73-83b4-43f1-aeae-4b7e2f8b4d34",
+        "relationship--927434d1-b487-4e3c-909d-ac8725555080",
+        "relationship--9b650df6-f965-45fa-9e5a-409202a46da7",
+        "relationship--9c3ada08-1908-4458-a454-d91fda25ad04",
+        "relationship--b842af96-8422-4b23-bd17-35d123c5a9b5",
+        "relationship--dba2e83b-a79b-4d4e-8c32-70b7c8f2491f",
+        "relationship--e814521c-211d-4db9-b637-dd13ccdfed92"
+    ],
+    "graph_nodes": [
+        {
+            "count": 10,
+            "id": 0,
+            "texts": [
+                "APT41",
+                "Cobalt Group",
+                "GOLD SOUTHFIELD",
+                "GoldenSpy",
+                "Sandworm Team",
+                "CCBkdr",
+                "Dragonfly",
+                "Threat Group-3390",
+                "APT29",
+                "FIN7"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 9,
+            "id": 1,
+            "texts": [
+                "access",
+                "legitimate, signed files",
+                "end users",
+                "software builds",
+                "M.E.Doc",
+                "legitimate, signed version",
+                "access",
+                "initial network access",
+                "software supply chain"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 2,
+            "id": 2,
+            "texts": [
+                "production environments",
+                "environments"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 20,
+            "id": 3,
+            "texts": [
+                "code",
+                "legitimate web browser updates",
+                "backdoor",
+                "strategic web compromise",
+                "ransomware",
+                "software installers",
+                "legitimate tax preparation software",
+                "SUNSPOT malware",
+                "SUNBURST",
+                "SolarWinds Orion IT management product",
+                "NotPetya",
+                "legitimate Ukrainian accounting software",
+                "legitimate software update",
+                "CCleaner software",
+                "CCleaner",
+                "installers",
+                "control system software",
+                "Able Desktop installer",
+                "update",
+                "SolarWinds Orion software"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 2,
+            "id": 4,
+            "texts": [
+                "site",
+                "distribution site"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "Italian WinRAR"
+            ],
+            "label": "ENCRYPTION"
+        },
+        {
+            "count": 2,
+            "id": 6,
+            "texts": [
+                "one",
+                "legitimate vendor app stores"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 3,
+            "id": 7,
+            "texts": [
+                "victim",
+                "victims",
+                "victim"
+            ],
+            "label": "USER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 6
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 12
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "4_5",
+            "source": 4,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 3
+        },
+        {
+            "id": "3_6",
+            "source": 3,
+            "dest": 6,
+            "count": 2
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "4_3",
+            "source": 4,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "0_6",
+            "source": 0,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "2_7",
+            "source": 2,
+            "dest": 7,
+            "count": 1
+        },
+        {
+            "id": "1_7",
+            "source": 1,
+            "dest": 7,
+            "count": 2
+        }
+    ],
+    "verbs": {
+        "gain": 3,
+        "to": 5,
+        "inject": 1,
+        "into": 3,
+        "compromise": 5,
+        "deliver": 1,
+        "use": 1,
+        "distribute": 2,
+        "backdoore": 1,
+        "of": 7,
+        "by": 3,
+        "host": 1,
+        "with": 2,
+        "insert": 1,
+        "replace": 1,
+        "on": 3,
+        "place": 1,
+        "for": 1
+    }
+}

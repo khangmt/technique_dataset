@@ -1,0 +1,172 @@
+{
+    "id": "T1055.004",
+    "tech_id": "T1055.004",
+    "tech_name": "Asynchronous Procedure Call",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005",
+        "TA0004"
+    ],
+    "features": [
+        "FUNCTION",
+        "NETWORK",
+        "COMPONENT"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--02e3008d-1b2b-4824-b715-d6d8335cc4b2",
+        "relationship--2dfd662a-231a-4b4c-b7e6-b61058fc4494",
+        "relationship--37da9e7e-f366-4211-84bd-34fd9c43d681",
+        "relationship--5bc09eae-6b6c-4dd3-9e27-a2f26f0a6468",
+        "relationship--619d3ad7-82f3-40c0-bce6-92fe36181425",
+        "relationship--63a09269-0546-4613-b746-0e1f8dac7d5b",
+        "relationship--a6fe230f-9e76-46a5-a235-2990009d8c4a",
+        "relationship--dcdf4518-1248-4549-b536-193ab1848d31",
+        "relationship--eda4c39d-9615-4c5f-8086-64150137df7f",
+        "relationship--f5e7233b-6419-4c09-b95b-c43f3004f246",
+        "relationship--f80615a0-f092-44f5-91be-8b287428d3e3"
+    ],
+    "graph_nodes": [
+        {
+            "count": 12,
+            "id": 0,
+            "texts": [
+                "TURNEDUP",
+                "Pillowmint",
+                "InvisiMole",
+                "Bumblebee",
+                "Saint Bot",
+                "attacker",
+                "Carberp",
+                "IcedID",
+                "BADHATCH",
+                "FIN8",
+                "Attor",
+                "Sardonic"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 31,
+            "id": 1,
+            "texts": [
+                "code",
+                "APC queue",
+                "created Rundll32 process",
+                "\"Early Bird injection",
+                "NtQueueApcThread syscall",
+                "code",
+                "svchost.exe",
+                "APC queue",
+                "code",
+                "trusted process",
+                "asynchronous procedure call (APC) injection",
+                "commands",
+                "payload",
+                "newly-created EhStorAuthn.exe process",
+                "ZwWriteVirtualMemory",
+                "ZwAlertResumeThread",
+                "NtQueueApcThread",
+                "APC routine",
+                "explorer.exe",
+                "ZwQueueApcThread",
+                "ZwQueueApcThread",
+                "remote processes",
+                "svchost.exe -k netsvcs process",
+                "code",
+                "svchost.exe process",
+                "injection",
+                "code",
+                "NtQueueApcThread API",
+                "APC queue",
+                "QueueUserAPC API",
+                "shellcode"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 4,
+            "id": 2,
+            "texts": [
+                "part",
+                "itself",
+                "itself",
+                "asynchronous procedure call (APC) queue"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "C2"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "compromised machine"
+            ],
+            "label": "COMPONENT"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 25
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 4
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "inject": 6,
+        "into": 13,
+        "as": 2,
+        "of": 2,
+        "use": 8,
+        "by": 2,
+        "execute": 3,
+        "receive from": 1,
+        "write": 1,
+        "queue": 1,
+        "to": 2,
+        "call": 1,
+        "perform": 1,
+        "attach": 1,
+        "on": 1
+    }
+}

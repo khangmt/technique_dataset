@@ -1,0 +1,103 @@
+{
+    "id": "T1059.009",
+    "tech_id": "T1059.009",
+    "tech_name": "Cloud API",
+    "best_phrases": [],
+    "tactics": [
+        "TA0002"
+    ],
+    "features": [
+        "FUNCTION",
+        "COMPONENT",
+        "DATA"
+    ],
+    "locations": [
+        "IaaS",
+        "Azure AD",
+        "Office 365",
+        "SaaS",
+        "Google Workspace"
+    ],
+    "procedures": [
+        "relationship--cea62da0-1d9f-40d8-adfb-ee40f6b1a345",
+        "relationship--da4059ab-c858-4df1-94e0-25db2d6ea136",
+        "relationship--e6e736c1-5522-48fd-8e2c-06fef46199a8"
+    ],
+    "graph_nodes": [
+        {
+            "count": 6,
+            "id": 0,
+            "texts": [
+                "Pacu",
+                "AWS CLI",
+                "operations",
+                "AWS CLI",
+                "Microsoft Graph API",
+                "actions"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 2,
+            "id": 1,
+            "texts": [
+                "TeamTNT",
+                "APT29"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 2,
+            "id": 2,
+            "texts": [
+                "cloud environments",
+                "Azure and M365 environments"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "compromised credentials"
+            ],
+            "label": "DATA"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 3
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 3,
+        "for": 2,
+        "enumerate": 1,
+        "with": 1,
+        "perform": 1,
+        "across": 1,
+        "utilize": 1,
+        "access": 1
+    }
+}

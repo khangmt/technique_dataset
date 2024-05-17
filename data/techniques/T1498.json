@@ -1,0 +1,87 @@
+{
+    "id": "T1498",
+    "tech_id": "T1498",
+    "tech_name": "Network Denial of Service",
+    "best_phrases": [],
+    "tactics": [
+        "TA0040"
+    ],
+    "features": [
+        "FUNCTION"
+    ],
+    "locations": [
+        "Windows",
+        "Azure AD",
+        "Office 365",
+        "SaaS",
+        "IaaS",
+        "Linux",
+        "macOS",
+        "Google Workspace",
+        "Containers"
+    ],
+    "procedures": [
+        "relationship--5e9256c1-5ad5-4fb2-9a75-0267a2daae89",
+        "relationship--bb19637b-a68f-48fd-8b14-41607f32888d"
+    ],
+    "graph_nodes": [
+        {
+            "count": 2,
+            "id": 0,
+            "texts": [
+                "APT28",
+                "Lucifer"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 2,
+            "id": 1,
+            "texts": [
+                "2016",
+                "World Anti-Doping Agency"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 6,
+            "id": 2,
+            "texts": [
+                "distributed denial of service (DDoS) attack",
+                "distributed denial",
+                "service",
+                "TCP, UDP, and HTTP denial of service (DoS) attacks",
+                "denial",
+                "service"
+            ],
+            "label": "FUNCTION"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "in": 1,
+        "conduct": 1,
+        "against": 2,
+        "of": 2,
+        "execute": 1
+    }
+}

@@ -1,0 +1,256 @@
+{
+    "id": "T1134.002",
+    "tech_id": "T1134.002",
+    "tech_name": "Create Process with Token",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005",
+        "TA0004"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "USER",
+        "COMPONENT"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--00d3d6a8-c711-4bb5-bf0a-e17c0ecac8c8",
+        "relationship--0ebd9fb8-a6d0-4b91-bada-c5e5c79b0808",
+        "relationship--125d8dab-512b-445a-9f28-b2113c714b77",
+        "relationship--1a40426a-355c-4d7e-b51c-e95a102b31e2",
+        "relationship--331528b5-fe7e-4ca4-ad3a-c18b20298f28",
+        "relationship--48e9217d-e93d-440f-9fa1-93116e5792bd",
+        "relationship--6b965d3a-130d-4502-963b-111258897615",
+        "relationship--aa3e7625-07e1-474f-967a-15e26e1a193c",
+        "relationship--b0ecee81-0bbe-4ab9-9618-b245656aabc4",
+        "relationship--bf5b088a-6d58-41ce-b36d-ff911fe76fb8",
+        "relationship--c151ee77-66ca-4b86-bc13-84759cf71321",
+        "relationship--e5539e56-e35f-4097-9862-ba26cac35346"
+    ],
+    "graph_nodes": [
+        {
+            "count": 7,
+            "id": 0,
+            "texts": [
+                "Azorult",
+                "PipeMon",
+                "Aria-body",
+                "REvil",
+                "ZxShell",
+                "KONNI",
+                "Bankshot"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 27,
+            "id": 1,
+            "texts": [
+                "WTSQueryUserToken",
+                "CreateProcessAsUser",
+                "process",
+                "Turla RPC backdoors",
+                "commands",
+                "token impersonation",
+                "Lazarus Group keylogger KiloAlfa",
+                "interactive sessions",
+                "API call",
+                "CreateProcessAsUserA",
+                "PoshC2",
+                "Invoke-RunAs",
+                "process",
+                "runas",
+                "runas",
+                "RunAs",
+                "command",
+                "process",
+                "%temp%\\AdvancedRun.exe\" /EXEFilename \"C:\\Windows\\System32\\sc.exe\" /WindowState 0 /CommandLine \"stop WinDefend\" /StartDirectory \"\" /RunAs 8 /Run",
+                "AdvancedRun.exe tool",
+                "commands",
+                "high integrity process",
+                "cmd.exe",
+                "WTSQueryUserToken",
+                "process",
+                "Empire",
+                "Invoke-RunAs"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 12,
+            "id": 2,
+            "texts": [
+                "local system privileges",
+                "process tokens",
+                "administrative privileges",
+                "user tokens",
+                "context",
+                "tokens",
+                "administrative rights",
+                "user or process context",
+                "context",
+                "token",
+                "user token",
+                "tokens"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 6,
+            "id": 3,
+            "texts": [
+                "itself",
+                "itself",
+                "which",
+                "WhisperGate third stage",
+                "Windows TrustedInstaller group",
+                "logged-on"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 3,
+            "id": 4,
+            "texts": [
+                "user",
+                "impersonated user",
+                "user"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 2,
+            "id": 5,
+            "texts": [
+                "instance",
+                "instance"
+            ],
+            "label": "COMPONENT"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 9
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 7
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 3
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 5
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 2
+        },
+        {
+            "id": "5_3",
+            "source": 5,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "5_2",
+            "source": 5,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "5_1",
+            "source": 5,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "5_4",
+            "source": 5,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "call": 1,
+        "start": 1,
+        "with": 4,
+        "steal": 1,
+        "execute": 4,
+        "gain": 1,
+        "use": 8,
+        "obtain": 1,
+        "from": 2,
+        "under": 2,
+        "of": 5,
+        "make": 2,
+        "launch": 1,
+        "have": 1,
+        "create": 2,
+        "as": 2,
+        "in": 1,
+        "by": 1,
+        "duplicate": 1,
+        "spawn": 1,
+        "grab": 1,
+        "impersonate": 2
+    }
+}

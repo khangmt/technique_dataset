@@ -1,0 +1,124 @@
+{
+    "id": "T1556.002",
+    "tech_id": "T1556.002",
+    "tech_name": "Password Filter DLL",
+    "best_phrases": [],
+    "tactics": [
+        "TA0006",
+        "TA0005",
+        "TA0003"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "USER",
+        "NETWORK"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--46f301cd-8ae3-431a-931b-df4bb4fee271",
+        "relationship--8cbb1567-70c5-4daf-b163-cbc6cc40a794"
+    ],
+    "graph_nodes": [
+        {
+            "count": 2,
+            "id": 0,
+            "texts": [
+                "Remsec",
+                "Strider"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 3,
+            "id": 1,
+            "texts": [
+                "plain-text credentials",
+                "credentials",
+                "password"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 5,
+            "id": 2,
+            "texts": [
+                "password filter",
+                "domain controllers",
+                "persistence module",
+                "domain controllers",
+                "Windows LSA (Local System Authority) password filter"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 3,
+            "id": 3,
+            "texts": [
+                "local user",
+                "domain",
+                "administrator"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 3,
+            "id": 4,
+            "texts": [
+                "local user",
+                "domain",
+                "administrator"
+            ],
+            "label": "NETWORK"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 4
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "harvest": 1,
+        "as": 4,
+        "register on": 1,
+        "register": 1,
+        "on": 2,
+        "acquire": 1,
+        "change": 1
+    }
+}

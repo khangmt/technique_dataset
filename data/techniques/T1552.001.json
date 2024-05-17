@@ -1,0 +1,430 @@
+{
+    "id": "T1552.001",
+    "tech_id": "T1552.001",
+    "tech_name": "Credentials In Files",
+    "best_phrases": [],
+    "tactics": [
+        "TA0006"
+    ],
+    "features": [
+        "DATA",
+        "FUNCTION",
+        "NETWORK",
+        "COMPONENT",
+        "ENCRYPTION",
+        "USER"
+    ],
+    "locations": [
+        "Windows",
+        "IaaS",
+        "Linux",
+        "macOS",
+        "Containers"
+    ],
+    "procedures": [
+        "relationship--044ad6d3-9389-4764-9b96-ad53dc98840d",
+        "relationship--09c0536a-863f-4561-ad59-a5fa1c8daaa1",
+        "relationship--09c80e35-2839-4b5b-aad8-8f81db8da551",
+        "relationship--0e46421a-6804-488e-adad-42cac34065be",
+        "relationship--0e5b4489-d480-4f42-aadb-0eeb45ad6bc0",
+        "relationship--16952ba0-4fae-450b-990c-2b771efbd60f",
+        "relationship--19821013-5844-46b3-82e9-189b4df07b9d",
+        "relationship--229150e3-5c4b-475e-8981-27fb472ad119",
+        "relationship--3237c264-c70c-4fe4-9f53-a8709c3dd006",
+        "relationship--3e418cf0-fbe4-4de1-84bf-e137c5c0a72a",
+        "relationship--4bfd7ff0-f4a9-48f4-b5fb-1483dc74e760",
+        "relationship--4dbf47c1-c065-4e4c-8894-376d636555a2",
+        "relationship--50a1a87a-31cf-4a98-96f6-276f35798185",
+        "relationship--580103be-ffce-4677-b24a-7092c1221ed0",
+        "relationship--5b2f0fb3-5877-4fa2-bed1-1962423caccd",
+        "relationship--5cd4af07-d10e-4034-84fc-b8256f08b5cd",
+        "relationship--68e9977d-a765-45ad-91e9-42db7af8f990",
+        "relationship--80dcd852-39c2-4ef9-a401-e54982010a65",
+        "relationship--86847d37-f7da-4c30-ab48-2da87e6c1cff",
+        "relationship--a628def4-31a4-475e-b4b8-615534d8d585",
+        "relationship--a6e4853a-78a6-4c88-a7c5-58793d3e4dcd",
+        "relationship--a89c60cc-5851-45bf-bcd6-f73f460351a5",
+        "relationship--aec49e52-c54e-45be-a476-70aa0dc42cfb",
+        "relationship--c1108137-b707-4358-b4b2-b2f139418f7e",
+        "relationship--d705df92-50a0-4810-a893-979f73c6cdc8",
+        "relationship--e830611d-a7c5-446c-a5a7-ec1062bb3f53",
+        "relationship--ee05131d-83bd-4eb5-b6c1-0f6925045b95"
+    ],
+    "graph_nodes": [
+        {
+            "count": 21,
+            "id": 0,
+            "texts": [
+                "XTunnel",
+                "Emotet",
+                "Smoke Loader",
+                "APT33",
+                "Agent Tesla",
+                "Azorult",
+                "Pysa",
+                "Fox Kitten",
+                "Hildegard",
+                "TeamTNT",
+                "TA505",
+                "TrickBot",
+                "APT3",
+                "Leafminer",
+                "pngdowner",
+                "adversary",
+                "Kimsuky",
+                "BlackEnergy",
+                "jRAT",
+                "OilRig",
+                "MuddyWater"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 47,
+            "id": 1,
+            "texts": [
+                "stored passwords",
+                "harvesting credentials",
+                "passwords",
+                "passwords",
+                "files",
+                "logins.json",
+                "credentials",
+                "credentials",
+                "credentials",
+                "configuration or support files",
+                "credentials",
+                "files",
+                "passwords",
+                "credentials",
+                "files",
+                "credentials",
+                "files",
+                "files",
+                "valid credentials",
+                "unsecured AWS credentials",
+                "Docker credentials",
+                "Docker API credentials",
+                "Kubernetes service tokens",
+                "SSH keys",
+                "credentials",
+                "passwords",
+                "VNC credentials",
+                "files",
+                "unsecured credentials",
+                "local files",
+                "administrative credentials",
+                "credentials",
+                "files",
+                "those",
+                "login and password information",
+                "passwords",
+                "credentials",
+                "proxy details",
+                "proxy credentials",
+                "outbound HTTP access",
+                "credentials",
+                "credentials",
+                "files",
+                "passwords",
+                "credentials",
+                "accounts",
+                "passwords"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 2,
+            "texts": [
+                "victims"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 43,
+            "id": 3,
+            "texts": [
+                "Pupy",
+                "Lazagne",
+                "module",
+                "PoshC2",
+                "modules",
+                "tools",
+                "LaZagne",
+                "LaZagne",
+                "Empire",
+                "modules",
+                "Telegram",
+                "Skype",
+                "Steam",
+                "software",
+                "malware",
+                "OpenSSH",
+                "WinSCP",
+                "Filezilla",
+                "Outlook",
+                "OpenVPN",
+                "applications",
+                "AADInternals",
+                "Azure AD services",
+                "Azure AD Connect",
+                "tool",
+                "tools",
+                "LaZagne",
+                "QuasarRAT",
+                "subsequent requests",
+                "tools",
+                "plug-in",
+                "software programs",
+                "Bat! email client",
+                "Outlook",
+                "Windows Credential Store",
+                "AOL",
+                "Instant Messenger",
+                "chat applications",
+                "MSN Messenger",
+                "Google Talk",
+                "LaZagne",
+                "credential dumping tools",
+                "tool"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 20,
+            "id": 4,
+            "texts": [
+                "system",
+                "Outlook",
+                "FTP clients",
+                "OpenSSH",
+                "WinSCP",
+                "Filezilla",
+                "Outlook",
+                "OpenVPN",
+                "applications",
+                "local machine",
+                "file system",
+                "Chrome",
+                "Firefox",
+                "Windows Protected Storage",
+                "host",
+                "software programs",
+                "Bat! email client",
+                "Outlook",
+                "Windows Credential Store",
+                "compromised system"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 29,
+            "id": 5,
+            "texts": [
+                "chats",
+                "mail",
+                "WiFi",
+                "databases",
+                "Telegram",
+                "Skype",
+                "Steam",
+                "software",
+                "password database",
+                "Outlook",
+                "FTP clients",
+                "OpenSSH",
+                "WinSCP",
+                "Filezilla",
+                "Outlook",
+                "OpenVPN",
+                "applications",
+                "FTP clients",
+                "saved mail",
+                "software programs",
+                "Bat! email client",
+                "Outlook",
+                "Windows Credential Store",
+                "AOL",
+                "Instant Messenger",
+                "chat applications",
+                "MSN Messenger",
+                "Google Talk",
+                "victim email"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 5,
+            "id": 6,
+            "texts": [
+                "unsecured AWS credentials",
+                "Docker credentials",
+                "Docker API credentials",
+                "Kubernetes service tokens",
+                "SSH keys"
+            ],
+            "label": "ENCRYPTION"
+        },
+        {
+            "count": 6,
+            "id": 7,
+            "texts": [
+                "Azure AD services",
+                "Azure AD Connect",
+                "FIN13",
+                "files",
+                "those",
+                "that"
+            ],
+            "label": "OTHER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 20
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 13
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 12
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 9
+        },
+        {
+            "id": "3_5",
+            "source": 3,
+            "dest": 5,
+            "count": 2
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 9
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 5
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 4
+        },
+        {
+            "id": "0_6",
+            "source": 0,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "1_7",
+            "source": 1,
+            "dest": 7,
+            "count": 2
+        },
+        {
+            "id": "7_1",
+            "source": 7,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "7_4",
+            "source": 7,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "7_5",
+            "source": 7,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "5_1",
+            "source": 5,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "access": 2,
+        "on": 4,
+        "use": 10,
+        "for": 7,
+        "retrieve": 2,
+        "store on": 1,
+        "contain": 2,
+        "search": 2,
+        "parse": 1,
+        "gather": 4,
+        "extract": 3,
+        "from": 19,
+        "obtain": 5,
+        "steal": 4,
+        "in": 3,
+        "belong to": 1,
+        "encrypt": 1,
+        "gain": 1,
+        "store in": 2,
+        "browse": 1,
+        "have": 1,
+        "locate": 1,
+        "enable": 1,
+        "store": 1,
+        "capture": 1,
+        "to": 1,
+        "log into": 1,
+        "run": 1,
+        "save in": 1
+    }
+}

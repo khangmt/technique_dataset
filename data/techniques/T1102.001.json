@@ -1,0 +1,342 @@
+{
+    "id": "T1102.001",
+    "tech_id": "T1102.001",
+    "tech_name": "Dead Drop Resolver",
+    "best_phrases": [],
+    "tactics": [
+        "TA0011"
+    ],
+    "features": [
+        "NETWORK",
+        "FUNCTION",
+        "DATA",
+        "COMPONENT"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--00914655-1a22-40ed-ae4d-6adb1a6acd35",
+        "relationship--0c870326-6b8a-4279-bbd3-2c1ae23ba54a",
+        "relationship--13111e18-5f34-4925-ba0d-655a1fedeb52",
+        "relationship--1f972385-7f1c-4cbd-a071-951973e6d229",
+        "relationship--2ad63ab0-fb5b-4bce-8bbb-bf765d324fd6",
+        "relationship--34fb0f39-9aef-4b49-8a80-2ca457af8565",
+        "relationship--3d97f57c-2a7c-4626-8b05-9d345047d3ad",
+        "relationship--50bd8457-3c13-483d-a647-cee4f554d490",
+        "relationship--674031ea-4fff-4669-b44b-d289fa1cc36e",
+        "relationship--7d76cecb-4eec-46ea-8ca7-9844b1b0b3e6",
+        "relationship--8b0e9de1-a7b0-479e-aee7-76f2549508c6",
+        "relationship--954c6284-d1eb-48f1-96a4-1ed81b063d82",
+        "relationship--964a9222-6e88-4850-89cc-6fc0f10ee4c9",
+        "relationship--9fd03410-47ca-4ddc-9202-8f4a7558b263",
+        "relationship--a58ad2d1-7200-4ba8-9c24-fc640306ea2f",
+        "relationship--ab66ef8a-f496-48d2-a358-0e4f7b00d5c0",
+        "relationship--b3a9c32f-c6d0-46d4-8936-dd4fec61d305",
+        "relationship--bcedecdf-e98d-4cf7-84a4-d4769a10858d",
+        "relationship--fc56f0e8-e059-403a-88e4-bd0b61bbc4b7"
+    ],
+    "graph_nodes": [
+        {
+            "count": 18,
+            "id": 0,
+            "texts": [
+                "Astaroth",
+                "BADNEWS",
+                "Grandoreiro",
+                "Metamorfo",
+                "PlugX",
+                "CharmPower",
+                "Rocke",
+                "APT41",
+                "campaign",
+                "BLACKCOFFEE",
+                "RTM",
+                "GitHub",
+                "APT41",
+                "PolyglotDuke",
+                "RTM",
+                "Patchwork",
+                "Javali",
+                "Xbash"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 18,
+            "id": 1,
+            "texts": [
+                "C2 information",
+                "C2 information",
+                "encoded data",
+                "C2 information",
+                "C2 domain information",
+                "version",
+                "encoded tag",
+                "RSS feed",
+                "encrypted C2 names",
+                "transactions",
+                "RSS feed",
+                "encrypted C2 names",
+                "base64-encoded and encrypted C2 locations",
+                "comments",
+                "C2 information",
+                "Google Documents",
+                "YouTube",
+                "C2 domain list"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 33,
+            "id": 2,
+            "texts": [
+                "Facebook",
+                "cloud hosting services",
+                "YouTube",
+                "websites",
+                "AWS",
+                "CloudFlare",
+                "C2 addresses",
+                "posts",
+                "tech community forums",
+                "Twitter",
+                "C2",
+                "YouTube",
+                "C2 domains",
+                "C2 addresses",
+                "separate tech community forums",
+                "community forum posts",
+                "IP address",
+                "C2",
+                "Pony C2 IP addresses",
+                "Microsoft TechNet",
+                "Pastebin",
+                "GitHub",
+                "legitimate websites",
+                "C2",
+                "websites",
+                "Twitter",
+                "Reddit",
+                "Imgur",
+                "C2 URL",
+                "legitimate websites",
+                "Google Documents",
+                "YouTube",
+                "webpage"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 18,
+            "id": 3,
+            "texts": [
+                "Facebook",
+                "cloud hosting services",
+                "YouTube",
+                "websites",
+                "AWS",
+                "CloudFlare",
+                "Google Docs",
+                "Pastebin",
+                "S3 buckets",
+                "Pastebin",
+                "Pastebin",
+                "GitHub",
+                "APT41",
+                "Microsoft TechNet",
+                "Pastebin",
+                "GitHub",
+                "legitimate websites",
+                "Pastebin"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 23,
+            "id": 4,
+            "texts": [
+                "Facebook",
+                "cloud hosting services",
+                "YouTube",
+                "websites",
+                "AWS",
+                "CloudFlare",
+                "dead drop resolver",
+                "KEYPLUG Windows variant",
+                "MiniDuke components",
+                "backup",
+                "beaconing malware",
+                "updated malware",
+                "dead drop resolvers",
+                "KEYPLUG Windows-version backdoor",
+                "dead drop resolvers",
+                "TechNet Web portal",
+                "dead drop resolver",
+                "Bitcoin and Namecoin blockchain",
+                "dead drop resolvers",
+                "DDR",
+                "MSGET downloader",
+                "dead drop resolver",
+                "payloads"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 4,
+            "id": 5,
+            "texts": [
+                "address",
+                "Microsoft",
+                "Livejournal",
+                "BUTLER"
+            ],
+            "label": "OTHER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 15
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 6
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 3
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 4
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 6
+        },
+        {
+            "id": "4_2",
+            "source": 4,
+            "dest": 2,
+            "count": 3
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "4_5",
+            "source": 4,
+            "dest": 5,
+            "count": 3
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 4
+        },
+        {
+            "id": "5_2",
+            "source": 5,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 6
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 11
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 3
+        },
+        {
+            "id": "2_0",
+            "source": 2,
+            "dest": 0,
+            "count": 2
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "3_0",
+            "source": 3,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "store": 2,
+        "on": 8,
+        "by": 4,
+        "collect": 1,
+        "retrieve": 2,
+        "from": 8,
+        "in": 3,
+        "use": 11,
+        "obtain": 4,
+        "as": 3,
+        "of": 5,
+        "hide": 3,
+        "check": 1,
+        "redirect": 1,
+        "host": 1,
+        "for": 3,
+        "update": 4,
+        "with": 3,
+        "during": 1,
+        "contain": 1,
+        "within": 2,
+        "get": 1,
+        "access": 1,
+        "read": 1,
+        "host on": 1
+    }
+}

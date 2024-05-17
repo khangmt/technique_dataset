@@ -1,0 +1,72 @@
+{
+    "id": "T1547.014",
+    "tech_id": "T1547.014",
+    "tech_name": "Active Setup",
+    "best_phrases": [],
+    "tactics": [
+        "TA0003",
+        "TA0004"
+    ],
+    "features": [
+        "FUNCTION",
+        "REGISTRY"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--64b25323-3b00-404f-afaa-cf1808ac5743"
+    ],
+    "graph_nodes": [
+        {
+            "count": 1,
+            "id": 0,
+            "texts": [
+                "PoisonIvy"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 1,
+            "id": 1,
+            "texts": [
+                "Registry key"
+            ],
+            "label": "REGISTRY"
+        },
+        {
+            "count": 2,
+            "id": 2,
+            "texts": [
+                "Active Setup",
+                "executable"
+            ],
+            "label": "FUNCTION"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "create": 1,
+        "in": 2,
+        "point": 1
+    }
+}

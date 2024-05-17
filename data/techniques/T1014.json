@@ -1,0 +1,363 @@
+{
+    "id": "T1014",
+    "tech_id": "T1014",
+    "tech_name": "Rootkit",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "COMPONENT",
+        "DIRECTORY",
+        "NETWORK"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--05a3d203-4b38-4f38-a015-dcfe3bdf9c07",
+        "relationship--05e05236-1635-48d7-8ee3-33319c01c815",
+        "relationship--1be07717-ad08-4364-9a58-b44a95a389a5",
+        "relationship--2107aab0-0191-46d1-abec-8d98ac916c21",
+        "relationship--21b929b8-8fec-47a5-8f98-554a043f9de5",
+        "relationship--2962304a-f96e-4323-958f-f685eae97ac6",
+        "relationship--3da780a6-2bd0-47ce-b434-fe513abb7ee5",
+        "relationship--4b14d96b-1664-4072-a49a-3a990a13ca83",
+        "relationship--69b9edd8-c1a8-4cbd-bd94-9af0fdefe013",
+        "relationship--6b8a8055-5b1c-4e06-a6ef-4a42e23e2e11",
+        "relationship--759185fe-d576-43f5-afac-acd653e5fcf4",
+        "relationship--7653431a-18ac-43da-8308-63c76ecf0c22",
+        "relationship--7c85cd06-5b92-4b5d-acf5-fdd12a73b289",
+        "relationship--89433640-bf49-48b3-9f26-76423cd36f77",
+        "relationship--8a8e30e6-c226-4739-87de-bd98c104d211",
+        "relationship--8f5fdbbc-73b1-48a6-9916-67c0baa0f66e",
+        "relationship--a5022441-bc5e-4b19-a773-b96b2719d1bb",
+        "relationship--aacb43b8-2d3a-40bc-9f7b-1acb5b2474f2",
+        "relationship--c85d86c0-8adc-42fc-b7c9-8ca33d9ac4b6",
+        "relationship--da6aa745-9eb5-44d9-80f8-e9f542d106d2",
+        "relationship--e9f52758-d5aa-4a16-b614-ea756a0cf270",
+        "relationship--eb74fa31-121d-4e43-9794-048a901f509a",
+        "relationship--eeb368b7-52b9-4320-a34f-8f3235beb22f",
+        "relationship--f16c71ae-99b1-4aff-b276-13eb7c3ad889",
+        "relationship--f8340d49-ee7a-4ade-988f-3660904a18bb"
+    ],
+    "graph_nodes": [
+        {
+            "count": 25,
+            "id": 0,
+            "texts": [
+                "Carberp",
+                "Ebury",
+                "Winnti Group",
+                "APT41",
+                "Rocke",
+                "Ramsay",
+                "Drovorub",
+                "HIDEDRV",
+                "TeamTNT",
+                "Skidmap",
+                "Umbreon",
+                "Stuxnet",
+                "Hacking Team UEFI Rootkit",
+                "Hacking Team",
+                "HiddenWasp",
+                "Hildegard",
+                "APT28",
+                "Hikit",
+                "Axiom",
+                "Zeroaccess",
+                "LoJax",
+                "Uroburos",
+                "WarzoneRAT",
+                "Caterpillar WebShell",
+                "PoisonIvy"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 60,
+            "id": 1,
+            "texts": [
+                "user mode rootkit techniques",
+                "rootkit",
+                "typical server functionality",
+                "rootkits",
+                "libc functions",
+                "mining software",
+                "installed dropper",
+                "rootkit",
+                "kernel module rootkit",
+                "files",
+                "executables",
+                "processes",
+                "network artifacts",
+                "HTRAN",
+                "rootkit",
+                "rootkit",
+                "custom bots",
+                "open-source Diamorphine rootkit",
+                "rootkits",
+                "cryptocurrency mining activities",
+                "kernel-mode rootkit",
+                "system calls",
+                "libc function calls",
+                "presence",
+                "tool",
+                "malware",
+                "Windows rootkit",
+                "relevant files",
+                "binaries",
+                "UEFI BIOS rootkit",
+                "remote access software",
+                "rootkit",
+                "functions",
+                "readdir64",
+                "readdir",
+                "LoJax",
+                "UEFI (Unified Extensible Firmware Interface) rootkit",
+                "Rootkit",
+                "Winnti",
+                "libxselinux.so",
+                "modified copy",
+                "network activity",
+                "operations",
+                "open-source userland rootkit Azazel",
+                "malware",
+                "kernel-mode rootkit",
+                "UEFI BIOS rootkit",
+                "remote access software",
+                "kernel module",
+                "host components",
+                "requests",
+                "concealed components",
+                "user mode",
+                "rootkit",
+                "files",
+                "processes",
+                "startup",
+                "module",
+                "rootkit",
+                "rootkit"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 14,
+            "id": 2,
+            "texts": [
+                "Linux systems",
+                "defenses",
+                "host OS",
+                "machine",
+                "infected machine",
+                "defenders",
+                "targeted systems",
+                "system",
+                "Linux",
+                "targeted systems",
+                "OS",
+                "system",
+                "system",
+                "disk"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 5,
+            "id": 3,
+            "texts": [
+                "/etc/ld.so.preload",
+                "/etc/ld.so.preload",
+                "files",
+                "processes",
+                "startup"
+            ],
+            "label": "DIRECTORY"
+        },
+        {
+            "count": 21,
+            "id": 4,
+            "texts": [
+                "process lists",
+                "files",
+                "executables",
+                "processes",
+                "network artifacts",
+                "user space view",
+                "operating system artifacts",
+                "files",
+                "network and CPU-related statistics",
+                "CPU load",
+                "artifacts",
+                "user account",
+                "access",
+                "relevant files",
+                "binaries",
+                "libxselinux.so",
+                "modified copy",
+                "files",
+                "processes",
+                "startup",
+                "file"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "network connections"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 6,
+            "id": 6,
+            "texts": [
+                "low",
+                "strace",
+                "company",
+                ")",
+                "concealed components",
+                "user mode"
+            ],
+            "label": "OTHER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 32
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 8
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 8
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 4
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "5_2",
+            "source": 5,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "4_2",
+            "source": 4,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "4_6",
+            "source": 4,
+            "dest": 6,
+            "count": 2
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "6_1",
+            "source": 6,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_6",
+            "source": 0,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "2_0",
+            "source": 2,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "1_6",
+            "source": 1,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 11,
+        "modify": 3,
+        "deploy": 1,
+        "on": 7,
+        "hook": 3,
+        "hide": 9,
+        "in": 1,
+        "include": 2,
+        "evade": 1,
+        "from": 5,
+        "install": 1,
+        "be": 6,
+        "fake": 1,
+        "of": 4,
+        "appear": 1,
+        "reveal": 1,
+        "undermine": 2,
+        "provide": 1,
+        "identify": 1,
+        "mask": 1,
+        "persist": 2,
+        "develop": 2,
+        "implement": 1,
+        "overwrite": 2,
+        "for": 1,
+        "prevent": 1,
+        "mediate": 1,
+        "list": 1,
+        "between": 1,
+        "have": 1,
+        "start": 1,
+        "drop to": 1
+    }
+}

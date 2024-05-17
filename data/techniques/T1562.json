@@ -1,0 +1,107 @@
+{
+    "id": "T1562",
+    "tech_id": "T1562",
+    "tech_name": "Impair Defenses",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005"
+    ],
+    "features": [
+        "DATA",
+        "COMPONENT",
+        "FUNCTION",
+        "REGISTRY"
+    ],
+    "locations": [
+        "Windows",
+        "Office 365",
+        "IaaS",
+        "Linux",
+        "macOS",
+        "Containers",
+        "Network"
+    ],
+    "procedures": [
+        "relationship--b766ad99-7562-44ed-a5fa-26551e6d62db",
+        "relationship--e65b247d-3d19-43d9-b26c-f1a068040d68"
+    ],
+    "graph_nodes": [
+        {
+            "count": 2,
+            "id": 0,
+            "texts": [
+                "Stuxnet",
+                "Magic Hound"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 2,
+            "id": 1,
+            "texts": [
+                "integrity level",
+                "objects"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 2,
+            "texts": [
+                "write actions"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 2,
+            "id": 3,
+            "texts": [
+                "LSA protection",
+                "compromised hosts"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "\"reg\" add HKLM\\SYSTEM\\CurrentControlSet\\Control\\LSA /v RunAsPPL /t REG_DWORD /d 0 /f"
+            ],
+            "label": "REGISTRY"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "reduce": 1,
+        "allow": 1,
+        "of": 1,
+        "disable": 1,
+        "use": 1,
+        "on": 1
+    }
+}

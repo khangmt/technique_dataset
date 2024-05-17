@@ -1,0 +1,183 @@
+{
+    "id": "T1001",
+    "tech_id": "T1001",
+    "tech_name": "Data Obfuscation",
+    "best_phrases": [],
+    "tactics": [
+        "TA0011"
+    ],
+    "features": [
+        "NETWORK",
+        "DATA",
+        "FUNCTION",
+        "ENCRYPTION",
+        "COMPONENT"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--6d182b64-121f-43bf-b268-fe1e5874087d",
+        "relationship--7bade69a-16f3-4d2d-bec5-c7dc76358787",
+        "relationship--80a8cd03-8f65-41fb-803a-64d92f9f1522",
+        "relationship--d0ce49aa-fc45-431a-8109-90958fb15b5e",
+        "relationship--dd4423f6-b526-4856-aa00-2c4aa36617da",
+        "relationship--efd7f218-0e23-458b-be17-afad9545fa25",
+        "relationship--f0782cdb-1b7a-4e23-acb4-dba55ad03468"
+    ],
+    "graph_nodes": [
+        {
+            "count": 4,
+            "id": 0,
+            "texts": [
+                "string",
+                "system information",
+                "encoded data",
+                "portions"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 6,
+            "id": 1,
+            "texts": [
+                "TrailBlazer",
+                "threat actors",
+                "FunnyDream",
+                "RDAT",
+                "FlawedAmmyy",
+                "SideTwist"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 8,
+            "id": 2,
+            "texts": [
+                "C2 traffic",
+                "IP addresses",
+                "\"Agent\" proxy hops",
+                "compressed and obfuscated packets",
+                "C2",
+                "subdomains",
+                "C2 responses",
+                "fake Flickr webpage"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 3,
+            "id": 3,
+            "texts": [
+                "legitimate Google Notifications HTTP requests",
+                "initial C2 handshake",
+                "source code"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 2,
+            "id": 4,
+            "texts": [
+                "RC4",
+                "AES ciphertext"
+            ],
+            "label": "ENCRYPTION"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "host"
+            ],
+            "label": "COMPONENT"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 5
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 2
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "contain": 1,
+        "masquerade": 1,
+        "as": 4,
+        "encrypt": 1,
+        "use for": 1,
+        "with": 1,
+        "send": 1,
+        "to": 2,
+        "use": 1,
+        "communicate": 1,
+        "within": 1,
+        "obfuscate": 1,
+        "of": 2,
+        "embed": 1,
+        "in": 2
+    }
+}

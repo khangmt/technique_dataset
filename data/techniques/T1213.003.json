@@ -1,0 +1,129 @@
+{
+    "id": "T1213.003",
+    "tech_id": "T1213.003",
+    "tech_name": "Code Repositories",
+    "best_phrases": [],
+    "tactics": [
+        "TA0009"
+    ],
+    "features": [
+        "COMPONENT",
+        "NETWORK",
+        "DATA",
+        "USER",
+        "FUNCTION"
+    ],
+    "locations": [
+        "SaaS"
+    ],
+    "procedures": [
+        "relationship--2b7d9c6e-8149-4b2f-91a2-e80ec673e42d",
+        "relationship--93dc5023-3f2b-41a3-bd5a-68121a94280d"
+    ],
+    "graph_nodes": [
+        {
+            "count": 2,
+            "id": 0,
+            "texts": [
+                "LAPSUS$",
+                "APT29"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 1,
+            "id": 1,
+            "texts": [
+                "network"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 4,
+            "id": 2,
+            "texts": [
+                "GitLab",
+                "GitHub",
+                "code repositories",
+                "code repositories"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "high-privilege account credentials"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "victim"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "source code"
+            ],
+            "label": "FUNCTION"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "5_2",
+            "source": 5,
+            "dest": 2,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "search": 1,
+        "for": 2,
+        "discover": 1,
+        "of": 1,
+        "download": 1,
+        "from": 2
+    }
+}

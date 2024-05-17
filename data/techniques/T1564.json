@@ -1,0 +1,179 @@
+{
+    "id": "T1564",
+    "tech_id": "T1564",
+    "tech_name": "Hide Artifacts",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "REGISTRY",
+        "COMPONENT"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows",
+        "Office 365"
+    ],
+    "procedures": [
+        "relationship--08e05216-9133-4056-bbc9-b91ea0a7c6f5",
+        "relationship--2a4447dc-811d-487a-ade9-ef11e6e24e16",
+        "relationship--5bceaa15-bfcf-464f-a3d3-030d389080b5",
+        "relationship--662dd798-61ce-4463-8567-9acdecade943",
+        "relationship--d507bcd4-bd22-4d39-b098-20c109ee9cda"
+    ],
+    "graph_nodes": [
+        {
+            "count": 6,
+            "id": 0,
+            "texts": [
+                "Bundlore",
+                "OSX/Shlayer",
+                "attacker",
+                "WarzoneRAT",
+                "DarkTortilla",
+                "Tarrask"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 9,
+            "id": 1,
+            "texts": [
+                "mktemp utility",
+                "payloads",
+                "TMP_DIR=mktemp -d -t x",
+                "mktemp -t Installer",
+                "export tmpDir=\"$(mktemp -d /tmp/XXXXXXXXXXXX)\"",
+                "attempts",
+                "IFileOperation",
+                "Process Environment Block",
+                "\"hidden\" scheduled tasks"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 7,
+            "id": 2,
+            "texts": [
+                "random and unique filenames",
+                "unique file and directory names",
+                "payloads",
+                "TMP_DIR=mktemp -d -t x",
+                "mktemp -t Installer",
+                "export tmpDir=\"$(mktemp -d /tmp/XXXXXXXXXXXX)\"",
+                "privileges"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "compromised host"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 4,
+            "id": 4,
+            "texts": [
+                "HiddenKey%",
+                "HiddenReg%",
+                "%",
+                "part"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 4,
+            "id": 5,
+            "texts": [
+                "HiddenKey%",
+                "HiddenReg%",
+                "%",
+                "Security Descriptor (SD) registry value"
+            ],
+            "label": "REGISTRY"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 4
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 2
+        },
+        {
+            "id": "5_4",
+            "source": 5,
+            "dest": 4,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 3,
+        "make": 1,
+        "for": 1,
+        "of": 1,
+        "elevate": 1,
+        "masquerade": 1,
+        "on": 2,
+        "hide": 1,
+        "by": 1,
+        "as": 2,
+        "create": 1,
+        "delete": 1
+    }
+}

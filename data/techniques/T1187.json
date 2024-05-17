@@ -1,0 +1,130 @@
+{
+    "id": "T1187",
+    "tech_id": "T1187",
+    "tech_name": "Forced Authentication",
+    "best_phrases": [],
+    "tactics": [
+        "TA0006"
+    ],
+    "features": [
+        "DATA",
+        "NETWORK",
+        "COMPONENT",
+        "FUNCTION"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--2db02b07-4dd3-4810-9103-1f8d7bd46a60",
+        "relationship--db7707d7-5334-47b3-b203-0ee4fcbae5e9",
+        "relationship--ee1dd5bc-9d75-4f46-87a1-12fcb7183f32"
+    ],
+    "graph_nodes": [
+        {
+            "count": 3,
+            "id": 0,
+            "texts": [
+                "DarkHydrus",
+                "Dragonfly",
+                "EnvyScout"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 2,
+            "id": 1,
+            "texts": [
+                "Template Injection",
+                "protocol handlers"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 3,
+            "id": 2,
+            "texts": [
+                "authentication window",
+                "virtualized systems",
+                "operating system"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 6,
+            "id": 3,
+            "texts": [
+                "users",
+                "credentials",
+                "hashed user credentials",
+                "spearphishing attachments",
+                ".LNK file icon resources",
+                "credentials"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 4,
+            "id": 4,
+            "texts": [
+                "SMB",
+                "external resource links",
+                "NTLMv2 authentication responses",
+                "attacker-controlled infrastructure"
+            ],
+            "label": "NETWORK"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 4
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 3,
+        "launch": 1,
+        "enter": 1,
+        "over": 2,
+        "gather": 1,
+        "modify": 1,
+        "collect": 1,
+        "with": 1,
+        "from": 1,
+        "coax": 1,
+        "send": 1,
+        "to": 1
+    }
+}

@@ -1,0 +1,132 @@
+{
+    "id": "T1110.002",
+    "tech_id": "T1110.002",
+    "tech_name": "Password Cracking",
+    "best_phrases": [],
+    "tactics": [
+        "TA0006"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "NETWORK"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows",
+        "Office 365",
+        "Azure AD",
+        "Network"
+    ],
+    "procedures": [
+        "relationship--1334cbe3-8613-4279-9a1f-58781c2656a4",
+        "relationship--2355c588-ff82-4eaf-82db-54af59ede582",
+        "relationship--3e4e4075-1731-47b5-b95f-7e0b916556d5",
+        "relationship--79958036-a8bf-4808-af4f-f9f7a9cb6e7c",
+        "relationship--cef68296-665f-49ed-8a30-c91f8c00096f",
+        "relationship--d6b2febc-64a1-48cd-88f1-67295650d9cb"
+    ],
+    "graph_nodes": [
+        {
+            "count": 7,
+            "id": 0,
+            "texts": [
+                "APT3",
+                "Net Crawler",
+                "attacker",
+                "Dragonfly",
+                "APT41",
+                "FIN6",
+                "threat actors"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 8,
+            "id": 1,
+            "texts": [
+                "password hashes",
+                "plain text credentials",
+                "credentials",
+                "passwords",
+                "accounts",
+                "local admin account",
+                "password hashes",
+                "password hashes"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 9,
+            "id": 2,
+            "texts": [
+                "credential dumping",
+                "CrackMapExec",
+                "tools",
+                "Hydra",
+                "password cracking",
+                "password brute-force attacks",
+                "ntds.dit",
+                "Abel",
+                "Cain"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "network"
+            ],
+            "label": "NETWORK"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 7
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 4
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "bruteforce": 1,
+        "use": 3,
+        "guess": 1,
+        "gather": 1,
+        "to": 1,
+        "byout": 1,
+        "execute": 1,
+        "use for": 1,
+        "perform": 1,
+        "on": 2,
+        "extract": 1,
+        "from": 2,
+        "crack": 1
+    }
+}

@@ -1,0 +1,116 @@
+{
+    "id": "T1556.001",
+    "tech_id": "T1556.001",
+    "tech_name": "Domain Controller Authentication",
+    "best_phrases": [],
+    "tactics": [
+        "TA0006",
+        "TA0005",
+        "TA0003"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "COMPONENT"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--42edbbf4-8779-47d8-bc9b-452073939a1a",
+        "relationship--f76355cb-9aa5-403c-aae4-8faed799ac31"
+    ],
+    "graph_nodes": [
+        {
+            "count": 5,
+            "id": 0,
+            "texts": [
+                "malware",
+                "NTLM authentication program",
+                "domain controllers",
+                "enterprise domain controller authentication process",
+                "domain controller"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 3,
+            "id": 1,
+            "texts": [
+                "Chimera",
+                "Skeleton Key",
+                "adversaries"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 4,
+            "id": 2,
+            "texts": [
+                "valid credential",
+                "backdoor password",
+                "defined password",
+                "accounts"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "standard authentication system"
+            ],
+            "label": "COMPONENT"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "2_0",
+            "source": 2,
+            "dest": 0,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "of": 1,
+        "alter": 1,
+        "without": 1,
+        "on": 1,
+        "patch": 1,
+        "with": 1,
+        "bypass": 1,
+        "use": 2,
+        "for": 1,
+        "authenticate to": 1
+    }
+}

@@ -1,0 +1,137 @@
+{
+    "id": "T1547.013",
+    "tech_id": "T1547.013",
+    "tech_name": "XDG Autostart Entries",
+    "best_phrases": [],
+    "tactics": [
+        "TA0003",
+        "TA0004"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "DIRECTORY",
+        "USER"
+    ],
+    "locations": [
+        "Linux"
+    ],
+    "procedures": [
+        "relationship--407f0280-bfaf-4c9b-919a-703f2467e10b",
+        "relationship--7203bf5f-4a67-48d9-92ac-f7b77795e1f0",
+        "relationship--c848ea14-292b-4ad8-ab58-70b26b023275",
+        "relationship--ea61bd22-3ebc-4945-9b0a-60e65e3d4d64",
+        "relationship--eed67968-2d71-4394-84a9-1240d9ba6a83"
+    ],
+    "graph_nodes": [
+        {
+            "count": 2,
+            "id": 0,
+            "texts": [
+                "NETWIRE",
+                "CrossRAT"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 4,
+            "id": 1,
+            "texts": [
+                "XDG Autostart Entries",
+                "Pupy",
+                "RotaJakiro",
+                "Fysbis"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 2,
+            "id": 2,
+            "texts": [
+                "XDG Autostart",
+                "XDG Autostart"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 4,
+            "id": 3,
+            "texts": [
+                "user-level permissions",
+                ".desktop file",
+                "root privileges",
+                ".desktop configuration file"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 2,
+            "id": 4,
+            "texts": [
+                "$HOME/.config/autostart/ folder",
+                "~/.config/autostart directory"
+            ],
+            "label": "DIRECTORY"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "user"
+            ],
+            "label": "USER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 4
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "4_5",
+            "source": 4,
+            "dest": 5,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 4,
+        "execute": 2,
+        "under": 1,
+        "add": 1,
+        "to": 2,
+        "of": 1
+    }
+}

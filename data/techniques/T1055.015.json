@@ -1,0 +1,55 @@
+{
+    "id": "T1055.015",
+    "tech_id": "T1055.015",
+    "tech_name": "ListPlanting",
+    "best_phrases": [
+        "listplanting",
+        "ListPlanting"
+    ],
+    "tactics": [
+        "TA0005",
+        "TA0004"
+    ],
+    "features": [
+        "FUNCTION"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--8cfdd4d6-1696-401a-9455-d3fbf6bc0235"
+    ],
+    "graph_nodes": [
+        {
+            "count": 1,
+            "id": 0,
+            "texts": [
+                "InvisiMole"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 3,
+            "id": 1,
+            "texts": [
+                "ListPlanting",
+                "code",
+                "trusted process"
+            ],
+            "label": "FUNCTION"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 2
+        }
+    ],
+    "verbs": {
+        "use": 1,
+        "inject": 1,
+        "into": 1
+    }
+}

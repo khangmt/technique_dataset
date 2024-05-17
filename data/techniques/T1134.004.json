@@ -1,0 +1,84 @@
+{
+    "id": "T1134.004",
+    "tech_id": "T1134.004",
+    "tech_name": "Parent PID Spoofing",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005",
+        "TA0004"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--3231ef46-26f9-4711-adfe-cfa68425f848",
+        "relationship--538e4202-41cf-4d4e-9c1c-30df5bc30a22",
+        "relationship--a979f700-7319-4d37-bb3e-592e3a1bf878"
+    ],
+    "graph_nodes": [
+        {
+            "count": 3,
+            "id": 0,
+            "texts": [
+                "KONNI",
+                "Cobalt Strike",
+                "PipeMon"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 7,
+            "id": 1,
+            "texts": [
+                "parent PID spoofing",
+                "cmd process",
+                "CreateProcessW",
+                "handle",
+                "Taskmgr.exe",
+                "processes",
+                "parent PID spoofing"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 2,
+            "id": 2,
+            "texts": [
+                "alternate PPIDs",
+                "privileges"
+            ],
+            "label": "DATA"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 5
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 3,
+        "spawn": 2,
+        "to": 1,
+        "with": 1,
+        "elevate": 1
+    }
+}

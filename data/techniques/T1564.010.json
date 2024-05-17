@@ -1,0 +1,77 @@
+{
+    "id": "T1564.010",
+    "tech_id": "T1564.010",
+    "tech_name": "Process Argument Spoofing",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005"
+    ],
+    "features": [
+        "DATA",
+        "FUNCTION"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--41b8a7b7-0134-412d-85d7-3a0141beb8e2",
+        "relationship--6e6fe0e8-fb0f-40b8-bb8c-4c6aba839618"
+    ],
+    "graph_nodes": [
+        {
+            "count": 2,
+            "id": 0,
+            "texts": [
+                "Cobalt Strike",
+                "SombRAT"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 3,
+            "id": 1,
+            "texts": [
+                "spoof arguments",
+                "process memory",
+                "process command-line arguments"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 2,
+            "id": 2,
+            "texts": [
+                "spawned processes",
+                "beacon commands"
+            ],
+            "label": "FUNCTION"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 1,
+        "in": 2,
+        "execute": 1,
+        "modify": 1,
+        "hide": 1
+    }
+}

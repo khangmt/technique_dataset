@@ -1,0 +1,252 @@
+{
+    "id": "T1559.002",
+    "tech_id": "T1559.002",
+    "tech_name": "Dynamic Data Exchange",
+    "best_phrases": [],
+    "tactics": [
+        "TA0002"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "NETWORK",
+        "COMPONENT",
+        "USER"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--0709589f-cc25-4925-89be-59e121c47951",
+        "relationship--14acc004-9b77-4a4a-b31d-a8eea459b4bb",
+        "relationship--160a52b3-8acd-4f19-810f-ac4ce96319d3",
+        "relationship--4bfaaf99-6884-4df1-af72-0cc61ce50aa0",
+        "relationship--51afbe4e-c5cd-4acd-b4e1-ff7877b78b9e",
+        "relationship--5ac271fa-d3a7-40a6-8862-3eb73331ae99",
+        "relationship--67583965-9e89-49cd-bdac-9fd69d7857ae",
+        "relationship--6975d10a-91bf-4a22-8353-745de444c594",
+        "relationship--69f57458-bfb2-44a2-a8cf-0fce0e2b0a22",
+        "relationship--6bc33571-c702-4fcc-9f1c-b87d5a842586",
+        "relationship--7ed3bfbd-41a7-46c4-acf7-43330dd50784",
+        "relationship--7fe2431d-30b9-45ef-8857-ecef17e428a9",
+        "relationship--84a213fc-604f-441f-ba18-feab32085a50",
+        "relationship--9d82ba74-8cfa-4f6c-a1a0-f23fe8a738cf",
+        "relationship--ad4a2d0b-a268-4334-903c-153858088138",
+        "relationship--b0994eea-4c0c-42d3-8d68-0acb1b6bb592",
+        "relationship--b71738d0-d96e-4508-9820-ece76386903c",
+        "relationship--c49b5147-f60f-43d7-b119-52b1761002af",
+        "relationship--f0e944fa-6dba-47c3-920a-cf7bad2d3bc5",
+        "relationship--f7a4bc28-8f50-4e9e-9986-b71f21528967"
+    ],
+    "graph_nodes": [
+        {
+            "count": 19,
+            "id": 0,
+            "texts": [
+                "Ramsay",
+                "Cobalt Group",
+                "threat actors",
+                "HAWKBALL",
+                "MuddyWater",
+                "Sidewinder",
+                "RTM",
+                "APT28",
+                "Valak",
+                "PoetRAT",
+                "APT37",
+                "GravityRAT",
+                "POWERSTATS",
+                "Gallmaker",
+                "Leviathan",
+                "BITTER",
+                "KeyBoy",
+                "TA505",
+                "Patchwork"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 16,
+            "id": 1,
+            "texts": [
+                "OLE objects",
+                "documents",
+                "Word OLE documents",
+                "Word OLE compound documents",
+                "OLE object",
+                "Word documents",
+                "OLE objects",
+                "strings",
+                "browser tabs",
+                "Word documents",
+                "documents",
+                "access",
+                "content",
+                "phishing documents",
+                "OLE objects",
+                "Word documents"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 2,
+            "texts": [
+                "victims"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 29,
+            "id": 3,
+            "texts": [
+                "Equation Editor",
+                "embedded shellcode",
+                "malware",
+                "PowerShell scripts",
+                "DDE",
+                "ActiveXObject utility",
+                "command",
+                "Dynamic Data Exchange mechanism",
+                "JHUHUGIT",
+                "Koadic",
+                "PowerShell commands",
+                "DDE",
+                "OLE",
+                "tasks",
+                "DDE",
+                "code",
+                "Windows DDE",
+                "DDE",
+                "command",
+                "DDE",
+                "payloads",
+                "command",
+                "OLE",
+                "method",
+                "Microsoft Equation Editor",
+                "payloads",
+                "remote payloads",
+                "DDE",
+                "malware"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 4,
+            "id": 4,
+            "texts": [
+                "FIN7 spear phishing campaigns",
+                "DDE protocol",
+                "Dynamic Data Exchange (DDE) protocol",
+                "DDE protocol"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 2,
+            "id": 5,
+            "texts": [
+                "compromised hosts",
+                "victim machines"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 1,
+            "id": 6,
+            "texts": [
+                "Microsoft"
+            ],
+            "label": "OTHER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 9
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 5
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 19
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "3_5",
+            "source": 3,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 3
+        },
+        {
+            "id": "4_6",
+            "source": 4,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 13,
+        "in": 2,
+        "send": 1,
+        "to": 2,
+        "drop": 1,
+        "include": 1,
+        "execute": 9,
+        "by": 4,
+        "create": 1,
+        "for": 1,
+        "within": 1,
+        "deliver": 2,
+        "with": 1,
+        "on": 1,
+        "exploit": 1,
+        "gain": 1,
+        "of": 1,
+        "utilize": 1,
+        "as": 2,
+        "insert": 1,
+        "inside": 1,
+        "run": 1,
+        "download": 1,
+        "abuse": 1
+    }
+}

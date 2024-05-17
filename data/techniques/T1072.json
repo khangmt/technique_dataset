@@ -1,0 +1,160 @@
+{
+    "id": "T1072",
+    "tech_id": "T1072",
+    "tech_name": "Software Deployment Tools",
+    "best_phrases": [],
+    "tactics": [
+        "TA0002",
+        "TA0008"
+    ],
+    "features": [
+        "FUNCTION",
+        "NETWORK",
+        "COMPONENT",
+        "USER"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows",
+        "Network"
+    ],
+    "procedures": [
+        "relationship--1d3654f8-3a5e-4ef8-826f-4242ecf78c0a",
+        "relationship--3fdd32ab-646e-4ba4-96fd-165a09db0c67",
+        "relationship--6fc128ed-90f3-4933-8ad7-4fd4a04cb39f",
+        "relationship--82268341-e0a8-4937-8618-351e147daa0c",
+        "relationship--b38cfcfd-b8e3-4a9c-ade9-8a8bfeb04694",
+        "relationship--e2ac0292-0de5-4805-9ff8-f56881331295"
+    ],
+    "graph_nodes": [
+        {
+            "count": 5,
+            "id": 0,
+            "texts": [
+                "APT32",
+                "Sandworm Team",
+                "Silence",
+                "Threat Group-1314 actors",
+                "threat actors"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 4,
+            "id": 1,
+            "texts": [
+                "McAfee ePO",
+                "ATMs",
+                "workstations",
+                "targeted companies"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 14,
+            "id": 2,
+            "texts": [
+                "malware",
+                "software deployment task",
+                "tool",
+                "RemoteExec",
+                "agentless remote code",
+                "RAdmin",
+                "remote software tool",
+                "anti-virus product",
+                "Wiper malware",
+                "endpoint management platform",
+                "Altiris",
+                "PDQ Deploy",
+                "tools",
+                "AvosLocker"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 4,
+            "id": 3,
+            "texts": [
+                "agentless remote code",
+                "ATMs",
+                "workstations",
+                "network"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "patch management system"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "victim"
+            ],
+            "label": "USER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 10
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "4_2",
+            "source": 4,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "2_5",
+            "source": 2,
+            "dest": 5,
+            "count": 2
+        }
+    ],
+    "verbs": {
+        "compromise": 1,
+        "distribute": 2,
+        "as": 1,
+        "use": 7,
+        "execute": 1,
+        "control": 1,
+        "for": 1,
+        "instal among": 1,
+        "of": 2,
+        "move": 1,
+        "across": 1
+    }
+}

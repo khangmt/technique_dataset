@@ -1,0 +1,129 @@
+{
+    "id": "T1598.004",
+    "tech_id": "T1598.004",
+    "tech_name": "Spearphishing Voice",
+    "best_phrases": [],
+    "tactics": [
+        "TA0043"
+    ],
+    "features": [
+        "USER",
+        "DATA",
+        "FUNCTION",
+        "NETWORK"
+    ],
+    "locations": [
+        "PRE"
+    ],
+    "procedures": [
+        "relationship--1769fb21-c686-4af1-ba8f-8bfa48ecf585",
+        "relationship--60fc3c88-bff5-4a06-88f3-15715e4cafda"
+    ],
+    "graph_nodes": [
+        {
+            "count": 2,
+            "id": 0,
+            "texts": [
+                "Scattered Spider",
+                "help desk"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 1,
+            "id": 1,
+            "texts": [
+                "phone calls"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 3,
+            "id": 2,
+            "texts": [
+                "victims",
+                "support personnel",
+                "victims"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "credential-harvesting websites"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "LAPSUS$"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 2,
+            "id": 5,
+            "texts": [
+                "credentials",
+                "account"
+            ],
+            "label": "DATA"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "4_0",
+            "source": 4,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "4_2",
+            "source": 4,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "4_5",
+            "source": 4,
+            "dest": 5,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 1,
+        "instruct": 1,
+        "navigate": 2,
+        "call": 1,
+        "convince": 1,
+        "reset": 1,
+        "of": 2
+    }
+}

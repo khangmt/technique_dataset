@@ -1,0 +1,101 @@
+{
+    "id": "T1585",
+    "tech_id": "T1585",
+    "tech_name": "Establish Accounts",
+    "best_phrases": [],
+    "tactics": [
+        "TA0042"
+    ],
+    "features": [
+        "NETWORK",
+        "FUNCTION",
+        "DATA",
+        "USER"
+    ],
+    "locations": [
+        "PRE"
+    ],
+    "procedures": [
+        "relationship--340a62c8-9f22-4cb6-9310-bd4136e14258",
+        "relationship--fd9834dc-0323-408b-b217-3f3aa27b50ac"
+    ],
+    "graph_nodes": [
+        {
+            "count": 2,
+            "id": 0,
+            "texts": [
+                "Fox Kitten",
+                "APT17"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 1,
+            "id": 1,
+            "texts": [
+                "KeyBase accounts"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 2,
+            "texts": [
+                "ransomware victims"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 3,
+            "id": 3,
+            "texts": [
+                "profile pages",
+                "Microsoft TechNet",
+                "profile pages"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 2,
+            "id": 4,
+            "texts": [
+                "biographical sections",
+                "forum threads"
+            ],
+            "label": "FUNCTION"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 2
+        }
+    ],
+    "verbs": {
+        "create": 2,
+        "communicate": 1,
+        "cultivate": 1,
+        "in": 2,
+        "appear": 1
+    }
+}

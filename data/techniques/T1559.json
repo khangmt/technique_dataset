@@ -1,0 +1,144 @@
+{
+    "id": "T1559",
+    "tech_id": "T1559",
+    "tech_name": "Inter-Process Communication",
+    "best_phrases": [],
+    "tactics": [
+        "TA0002"
+    ],
+    "features": [
+        "DATA",
+        "FUNCTION",
+        "NETWORK",
+        "COMPONENT"
+    ],
+    "locations": [
+        "Windows",
+        "macOS",
+        "Linux"
+    ],
+    "procedures": [
+        "relationship--70efcdd6-80c3-4f95-981b-4da24639f32b",
+        "relationship--82fa754d-3c73-415f-9bc3-3e6be5458856",
+        "relationship--aba4b49c-0e87-4e81-81ce-cdefff278c5f",
+        "relationship--d5b2d34f-5650-4fb3-bacf-2b1765943bfe"
+    ],
+    "graph_nodes": [
+        {
+            "count": 3,
+            "id": 0,
+            "texts": [
+                "Uroburos",
+                "HyperStack",
+                "Cyclops Blink"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 5,
+            "id": 1,
+            "texts": [
+                "data",
+                "IPC$ share",
+                "non-root permissions",
+                "shared memory",
+                "PID"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 5,
+            "id": 2,
+            "texts": [
+                "kernel and user mode components",
+                "RotaJakiro",
+                "shmget API",
+                "RotaJakiro processes",
+                "processes"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 3,
+            "id": 3,
+            "texts": [
+                "named pipes",
+                "pipe",
+                "inter-process communication"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "remote machines"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "other"
+            ],
+            "label": "OTHER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "2_5",
+            "source": 2,
+            "dest": 5,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "move": 1,
+        "between": 3,
+        "use": 2,
+        "to": 1,
+        "on": 1,
+        "create": 2,
+        "enable": 1,
+        "execute": 1,
+        "communicate": 1,
+        "share": 1
+    }
+}

@@ -1,0 +1,90 @@
+{
+    "id": "T1564.002",
+    "tech_id": "T1564.002",
+    "tech_name": "Hidden Users",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005"
+    ],
+    "features": [
+        "REGISTRY",
+        "DATA",
+        "USER"
+    ],
+    "locations": [
+        "macOS",
+        "Windows",
+        "Linux"
+    ],
+    "procedures": [
+        "relationship--0ec90a7b-2ba7-4d7e-ac41-c5fdcf9e8046",
+        "relationship--2fd6ac0b-f091-4cd0-a6ad-6b476e980fad",
+        "relationship--4b889a3a-289f-444f-946d-b8bc2dd16627"
+    ],
+    "graph_nodes": [
+        {
+            "count": 3,
+            "id": 0,
+            "texts": [
+                "Dragonfly",
+                "SMOKEDHAM",
+                "Kimsuky"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 3,
+            "id": 1,
+            "texts": [
+                "Registry",
+                "Registry",
+                "reg add 'HKLM\\SOFTWARE\\Microsoft\\WindowsNT\\CurrentVersion\\Winlogon\\SpecialAccounts\\UserList' /v"
+            ],
+            "label": "REGISTRY"
+        },
+        {
+            "count": 3,
+            "id": 2,
+            "texts": [
+                "created user accounts",
+                "created user accounts",
+                "Windows logon screen"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "created user"
+            ],
+            "label": "USER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "modify": 2,
+        "hide": 3,
+        "from": 1,
+        "run": 1
+    }
+}

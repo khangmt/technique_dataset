@@ -1,0 +1,219 @@
+{
+    "id": "T1480.001",
+    "tech_id": "T1480.001",
+    "tech_name": "Environmental Keying",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "COMPONENT",
+        "ENCRYPTION",
+        "USER"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--3d661b40-6ebf-470f-a675-142f86b6c649",
+        "relationship--5212a108-111b-4467-84c9-933d2b84aad2",
+        "relationship--78617eb0-f679-48ad-82ca-3a85d0f9371e",
+        "relationship--85cff8f7-2c44-4886-8b8c-efaac50d4596",
+        "relationship--e8ddbb71-4b8e-44f1-a259-3801efc450b0",
+        "relationship--f74ed982-fc1d-4c6b-945c-52c5e8f13fce"
+    ],
+    "graph_nodes": [
+        {
+            "count": 6,
+            "id": 0,
+            "texts": [
+                "Equation",
+                "APT41",
+                "ROKRAT",
+                "InvisiMole",
+                "PowerPunch",
+                "attacker"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 14,
+            "id": 1,
+            "texts": [
+                "environmental keying",
+                "payload delivery",
+                "encrypted payloads",
+                "second stage malware",
+                "Data Protection API",
+                "DPAPI",
+                "Data Protection API",
+                "components",
+                "detection",
+                "payload",
+                "stage payload",
+                "Winnti",
+                "Winnti for Windows dropper component",
+                "existence"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 4,
+            "id": 2,
+            "texts": [
+                "RC5 key",
+                "keys",
+                "unique XOR key",
+                "decryption key"
+            ],
+            "label": "ENCRYPTION"
+        },
+        {
+            "count": 6,
+            "id": 3,
+            "texts": [
+                "user accounts",
+                "volume serial number",
+                "victim hostname",
+                "important strings",
+                "volume serial number",
+                "command line parameter"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 2,
+            "id": 4,
+            "texts": [
+                "which",
+                "part"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 5,
+            "id": 5,
+            "texts": [
+                "system",
+                "computer",
+                "compromised computer",
+                "target host",
+                "Windows"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 1,
+            "id": 6,
+            "texts": [
+                "victim"
+            ],
+            "label": "USER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 7
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 3
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 3
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "4_2",
+            "source": 4,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "3_5",
+            "source": 3,
+            "dest": 5,
+            "count": 2
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 3
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 3
+        },
+        {
+            "id": "5_6",
+            "source": 5,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "utilize": 1,
+        "in": 2,
+        "have": 1,
+        "key": 1,
+        "with": 2,
+        "use": 5,
+        "rely": 1,
+        "tie to": 1,
+        "on": 4,
+        "derive in": 1,
+        "of": 3,
+        "decrypt": 1,
+        "encrypt": 1,
+        "evade": 1,
+        "generate": 1,
+        "from": 1,
+        "for": 2,
+        "verify": 1,
+        "as": 2
+    }
+}

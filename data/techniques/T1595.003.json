@@ -1,0 +1,81 @@
+{
+    "id": "T1595.003",
+    "tech_id": "T1595.003",
+    "tech_name": "Wordlist Scanning",
+    "best_phrases": [],
+    "tactics": [
+        "TA0043"
+    ],
+    "features": [
+        "FUNCTION",
+        "NETWORK",
+        "DIRECTORY"
+    ],
+    "locations": [
+        "PRE"
+    ],
+    "procedures": [
+        "relationship--2045cbbe-6046-44ae-a255-6c038da68cd5"
+    ],
+    "graph_nodes": [
+        {
+            "count": 1,
+            "id": 0,
+            "texts": [
+                "Volatile Cedar"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 2,
+            "id": 1,
+            "texts": [
+                "GoBuster",
+                "DirBuster"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 2,
+            "id": 2,
+            "texts": [
+                "web directories",
+                "DNS subdomains"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 2,
+            "id": 3,
+            "texts": [
+                "web directories",
+                "DNS subdomains"
+            ],
+            "label": "DIRECTORY"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 1,
+        "bruteforce": 1
+    }
+}

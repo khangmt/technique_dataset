@@ -1,0 +1,239 @@
+{
+    "id": "T1546.003",
+    "tech_id": "T1546.003",
+    "tech_name": "Windows Management Instrumentation Event Subscription",
+    "best_phrases": [],
+    "tactics": [
+        "TA0004",
+        "TA0003"
+    ],
+    "features": [
+        "FUNCTION",
+        "USER",
+        "DATA",
+        "COMPONENT"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--1a666dc1-d0b9-49ac-b05b-350cfca7fa61",
+        "relationship--32b50ea5-7e1e-4253-b2b8-ba99a054c6d9",
+        "relationship--337dc23f-d825-415d-886b-53c3457fbd56",
+        "relationship--46e81587-e960-4277-9c3b-af2bdc328176",
+        "relationship--5014ed30-309e-4bed-af86-ec5603736342",
+        "relationship--604045bc-5d44-495f-a0cb-df73bd769d90",
+        "relationship--670dc748-f1c8-4ba3-b999-f942fa42ce50",
+        "relationship--6b2cd244-a02f-4b76-85d9-a429a298f016",
+        "relationship--8e8aced5-9391-47d8-bef7-894453048810",
+        "relationship--9263ab45-f7d5-4bcf-af7e-d7be1913c3d6",
+        "relationship--944a0e0d-dfb4-4c78-a0bd-601b989365bd",
+        "relationship--9e1bb696-e1f0-46d3-ab91-79280323d711",
+        "relationship--abb5f6e2-1813-4d0e-8269-cceec54b4843",
+        "relationship--ad63da4a-163d-49b4-b923-f4df799ab183",
+        "relationship--b063f8cf-86d1-47fb-8ada-2b39009ee9e2",
+        "relationship--bc249532-826d-4bc2-8b03-43f284fe609f",
+        "relationship--f653eb7d-7027-4161-9071-b52336bd4fbc",
+        "relationship--f758836e-91b2-4651-ba72-d827553b668c",
+        "relationship--fbce0681-c5d2-4ea9-b48a-4fc42448f9e0",
+        "relationship--fd1e07f7-2ec2-4af3-a90c-17d142bd8fa8",
+        "relationship--ff53be5e-2a57-4a9e-a0c1-cc075c1331c4"
+    ],
+    "graph_nodes": [
+        {
+            "count": 18,
+            "id": 0,
+            "texts": [
+                "Blue Mockingbird",
+                "Sardonic",
+                "POSHSPY",
+                "FIN8",
+                "APT29",
+                "BADHATCH",
+                "metaMain",
+                "RegDuke",
+                "Leviathan",
+                "POWERTON",
+                "adbupd",
+                "TrailBlazer",
+                "APT29",
+                "Turla",
+                "Metador",
+                "APT33",
+                "APT29",
+                "SeaDuke"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 24,
+            "id": 1,
+            "texts": [
+                "mofcomp.exe",
+                "WMI Event Subscription persistence mechanisms",
+                "WMI event filter",
+                "\"hard_disk_stat",
+                "WMI event subscription consumer",
+                "SILENTTRINITY",
+                "WMI Event",
+                "payload",
+                "WMI script",
+                "WMI",
+                "WMI event filter",
+                "backdoor",
+                "rundll32.exe",
+                "WMI event filters",
+                "consumers",
+                "binaries",
+                "cdb.exe",
+                "custom ORat tool",
+                "system startup",
+                "event filter",
+                "dropped executable",
+                "WMI code",
+                "PoshC2",
+                "WMI events"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 7,
+            "id": 2,
+            "texts": [
+                "*.mof file",
+                "WMI event subscriptions",
+                "WMI event subscription",
+                "system boot time",
+                "WMI event subscription",
+                "WMI event subscriptions",
+                "WMI event subscriptions"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 8,
+            "id": 3,
+            "texts": [
+                "command-line event consumer",
+                "\"hard_disk_stat",
+                "WMI event subscription consumer",
+                "WMI consumer",
+                "command-line event consumer",
+                "WMI event filters",
+                "consumers",
+                "WMI event consumer"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 3,
+            "id": 4,
+            "texts": [
+                "use",
+                "unusual living-off-the-land",
+                "Panda"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "system"
+            ],
+            "label": "COMPONENT"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 11
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 5
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 3
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "4_2",
+            "source": 4,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 13,
+        "establish": 1,
+        "configure from": 1,
+        "invoke": 2,
+        "register": 1,
+        "create": 1,
+        "execute": 2,
+        "launch": 1,
+        "at": 1,
+        "with": 1,
+        "by": 1,
+        "of": 2,
+        "combine with": 2,
+        "in": 1,
+        "after": 1,
+        "on": 1
+    }
+}

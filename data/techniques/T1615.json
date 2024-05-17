@@ -1,0 +1,111 @@
+{
+    "id": "T1615",
+    "tech_id": "T1615",
+    "tech_name": "Group Policy Discovery",
+    "best_phrases": [],
+    "tactics": [
+        "TA0007"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "COMPONENT"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--14debfee-3a2d-4184-8f2a-bc07977ce909",
+        "relationship--33214d7f-0c78-4905-8ab0-8a6b6eb20eeb",
+        "relationship--563c1b39-f32b-4dfd-b3c1-47fb66ce9eb7",
+        "relationship--8a84e8a4-2e4f-4d38-8a0d-6a5b1fcfd542"
+    ],
+    "graph_nodes": [
+        {
+            "count": 7,
+            "id": 0,
+            "texts": [
+                "BloodHound",
+                "gpresult command",
+                "check-in",
+                "Empire",
+                "modules",
+                "capability",
+                "gpresult"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 4,
+            "id": 1,
+            "texts": [
+                "local admin information",
+                "GPO",
+                "Group Policy details",
+                "Group Policy"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 2,
+            "id": 2,
+            "texts": [
+                "Turla",
+                "Emissary"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "system"
+            ],
+            "label": "COMPONENT"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "2_0",
+            "source": 2,
+            "dest": 0,
+            "count": 2
+        },
+        {
+            "id": "3_0",
+            "source": 3,
+            "dest": 0,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "collect": 1,
+        "by": 1,
+        "survey": 1,
+        "discover": 1,
+        "use": 1,
+        "upon": 1,
+        "include": 1,
+        "enumerate": 1,
+        "have": 1,
+        "execute": 1
+    }
+}

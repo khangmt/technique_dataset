@@ -1,0 +1,145 @@
+{
+    "id": "T1546.011",
+    "tech_id": "T1546.011",
+    "tech_name": "Application Shimming",
+    "best_phrases": [],
+    "tactics": [
+        "TA0004",
+        "TA0003"
+    ],
+    "features": [
+        "NETWORK",
+        "FUNCTION",
+        "USER",
+        "COMPONENT",
+        "DIRECTORY"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--09896887-98ee-4e8a-9cc2-4203b3b561c8",
+        "relationship--1e29cbcc-3e45-4e62-a66f-4479b310ccdb",
+        "relationship--506acc8a-e691-4f4e-b69f-bfab84cf2c73",
+        "relationship--9ec20e7b-8996-4f16-b830-1f8a0e99b778"
+    ],
+    "graph_nodes": [
+        {
+            "count": 4,
+            "id": 0,
+            "texts": [
+                "Pillowmint",
+                "SDBbot",
+                "FIN7",
+                "ShimRat"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 4,
+            "id": 1,
+            "texts": [
+                "shim database",
+                "shim database",
+                "application shim databases",
+                "shim databases"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 1,
+            "id": 2,
+            "texts": [
+                "application shimming"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "admin"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "WindowsXP"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 2,
+            "id": 5,
+            "texts": [
+                "services.exe",
+                "persistence"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 6,
+            "texts": [
+                "AppPatch folder"
+            ],
+            "label": "DIRECTORY"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 4
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 2
+        },
+        {
+            "id": "0_6",
+            "source": 0,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "1_6",
+            "source": 1,
+            "dest": 6,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 3,
+        "create": 1,
+        "as": 1,
+        "on": 1,
+        "patch": 1,
+        "for": 1,
+        "instal": 1,
+        "in": 2
+    }
+}

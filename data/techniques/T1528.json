@@ -1,0 +1,140 @@
+{
+    "id": "T1528",
+    "tech_id": "T1528",
+    "tech_name": "Steal Application Access Token",
+    "best_phrases": [],
+    "tactics": [
+        "TA0006"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "COMPONENT",
+        "NETWORK"
+    ],
+    "locations": [
+        "SaaS",
+        "Office 365",
+        "Azure AD",
+        "Google Workspace",
+        "Containers"
+    ],
+    "procedures": [
+        "relationship--c13ac561-878f-4119-b5b1-39994f7c25df",
+        "relationship--c620753b-17ad-43bd-ace3-f572ebcac644",
+        "relationship--d348102c-89dc-452a-b86d-2460928defaa"
+    ],
+    "graph_nodes": [
+        {
+            "count": 8,
+            "id": 0,
+            "texts": [
+                "Peirates",
+                "techniques",
+                "AADInternals",
+                "applications",
+                "applications",
+                "applications",
+                "\"Google Defender",
+                "\"Google Scanner"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 6,
+            "id": 1,
+            "texts": [
+                "Kubernetes service account tokens",
+                "access tokens",
+                "users",
+                "user OAuth access tokens",
+                "Yahoo users",
+                "Gmail users"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 2,
+            "id": 2,
+            "texts": [
+                "emails",
+                "links"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "APT28"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 3,
+            "id": 4,
+            "texts": [
+                "\"Google Defender",
+                "\"Google Scanner",
+                "Google Email Protection"
+            ],
+            "label": "COMPONENT"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 4
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "3_0",
+            "source": 3,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 2
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "gather": 1,
+        "use": 2,
+        "steal": 2,
+        "phishe": 1,
+        "of": 1,
+        "contain": 1,
+        "target": 1,
+        "with": 2,
+        "as": 3,
+        "for": 1
+    }
+}

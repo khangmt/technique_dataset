@@ -1,0 +1,344 @@
+{
+    "id": "T1090.002",
+    "tech_id": "T1090.002",
+    "tech_name": "External Proxy",
+    "best_phrases": [],
+    "tactics": [
+        "TA0011"
+    ],
+    "features": [
+        "NETWORK",
+        "FUNCTION",
+        "USER",
+        "DATA",
+        "COMPONENT"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--0640af26-888f-4022-ab72-2d0a69dd9bb0",
+        "relationship--073aff0c-1dd2-40f4-87da-d90809f3418a",
+        "relationship--0d1314fe-7fd6-4816-abb8-4b9872478807",
+        "relationship--0fae3830-5845-414a-8429-b95745b3db32",
+        "relationship--10cc3288-d06c-456c-bc0e-b10a8c5abeaa",
+        "relationship--11f6ad22-0293-47bd-95d1-34bf4ee1de9e",
+        "relationship--1dcca5db-e03e-4330-8705-76aaedcf295f",
+        "relationship--25ffefb1-15cc-4365-b401-b2975494f36b",
+        "relationship--2fadf189-bdcf-44b8-933a-ca6188485058",
+        "relationship--39fdd17c-5f59-4daf-bf14-95841b5ec248",
+        "relationship--3a2d591a-f918-44b3-9e75-7520906b9aa3",
+        "relationship--4f76fd4d-a638-41a0-90b9-bd4ada6f93f3",
+        "relationship--52cf8793-2f13-45c2-8274-1a9bf5d6224a",
+        "relationship--6fb86c58-666c-4a5f-bdd1-417a77761e6f",
+        "relationship--89077d0b-aaa2-48b9-90d7-e253a550bfad",
+        "relationship--95e5fd0e-b9c1-4efa-b462-a922456401e6",
+        "relationship--a084527d-2858-4037-bc48-68c1eac85acb",
+        "relationship--cc78f0a1-7f4f-491e-a636-910f09d0c5a1",
+        "relationship--e014c5a8-f9bc-4de5-aa46-55765ac4461c",
+        "relationship--e3e55e40-d284-4c43-9602-145d6643bc7b"
+    ],
+    "graph_nodes": [
+        {
+            "count": 18,
+            "id": 0,
+            "texts": [
+                "QUIETEXIT",
+                "APT39",
+                "ShimRat",
+                "QakBot",
+                "APT28",
+                "FIN5",
+                "Tonto Team",
+                "Lazarus Group",
+                "menuPass",
+                "Regin",
+                "POWERSTATS",
+                "Silence",
+                "attacker",
+                "Okrum",
+                "attacker",
+                "GALLIUM",
+                "MuddyWater",
+                "TrickBot"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 47,
+            "id": 1,
+            "texts": [
+                "SOCKS",
+                "traffic",
+                "C2 communications",
+                "pre-configured HTTP proxies",
+                "C2 communications",
+                "proxies",
+                "command traffic",
+                "compromised Georgian military email server",
+                "communications",
+                "C2",
+                "proxy",
+                "router",
+                "CHOPSTICK",
+                "server",
+                "proxy",
+                "backup RDP tunnel",
+                "external server",
+                "traffic",
+                "modified SOCKS5 proxy",
+                "egress C2 traffic",
+                "Windows HTTP/S C2 mode",
+                "external proxy",
+                "proxies",
+                "network traffic",
+                "IP",
+                "proxy",
+                "C2 traffic",
+                "SOCKS5 connections",
+                "initial C2",
+                "proxies",
+                "proxies",
+                "C2s",
+                "Sock4\\Socks5",
+                "traffic",
+                "node",
+                "backconnect server",
+                "proxy servers",
+                "C2",
+                "server",
+                "connections",
+                "networks",
+                "compromised websites",
+                "C2",
+                "C2",
+                "nine proxy IP addresses",
+                "proxy servers",
+                "C2 communication"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 14,
+            "id": 2,
+            "texts": [
+                "tools",
+                "module",
+                "tool",
+                "CHOPSTICK",
+                "server",
+                "FLIPSIDE",
+                "Mythic",
+                "Winnti",
+                "APT3 downloader",
+                "ProxyBot",
+                "HTTP requests",
+                "HTRAN",
+                "POWERSTATS",
+                "InvisiMole InvisiMole"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 7,
+            "id": 3,
+            "texts": [
+                "victims",
+                "NATO victims",
+                "victim",
+                "victims",
+                "victim",
+                "victims",
+                "victim"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 7,
+            "id": 4,
+            "texts": [
+                "hop point",
+                "access",
+                "location",
+                "origin",
+                "modified version",
+                "C2 location",
+                "information"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 7,
+            "id": 5,
+            "texts": [
+                "group",
+                "that",
+                "use",
+                "provider",
+                "compromised universities",
+                "that",
+                "one"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 1,
+            "id": 6,
+            "texts": [
+                "victim environments"
+            ],
+            "label": "COMPONENT"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 27
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 6
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 11
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 4
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "4_3",
+            "source": 4,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "5_2",
+            "source": 5,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "5_1",
+            "source": 5,
+            "dest": 1,
+            "count": 4
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 6
+        },
+        {
+            "id": "4_6",
+            "source": 4,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "2_5",
+            "source": 2,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 2
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 2
+        },
+        {
+            "id": "4_2",
+            "source": 4,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "3_5",
+            "source": 3,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "by": 9,
+        "proxy": 3,
+        "use": 17,
+        "have": 1,
+        "as": 8,
+        "relay": 2,
+        "obscure": 2,
+        "to": 9,
+        "allow": 1,
+        "be": 1,
+        "between": 2,
+        "maintain": 1,
+        "create": 1,
+        "for": 6,
+        "route": 1,
+        "obfuscate": 3,
+        "tunnel": 1,
+        "make": 2,
+        "of": 5,
+        "from": 4,
+        "establish": 1,
+        "redirect": 2,
+        "identify": 2,
+        "control": 1,
+        "reach": 1
+    }
+}

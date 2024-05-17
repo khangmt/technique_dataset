@@ -1,0 +1,146 @@
+{
+    "id": "T1564.008",
+    "tech_id": "T1564.008",
+    "tech_name": "Email Hiding Rules",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005"
+    ],
+    "features": [
+        "COMPONENT",
+        "DATA",
+        "FUNCTION",
+        "NETWORK",
+        "USER"
+    ],
+    "locations": [
+        "Windows",
+        "Office 365",
+        "Linux",
+        "macOS",
+        "Google Workspace"
+    ],
+    "procedures": [
+        "relationship--70a17629-6b01-4764-932b-8be576270329"
+    ],
+    "graph_nodes": [
+        {
+            "count": 1,
+            "id": 0,
+            "texts": [
+                "FIN4"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 2,
+            "id": 1,
+            "texts": [
+                "rules",
+                "Microsoft Outlook accounts"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 2,
+            "texts": [
+                "emails"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "victims"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 5,
+            "id": 4,
+            "texts": [
+                "\"malware",
+                ",\" \"phish",
+                "words",
+                "\"hacked",
+                "organizations"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 4,
+            "id": 5,
+            "texts": [
+                "\"malware",
+                ",\" \"phish",
+                "words",
+                "\"hacked"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 2,
+            "id": 6,
+            "texts": [
+                "likely attempt",
+                "activities"
+            ],
+            "label": "FUNCTION"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "2_5",
+            "source": 2,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "2_6",
+            "source": 2,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "6_4",
+            "source": 6,
+            "dest": 4,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "create": 1,
+        "in": 3,
+        "delete": 1,
+        "of": 1,
+        "contain": 1,
+        "prevent": 1,
+        "communicate": 1
+    }
+}

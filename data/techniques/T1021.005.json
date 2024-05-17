@@ -1,0 +1,213 @@
+{
+    "id": "T1021.005",
+    "tech_id": "T1021.005",
+    "tech_name": "VNC",
+    "best_phrases": [
+        "vnc sessions",
+        "vnc console",
+        "vnc",
+        "remote vnc session",
+        "VNC",
+        "vnc tools",
+        "vnc module"
+    ],
+    "tactics": [
+        "TA0008"
+    ],
+    "features": [
+        "NETWORK",
+        "FUNCTION",
+        "COMPONENT",
+        "USER",
+        "DATA"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--1fa0c726-0f55-4f10-8a31-184d760239c5",
+        "relationship--27bf147a-1e8b-481d-8910-3af3e64aa18c",
+        "relationship--2f1588c1-16b9-4cb2-b94c-1756829183ae",
+        "relationship--31994fdc-6f52-4052-9748-d2bd3ea60caa",
+        "relationship--34072026-f8dd-4eb0-88d9-c76cddfa8ca2",
+        "relationship--35f5caad-87d0-46c5-b2b6-eb69b0eda6bd",
+        "relationship--3d3ea12b-fec0-4daa-bb51-190884d88ee0",
+        "relationship--42eb6018-f049-41df-bbfc-6dcb2f079f16",
+        "relationship--440c7f08-e570-4536-8f9c-849952581de1",
+        "relationship--cf546d75-f689-4033-83eb-40a3edd71877"
+    ],
+    "graph_nodes": [
+        {
+            "count": 10,
+            "id": 0,
+            "texts": [
+                "ZxShell",
+                "Gamaredon Group",
+                "FIN7",
+                "DanBot",
+                "Carberp",
+                "GCMAN",
+                "Fox Kitten",
+                "TrickBot",
+                "Proton",
+                "WarzoneRAT"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 9,
+            "id": 1,
+            "texts": [
+                "functionality",
+                "VNC sessions",
+                "VNC tools",
+                "UltraVNC",
+                "remote VNC session",
+                "plugin",
+                "VNC module",
+                "ability",
+                "VNC console"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 12,
+            "id": 2,
+            "texts": [
+                "VNC tools",
+                "UltraVNC",
+                "TightVNC",
+                "VNC",
+                "remote access",
+                "VNC",
+                "client",
+                "TightVNC server",
+                "endpoints",
+                "compromised servers",
+                "network",
+                "VNC"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 5,
+            "id": 3,
+            "texts": [
+                "compromised hosts",
+                "compromised hosts",
+                "targeted systems",
+                "valuable systems",
+                "systems"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 3,
+            "id": 4,
+            "texts": [
+                "client",
+                "TightVNC server",
+                "victim"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 2,
+            "id": 5,
+            "texts": [
+                "information",
+                "remote desktop access"
+            ],
+            "label": "DATA"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 6
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 8
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 3
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "4_2",
+            "source": 4,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "5_3",
+            "source": 5,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "5_1",
+            "source": 5,
+            "dest": 1,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "support": 1,
+        "for": 3,
+        "use": 7,
+        "interact": 1,
+        "control": 1,
+        "to": 1,
+        "start": 1,
+        "download": 1,
+        "instal": 1,
+        "on": 3,
+        "monitor": 1,
+        "collect": 1,
+        "pivot": 1,
+        "connect": 1,
+        "perform": 1,
+        "have": 1,
+        "by": 1
+    }
+}

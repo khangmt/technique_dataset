@@ -1,0 +1,400 @@
+{
+    "id": "T1069.001",
+    "tech_id": "T1069.001",
+    "tech_name": "Local Groups",
+    "best_phrases": [],
+    "tactics": [
+        "TA0007"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "USER",
+        "COMPONENT",
+        "NETWORK",
+        "VULNERABILITY"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--059cc1e2-9570-4760-8137-d3d71b66bb78",
+        "relationship--21fdaa87-7b0e-4ad9-a612-c4d2ec8789d7",
+        "relationship--2cfa6113-1995-494a-b767-61d3f371e0ea",
+        "relationship--42a87d45-8dd1-4767-a6a2-d7bd19d3b0ef",
+        "relationship--46b32cc8-892c-48da-92ab-4ec2168e3edb",
+        "relationship--481fedde-ac7d-4d1b-a70a-b90ccd7acc52",
+        "relationship--5650777d-f905-4c09-8fd0-0e205178a830",
+        "relationship--5968f7a6-a300-4a1b-9a4e-655e9300392b",
+        "relationship--5c8e77a8-03f4-4581-a893-a07016bc155f",
+        "relationship--664d1aaf-eb98-4683-bc57-1a19934d934a",
+        "relationship--6e311ecd-a80d-411b-aaef-ddc69749a8a8",
+        "relationship--72e0dd03-d994-4a38-97a8-dab5ae456cbc",
+        "relationship--75f7d0e0-b1e9-4289-8895-d8a262930523",
+        "relationship--75fcbeab-4f32-4e6d-a02a-9d5509fd4c4f",
+        "relationship--77bd9ea1-9401-4128-a78a-bd28d43a6c99",
+        "relationship--7d047513-5fbf-4d9e-8a5d-54317123e34c",
+        "relationship--8ca14a24-b8b3-4669-ae56-e7102b543dc6",
+        "relationship--8f5db833-979f-43c1-a28c-8a9ef3bb7980",
+        "relationship--938fe8be-be14-41a6-9db5-238866bb77ea",
+        "relationship--95747003-2c4a-4e4a-ad9d-fde75f04f406",
+        "relationship--9c089e25-2028-4afb-9f05-b28d5055f444",
+        "relationship--b3981ca6-7ef0-4625-99a8-9cbec731bac9",
+        "relationship--bc5b2681-d0e9-4ef5-9a90-56358ea34d96",
+        "relationship--bc85f8f4-5d65-484c-af82-6adbe42083d9",
+        "relationship--c08d8f49-5cca-4463-81db-bb80cc9a7af6",
+        "relationship--d39e3775-9221-4020-b826-edc111e36c7c",
+        "relationship--f54cba45-e641-49e0-b015-b5f6f8a05002",
+        "relationship--fb243cd7-7dec-4836-a341-c9e30c0099ee"
+    ],
+    "graph_nodes": [
+        {
+            "count": 23,
+            "id": 0,
+            "texts": [
+                "Turla",
+                "JPIN",
+                "Sys10",
+                "Tonto Team",
+                "POWRUNER",
+                "threat actors",
+                "HEXANE",
+                "threat actors",
+                "QakBot",
+                "Cobalt Strike",
+                "Kazuar",
+                "admin@338 actors",
+                "Emissary",
+                "Flagpro",
+                "threat actors",
+                "Chimera",
+                "Caterpillar WebShell",
+                "Helminth",
+                "OSInfo",
+                "Epic",
+                "OilRig",
+                "FlawedAmmyy",
+                "Kwampirs"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 34,
+            "id": 1,
+            "texts": [
+                "net localgroup Administrators",
+                "net localgroup",
+                "BloodHound",
+                "SILENTTRINITY",
+                "ShowLocalGroupDetails command",
+                "net localgroup administrators",
+                "commands",
+                "command",
+                "net localgroup \"adminstrator\" ",
+                "net localgroup",
+                "command net localgroup administrators",
+                "net localgroup",
+                "net localgroup",
+                "net group",
+                "Commands",
+                "net localgroup",
+                "Net",
+                "PoshC2",
+                "modules",
+                "Get-LocAdm",
+                "command",
+                "LOWBALL malware",
+                "capability",
+                "command net localgroup administrators",
+                "net localgroup administrators command",
+                "net group command",
+                "advanced reconnaissance",
+                "net localgroup administrators",
+                "net localgroup administrators",
+                "net localgroup administrators",
+                "initial infection",
+                "commands",
+                "net localgroup users",
+                "net localgroup administrators"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 25,
+            "id": 2,
+            "texts": [
+                "group information",
+                "members",
+                "permissions",
+                "group name",
+                "information",
+                "local groups",
+                "members",
+                "local groups",
+                "members",
+                "administrator, user, and guest accounts",
+                "local group information",
+                "accounts",
+                "local administrator rights",
+                "information",
+                "information",
+                "local groups",
+                "members",
+                "accounts",
+                "local administrative rights",
+                "users",
+                "information",
+                "local group names",
+                "accounts",
+                "privilege level",
+                "users"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 21,
+            "id": 3,
+            "texts": [
+                "local administrators group",
+                "victim user",
+                "logged-in user",
+                "local groups",
+                "members",
+                "local groups",
+                "members",
+                "victim",
+                "local groups",
+                "administrators",
+                "local group",
+                "local groups",
+                "permission groups",
+                "local groups",
+                "members",
+                "local groups",
+                "local groups",
+                "local administrators group",
+                "local administrators",
+                "victim",
+                "local users and administrators groups"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "C2"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 7,
+            "id": 5,
+            "texts": [
+                "compromised host",
+                "system",
+                "machine",
+                "targeted system",
+                "system",
+                "compromised environments",
+                "compromised systems"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 5,
+            "id": 6,
+            "texts": [
+                "part",
+                "groups",
+                "net localgroup administrator >> %temp%\\download",
+                "part",
+                "Volt Typhoon"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 1,
+            "id": 7,
+            "texts": [
+                "exploitation"
+            ],
+            "label": "VULNERABILITY"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 15
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 11
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 7
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 3
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 3
+        },
+        {
+            "id": "2_5",
+            "source": 2,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 7
+        },
+        {
+            "id": "0_6",
+            "source": 0,
+            "dest": 6,
+            "count": 3
+        },
+        {
+            "id": "6_3",
+            "source": 6,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "3_5",
+            "source": 3,
+            "dest": 5,
+            "count": 3
+        },
+        {
+            "id": "1_6",
+            "source": 1,
+            "dest": 6,
+            "count": 2
+        },
+        {
+            "id": "0_7",
+            "source": 0,
+            "dest": 7,
+            "count": 1
+        },
+        {
+            "id": "1_7",
+            "source": 1,
+            "dest": 7,
+            "count": 1
+        },
+        {
+            "id": "7_5",
+            "source": 7,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "5_1",
+            "source": 5,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 2
+        },
+        {
+            "id": "6_1",
+            "source": 6,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "6_5",
+            "source": 6,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "6_2",
+            "source": 6,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 3
+        }
+    ],
+    "verbs": {
+        "use": 11,
+        "enumerate": 5,
+        "of": 8,
+        "obtain": 3,
+        "collect": 4,
+        "to": 2,
+        "about": 2,
+        "identify": 3,
+        "on": 6,
+        "run": 3,
+        "with": 5,
+        "list": 5,
+        "in": 3,
+        "gather": 3,
+        "manipulate": 1,
+        "contain": 1,
+        "follow": 2,
+        "have": 1,
+        "execute": 2,
+        "as": 2,
+        "from": 2,
+        "check": 1,
+        "find": 1,
+        "during": 1,
+        "belong to": 1
+    }
+}

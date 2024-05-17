@@ -1,0 +1,354 @@
+{
+    "id": "T1003.002",
+    "tech_id": "T1003.002",
+    "tech_name": "Security Account Manager",
+    "best_phrases": [],
+    "tactics": [
+        "TA0006"
+    ],
+    "features": [
+        "DATA",
+        "FUNCTION",
+        "REGISTRY",
+        "COMPONENT",
+        "NETWORK",
+        "USER"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--099cdf98-eece-47a5-821f-f29b866699d6",
+        "relationship--108a1655-faba-4016-a276-c224665cb5c4",
+        "relationship--1a28a0a2-8e2f-4c42-b6b0-0ffe3d821528",
+        "relationship--20785dd8-7692-4dcd-81ee-06bc9faa001c",
+        "relationship--35e6542c-b796-478b-b42d-d5b4ddf511d5",
+        "relationship--427594ef-614a-4e8e-a6ac-abccc0645ada",
+        "relationship--4fd8f00b-2524-4c93-b49d-2f43cbe4aa5b",
+        "relationship--57a1f1a8-f1c0-4b7c-b5b4-f283a278833c",
+        "relationship--63759a0f-39e8-4d94-ab20-3bdba67ca502",
+        "relationship--644d2862-2836-41dd-ba3f-05e23278a5e6",
+        "relationship--6c7c4191-2d75-4ce8-b937-b9abb77d7b5b",
+        "relationship--791d8691-7e06-4052-8c49-1a9f57ccf09d",
+        "relationship--7f04a14f-ab65-4ad5-9d67-a4b509ba8087",
+        "relationship--852009ed-1b50-4b08-9e77-53f0271d995c",
+        "relationship--9066dcee-7c80-429c-a5cc-77458e891349",
+        "relationship--932fa199-f4c0-4c39-bb30-a412607ee299",
+        "relationship--a829622f-60cf-4e24-afce-fb89270e95cb",
+        "relationship--ac72c3da-6b58-4f66-8476-8d3cc9ccf6bd",
+        "relationship--b39c536a-55f1-485a-8235-24acb39d0be6",
+        "relationship--b69fa422-d118-4d30-948b-422e737b1116",
+        "relationship--b8133b35-52b8-4407-9845-a00b6a739cdc",
+        "relationship--c96e7dda-d05c-458a-8332-9e7851bb4775",
+        "relationship--d01869cb-74bb-4ad9-ac5e-9c7706f323d1",
+        "relationship--dc7e8f00-d57c-4cfd-971c-510ede375c2f",
+        "relationship--e4030866-a970-4af5-9d50-b33c7751a8ba",
+        "relationship--f1d5a985-406e-4b03-9f55-2706a2adba92"
+    ],
+    "graph_nodes": [
+        {
+            "count": 31,
+            "id": 0,
+            "texts": [
+                "CrackMapExec",
+                "gsecdump",
+                "reg commands",
+                "reg save command",
+                "Koadic",
+                "reg.exe binary",
+                "credential harvesting",
+                "pwdump",
+                "SecretsDump",
+                "gsecdump",
+                "capability",
+                "gsecdump",
+                "Mimikatz",
+                "credential dumping",
+                "functionality",
+                "pentesting tools",
+                "secretsdump.py",
+                "wmiexec.vbs",
+                "Password stealer and NTLM stealer modules",
+                "CozyCar",
+                "WindowsNTLM user authentication",
+                "gsecdump",
+                "domain controllers",
+                "capability",
+                "SecretsDump and Mimikatz modules",
+                "Impacket",
+                "credential dumping",
+                "custom tool",
+                "commands",
+                "Credential Dumper module",
+                "Fgdump"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 35,
+            "id": 1,
+            "texts": [
+                "usernames",
+                "hashed passwords",
+                "Windows password hashes",
+                "password hashes",
+                "hashed passwords",
+                "password hashes",
+                "credentials",
+                "password hashes",
+                "credentials",
+                "credentials",
+                "passwords",
+                "account hashes",
+                "account and password information",
+                "access",
+                "enterprise network resources",
+                "systems",
+                "information",
+                "credentials",
+                "SAM table",
+                "ways",
+                "modified version",
+                "credentials",
+                "credentials",
+                "stored credentials",
+                "credentials",
+                "credentials",
+                "NTLM password information",
+                "account and password information",
+                "OS credentials",
+                "password hashes",
+                "credentials",
+                "Windows account hashes",
+                "hashed passwords",
+                "encrypted password hashes",
+                "Windows password hashes"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 19,
+            "id": 2,
+            "texts": [
+                "SAM",
+                "SAM",
+                "hives",
+                "SAM hive",
+                "Windows Registry",
+                "reg save command",
+                "registry hives",
+                "SAM/SECURITY hive",
+                "SAM and SYSTEM registry hives",
+                "SAM and SYSTEM Registry hives",
+                "SAM",
+                "reg save HKLM\\\\SAM sam.hiv",
+                "reg save HKLM\\\\SYSTEM system.hiv",
+                "reg save HKLM\\\\SECURITY security.hiv",
+                "SAM, SYSTEM and SECURITY hives",
+                "SAM/SECURITY registry hives",
+                "HKLM\\SAM\\SAM\\Domains\\Account\\Users\\*\\V",
+                "HKLM\\SAM\\SAM\\Domains\\Account\\F",
+                "SAM registry keys"
+            ],
+            "label": "REGISTRY"
+        },
+        {
+            "count": 17,
+            "id": 3,
+            "texts": [
+                "GALLIUM",
+                "APT29",
+                "APT41",
+                "Dragonfly",
+                "Ke3chang",
+                "HOPLIGHT",
+                "threat actors",
+                "Remsec",
+                "menuPass",
+                "Threat Group-3390 actors",
+                "Mivast",
+                "threat actors",
+                "POWERTON",
+                "Wizard Spider",
+                "CosmicDuke",
+                "Cobalt Strike",
+                "IceApple"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 4,
+            "id": 4,
+            "texts": [
+                "FIN13",
+                "SAM table",
+                "ways",
+                "part"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 3,
+            "id": 5,
+            "texts": [
+                "compromised machine",
+                "enterprise network resources",
+                "systems"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 2,
+            "id": 6,
+            "texts": [
+                "SAM database",
+                "SAM database"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 1,
+            "id": 7,
+            "texts": [
+                "victim"
+            ],
+            "label": "USER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 12
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 4
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 5
+        },
+        {
+            "id": "3_0",
+            "source": 3,
+            "dest": 0,
+            "count": 10
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 7
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 13
+        },
+        {
+            "id": "4_2",
+            "source": 4,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "4_0",
+            "source": 4,
+            "dest": 0,
+            "count": 2
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 2
+        },
+        {
+            "id": "2_0",
+            "source": 2,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 4
+        },
+        {
+            "id": "1_6",
+            "source": 1,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "3_6",
+            "source": 3,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "0_7",
+            "source": 0,
+            "dest": 7,
+            "count": 1
+        },
+        {
+            "id": "1_7",
+            "source": 1,
+            "dest": 7,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "dump": 17,
+        "from": 16,
+        "use": 10,
+        "obtain": 4,
+        "save": 1,
+        "gather": 2,
+        "extract": 1,
+        "copy": 1,
+        "for": 1,
+        "execute": 1,
+        "have": 2,
+        "harvest": 2,
+        "perform": 2,
+        "contain": 1,
+        "gain": 1,
+        "to": 1,
+        "acquire": 2,
+        "about": 1,
+        "in": 2,
+        "of": 4,
+        "as": 1,
+        "within": 1,
+        "collect": 1,
+        "recover": 1
+    }
+}

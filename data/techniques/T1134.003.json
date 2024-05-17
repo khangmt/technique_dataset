@@ -1,0 +1,100 @@
+{
+    "id": "T1134.003",
+    "tech_id": "T1134.003",
+    "tech_name": "Make and Impersonate Token",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005",
+        "TA0004"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "USER"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--1703b260-35ef-466a-bec7-d17d6c6cf987",
+        "relationship--76b2e00d-78bb-4aea-a787-46289b8540ef",
+        "relationship--dd900d1e-ef80-4e35-9cf3-53653babf346"
+    ],
+    "graph_nodes": [
+        {
+            "count": 2,
+            "id": 0,
+            "texts": [
+                "Mafalda",
+                "Cobalt Strike"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 3,
+            "id": 1,
+            "texts": [
+                "token",
+                "tokens",
+                "credentials"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 2,
+            "texts": [
+                "user"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 3,
+            "id": 3,
+            "texts": [
+                "FIN13",
+                "tools",
+                "Incognito V2"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 4,
+            "id": 4,
+            "texts": [
+                "tools",
+                "Incognito V2",
+                "token manipulation",
+                "impersonation"
+            ],
+            "label": "FUNCTION"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 3
+        }
+    ],
+    "verbs": {
+        "create": 1,
+        "for": 3,
+        "utilize": 1,
+        "make": 1,
+        "from": 2
+    }
+}

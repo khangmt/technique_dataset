@@ -1,0 +1,87 @@
+{
+    "id": "T1574.013",
+    "tech_id": "T1574.013",
+    "tech_name": "KernelCallbackTable",
+    "best_phrases": [
+        "kernelcallbacktable",
+        "KernelCallbackTable"
+    ],
+    "tactics": [
+        "TA0003",
+        "TA0004",
+        "TA0005"
+    ],
+    "features": [
+        "FUNCTION"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--c0337d13-da6a-4e2b-91a4-a389c6b4ee28",
+        "relationship--fa5b5933-f9e3-4bbb-b734-f1c5984ded97"
+    ],
+    "graph_nodes": [
+        {
+            "count": 2,
+            "id": 0,
+            "texts": [
+                "Lazarus Group",
+                "FinFisher"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 8,
+            "id": 1,
+            "texts": [
+                "KernelCallbackTable",
+                "process control flow",
+                "shellcode",
+                "KernelCallbackTable",
+                "execution flow",
+                "__fnDWORD function",
+                "process",
+                "created Asynchronous Procedure Call stub routine"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 2,
+            "texts": [
+                "address"
+            ],
+            "label": "OTHER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 6
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "abuse": 1,
+        "hijack": 2,
+        "execute": 1,
+        "use": 1,
+        "replace": 1,
+        "of": 2,
+        "with": 1
+    }
+}

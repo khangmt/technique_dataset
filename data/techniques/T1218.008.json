@@ -1,0 +1,86 @@
+{
+    "id": "T1218.008",
+    "tech_id": "T1218.008",
+    "tech_name": "Odbcconf",
+    "best_phrases": [
+        "Odbcconf",
+        "odbcconf",
+        "odbcconf.exe"
+    ],
+    "tactics": [
+        "TA0005"
+    ],
+    "features": [
+        "FUNCTION",
+        "REGISTRY",
+        "COMPONENT"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--1d10495f-64e6-43d9-85cd-4d74a8acdf7c",
+        "relationship--463dc38c-7b05-4ddf-aa27-cce8afef9171"
+    ],
+    "graph_nodes": [
+        {
+            "count": 2,
+            "id": 0,
+            "texts": [
+                "Cobalt Group",
+                "Bumblebee"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 2,
+            "id": 1,
+            "texts": [
+                "odbcconf",
+                "odbcconf.exe"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 2,
+            "texts": [
+                "DLLs"
+            ],
+            "label": "REGISTRY"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "targeted hosts"
+            ],
+            "label": "COMPONENT"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 2,
+        "run": 1,
+        "on": 1
+    }
+}

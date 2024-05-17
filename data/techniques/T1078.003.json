@@ -1,0 +1,234 @@
+{
+    "id": "T1078.003",
+    "tech_id": "T1078.003",
+    "tech_name": "Local Accounts",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005",
+        "TA0003",
+        "TA0004",
+        "TA0001"
+    ],
+    "features": [
+        "DATA",
+        "FUNCTION",
+        "NETWORK",
+        "COMPONENT",
+        "USER"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows",
+        "Containers",
+        "Network"
+    ],
+    "procedures": [
+        "relationship--184bf796-4f6d-4d0e-921e-08eb3023b97e",
+        "relationship--30930d8a-3c0d-41b2-a226-cccc56599bfd",
+        "relationship--3a2883ee-60fb-4123-9d82-9ade53f4b43b",
+        "relationship--56e4bdb5-a57a-463a-a396-7bed2eb6893e",
+        "relationship--5e56eeb2-9ca5-496d-9348-8e337af5f0d8",
+        "relationship--70bc1a16-3c57-4198-b2f9-c7f27bec271c",
+        "relationship--95122d43-9de8-4eef-bc46-6fdc5cc276a9",
+        "relationship--996765a6-6c8a-429d-baa5-32d423fb4207",
+        "relationship--bb886759-3494-4834-9765-2f0c12e0b391",
+        "relationship--e21a2fb4-1ba6-41dc-9278-72f6824382d8",
+        "relationship--f0b6fe64-e138-42c9-9cc7-896467dc26f8",
+        "relationship--f2064ee3-66e3-4856-a376-e34b2ec9f90f",
+        "relationship--f4268a0d-0539-46de-bad8-ea72af455585"
+    ],
+    "graph_nodes": [
+        {
+            "count": 13,
+            "id": 0,
+            "texts": [
+                "Kimsuky",
+                "Emotet",
+                "Cobalt Strike",
+                "PROMETHIUM",
+                "FIN10",
+                "APT32",
+                "Tropic Trooper",
+                "HAFNIUM",
+                "APT29",
+                "NotPetya",
+                "Umbreon",
+                "threat actors",
+                "Turla"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 8,
+            "id": 1,
+            "texts": [
+                "tool",
+                "GREASE",
+                "commands",
+                "processes",
+                "backdoor",
+                "wmic",
+                "PsExec",
+                "intrusion"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 19,
+            "id": 2,
+            "texts": [
+                "Windows admin account",
+                "continued access",
+                "local admin password",
+                "credentials",
+                "local user account",
+                "admin accounts",
+                "Local Administrator account",
+                "legitimate local admin account credentials",
+                "administrator account credentials",
+                "NTAuthority\\SYSTEM account",
+                "files",
+                "compromised local accounts",
+                "valid credentials",
+                "valid local users",
+                "access",
+                "local account credentials",
+                "privilege",
+                "local accounts",
+                "password"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 4,
+            "id": 3,
+            "texts": [
+                "RDP",
+                "Exchange servers",
+                "networks",
+                "network"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 3,
+            "id": 4,
+            "texts": [
+                "compromised host",
+                "remote systems",
+                "system"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 2,
+            "id": 5,
+            "texts": [
+                "victims",
+                "victim"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 1,
+            "id": 6,
+            "texts": [
+                "itself"
+            ],
+            "label": "OTHER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 4
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 16
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 3
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "3_5",
+            "source": 3,
+            "dest": 5,
+            "count": 2
+        },
+        {
+            "id": "0_6",
+            "source": 0,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "6_4",
+            "source": 6,
+            "dest": 4,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 9,
+        "add": 1,
+        "allow": 1,
+        "by": 1,
+        "bruteforce": 1,
+        "run": 1,
+        "spawn": 1,
+        "as": 1,
+        "create": 3,
+        "on": 3,
+        "execute": 1,
+        "access": 1,
+        "of": 2,
+        "spread": 1,
+        "with": 1,
+        "to": 2,
+        "provide": 1,
+        "escalate": 1,
+        "find during": 1,
+        "abuse": 1,
+        "have": 1,
+        "across": 1
+    }
+}

@@ -1,0 +1,160 @@
+{
+    "id": "T1569.001",
+    "tech_id": "T1569.001",
+    "tech_name": "Launchctl",
+    "best_phrases": [
+        "launchctl command",
+        "launchctl",
+        "launchctl load -w command",
+        "Launchctl"
+    ],
+    "tactics": [
+        "TA0002"
+    ],
+    "features": [
+        "FUNCTION",
+        "DIRECTORY",
+        "DATA",
+        "COMPONENT",
+        "USER"
+    ],
+    "locations": [
+        "macOS"
+    ],
+    "procedures": [
+        "relationship--131d75f1-84c3-4ef8-b858-7f74aa7ce157",
+        "relationship--3eb174df-6b12-484e-89c1-fce208e6cdfd",
+        "relationship--b164ac03-0d0b-494b-b433-7df173308019",
+        "relationship--b502aff3-128e-4715-a8bc-7b7b8fa0be74",
+        "relationship--bb371ea5-33c4-42e7-bcb0-3374240da553"
+    ],
+    "graph_nodes": [
+        {
+            "count": 5,
+            "id": 0,
+            "texts": [
+                "LoudMiner",
+                "AppleJeus",
+                "macOS.OSAMiner",
+                "XCSSET",
+                "Calisto"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 11,
+            "id": 1,
+            "texts": [
+                "QEMU services",
+                "launchctl",
+                "launchctl",
+                "LaunchDaemons",
+                "launchctl command",
+                "launchctl",
+                "Launch Agent",
+                "system level launchdaemon",
+                "launchctl load -w command",
+                "launchctl",
+                "screen sharing"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 2,
+            "id": 2,
+            "texts": [
+                "/Library/LaunchDaemons/ folder",
+                "/System/Librarby/LaunchDaemons/ssh.plist"
+            ],
+            "label": "DIRECTORY"
+        },
+        {
+            "count": 2,
+            "id": 3,
+            "texts": [
+                "newer version",
+                "plist file"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "machine"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "victim"
+            ],
+            "label": "USER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 9
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "3_0",
+            "source": 3,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "4_5",
+            "source": 4,
+            "dest": 5,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "launch": 1,
+        "in": 2,
+        "use": 6,
+        "unload": 1,
+        "update": 1,
+        "of": 2,
+        "load": 2,
+        "restart": 1,
+        "from": 1,
+        "enable": 1,
+        "on": 1
+    }
+}

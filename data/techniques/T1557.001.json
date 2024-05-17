@@ -1,0 +1,159 @@
+{
+    "id": "T1557.001",
+    "tech_id": "T1557.001",
+    "tech_name": "LLMNR/NBT-NS Poisoning and SMB Relay",
+    "best_phrases": [],
+    "tactics": [
+        "TA0006",
+        "TA0009"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "COMPONENT",
+        "NETWORK"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--0318431e-ad44-44c7-97be-686d4efe79f4",
+        "relationship--0537c342-77af-4626-bbe3-9360798a30d5",
+        "relationship--13f5f3ac-e16b-4b7a-8b6d-6eaf129231e7",
+        "relationship--670a7586-5833-4e00-903a-c699b9810c13",
+        "relationship--9bd4212c-2e17-41e2-9ff3-1448642ce958",
+        "relationship--a9bbbd0f-3f45-4efa-9e6b-56ed2c9b9126",
+        "relationship--aef7fe44-f381-41d5-88af-f04135e3aeab"
+    ],
+    "graph_nodes": [
+        {
+            "count": 26,
+            "id": 0,
+            "texts": [
+                "smbrelayx",
+                "Impacket modules",
+                "ntlmrelayx",
+                "Network Sniffing",
+                "relay attacks",
+                "Brute Force",
+                "Empire",
+                "Inveigh",
+                "name service poisoning",
+                "credential theft",
+                "associated relay attacks",
+                "PoshC2",
+                "Inveigh",
+                "name service poisoning",
+                "credential theft",
+                "associated relay attacks",
+                "Responder",
+                "command",
+                "[Responder file path] -i [IP address] -rPv",
+                "Invoke-Inveigh PowerShell cmdlets",
+                "name service poisoning",
+                "Pupy",
+                "NBNS Spoofing",
+                "name services",
+                "Responder",
+                "name services"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 5,
+            "id": 1,
+            "texts": [
+                "NetNTLM credentials",
+                "credentials",
+                "plaintext network credentials",
+                "hashes",
+                "credentials"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 2,
+            "id": 2,
+            "texts": [
+                "Lazarus Group",
+                "Wizard Spider"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 2,
+            "id": 3,
+            "texts": [
+                "compromised host",
+                "systems"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "local network"
+            ],
+            "label": "NETWORK"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "2_0",
+            "source": 2,
+            "dest": 0,
+            "count": 5
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "with": 1,
+        "gather": 2,
+        "for": 5,
+        "use": 6,
+        "conduct": 2,
+        "execute": 1,
+        "harvest": 1,
+        "on": 1,
+        "sniff": 1,
+        "poison": 2,
+        "from": 1,
+        "within": 1
+    }
+}

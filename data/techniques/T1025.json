@@ -1,0 +1,304 @@
+{
+    "id": "T1025",
+    "tech_id": "T1025",
+    "tech_name": "Data from Removable Media",
+    "best_phrases": [],
+    "tactics": [
+        "TA0009"
+    ],
+    "features": [
+        "DATA",
+        "COMPONENT",
+        "FUNCTION",
+        "USER",
+        "DIRECTORY",
+        "NETWORK"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--00ae99d1-db02-4007-8669-04d7fc4c1390",
+        "relationship--077beadb-aa94-45bd-8875-d917fcd7f6b7",
+        "relationship--2995ea85-ccdb-4378-bc35-3c62ccf5fa9d",
+        "relationship--50b2e4e3-8740-463b-87fc-e96c4b62fbe5",
+        "relationship--565da748-a5c8-417c-8c55-828c6e9f2c35",
+        "relationship--6d87588e-2202-4616-a536-e43a2606721b",
+        "relationship--788e8246-d835-42c6-b8b4-7efad31e4a84",
+        "relationship--78e8d9e6-48b7-473f-af94-43f626de7931",
+        "relationship--8e7ff07b-7a32-4ced-ac22-b523586dbde3",
+        "relationship--93fc3086-d2c0-4b4d-8a69-278f15176739",
+        "relationship--96e928af-dbfc-4743-a1dc-353904e21fd3",
+        "relationship--97cfa5ec-e6b6-40cc-b73c-283f4a5d8ded",
+        "relationship--9ab576ed-2ba0-4fc5-87fc-2011a7cd183d",
+        "relationship--9cba53fd-9b5c-4dc3-b933-c167b1d62a03",
+        "relationship--ab3599ae-66cd-49c2-bfa7-cbec9af6e271",
+        "relationship--ad2efb21-6884-422f-8e89-fc0b1d2dcbb0",
+        "relationship--cad9bdcc-41b3-44e2-98d2-fb07fe268838",
+        "relationship--e30a790b-8f09-4bdc-8116-275d00880333",
+        "relationship--e465cb38-ba50-4d2d-b2cd-659742815317",
+        "relationship--e6e4cb23-3c58-41d8-9583-9e10bff2b1d0",
+        "relationship--f86c19e6-39a1-423c-8db2-a8258ac51bd6",
+        "relationship--ff61ebde-befe-488a-89d0-dc4c49e60d59"
+    ],
+    "graph_nodes": [
+        {
+            "count": 11,
+            "id": 0,
+            "texts": [
+                "USBStealer",
+                ".exe files",
+                "Gamaredon Group file stealer",
+                "capability",
+                "APT28 backdoor",
+                "package",
+                "module",
+                "module",
+                "Turla RPC backdoors",
+                "SPACESHIP",
+                "FunnyDream FilePakMonitor component"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 37,
+            "id": 1,
+            "texts": [
+                "data",
+                "jpeg files",
+                "data",
+                "files",
+                "extension list",
+                "files",
+                "list",
+                "file extensions",
+                "data",
+                "connected logical volumes",
+                "entire contents",
+                "documents",
+                "files",
+                "extensions",
+                "documents",
+                "extensions",
+                "files",
+                "given extension list",
+                "data",
+                "files",
+                "data",
+                "files",
+                "files",
+                "written CD images",
+                "interest",
+                "files",
+                "default or customized set",
+                "file extensions",
+                "default file types",
+                "data",
+                "data",
+                "files",
+                "data",
+                "user files",
+                "keywords",
+                "file extensions",
+                "list"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 27,
+            "id": 2,
+            "texts": [
+                "removable media device",
+                "connected MTP devices",
+                "USB devices",
+                "USB drive",
+                "USB drive",
+                "system",
+                "attached removable drives",
+                "USB drives",
+                "system",
+                "inserted USB device",
+                "inserted USB sticks",
+                "USB devices",
+                "fixed drives",
+                "removable media",
+                "USB",
+                "removable drives",
+                "removable drives",
+                "fixed and removable drives",
+                "removable devices",
+                "USB thumb drives",
+                "connected removable drives",
+                "staging area",
+                "removable media",
+                "removable media devices",
+                "removable devices",
+                "removable media",
+                "removable media"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "second victim"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 3,
+            "id": 4,
+            "texts": [
+                "that",
+                "that",
+                "that"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 18,
+            "id": 5,
+            "texts": [
+                "InvisiMole",
+                "Aria-body",
+                "Explosive",
+                "GravityRAT",
+                "Rover",
+                "Remsec",
+                "BADNEWS",
+                "Prikormka",
+                "Crutch",
+                "Crimson",
+                "Machete",
+                "ObliqueRAT",
+                "TajMahal",
+                "FLASHFLOOD",
+                "AppleSeed",
+                "Ramsay",
+                "attacker",
+                "CosmicDuke"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 1,
+            "id": 6,
+            "texts": [
+                "directory"
+            ],
+            "label": "DIRECTORY"
+        },
+        {
+            "count": 1,
+            "id": 7,
+            "texts": [
+                "endpoint"
+            ],
+            "label": "NETWORK"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 9
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 4
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 19
+        },
+        {
+            "id": "4_3",
+            "source": 4,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "5_1",
+            "source": 5,
+            "dest": 1,
+            "count": 17
+        },
+        {
+            "id": "5_2",
+            "source": 5,
+            "dest": 2,
+            "count": 12
+        },
+        {
+            "id": "5_0",
+            "source": 5,
+            "dest": 0,
+            "count": 4
+        },
+        {
+            "id": "4_2",
+            "source": 4,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "5_6",
+            "source": 5,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "1_6",
+            "source": 1,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "2_7",
+            "source": 2,
+            "dest": 7,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "collect": 11,
+        "from": 32,
+        "scan": 1,
+        "locate in": 1,
+        "steal": 4,
+        "base": 2,
+        "to": 5,
+        "for": 2,
+        "on": 3,
+        "of": 4,
+        "have": 2,
+        "copy": 3,
+        "with": 4,
+        "contain": 2,
+        "connect": 1,
+        "monitor": 1,
+        "exfiltrate": 1,
+        "match": 2,
+        "upload": 1,
+        "extract": 1,
+        "connect to": 1,
+        "search": 1,
+        "include": 1,
+        "copy to": 1,
+        "stage": 1
+    }
+}

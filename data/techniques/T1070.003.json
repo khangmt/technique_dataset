@@ -1,0 +1,174 @@
+{
+    "id": "T1070.003",
+    "tech_id": "T1070.003",
+    "tech_name": "Clear Command History",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005"
+    ],
+    "features": [
+        "DATA",
+        "FUNCTION",
+        "NETWORK",
+        "COMPONENT"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows",
+        "Network"
+    ],
+    "procedures": [
+        "relationship--52068869-8ef9-4c84-913c-0c171ba9c30f",
+        "relationship--738e9055-48af-4295-a2f5-4f7e135d1fb2",
+        "relationship--9bfac7bf-f5a7-4e43-99c6-fb1a86c0dbe3",
+        "relationship--a68fb27c-1aaf-474f-b97c-aff986eb5bbe",
+        "relationship--b5cd5028-8d4c-4564-921e-be3a34a5212d",
+        "relationship--d39e7197-a9b3-4915-8cf0-98bbbd885cd5",
+        "relationship--f8838a1f-3a62-40cc-98dd-55943091fcef"
+    ],
+    "graph_nodes": [
+        {
+            "count": 7,
+            "id": 0,
+            "texts": [
+                "TeamTNT",
+                "Kobalos",
+                "Hildegard",
+                "menuPass",
+                "Magic Hound",
+                "Lazarus Group",
+                "APT41"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 7,
+            "id": 1,
+            "texts": [
+                "command history",
+                "command history",
+                "script shell logs",
+                "PowerShell execution logs",
+                "log files",
+                "automatic log deletion",
+                "Bash histories"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 6,
+            "id": 2,
+            "texts": [
+                "history -c",
+                "history -c",
+                "Wevtutil",
+                "mailbox export requests",
+                "logrotate utility",
+                "activity"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "compromised hosts"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 2,
+            "id": 4,
+            "texts": [
+                "compromised Exchange servers",
+                "compromised router"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 5,
+            "id": 5,
+            "texts": [
+                "log files",
+                "automatic log deletion",
+                "use",
+                "evidence",
+                "some"
+            ],
+            "label": "OTHER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 6
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 4
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 2
+        },
+        {
+            "id": "5_4",
+            "source": 5,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "5_2",
+            "source": 5,
+            "dest": 2,
+            "count": 2
+        }
+    ],
+    "verbs": {
+        "clear": 2,
+        "with": 2,
+        "remove": 4,
+        "on": 2,
+        "use": 2,
+        "from": 2,
+        "delete": 2,
+        "of": 2
+    }
+}

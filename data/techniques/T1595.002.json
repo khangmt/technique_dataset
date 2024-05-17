@@ -1,0 +1,250 @@
+{
+    "id": "T1595.002",
+    "tech_id": "T1595.002",
+    "tech_name": "Vulnerability Scanning",
+    "best_phrases": [
+        "CVE-2021-27065",
+        "CVE-2021-44228",
+        "CVE-2021-26858",
+        "CVE-2018-13379",
+        "CVE-2021-26857",
+        "CVE-2021-26855"
+    ],
+    "tactics": [
+        "TA0043"
+    ],
+    "features": [
+        "VULNERABILITY",
+        "FUNCTION",
+        "NETWORK",
+        "DATA",
+        "COMPONENT",
+        "USER"
+    ],
+    "locations": [
+        "PRE"
+    ],
+    "procedures": [
+        "relationship--105a37da-145b-4143-8641-566350cd143c",
+        "relationship--1637c874-852e-4ab9-b6e0-2c855da74ef0",
+        "relationship--52c980ba-459b-4d3e-a0a8-f0ba3d2b6e3a",
+        "relationship--54b73912-002f-43ca-b8a2-7439aff45aab",
+        "relationship--6dca82b3-7a95-4fcd-862e-6337eea49306",
+        "relationship--9bc0b5e1-d9be-4303-b396-df990c664c4b",
+        "relationship--bcd8dfe5-6f81-406c-a06a-7aa83db91a5e",
+        "relationship--c5d4cfac-aa9a-4dfb-a991-e81f70a937e2",
+        "relationship--e0e8cd30-04d6-457c-b4c1-34145f182dad"
+    ],
+    "graph_nodes": [
+        {
+            "count": 9,
+            "id": 0,
+            "texts": [
+                "Sandworm Team",
+                "Volatile Cedar",
+                "TeamTNT",
+                "APT28",
+                "Magic Hound",
+                "APT29",
+                "Aquatic Panda",
+                "Dragonfly",
+                "Earth Lusca"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 10,
+            "id": 1,
+            "texts": [
+                "network infrastructure",
+                "target server",
+                "IoT devices",
+                "related resources",
+                "Docker API",
+                "vulnerable servers",
+                "Fortinet FortiOS SSL VPNs",
+                "MS Exchange Servers",
+                "servers",
+                "public-facing servers"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 11,
+            "id": 2,
+            "texts": [
+                "vulnerabilities",
+                "vulnerabilities",
+                "CVE-2018-13379",
+                "CVE-2021-26855",
+                "CVE-2021-26857",
+                "CVE-2021-26858",
+                "CVE-2021-27065",
+                "CVE-2021-44228",
+                "Log4j and ProxyShell vulnerabilities",
+                "vulnerabilities",
+                "vulnerabilities"
+            ],
+            "label": "VULNERABILITY"
+        },
+        {
+            "count": 2,
+            "id": 3,
+            "texts": [
+                "part",
+                "on-premises"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 11,
+            "id": 4,
+            "texts": [
+                "vulnerability scans",
+                "IoT devices",
+                "related resources",
+                "Docker API",
+                "large-scale scans",
+                "attempt",
+                "widespread scanning",
+                "widespread scanning",
+                "exploit",
+                "accessible DNS logging services",
+                "vulnerable Citrix and Microsoft Exchange services"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 3,
+            "id": 5,
+            "texts": [
+                "IoT devices",
+                "related resources",
+                "Docker API"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 3,
+            "id": 6,
+            "texts": [
+                "public-facing systems",
+                "target environments",
+                "targeted systems"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 1,
+            "id": 7,
+            "texts": [
+                "targets"
+            ],
+            "label": "USER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 9
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 7
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 4
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "2_5",
+            "source": 2,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "0_6",
+            "source": 0,
+            "dest": 6,
+            "count": 2
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "4_6",
+            "source": 4,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "6_4",
+            "source": 6,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "1_7",
+            "source": 1,
+            "dest": 7,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "scan": 2,
+        "for": 7,
+        "as": 2,
+        "perform": 2,
+        "of": 3,
+        "in": 8,
+        "find": 1,
+        "conduct": 2,
+        "identify": 8,
+        "use": 1
+    }
+}

@@ -1,0 +1,259 @@
+{
+    "id": "T1491.001",
+    "tech_id": "T1491.001",
+    "tech_name": "Internal Defacement",
+    "best_phrases": [],
+    "tactics": [
+        "TA0040"
+    ],
+    "features": [
+        "COMPONENT",
+        "DATA",
+        "NETWORK",
+        "USER",
+        "FUNCTION",
+        "DIRECTORY",
+        "ENCRYPTION"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--09677a24-20ac-4983-a97f-f1b54282b609",
+        "relationship--314719c9-a946-4630-a09c-d416b48f4c21",
+        "relationship--5410e6d1-1ec5-4cb9-9647-378f2266f774",
+        "relationship--78c0b480-23c1-4de7-867e-d4e9ef4c8df6",
+        "relationship--79904c38-8fb6-45e3-98f7-98856e08421f",
+        "relationship--bec3259a-58d3-44a5-95c7-c8eb16427e85"
+    ],
+    "graph_nodes": [
+        {
+            "count": 5,
+            "id": 0,
+            "texts": [
+                "Gamaredon Group",
+                "Black Basta",
+                "Meteor",
+                "Lazarus Group",
+                "BlackCat"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 2,
+            "id": 1,
+            "texts": [
+                "taunting images",
+                "messages"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 11,
+            "id": 2,
+            "texts": [
+                "taunting images",
+                "messages",
+                "proof",
+                "system access",
+                "ransom note",
+                "background color",
+                "created bitmap image",
+                "text",
+                "desktop wallpaper",
+                "lock screen image",
+                "threatening image"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "desktops"
+            ],
+            "label": "DIRECTORY"
+        },
+        {
+            "count": 2,
+            "id": 4,
+            "texts": [
+                "victims",
+                "victims"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 12,
+            "id": 5,
+            "texts": [
+                "desktop wallpaper",
+                "machines",
+                "desktop background window",
+                "desktop wallpaper",
+                "desktop wallpaper",
+                "lock screen image",
+                "custom image",
+                "background wallpaper",
+                "system",
+                "systems",
+                "desktop wallpaper",
+                "compromised hosts"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 2,
+            "id": 6,
+            "texts": [
+                "Diavol",
+                "Disk Structure Wipe"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 7,
+            "texts": [
+                "encryption"
+            ],
+            "label": "ENCRYPTION"
+        },
+        {
+            "count": 2,
+            "id": 8,
+            "texts": [
+                "black",
+                "unbootable"
+            ],
+            "label": "OTHER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 5
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 8
+        },
+        {
+            "id": "5_4",
+            "source": 5,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "6_7",
+            "source": 6,
+            "dest": 7,
+            "count": 1
+        },
+        {
+            "id": "6_5",
+            "source": 6,
+            "dest": 5,
+            "count": 2
+        },
+        {
+            "id": "6_2",
+            "source": 6,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "6_8",
+            "source": 6,
+            "dest": 8,
+            "count": 1
+        },
+        {
+            "id": "2_8",
+            "source": 2,
+            "dest": 8,
+            "count": 1
+        },
+        {
+            "id": "5_2",
+            "source": 5,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "2_5",
+            "source": 2,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "0_8",
+            "source": 0,
+            "dest": 8,
+            "count": 1
+        },
+        {
+            "id": "5_6",
+            "source": 5,
+            "dest": 6,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "leave": 1,
+        "on": 6,
+        "as": 2,
+        "of": 4,
+        "set": 2,
+        "display": 1,
+        "after": 1,
+        "capture": 1,
+        "to": 6,
+        "change": 3,
+        "with": 4,
+        "replace": 1,
+        "render": 2
+    }
+}

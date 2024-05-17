@@ -1,0 +1,116 @@
+{
+    "id": "T1598",
+    "tech_id": "T1598",
+    "tech_name": "Phishing for Information",
+    "best_phrases": [],
+    "tactics": [
+        "TA0043"
+    ],
+    "features": [
+        "NETWORK",
+        "FUNCTION",
+        "DATA"
+    ],
+    "locations": [
+        "PRE"
+    ],
+    "procedures": [
+        "relationship--0697ae7e-2008-4674-a4ab-761fd5c15b4e",
+        "relationship--1023acea-b162-406d-a40d-201fc005d5ad",
+        "relationship--666e9638-d9d9-4480-a98c-dfa247e43bd2"
+    ],
+    "graph_nodes": [
+        {
+            "count": 1,
+            "id": 0,
+            "texts": [
+                "Scattered Spider"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 4,
+            "id": 1,
+            "texts": [
+                "credential phishing",
+                "social engineering",
+                "credential phishing e-mails",
+                "spearphishing"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 4,
+            "id": 2,
+            "texts": [
+                "credential phishing",
+                "social engineering",
+                "one-time-password (OTP) codes",
+                "presidential campaign staffers"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 2,
+            "id": 3,
+            "texts": [
+                "ZIRCONIUM",
+                "APT28"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "credentials"
+            ],
+            "label": "DATA"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 2,
+        "capture": 1,
+        "target": 1,
+        "with": 2,
+        "compromise": 1
+    }
+}

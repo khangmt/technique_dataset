@@ -1,0 +1,256 @@
+{
+    "id": "T1003.004",
+    "tech_id": "T1003.004",
+    "tech_name": "LSA Secrets",
+    "best_phrases": [],
+    "tactics": [
+        "TA0006"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "REGISTRY",
+        "COMPONENT"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--1eb79c3a-2cee-48ff-80b1-a5c3f571a3e8",
+        "relationship--21fa2533-b082-408b-857c-ad6d85a74238",
+        "relationship--2625dfe6-7c02-4df7-b98f-dbfedb2d104b",
+        "relationship--2d063a40-dbba-458f-897d-2b756a2591b1",
+        "relationship--2fff9b06-61f5-41f5-8cef-210485eaa8b2",
+        "relationship--36b9f594-9a27-4281-a18e-9a5e7df70ad9",
+        "relationship--65b58e05-916b-4840-b0a0-bb7fd8dc3f32",
+        "relationship--7644ad2b-1ee7-43f4-9b06-9928f6f9eb1a",
+        "relationship--8ffeeb33-0757-4b74-a4ae-504145bc473f",
+        "relationship--990e1dac-f103-47c0-91d8-a5238ffc6b99",
+        "relationship--bd9a6be1-903f-4a7b-a143-8c8d1da6cabc",
+        "relationship--c69ee5f4-161a-4d2b-bad4-cc7929596bd3",
+        "relationship--cd849a7c-f63a-4157-b4c9-9385115da08a",
+        "relationship--d101870c-304e-4597-a292-7d5e8c870f95",
+        "relationship--de1d9450-317d-42e1-af71-8f531408e5c6",
+        "relationship--e8a51a09-79b4-44d8-8f25-eb8c7c230da5",
+        "relationship--f3d30d20-ee51-4976-8611-5667df771567",
+        "relationship--f5e29f3a-99b1-4c45-952b-c238f72435ab"
+    ],
+    "graph_nodes": [
+        {
+            "count": 11,
+            "id": 0,
+            "texts": [
+                "MuddyWater",
+                "IceApple",
+                "CosmicDuke",
+                "Threat Group-3390 actors",
+                "OilRig",
+                "Leafminer",
+                "APT33",
+                "APT29",
+                "menuPass",
+                "Dragonfly",
+                "Ke3chang"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 32,
+            "id": 1,
+            "texts": [
+                "credential dumping",
+                "LaZagne",
+                "Credential Dumper module",
+                "gsecdump",
+                "LaZagne",
+                "credential dumping",
+                "gsecdump",
+                "domain controllers",
+                "LaZagne",
+                "credential dumping tools",
+                "CrackMapExec",
+                "tools",
+                "LaZagne",
+                "tools",
+                "LaZagne",
+                "reg save command",
+                "pentesting tools",
+                "secretsdump.py",
+                "wmiexec.vbs",
+                "SecretsDump",
+                "AADInternals",
+                "SecretsDump and Mimikatz modules",
+                "Impacket",
+                "credential dumping",
+                "Pupy",
+                "Lazagne",
+                "gsecdump",
+                "Mimikatz",
+                "credential dumping",
+                "functionality",
+                "LSA",
+                "ways"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 27,
+            "id": 2,
+            "texts": [
+                "LSA secrets",
+                "LSA secrets",
+                "LSA secrets",
+                "account and password information",
+                "LSA secrets",
+                "credentials",
+                "credentials",
+                "credentials",
+                "accounts",
+                "hashed passwords",
+                "LSA secrets",
+                "login and password information",
+                "credentials",
+                "LSA secrets",
+                "modified version",
+                "credentials",
+                "password hashes",
+                "secrets",
+                "account and password information",
+                "harvesting credentials",
+                "credentials",
+                "account and password information",
+                "access",
+                "enterprise network resources",
+                "systems",
+                "information",
+                "credentials"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 5,
+            "id": 3,
+            "texts": [
+                "HKLM\\SECURITY\\Policy\\Secrets\\*\\OldVal",
+                "HKLM\\SECURITY\\Policy\\PolEKList\\default",
+                "registry keys",
+                "HKLM\\SECURITY\\Policy\\Secrets\\*\\CurrVal",
+                "reg save command"
+            ],
+            "label": "REGISTRY"
+        },
+        {
+            "count": 5,
+            "id": 4,
+            "texts": [
+                "compromised system",
+                "targeted system",
+                "Local Security Authority",
+                "enterprise network resources",
+                "systems"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 2,
+            "id": 5,
+            "texts": [
+                "LSA",
+                "ways"
+            ],
+            "label": "OTHER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 9
+        },
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 13
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 10
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 5
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 4
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "2_5",
+            "source": 2,
+            "dest": 5,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "perform": 4,
+        "with": 2,
+        "of": 3,
+        "dump": 9,
+        "from": 9,
+        "collect": 1,
+        "obtain": 3,
+        "use": 8,
+        "steal": 1,
+        "to": 2,
+        "log into": 1,
+        "for": 3,
+        "retrieve": 1,
+        "gather": 1,
+        "extract": 1,
+        "execute": 1,
+        "within": 1,
+        "contain": 1,
+        "gain": 1,
+        "acquire": 1,
+        "about": 1,
+        "in": 1
+    }
+}

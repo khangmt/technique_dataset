@@ -1,0 +1,228 @@
+{
+    "id": "T1554",
+    "tech_id": "T1554",
+    "tech_name": "Compromise Client Software Binary",
+    "best_phrases": [],
+    "tactics": [
+        "TA0003"
+    ],
+    "features": [
+        "DATA",
+        "FUNCTION",
+        "COMPONENT",
+        "NETWORK",
+        "DIRECTORY"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--3f9b76e7-7902-44b1-b589-51f5657fff75",
+        "relationship--5c365b61-0c14-41aa-b82a-052eb977062b",
+        "relationship--68e017e5-ee14-4e33-9907-2537fbbdb117",
+        "relationship--7300af33-a55d-47a7-86a6-3b756abfc8e5",
+        "relationship--8d90820b-fd91-4452-aa91-50b783c2da38",
+        "relationship--bc40c6be-575a-4eb9-981f-fa6c127d2286",
+        "relationship--e2e10525-62f5-42ba-a923-ed29cfb4040e",
+        "relationship--e51f5310-3508-4a79-8f3e-3a02f5d685e8"
+    ],
+    "graph_nodes": [
+        {
+            "count": 8,
+            "id": 0,
+            "texts": [
+                "Industroyer",
+                "Kobalos",
+                "Bonadan",
+                "Kessel",
+                "ThiefQuest",
+                "Ebury",
+                "XCSSET",
+                "Sandworm Team"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 13,
+            "id": 1,
+            "texts": [
+                "version",
+                "credentials",
+                "executable files",
+                "copy",
+                "file",
+                "hidden file",
+                "hidden file",
+                "appearance",
+                "file",
+                "persistent access",
+                "SSH credential information",
+                "credentials",
+                "version"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 11,
+            "id": 2,
+            "texts": [
+                "backdoor persistence mechanism",
+                "Windows Notepad application",
+                "OpenSSH binary",
+                "backdoor",
+                "executable",
+                "target executable",
+                "normal behavior",
+                "modified OpenSSH binaries",
+                "browser application",
+                "modules",
+                "Industroyer"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 3,
+            "id": 3,
+            "texts": [
+                "SSH client",
+                "SSH client",
+                "web traffic"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 4,
+            "id": 4,
+            "texts": [
+                "compromised systems",
+                "targeted systems",
+                "legitimate browser",
+                "Windows Notepad"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "/Users/ folder"
+            ],
+            "label": "DIRECTORY"
+        },
+        {
+            "count": 2,
+            "id": 6,
+            "texts": [
+                "beginning",
+                "layer"
+            ],
+            "label": "OTHER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 10
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 8
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 3
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 3
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "0_6",
+            "source": 0,
+            "dest": 6,
+            "count": 2
+        },
+        {
+            "id": "1_6",
+            "source": 1,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "6_1",
+            "source": 6,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "6_2",
+            "source": 6,
+            "dest": 2,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 3,
+        "for": 4,
+        "of": 5,
+        "replace": 2,
+        "with": 2,
+        "steal": 1,
+        "on": 2,
+        "alter": 1,
+        "create": 2,
+        "by": 1,
+        "look": 1,
+        "prepend": 1,
+        "to": 4,
+        "copy": 1,
+        "execute": 1,
+        "maintain": 1,
+        "into": 1,
+        "gain": 1,
+        "capture": 1,
+        "monitor": 1,
+        "download": 1,
+        "add": 1
+    }
+}

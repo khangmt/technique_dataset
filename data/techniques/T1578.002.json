@@ -1,0 +1,107 @@
+{
+    "id": "T1578.002",
+    "tech_id": "T1578.002",
+    "tech_name": "Create Cloud Instance",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005"
+    ],
+    "features": [
+        "USER",
+        "DATA",
+        "COMPONENT"
+    ],
+    "locations": [
+        "IaaS"
+    ],
+    "procedures": [
+        "relationship--593d77c0-bcd3-4331-a75b-66cfa103e31d",
+        "relationship--ea60aa14-d556-4031-9d3f-bb673f2d6f68"
+    ],
+    "graph_nodes": [
+        {
+            "count": 1,
+            "id": 0,
+            "texts": [
+                "Scattered Spider"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 2,
+            "id": 1,
+            "texts": [
+                "access",
+                "credential"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 3,
+            "id": 2,
+            "texts": [
+                "Azure tenant",
+                "victim",
+                "target"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "LAPSUS$"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 2,
+            "id": 4,
+            "texts": [
+                "virtual machines",
+                "cloud environment"
+            ],
+            "label": "COMPONENT"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "4_2",
+            "source": 4,
+            "dest": 2,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 1,
+        "to": 1,
+        "of": 2,
+        "create": 1,
+        "within": 2,
+        "access": 1
+    }
+}

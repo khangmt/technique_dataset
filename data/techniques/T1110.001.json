@@ -1,0 +1,260 @@
+{
+    "id": "T1110.001",
+    "tech_id": "T1110.001",
+    "tech_name": "Password Guessing",
+    "best_phrases": [],
+    "tactics": [
+        "TA0006"
+    ],
+    "features": [
+        "DATA",
+        "FUNCTION",
+        "NETWORK",
+        "COMPONENT",
+        "USER"
+    ],
+    "locations": [
+        "Windows",
+        "Azure AD",
+        "Office 365",
+        "SaaS",
+        "IaaS",
+        "Linux",
+        "macOS",
+        "Google Workspace",
+        "Containers",
+        "Network"
+    ],
+    "procedures": [
+        "relationship--046d418d-ffcc-4939-87ce-09cfc2885a5a",
+        "relationship--0c76bb94-1a6e-4ec6-9faa-2b444d80002c",
+        "relationship--3222edc5-bed6-4e8f-b62b-d76040754218",
+        "relationship--4b8bdc58-cfb9-4841-94e9-421b9e08f44f",
+        "relationship--5348c284-b5c7-4b30-a528-a9b0002ac8b9",
+        "relationship--801fa89f-8114-492f-9748-85187190ea86",
+        "relationship--ac1597ea-c0da-4365-998e-25e8e1ee87c9",
+        "relationship--b7e456b1-ed5e-48f0-be6e-df3e7d6b4044",
+        "relationship--dd8d683a-0c17-448f-b604-105e130f4b04",
+        "relationship--e9de3c2d-1b2e-4c35-a406-475f5f5fd4d5",
+        "relationship--ed00df58-4656-4c62-8ef1-8b859f46c1ed"
+    ],
+    "graph_nodes": [
+        {
+            "count": 16,
+            "id": 0,
+            "texts": [
+                "server component",
+                "bruteforce password guessing",
+                "authentication portals",
+                "bruteforcing",
+                "attempt",
+                "course",
+                "brute-force/password-spray tooling",
+                "distributed, large-scale password guessing attacks",
+                "brute-force mode",
+                "over 300 authentication attempts",
+                "CrackMapExec",
+                "attempt",
+                "password guessing attacks",
+                "bruteforcing",
+                "services",
+                "bruteforce attacks"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 3,
+            "id": 1,
+            "texts": [
+                "Chopper",
+                "modes",
+                "1433"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 9,
+            "id": 2,
+            "texts": [
+                "Emotet",
+                "SpeakUp",
+                "APT28",
+                "HermeticWizard",
+                "APT29",
+                "Lucifer",
+                "Pony",
+                "Xbash",
+                "P.A.S. Webshell"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 24,
+            "id": 3,
+            "texts": [
+                "coded list",
+                "user accounts",
+                "passwords",
+                "pre-defined list",
+                "passwords",
+                "usernames",
+                "hours",
+                "days",
+                "hour",
+                "targeted account",
+                "passwords",
+                "hardcoded credentials",
+                "SMB shares",
+                "default username",
+                "list",
+                "passwords",
+                "usernames",
+                "dictionary",
+                "list",
+                "passwords",
+                "local accounts",
+                "weak passwords",
+                "users",
+                "passwords"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 7,
+            "id": 4,
+            "texts": [
+                "Kubernetes cluster",
+                "mailboxes",
+                "TCP ports",
+                "RPC",
+                "C2",
+                "open ports",
+                "SSH, FTP, POP3, MySQL, MSSQL, and PostgreSQL services"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 2,
+            "id": 5,
+            "texts": [
+                "target system",
+                "MSSQL"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 1,
+            "id": 6,
+            "texts": [
+                "user"
+            ],
+            "label": "USER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 8
+        },
+        {
+            "id": "2_0",
+            "source": 2,
+            "dest": 0,
+            "count": 9
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 5
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 4
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "3_6",
+            "source": 3,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "3_5",
+            "source": 3,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "3_0",
+            "source": 3,
+            "dest": 0,
+            "count": 2
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 3
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "2_5",
+            "source": 2,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "4_3",
+            "source": 4,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "of": 7,
+        "perform": 2,
+        "against": 6,
+        "use": 7,
+        "bruteforce": 7,
+        "in": 5,
+        "conduct": 2,
+        "operate": 1,
+        "over": 2,
+        "send": 1,
+        "per": 2,
+        "on": 2,
+        "for": 3,
+        "authenticate to": 1,
+        "with": 2,
+        "obtain": 1,
+        "from": 2,
+        "execute": 1
+    }
+}

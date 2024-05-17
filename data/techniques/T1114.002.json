@@ -1,0 +1,277 @@
+{
+    "id": "T1114.002",
+    "tech_id": "T1114.002",
+    "tech_name": "Remote Email Collection",
+    "best_phrases": [],
+    "tactics": [
+        "TA0009"
+    ],
+    "features": [
+        "NETWORK",
+        "FUNCTION",
+        "DATA",
+        "USER",
+        "COMPONENT"
+    ],
+    "locations": [
+        "Office 365",
+        "Windows",
+        "Google Workspace"
+    ],
+    "procedures": [
+        "relationship--021885d8-90a5-4d70-91de-869783cd57d3",
+        "relationship--03a65a95-b802-49ee-bec1-a65cccec0e89",
+        "relationship--1980e913-a4dc-415c-a98d-df1a20e001f2",
+        "relationship--1ba59a68-1883-492d-8cd8-f22656eb58a4",
+        "relationship--4eb5fba5-be97-4103-9b52-f77e02765fad",
+        "relationship--6c42fa31-80df-4d67-92d2-4273c22a4d5b",
+        "relationship--6ee0cf67-d033-4620-b0c6-29b7a7d6592d",
+        "relationship--76333b56-47b1-40c6-9223-c4cf6673362f",
+        "relationship--885c54ee-078a-4cc2-a2a1-c7376767b6b6",
+        "relationship--99dfbbaa-5e58-4a03-9b94-fb6962681ce3",
+        "relationship--ad278368-be64-497f-abc3-024ee8447ef8",
+        "relationship--c43ac3ee-be59-419e-8ea2-43c04923102f",
+        "relationship--c4f902df-4b79-4bf7-b4b3-5873a316795b",
+        "relationship--e9267a72-00d7-438b-8c41-af72021e89d0",
+        "relationship--f1f879a7-cd1e-4865-bc6a-9b42d36df62b",
+        "relationship--fc0baea6-7e98-4cc3-9462-7eee9564cad0"
+    ],
+    "graph_nodes": [
+        {
+            "count": 14,
+            "id": 0,
+            "texts": [
+                "Ke3chang",
+                "APT29",
+                "APT28",
+                "APT1",
+                "LightNeuron",
+                "APT29",
+                "HAFNIUM",
+                "Valak",
+                "Magic Hound",
+                "Chimera",
+                "Dragonfly",
+                "FIN4",
+                "Leafminer",
+                "Kimsuky"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 20,
+            "id": 1,
+            "texts": [
+                "compromised credentials",
+                ".NET tool",
+                "MailSniper",
+                "New-MailboxExportRequest",
+                "Get-MailboxExportRequest",
+                "utilities",
+                "GETMAIL",
+                "MAPIGET",
+                "SeaDuke samples",
+                "module",
+                "web shells",
+                "cmdlet",
+                "New-MailboxExportRequest",
+                "command",
+                "MailSniper",
+                "tool",
+                "tools",
+                "MailFetch mail crawler",
+                "spam",
+                "online services"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 14,
+            "id": 2,
+            "texts": [
+                "compromised credentials",
+                ".NET tool",
+                "data",
+                "rules",
+                "configuration",
+                "compromised credentials",
+                "mailbox data",
+                "domain certificate",
+                "credentials",
+                "sensitive mailing information",
+                "data",
+                "email accounts",
+                "Outlook Web Access",
+                "stolen credentials"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 24,
+            "id": 3,
+            "texts": [
+                "Microsoft Exchange mailboxes",
+                "email",
+                "emails",
+                "emails",
+                "victim Microsoft Exchange servers",
+                "GETMAIL",
+                "MAPIGET",
+                "email",
+                "email",
+                "Exchange emails",
+                "emails",
+                "targeted mailboxes",
+                "compromised Exchange servers",
+                "compromised Azure AD tenant",
+                "email",
+                "Microsoft Exchange servers",
+                "Exchange servers",
+                "emails",
+                "compromised Exchange servers",
+                "remote mailboxes",
+                "online email communications",
+                "Exchange server mailboxes",
+                "victim emails",
+                "IMAP"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 3,
+            "id": 4,
+            "texts": [
+                "executives",
+                "IT staff",
+                "individuals"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 2,
+            "id": 5,
+            "texts": [
+                "compromised Exchange servers",
+                "compromised Azure AD tenant"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 2,
+            "id": 6,
+            "texts": [
+                "enterprise",
+                "use"
+            ],
+            "label": "OTHER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 8
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 8
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 3
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 3
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 16
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "3_5",
+            "source": 3,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "2_6",
+            "source": 2,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "0_6",
+            "source": 0,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "6_1",
+            "source": 6,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 2
+        }
+    ],
+    "verbs": {
+        "use": 11,
+        "dump": 1,
+        "from": 15,
+        "search": 2,
+        "collect": 6,
+        "follow": 1,
+        "steal": 2,
+        "match": 1,
+        "specify in": 1,
+        "within": 1,
+        "have": 1,
+        "extract": 1,
+        "export": 2,
+        "of": 3,
+        "harvest": 1,
+        "execute": 1,
+        "access": 1,
+        "hijack": 1,
+        "exclude": 1,
+        "by": 1
+    }
+}

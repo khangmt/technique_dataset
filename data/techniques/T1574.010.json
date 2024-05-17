@@ -1,0 +1,79 @@
+{
+    "id": "T1574.010",
+    "tech_id": "T1574.010",
+    "tech_name": "Services File Permissions Weakness",
+    "best_phrases": [],
+    "tactics": [
+        "TA0003",
+        "TA0004",
+        "TA0005"
+    ],
+    "features": [
+        "FUNCTION",
+        "DIRECTORY"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--da1a5240-bbd7-4e91-9dee-9b14df6cffe2"
+    ],
+    "graph_nodes": [
+        {
+            "count": 6,
+            "id": 0,
+            "texts": [
+                "variant",
+                "BlackEnergy",
+                "driver services",
+                "driver component",
+                "legitimate executable",
+                "service"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 1,
+            "texts": [
+                "one"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 1,
+            "id": 2,
+            "texts": [
+                "paths"
+            ],
+            "label": "DIRECTORY"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "2_0",
+            "source": 2,
+            "dest": 0,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "of": 3,
+        "locate": 1,
+        "drop": 1,
+        "into": 2,
+        "replace": 1
+    }
+}

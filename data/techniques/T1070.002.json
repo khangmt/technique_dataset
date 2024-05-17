@@ -1,0 +1,85 @@
+{
+    "id": "T1070.002",
+    "tech_id": "T1070.002",
+    "tech_name": "Clear Linux or Mac System Logs",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005"
+    ],
+    "features": [
+        "DATA",
+        "DIRECTORY"
+    ],
+    "locations": [
+        "Linux",
+        "macOS"
+    ],
+    "procedures": [
+        "relationship--67ae2dbd-0b87-4656-b380-3d23b8e40479",
+        "relationship--8453fdfe-a4b8-4f99-86e1-4110e8d24440",
+        "relationship--93b62fc4-f024-4482-9ea1-041bc3d29bfd",
+        "relationship--abd0cc1c-8901-4645-8853-c394ae8c573c"
+    ],
+    "graph_nodes": [
+        {
+            "count": 4,
+            "id": 0,
+            "texts": [
+                "MacMa",
+                "TeamTNT",
+                "Rocke",
+                "Proton"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 5,
+            "id": 1,
+            "texts": [
+                "possible malware traces",
+                "application logs",
+                "system logs",
+                "log files",
+                "logs"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 4,
+            "id": 2,
+            "texts": [
+                "/var/log/syslog",
+                "/var/log/ folder",
+                "/var/logs",
+                "/Library/logs"
+            ],
+            "label": "DIRECTORY"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 4
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 3
+        }
+    ],
+    "verbs": {
+        "clear": 2,
+        "remove": 2,
+        "from": 4,
+        "within": 1
+    }
+}

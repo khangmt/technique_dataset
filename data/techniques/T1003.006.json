@@ -1,0 +1,159 @@
+{
+    "id": "T1003.006",
+    "tech_id": "T1003.006",
+    "tech_name": "DCSync",
+    "best_phrases": [
+        "dcsync/netsync",
+        "dcsync attacks",
+        "dcsync command",
+        "DCSync",
+        "dcsync"
+    ],
+    "tactics": [
+        "TA0006"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "COMPONENT"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--0209cfd7-95d3-4bc5-8f0e-72a70b245fe9",
+        "relationship--14c209b9-cef8-4acf-8deb-57c03beaa64f",
+        "relationship--1a080d89-1319-4b5d-8e62-d185172559da",
+        "relationship--b4decb48-0877-418c-83cc-9967b369f5b2",
+        "relationship--bd785740-2234-4bc8-90b9-1d8b1e7f557b",
+        "relationship--c34b776e-2fca-4ff9-910d-486bf9447d78"
+    ],
+    "graph_nodes": [
+        {
+            "count": 13,
+            "id": 0,
+            "texts": [
+                "Mimikatz",
+                "credential dumping",
+                "functionality",
+                "DCSync/NetSync",
+                "ways",
+                "DCSync command",
+                "Mimikatz",
+                "exploited controller",
+                "DCSync",
+                "Mimikatz",
+                "DCSync attacks",
+                "privilege escalation routines",
+                "domain controllers"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 12,
+            "id": 1,
+            "texts": [
+                "account and password information",
+                "access",
+                "enterprise network resources",
+                "systems",
+                "information",
+                "credentials",
+                "credentials",
+                "credentials",
+                "memory",
+                "credentials",
+                "privileged accounts",
+                "directory service data"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 3,
+            "id": 2,
+            "texts": [
+                "enterprise network resources",
+                "systems",
+                "targeted system"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 2,
+            "id": 3,
+            "texts": [
+                "DCSync/NetSync",
+                "ways"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 4,
+            "id": 4,
+            "texts": [
+                "Earth Lusca",
+                "threat actors",
+                "LAPSUS$",
+                "APT29"
+            ],
+            "label": "ACTOR"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 4
+        },
+        {
+            "id": "4_0",
+            "source": 4,
+            "dest": 0,
+            "count": 3
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 5
+        }
+    ],
+    "verbs": {
+        "perform": 1,
+        "obtain": 1,
+        "contain": 1,
+        "gain": 1,
+        "to": 1,
+        "acquire": 1,
+        "about": 1,
+        "in": 1,
+        "use": 4,
+        "retrieve": 1,
+        "with": 2,
+        "from": 2,
+        "dump": 1,
+        "of": 2,
+        "gather": 1,
+        "for": 1,
+        "replicate": 1
+    }
+}

@@ -1,0 +1,303 @@
+{
+    "id": "T1115",
+    "tech_id": "T1115",
+    "tech_name": "Clipboard Data",
+    "best_phrases": [],
+    "tactics": [
+        "TA0009"
+    ],
+    "features": [
+        "DATA",
+        "FUNCTION",
+        "COMPONENT",
+        "USER"
+    ],
+    "locations": [
+        "Linux",
+        "Windows",
+        "macOS"
+    ],
+    "procedures": [
+        "relationship--06dded4b-f28c-45d3-8dc6-097a9a4a3cd6",
+        "relationship--0f81e969-dfc4-4d37-8664-59c31bd7116c",
+        "relationship--1e03e95c-1c9a-4fa8-9d6d-b5d244b06509",
+        "relationship--28b56048-87a7-4204-b55b-3f2f79f9073f",
+        "relationship--29bf3ce1-f531-472f-9825-b990aab2f09c",
+        "relationship--35ca6c35-f1e9-49b7-a8c9-a67951c57ea0",
+        "relationship--3ca37791-9dad-430f-aee9-0126d13ae932",
+        "relationship--40205b23-d3d0-4d6a-a739-7ba2eb061c4f",
+        "relationship--441ef1f7-79b7-476a-8c1e-943439e65dd1",
+        "relationship--5070c502-1f3b-4e8c-8eb5-2ea5379fd8f4",
+        "relationship--5093ddae-6bc9-401e-b35f-9f3139efafd0",
+        "relationship--592df85b-8f0b-46c1-87e6-fa48da9c0ead",
+        "relationship--5940076b-120a-4588-b227-7fe2bc9f7ccd",
+        "relationship--5a2b7013-a110-4a07-acf6-66a7f159954d",
+        "relationship--5c859db1-13ba-4bf8-a8d3-7fd99e061c45",
+        "relationship--66440b92-cfed-441c-85fd-1d103684a187",
+        "relationship--66625422-17cd-4b04-beb5-fa2eabe350ad",
+        "relationship--744da30b-d540-4512-85c7-d32310e2aa78",
+        "relationship--778aa9ba-0561-44bd-a28f-94ba2b12f78b",
+        "relationship--787f09c0-92fe-4208-96e8-86c8e45c9a40",
+        "relationship--7e05e716-1a86-4f87-9eba-5b5c6ee61b8a",
+        "relationship--83aac36d-6dfa-4c27-b1b1-c200c9240eb9",
+        "relationship--83f5442e-74c1-4e7b-83d8-9c254543bbac",
+        "relationship--9e1742a1-ffc0-4e29-88d2-04ef30a13358",
+        "relationship--a58983e1-45d7-4b45-a578-307659a619dc",
+        "relationship--a804782a-fc22-43ab-a561-63007284bdf9",
+        "relationship--ac3fb8d5-9d9d-4701-a269-53e838850d71",
+        "relationship--b2553142-9377-42b3-9fd6-50fcbd4263b3",
+        "relationship--b2a83e1d-f6e8-4cdc-a96e-7bca9a48dfb2",
+        "relationship--ce378e64-5802-4751-8b8e-d7bf68ce4c6a",
+        "relationship--ce8220fc-98ee-4b48-b98c-8be15a429410",
+        "relationship--d4f4974e-7918-4829-8379-5e2e98f2ae20",
+        "relationship--e2335bc2-8ad0-484d-89b5-70b05a131296",
+        "relationship--e94dc1ba-678b-4c09-9c29-515a5d277ec4",
+        "relationship--f283af63-1fdf-49d3-8a56-304c5be07a83"
+    ],
+    "graph_nodes": [
+        {
+            "count": 31,
+            "id": 0,
+            "texts": [
+                "Agent Tesla",
+                "APT39",
+                "VERMIN",
+                "Catchamas",
+                "Cadelspy",
+                "DarkComet",
+                "RTM",
+                "Astaroth",
+                "TinyZBot",
+                "Attor",
+                "threat actors",
+                "KONNI",
+                "Remexi",
+                "MacSpy",
+                "CosmicDuke",
+                "MarkiRAT",
+                "Clambling",
+                "jRAT",
+                "FlawedAmmyy",
+                "DarkTortilla",
+                "Metamorfo",
+                "attacker",
+                "Machete",
+                "Grandoreiro",
+                "ROKRAT",
+                "Explosive",
+                "APT38",
+                "Zeus Panda",
+                "Melcoz",
+                "RunningRAT",
+                "TajMahal"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 29,
+            "id": 1,
+            "texts": [
+                "data",
+                "contents",
+                "data",
+                "information",
+                "information",
+                "clipboard data",
+                "data",
+                "data",
+                "clipboard data",
+                "plaintext",
+                "data",
+                "text",
+                "clipboard content",
+                "clipboard contents",
+                "content",
+                "clipboard data",
+                "data",
+                "contents",
+                "cryptocurrency wallet",
+                "clipboard data",
+                "screenshot",
+                "JPG image",
+                "clipboard data",
+                "executable version",
+                "clipboard contents",
+                "data",
+                "content",
+                "data",
+                "data"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 20,
+            "id": 2,
+            "texts": [
+                "clipboard",
+                "clipboard",
+                "clipboard",
+                "clipboard",
+                "clipboard",
+                "Windows and macOS systems",
+                "Windows clipboard",
+                "clipboard",
+                "clipboard",
+                "clipboard",
+                "user clipboard",
+                "clipboard",
+                "overlapped window",
+                "clipboard",
+                "compromised host",
+                "clipboard",
+                "clipboard",
+                "clipboard",
+                "clipboard",
+                "infected host"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "victim"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 21,
+            "id": 4,
+            "texts": [
+                "tools",
+                "OpenClipboard() and GetClipboardData() libraries",
+                "functionality",
+                "Empire",
+                "plugin",
+                "OpenClipboard and GetClipboardData APIs",
+                "Remcos",
+                "feature",
+                "Koadic",
+                "clipboard information stealer module",
+                "function",
+                "keyboard events",
+                "JHUHUGIT variant",
+                "Helminth",
+                "module",
+                "function",
+                "OpenClipboard wrapper",
+                "KEYLIME",
+                "Trojan",
+                "GetClipboardData function",
+                "code"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "that"
+            ],
+            "label": "OTHER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 13
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 7
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 19
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 11
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 14
+        },
+        {
+            "id": "4_2",
+            "source": 4,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "5_4",
+            "source": 5,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 2
+        }
+    ],
+    "verbs": {
+        "steal": 5,
+        "from": 19,
+        "of": 6,
+        "use": 5,
+        "collect": 7,
+        "contain": 2,
+        "harvest": 1,
+        "on": 2,
+        "have": 5,
+        "store in": 1,
+        "modify": 1,
+        "in": 2,
+        "retrieve": 1,
+        "store": 1,
+        "download": 1,
+        "hijack": 2,
+        "monitor": 2,
+        "replace": 1,
+        "with": 1,
+        "create": 1,
+        "listen": 1,
+        "to": 3,
+        "access": 1,
+        "save in": 1,
+        "extract": 1,
+        "log": 1,
+        "hook": 1,
+        "save to": 1,
+        "copy": 1
+    }
+}

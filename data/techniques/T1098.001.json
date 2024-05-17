@@ -1,0 +1,135 @@
+{
+    "id": "T1098.001",
+    "tech_id": "T1098.001",
+    "tech_name": "Additional Cloud Credentials",
+    "best_phrases": [],
+    "tactics": [
+        "TA0003",
+        "TA0004"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "ENCRYPTION",
+        "COMPONENT"
+    ],
+    "locations": [
+        "IaaS",
+        "Azure AD",
+        "SaaS"
+    ],
+    "procedures": [
+        "relationship--9e344d1a-7b11-42fe-b406-d1a2bdc48bb1",
+        "relationship--b546ebe4-90cb-4e2f-92fe-2d1c019f44c4",
+        "relationship--cd4655ac-8e31-4272-a944-9bf54074d3a0"
+    ],
+    "graph_nodes": [
+        {
+            "count": 4,
+            "id": 0,
+            "texts": [
+                "Pacu",
+                "AWS CLI",
+                "OAuth Applications",
+                "Service Principals"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 2,
+            "id": 1,
+            "texts": [
+                "API keys",
+                "SSH and API keys"
+            ],
+            "label": "ENCRYPTION"
+        },
+        {
+            "count": 1,
+            "id": 2,
+            "texts": [
+                "AWS infrastructure"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 4,
+            "id": 3,
+            "texts": [
+                "IAM users",
+                "federated credentials",
+                "fake users",
+                "credentials"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "Scattered Spider"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "APT29"
+            ],
+            "label": "ACTOR"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "4_3",
+            "source": 4,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "3_0",
+            "source": 3,
+            "dest": 0,
+            "count": 2
+        },
+        {
+            "id": "5_3",
+            "source": 5,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "5_0",
+            "source": 5,
+            "dest": 0,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "generate": 1,
+        "for": 2,
+        "create": 1,
+        "pivot": 1,
+        "add": 1,
+        "to": 2
+    }
+}

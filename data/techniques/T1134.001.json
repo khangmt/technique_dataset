@@ -1,0 +1,275 @@
+{
+    "id": "T1134.001",
+    "tech_id": "T1134.001",
+    "tech_name": "Token Impersonation/Theft",
+    "best_phrases": [
+        "CVE-2015-1701"
+    ],
+    "tactics": [
+        "TA0005",
+        "TA0004"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "USER",
+        "COMPONENT",
+        "VULNERABILITY",
+        "DIRECTORY"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--0b10d358-b59f-4fc0-8eaf-37352be9c80b",
+        "relationship--2b16958e-8c41-4342-87d8-f98b42548724",
+        "relationship--3ee76373-418f-43af-adb5-3c0fcb7f080e",
+        "relationship--56ff911a-d7bb-4176-8e1f-bf0f46cc7f89",
+        "relationship--63f6acf5-04d5-4a77-874b-77c6416c5701",
+        "relationship--6b5705c3-4508-4623-b542-1fb1fbef2a47",
+        "relationship--6edd6f1b-3907-4013-b2e0-ceb03ccf427a",
+        "relationship--755bc45a-9048-4f58-b405-2ea8329328a1",
+        "relationship--874148d5-d7cb-43c2-905f-1582f90005f6",
+        "relationship--a5848e5c-0a64-44f2-9432-4d503baea628",
+        "relationship--b719d37b-8f0e-4704-b21d-8977a5c7cceb",
+        "relationship--bab712d9-69d6-49d0-b063-8f957f3ea222",
+        "relationship--d17517a1-f941-46a0-bcb6-d2a5b94cb24b",
+        "relationship--dd28aa9c-762c-4726-b402-6536bae9490c",
+        "relationship--f1c2ca5b-6b10-4604-8c74-588878e7d69c",
+        "relationship--f950b817-9082-4299-a310-6b48fc347ebc"
+    ],
+    "graph_nodes": [
+        {
+            "count": 14,
+            "id": 0,
+            "texts": [
+                "FinFisher",
+                "Emotet",
+                "Stuxnet",
+                "Cobalt Strike",
+                "Tarrask",
+                "BitPaymer",
+                "Shamoon",
+                "Okrum",
+                "Aria-body",
+                "APT28",
+                "REvil",
+                "BADHATCH",
+                "Siloscape",
+                "FIN8"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 23,
+            "id": 1,
+            "texts": [
+                "token manipulation",
+                "NtFilterToken",
+                "UAC bypass",
+                "bindings",
+                "exiting processes",
+                "token theft",
+                "SILENTTRINITY",
+                "process",
+                "processes",
+                "ImpersonateNamedPipeClient",
+                "LogonUser",
+                "ImpersonateLoggedOnUser",
+                "call",
+                "ImpersonateLoggedOnUser API",
+                "ntprint.exe",
+                "process",
+                "explorer.exe process",
+                "Pupy",
+                "option",
+                "main thread",
+                "NtImpersonateThread",
+                "CExecSvc.exe",
+                "framework"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 2,
+            "id": 2,
+            "texts": [
+                "part",
+                "lsass.exe or vmtoolsd.exe token"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 16,
+            "id": 3,
+            "texts": [
+                "token",
+                "anonymous token",
+                "access tokens",
+                "lsass.exe security permissions",
+                "associated token",
+                "tokens",
+                "users",
+                "tokens",
+                "security context",
+                "token",
+                "SYSTEM token",
+                "privilege",
+                "token",
+                "SIDs",
+                "process tokens",
+                "lsass.exe/vmtoolsd.exe token"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 5,
+            "id": 4,
+            "texts": [
+                "user",
+                "user",
+                "user",
+                "user",
+                "SYSTEM user"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 2,
+            "id": 5,
+            "texts": [
+                "service control manager",
+                "infected systems"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 1,
+            "id": 6,
+            "texts": [
+                "CVE-2015-1701"
+            ],
+            "label": "VULNERABILITY"
+        },
+        {
+            "count": 1,
+            "id": 7,
+            "texts": [
+                "desktop"
+            ],
+            "label": "DIRECTORY"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 12
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 11
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 3
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 2
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 4
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "0_6",
+            "source": 0,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "0_7",
+            "source": 0,
+            "dest": 7,
+            "count": 1
+        },
+        {
+            "id": "7_4",
+            "source": 7,
+            "dest": 4,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 7,
+        "as": 2,
+        "with": 1,
+        "of": 6,
+        "duplicate": 2,
+        "impersonate": 7,
+        "enumerate": 1,
+        "in": 1,
+        "steal": 1,
+        "from": 6,
+        "obtain": 3,
+        "find": 1,
+        "own": 1,
+        "create": 1,
+        "on": 1,
+        "to": 1,
+        "access": 1,
+        "into": 1,
+        "escalate": 1,
+        "affect": 1,
+        "launch": 1,
+        "provide": 1,
+        "select": 1,
+        "call": 1
+    }
+}

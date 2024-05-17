@@ -1,0 +1,273 @@
+{
+    "id": "T1218.005",
+    "tech_id": "T1218.005",
+    "tech_name": "Mshta",
+    "best_phrases": [
+        "mshta application",
+        "Mshta",
+        "mshta.exe",
+        "mshta"
+    ],
+    "tactics": [
+        "TA0005"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "COMPONENT",
+        "NETWORK",
+        "REGISTRY"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--0ecbbfa3-6b81-4cf7-9033-373ebbc2832f",
+        "relationship--12c617b6-9c95-46fd-a3ef-845be82ac237",
+        "relationship--1567d198-b2b9-4eda-a2e2-ba5dd4e51547",
+        "relationship--1923bc58-a830-457d-810f-27091e032f46",
+        "relationship--2ed3ed76-7ebe-4371-a7e9-cc5a45ace915",
+        "relationship--36838da3-5543-4998-b125-0a50d31d288e",
+        "relationship--3759c775-300f-4981-9264-722ecf97aa64",
+        "relationship--3766cf55-568a-410f-8968-7a4adac96f77",
+        "relationship--3cd0e385-3c60-4742-b3a6-c07dbf10ba45",
+        "relationship--4bd79a52-d28c-4880-9f10-dda500ac40c9",
+        "relationship--7643698c-2dc4-43ca-9d90-c656962dfecb",
+        "relationship--864fdbd1-99fe-4036-a296-241c53337d85",
+        "relationship--90f03f42-a2f1-4fab-8a10-ebbbbc4fba19",
+        "relationship--9e77b81d-6298-4233-8baa-f419031a9d64",
+        "relationship--9f99cba5-2fb2-4750-aca4-3d4a0a872685",
+        "relationship--a3627d9d-1c78-4b10-8b1c-3183a939862b",
+        "relationship--a7f5320a-dd76-4fa0-998f-44860ff1b307",
+        "relationship--aaca809f-576c-4875-a09d-5a46a5e5e422",
+        "relationship--acd4b81e-6bef-4ac0-bf4b-2428b5c9c6b9",
+        "relationship--b00d5e69-736f-47b9-befd-f5593550ad11",
+        "relationship--b8fdee05-cbe2-43b1-a224-e4b019017c3e",
+        "relationship--bcb09da2-4ef9-4739-b36d-96c9c62ec4e2",
+        "relationship--d4e67bb3-dcb2-4427-a48e-d8b4bcc35afa",
+        "relationship--df33a65c-1529-4f8d-a27b-0d00f540e6e6",
+        "relationship--ebfa4596-86bb-4a7f-a6f5-11a5642b31fd",
+        "relationship--f76be4ac-f342-4904-b50d-06e28b878011",
+        "relationship--ff9fad0d-7481-4804-a4e8-800265a5c17d"
+    ],
+    "graph_nodes": [
+        {
+            "count": 25,
+            "id": 0,
+            "texts": [
+                "TA551",
+                "Sidewinder",
+                "Lazarus Group",
+                "MuddyWater",
+                "Xbash",
+                "Mustang Panda",
+                "BabyShark",
+                "LazyScripter",
+                "POWERSTATS",
+                "Metamorfo",
+                "Inception",
+                "Revenge RAT",
+                "Kimsuky",
+                "FIN7",
+                "Earth Lusca",
+                "APT32",
+                "NanHaiShu",
+                "Sibot",
+                "threat actors",
+                "APT29",
+                "Confucius",
+                "Pteranodon",
+                "SideCopy",
+                "Gamaredon Group",
+                "threat actors"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 52,
+            "id": 1,
+            "texts": [
+                "mshta.exe",
+                "payloads",
+                "mshta.exe",
+                "Koadic",
+                "mshta",
+                "payloads",
+                "tasks",
+                "mshta.exe",
+                "POWERSTATS payload",
+                "PowerShell one-liner",
+                "command",
+                "mshta",
+                "scripts",
+                "mshta.exe",
+                "collection scripts",
+                "mshta.exe",
+                "applications",
+                "mshta.exe",
+                "Koadic stagers",
+                "Mshta.exe",
+                "payloads",
+                "mshta",
+                "scripts",
+                "mshta.exe",
+                "HTA payload",
+                "HTA files",
+                "malware",
+                "mshta.exe",
+                "scripts",
+                "mshta.exe",
+                "VBScript",
+                "code",
+                "mshta.exe",
+                "HTA script",
+                "mshta.exe",
+                "code",
+                "mshta.exe",
+                "files",
+                "program",
+                "MSHTA application",
+                "JavaScript code",
+                "mshta.exe",
+                "mshta",
+                "scripts",
+                "mshta.exe",
+                "VBScript",
+                "mshta.exe",
+                "HTA file",
+                "mshta.exe",
+                "hta file",
+                "HTA files",
+                "mshta"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 3,
+            "id": 2,
+            "texts": [
+                "HTML pages",
+                "remote server",
+                "remote server"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 4,
+            "id": 3,
+            "texts": [
+                "initial access documents",
+                ".LNK file",
+                "files",
+                "program"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 4,
+            "id": 4,
+            "texts": [
+                "compromised hosts",
+                "system",
+                "victim systems",
+                "compromised host"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "TA2541"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 1,
+            "id": 6,
+            "texts": [
+                "DLLs"
+            ],
+            "label": "REGISTRY"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 42
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 4
+        },
+        {
+            "id": "5_1",
+            "source": 5,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "0_6",
+            "source": 0,
+            "dest": 6,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 21,
+        "execute": 21,
+        "download": 1,
+        "serve": 1,
+        "schedule": 1,
+        "pass": 1,
+        "launch": 1,
+        "from": 1,
+        "on": 4,
+        "run": 1,
+        "load": 2,
+        "within": 1,
+        "by": 1,
+        "host on": 1,
+        "utilize": 1
+    }
+}

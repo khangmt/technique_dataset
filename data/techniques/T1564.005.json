@@ -1,0 +1,171 @@
+{
+    "id": "T1564.005",
+    "tech_id": "T1564.005",
+    "tech_name": "Hidden File System",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005"
+    ],
+    "features": [
+        "COMPONENT",
+        "FUNCTION",
+        "DATA",
+        "REGISTRY"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--00caa57d-7b0f-4156-907e-18d14d62965a",
+        "relationship--150e1b1c-a575-4542-a66e-c1646212744b",
+        "relationship--223b8d4b-97e9-4581-91aa-a599fb787309",
+        "relationship--29a6afc7-f051-4c26-b6a2-cad09c73180f",
+        "relationship--561afb90-e94a-410f-9e6f-6880d996799f",
+        "relationship--d24a47e5-e735-4cad-9c44-09d3a39d514c"
+    ],
+    "graph_nodes": [
+        {
+            "count": 6,
+            "id": 0,
+            "texts": [
+                "Equation",
+                "ComRAT",
+                "Regin",
+                "BOOTRASH",
+                "Uroburos",
+                "Strider"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 8,
+            "id": 1,
+            "texts": [
+                "encrypted virtual file system",
+                "hidden file system",
+                "hidden file system",
+                "hidden file system",
+                "partitions",
+                "NTFS or FAT-16 filesystem",
+                "hidden file system",
+                "disk"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 1,
+            "id": 2,
+            "texts": [
+                "Windows Registry"
+            ],
+            "label": "REGISTRY"
+        },
+        {
+            "count": 3,
+            "id": 3,
+            "texts": [
+                "portable FAT16 partition image",
+                "unallocated disk space",
+                "file"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 3,
+            "id": 4,
+            "texts": [
+                "some",
+                "CAST-128",
+                "that"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 4,
+            "id": 5,
+            "texts": [
+                "components",
+                "components",
+                "Nemesis bootkit",
+                "concealed storage mechanisms"
+            ],
+            "label": "FUNCTION"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 4
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 4
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "4_5",
+            "source": 4,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "4_3",
+            "source": 4,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 6,
+        "store in": 1,
+        "place indirectory0as": 1,
+        "store": 3,
+        "of": 2,
+        "for": 2,
+        "between": 1,
+        "encrypt with": 1,
+        "as": 1,
+        "on": 1
+    }
+}

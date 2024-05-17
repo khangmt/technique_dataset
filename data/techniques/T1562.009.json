@@ -1,0 +1,116 @@
+{
+    "id": "T1562.009",
+    "tech_id": "T1562.009",
+    "tech_name": "Safe Mode Boot",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005"
+    ],
+    "features": [
+        "COMPONENT",
+        "FUNCTION",
+        "NETWORK"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--0992eecd-111f-4b22-b016-b74f07c8d817",
+        "relationship--11cd38e9-397d-4bc9-a045-1401e5e9156e",
+        "relationship--d81de27d-b64a-4a45-b3b5-7c2d5403632e"
+    ],
+    "graph_nodes": [
+        {
+            "count": 3,
+            "id": 0,
+            "texts": [
+                "REvil",
+                "Black Basta",
+                "AvosLocker"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 2,
+            "id": 1,
+            "texts": [
+                "reboot",
+                "bcdedit /set safeboot network"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 2,
+            "id": 2,
+            "texts": [
+                "networking",
+                "networking"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 5,
+            "id": 3,
+            "texts": [
+                "safe mode",
+                "victim machines",
+                "safe mode",
+                "compromised machine",
+                "safe mode"
+            ],
+            "label": "COMPONENT"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 4
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "force": 1,
+        "with": 4,
+        "in": 5,
+        "reboot": 1,
+        "by": 1,
+        "restart": 1
+    }
+}

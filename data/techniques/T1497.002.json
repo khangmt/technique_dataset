@@ -1,0 +1,151 @@
+{
+    "id": "T1497.002",
+    "tech_id": "T1497.002",
+    "tech_name": "User Activity Based Checks",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005",
+        "TA0007"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "USER",
+        "COMPONENT",
+        "NETWORK"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--118b2047-826a-4ab0-94b8-69d35a4c8592",
+        "relationship--121152af-4bfe-4202-ade0-aad9fb85e0ad",
+        "relationship--6aaf2c92-43a3-42f5-81ab-220c854607b0",
+        "relationship--883a60f7-0111-4542-b590-2f0140ba26bd"
+    ],
+    "graph_nodes": [
+        {
+            "count": 3,
+            "id": 0,
+            "texts": [
+                "Darkhotel",
+                "FIN7",
+                "Spark"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 5,
+            "id": 1,
+            "texts": [
+                "malware",
+                "Okrum loader",
+                "payload",
+                "payload",
+                "code"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 4,
+            "id": 2,
+            "texts": [
+                "mouse cursor position",
+                "images",
+                "screen",
+                "splash screen"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 3,
+            "id": 3,
+            "texts": [
+                "real user",
+                "user",
+                "user"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 2,
+            "id": 4,
+            "texts": [
+                "system",
+                "sandboxes"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "document lures"
+            ],
+            "label": "NETWORK"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "2_5",
+            "source": 2,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "5_1",
+            "source": 5,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 3,
+        "check": 1,
+        "be": 1,
+        "execute": 1,
+        "embed into": 1,
+        "activate": 1,
+        "avoid": 1,
+        "run": 1,
+        "on": 1
+    }
+}

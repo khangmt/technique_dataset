@@ -1,0 +1,67 @@
+{
+    "id": "T1218",
+    "tech_id": "T1218",
+    "tech_name": "System Binary Proxy Execution",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "REGISTRY"
+    ],
+    "locations": [
+        "Windows",
+        "Linux",
+        "macOS"
+    ],
+    "procedures": [
+        "relationship--883e2f79-5bf5-4e08-bb83-f1cd36907958"
+    ],
+    "graph_nodes": [
+        {
+            "count": 1,
+            "id": 0,
+            "texts": [
+                "Lazarus Group lnk files"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 2,
+            "id": 1,
+            "texts": [
+                "Windows Update Client",
+                "wuauclt.exe"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 2,
+            "texts": [
+                "DLL"
+            ],
+            "label": "REGISTRY"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "abuse": 2,
+        "execute": 1
+    }
+}

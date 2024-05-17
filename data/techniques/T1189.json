@@ -1,0 +1,498 @@
+{
+    "id": "T1189",
+    "tech_id": "T1189",
+    "tech_name": "Drive-by Compromise",
+    "best_phrases": [
+        "CVE-2014-0322"
+    ],
+    "tactics": [
+        "TA0001"
+    ],
+    "features": [
+        "FUNCTION",
+        "NETWORK",
+        "USER",
+        "DATA",
+        "COMPONENT",
+        "VULNERABILITY"
+    ],
+    "locations": [
+        "Windows",
+        "Linux",
+        "macOS",
+        "SaaS"
+    ],
+    "procedures": [
+        "relationship--02fa0350-978f-4b61-b004-82380e70beee",
+        "relationship--03e67769-31da-4a46-a5a6-1ccbdd0cf29f",
+        "relationship--0583724d-7778-42ed-995c-acad526db4ba",
+        "relationship--0c3668cf-32c1-420f-a1c0-0c8598360ad8",
+        "relationship--2445349c-0bdb-40a7-acca-03f3908b1f35",
+        "relationship--29a1fc8a-58c3-4465-b170-d9ec7c2d4d22",
+        "relationship--2d27c0d9-7e8e-4713-b3e1-0d82db27ac9a",
+        "relationship--2ee78986-9275-4248-9fde-125c3312b657",
+        "relationship--37880f36-c47a-4d1f-aedf-bb7d9fb2fd9f",
+        "relationship--478f7f77-6b6b-4949-ac87-f28419b5e2ab",
+        "relationship--4f62c818-2129-4dc2-9f80-105412df4b1d",
+        "relationship--4fd205f2-656f-4211-b60b-510d53dfa8d3",
+        "relationship--51fcdcd6-9c5a-425a-ab87-92d4faeb2ea4",
+        "relationship--5253d038-08a8-4d17-9549-bbcf67c37603",
+        "relationship--5ac3cb45-2d9c-42da-b35f-8f797c2e1ef8",
+        "relationship--5ade424d-5a9d-4209-8aa4-a129783ffaa3",
+        "relationship--5e8f23be-48b6-4236-9475-89f11e769ee6",
+        "relationship--62fd473e-e045-4a47-828a-ab5ee7b4fcf0",
+        "relationship--67b0c62c-ce4f-4e08-8d8c-9e1fd4afe255",
+        "relationship--72f9bf47-61ac-42c8-acbf-65be7c25af0f",
+        "relationship--731d14c6-a141-4e71-ac61-c344636e13d5",
+        "relationship--820a35e0-11fe-42c4-84d2-a29cc5026426",
+        "relationship--829f88fc-453a-40d1-8566-90dfe0934173",
+        "relationship--83075ee3-b372-48a4-a54c-ca54afdd8c0b",
+        "relationship--855c5caf-8553-45d0-a08b-842a9358d138",
+        "relationship--870c08fa-6112-4d08-9b84-59df09f27b4d",
+        "relationship--91b22928-d538-4460-a5ff-7a0a5e797430",
+        "relationship--91ec91fa-f468-47fa-a931-aeb9b4f74ba3",
+        "relationship--a6d35df2-0711-4b18-b733-6200467056ec",
+        "relationship--bad12e35-72da-43bb-b61b-505ed72883c5",
+        "relationship--bb23e7d5-23d6-4dde-a67f-36e19e8d2250",
+        "relationship--bb2be1f4-f2fc-4029-8ee6-e89f52210dfd",
+        "relationship--c7b780c4-7a9a-4eb2-9132-6c80a8671a94",
+        "relationship--e898946c-2c9d-4bf4-9253-67acfadc5b0a",
+        "relationship--f32828b5-ab55-4bf5-af89-1d6e42d559b0",
+        "relationship--f983de6b-eb17-4947-b4b0-50bd530f50e3",
+        "relationship--ff16b0d1-e77c-4985-85cb-842da787daf3"
+    ],
+    "graph_nodes": [
+        {
+            "count": 36,
+            "id": 0,
+            "texts": [
+                "Transparent Tribe",
+                "RTM",
+                "PLATINUM",
+                "Windshift",
+                "KARAE",
+                "Earth Lusca",
+                "Turla",
+                "Leafminer",
+                "APT38",
+                "Leviathan",
+                "Bundlore",
+                "Axiom",
+                "APT19",
+                "Darkhotel",
+                "Andariel",
+                "APT28",
+                "Dragonfly",
+                "Dark Caracal",
+                "Patchwork",
+                "APT32",
+                "BRONZE BUTLER",
+                "threat actors",
+                "Lazarus Group",
+                "Threat Group-3390",
+                "UNC3890 actors",
+                "LoudMiner",
+                "Elderwood",
+                "REvil",
+                "APT37",
+                "Grandoreiro",
+                "Machete",
+                "Snip3",
+                "PROMETHIUM",
+                "POORAIM",
+                "Windigo",
+                "Magic Hound"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 25,
+            "id": 1,
+            "texts": [
+                "websites",
+                "hyperlinks",
+                "iframes",
+                "RIG and SUNDOWN exploit kits",
+                "online advertising network Yandex.Direct",
+                "compromised websites",
+                "torrent file-sharing websites",
+                "advertisements",
+                "websites",
+                "IP range",
+                "sites",
+                "compromised watering hole websites",
+                "Japanese websites",
+                "compromised legitimate website",
+                "public Web pages",
+                "exploit kits",
+                "compromised websites",
+                "South Korean websites",
+                "torrent file-sharing sites",
+                "Google Ads",
+                "compromised websites",
+                "fake blog website",
+                "domains",
+                "compromised sites",
+                "media and magazine websites"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 18,
+            "id": 2,
+            "texts": [
+                "targeted victims",
+                "South Korean victims",
+                "targets",
+                "selected victims",
+                "victims",
+                "targets",
+                "targets",
+                "initial victims",
+                "victims",
+                "them",
+                "victims",
+                "victims",
+                "victims",
+                "targets",
+                "victims",
+                "victim",
+                "victims",
+                "targets"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 9,
+            "id": 3,
+            "texts": [
+                "hyperlinks",
+                "iframes",
+                "access",
+                "embedded iframes",
+                "HTML body",
+                ".js file",
+                "files",
+                "pirated copies",
+                "versions"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 63,
+            "id": 4,
+            "texts": [
+                "Crimson",
+                "tools",
+                "njRAT",
+                "RIG and SUNDOWN exploit kits",
+                "online advertising network Yandex.Direct",
+                "malware",
+                "attacks",
+                "vulnerable browser plugins",
+                "custom URL schemes",
+                "YouTube video downloader application",
+                "lure",
+                "watering hole attacks",
+                "watering holes",
+                "watering holes schemes",
+                "watering hole attacks",
+                "watering hole attack",
+                "forbes.com",
+                "malware",
+                "hotel login portals",
+                "watering hole attacks",
+                "zero-day exploits",
+                "strategic web compromise",
+                "custom exploit kits",
+                "strategic web compromise",
+                "SWC",
+                "custom exploit kit",
+                "holes",
+                "JavaScript",
+                "HTML body",
+                ".js file",
+                "watering hole",
+                "code",
+                "watering holes",
+                "exploits",
+                "Flash exploit",
+                "watering hole attacks",
+                "watering hole attack",
+                "RATANKBA",
+                "code",
+                "strategic web compromises",
+                "watering hole",
+                "login page",
+                "VST",
+                "malware",
+                "zero-day exploits",
+                "code",
+                "exploit kits",
+                "compromised websites",
+                "strategic web compromises",
+                "malware",
+                "malware",
+                "Javascript based profiler",
+                "RICECURRY",
+                "code",
+                "compromises",
+                "installer",
+                "downloads",
+                "watering hole attacks",
+                "legitimate installers",
+                "watering holes",
+                "drive-by downloads",
+                "Windows malware",
+                "watering-hole attacks"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 6,
+            "id": 5,
+            "texts": [
+                "remote system",
+                "macOS",
+                "Windows",
+                "sector",
+                "victim machines",
+                "web browser"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 7,
+            "id": 6,
+            "texts": [
+                "2014",
+                "Rabbit",
+                "software reseller",
+                "that",
+                "legitimate Israeli shipping company",
+                "Virtual Studio Technology",
+                "group"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 2,
+            "id": 7,
+            "texts": [
+                "then-zero-day Internet Explorer vulnerability",
+                "CVE-2014-0322"
+            ],
+            "label": "VULNERABILITY"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 9
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 11
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 4
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 35
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 7
+        },
+        {
+            "id": "4_5",
+            "source": 4,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 3
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 5
+        },
+        {
+            "id": "0_6",
+            "source": 0,
+            "dest": 6,
+            "count": 2
+        },
+        {
+            "id": "4_6",
+            "source": 4,
+            "dest": 6,
+            "count": 4
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 4
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "6_4",
+            "source": 6,
+            "dest": 4,
+            "count": 7
+        },
+        {
+            "id": "4_3",
+            "source": 4,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "0_7",
+            "source": 0,
+            "dest": 7,
+            "count": 2
+        },
+        {
+            "id": "4_2",
+            "source": 4,
+            "dest": 2,
+            "count": 3
+        },
+        {
+            "id": "3_6",
+            "source": 3,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "6_5",
+            "source": 6,
+            "dest": 5,
+            "count": 2
+        },
+        {
+            "id": "2_5",
+            "source": 2,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "5_1",
+            "source": 5,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "5_4",
+            "source": 5,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "6_1",
+            "source": 6,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "5_2",
+            "source": 5,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "4_0",
+            "source": 4,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 18,
+        "infect": 3,
+        "with": 5,
+        "by": 15,
+        "distribute": 4,
+        "against": 2,
+        "register": 1,
+        "on": 7,
+        "to": 6,
+        "as": 3,
+        "perform": 3,
+        "conduct": 2,
+        "spread": 1,
+        "gain": 1,
+        "in": 2,
+        "compromise": 4,
+        "redirect": 1,
+        "download": 2,
+        "within": 2,
+        "utilize": 2,
+        "water": 1,
+        "inject": 2,
+        "into": 2,
+        "serve": 1,
+        "deliver": 7,
+        "trick": 1,
+        "visit": 2,
+        "exploit": 2,
+        "target": 1,
+        "establish": 1,
+        "host": 1,
+        "of": 7,
+        "for": 1,
+        "disseminate": 1,
+        "profile": 1,
+        "basedon": 1,
+        "bait": 1,
+        "from": 1
+    }
+}

@@ -1,0 +1,205 @@
+{
+    "id": "T1098.002",
+    "tech_id": "T1098.002",
+    "tech_name": "Additional Email Delegate Permissions",
+    "best_phrases": [],
+    "tactics": [
+        "TA0003",
+        "TA0004"
+    ],
+    "features": [
+        "DATA",
+        "FUNCTION",
+        "NETWORK",
+        "COMPONENT",
+        "USER"
+    ],
+    "locations": [
+        "Windows",
+        "Office 365",
+        "Google Workspace"
+    ],
+    "procedures": [
+        "relationship--4b0b60ee-2ee8-4de0-868f-ae4c85e131ff",
+        "relationship--7e636340-8b64-4913-be75-a8e62f68fc91",
+        "relationship--c75b8dfa-5980-4686-9d74-b0c92ce60274",
+        "relationship--d9fca287-fe50-43f8-bf6d-da6751ef8009"
+    ],
+    "graph_nodes": [
+        {
+            "count": 4,
+            "id": 0,
+            "texts": [
+                "APT29",
+                "Magic Hound",
+                "APT28",
+                "APT29"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 2,
+            "id": 1,
+            "texts": [
+                "devices",
+                "Azure AD"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 14,
+            "id": 2,
+            "texts": [
+                "allowed IDs",
+                "copies",
+                "compromised email accounts",
+                "access",
+                "email boxes",
+                "targeted accounts",
+                "hundreds",
+                "information",
+                "ApplicationImpersonation role",
+                "compromised account",
+                "compromised global administrator account",
+                "compromised accounts",
+                "ApplicationImpersonation rights",
+                "ApplicationImpersonation rights"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 6,
+            "id": 3,
+            "texts": [
+                "compromised Application or Service Principals",
+                "active sync",
+                "Set-CASMailbox",
+                "OWA (Outlook Web Access) portal",
+                "Powershell cmdlet",
+                "service principal"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 6,
+            "id": 4,
+            "texts": [
+                "victim mailboxes",
+                "email communications",
+                "emails",
+                "emails",
+                "targeted mailboxes",
+                "Exchange"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "victim"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 1,
+            "id": 6,
+            "texts": [
+                "Middle East organizations"
+            ],
+            "label": "OTHER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 7
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 3
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 3
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "3_5",
+            "source": 3,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "2_6",
+            "source": 2,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "add": 2,
+        "as": 2,
+        "obtain": 1,
+        "to": 4,
+        "for": 2,
+        "use": 4,
+        "of": 4,
+        "grant": 2,
+        "read": 1,
+        "on": 1,
+        "backdoor": 1,
+        "collect": 1,
+        "in": 2,
+        "with": 1,
+        "from": 1,
+        "hold": 1
+    }
+}

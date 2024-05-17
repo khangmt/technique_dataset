@@ -1,0 +1,164 @@
+{
+    "id": "T1657",
+    "tech_id": "T1657",
+    "tech_name": "Financial Theft",
+    "best_phrases": [],
+    "tactics": [
+        "TA0040"
+    ],
+    "features": [
+        "DATA",
+        "FUNCTION",
+        "COMPONENT",
+        "USER"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows",
+        "Office 365",
+        "SaaS",
+        "Google Workspace"
+    ],
+    "procedures": [
+        "relationship--6affc901-7028-46ea-8d85-0e7d05ca9467",
+        "relationship--e5f93ccd-67e5-4bb5-805e-e39b41cfabf3"
+    ],
+    "graph_nodes": [
+        {
+            "count": 3,
+            "id": 0,
+            "texts": [
+                "FIN13",
+                "organizations",
+                "financial theft"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 4,
+            "id": 1,
+            "texts": [
+                "months",
+                "fraudulent transactions",
+                "legitimate financial transactions",
+                "goal"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 2,
+            "id": 2,
+            "texts": [
+                "infrastructure",
+                "software"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 3,
+            "id": 3,
+            "texts": [
+                "infrastructure",
+                "software",
+                "technical process"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "victim"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 2,
+            "id": 5,
+            "texts": [
+                "SilverTerrier",
+                "business email compromise (BEC) campaigns"
+            ],
+            "label": "ACTOR"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "5_0",
+            "source": 5,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "5_1",
+            "source": 5,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "over": 2,
+        "observe": 1,
+        "understand": 1,
+        "conduct": 1,
+        "of": 3,
+        "target": 1,
+        "with": 2,
+        "for": 1
+    }
+}

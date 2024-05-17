@@ -1,0 +1,53 @@
+{
+    "id": "T1505.001",
+    "tech_id": "T1505.001",
+    "tech_name": "SQL Stored Procedures",
+    "best_phrases": [],
+    "tactics": [
+        "TA0003"
+    ],
+    "features": [
+        "FUNCTION"
+    ],
+    "locations": [
+        "Windows",
+        "Linux"
+    ],
+    "procedures": [
+        "relationship--2542a753-4cfb-408f-98a8-e1b11f1bce10",
+        "relationship--e8379082-d4fe-4bc9-8ba6-63299045eb73"
+    ],
+    "graph_nodes": [
+        {
+            "count": 2,
+            "id": 0,
+            "texts": [
+                "Sandworm Team",
+                "Stuxnet"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 3,
+            "id": 1,
+            "texts": [
+                "MS-SQL stored procedures",
+                "xp_cmdshell",
+                "SQL code"
+            ],
+            "label": "FUNCTION"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 3
+        }
+    ],
+    "verbs": {
+        "use": 2,
+        "execute": 1
+    }
+}

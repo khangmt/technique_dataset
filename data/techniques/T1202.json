@@ -1,0 +1,89 @@
+{
+    "id": "T1202",
+    "tech_id": "T1202",
+    "tech_name": "Indirect Command Execution",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "COMPONENT"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--09710ce1-9ed9-4c25-a86f-0a481174cc0d",
+        "relationship--8b746637-fef8-474e-8960-822d758fb9b3",
+        "relationship--b5612c39-e246-409b-97cb-57067cfa27b4"
+    ],
+    "graph_nodes": [
+        {
+            "count": 7,
+            "id": 0,
+            "texts": [
+                "Lazarus Group persistence mechanisms",
+                "forfiles.exe",
+                "Forfiles",
+                "controls",
+                "cmd",
+                "Forfiles utility",
+                "commands"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 1,
+            "texts": [
+                ".htm files"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 2,
+            "texts": [
+                "Revenge RAT"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "system"
+            ],
+            "label": "COMPONENT"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "2_0",
+            "source": 2,
+            "dest": 0,
+            "count": 2
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 2,
+        "execute": 2,
+        "subvert": 1,
+        "invoke": 1,
+        "on": 1
+    }
+}

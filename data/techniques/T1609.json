@@ -1,0 +1,139 @@
+{
+    "id": "T1609",
+    "tech_id": "T1609",
+    "tech_name": "Container Administration Command",
+    "best_phrases": [],
+    "tactics": [
+        "TA0002"
+    ],
+    "features": [
+        "FUNCTION",
+        "COMPONENT",
+        "NETWORK",
+        "DATA"
+    ],
+    "locations": [
+        "Containers"
+    ],
+    "procedures": [
+        "relationship--12ea5ead-f19a-488e-8b47-ceb9d45593fd",
+        "relationship--17530a5c-d0a2-4a4d-8617-d0659b443e3a",
+        "relationship--4428158e-cf07-49f0-8a9f-5cc767027e2a",
+        "relationship--bcee03c4-6420-4280-8212-c8aa44a13730",
+        "relationship--d0dedd7e-d480-4611-b4b2-90f1ba71091b"
+    ],
+    "graph_nodes": [
+        {
+            "count": 4,
+            "id": 0,
+            "texts": [
+                "TeamTNT",
+                "Hildegard",
+                "Siloscape",
+                "Kinsing"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 11,
+            "id": 1,
+            "texts": [
+                "kubelet API run command",
+                "Hildegard",
+                "commands",
+                "Peirates",
+                "Kubernetes API",
+                "kubectl",
+                "commands",
+                "kubelet API run command",
+                "commands",
+                "kubectl commands",
+                "shell scripts"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 5,
+            "id": 2,
+            "texts": [
+                "containers",
+                "Kubernetes API",
+                "kubectl",
+                "containers",
+                "kubectl"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 2,
+            "id": 3,
+            "texts": [
+                "IRC channel",
+                "victim clusters"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "Ubuntu container entry point"
+            ],
+            "label": "DATA"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 6
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 3
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "by": 5,
+        "execute": 3,
+        "on": 2,
+        "use": 1,
+        "run": 3,
+        "send": 1,
+        "to": 1,
+        "with": 1
+    }
+}

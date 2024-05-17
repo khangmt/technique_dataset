@@ -1,0 +1,131 @@
+{
+    "id": "T1546.004",
+    "tech_id": "T1546.004",
+    "tech_name": "Unix Shell Configuration Modification",
+    "best_phrases": [],
+    "tactics": [
+        "TA0004",
+        "TA0003"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "COMPONENT",
+        "DIRECTORY"
+    ],
+    "locations": [
+        "Linux",
+        "macOS"
+    ],
+    "procedures": [
+        "relationship--226961a0-998c-4402-a7de-3c7922c4b45e",
+        "relationship--37e9f2ca-a7cb-4cc1-bf0f-4e2d36711b88",
+        "relationship--b3efa4b3-4281-4bc7-a588-836d8e64c2f2"
+    ],
+    "graph_nodes": [
+        {
+            "count": 4,
+            "id": 0,
+            "texts": [
+                "RotaJakiro",
+                "command",
+                "binary",
+                "bash, csh, and tcsh shells"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 4,
+            "id": 1,
+            "texts": [
+                "non-root level permissions",
+                ".bashrc file",
+                "rc.local and .bashrc files",
+                "profile, login, and run command (rc) files"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 2,
+            "texts": [
+                "${HOME}/.gvfsd/.profile/ folder"
+            ],
+            "label": "DIRECTORY"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "that"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 2,
+            "id": 4,
+            "texts": [
+                "Linux Rabbit",
+                "Green Lambert"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 2,
+            "id": 5,
+            "texts": [
+                "infected machine",
+                "compromised host"
+            ],
+            "label": "COMPONENT"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 2
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "4_5",
+            "source": 4,
+            "dest": 5,
+            "count": 2
+        }
+    ],
+    "verbs": {
+        "execute": 2,
+        "add": 1,
+        "to": 1,
+        "in": 2,
+        "by": 1,
+        "on": 2,
+        "modify": 1,
+        "associate with": 1
+    }
+}

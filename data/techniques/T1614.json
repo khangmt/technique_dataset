@@ -1,0 +1,159 @@
+{
+    "id": "T1614",
+    "tech_id": "T1614",
+    "tech_name": "System Location Discovery",
+    "best_phrases": [],
+    "tactics": [
+        "TA0007"
+    ],
+    "features": [
+        "FUNCTION",
+        "COMPONENT",
+        "DATA"
+    ],
+    "locations": [
+        "Windows",
+        "Linux",
+        "macOS",
+        "IaaS"
+    ],
+    "procedures": [
+        "relationship--00ed8575-5d79-46c3-adea-d0e1bf5dc14a",
+        "relationship--139cce0b-726b-406a-ad38-1fdfc779cf57",
+        "relationship--4f4a052a-7e53-451f-8976-7c6f1623102d",
+        "relationship--70dc4dfe-c859-4665-88d7-ff724d88380b",
+        "relationship--93fdbd36-b577-44bd-b4db-6daadbef9cb2",
+        "relationship--9f918c84-29ac-4769-ba94-6b46c8ccb950",
+        "relationship--a49fc7fd-5af0-4a2f-a2bb-f1d153e6b66d",
+        "relationship--ac7a8c0c-bdbc-4ed5-91f9-b00212fe7189",
+        "relationship--e2c08481-c9ad-4929-b470-afd2df7233ed"
+    ],
+    "graph_nodes": [
+        {
+            "count": 6,
+            "id": 0,
+            "texts": [
+                "DarkWatchman",
+                "SideCopy",
+                "SDBbot",
+                "Crimson",
+                "Saint Bot",
+                "GrimAgent"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 4,
+            "id": 1,
+            "texts": [
+                "OS locale",
+                "country location",
+                "files",
+                "geographical location"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 7,
+            "id": 2,
+            "texts": [
+                "compromised host",
+                "compromised host",
+                "compromised machine",
+                "victim host",
+                "compromised host",
+                "compromised host",
+                "victim machine"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 8,
+            "id": 3,
+            "texts": [
+                "QuasarRAT",
+                "country code",
+                "Ragnar Locker",
+                "code",
+                "Windows API",
+                "GetLocaleInfoW",
+                "system locale checks",
+                "country code"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 8,
+            "id": 4,
+            "texts": [
+                "country",
+                "Armenia",
+                "Ukraine",
+                "Moldova",
+                "Kazakhstan",
+                "Belarus",
+                "Russia",
+                "Russia"
+            ],
+            "label": "OTHER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 3
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 3
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 2
+        }
+    ],
+    "verbs": {
+        "identity": 1,
+        "of": 4,
+        "identify": 3,
+        "determine": 1,
+        "collect": 1,
+        "execute": 1,
+        "check": 2,
+        "encrypt": 1,
+        "conduct": 1,
+        "be": 1,
+        "on": 1,
+        "in": 1
+    }
+}

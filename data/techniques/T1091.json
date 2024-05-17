@@ -1,0 +1,440 @@
+{
+    "id": "T1091",
+    "tech_id": "T1091",
+    "tech_name": "Replication Through Removable Media",
+    "best_phrases": [
+        "CVE-2010-2568 LNK vulnerability"
+    ],
+    "tactics": [
+        "TA0008",
+        "TA0001"
+    ],
+    "features": [
+        "COMPONENT",
+        "FUNCTION",
+        "DATA",
+        "NETWORK",
+        "VULNERABILITY",
+        "USER",
+        "DIRECTORY",
+        "REGISTRY",
+        "ENCRYPTION"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--00b0af92-df59-4d56-ac3e-18f6f1f72957",
+        "relationship--114f98a4-6243-4a0c-a6c4-3e693a4f9b08",
+        "relationship--242a60b4-114e-4dc5-9577-72dfd375a93c",
+        "relationship--291df761-474b-4c5f-a9bd-2aaef0f80d70",
+        "relationship--2f337593-16b2-40a2-928c-c7659d0326ea",
+        "relationship--3eb29574-145d-4d4a-b4c6-e94b8a79781e",
+        "relationship--5b2682dc-f64d-482b-8fc4-132dad2727d9",
+        "relationship--5bad7b38-36b5-4208-9895-e4a113c511a3",
+        "relationship--5fccce48-b648-40e4-a58a-18f068189daf",
+        "relationship--65df5b73-98b5-474d-8ee4-0b60b7291712",
+        "relationship--7f3c015e-d95d-4d35-a583-236134464554",
+        "relationship--815fff92-274f-467c-a8c0-a623588c6739",
+        "relationship--93bea600-6a8d-4f58-acf3-e7d604eeb451",
+        "relationship--9aeda7e2-e452-4cd3-837f-e258cba1fc96",
+        "relationship--9e70e248-2335-45ba-ae58-b162bc6b9bf4",
+        "relationship--c7697490-b9ad-45b9-9e69-ddc4a7a6d94c",
+        "relationship--c8f639f8-9717-485a-ad4c-7eb1fc771691",
+        "relationship--cc3ca652-5f6f-4d8b-8b3d-51ab6f776e8a",
+        "relationship--ce1bc121-5337-4be7-b363-f94a22ca10dc",
+        "relationship--e3e841fa-b806-4c22-9f98-a97950b68931",
+        "relationship--edaf0203-4959-4e1e-9240-3d20cf0f3b6a",
+        "relationship--f308adef-2601-41b2-9da8-b785a7adf06c",
+        "relationship--fc0432e9-1b49-4be8-b86e-15cdec6b070e",
+        "relationship--fded4f08-6cb0-4259-a6a9-f0d62537164f"
+    ],
+    "graph_nodes": [
+        {
+            "count": 24,
+            "id": 0,
+            "texts": [
+                "Flame",
+                "APT30",
+                "LuminousMoth",
+                "Unknown Logger",
+                "Aoqin Dragon",
+                "DustySky",
+                "attacker",
+                "H1N1",
+                "Darkhotel",
+                "Stuxnet",
+                "Mustang Panda",
+                "Agent.btz",
+                "njRAT",
+                "USBferry",
+                "APT28",
+                "Crimson",
+                "FIN7 actors",
+                "Ramsay",
+                "QakBot",
+                "ANDROMEDA",
+                "USBStealer",
+                "APT28",
+                "Ursnif",
+                "Tropic Trooper"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 30,
+            "id": 1,
+            "texts": [
+                "modules",
+                "Autorun functionality",
+                "SHIPSHAPE malware",
+                "Autorun",
+                "executable",
+                "malware",
+                "dropper",
+                "worm infection strategy",
+                "functionality",
+                "selective infector",
+                "executables",
+                "method",
+                "customized PlugX variant",
+                "instruction",
+                "malware",
+                "installer",
+                "operation",
+                "CHOPSTICK modules",
+                "malware",
+                "cases",
+                "backdoors",
+                "portable executable files",
+                "Autorun",
+                "tool",
+                "Conficker variants",
+                "USB propagation",
+                "Windows AUTORUN feature",
+                "propagation",
+                "USBferry",
+                "Autorun function"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 34,
+            "id": 2,
+            "texts": [
+                "USB sticks",
+                "removable drives",
+                "systems",
+                "drive",
+                "connected removable USB drives",
+                "infected machines",
+                "USB devices",
+                "removable device",
+                "secure network environment",
+                "removable media",
+                "removable media",
+                "removable media",
+                "computers",
+                "removable media",
+                "removable media devices",
+                "system",
+                "removable drives",
+                "attached USB storage devices",
+                "air-gapped machines",
+                "USB sticks",
+                "systems",
+                "removable media",
+                "USB drives",
+                "removable drives",
+                "removable drives",
+                "removable media",
+                "removable media",
+                "system",
+                "connected USB devices",
+                "infected USB device",
+                "air-gapped computers",
+                "removable drives",
+                "infected USB device",
+                "target machine"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 13,
+            "id": 3,
+            "texts": [
+                "stick",
+                "itself",
+                "itself",
+                "which",
+                "itself",
+                "Part",
+                "itself",
+                "cases",
+                "backdoors",
+                "itself",
+                "itself",
+                "itself",
+                "itself"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 5,
+            "id": 4,
+            "texts": [
+                "air-gapped networks",
+                "USB connections",
+                "command traffic",
+                "data",
+                "compromised networks"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 11,
+            "id": 5,
+            "texts": [
+                "legitimate document files",
+                "name",
+                "legitimate document",
+                "CVE-2010-2568 LNK vulnerability",
+                "autorun.inf file",
+                "file",
+                "autorun.inf file",
+                "files",
+                "command traffic",
+                "data",
+                "file"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 6,
+            "texts": [
+                "folder"
+            ],
+            "label": "DIRECTORY"
+        },
+        {
+            "count": 1,
+            "id": 7,
+            "texts": [
+                "DLLs"
+            ],
+            "label": "REGISTRY"
+        },
+        {
+            "count": 2,
+            "id": 8,
+            "texts": [
+                "CVE-2010-2568 LNK vulnerability",
+                "autorun.inf file"
+            ],
+            "label": "VULNERABILITY"
+        },
+        {
+            "count": 2,
+            "id": 9,
+            "texts": [
+                "potential victims",
+                "user"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 1,
+            "id": 10,
+            "texts": [
+                "infected USB keys"
+            ],
+            "label": "ENCRYPTION"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 16
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 9
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 4
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 19
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 4
+        },
+        {
+            "id": "1_6",
+            "source": 1,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "6_5",
+            "source": 6,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "0_7",
+            "source": 0,
+            "dest": 7,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 6
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 6
+        },
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 2
+        },
+        {
+            "id": "0_8",
+            "source": 0,
+            "dest": 8,
+            "count": 1
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "5_1",
+            "source": 5,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 2
+        },
+        {
+            "id": "3_5",
+            "source": 3,
+            "dest": 5,
+            "count": 3
+        },
+        {
+            "id": "5_2",
+            "source": 5,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "2_9",
+            "source": 2,
+            "dest": 9,
+            "count": 1
+        },
+        {
+            "id": "10_0",
+            "source": 10,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "9_2",
+            "source": 9,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "contain": 2,
+        "infect": 5,
+        "use": 13,
+        "move": 1,
+        "target": 1,
+        "spread": 9,
+        "modify": 2,
+        "hide": 1,
+        "copy": 5,
+        "to": 11,
+        "with": 2,
+        "as": 3,
+        "on": 5,
+        "breach": 1,
+        "employ": 1,
+        "for": 3,
+        "duplicate": 1,
+        "onto": 5,
+        "have": 1,
+        "of": 3,
+        "store on": 1,
+        "by": 2,
+        "drop": 2,
+        "create": 1,
+        "run": 1,
+        "into": 1,
+        "open": 2,
+        "load": 1,
+        "transfer": 2,
+        "write to": 1,
+        "across": 1,
+        "mail": 1,
+        "install": 1,
+        "execute": 2,
+        "transmit": 1,
+        "insert": 1,
+        "from": 1
+    }
+}

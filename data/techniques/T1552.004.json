@@ -1,0 +1,268 @@
+{
+    "id": "T1552.004",
+    "tech_id": "T1552.004",
+    "tech_name": "Private Keys",
+    "best_phrases": [],
+    "tactics": [
+        "TA0006"
+    ],
+    "features": [
+        "ENCRYPTION",
+        "DATA",
+        "FUNCTION",
+        "NETWORK",
+        "COMPONENT",
+        "REGISTRY"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows",
+        "Network"
+    ],
+    "procedures": [
+        "relationship--14adcf50-912a-48d5-87f6-72d2273039aa",
+        "relationship--1c5b8ff2-400a-4e0f-a819-3cc8f1bc76b8",
+        "relationship--1d2ee595-1972-46ac-bd85-322bdc5e35de",
+        "relationship--255347ba-c359-4a79-af44-089a502c6e9b",
+        "relationship--2c50e260-05dd-4bb3-9d75-5a84e2757fa7",
+        "relationship--373f2bc5-e221-459e-9922-27bead9a53fe",
+        "relationship--6934c7b5-96ce-4265-aea3-7eae018d7f3c",
+        "relationship--6b2e4ea0-1d04-4cf5-8ca8-72b311e20737",
+        "relationship--6bbd0299-4e8b-4d31-83c4-c690e43294c0",
+        "relationship--9741bd7b-a3f2-4052-b2e0-f0fcf331ceae",
+        "relationship--bdf68d86-fce4-46ad-9421-afdaf14273fe",
+        "relationship--de8fefef-bfe7-4720-a443-66713a47b439",
+        "relationship--e2772353-e6f8-406e-8416-fa4edeecd218",
+        "relationship--fe720085-2a43-4f72-8a5f-cf6ae82f7127"
+    ],
+    "graph_nodes": [
+        {
+            "count": 11,
+            "id": 0,
+            "texts": [
+                "Machete",
+                "threat actors",
+                "Kinsing",
+                "Hildegard",
+                "Mafalda",
+                "APT29",
+                "FoggyWeb",
+                "TeamTNT",
+                "Rocke",
+                "Ebury",
+                "jRAT"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 17,
+            "id": 1,
+            "texts": [
+                "cryptographic keys",
+                "certificate file extensions",
+                "keys",
+                "private keys",
+                "certificates",
+                "private keys",
+                "private keys",
+                "Chrome encryption key",
+                "PKI keys",
+                "certificate files",
+                "private encryption key",
+                "unsecured SSH keys",
+                "encryption keys",
+                "SSH private keys",
+                "unencrypted private keys",
+                "private key pass-phrases",
+                "keys"
+            ],
+            "label": "ENCRYPTION"
+        },
+        {
+            "count": 16,
+            "id": 2,
+            "texts": [
+                "cryptographic keys",
+                "certificate file extensions",
+                "private keys",
+                "certificates",
+                ".ssh",
+                "browser cookies",
+                "PKI keys",
+                "certificate files",
+                "private encryption key",
+                "token signing certificates",
+                "token decryption certificates",
+                "private key and session information",
+                "unencrypted private keys",
+                "private key pass-phrases",
+                "VPNs",
+                "cryptocurrency wallets"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 11,
+            "id": 3,
+            "texts": [
+                "CRYPTO::Extract module",
+                "Mimikatz",
+                "Windows cryptographic application programming interface (API) functions",
+                "Mimikatz",
+                "Empire",
+                "Invoke-SessionGopher",
+                "modules",
+                "AADInternals",
+                "Azure AD services",
+                "ADSync and Active Directory Federated Services servers",
+                "coinminer"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 3,
+            "id": 4,
+            "texts": [
+                "Windows certificate store",
+                "Active Directory Federation Services (AD FS) container",
+                "infected machine"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "corresponding SAML signing certificates"
+            ],
+            "label": "REGISTRY"
+        },
+        {
+            "count": 6,
+            "id": 6,
+            "texts": [
+                "compromised AD FS server",
+                "Azure AD services",
+                "ADSync and Active Directory Federated Services servers",
+                "network",
+                "VPNs",
+                "cryptocurrency wallets"
+            ],
+            "label": "NETWORK"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 10
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 6
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 3
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "0_6",
+            "source": 0,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "2_6",
+            "source": 2,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "3_6",
+            "source": 3,
+            "dest": 6,
+            "count": 2
+        },
+        {
+            "id": "1_6",
+            "source": 1,
+            "dest": 6,
+            "count": 2
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "for": 5,
+        "of": 1,
+        "extract": 2,
+        "interact": 1,
+        "use": 3,
+        "dump": 1,
+        "from": 7,
+        "in": 1,
+        "collect": 1,
+        "protect": 1,
+        "obtain": 1,
+        "decrypt": 1,
+        "retrieve": 1,
+        "gather": 1,
+        "spread": 1,
+        "on": 1,
+        "byout": 1,
+        "intercept": 1,
+        "steal": 1
+    }
+}

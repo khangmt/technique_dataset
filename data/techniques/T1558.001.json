@@ -1,0 +1,98 @@
+{
+    "id": "T1558.001",
+    "tech_id": "T1558.001",
+    "tech_name": "Golden Ticket",
+    "best_phrases": [],
+    "tactics": [
+        "TA0006"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "COMPONENT"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--42049cfe-e374-4726-9832-3ad01d8466a5",
+        "relationship--7367c930-0727-4550-b421-2768edef03cd",
+        "relationship--7b8254f2-bfbb-4775-aaf8-3b5fa3457ee9",
+        "relationship--d6b24dda-b98e-44d0-913c-cb1987eba799"
+    ],
+    "graph_nodes": [
+        {
+            "count": 1,
+            "id": 0,
+            "texts": [
+                "Ke3chang"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 7,
+            "id": 1,
+            "texts": [
+                "Mimikatz",
+                "Empire",
+                "implementation",
+                "Mimikatz",
+                "kerberos module",
+                "Mimikatz",
+                "Rubeus"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 3,
+            "id": 2,
+            "texts": [
+                "Kerberos golden tickets",
+                "golden tickets",
+                "golden tickets"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "ticket-granting ticket"
+            ],
+            "label": "COMPONENT"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 3,
+        "generate": 1,
+        "of": 2,
+        "create": 1,
+        "forge": 1
+    }
+}

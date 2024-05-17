@@ -1,0 +1,154 @@
+{
+    "id": "T1610",
+    "tech_id": "T1610",
+    "tech_name": "Deploy Container",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005",
+        "TA0002"
+    ],
+    "features": [
+        "COMPONENT",
+        "FUNCTION",
+        "DATA",
+        "NETWORK"
+    ],
+    "locations": [
+        "Containers"
+    ],
+    "procedures": [
+        "relationship--102ece09-4129-4662-b05c-243709cd7d1d",
+        "relationship--3e62e520-0104-4be7-b4e2-d68fa88d7067",
+        "relationship--71d8ce83-3410-4bf2-b30c-a3aa4c8a931d",
+        "relationship--78f508b9-0b72-4825-a076-9924eb9291fe"
+    ],
+    "graph_nodes": [
+        {
+            "count": 5,
+            "id": 0,
+            "texts": [
+                "deployed Ubuntu container",
+                "victim environments",
+                "pod",
+                "root file system",
+                "deployed container"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 3,
+            "id": 1,
+            "texts": [
+                "Kinsing",
+                "TeamTNT",
+                "Doki"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 2,
+            "id": 2,
+            "texts": [
+                "types",
+                "local IP address ranges"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 5,
+            "id": 3,
+            "texts": [
+                "cryptocurrency mining software",
+                "command",
+                "Peirates",
+                "command",
+                "reverse shell"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 2,
+            "id": 4,
+            "texts": [
+                "node",
+                "node"
+            ],
+            "label": "NETWORK"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 2
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "2_0",
+            "source": 2,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "3_0",
+            "source": 3,
+            "dest": 0,
+            "count": 2
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "run": 2,
+        "deploy": 2,
+        "into": 2,
+        "transfer": 1,
+        "to": 2,
+        "execute": 2,
+        "of": 2,
+        "discover within": 1,
+        "mount": 1,
+        "create": 1,
+        "on": 1
+    }
+}

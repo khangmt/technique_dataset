@@ -1,0 +1,205 @@
+{
+    "id": "T1529",
+    "tech_id": "T1529",
+    "tech_name": "System Shutdown/Reboot",
+    "best_phrases": [],
+    "tactics": [
+        "TA0040"
+    ],
+    "features": [
+        "COMPONENT",
+        "FUNCTION",
+        "DATA",
+        "USER"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows",
+        "Network"
+    ],
+    "procedures": [
+        "relationship--0ef5c336-794e-4700-b40e-c78eed74d353",
+        "relationship--3c7bb2a4-eede-4dae-ac41-03782729a961",
+        "relationship--4932951a-b313-4024-bbad-434de3b747c5",
+        "relationship--53c8e757-8043-4d08-8bd6-8d02d2b973cb",
+        "relationship--62c1a647-4a39-45b1-8d68-99b19ec12a78",
+        "relationship--63759ea4-5bf1-408d-a1cc-e7f52e3aca1b",
+        "relationship--66d53000-135b-448d-988a-3ff5d53b2c5b",
+        "relationship--97453382-d064-4705-9a63-b21356d4bfce",
+        "relationship--9d6c5d09-94b9-4453-a26d-8b3ac79cfe7f",
+        "relationship--aa158d48-a9f5-49bb-8f15-166705f29b36",
+        "relationship--cc31afad-6349-4b66-a0a9-cd8f9de46aec",
+        "relationship--d2ff2c76-04ed-41c4-bd35-75f7cf823aee",
+        "relationship--f86b3fe5-c004-4fed-aaac-cf7d68b8d315",
+        "relationship--fc89b538-26d8-434a-954f-e7d0b384b506"
+    ],
+    "graph_nodes": [
+        {
+            "count": 15,
+            "id": 0,
+            "texts": [
+                "DCSrv",
+                "LockerGoga",
+                "attacker",
+                "Olympic Destroyer",
+                "APT38",
+                "Maze",
+                "APT37",
+                "LookBack",
+                "WhisperGate",
+                "KillDisk",
+                "NotPetya",
+                "Lazarus Group",
+                "Shamoon",
+                "HermeticWiper",
+                "AvosLocker"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 12,
+            "id": 1,
+            "texts": [
+                "function",
+                "BOOTWRECK",
+                "custom MBR wiper",
+                "system reboot",
+                "shutdown command",
+                "ransomware",
+                "malware",
+                "command shutdown /r /t 1",
+                "processes",
+                "infection",
+                "system shutdown",
+                "Linux variant"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 3,
+            "id": 2,
+            "texts": [
+                "hours",
+                "system configuration settings",
+                "files"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 17,
+            "id": 3,
+            "texts": [
+                "system",
+                "infected systems",
+                "compromised system",
+                "MBR",
+                "victim machine",
+                "VM",
+                "system",
+                "MBR",
+                "victim machine",
+                "compromised host",
+                "machine",
+                "system",
+                "systems",
+                "MBR",
+                "infected systems",
+                "infected system",
+                "ESXi virtual machines"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "victim"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "that"
+            ],
+            "label": "OTHER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 7
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 7
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 10
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "5_3",
+            "source": 5,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "have": 1,
+        "sleep": 1,
+        "reboot": 7,
+        "shut": 2,
+        "modify": 1,
+        "use": 2,
+        "initiate": 2,
+        "wipe": 3,
+        "of": 2,
+        "issue": 2,
+        "on": 3,
+        "run": 1,
+        "within": 2,
+        "shutdown": 1,
+        "terminate": 2,
+        "after": 2,
+        "destroy": 1
+    }
+}

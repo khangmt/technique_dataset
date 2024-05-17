@@ -1,0 +1,127 @@
+{
+    "id": "T1003.005",
+    "tech_id": "T1003.005",
+    "tech_name": "Cached Domain Credentials",
+    "best_phrases": [],
+    "tactics": [
+        "TA0006"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "COMPONENT"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--060d2cd5-a734-4c78-908c-a9ddabe3aa89",
+        "relationship--176244be-553b-48ac-8e38-9b006d6c360e",
+        "relationship--59a6ccad-02c1-4794-ac65-4d01c8ca7a3f",
+        "relationship--5c6b3fda-2eec-4c7a-af09-5f880f260085",
+        "relationship--9399157f-4443-447f-b2e1-2227582af6e6",
+        "relationship--cd95d72d-033c-4881-b233-70983106cbfa",
+        "relationship--d8707d98-c6f1-4d16-956a-df9a6862b7fa",
+        "relationship--fc857925-ff28-49f9-ba76-7ec2d29ba939"
+    ],
+    "graph_nodes": [
+        {
+            "count": 5,
+            "id": 0,
+            "texts": [
+                "Okrum",
+                "APT33",
+                "Leafminer",
+                "OilRig",
+                "MuddyWater"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 16,
+            "id": 1,
+            "texts": [
+                "modified Quarks PwDump",
+                "credential dumping",
+                "tools",
+                "LaZagne",
+                "tools",
+                "LaZagne",
+                "Cachedump",
+                "LaZagne",
+                "credential dumping",
+                "MSCache",
+                "LaZagne",
+                "credential dumping tools",
+                "Pupy",
+                "Lazagne",
+                "credential dumping",
+                "LaZagne"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 8,
+            "id": 2,
+            "texts": [
+                "credentials",
+                "login and password information",
+                "cached password hashes",
+                "cache entry information",
+                "account and password information",
+                "credentials",
+                "accounts",
+                "harvesting credentials"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "compromised system"
+            ],
+            "label": "COMPONENT"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 7
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 6
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 5,
+        "perform": 3,
+        "gather": 1,
+        "retrieve": 1,
+        "extract": 1,
+        "from": 4,
+        "obtain": 1,
+        "steal": 1,
+        "to": 1,
+        "log into": 1,
+        "for": 2,
+        "with": 2
+    }
+}

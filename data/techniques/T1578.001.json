@@ -1,0 +1,67 @@
+{
+    "id": "T1578.001",
+    "tech_id": "T1578.001",
+    "tech_name": "Create Snapshot",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005"
+    ],
+    "features": [
+        "COMPONENT",
+        "DATA",
+        "FUNCTION"
+    ],
+    "locations": [
+        "IaaS"
+    ],
+    "procedures": [
+        "relationship--eba5e32f-2817-4833-8d65-3ccb2d9d367c"
+    ],
+    "graph_nodes": [
+        {
+            "count": 1,
+            "id": 0,
+            "texts": [
+                "Pacu"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 3,
+            "id": 1,
+            "texts": [
+                "snapshots",
+                "EBS volumes",
+                "RDS instances"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 2,
+            "id": 2,
+            "texts": [
+                "EBS volumes",
+                "RDS instances"
+            ],
+            "label": "DATA"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "create": 1,
+        "of": 1
+    }
+}

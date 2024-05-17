@@ -1,0 +1,114 @@
+{
+    "id": "T1593.002",
+    "tech_id": "T1593.002",
+    "tech_name": "Search Engines",
+    "best_phrases": [],
+    "tactics": [
+        "TA0043"
+    ],
+    "features": [
+        "VULNERABILITY",
+        "FUNCTION",
+        "DATA",
+        "USER"
+    ],
+    "locations": [
+        "PRE"
+    ],
+    "procedures": [
+        "relationship--df5d8477-81dd-482b-a435-749a68727c49"
+    ],
+    "graph_nodes": [
+        {
+            "count": 1,
+            "id": 0,
+            "texts": [
+                "Kimsuky"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 3,
+            "id": 1,
+            "texts": [
+                "tools",
+                "geopolitical trends",
+                "vulnerabilities"
+            ],
+            "label": "VULNERABILITY"
+        },
+        {
+            "count": 3,
+            "id": 2,
+            "texts": [
+                "tools",
+                "geopolitical trends",
+                "vulnerabilities"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 3,
+            "id": 3,
+            "texts": [
+                "tools",
+                "geopolitical trends",
+                "vulnerabilities"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "Google"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "victims"
+            ],
+            "label": "USER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "for": 1,
+        "on": 1,
+        "target": 1
+    }
+}

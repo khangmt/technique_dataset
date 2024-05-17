@@ -1,0 +1,298 @@
+{
+    "id": "T1218.010",
+    "tech_id": "T1218.010",
+    "tech_name": "Regsvr32",
+    "best_phrases": [
+        "Regsvr32",
+        "regsvr32.exe",
+        "regsvr32",
+        "regsvr32.exe /s /i",
+        "regsvr32 %path%\\ctfmonrn.dll /s"
+    ],
+    "tactics": [
+        "TA0005"
+    ],
+    "features": [
+        "FUNCTION",
+        "REGISTRY",
+        "DATA",
+        "NETWORK",
+        "COMPONENT"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--036fcb1f-4cc1-4b48-bb9b-9312c9c8d9d9",
+        "relationship--03e7f671-763a-4027-af51-d01606c14a2a",
+        "relationship--0af12d0f-ef9e-40e7-8b70-d811f412125d",
+        "relationship--18d4782f-0e33-4bf5-b0a2-8dc04cacb617",
+        "relationship--2853aaaa-982e-49bf-a219-b4f16805b983",
+        "relationship--2bdaa624-15bb-4a69-8192-adc9fa44af3f",
+        "relationship--3283d0a8-5cd2-4548-a3bd-657d51684cd9",
+        "relationship--3b947696-f88a-4e6b-b408-b9f91c3cecdf",
+        "relationship--49eb0604-2dee-4dcd-8029-cdd478033749",
+        "relationship--4c29de08-20be-4358-acfd-c4939a83c14b",
+        "relationship--4f3473a4-f5f5-43d8-a4ec-589763695942",
+        "relationship--4fab8d06-e6fb-472f-91ee-f2fd29ef444e",
+        "relationship--6246955e-05ae-4bd8-8ac7-c02447634486",
+        "relationship--62c5050d-983c-44f7-ba23-f2820398eb67",
+        "relationship--ae1592ae-15a3-45e3-a509-4fe9be3f9ed9",
+        "relationship--af1edc78-f0b2-450c-b91f-fe1646589173",
+        "relationship--b04c89b2-f790-4961-a012-7ccd18d1436e",
+        "relationship--b2b37e14-5dbc-4faa-955a-7172b242e828",
+        "relationship--b3cb9975-adb2-422c-a8b3-0b1ea230d4e4",
+        "relationship--bcbf0e6a-3566-4704-986f-caf0af38741d",
+        "relationship--c334b4c6-43f1-4452-8a1f-3d056fba9ac0",
+        "relationship--c3688800-5bf2-4e2f-93ed-27f66d3be8bd",
+        "relationship--cab50f6d-3621-4429-8c9a-803df15f4e75",
+        "relationship--cca195e2-b748-4881-b2bf-e6b3b993b460",
+        "relationship--d95285f5-803c-4eaf-977e-b221bd41f4d2",
+        "relationship--dfcc52d8-4664-48c4-9e35-2be2cd649d93",
+        "relationship--dfed3236-eb97-4a56-9325-1fb3d1c12ba4",
+        "relationship--ecb0d858-dd15-4181-b15b-76459db1d294",
+        "relationship--ee56e02a-67c0-4c26-b643-7569de421298",
+        "relationship--ee9da7e8-12a5-4b77-84ce-a5453874a070",
+        "relationship--f832e042-6859-4415-9b6c-4e093dc955ec"
+    ],
+    "graph_nodes": [
+        {
+            "count": 28,
+            "id": 0,
+            "texts": [
+                "Xbash",
+                "Saint Bot",
+                "QakBot",
+                "TA551",
+                "Valak",
+                "Egregor",
+                "More_eggs",
+                "Hi-Zor",
+                "Squirrelwaffle",
+                "Mori",
+                "Blue Mockingbird",
+                "Astaroth",
+                "Dridex",
+                "Deep Panda",
+                "RogueRobin",
+                "Cobalt Group",
+                "WIRTE",
+                "Lazarus Group",
+                "Ragnar Locker",
+                "HermeticWizard",
+                "threat actors",
+                "Leviathan",
+                "Kimsuky",
+                "Inception",
+                "APT32",
+                "EVILNUM",
+                "AppleSeed",
+                "APT19"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 52,
+            "id": 1,
+            "texts": [
+                "regsvr32",
+                "scripts",
+                "Regsvr32",
+                "regsvr32.exe",
+                "MockDll",
+                "embedded DLL",
+                "Process Hollowing",
+                "regsvr32",
+                "payload",
+                "Koadic",
+                "Regsvr32",
+                "payloads",
+                "regsvr32.exe",
+                "Registry Run Keys / Startup Folder persistence mechanism",
+                "regsvr32.exe",
+                "regsvr32.exe",
+                "regsvr32.exe",
+                "code",
+                "Derusbi variants",
+                "command",
+                "regsvr32.exe",
+                "server variant",
+                "Derusbi",
+                "regsvr32.exe",
+                ".sct file",
+                "regsvr32.exe",
+                "scripts",
+                "script",
+                "regsvr32",
+                "malware",
+                "regsvr32.exe",
+                "components",
+                "regsvr32.exe /s /i",
+                "payloads",
+                "code",
+                "command",
+                "regsvr32",
+                "regsvr32",
+                "command",
+                "malware",
+                "regsvr32s",
+                "regsvr32 %path%\\ctfmonrn.dll /s",
+                "Scheduled Task/Job",
+                "regsvr32.exe",
+                "COM scriptlet",
+                "backdoor",
+                "regsvr32",
+                "remote scriptlet",
+                "regsvr32.exe",
+                "regsvr32.exe",
+                "Regsvr32",
+                "application control techniques"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 5,
+            "id": 2,
+            "texts": [
+                "DLLs",
+                "DLL",
+                "DLLs",
+                "MockDll",
+                "embedded DLL"
+            ],
+            "label": "REGISTRY"
+        },
+        {
+            "count": 4,
+            "id": 3,
+            "texts": [
+                "Orz versions",
+                "value",
+                "memory",
+                "file"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "victim networks"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "VirtualBox"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 3,
+            "id": 6,
+            "texts": [
+                "that",
+                "group",
+                "that"
+            ],
+            "label": "OTHER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 31
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "6_3",
+            "source": 6,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "6_1",
+            "source": 6,
+            "dest": 1,
+            "count": 3
+        }
+    ],
+    "verbs": {
+        "use": 20,
+        "execute": 13,
+        "load": 2,
+        "have": 1,
+        "initiate": 1,
+        "any": 1,
+        "of": 2,
+        "in": 1,
+        "run": 3,
+        "employ": 1,
+        "with": 1,
+        "set": 2,
+        "create": 1,
+        "download": 1,
+        "into": 2,
+        "drop": 1,
+        "by": 2,
+        "call": 1,
+        "bypass": 1
+    }
+}

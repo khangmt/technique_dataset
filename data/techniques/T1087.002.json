@@ -1,0 +1,477 @@
+{
+    "id": "T1087.002",
+    "tech_id": "T1087.002",
+    "tech_name": "Domain Account",
+    "best_phrases": [],
+    "tactics": [
+        "TA0007"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "NETWORK",
+        "USER",
+        "COMPONENT",
+        "DIRECTORY"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--09cc5150-b68e-45de-9172-5fec7623c9ac",
+        "relationship--0cf8d5da-a127-4b48-bbf9-e5a0376033b4",
+        "relationship--14612b22-b271-4e93-8f66-d86ce8e10c29",
+        "relationship--16510fcf-70a0-4da5-9b80-f4772abca436",
+        "relationship--1685aa0e-d1be-40ea-ade0-21ff64e0d372",
+        "relationship--16c7058c-8fa5-4477-8332-9e76fcb38924",
+        "relationship--182ae728-bd77-41ca-bd0d-dd2b3d6cf50b",
+        "relationship--20f863a1-f7de-4d66-a564-c4adee24fdbe",
+        "relationship--2eb985a1-e73e-4554-8638-2e6f27690ec0",
+        "relationship--362e332d-7763-488d-b25d-f12965f56d62",
+        "relationship--40527571-0b01-4568-b72b-568ad8b419ae",
+        "relationship--44259d7d-e156-4e09-a401-ff62f0706cdd",
+        "relationship--4e0775fd-17b6-44cd-9598-98f1a185b32b",
+        "relationship--4e2594cc-f6e0-4153-b878-930bc03fc0ad",
+        "relationship--5235ff3c-646a-4608-b90e-394bc2c54330",
+        "relationship--57da83d5-2698-41b0-92b8-a92da8a4599c",
+        "relationship--58b7b9bf-d09b-49f4-acf5-351979171317",
+        "relationship--5a6942dc-eab7-4f45-b5fa-6149774e2acc",
+        "relationship--5f5af879-c239-416b-99ec-b46e2f9926a2",
+        "relationship--60f2ddcf-9b88-4a87-8baf-2777c9c49d39",
+        "relationship--61dd6d75-a95b-488d-9a1d-924563592df7",
+        "relationship--689d5a99-cfcf-43d6-ae55-9bf920986f63",
+        "relationship--7903f25e-388e-4cda-bd09-bc83fa64d62e",
+        "relationship--800b5705-d504-41af-86cb-252c6b3e267f",
+        "relationship--82dee5a5-7890-4bed-bc8c-83ffa13a8bcf",
+        "relationship--8b425ec5-7be4-4225-a7c5-8f219fed7b6c",
+        "relationship--8baa00da-64da-4acb-831e-2c001399394a",
+        "relationship--8d43c2da-0d5e-478a-aacb-b9da651854ce",
+        "relationship--8f1bdb28-7941-4b76-bcf3-2fe73321f0c5",
+        "relationship--909db543-0968-4f02-b1d9-de64c0730c0a",
+        "relationship--94229aa6-c862-48b8-9959-1e1d3c04dd5e",
+        "relationship--959c7695-01a5-4be1-9951-799749796cf4",
+        "relationship--a602be33-6ed6-4f73-b7f6-10b47581707a",
+        "relationship--ab109b93-76a9-46da-8934-58751125fd1e",
+        "relationship--ac6ce385-79d5-40bd-ab16-bd873fb1a821",
+        "relationship--d4faeb90-07ee-4ae2-b77d-e002418d1b22",
+        "relationship--d682570b-068d-421e-a6b4-a93640bd34dc",
+        "relationship--e52c1bab-01f3-47c0-a5c9-361ba56d7e6a",
+        "relationship--f6cf6ad8-7a42-4cf5-82ab-45d6a5107aeb",
+        "relationship--fa155ccc-b9db-48f6-bb1a-a367596668ad",
+        "relationship--fa6f9dc7-e984-411a-9ce4-a822d4213bc6",
+        "relationship--fb21ff9d-1cd5-4908-a3a4-5f0d22cb8c10"
+    ],
+    "graph_nodes": [
+        {
+            "count": 29,
+            "id": 0,
+            "texts": [
+                "APT29",
+                "SoreFang",
+                "Valak",
+                "Bazar",
+                "FIN6",
+                "Ke3chang",
+                "Sykipot",
+                "BoomBox",
+                "MuddyWater",
+                "BlackCat",
+                "LAPSUS$",
+                "Chimera",
+                "menuPass",
+                "OilRig",
+                "POWRUNER",
+                "Turla",
+                "threat actors",
+                "Wizard Spider",
+                "Fox Kitten",
+                "Stuxnet",
+                "threat actors",
+                "Lazarus Group",
+                "IcedID",
+                "Poseidon Group",
+                "OSInfo",
+                "Bankshot",
+                "Sandworm Team",
+                "BRONZE BUTLER",
+                "Dragonfly"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 57,
+            "id": 1,
+            "texts": [
+                "PowerShell",
+                "Get-ADUser",
+                "Get-ADGroupMember",
+                "net.exe user /domain",
+                "Net commands",
+                "scripts",
+                "querySpn.vbs",
+                "GetUserSPNs.vbs",
+                "PsExec NTDSGRAB module",
+                "Metasploit",
+                "CrackMapExec",
+                "net group \"REDACTED\" /domain",
+                "net localgroup administrators",
+                "commands",
+                "net group \"domain admins\" /domain",
+                "net localgroup \"administrators\"",
+                "LDAP query",
+                "cmd.exe net user /domain",
+                "dsquery",
+                "net use commands",
+                "BloodHound",
+                "information",
+                "identification",
+                "AD Explorer tool",
+                "net user Administrator",
+                "net user /dom",
+                "Empire",
+                "Microsoft administration tool",
+                "csvde.exe",
+                "net user /domain",
+                "net user",
+                "net group \"domain admins\" /domain",
+                "net group \"Exchange Trusted Subsystem\" /domain",
+                "account listings",
+                "PoshC2",
+                "net user /domain",
+                "commands",
+                "net user /domain",
+                "dsquery and dsget commands",
+                "SILENTTRINITY",
+                "PowerShell cmdlet",
+                "net group \"Domain admins\" /DOMAIN",
+                "net command",
+                "Brute Ratel C4",
+                "net user /domain",
+                "LDAP queries",
+                "net group \"Domain Admins\" /domain",
+                "process monitoring",
+                "IceApple Active Directory Querier module",
+                "authenticated requests",
+                "net group \"Domain Admins\" /dom",
+                "net group /dom",
+                "tool",
+                "net user /domain",
+                "batch scripts",
+                "victim domain controller",
+                "AdFind"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 53,
+            "id": 2,
+            "texts": [
+                "domain accounts",
+                "domain accounts",
+                "/domain flag",
+                "information",
+                "user accounts",
+                "user accounts",
+                "Service Principal Names",
+                "Service Principal Name",
+                "domain admin accounts",
+                "domain administrator accounts",
+                "copy",
+                "domain user accounts",
+                "account",
+                "accounts",
+                "local system administrator group membership",
+                "display name",
+                "SAM account name",
+                "distinguished name",
+                "domain users",
+                "domain users",
+                "information",
+                "user accounts",
+                "domain users",
+                "information",
+                "identification",
+                "domain users",
+                "domain admin accounts",
+                "users",
+                "domain accounts",
+                "local and domain user account information",
+                "Active Directory data",
+                "local and domain user account information",
+                "user account information",
+                "domain accounts",
+                "domain environment information",
+                "users",
+                "domain user information",
+                "account names",
+                "Active Directory data",
+                "documentation",
+                "service accounts",
+                "user accounts",
+                "information",
+                "domain accounts",
+                "list",
+                "users",
+                "administrator accounts",
+                "domain and account names/information",
+                "information",
+                "usernames",
+                "account information",
+                "users",
+                "domain users"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 15,
+            "id": 3,
+            "texts": [
+                "domain",
+                "domain",
+                "Active Directory database",
+                "domain",
+                "network",
+                "System.Security.AccessControl namespaces",
+                "domain",
+                "active directory servers",
+                "LDAP",
+                "network",
+                "local victim machine",
+                "network",
+                "Active Directory server",
+                "LDAP",
+                "AD"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 4,
+            "id": 4,
+            "texts": [
+                "FIN13",
+                "administrative groups",
+                "use",
+                "Volt Typhoon"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 12,
+            "id": 5,
+            "texts": [
+                "victim",
+                "permissions groups",
+                "\"domain admins\" permissions group",
+                "victim",
+                "victim",
+                "victim",
+                "domain admins",
+                "victim",
+                "employees",
+                "user",
+                "admin or domain admin group",
+                "local and domain users"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 6,
+            "id": 6,
+            "texts": [
+                "targeted system",
+                "Softerra LDAP browser",
+                "infected machine",
+                "local victim machine",
+                "network",
+                "compromised environments"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 1,
+            "id": 7,
+            "texts": [
+                "Active Directory"
+            ],
+            "label": "DIRECTORY"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 24
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 26
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 14
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 9
+        },
+        {
+            "id": "4_2",
+            "source": 4,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "4_3",
+            "source": 4,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 4
+        },
+        {
+            "id": "3_5",
+            "source": 3,
+            "dest": 5,
+            "count": 3
+        },
+        {
+            "id": "2_6",
+            "source": 2,
+            "dest": 6,
+            "count": 2
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 3
+        },
+        {
+            "id": "2_5",
+            "source": 2,
+            "dest": 5,
+            "count": 2
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 2
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 3
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "5_4",
+            "source": 5,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "0_6",
+            "source": 0,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 3
+        },
+        {
+            "id": "5_6",
+            "source": 5,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "4_6",
+            "source": 4,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "1_6",
+            "source": 1,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "0_7",
+            "source": 0,
+            "dest": 7,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 21,
+        "discover": 3,
+        "exectue": 1,
+        "by": 6,
+        "enumerate": 12,
+        "use with": 1,
+        "gather": 3,
+        "manipulate": 1,
+        "on": 12,
+        "identify": 6,
+        "query": 5,
+        "within": 3,
+        "utilize": 3,
+        "associate with": 1,
+        "obtain": 2,
+        "of": 9,
+        "display": 1,
+        "in": 4,
+        "list": 1,
+        "execute": 1,
+        "for": 2,
+        "collect": 3,
+        "about": 3,
+        "acquire": 1,
+        "export": 1,
+        "run": 3,
+        "get": 2,
+        "retrieve": 2,
+        "from": 1,
+        "browse": 1,
+        "be": 1,
+        "perform": 1,
+        "against": 2,
+        "list in": 1
+    }
+}

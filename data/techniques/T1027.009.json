@@ -1,0 +1,243 @@
+{
+    "id": "T1027.009",
+    "tech_id": "T1027.009",
+    "tech_name": "Embedded Payloads",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "NETWORK",
+        "DIRECTORY",
+        "REGISTRY"
+    ],
+    "locations": [
+        "macOS",
+        "Windows",
+        "Linux"
+    ],
+    "procedures": [
+        "relationship--2eec8dea-fea0-4958-b851-3e549578348f",
+        "relationship--36929435-86c4-41f9-8922-ad5e1fc512b1",
+        "relationship--58e22fa6-5925-40b7-9df6-4cda34892ea6",
+        "relationship--5f79680a-7b9f-47fd-bb81-025eb6368139",
+        "relationship--66f7fca6-b5cc-46e4-86a1-204f4b1038fa",
+        "relationship--87282f36-42f5-4eb1-9fec-778bc0f846b7",
+        "relationship--a4730261-b1b2-45ba-8874-b2edcdd13a75",
+        "relationship--d27ca417-0ced-4e42-b81c-fe93cfe7e1c7",
+        "relationship--e3b299d0-fbc0-445f-a0d0-b3fdaa572917",
+        "relationship--f5e601f7-5f7a-4888-9e90-e7f815d5013c",
+        "relationship--fd0c41df-35a7-4593-996c-0f9bdd6f4749"
+    ],
+    "graph_nodes": [
+        {
+            "count": 18,
+            "id": 0,
+            "texts": [
+                "DEADEYE.EMBED variant",
+                "DEADEYE",
+                "payloads",
+                "embedded second stage DLL payload",
+                "malware",
+                "embedded executable",
+                "Stripped Payloads",
+                "run-only Stripped Payloads",
+                "dropper",
+                "encrypted payload",
+                "PowerShell script",
+                "SMOKEDHAM source code",
+                "dropper",
+                "XOR encrypted communications module",
+                "orchestrator module",
+                "Invoke-PSImage",
+                "base64-encoded payload",
+                "operation"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 7,
+            "id": 1,
+            "texts": [
+                "BADHATCH",
+                "Emotet",
+                "macOS.OSAMiner",
+                "Dtrack",
+                "Netwalker",
+                "ComRAT",
+                "threat actors"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 5,
+            "id": 2,
+            "texts": [
+                "stage",
+                "that",
+                "communication channels",
+                "key material",
+                "modes"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "%temp%\\setup.exe"
+            ],
+            "label": "DIRECTORY"
+        },
+        {
+            "count": 11,
+            "id": 4,
+            "texts": [
+                "extra data",
+                "hex format",
+                "encrypted string",
+                "payload data",
+                "image file",
+                "LNK file",
+                "Uroburos Queue file",
+                "embedded executable files",
+                "communication channels",
+                "key material",
+                "modes"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "DLL"
+            ],
+            "label": "REGISTRY"
+        },
+        {
+            "count": 3,
+            "id": 6,
+            "texts": [
+                "communication channels",
+                "key material",
+                "modes"
+            ],
+            "label": "NETWORK"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 8
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "2_0",
+            "source": 2,
+            "dest": 0,
+            "count": 2
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 4
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "5_1",
+            "source": 5,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "5_0",
+            "source": 5,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "5_4",
+            "source": 5,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "4_2",
+            "source": 4,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "4_6",
+            "source": 4,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "6_0",
+            "source": 6,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "4_0",
+            "source": 4,
+            "dest": 0,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "of": 4,
+        "embed": 6,
+        "have": 1,
+        "within": 8,
+        "drop": 1,
+        "at": 2,
+        "use": 1,
+        "as": 3,
+        "in": 2,
+        "inside": 2,
+        "contain": 1,
+        "along": 1
+    }
+}

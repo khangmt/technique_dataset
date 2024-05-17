@@ -1,0 +1,164 @@
+{
+    "id": "T1048.002",
+    "tech_id": "T1048.002",
+    "tech_name": "Exfiltration Over Asymmetric Encrypted Non-C2 Protocol",
+    "best_phrases": [],
+    "tactics": [
+        "TA0010"
+    ],
+    "features": [
+        "NETWORK",
+        "DATA",
+        "ENCRYPTION",
+        "USER",
+        "FUNCTION"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--16ec2171-a002-4838-8e20-af89b2eeafd0",
+        "relationship--d3a5df12-454a-44f7-a3d1-9154dcc815e9",
+        "relationship--fc56bf57-2188-4177-b0a3-e89bb8478523"
+    ],
+    "graph_nodes": [
+        {
+            "count": 3,
+            "id": 0,
+            "texts": [
+                "data",
+                "data",
+                "data"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 6,
+            "id": 1,
+            "texts": [
+                "HTTPS",
+                "OWA server",
+                "SFTP",
+                "HTTPS",
+                "WebDAV",
+                "OWA servers"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 2,
+            "id": 2,
+            "texts": [
+                "APT28",
+                "APT29"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 2,
+            "id": 3,
+            "texts": [
+                "archives",
+                "password-protected archive"
+            ],
+            "label": "ENCRYPTION"
+        },
+        {
+            "count": 2,
+            "id": 4,
+            "texts": [
+                "target",
+                "victim"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 2,
+            "id": 5,
+            "texts": [
+                "Rclone",
+                "HTTPS request"
+            ],
+            "label": "FUNCTION"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "3_0",
+            "source": 3,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "5_1",
+            "source": 5,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "5_0",
+            "source": 5,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "2_5",
+            "source": 2,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "2_0",
+            "source": 2,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "5_3",
+            "source": 5,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 1,
+        "stage on": 2,
+        "exfiltrate": 3,
+        "of": 3,
+        "over": 4,
+        "by": 1,
+        "to": 1
+    }
+}

@@ -1,0 +1,300 @@
+{
+    "id": "T1608.001",
+    "tech_id": "T1608.001",
+    "tech_name": "Upload Malware",
+    "best_phrases": [],
+    "tactics": [
+        "TA0042"
+    ],
+    "features": [
+        "FUNCTION",
+        "COMPONENT",
+        "NETWORK",
+        "DATA"
+    ],
+    "locations": [
+        "PRE"
+    ],
+    "procedures": [
+        "relationship--03b02b8a-4f47-46ef-bdda-096c214ffcda",
+        "relationship--061c7b3d-775a-403f-9fd6-af0962a2e25e",
+        "relationship--0a49a3af-973d-43ea-b4d4-8cc21c12dfc0",
+        "relationship--0e837480-f359-4bdc-875a-d953027d17b0",
+        "relationship--165b8698-8d09-4602-9385-c5002c3eb46e",
+        "relationship--18ba352d-274c-4cb5-8916-d95035a2423c",
+        "relationship--1a28bcb2-fbac-4bc3-a42c-a254b3e9643e",
+        "relationship--1ff37097-9ec1-42cd-bdd6-52d74ab8e3b5",
+        "relationship--35ca3779-c632-4a7e-a931-7472128fb10d",
+        "relationship--3de46cc5-5049-4105-8fcc-ede3f51f30c5",
+        "relationship--424ae88f-7405-4cab-9065-4d1e024a25c8",
+        "relationship--4973197d-b2b7-4da2-ad4f-245beca0b389",
+        "relationship--5beed1ca-321a-47b7-a16c-02905ad96364",
+        "relationship--5c5d1d00-1a0a-4315-9da4-2beb5f00793b",
+        "relationship--634a14f9-e252-4f5e-851a-de8187de074e",
+        "relationship--68f0beb9-ce3e-44ae-af4d-516c22aa3cf4",
+        "relationship--75a91f69-93bc-40fd-a17c-ae675637c296",
+        "relationship--85c85045-a030-435c-a353-6d89a1feacc0",
+        "relationship--895ab8e5-8f5f-420f-b283-61ee0d7ac37a",
+        "relationship--9ed7e90a-8034-48eb-8444-9ec29941a7b8",
+        "relationship--a3e07b45-b35d-4d02-a266-34366a57f557",
+        "relationship--d9a18216-bb4f-445a-92a9-abd99ba0609a",
+        "relationship--db393f5e-8029-423c-bfbc-da48fc932cb0"
+    ],
+    "graph_nodes": [
+        {
+            "count": 4,
+            "id": 0,
+            "texts": [
+                "TA2541",
+                "group",
+                "targeted organizations",
+                "that"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 33,
+            "id": 1,
+            "texts": [
+                "malware",
+                "platforms",
+                "malware",
+                "hacker tools",
+                "files",
+                "malware",
+                "payloads",
+                "file exfiltrators",
+                "implants",
+                "content",
+                "beacons",
+                "files",
+                "malware",
+                "legitimate hosting services",
+                "OneDrive",
+                "MediaFire",
+                "open-source remote access Trojans",
+                "operations",
+                "payloads",
+                "payloads",
+                "malware",
+                "direct download",
+                "malware",
+                "stage payloads",
+                "malware",
+                "control",
+                "payloads",
+                "targeting",
+                "malware",
+                "legitimate software",
+                "Atera agent installer",
+                "payloads",
+                "file-sharing services"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 22,
+            "id": 2,
+            "texts": [
+                "Lazarus Group",
+                "threat actors",
+                "Earth Lusca",
+                "LuminousMoth",
+                "Mustang Panda",
+                "Threat Group-3390",
+                "Transparent Tribe",
+                "Kimsuky",
+                "TeamTNT",
+                "threat actors",
+                "LazyScripter",
+                "Gamaredon Group",
+                "SideCopy",
+                "UNC3890 actors",
+                "threat actors",
+                "TA505",
+                "BITTER",
+                "threat actors",
+                "APT32",
+                "HEXANE",
+                "FIN7",
+                "EXOTIC LILY"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 16,
+            "id": 3,
+            "texts": [
+                "compromised servers",
+                "compromised web servers",
+                "Google Drive",
+                "compromised web servers",
+                "GitHub",
+                "domains",
+                "Blogspot",
+                "Docker Hub",
+                "domains",
+                "compromised domains",
+                "websites",
+                "Dropbox",
+                "domains",
+                "domains",
+                "websites",
+                "fraudulent websites"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 10,
+            "id": 4,
+            "texts": [
+                "files",
+                "malware",
+                "documents",
+                "file exfiltrators",
+                "implants",
+                "content",
+                "beacons",
+                "files",
+                "malware",
+                "files"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 18,
+            "id": 5,
+            "texts": [
+                "Google Drive",
+                "compromised web servers",
+                "GitHub",
+                "Dropbox",
+                "DropBox",
+                "backdoored Docker images",
+                "legitimate hosting services",
+                "OneDrive",
+                "MediaFire",
+                "GitHub",
+                "infrastructure",
+                "compromised system",
+                "websites",
+                "Dropbox",
+                "Dropbox",
+                "Google Drive",
+                "Amazon S3",
+                "Amazon S3"
+            ],
+            "label": "COMPONENT"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 13
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 19
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 5
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 5
+        },
+        {
+            "id": "2_5",
+            "source": 2,
+            "dest": 5,
+            "count": 8
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 8
+        },
+        {
+            "id": "4_3",
+            "source": 4,
+            "dest": 3,
+            "count": 3
+        },
+        {
+            "id": "4_5",
+            "source": 4,
+            "dest": 5,
+            "count": 3
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "5_3",
+            "source": 5,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "3_0",
+            "source": 3,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "2_0",
+            "source": 2,
+            "dest": 0,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "upload": 5,
+        "to": 11,
+        "use": 3,
+        "host": 7,
+        "stage": 8,
+        "on": 15,
+        "register": 3,
+        "in": 6,
+        "use in": 1,
+        "for": 2,
+        "onto": 1,
+        "under": 1,
+        "during": 2,
+        "impersonate": 1,
+        "trojanize": 1,
+        "contain": 1
+    }
+}

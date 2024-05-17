@@ -1,0 +1,194 @@
+{
+    "id": "T1573",
+    "tech_id": "T1573",
+    "tech_name": "Encrypted Channel",
+    "best_phrases": [],
+    "tactics": [
+        "TA0011"
+    ],
+    "features": [
+        "NETWORK",
+        "FUNCTION",
+        "ENCRYPTION",
+        "USER"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--0a47636e-8260-414d-aff7-7b1120778a51",
+        "relationship--0d6e04e8-8e4c-4ef6-ab6a-12ddb498e93a",
+        "relationship--1d182249-ed44-4e5b-877c-178760379015",
+        "relationship--3089fe6b-36d6-4890-b70b-1a76f55c84ff",
+        "relationship--3c5b31ff-ba6a-47c0-adbe-ddd18845f684",
+        "relationship--665e5a7f-e575-44c7-839d-4c69f14238d2",
+        "relationship--7340fcbe-e87b-4f16-bdac-e429a0ba7714",
+        "relationship--79192884-411c-490d-a28e-f923be7070e3",
+        "relationship--a8981fca-0584-4e9e-8f92-83843e1e4462",
+        "relationship--c77046c5-1ea2-4d3f-a19e-0ea7141d7e9c",
+        "relationship--cc2de45c-a1f3-4085-ac35-dffa8a86e9b3",
+        "relationship--ee35c721-0b74-4811-8d41-507270d0b9c7",
+        "relationship--f04dbb1e-bf75-4eee-9222-374c704bc07b"
+    ],
+    "graph_nodes": [
+        {
+            "count": 12,
+            "id": 0,
+            "texts": [
+                "RCSession",
+                "Cryptoistic",
+                "Chaes",
+                "Tropic Trooper",
+                "PowGoop",
+                "Magic Hound",
+                "PowerLess",
+                "NETWIRE",
+                "BITTER",
+                "APT29",
+                "Lizar",
+                "MacMa"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 4,
+            "id": 1,
+            "texts": [
+                "encrypted beacon",
+                "encryption",
+                "encryption",
+                "TLS encryption"
+            ],
+            "label": "ENCRYPTION"
+        },
+        {
+            "count": 18,
+            "id": 2,
+            "texts": [
+                "encrypted communications",
+                "C2",
+                "C2 channel",
+                "traffic",
+                "C2",
+                "C2",
+                "encrypted http proxy",
+                "C2 communications",
+                "encrypted channel",
+                "C2 communications",
+                "C2 communications",
+                "C2 communication",
+                "encrypted communications",
+                "client",
+                "server",
+                "TCP communications",
+                "custom protocol",
+                "C2 communications"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 5,
+            "id": 3,
+            "texts": [
+                "network detection",
+                "encrypted commands",
+                "malware",
+                "RAT",
+                "detection"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "layers"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 2,
+            "id": 5,
+            "texts": [
+                "client",
+                "server"
+            ],
+            "label": "USER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 12
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "4_3",
+            "source": 4,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "2_5",
+            "source": 2,
+            "dest": 5,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 6,
+        "in": 3,
+        "with": 2,
+        "for": 5,
+        "encrypt": 3,
+        "prevent": 1,
+        "receive": 1,
+        "from": 2,
+        "protect": 1,
+        "of": 1,
+        "within": 1,
+        "support": 1,
+        "between": 1,
+        "evade": 1,
+        "initialize": 1
+    }
+}

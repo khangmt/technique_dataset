@@ -1,0 +1,237 @@
+{
+    "id": "T1559.001",
+    "tech_id": "T1559.001",
+    "tech_name": "Component Object Model",
+    "best_phrases": [],
+    "tactics": [
+        "TA0002"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "COMPONENT",
+        "NETWORK",
+        "DIRECTORY"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--048df7c4-96b0-4b76-9e21-f9ad70a2ce9b",
+        "relationship--17525c42-6859-4175-841c-272e85f68be9",
+        "relationship--2cae8d8d-e0de-4793-9acf-d21508189bf9",
+        "relationship--30e3ae03-ffd2-4ad0-822c-018b08079dd9",
+        "relationship--319dbc0e-5026-4796-bfd9-43ef3d30eb8d",
+        "relationship--3c4d8c8f-9676-48c5-b902-e95a2411e266",
+        "relationship--5b2b610f-7563-49d0-8ee3-066cc82fd35c",
+        "relationship--69513daf-2acd-4b04-a7be-9f31174a2ae9",
+        "relationship--b5468863-0a1f-433a-99d6-8f94765107fc",
+        "relationship--bb88cf08-f9af-44af-b082-96100a7fc3f4",
+        "relationship--c5331cc2-89e2-40e2-a8b4-7a00198df492",
+        "relationship--eedbb286-aa6f-49a6-8e6a-283ad45f8938",
+        "relationship--f1c2c698-e374-4ab1-b478-49e987d3a184",
+        "relationship--fa939612-0aa1-40b6-aab6-7a1b1872c93b"
+    ],
+    "graph_nodes": [
+        {
+            "count": 12,
+            "id": 0,
+            "texts": [
+                "POWERSTATS",
+                "TrickBot",
+                "InvisiMole",
+                "FunnyDream",
+                "MuddyWater",
+                "Milan",
+                "HermeticWizard",
+                "DarkTortilla",
+                "Neoichor",
+                "Bumblebee",
+                "Ramsay",
+                "Gelsemium"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 31,
+            "id": 1,
+            "texts": [
+                "DCOM",
+                "payloads",
+                "COM",
+                "scheduled task",
+                "ITaskService, ITaskDefinition and ITaskSettings COM interfaces",
+                "task",
+                "persistence mechanisms",
+                "IPersistFile",
+                "CLSID_ShellLink(IShellLink",
+                "WScript.Shell(RegWrite method",
+                "malware",
+                "capability",
+                "code",
+                "Outlook",
+                "DCOM",
+                "COM",
+                "Ursnif droppers",
+                "full executable payload",
+                "malware",
+                "COM component",
+                "scheduled tasks",
+                "Gamaredon Group malware",
+                "macros",
+                "Microsoft.Office.Interop object",
+                "DCOM",
+                "commands",
+                "queries",
+                "Windows COM API",
+                "tasks",
+                "IARPUinstallerStringLauncher COM interface",
+                "UAC bypass process"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 2,
+            "id": 2,
+            "texts": [
+                "127.0.0.1 loopback address",
+                "C2"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 6,
+            "id": 3,
+            "texts": [
+                "compromised hosts",
+                "Outlook",
+                "DCOM",
+                "COM",
+                "remote machines",
+                "Internet Explorer (IE) COM interface"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 8,
+            "id": 4,
+            "texts": [
+                "com objects",
+                "COM objects",
+                "documents",
+                "files",
+                "WshShortcut COM object",
+                ".lnk shortcut file",
+                "COM object",
+                "system information"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "Windows startup folder"
+            ],
+            "label": "DIRECTORY"
+        },
+        {
+            "count": 1,
+            "id": 6,
+            "texts": [
+                "part"
+            ],
+            "label": "OTHER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 16
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 6
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 3
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "4_3",
+            "source": 4,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "4_5",
+            "source": 4,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "0_6",
+            "source": 0,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "6_1",
+            "source": 6,
+            "dest": 1,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 14,
+        "execute": 5,
+        "target": 1,
+        "on": 3,
+        "setup": 1,
+        "schedule": 2,
+        "enable": 1,
+        "identify with": 1,
+        "have": 1,
+        "by": 1,
+        "of": 2,
+        "generate": 1,
+        "insert": 1,
+        "into": 2,
+        "create": 1,
+        "in": 1,
+        "receive": 1,
+        "from": 1,
+        "gather": 1,
+        "be": 1
+    }
+}

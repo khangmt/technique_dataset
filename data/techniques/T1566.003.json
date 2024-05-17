@@ -1,0 +1,209 @@
+{
+    "id": "T1566.003",
+    "tech_id": "T1566.003",
+    "tech_name": "Spearphishing via Service",
+    "best_phrases": [],
+    "tactics": [
+        "TA0001"
+    ],
+    "features": [
+        "NETWORK",
+        "USER",
+        "FUNCTION",
+        "DATA",
+        "COMPONENT"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--06a1f6f9-0695-47e6-bf1b-363d435d0bb2",
+        "relationship--241c2c47-3659-4899-bf5b-64f0ed94c916",
+        "relationship--25424268-9ffb-40ed-8335-249deea323ca",
+        "relationship--25527270-616e-4c53-a85a-03fc0b1e9a96",
+        "relationship--79cf4f25-6d05-4756-a671-2d578c6db184",
+        "relationship--95914d60-80b6-432b-945a-316b93cb2a13",
+        "relationship--b0f6cf11-a8ac-4aba-a540-6bfa2b722f9c",
+        "relationship--b3d6abc5-11da-4d0c-a699-8cafac03dfab",
+        "relationship--b4174e7a-3b60-4697-a006-84edb81622cd",
+        "relationship--ba9b20fb-04a8-403b-9549-c13a9bb2603c",
+        "relationship--d432f9c7-1211-4485-bac3-b35edc38d501"
+    ],
+    "graph_nodes": [
+        {
+            "count": 11,
+            "id": 0,
+            "texts": [
+                "CURIUM",
+                "Windshift",
+                "Ajax Security Team",
+                "EXOTIC LILY",
+                "Lazarus Group",
+                "FIN6",
+                "APT29",
+                "OilRig",
+                "Dark Caracal",
+                "Lazarus Group",
+                "Magic Hound"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 21,
+            "id": 1,
+            "texts": [
+                "social media",
+                "social media",
+                "social media channels",
+                "spearphishing",
+                "spearphishing messages",
+                "LinkedIn",
+                "fake job advertisements",
+                "LinkedIn",
+                "phishing e-mails",
+                "LinkedIn",
+                "spearphishing links",
+                "Facebook",
+                "Whatsapp",
+                "Twitter",
+                "LinkedIn",
+                "social media platforms",
+                "spearphishing messages",
+                "social media channels",
+                "WhatsApp",
+                "LinkedIn",
+                "messaging services"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 2,
+            "id": 2,
+            "texts": [
+                "files",
+                "Constant Contact"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 7,
+            "id": 3,
+            "texts": [
+                "victims",
+                "fake personas",
+                "victims",
+                "victims",
+                "victims",
+                "victims",
+                "spearphish victims"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 7,
+            "id": 4,
+            "texts": [
+                "e-mail notification features",
+                "fictitious jobs",
+                "legitimate mailing service",
+                "social media channels",
+                "WhatsApp",
+                "LinkedIn",
+                "messaging services"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "legitimate file sharing services"
+            ],
+            "label": "COMPONENT"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 13
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 5
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 3
+        },
+        {
+            "id": "4_5",
+            "source": 4,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "4_3",
+            "source": 4,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 10,
+        "deliver": 1,
+        "to": 2,
+        "on": 2,
+        "target": 1,
+        "spearphish": 1,
+        "for": 2,
+        "of": 1,
+        "send": 6,
+        "by": 3,
+        "concern": 1,
+        "spearphishe": 1
+    }
+}

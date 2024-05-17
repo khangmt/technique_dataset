@@ -1,0 +1,183 @@
+{
+    "id": "T1201",
+    "tech_id": "T1201",
+    "tech_name": "Password Policy Discovery",
+    "best_phrases": [],
+    "tactics": [
+        "TA0007"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "COMPONENT",
+        "NETWORK"
+    ],
+    "locations": [
+        "Windows",
+        "Linux",
+        "macOS",
+        "IaaS",
+        "Network"
+    ],
+    "procedures": [
+        "relationship--0224ebf5-13ef-4fb0-b9e7-53ea58c15a4d",
+        "relationship--11ca4266-5fca-4be4-9bce-275c655c66bd",
+        "relationship--2db515e9-4e44-4a49-917a-3108395b8590",
+        "relationship--55b9483d-2d73-433c-ad5a-d29dcce6e4e4",
+        "relationship--5e39caf2-083b-4e4c-b04f-d83c512341cb",
+        "relationship--97833e2b-ae08-49c9-bc1f-b1ab03f982d2",
+        "relationship--ddda59d4-5455-4d42-901b-b7a227a8a023",
+        "relationship--f946b4f9-a18e-4a1e-856c-2c215f78f8be",
+        "relationship--fd074370-f9d4-43a1-bf1f-0afdb46ab28b"
+    ],
+    "graph_nodes": [
+        {
+            "count": 15,
+            "id": 0,
+            "texts": [
+                "net accounts and net accounts /domain commands",
+                "Net",
+                "CrackMapExec",
+                "BloodHound",
+                "net accounts command",
+                "advanced reconnaissance",
+                "net.exe",
+                "script",
+                "net accounts /domain",
+                "NtdsAudit utility",
+                "command net accounts",
+                "net accounts /domain",
+                "net accounts",
+                "PoshC2",
+                "Get-PassPol"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 10,
+            "id": 1,
+            "texts": [
+                "password policy information",
+                "password policies",
+                "password policy information",
+                "password policy",
+                "information",
+                "accounts",
+                "passwords",
+                "password policy information",
+                "password policy information",
+                "domain password policy"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 2,
+            "id": 2,
+            "texts": [
+                "target system",
+                "target environment"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 5,
+            "id": 3,
+            "texts": [
+                "threat actors",
+                "OilRig",
+                "Chimera",
+                "Kwampirs",
+                "Turla"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "part"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "domain"
+            ],
+            "label": "NETWORK"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 4
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "3_0",
+            "source": 3,
+            "dest": 0,
+            "count": 6
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "4_0",
+            "source": 4,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 4
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "with": 4,
+        "obtain": 1,
+        "discover": 1,
+        "apply to": 1,
+        "collect": 3,
+        "on": 1,
+        "use": 5,
+        "as": 2,
+        "of": 2,
+        "in": 2,
+        "find": 1,
+        "relate to": 1,
+        "acquire": 1,
+        "enumerate": 1
+    }
+}

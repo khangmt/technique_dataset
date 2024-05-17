@@ -1,0 +1,87 @@
+{
+    "id": "T1654",
+    "tech_id": "T1654",
+    "tech_name": "Log Enumeration",
+    "best_phrases": [],
+    "tactics": [
+        "TA0007"
+    ],
+    "features": [
+        "FUNCTION",
+        "COMPONENT",
+        "DATA"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows",
+        "IaaS"
+    ],
+    "procedures": [
+        "relationship--6848a6be-5571-4e88-b95d-45d9a11d4758",
+        "relationship--7a938acf-f072-42ba-8b5f-16e78ebea7f7"
+    ],
+    "graph_nodes": [
+        {
+            "count": 1,
+            "id": 0,
+            "texts": [
+                "Volt Typhoon"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 3,
+            "id": 1,
+            "texts": [
+                "wevtutil.exe",
+                "PowerShell command",
+                "Pacu"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 2,
+            "id": 2,
+            "texts": [
+                "Get-EventLog security",
+                "Windows logs"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 2,
+            "id": 3,
+            "texts": [
+                "CloudWatch logs",
+                "CloudTrail event histories"
+            ],
+            "label": "DATA"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 2,
+        "enumerate": 1,
+        "collect": 1
+    }
+}

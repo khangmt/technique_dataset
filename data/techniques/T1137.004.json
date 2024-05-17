@@ -1,0 +1,90 @@
+{
+    "id": "T1137.004",
+    "tech_id": "T1137.004",
+    "tech_name": "Outlook Home Page",
+    "best_phrases": [
+        "CVE-2017-11774"
+    ],
+    "tactics": [
+        "TA0003"
+    ],
+    "features": [
+        "FUNCTION",
+        "VULNERABILITY",
+        "NETWORK"
+    ],
+    "locations": [
+        "Windows",
+        "Office 365"
+    ],
+    "procedures": [
+        "relationship--3c367277-6168-4df8-b982-e9949994123d",
+        "relationship--af415c7f-b7aa-4a9e-b1a8-ae09d67070de"
+    ],
+    "graph_nodes": [
+        {
+            "count": 1,
+            "id": 0,
+            "texts": [
+                "OilRig"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 5,
+            "id": 1,
+            "texts": [
+                "Outlook Home Page feature",
+                "initial patch",
+                "Home Page abuse",
+                "Ruler",
+                "abuse"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 2,
+            "texts": [
+                "CVE-2017-11774"
+            ],
+            "label": "VULNERABILITY"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "Outlook Home Pages"
+            ],
+            "label": "NETWORK"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "abuse": 1,
+        "use": 1,
+        "roll": 1,
+        "protect": 1,
+        "automate": 1,
+        "of": 1
+    }
+}

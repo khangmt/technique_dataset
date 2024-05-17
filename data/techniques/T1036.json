@@ -1,0 +1,516 @@
+{
+    "id": "T1036",
+    "tech_id": "T1036",
+    "tech_name": "Masquerading",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005"
+    ],
+    "features": [
+        "DATA",
+        "FUNCTION",
+        "NETWORK",
+        "COMPONENT",
+        "USER",
+        "ENCRYPTION",
+        "REGISTRY"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows",
+        "Containers"
+    ],
+    "procedures": [
+        "relationship--06b18704-e29e-4bf9-900f-44aa719df0c6",
+        "relationship--0d7c99f4-b1af-4278-b8bf-3bb04cce166d",
+        "relationship--10d0c930-1470-4d2e-aff8-0bf42c42d2f0",
+        "relationship--288d8f70-d2af-44f8-86c9-fb8c2cd5103f",
+        "relationship--2f2432b0-d985-41d8-bc47-e4aa1dbf8372",
+        "relationship--2f249959-a448-454d-85ab-f71c8c5ff277",
+        "relationship--2ffc25c4-3939-40df-841c-91059c6879d4",
+        "relationship--37e3dbd7-9ecc-4e3a-9fa3-488e3a910f55",
+        "relationship--3cc1b62f-5059-4fb1-be06-72bb13498002",
+        "relationship--51650560-9aff-460b-9766-14c83bdb2198",
+        "relationship--5c6230da-a47d-435f-9836-49648f03e76e",
+        "relationship--6c0510e4-a642-4dfe-9632-dff6f97e09de",
+        "relationship--702c674e-110e-4f6d-9117-be1803d84e88",
+        "relationship--757e8e47-b89d-4a70-a785-deefe6468006",
+        "relationship--7b43c9ba-49bc-4966-a987-2f991d0f44a2",
+        "relationship--81603db2-a657-4716-a7ca-e6562799e98e",
+        "relationship--84be9d61-ec20-4066-8c99-b99d9127fce2",
+        "relationship--9488374f-6b53-4b54-a37a-a379089d7023",
+        "relationship--970e9eb2-51d7-4986-9480-d8a3b59c3006",
+        "relationship--99717cce-1987-4ca1-8df2-c6ec6ce17cf5",
+        "relationship--a0d99ee4-f154-42a0-8984-8e76d3e155c9",
+        "relationship--a292f2c5-a071-424e-b8b8-03d195c466ad",
+        "relationship--a38af2cc-ccc7-41aa-936c-fe15a13ddafa",
+        "relationship--a3990ec1-b4bb-43dd-b7d8-51bd3cb7e1c7",
+        "relationship--a53879ca-2185-42ea-84de-823878fb871d",
+        "relationship--a8126b8d-8dd7-4e12-a384-96dabb975725",
+        "relationship--ab372993-3d63-4ca3-a064-e4b5820d8970",
+        "relationship--aba65eb4-6bd9-40bc-9b06-48b86e9a85e2",
+        "relationship--ad880548-e776-4e7b-995d-ce6fdc91e865",
+        "relationship--bc2fe4e7-cb7c-4707-b28b-a709c2ac017d",
+        "relationship--d4e0558a-83e2-4d99-bc80-aff1bb367724",
+        "relationship--d6b1b347-ca50-4a40-90d0-ddb81304518f",
+        "relationship--df3548d1-800d-4d18-8566-3a5fe925a2ef",
+        "relationship--e67bb9cd-a76c-4666-a3e5-1e466dceb22b",
+        "relationship--ea99ff52-af1e-49af-9cfe-b224c9a9eea4",
+        "relationship--ebfa89db-b37b-4b66-a820-b863bd012b80",
+        "relationship--eca68811-ebe9-4ee0-8fb0-afa5975eb938",
+        "relationship--ed149b2f-6743-4d06-b869-158c0f96746e",
+        "relationship--f09c9f4a-345f-4352-aaba-7b0b0a24085c",
+        "relationship--f2a58ddd-c9d8-4769-a93b-2e876e304105",
+        "relationship--f2e075b3-1125-4259-bf0b-1ff90c738354",
+        "relationship--f3b19f07-d8a9-4aca-a649-039024997a4f",
+        "relationship--f40170e7-5246-442e-95ad-1b810107b8b8",
+        "relationship--f981c633-9333-4c7d-a168-7bea28f64d52",
+        "relationship--ff7ecfd6-bbe0-4fc6-9ea2-551ff2359157",
+        "relationship--ffff35dc-3741-4fba-9680-f0fbe321c0b0"
+    ],
+    "graph_nodes": [
+        {
+            "count": 43,
+            "id": 0,
+            "texts": [
+                "menuPass",
+                "APT32",
+                "FatDuke",
+                "Raindrop",
+                "BRONZE BUTLER",
+                "AppleSeed",
+                "OilRig",
+                "Saint Bot",
+                "Octopus",
+                "XCSSET",
+                "DarkTortilla",
+                "FoggyWeb",
+                "Flagpro",
+                "PowGoop",
+                "Milan",
+                "WindTail",
+                "BoomBox",
+                "Kimsuky",
+                "TeamTNT",
+                "LazyScripter",
+                "Dragonfly",
+                "APT28",
+                "Ramsay",
+                "ZIRCONIUM",
+                "NotPetya",
+                "threat actors",
+                "Windshift",
+                "NativeZone",
+                "WhisperGate",
+                "APT29",
+                "Ryuk",
+                "DarkWatchman",
+                "RCSession",
+                "TrailBlazer",
+                "AvosLocker",
+                "EnvyScout",
+                "threat actors",
+                "TA551",
+                "PLATINUM",
+                "SombRAT",
+                "RTM",
+                "threat actors",
+                "Bisonal"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 45,
+            "id": 1,
+            "texts": [
+                "esentutl",
+                "Cobalt Strike beacon",
+                "Flash Installer",
+                "user agent",
+                "Far Manager source code",
+                "modified version",
+                "executables",
+                "JavaScript files",
+                "executables",
+                "binaries",
+                "detection",
+                "Safari icon",
+                "Info.plist",
+                "payload",
+                "C2 commands",
+                ".exe",
+                "PowerShell script",
+                "executable",
+                "companycatalogue",
+                "payloads",
+                "scripts",
+                "executables",
+                "WinRAR utility",
+                "detection",
+                "legitimate applications",
+                "installation",
+                "malware",
+                "Windows certutil utility",
+                "TrickBot downloader",
+                "PsExec",
+                "executables",
+                "executables",
+                "executables",
+                "Windows screensavers",
+                ".scr",
+                "detection",
+                "PE file",
+                "executable",
+                "Dacls Mach-O binary",
+                "attempt",
+                "detection",
+                "detection",
+                "MaoCheng dropper",
+                "decoy payload",
+                "Visual Basic script"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 63,
+            "id": 2,
+            "texts": [
+                "file extensions",
+                "true type",
+                ".txt files",
+                "Far Manager source code",
+                "modified version",
+                "document file icons",
+                "PDFs",
+                ".doc file extensions",
+                "slideshow.mp4",
+                "wallpaper.mp4",
+                "application bundle",
+                "Safari icon",
+                "Info.plist",
+                "output",
+                "fake, but legitimately formatted WebP file",
+                "files",
+                ".tmp extension",
+                ".dat file",
+                "icons",
+                "MS Office files",
+                "data strings",
+                "PDF files",
+                "docker-related file names",
+                "security software icons",
+                "email administration account",
+                "accounts",
+                "legitimate backup and service accounts",
+                "JPG image file",
+                "file extensions",
+                "staged data",
+                "fake Base64 encoded certificates",
+                "input file",
+                "icon",
+                "filename",
+                "dllhost.dat",
+                "JPG files",
+                "icons",
+                "MS Office files",
+                "JPG extension",
+                "hostnames",
+                "legitimate hostnames",
+                "Text File format document",
+                "icon",
+                "text file",
+                "file",
+                "English.rtf",
+                ".nib file",
+                "filenames",
+                "name",
+                "victim company name",
+                "filename",
+                "folder icons",
+                "files",
+                "binary file",
+                "compareForfor.jpg",
+                "JPG file",
+                "dat and jpg files",
+                "legitimate process name",
+                "archived Windows executable files",
+                "PDF documents",
+                "icon",
+                "Word document",
+                ".jpg extension"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 13,
+            "id": 3,
+            "texts": [
+                "that",
+                "goopdate.dat",
+                "benign",
+                "others",
+                "universities",
+                "governments",
+                "shopping malls",
+                "FIN13",
+                "\"",
+                "message box",
+                "country",
+                "benign",
+                "itself"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 8,
+            "id": 4,
+            "texts": [
+                "traffic",
+                "Telegram Messenger",
+                "C2 addresses",
+                "websites",
+                "phishing lures",
+                "C2 infrastructure",
+                "IP addresses",
+                "VPN infrastructure"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 3,
+            "id": 5,
+            "texts": [
+                "user",
+                "victim",
+                "victims"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 6,
+            "id": 6,
+            "texts": [
+                "installed browser",
+                "Russian interface",
+                "Safari",
+                "Ukrainian electronic document management system",
+                "victim environment",
+                "compromised system"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 2,
+            "id": 7,
+            "texts": [
+                "7-Zip source code",
+                "rar.exe"
+            ],
+            "label": "ENCRYPTION"
+        },
+        {
+            "count": 2,
+            "id": 8,
+            "texts": [
+                ".dll files",
+                "malware DLLs"
+            ],
+            "label": "REGISTRY"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 33
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 38
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 3
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 4
+        },
+        {
+            "id": "4_5",
+            "source": 4,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "1_6",
+            "source": 1,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "1_7",
+            "source": 1,
+            "dest": 7,
+            "count": 1
+        },
+        {
+            "id": "2_7",
+            "source": 2,
+            "dest": 7,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 11
+        },
+        {
+            "id": "4_6",
+            "source": 4,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "0_6",
+            "source": 0,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 4
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 4
+        },
+        {
+            "id": "4_3",
+            "source": 4,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "3_6",
+            "source": 3,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 3
+        },
+        {
+            "id": "2_6",
+            "source": 2,
+            "dest": 6,
+            "count": 2
+        },
+        {
+            "id": "3_5",
+            "source": 3,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "0_8",
+            "source": 0,
+            "dest": 8,
+            "count": 2
+        },
+        {
+            "id": "8_2",
+            "source": 8,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "0_7",
+            "source": 0,
+            "dest": 7,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 17,
+        "change": 3,
+        "to": 3,
+        "as": 33,
+        "disguise": 7,
+        "mimic": 5,
+        "of": 8,
+        "include": 1,
+        "mask": 7,
+        "with": 14,
+        "rename": 3,
+        "avoid": 5,
+        "build": 1,
+        "resemble": 1,
+        "masquerade": 2,
+        "download": 1,
+        "appear": 2,
+        "create": 2,
+        "spoof": 1,
+        "conceal": 1,
+        "in": 4,
+        "generate": 1,
+        "drop": 2,
+        "hide": 2,
+        "display": 1,
+        "relate": 1,
+        "set": 1,
+        "match": 2,
+        "for": 3,
+        "originate from": 1,
+        "contain": 2,
+        "lure": 1,
+        "name": 2,
+        "modify": 1
+    }
+}

@@ -1,0 +1,53 @@
+{
+    "id": "T1056.003",
+    "tech_id": "T1056.003",
+    "tech_name": "Web Portal Capture",
+    "best_phrases": [],
+    "tactics": [
+        "TA0009",
+        "TA0006"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--ae64efe5-a482-418f-9be1-3a88db40f6ab"
+    ],
+    "graph_nodes": [
+        {
+            "count": 2,
+            "id": 0,
+            "texts": [
+                "IceApple OWA credential logger",
+                "OWA authentication requests"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 1,
+            "texts": [
+                "credentials"
+            ],
+            "label": "DATA"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "for": 1,
+        "log": 1
+    }
+}

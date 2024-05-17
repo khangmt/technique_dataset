@@ -1,0 +1,286 @@
+{
+    "id": "T1482",
+    "tech_id": "T1482",
+    "tech_name": "Domain Trust Discovery",
+    "best_phrases": [],
+    "tactics": [
+        "TA0007"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "NETWORK",
+        "DIRECTORY",
+        "VULNERABILITY",
+        "COMPONENT"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--0cc7cd3a-629e-4f90-9fca-1dde823fa428",
+        "relationship--120f001f-eb9c-4183-89f1-7c6e4bddc80c",
+        "relationship--31025044-b0de-4dcd-bd26-fe467b803000",
+        "relationship--3376df6e-0a4d-4a28-98b9-5d40ef092588",
+        "relationship--47d7a2ff-104a-49f9-a28f-6b1a79eca559",
+        "relationship--7f5933ff-6665-4bee-a291-0152c928747d",
+        "relationship--8879fdf1-552c-4e47-a60b-659ebf72772a",
+        "relationship--a38efb2d-3014-4196-b936-326a9a65ee83",
+        "relationship--a4e9aaf6-2c02-45cf-9603-090d65cd8c37",
+        "relationship--a79a17c4-02d1-463f-ac0a-d62b20d10b2f",
+        "relationship--b7b996f4-eb93-457d-a0e7-999e2dd39182",
+        "relationship--c8f79da7-cfd6-41fd-89d4-c015e7289b64",
+        "relationship--cf0b7d7d-0770-4b97-86ff-cbb5ec19bb83",
+        "relationship--cfbff9fe-2d62-4d80-b7b8-b35e84189803",
+        "relationship--da7ddc38-f706-43b4-b3e7-fa3e5d1d2cff",
+        "relationship--ee2068ec-c520-476e-979f-3dea201d0b9e",
+        "relationship--f4d15148-3a41-4fbc-a42e-59379724acc5",
+        "relationship--f5f833ab-9ee4-477b-854a-b7b4446761ba",
+        "relationship--fc3d0026-20b2-4d38-b276-64d7290c1994"
+    ],
+    "graph_nodes": [
+        {
+            "count": 34,
+            "id": 0,
+            "texts": [
+                "Empire",
+                "modules",
+                "Nltest tools",
+                "AdFind",
+                "Rubeus",
+                "nltest /domain_trusts",
+                "Nltest",
+                "nltest /domain_trusts",
+                "commands",
+                "nltest /domain_trusts /all_trusts",
+                "Nltest",
+                "domain controllers",
+                "Brute Ratel C4",
+                "LDAP queries",
+                "nltest /domain_trusts",
+                "BloodHound",
+                "potential abuse",
+                "nltest.exe /domain_trusts",
+                "PoshC2",
+                "modules",
+                "Exchange Management Shell",
+                "Get-AcceptedDomain PowerShell cmdlet",
+                "AdFind",
+                "web shell",
+                "nltest /trusted_domains",
+                "dsquery",
+                "dsquery * -filter \"(objectClass=trustedDomain)\" -attr *",
+                "PowerSploit",
+                "Get-NetDomainTrust",
+                "modules",
+                "Get-NetForestTrust",
+                "Nltest",
+                "nltest.exe /domain_trusts",
+                "command nltest /domain_trusts /all_trusts"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 20,
+            "id": 1,
+            "texts": [
+                "domain trusts",
+                "information",
+                "information",
+                "domain trusts",
+                "organizational units",
+                "information",
+                "domain trusts",
+                "domain trust relationships",
+                "information",
+                "domain trusts",
+                "domain trust relationships",
+                "domain trusts",
+                "trust",
+                "trust relationships",
+                "information",
+                "domain trusts",
+                "domain and forest trusts",
+                "information",
+                "domain trusts",
+                "domain trusts"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 10,
+            "id": 2,
+            "texts": [
+                "Bazar",
+                "Chimera",
+                "QakBot",
+                "Earth Lusca",
+                "BADHATCH",
+                "APT29",
+                "Magic Hound",
+                "TrickBot",
+                "FIN8",
+                "threat actors"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 6,
+            "id": 3,
+            "texts": [
+                "domain",
+                "trusted domains",
+                "accepted domains",
+                "domains",
+                "federated domains",
+                "trusted domains"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "Active Directory"
+            ],
+            "label": "DIRECTORY"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "OUs"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 1,
+            "id": 6,
+            "texts": [
+                "misconfigurations"
+            ],
+            "label": "VULNERABILITY"
+        },
+        {
+            "count": 1,
+            "id": 7,
+            "texts": [
+                "compromised machine"
+            ],
+            "label": "COMPONENT"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 8
+        },
+        {
+            "id": "2_0",
+            "source": 2,
+            "dest": 0,
+            "count": 12
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 6
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 2
+        },
+        {
+            "id": "0_6",
+            "source": 0,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "6_0",
+            "source": 6,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "1_7",
+            "source": 1,
+            "dest": 7,
+            "count": 1
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "3_0",
+            "source": 3,
+            "dest": 0,
+            "count": 2
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "have": 4,
+        "enumerate": 7,
+        "use": 11,
+        "obtain": 2,
+        "about": 6,
+        "gather": 4,
+        "from": 2,
+        "identify": 3,
+        "run": 1,
+        "map": 1,
+        "for": 1,
+        "discover": 2,
+        "on": 2,
+        "by": 1,
+        "between": 1,
+        "execute": 1,
+        "with": 1,
+        "utilize": 1,
+        "retrieve": 1
+    }
+}

@@ -1,0 +1,347 @@
+{
+    "id": "T1614.001",
+    "tech_id": "T1614.001",
+    "tech_name": "System Language Discovery",
+    "best_phrases": [],
+    "tactics": [
+        "TA0007"
+    ],
+    "features": [
+        "DATA",
+        "FUNCTION",
+        "COMPONENT",
+        "REGISTRY",
+        "USER"
+    ],
+    "locations": [
+        "Windows",
+        "Linux",
+        "macOS"
+    ],
+    "procedures": [
+        "relationship--04791b5e-1795-4a1c-a10d-71f919fc420e",
+        "relationship--149fbbae-8c2e-4391-bb93-47375d4a68be",
+        "relationship--1878edcb-e458-494c-81a5-34d8a0390957",
+        "relationship--19f3cd7b-3a05-452f-8198-1efdf8207684",
+        "relationship--1a15d017-485e-403b-bad8-da8da074ffed",
+        "relationship--1a67b676-a119-4968-a0ce-9f6f48b481de",
+        "relationship--1d47e8c0-9f0d-41d1-a889-609025b42298",
+        "relationship--21409e96-7a2f-4109-b23e-1b43005aaaa4",
+        "relationship--392980d3-6cac-4740-824c-4911ab10f135",
+        "relationship--4e1f3e6e-33b5-475d-b19b-d9a43227cf1c",
+        "relationship--602c1dc8-314c-4149-805a-a9a741aa074e",
+        "relationship--682dad6a-277f-46ae-8416-cba070ff5738",
+        "relationship--6b59ebb4-4993-4a88-96ed-a25d21382d29",
+        "relationship--746c2ff0-e5a1-494f-a9c9-bc45faceb5c5",
+        "relationship--7a64941e-c585-4ded-b0d7-2d7f3d71eaa8",
+        "relationship--a5cbd480-0147-4e70-9551-03a2b5b8fdcb",
+        "relationship--ac01b568-6d51-415f-8dd4-0d148fa204fb",
+        "relationship--b0b2abea-e4a0-4e96-8e71-9ff49b4759f7",
+        "relationship--b6bce22a-7318-483d-a7dc-0edf32814ee5",
+        "relationship--cfed60a3-c288-4c12-bfe2-2c0234a3cfa7",
+        "relationship--d90f6beb-0936-40ca-b38c-269094d4ed02",
+        "relationship--dbe09d1f-9826-448d-83e0-5712f575fe76"
+    ],
+    "graph_nodes": [
+        {
+            "count": 22,
+            "id": 0,
+            "texts": [
+                "Lazarus Group",
+                "MarkiRAT",
+                "XCSSET",
+                "Cuba",
+                "Ke3chang",
+                "Flagpro",
+                "Avaddon",
+                "Maze",
+                "Spark",
+                "Ryuk",
+                "S-Type",
+                "Bazar",
+                "Neoichor",
+                "Clop",
+                "attacker",
+                "Zeus Panda",
+                "GrimAgent",
+                "DropBook",
+                "REvil",
+                "SynAck",
+                "Misdat",
+                "SharpStage"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 29,
+            "id": 1,
+            "texts": [
+                "malware",
+                "GetKeyboardLayout API",
+                "AppleScript",
+                "command",
+                "user locale of (get system info)",
+                "function",
+                "GetKeyboardLayoutList",
+                "implants",
+                "detection",
+                "function GetUserDefaultUILanguage",
+                "language name",
+                "GetKeyboardLayoutList",
+                "GetLocaleInfoA",
+                "GetKeyboardType API call",
+                "check",
+                "DEATHRANSOM",
+                "language ID and keyboard layout checks",
+                "GetKeyboardLayout() function",
+                "installation",
+                "GetTextCharset function",
+                "keyboard mapping",
+                "Accept-Language",
+                "presence",
+                "GetSystemDefaultUILanguage",
+                "GetUserDefaultUILanguage",
+                "GetKeyboardLayoutList API",
+                "Windows API call",
+                "GetKeyboardType",
+                "code"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 20,
+            "id": 2,
+            "texts": [
+                "computers",
+                "keyboard",
+                "host",
+                "host",
+                "infected machine",
+                "compromised machine",
+                "target system",
+                "machine",
+                "machine",
+                "compromised system",
+                "Japanese keyboard",
+                "system",
+                "compromised host",
+                "Russian-language or other Commonwealth of Independent States-language machines",
+                "system",
+                "hosts",
+                "machine",
+                "system",
+                "compromised host",
+                "Japanese keyboard"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 16,
+            "id": 3,
+            "texts": [
+                "Korean",
+                "Chinese",
+                "Japanese",
+                "Persian",
+                "English",
+                "Taiwanese",
+                "Japanese",
+                "Commonwealth of Independent States (CIS) entities",
+                "Commonwealth",
+                "entry",
+                "0x423",
+                "Russian",
+                "United States",
+                "United Kingdom",
+                "Spain",
+                "France"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 32,
+            "id": 4,
+            "texts": [
+                "language",
+                "location",
+                "Russian language",
+                "system language ID",
+                "Windows Security and Internet Explorer dialog",
+                "OS languages",
+                "keyboard layouts",
+                "Independent States",
+                "language",
+                "list",
+                "results",
+                "language name",
+                "GetKeyboardLayoutList",
+                "value",
+                "registry key",
+                "keyboard and language settings",
+                "versions",
+                "system language",
+                "keyboard language",
+                "language",
+                "United States",
+                "United Kingdom",
+                "Spain",
+                "France",
+                "Arabic language",
+                "settings",
+                "language",
+                "system language",
+                "keyboard layouts",
+                "hardcoded language code list",
+                "300 seconds",
+                "files"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 4,
+            "id": 5,
+            "texts": [
+                "value",
+                "registry key",
+                "InstallLanguage",
+                "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Nls\\Language"
+            ],
+            "label": "REGISTRY"
+        },
+        {
+            "count": 2,
+            "id": 6,
+            "texts": [
+                "victim",
+                "Arabic-speaking users"
+            ],
+            "label": "USER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 21
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 3
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 5
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 14
+        },
+        {
+            "id": "4_2",
+            "source": 4,
+            "dest": 2,
+            "count": 9
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 7
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 4
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "4_3",
+            "source": 4,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 3
+        },
+        {
+            "id": "2_5",
+            "source": 2,
+            "dest": 5,
+            "count": 3
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 3
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "2_6",
+            "source": 2,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "0_6",
+            "source": 0,
+            "dest": 6,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "deploy": 1,
+        "run": 1,
+        "set to": 1,
+        "use": 15,
+        "of": 13,
+        "to": 2,
+        "check": 6,
+        "with": 5,
+        "on": 3,
+        "collect": 1,
+        "by": 1,
+        "for": 3,
+        "target": 2,
+        "in": 4,
+        "return": 1,
+        "query": 4,
+        "have": 5,
+        "perform": 2,
+        "identify": 2,
+        "avoid": 1,
+        "determine": 1,
+        "use on": 1,
+        "list": 1,
+        "against": 1,
+        "encrypt": 1,
+        "instal on": 1
+    }
+}

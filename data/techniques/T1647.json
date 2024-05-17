@@ -1,0 +1,65 @@
+{
+    "id": "T1647",
+    "tech_id": "T1647",
+    "tech_name": "Plist File Modification",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005"
+    ],
+    "features": [
+        "DATA",
+        "FUNCTION"
+    ],
+    "locations": [
+        "macOS"
+    ],
+    "procedures": [
+        "relationship--d4992852-13b0-4bfb-aee3-09d658a52785"
+    ],
+    "graph_nodes": [
+        {
+            "count": 1,
+            "id": 0,
+            "texts": [
+                "XCSSET"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 1,
+            "id": 1,
+            "texts": [
+                "plutil command"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 2,
+            "id": 2,
+            "texts": [
+                "LSUIElement, DFBundleDisplayName, and CFBundleIdentifier keys",
+                "/Contents/Info.plist file"
+            ],
+            "label": "DATA"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 1,
+        "modify": 1,
+        "in": 1
+    }
+}

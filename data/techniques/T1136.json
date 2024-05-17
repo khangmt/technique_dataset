@@ -1,0 +1,114 @@
+{
+    "id": "T1136",
+    "tech_id": "T1136",
+    "tech_name": "Create Account",
+    "best_phrases": [],
+    "tactics": [
+        "TA0003"
+    ],
+    "features": [
+        "FUNCTION",
+        "USER",
+        "COMPONENT",
+        "NETWORK"
+    ],
+    "locations": [
+        "Windows",
+        "Azure AD",
+        "Office 365",
+        "IaaS",
+        "Linux",
+        "macOS",
+        "Google Workspace",
+        "Network",
+        "Containers",
+        "SaaS"
+    ],
+    "procedures": [
+        "relationship--15033f82-efad-4db9-8d4c-015eeeeead64",
+        "relationship--4f41a697-db81-4df8-8b46-a59d294112fa"
+    ],
+    "graph_nodes": [
+        {
+            "count": 2,
+            "id": 0,
+            "texts": [
+                "Indrik Spider",
+                "Sandworm Team"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 3,
+            "id": 1,
+            "texts": [
+                "wmic.exe",
+                "login",
+                "sp_addlinkedsrvlogin"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 2,
+            "texts": [
+                "user"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "system"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "SQL Server"
+            ],
+            "label": "NETWORK"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 1,
+        "add": 2,
+        "to": 3,
+        "with": 2
+    }
+}

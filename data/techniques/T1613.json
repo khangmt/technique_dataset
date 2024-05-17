@@ -1,0 +1,130 @@
+{
+    "id": "T1613",
+    "tech_id": "T1613",
+    "tech_name": "Container and Resource Discovery",
+    "best_phrases": [],
+    "tactics": [
+        "TA0007"
+    ],
+    "features": [
+        "FUNCTION",
+        "COMPONENT",
+        "NETWORK",
+        "DATA"
+    ],
+    "locations": [
+        "Containers"
+    ],
+    "procedures": [
+        "relationship--09f92a2f-282d-484e-a3c9-b0fc603a1fb4",
+        "relationship--40383884-c607-48ac-9522-b5b1c8e256a9",
+        "relationship--457ee5f7-ec8f-4990-bfe0-8cf0a6e70b1f"
+    ],
+    "graph_nodes": [
+        {
+            "count": 6,
+            "id": 0,
+            "texts": [
+                "Peirates",
+                "docker ps",
+                "docker inspect",
+                "masscan",
+                "kubelet API",
+                "kubelets"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 6,
+            "id": 1,
+            "texts": [
+                "Kubernetes pods",
+                "containers",
+                "Kubernetes pods",
+                "kubelet API",
+                "kubelets",
+                "containers"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 2,
+            "id": 2,
+            "texts": [
+                "given namespace",
+                "local network"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 2,
+            "id": 3,
+            "texts": [
+                "TeamTNT",
+                "Hildegard"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "container names"
+            ],
+            "label": "DATA"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "4_0",
+            "source": 4,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "3_0",
+            "source": 3,
+            "dest": 0,
+            "count": 2
+        }
+    ],
+    "verbs": {
+        "enumerate": 1,
+        "in": 2,
+        "for": 3,
+        "with": 2,
+        "run in": 1,
+        "use": 1,
+        "search": 1
+    }
+}

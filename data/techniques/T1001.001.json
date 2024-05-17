@@ -1,0 +1,280 @@
+{
+    "id": "T1001.001",
+    "tech_id": "T1001.001",
+    "tech_name": "Junk Data",
+    "best_phrases": [],
+    "tactics": [
+        "TA0011"
+    ],
+    "features": [
+        "DATA",
+        "FUNCTION",
+        "NETWORK",
+        "ENCRYPTION",
+        "REGISTRY"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--04ba0d26-d931-423e-a3de-713892c0af97",
+        "relationship--0e27ebb3-2d48-48f6-ab99-968c0a992c61",
+        "relationship--1180572a-fb9f-4279-9d19-5c095fd84659",
+        "relationship--36855997-d730-48c6-bd43-7896c741cd6e",
+        "relationship--3a6a0b1a-55bf-4475-9eea-b00639367fab",
+        "relationship--40050718-2e2c-4711-91ed-1c2fb59cd9f3",
+        "relationship--7473a1e1-12b5-41b5-ab49-b05a817cdf43",
+        "relationship--8ee24ce1-0703-43dc-8b27-807747ca0209",
+        "relationship--a4da460a-10f9-4ae7-ac75-46460ba56f87",
+        "relationship--a6a4bbf3-7a2e-46ae-877a-614bf9f81644",
+        "relationship--ade42bce-dfa6-4a34-8a42-dad089debbd0",
+        "relationship--b3e28a85-784f-4adb-9398-3bbdaf9275fc",
+        "relationship--d5bd4aaf-4a58-45dd-a9e7-3ceb6385a998",
+        "relationship--dc10e96f-1d3c-4ab9-8df6-acdc8238ec6c",
+        "relationship--ef407819-f7e3-477c-8586-42ba108e5786"
+    ],
+    "graph_nodes": [
+        {
+            "count": 15,
+            "id": 0,
+            "texts": [
+                "P2P ZeuS",
+                "Downdelph",
+                "Mori",
+                "BendyBear",
+                "TrailBlazer",
+                "Uroburos",
+                "P8RAT",
+                "attacker",
+                "Kevin",
+                "GoldMax",
+                "SUNBURST",
+                "Turian",
+                "GrimAgent",
+                "APT28",
+                "WellMess"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 18,
+            "id": 1,
+            "texts": [
+                "junk data",
+                "pseudo-random characters",
+                "character",
+                "signatures",
+                "200MB",
+                "junk data",
+                "random identifier strings",
+                "extra characters",
+                "encoded strings",
+                "randomly-generated data",
+                "junk bytes",
+                "pseudo-random characters",
+                "random generated values",
+                "junk data",
+                "encoded string",
+                "knowledge",
+                "junk data",
+                "Base64 string"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 12,
+            "id": 2,
+            "texts": [
+                "outgoing UDP packets",
+                "C2 communication",
+                "dummy HTTP C2 requests",
+                "traffic",
+                "decoy traffic",
+                "network traffic",
+                "HTTP",
+                "C2",
+                "C2 messages",
+                "seamless communication",
+                "command protocol",
+                "wire"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 14,
+            "id": 3,
+            "texts": [
+                "peer implants",
+                "C2 network requests",
+                "byte randomization",
+                "behavior",
+                "result codes",
+                "C2 operations",
+                "DNS legitimate requests",
+                "PLEAD samples",
+                "detection",
+                "network encryption setup",
+                "implant",
+                "junk removal algorithm",
+                "analysis",
+                "obfuscation"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 2,
+            "id": 4,
+            "texts": [
+                "encoding",
+                "trivial decoding"
+            ],
+            "label": "ENCRYPTION"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "FML.dll"
+            ],
+            "label": "REGISTRY"
+        },
+        {
+            "count": 1,
+            "id": 6,
+            "texts": [
+                "part"
+            ],
+            "label": "OTHER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 15
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 8
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 10
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 3
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 5
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "4_3",
+            "source": 4,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "5_1",
+            "source": 5,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_6",
+            "source": 0,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "1_6",
+            "source": 1,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "6_2",
+            "source": 6,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 2
+        }
+    ],
+    "verbs": {
+        "add": 4,
+        "to": 8,
+        "insert": 2,
+        "between": 2,
+        "during": 2,
+        "write": 1,
+        "of": 5,
+        "on": 2,
+        "obfuscate": 1,
+        "with": 4,
+        "use": 4,
+        "obscure": 3,
+        "in": 3,
+        "mimic": 1,
+        "send": 1,
+        "as": 2,
+        "find": 1,
+        "generate": 1,
+        "surround": 1,
+        "avoid": 1,
+        "over": 2,
+        "into": 2,
+        "pad": 1,
+        "prevent": 2,
+        "give": 1,
+        "without": 1,
+        "allow": 1,
+        "for": 2
+    }
+}

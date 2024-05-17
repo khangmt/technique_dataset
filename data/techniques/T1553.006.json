@@ -1,0 +1,157 @@
+{
+    "id": "T1553.006",
+    "tech_id": "T1553.006",
+    "tech_name": "Code Signing Policy Modification",
+    "best_phrases": [
+        "CVE-2017-15303"
+    ],
+    "tactics": [
+        "TA0005"
+    ],
+    "features": [
+        "FUNCTION",
+        "COMPONENT",
+        "DATA",
+        "REGISTRY",
+        "VULNERABILITY"
+    ],
+    "locations": [
+        "Windows",
+        "macOS"
+    ],
+    "procedures": [
+        "relationship--16ee08e8-a66a-4022-a322-148eeaf71771",
+        "relationship--2856e2ad-4fcd-483a-85bb-99fe8304ee8d",
+        "relationship--3c92afd0-50e1-42a7-97e0-6cec9b4f40cb",
+        "relationship--d12d7d29-5616-4c87-9fd0-6375fc9c269d",
+        "relationship--d3d8b77f-d830-4f61-aa2e-bec783fc84f4"
+    ],
+    "graph_nodes": [
+        {
+            "count": 5,
+            "id": 0,
+            "texts": [
+                "APT39",
+                "BlackEnergy",
+                "Hikit",
+                "Pandora",
+                "Turla"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 9,
+            "id": 1,
+            "texts": [
+                "malware",
+                "RequireSigned feature",
+                "TESTSIGNING boot configuration option",
+                "loading",
+                "driver component",
+                "driver signing verification",
+                "loading",
+                "rootkit driver component",
+                "Driver Signature Enforcement"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 2,
+            "id": 2,
+            "texts": [
+                "signed DLLs",
+                "Registry keys"
+            ],
+            "label": "REGISTRY"
+        },
+        {
+            "count": 3,
+            "id": 3,
+            "texts": [
+                "Windows",
+                "Windows Driver Signature Enforcement (DSE) protection",
+                "driver"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 2,
+            "id": 4,
+            "texts": [
+                "CVE-2017-15303",
+                "vulnerabilities"
+            ],
+            "label": "VULNERABILITY"
+        },
+        {
+            "count": 3,
+            "id": 5,
+            "texts": [
+                "variables",
+                "kernel memory",
+                "kernel mode privileges"
+            ],
+            "label": "DATA"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 6
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "4_5",
+            "source": 4,
+            "dest": 5,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 2,
+        "turn": 2,
+        "run": 1,
+        "on": 1,
+        "enable": 1,
+        "facilitate": 1,
+        "of": 2,
+        "disable": 2,
+        "tamper": 1,
+        "load": 1,
+        "modify": 1,
+        "exploit": 1,
+        "in": 1,
+        "obtain": 1
+    }
+}

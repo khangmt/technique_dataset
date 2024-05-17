@@ -1,0 +1,73 @@
+{
+    "id": "T1491.002",
+    "tech_id": "T1491.002",
+    "tech_name": "External Defacement",
+    "best_phrases": [],
+    "tactics": [
+        "TA0040"
+    ],
+    "features": [
+        "NETWORK"
+    ],
+    "locations": [
+        "Windows",
+        "IaaS",
+        "Linux",
+        "macOS"
+    ],
+    "procedures": [
+        "relationship--9fd468a1-e0ef-4371-b7fd-93f81900f069"
+    ],
+    "graph_nodes": [
+        {
+            "count": 1,
+            "id": 0,
+            "texts": [
+                "Sandworm Team"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 1,
+            "id": 1,
+            "texts": [
+                "15,000 websites"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 2,
+            "id": 2,
+            "texts": [
+                "2019",
+                "Georgian government, non-government, and private sector organizations"
+            ],
+            "label": "OTHER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 2
+        }
+    ],
+    "verbs": {
+        "deface": 1,
+        "in": 2,
+        "belong to": 1
+    }
+}

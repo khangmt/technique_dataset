@@ -1,0 +1,194 @@
+{
+    "id": "T1564.006",
+    "tech_id": "T1564.006",
+    "tech_name": "Run Virtual Instance",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005"
+    ],
+    "features": [
+        "COMPONENT",
+        "FUNCTION",
+        "DATA",
+        "NETWORK",
+        "DIRECTORY"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--3cd19d07-822d-4efd-9f8c-e5b329f331a5",
+        "relationship--913c67d5-0c5b-40d5-be88-6ce4e5030603",
+        "relationship--9fc89cc1-ef57-461c-9324-0ebe43999c07"
+    ],
+    "graph_nodes": [
+        {
+            "count": 6,
+            "id": 0,
+            "texts": [
+                "Maze operators",
+                "ransomware",
+                "Maze",
+                "Ragnar Locker",
+                "XMRig",
+                "updates"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 13,
+            "id": 1,
+            "texts": [
+                "Windows7 virtual machine",
+                "VirtualBox",
+                "machine",
+                "shared network drives",
+                "local machine",
+                "shared drives",
+                "stripped WindowsXP virtual machine",
+                "VirtualBox",
+                "host operating system",
+                "mapped drives",
+                "QEMU",
+                "VirtualBox",
+                "Tiny Core Linux virtual machine"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 4,
+            "id": 2,
+            "texts": [
+                "configuration file",
+                "files",
+                "configuration",
+                "files"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 3,
+            "id": 3,
+            "texts": [
+                "target company",
+                "itself",
+                "which"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 2,
+            "id": 4,
+            "texts": [
+                "Ragnar Locker",
+                "LoudMiner"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "shared folder"
+            ],
+            "label": "DIRECTORY"
+        },
+        {
+            "count": 2,
+            "id": 6,
+            "texts": [
+                "connections",
+                "C2"
+            ],
+            "label": "NETWORK"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 5
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "4_3",
+            "source": 4,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "4_5",
+            "source": 4,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "5_2",
+            "source": 5,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "1_6",
+            "source": 1,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "6_0",
+            "source": 6,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "3_0",
+            "source": 3,
+            "dest": 0,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 3,
+        "run": 4,
+        "of": 3,
+        "map": 1,
+        "encrypt": 2,
+        "on": 3,
+        "specify in": 1,
+        "make": 1,
+        "to": 1,
+        "for": 2
+    }
+}

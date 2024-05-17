@@ -1,0 +1,188 @@
+{
+    "id": "T1586.002",
+    "tech_id": "T1586.002",
+    "tech_name": "Email Accounts",
+    "best_phrases": [],
+    "tactics": [
+        "TA0042"
+    ],
+    "features": [
+        "DATA",
+        "NETWORK",
+        "USER",
+        "FUNCTION"
+    ],
+    "locations": [
+        "PRE"
+    ],
+    "procedures": [
+        "relationship--1b44ae9f-29b7-45e0-9396-a84899e73a3b",
+        "relationship--32126e79-18ce-4393-a555-50aa34760da9",
+        "relationship--6eca6ae2-3f86-4b45-86c4-0ac01dfd13dd",
+        "relationship--78073196-9fea-4d84-a457-6b51afb71ed1",
+        "relationship--beaf6c2d-e416-4edc-8091-414eee53f604",
+        "relationship--c291a0b4-31b5-4075-9672-b10b0e7bd4cc",
+        "relationship--e794539e-3c07-4954-ba3c-f6c8ea6432e0",
+        "relationship--fe4a20ca-7a57-44b7-bcf3-0f51fe9abffa"
+    ],
+    "graph_nodes": [
+        {
+            "count": 8,
+            "id": 0,
+            "texts": [
+                "APT28",
+                "Magic Hound",
+                "HEXANE",
+                "Kimsuky",
+                "LAPSUS$",
+                "IndigoZebra",
+                "APT29",
+                "Leviathan"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 11,
+            "id": 1,
+            "texts": [
+                "compromised email accounts",
+                "personal email accounts",
+                "victim information",
+                "legitimate credentials",
+                "compromised accounts",
+                "email accounts",
+                "credentials",
+                "legitimate email accounts",
+                "email accounts",
+                "dormant accounts",
+                "email accounts"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 5,
+            "id": 2,
+            "texts": [
+                "credential phishing emails",
+                "spearphishing emails",
+                "spearphishing e-mails",
+                "phishing campaigns",
+                "social engineering attacks"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 5,
+            "id": 3,
+            "texts": [
+                "use",
+                "suppliers",
+                "employees",
+                "business partners",
+                "target organizations"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 3,
+            "id": 4,
+            "texts": [
+                "suppliers",
+                "employees",
+                "business partners"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 2,
+            "id": 5,
+            "texts": [
+                "spearphishing operations",
+                "control"
+            ],
+            "label": "FUNCTION"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 10
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 5
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 2
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "4_3",
+            "source": 4,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 2
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "5_1",
+            "source": 5,
+            "dest": 1,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 2,
+        "send": 3,
+        "by": 2,
+        "compromise": 5,
+        "gather": 1,
+        "of": 4,
+        "pay": 1,
+        "for": 2,
+        "in": 2,
+        "enable": 1,
+        "take": 1,
+        "conduct": 1
+    }
+}

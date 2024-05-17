@@ -1,0 +1,113 @@
+{
+    "id": "T1593.001",
+    "tech_id": "T1593.001",
+    "tech_name": "Social Media",
+    "best_phrases": [],
+    "tactics": [
+        "TA0043"
+    ],
+    "features": [
+        "NETWORK",
+        "USER",
+        "DATA"
+    ],
+    "locations": [
+        "PRE"
+    ],
+    "procedures": [
+        "relationship--3d78512d-1a97-4132-8d8f-cd9ceaf03246",
+        "relationship--c854c48c-f9b0-4e41-904d-df7fe6700e7f",
+        "relationship--f73d269a-9a0d-4485-9587-e0f0f2335c35"
+    ],
+    "graph_nodes": [
+        {
+            "count": 3,
+            "id": 0,
+            "texts": [
+                "Kimsuky",
+                "EXOTIC LILY",
+                "Lazarus Group"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 4,
+            "id": 1,
+            "texts": [
+                "Twitter",
+                "targeted phishing e-mails",
+                "social media sites",
+                "LinkedIn"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 3,
+            "id": 2,
+            "texts": [
+                "potential victims",
+                "targeted individuals",
+                "employees"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "data"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "chosen organization"
+            ],
+            "label": "OTHER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 4
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 3
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 2,
+        "monitor": 1,
+        "prepare": 1,
+        "copy": 1,
+        "from": 2,
+        "impersonate": 1,
+        "target": 1,
+        "within": 1
+    }
+}

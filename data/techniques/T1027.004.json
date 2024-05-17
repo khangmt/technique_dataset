@@ -1,0 +1,171 @@
+{
+    "id": "T1027.004",
+    "tech_id": "T1027.004",
+    "tech_name": "Compile After Delivery",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005"
+    ],
+    "features": [
+        "FUNCTION",
+        "COMPONENT",
+        "NETWORK",
+        "USER",
+        "DATA"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--2278eb19-1ff4-4406-ab79-03108732330c",
+        "relationship--40a32109-3cae-4f00-ac82-d8da57ce0eeb",
+        "relationship--47440b3d-e6ef-4f7d-b732-453d1684424a",
+        "relationship--663d6fdf-6c99-4ef6-9a4e-bbc8bbe8591f",
+        "relationship--7b17c352-f0b7-453d-9f80-e40b262ab8c7",
+        "relationship--94bb62b3-e917-47cb-a717-560b28ea3d56",
+        "relationship--d2260326-b220-46e4-ba11-3f14ec89f45f"
+    ],
+    "graph_nodes": [
+        {
+            "count": 7,
+            "id": 0,
+            "texts": [
+                "Gamaredon Group",
+                "FoggyWeb",
+                "Rocke",
+                "MuddyWater",
+                "njRAT",
+                "attacker",
+                "DarkWatchman"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 19,
+            "id": 1,
+            "texts": [
+                "source code",
+                "built-in Microsoft.CSharp.CSharpCodeProvider class",
+                "downloader",
+                "source code",
+                "malware",
+                "GCC",
+                ".NET csc.exe tool",
+                "executables",
+                "C# code",
+                "delivery",
+                "AutoIt",
+                "payload",
+                "main script",
+                "executable",
+                "Cardinal RAT",
+                "watchdog component",
+                "malicious script",
+                "csc.exe tool",
+                "C# executable"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 2,
+            "texts": [
+                "infected system"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "compromised AD FS server"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "HTTP POST"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "victims"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 1,
+            "id": 6,
+            "texts": [
+                ".c files"
+            ],
+            "label": "DATA"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 12
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "1_6",
+            "source": 1,
+            "dest": 6,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "compile": 6,
+        "on": 2,
+        "use": 5,
+        "for": 1,
+        "execute": 1,
+        "send to": 1,
+        "send": 1,
+        "deliver to": 1,
+        "as": 1,
+        "with": 1,
+        "from": 1,
+        "into": 1,
+        "after": 1
+    }
+}

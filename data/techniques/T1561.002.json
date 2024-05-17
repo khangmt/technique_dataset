@@ -1,0 +1,226 @@
+{
+    "id": "T1561.002",
+    "tech_id": "T1561.002",
+    "tech_name": "Disk Structure Wipe",
+    "best_phrases": [],
+    "tactics": [
+        "TA0040"
+    ],
+    "features": [
+        "COMPONENT",
+        "FUNCTION",
+        "DATA",
+        "USER"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows",
+        "Network"
+    ],
+    "procedures": [
+        "relationship--10bc4c79-d47f-4d49-bc06-c65ae376a4b6",
+        "relationship--6a8db293-43a2-45a1-b9b2-32222355bc4e",
+        "relationship--6add4de1-3af8-4994-b65f-ccb13fdd703a",
+        "relationship--76e8bb0f-83a5-462b-8f7d-3369da104e67",
+        "relationship--95f54d2e-cfa0-4afc-a5f4-9da7da55242a",
+        "relationship--98b6dbac-dac9-4856-9b67-25c49e20448e",
+        "relationship--b00c9e09-d98f-40b4-bc4e-0c3e9fe873e1",
+        "relationship--b12cc736-ee7a-4a70-b4f0-2048e218310f",
+        "relationship--b32b4e03-1469-4a70-8d0b-cd3344e92b3f",
+        "relationship--f9bcef0c-01a5-4fd8-a6f1-8423b5e98e52",
+        "relationship--fcb6fc55-8fa6-4ec7-a5a3-51de7dd90c1d"
+    ],
+    "graph_nodes": [
+        {
+            "count": 9,
+            "id": 0,
+            "texts": [
+                "Shamoon",
+                "HermeticWiper",
+                "WhisperGate",
+                "APT38",
+                "Sandworm Team",
+                "KillDisk",
+                "StoneDrill",
+                "CaddyWiper",
+                "APT37"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 18,
+            "id": 1,
+            "texts": [
+                "features",
+                "MBR",
+                "disk partitions",
+                "MBR",
+                "physical drives",
+                "components",
+                "MBR and disk partitions",
+                "MBR",
+                "victim systems",
+                "system",
+                "MBR",
+                "machine",
+                "sector",
+                "infected computer",
+                "partitions",
+                "drive",
+                "MBR",
+                "machine"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 13,
+            "id": 2,
+            "texts": [
+                "features",
+                "MBR",
+                "RawDisk",
+                "Shamoon",
+                "components",
+                "MBR and disk partitions",
+                "16-bit bootloader",
+                "BOOTWRECK",
+                "custom MBR wiper",
+                "BlackEnergy KillDisk component",
+                "Lazarus Group malware SHARPKNOT",
+                "MBR wiper malware",
+                "destructive malware"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 13,
+            "id": 3,
+            "texts": [
+                "disk structure",
+                "Master Boot Record",
+                "Master File Table",
+                "MFT",
+                "disk structure",
+                "Master Book Record",
+                "master boot record",
+                "Master Boot Record",
+                "Master Boot Record",
+                "master boot record",
+                "information",
+                "access",
+                "Master Boot Record"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 2,
+            "id": 4,
+            "texts": [
+                "at least 2009",
+                "0x00"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "victim"
+            ],
+            "label": "USER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 6
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 4
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 3
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 4
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 8
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 7
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "overwrite": 9,
+        "of": 10,
+        "corrupt": 2,
+        "damage": 2,
+        "in": 1,
+        "on": 3,
+        "with": 4,
+        "use": 2,
+        "possess": 1,
+        "delete": 2,
+        "since": 1,
+        "wipe": 1,
+        "destroy": 1,
+        "about": 1,
+        "have": 1,
+        "to": 1
+    }
+}

@@ -1,0 +1,211 @@
+{
+    "id": "T1213.002",
+    "tech_id": "T1213.002",
+    "tech_name": "Sharepoint",
+    "best_phrases": [],
+    "tactics": [
+        "TA0009"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "COMPONENT",
+        "NETWORK",
+        "USER"
+    ],
+    "locations": [
+        "Windows",
+        "Office 365"
+    ],
+    "procedures": [
+        "relationship--370fb415-02d5-416c-bb69-d629600dc14b",
+        "relationship--6a0748a1-7629-4afb-b089-ae068608a964",
+        "relationship--7080d506-ac77-4519-93aa-92bc490a2756",
+        "relationship--743ed7c3-c0e3-4290-9410-f6bec9224c30",
+        "relationship--7b2f6151-c019-4910-91a7-9dd6744c4ffb",
+        "relationship--9725630d-a737-43dd-a68f-a09987735846"
+    ],
+    "graph_nodes": [
+        {
+            "count": 4,
+            "id": 0,
+            "texts": [
+                "LAPSUS$",
+                "Chimera",
+                "APT28",
+                "Ke3chang"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 2,
+            "id": 1,
+            "texts": [
+                "network",
+                "target networks"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 5,
+            "id": 2,
+            "texts": [
+                "collaboration platforms",
+                "SharePoint",
+                "Microsoft SharePoint",
+                "SharePoint",
+                "victim SharePoint environments"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 8,
+            "id": 3,
+            "texts": [
+                "collaboration platforms",
+                "SharePoint",
+                "spwebmember",
+                "Microsoft SharePoint services",
+                "VPN and MFA enrollment information",
+                "help desk instructions",
+                "SharePoint enumeration and data dumping tool",
+                "spwebmember"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 6,
+            "id": 4,
+            "texts": [
+                "high-privilege account credentials",
+                "information",
+                "documents",
+                "information",
+                "VPN and MFA enrollment information",
+                "help desk instructions"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 2,
+            "id": 5,
+            "texts": [
+                "victim",
+                "victim"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 1,
+            "id": 6,
+            "texts": [
+                "Scattered Spider"
+            ],
+            "label": "OTHER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 3
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 3
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "4_2",
+            "source": 4,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "2_5",
+            "source": 2,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "4_3",
+            "source": 4,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "6_2",
+            "source": 6,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "6_3",
+            "source": 6,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "6_4",
+            "source": 6,
+            "dest": 4,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "search": 2,
+        "for": 2,
+        "discover": 1,
+        "of": 2,
+        "dump": 1,
+        "from": 5,
+        "collect": 2,
+        "within": 1,
+        "access": 1,
+        "use": 1
+    }
+}

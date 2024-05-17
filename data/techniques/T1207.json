@@ -1,0 +1,67 @@
+{
+    "id": "T1207",
+    "tech_id": "T1207",
+    "tech_name": "Rogue Domain Controller",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005"
+    ],
+    "features": [
+        "FUNCTION",
+        "COMPONENT"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--15fe2d8e-9a4e-433e-9dca-d7329e7ca846"
+    ],
+    "graph_nodes": [
+        {
+            "count": 3,
+            "id": 0,
+            "texts": [
+                "LSADUMP::DCShadow module",
+                "Mimikatz",
+                "AD updates"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 1,
+            "texts": [
+                "computer"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 1,
+            "id": 2,
+            "texts": [
+                "DC"
+            ],
+            "label": "OTHER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "of": 1,
+        "make": 1,
+        "set": 1,
+        "be": 1
+    }
+}

@@ -1,0 +1,304 @@
+{
+    "id": "T1016.001",
+    "tech_id": "T1016.001",
+    "tech_name": "Internet Connection Discovery",
+    "best_phrases": [],
+    "tactics": [
+        "TA0007"
+    ],
+    "features": [
+        "NETWORK",
+        "FUNCTION",
+        "COMPONENT",
+        "DATA"
+    ],
+    "locations": [
+        "Windows",
+        "Linux",
+        "macOS"
+    ],
+    "procedures": [
+        "relationship--001ecf24-8276-40d2-ba05-2d20e5c53ec9",
+        "relationship--04919717-aa68-4192-b095-c1607f8f6ead",
+        "relationship--0f70aa6c-c7a0-4628-b073-10fd1c576d45",
+        "relationship--2a764532-6758-4a82-90e4-eb53d1ac9c16",
+        "relationship--31f93f78-799b-4f65-892c-da3aba4bb32d",
+        "relationship--35c568aa-29af-4879-bdee-4f6a1f54ff22",
+        "relationship--486e3108-33ad-4506-8031-7215acd5ff69",
+        "relationship--4aec046b-4d53-44ea-97d0-e5a57290fb1e",
+        "relationship--4c747463-f1e0-40fd-a3ed-dc01bc112651",
+        "relationship--5b4a0fe7-5fcc-4f74-8914-2d4bc25b9d02",
+        "relationship--5fc69974-db3b-4475-b37b-07c4731b1a6f",
+        "relationship--63106a66-1408-4a15-b945-072f5e3ae2ff",
+        "relationship--86c55cd3-efb5-4bd3-9958-a5af1f1b0679",
+        "relationship--88231281-0f0d-4655-b083-a90faf9056fe",
+        "relationship--8d5fe299-0c6c-4719-8125-d9576ddbff32",
+        "relationship--a06f76b9-1920-4660-a2f3-cc0db8d585c0",
+        "relationship--a4a03850-ad3e-4599-af58-5aa67c63fb93",
+        "relationship--b9edded2-4f07-431c-bdc1-e7ba489dd253",
+        "relationship--baaa6228-daa9-45e9-884e-42add3851843",
+        "relationship--e0aaa143-5c5f-4c58-8ace-d05b037bf4b6",
+        "relationship--fd135724-b4b3-470a-95c6-43191f99dcb6"
+    ],
+    "graph_nodes": [
+        {
+            "count": 20,
+            "id": 0,
+            "texts": [
+                "GoldFinder",
+                "DarkTortilla",
+                "More_eggs",
+                "Neoichor",
+                "APT29",
+                "Magic Hound",
+                "SUGARUSH",
+                "HEXANE",
+                "QakBot",
+                "APT29",
+                "QuietSieve",
+                "Gamaredon Group",
+                "SysUpdate",
+                "threat actors",
+                "Woody RAT",
+                "Rising Sun",
+                "attempts",
+                "HAFNIUM",
+                "Turla",
+                "FIN8"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 30,
+            "id": 1,
+            "texts": [
+                "HTTP GET requests",
+                "HTTP proxy servers",
+                "redirectors",
+                "HTTP request",
+                "HTTP GET requests",
+                "GoldFinder",
+                "HTTP GET requests",
+                "HTTP proxy servers",
+                "redirectors",
+                "HTTP request",
+                "initial discovery activity",
+                "tools",
+                "tools",
+                "malware",
+                "ping",
+                "Ping",
+                "CSIDL_SYSTEM\\cmd.exe /c ping -n 1",
+                "commands",
+                "C2 establishment process",
+                "scripts",
+                "Visual Basic script",
+                "network connectivity checks",
+                "tracert",
+                "Ping",
+                "network reconnaissance efforts",
+                "attempts",
+                "HAFNIUM",
+                "ping",
+                "tracert",
+                "Ping command"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 34,
+            "id": 2,
+            "texts": [
+                "internet connectivity",
+                "HTTP proxy servers",
+                "redirectors",
+                "internet connectivity",
+                "Internet connectivity",
+                "bing[.]com",
+                "bing[.]com?id=<GetTickCount",
+                "internet connectivity",
+                "HTTP proxy servers",
+                "redirectors",
+                "network call",
+                "website",
+                "internet connectivity",
+                "TCP connection",
+                "internet connectivity",
+                "web servers",
+                "C2 connectivity",
+                "8.8.8.8",
+                "Google public DNS",
+                "connectivity",
+                "C2",
+                "compromised machine",
+                "DNS server",
+                "internet connectivity",
+                "internet connectivity",
+                "Ping GET HTTP requests",
+                "C2",
+                "connection",
+                "network IP address",
+                "network connectivity",
+                "google[.]com",
+                "internet connectivity",
+                "connectivity",
+                "C2s"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 8,
+            "id": 3,
+            "texts": [
+                "that",
+                "that",
+                "part",
+                "part",
+                "Google",
+                "TA2541",
+                "that",
+                "FIN13"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 4,
+            "id": 4,
+            "texts": [
+                "request format",
+                "download speed",
+                "regular intervals",
+                "port number"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 8,
+            "id": 5,
+            "texts": [
+                "infected host",
+                "compromised hosts",
+                "targeted host",
+                "victim environment",
+                "C2",
+                "compromised machine",
+                "compromised hosts",
+                "compromised host"
+            ],
+            "label": "COMPONENT"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 14
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 20
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 3
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 5
+        },
+        {
+            "id": "2_5",
+            "source": 2,
+            "dest": 5,
+            "count": 6
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 3
+        },
+        {
+            "id": "4_5",
+            "source": 4,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 6
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 2
+        }
+    ],
+    "verbs": {
+        "perform": 2,
+        "check": 8,
+        "identify": 2,
+        "by": 2,
+        "use": 9,
+        "for": 8,
+        "contact": 3,
+        "with": 5,
+        "conduct": 1,
+        "as": 4,
+        "to": 7,
+        "of": 2,
+        "establish": 1,
+        "from": 4,
+        "test": 3,
+        "measure": 1,
+        "on": 1,
+        "in": 1,
+        "copy": 1,
+        "between": 1,
+        "operate": 1,
+        "run": 1,
+        "make": 1,
+        "at": 2,
+        "over": 2
+    }
+}

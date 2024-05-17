@@ -1,0 +1,77 @@
+{
+    "id": "T1563.002",
+    "tech_id": "T1563.002",
+    "tech_name": "RDP Hijacking",
+    "best_phrases": [],
+    "tactics": [
+        "TA0008"
+    ],
+    "features": [
+        "FUNCTION",
+        "USER"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--6b22c256-44a9-4b73-8df6-e4da9c32a5a3",
+        "relationship--a78310c3-ee57-465a-9983-13c6a7cd1d4f"
+    ],
+    "graph_nodes": [
+        {
+            "count": 2,
+            "id": 0,
+            "texts": [
+                "WannaCry",
+                "Axiom"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 4,
+            "id": 1,
+            "texts": [
+                "remote desktop sessions",
+                "malware",
+                "session",
+                "remote administration tools"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 2,
+            "texts": [
+                "victims"
+            ],
+            "label": "USER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "enumerate": 1,
+        "execute": 1,
+        "on": 1,
+        "target": 1,
+        "with": 2
+    }
+}

@@ -1,0 +1,92 @@
+{
+    "id": "T1606.002",
+    "tech_id": "T1606.002",
+    "tech_name": "SAML Tokens",
+    "best_phrases": [],
+    "tactics": [
+        "TA0006"
+    ],
+    "features": [
+        "DATA",
+        "REGISTRY",
+        "FUNCTION"
+    ],
+    "locations": [
+        "Azure AD",
+        "SaaS",
+        "Windows",
+        "Office 365",
+        "Google Workspace",
+        "IaaS"
+    ],
+    "procedures": [
+        "relationship--00e7784e-d0c8-48d8-a377-7ec83cf6a474",
+        "relationship--a371d1a1-29aa-4d11-bad4-d11866171c6c"
+    ],
+    "graph_nodes": [
+        {
+            "count": 1,
+            "id": 0,
+            "texts": [
+                "APT29"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 2,
+            "id": 1,
+            "texts": [
+                "tokens",
+                "AD Federated Services token signing certificate"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 2,
+            "id": 2,
+            "texts": [
+                "compromised SAML signing certificates",
+                "SAML tokens"
+            ],
+            "label": "REGISTRY"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "AADInternals"
+            ],
+            "label": "FUNCTION"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "create": 2,
+        "use": 2
+    }
+}

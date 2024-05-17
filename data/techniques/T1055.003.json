@@ -1,0 +1,69 @@
+{
+    "id": "T1055.003",
+    "tech_id": "T1055.003",
+    "tech_name": "Thread Execution Hijacking",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005",
+        "TA0004"
+    ],
+    "features": [
+        "FUNCTION"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--4aa3b66d-f312-4f1f-912a-b7b1762f9d82",
+        "relationship--86ebda8c-df0c-4d76-970b-27bf392606a7",
+        "relationship--8e34d10d-0c24-41c6-8bde-727768256479"
+    ],
+    "graph_nodes": [
+        {
+            "count": 3,
+            "id": 0,
+            "texts": [
+                "Waterbear",
+                "Gazer",
+                "Trojan.Karagany"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 12,
+            "id": 1,
+            "texts": [
+                "thread injection",
+                "shellcode",
+                "process",
+                "security software",
+                "thread execution hijacking",
+                "orchestrator",
+                "thread",
+                "remote process",
+                "ResumeThread API",
+                "suspended thread",
+                "process",
+                "process"
+            ],
+            "label": "FUNCTION"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 7
+        }
+    ],
+    "verbs": {
+        "use": 1,
+        "inject": 3,
+        "into": 4,
+        "of": 2,
+        "perform": 1,
+        "from": 1,
+        "by": 1
+    }
+}

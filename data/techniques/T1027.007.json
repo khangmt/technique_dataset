@@ -1,0 +1,83 @@
+{
+    "id": "T1027.007",
+    "tech_id": "T1027.007",
+    "tech_name": "Dynamic API Resolution",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--671e9da1-ef79-4193-88e2-fb406304ccea",
+        "relationship--7b275e8a-83fd-4f2b-8ec4-eb36dae007fd",
+        "relationship--939b7c8a-3a2a-43a7-82e2-55f3b62c15da",
+        "relationship--975d47f9-976e-438a-bd18-2e7e0125aa44",
+        "relationship--db7db901-6b19-4cd2-9d22-17b5703bbf7f"
+    ],
+    "graph_nodes": [
+        {
+            "count": 4,
+            "id": 0,
+            "texts": [
+                "Bazar",
+                "AvosLocker",
+                "Lazarus Group",
+                "Pteranodon"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 10,
+            "id": 1,
+            "texts": [
+                "API calls",
+                "runtime",
+                "obfuscated API calls",
+                "custom hashing method",
+                "APIs",
+                "shellcode",
+                "dynamic Windows hashing algorithm",
+                "API components",
+                "Brute Ratel C4",
+                "hashed APIs"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 2,
+            "texts": [
+                "checksums"
+            ],
+            "label": "DATA"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 6
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "resolve": 3,
+        "at": 1,
+        "use": 3,
+        "retrieve": 1,
+        "use in": 1,
+        "map": 1
+    }
+}

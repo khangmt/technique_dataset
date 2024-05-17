@@ -1,0 +1,289 @@
+{
+    "id": "T1078.002",
+    "tech_id": "T1078.002",
+    "tech_name": "Domain Accounts",
+    "best_phrases": [],
+    "tactics": [
+        "TA0005",
+        "TA0003",
+        "TA0004",
+        "TA0001"
+    ],
+    "features": [
+        "DATA",
+        "USER",
+        "COMPONENT",
+        "NETWORK",
+        "FUNCTION"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--03a2f02b-ca0c-4366-8880-6cb6015fd722",
+        "relationship--09c0322c-a714-4768-9d30-04160d2d7b2a",
+        "relationship--0a154ef3-859f-4f13-b5c9-9bd0e91864f0",
+        "relationship--0fee0f43-7352-4503-867b-ae17eb7c278b",
+        "relationship--21298951-67d3-4904-97be-f7a57d120383",
+        "relationship--269229ec-bb95-4ad1-b68e-267b2cce4f24",
+        "relationship--2dd33387-a109-46cd-8204-cb79a62e4830",
+        "relationship--32478440-a1d2-458d-a749-e2d200415106",
+        "relationship--37213eca-1510-4893-b27a-f17a8dd16a78",
+        "relationship--561f217e-8392-40b3-84a7-29fbd1399d88",
+        "relationship--5e6e745f-d756-4b6e-90e1-3adcf848570b",
+        "relationship--739217f2-c273-4005-8175-1261a81a1224",
+        "relationship--8ac07a3f-9468-47a3-8ecc-c432f80e03f4",
+        "relationship--90c8ecca-41d2-4a28-84fe-b76c1d969363",
+        "relationship--94a6e104-9afd-4271-af39-6ab02eb53dfd",
+        "relationship--b7a9afc1-3bbf-4eda-9709-5392156c1e41",
+        "relationship--c6358f18-fc64-46f5-8939-66e5258dd83d",
+        "relationship--d3db2181-a79e-49df-b169-f6b7c52fd7a5",
+        "relationship--d45ff9eb-aca1-4bda-b5a8-fd4034ac8f1e",
+        "relationship--d51a3ee4-4542-4334-9989-249aa107c261"
+    ],
+    "graph_nodes": [
+        {
+            "count": 19,
+            "id": 0,
+            "texts": [
+                "CreepySnail",
+                "threat actors",
+                "APT29",
+                "Cobalt Strike",
+                "Naikon",
+                "threat actors",
+                "Wizard Spider",
+                "Sandworm Team",
+                "APT29",
+                "Ryuk",
+                "attacker",
+                "Indrik Spider",
+                "APT3",
+                "Chimera",
+                "threat actors",
+                "TA505",
+                "Threat Group-1314 actors",
+                "Magic Hound",
+                "Stuxnet"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 33,
+            "id": 1,
+            "texts": [
+                "stolen credentials",
+                "domain accounts",
+                "access",
+                "stolen administrator credentials",
+                "credentials",
+                "domain user account",
+                "administrator credentials",
+                "compromised domain administrator credentials",
+                "administrative accounts",
+                "Domain Admin",
+                "stolen credentials",
+                "administrative accounts",
+                "accounts",
+                "stolen domain admin accounts",
+                "access",
+                "coded, domain-specific credentials",
+                "credentials",
+                "domain accounts",
+                "valid accounts",
+                "credentials",
+                "compromised domain accounts",
+                "access",
+                "domain credentials",
+                "domain admin",
+                "privilege",
+                "stolen domain admin accounts",
+                "compromised domain credentials",
+                "domain administrator accounts",
+                "LSASS process memory",
+                "network resources",
+                "credentials",
+                "account",
+                "compromised domain accounts"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 4,
+            "id": 2,
+            "texts": [
+                "target networks",
+                "domain",
+                "victim domain",
+                "compromised networks"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 5,
+            "id": 3,
+            "texts": [
+                "victim systems",
+                "infected systems",
+                "target environment",
+                "hosts",
+                "devices"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 4,
+            "id": 4,
+            "texts": [
+                "commands",
+                "processes",
+                "endpoint management platform",
+                "Altiris"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 2,
+            "id": 5,
+            "texts": [
+                "part",
+                "Volt Typhoon"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 6,
+            "id": 6,
+            "texts": [
+                "administrative accounts",
+                "Domain Admin",
+                "administrators",
+                "domain credentials",
+                "domain admin",
+                "victim"
+            ],
+            "label": "USER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 26
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 3
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "0_6",
+            "source": 0,
+            "dest": 6,
+            "count": 2
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "1_6",
+            "source": 1,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "4_6",
+            "source": 4,
+            "dest": 6,
+            "count": 2
+        },
+        {
+            "id": "5_1",
+            "source": 5,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "5_3",
+            "source": 5,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 18,
+        "authenticate": 2,
+        "gain": 3,
+        "to": 2,
+        "run": 1,
+        "spawn": 1,
+        "as": 3,
+        "access": 2,
+        "within": 2,
+        "of": 4,
+        "attempt": 1,
+        "collect": 1,
+        "from": 2,
+        "escalate": 1,
+        "compromise": 1,
+        "for": 2,
+        "dump": 1,
+        "with": 1,
+        "on": 1
+    }
+}

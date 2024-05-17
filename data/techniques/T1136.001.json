@@ -1,0 +1,341 @@
+{
+    "id": "T1136.001",
+    "tech_id": "T1136.001",
+    "tech_name": "Local Account",
+    "best_phrases": [],
+    "tactics": [
+        "TA0003"
+    ],
+    "features": [
+        "DATA",
+        "FUNCTION",
+        "USER",
+        "COMPONENT",
+        "NETWORK"
+    ],
+    "locations": [
+        "Linux",
+        "macOS",
+        "Windows",
+        "Network",
+        "Containers"
+    ],
+    "procedures": [
+        "relationship--0038b0b8-f51c-4fd1-8b04-2fd7ebd1d61d",
+        "relationship--08d9bd35-4d07-42f0-b462-c9c8b5a9dbab",
+        "relationship--172e2d4d-5739-40d3-ae0d-4bf76890e79f",
+        "relationship--187c8a97-3ba1-476e-8377-592adb8e70a3",
+        "relationship--23df34a9-9705-4efa-9f8f-90f4bcb1a310",
+        "relationship--25e9205c-3f27-4f93-81ea-b4bc1e3325ac",
+        "relationship--26ce5847-3f53-4736-92c6-7a82e17cd884",
+        "relationship--327d7bd3-ab28-4016-8d5e-b4364a413566",
+        "relationship--410d7922-e288-49ea-9607-27942505a416",
+        "relationship--4248d8aa-eec4-4fd3-9707-ca1ed85bf5c5",
+        "relationship--57e6eba5-cb21-4a0d-b524-4981f49037b1",
+        "relationship--5db107fe-7b8d-4093-a551-492eb4a72ed9",
+        "relationship--6852e4b7-b1de-417a-b8db-370d04d8c072",
+        "relationship--6c7965c9-6ea5-4693-889d-25c1c47b2698",
+        "relationship--6d819560-bdfb-4e0a-bf56-fddcba60cdb5",
+        "relationship--7185fe1c-1565-4175-bc7e-539ff704f4cb",
+        "relationship--7e55e411-230e-4d1a-a780-d07784ed2cd6",
+        "relationship--a26397b4-7959-40d7-953c-c2afec8a1f80",
+        "relationship--a7fc5d9b-7010-4bab-9e77-3b8e449a98bd",
+        "relationship--c6ee4856-1782-4430-af7f-4d71e84c9b97",
+        "relationship--c6f11dfe-dd59-4310-9619-ed42ee48d736",
+        "relationship--c832fb66-57f5-40cb-94aa-ad788a4aad39",
+        "relationship--c9ad232a-2276-40b2-bf56-490fc6357cca",
+        "relationship--f0b3c919-bf39-4bc9-9488-5f30d5407c54",
+        "relationship--fe99ee01-a049-4867-bf3b-27d05461b0b3"
+    ],
+    "graph_nodes": [
+        {
+            "count": 21,
+            "id": 0,
+            "texts": [
+                "Wizard Spider",
+                "HiddenWasp",
+                "GoldenSpy",
+                "Dragonfly",
+                "TeamTNT",
+                "Fox Kitten",
+                "APT41",
+                "SMOKEDHAM",
+                "Flame",
+                "Hildegard",
+                "ServHelper",
+                "Kimsuky",
+                "S-Type",
+                "Mis-Type",
+                "Magic Hound",
+                "Carbanak",
+                "Leafminer",
+                "APT39",
+                "ZxShell",
+                "APT3",
+                "Calisto"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 33,
+            "id": 1,
+            "texts": [
+                "local administrator accounts",
+                "user account",
+                "users",
+                "accounts",
+                "administrator accounts",
+                "local privileged users",
+                "local user account",
+                "administrator privileges",
+                "user accounts",
+                "MS-SQL local accounts",
+                "backdoor accounts",
+                "user",
+                "\"monerodaemon",
+                "\"supportaccount",
+                "accounts",
+                "local system accounts",
+                "user",
+                "Lost_{Unique Identifier}",
+                "password",
+                "pond~!@6\"{Unique Identifier}",
+                "local account",
+                "user",
+                "Lost_{Unique Identifier}",
+                "DefaultAccount",
+                "help",
+                "local accounts",
+                "Windows account",
+                "persistent remote access account",
+                "accounts",
+                "local user accounts",
+                "support_388945a0",
+                "accounts",
+                "account"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 6,
+            "id": 2,
+            "texts": [
+                "means",
+                "some",
+                "which",
+                "FIN13",
+                "support_388945a0",
+                "accounts"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 9,
+            "id": 3,
+            "texts": [
+                "infected system",
+                "victim machines",
+                "domain connected systems",
+                "system",
+                "system",
+                "compromised machines",
+                "victim machine",
+                "compromised hosts",
+                "machine"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 18,
+            "id": 4,
+            "texts": [
+                "Empire",
+                "module",
+                "login \"HelpAssistant",
+                "user",
+                "\"monerodaemon",
+                "\"supportaccount",
+                "net user",
+                "\"net user\" commands",
+                "net user username \\password commands",
+                "Net",
+                "DefaultAccount",
+                "help",
+                "local accounts",
+                "Imecab",
+                "tool",
+                "actions",
+                "feature",
+                "capability"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 11,
+            "id": 5,
+            "texts": [
+                "local user",
+                "victims",
+                "user",
+                "\"monerodaemon",
+                "\"supportaccount",
+                "Pupy can user",
+                "user",
+                "Lost_{Unique Identifier}",
+                "user",
+                "Lost_{Unique Identifier}",
+                "victim"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 2,
+            "id": 6,
+            "texts": [
+                "compromised network",
+                "network"
+            ],
+            "label": "NETWORK"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 17
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 3
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 5
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 9
+        },
+        {
+            "id": "4_5",
+            "source": 4,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "2_6",
+            "source": 2,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "1_6",
+            "source": 1,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 2
+        },
+        {
+            "id": "0_5",
+            "source": 0,
+            "dest": 5,
+            "count": 3
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 6
+        },
+        {
+            "id": "5_4",
+            "source": 5,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "5_1",
+            "source": 5,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "5_3",
+            "source": 5,
+            "dest": 3,
+            "count": 2
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "4_3",
+            "source": 4,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "4_6",
+            "source": 4,
+            "dest": 6,
+            "count": 1
+        },
+        {
+            "id": "3_5",
+            "source": 3,
+            "dest": 5,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "create": 20,
+        "as": 2,
+        "on": 14,
+        "have": 3,
+        "tailor": 1,
+        "of": 2,
+        "with": 5,
+        "in": 3,
+        "execute": 1,
+        "use": 1,
+        "set": 1,
+        "perform": 1,
+        "within": 1,
+        "enable": 1,
+        "add": 1,
+        "to": 1
+    }
+}

@@ -1,0 +1,320 @@
+{
+    "id": "T1490",
+    "tech_id": "T1490",
+    "tech_name": "Inhibit System Recovery",
+    "best_phrases": [],
+    "tactics": [
+        "TA0040"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "COMPONENT",
+        "USER"
+    ],
+    "locations": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Network",
+        "IaaS",
+        "Containers"
+    ],
+    "procedures": [
+        "relationship--0260e86a-488e-4307-a467-2ccabf430212",
+        "relationship--06dd311f-393f-4c24-beee-19d690ae4ba2",
+        "relationship--0e9818a5-90ec-4b12-a6e2-20188d78a69f",
+        "relationship--2781807b-4dd7-4bd7-b453-bd258bc375ee",
+        "relationship--2d090e9d-f9fb-4f73-99df-0e17a7489adb",
+        "relationship--2f5583d9-e0bf-4d76-ad74-6d9bd3efa69c",
+        "relationship--3194fa27-46b8-4a05-8d3a-12d7bfe9ad15",
+        "relationship--331e8ea2-15c4-4cba-8a26-163b24d819b7",
+        "relationship--4238bdb9-71ad-413f-a2fa-4c090ed4c469",
+        "relationship--48c9c2f3-9358-4342-88b7-57c8e5df893b",
+        "relationship--4e7966c2-7ac7-4959-8ee0-dfc6d812e000",
+        "relationship--5364714b-0c15-4453-9b09-7fcca3d3db01",
+        "relationship--5b8d22c5-f191-4dc3-a4ee-04c7d8b799da",
+        "relationship--61b0b64f-da02-4f36-949e-016b83fa747f",
+        "relationship--6ac34520-de4a-4033-92a4-52d7463592b9",
+        "relationship--76d0be57-e439-4640-b26d-db422353d9e5",
+        "relationship--773fc200-e44d-4049-b972-043c1e3d9035",
+        "relationship--813370e8-ec26-4533-b8e2-39474edb7006",
+        "relationship--833e14f8-0f37-488a-a67c-3ff2fe524ac3",
+        "relationship--84d34520-0386-4d41-96b6-3350d727150b",
+        "relationship--87343ae5-53c9-426c-abab-602c8041dafe",
+        "relationship--9a91c3cf-b39d-470f-85fc-14bbebe39e98",
+        "relationship--9e22871c-2e16-4c81-903c-e081c140f7a2",
+        "relationship--bc733ee6-f441-42b1-a201-9ff84e0f522c",
+        "relationship--cd38ce72-655d-40f5-afbc-5a9ad0624a6a",
+        "relationship--d6dcaa34-12d9-45f3-8f7b-397c2da0995a",
+        "relationship--e2b49348-8590-42a9-8b38-871c2eb3ada1",
+        "relationship--e4c2c54e-3980-45a4-92cb-c0d99bc0a428",
+        "relationship--e8924eab-e270-43ed-8d7b-8e14cb739720",
+        "relationship--ea32ebd2-9827-43ec-a3d3-f0148fee8ed8",
+        "relationship--ec0ea37c-cb59-4138-ac0a-ad401b37d5fe",
+        "relationship--f0c94372-2818-46ff-899c-0c57fe0af46a",
+        "relationship--f86ad19e-67a2-453d-8af9-c73a130651a4",
+        "relationship--fc3e0e8c-d6d3-4f2d-8374-86b7902079a9"
+    ],
+    "graph_nodes": [
+        {
+            "count": 35,
+            "id": 0,
+            "texts": [
+                "MegaCortex",
+                "ProLock",
+                "Black Basta",
+                "Ragnar Locker",
+                "InvisiMole",
+                "WastedLocker",
+                "H1N1",
+                "RobbinHood",
+                "JCry",
+                "Ryuk",
+                "DarkWatchman",
+                "EKANS",
+                "HELLOKITTY",
+                "DEATHRANSOM",
+                "FIVEHANDS",
+                "Royal",
+                "Avaddon",
+                "Prestige",
+                "HermeticWiper",
+                "WannaCry",
+                "Wizard Spider",
+                "Babuk",
+                "BitPaymer",
+                "Netwalker",
+                "Conti",
+                "Clop",
+                "Meteor",
+                "attacker",
+                "Pysa",
+                "Conficker",
+                "Olympic Destroyer",
+                "REvil",
+                "Maze",
+                "Diavol",
+                "BlackCat"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 33,
+            "id": 1,
+            "texts": [
+                "volume shadow copies",
+                "shadow copies",
+                "volume shadow copies",
+                "system restore points",
+                "shadow volumes",
+                "shadow copies",
+                "shadow copies",
+                "volume shadow copies",
+                "shadow copies",
+                "shadow volumes",
+                "Volume Shadow Copies",
+                "volume shadow copies",
+                "backup catalog",
+                "volume shadow copies",
+                "volume shadow copies",
+                "volume shadow copies",
+                "shadow volumes",
+                "backup shadow files",
+                "Shadow Volumes",
+                "Windows Volume Shadow Copies",
+                "shadow volumes",
+                "boot identifiers",
+                "shadow copies",
+                "system restore points",
+                "backup files",
+                "Windows backup catalog",
+                "operating system recovery features",
+                "Windows Automatic Repair",
+                "volume shadow copies",
+                "shadow volumes",
+                "shadow copies",
+                "IVssBackupComponents COM object",
+                "shadow copies"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 53,
+            "id": 2,
+            "texts": [
+                "vssadmin.exe",
+                "vssadmin delete shadows /all /quiet",
+                "recovery options",
+                "vssadmin Delete Shadows /all /quiet",
+                "deletion",
+                "third-party applications",
+                "vssadmin.exe",
+                "backups",
+                "restoration capabilities",
+                "shadow copy backups",
+                "vssadmin.exe",
+                "command",
+                "delete shadows /all /quiet",
+                "backups",
+                "native system tools",
+                "c:\\Windows\\System32\\wbadmin.exe delete catalog -quiet",
+                "\\Windows\\System32\\vssadmin.exe delete shadows /all /quiet",
+                "VSS service",
+                "vssadmin",
+                "wmic",
+                "wbadmin",
+                "bcdedit",
+                "operating system recovery features",
+                "vssadmin",
+                "WMIC",
+                "Conti ransomware",
+                "vssadmin",
+                "vssadmin.exe delete shadows /all /quiet",
+                "vssadmin.exe Delete Shadows /All /Quiet",
+                "recovery",
+                "vssadmin",
+                "vssadmin Delete Shadows /all /quiet",
+                "bcdedit",
+                "recovery options",
+                "bcdedit",
+                "vssadmin.exe delete shadows /all /quiet",
+                "C:\\\\Windows\\\\system32\\\\wbem\\\\wmic.exe shadowcopy delete",
+                "functionality",
+                "native Windows utilities",
+                "vssadmin",
+                "wbadmin",
+                "bcdedit",
+                "Windows backup catalog",
+                "operating system recovery features",
+                "Windows Automatic Repair",
+                "vssadmin",
+                "bcdedit",
+                "recovery features",
+                "DeleteSnapshots method",
+                "wmic.exe Shadowcopy Delete",
+                "vssadmin.exe delete shadows /all /quiet",
+                "boot loader",
+                "bcdedit /set {default} recoveryenabled No"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "victim"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 8,
+            "id": 4,
+            "texts": [
+                "compromised hosts",
+                "target system",
+                "service control manager",
+                "compromised host",
+                "host",
+                "system",
+                "compromised host",
+                "infected machines"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "use"
+            ],
+            "label": "OTHER"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 27
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 39
+        },
+        {
+            "id": "0_3",
+            "source": 0,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "1_3",
+            "source": 1,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 4
+        },
+        {
+            "id": "0_4",
+            "source": 0,
+            "dest": 4,
+            "count": 3
+        },
+        {
+            "id": "1_4",
+            "source": 1,
+            "dest": 4,
+            "count": 6
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "1_5",
+            "source": 1,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "5_2",
+            "source": 5,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "delete": 24,
+        "use": 25,
+        "remove": 3,
+        "disable": 7,
+        "from": 5,
+        "force": 1,
+        "of": 5,
+        "create": 1,
+        "on": 4,
+        "with": 5,
+        "prevent": 1,
+        "have": 1,
+        "reset": 1,
+        "delete before": 1,
+        "call": 1,
+        "modify": 1
+    }
+}

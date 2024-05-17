@@ -1,0 +1,137 @@
+{
+    "id": "T1098.003",
+    "tech_id": "T1098.003",
+    "tech_name": "Additional Cloud Roles",
+    "best_phrases": [],
+    "tactics": [
+        "TA0003",
+        "TA0004"
+    ],
+    "features": [
+        "DATA",
+        "FUNCTION",
+        "USER",
+        "COMPONENT"
+    ],
+    "locations": [
+        "Office 365",
+        "IaaS",
+        "SaaS",
+        "Google Workspace",
+        "Azure AD"
+    ],
+    "procedures": [
+        "relationship--4e23f18f-9418-462d-9f59-a527cb15ba9d",
+        "relationship--80e8fae3-0b15-4e5b-bd69-af76dd3e5864",
+        "relationship--bbd4f6df-b4e4-4e8e-8811-41212aef6264"
+    ],
+    "graph_nodes": [
+        {
+            "count": 2,
+            "id": 0,
+            "texts": [
+                "Scattered Spider",
+                "organization"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 2,
+            "id": 1,
+            "texts": [
+                "IAM manipulation",
+                "created service principle"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 4,
+            "id": 2,
+            "texts": [
+                "privileges",
+                "privileges",
+                "global admin role",
+                "accounts"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 2,
+            "id": 3,
+            "texts": [
+                "APT29",
+                "LAPSUS$"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 1,
+            "id": 4,
+            "texts": [
+                "company administrator"
+            ],
+            "label": "USER"
+        },
+        {
+            "count": 1,
+            "id": 5,
+            "texts": [
+                "cloud instances"
+            ],
+            "label": "COMPONENT"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 3
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "2_5",
+            "source": 2,
+            "dest": 5,
+            "count": 1
+        },
+        {
+            "id": "5_0",
+            "source": 5,
+            "dest": 0,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "use": 1,
+        "elevate": 1,
+        "grant": 2,
+        "to": 3,
+        "add": 1,
+        "create": 1,
+        "of": 1
+    }
+}

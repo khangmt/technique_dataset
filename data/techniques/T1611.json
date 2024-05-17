@@ -1,0 +1,159 @@
+{
+    "id": "T1611",
+    "tech_id": "T1611",
+    "tech_name": "Escape to Host",
+    "best_phrases": [],
+    "tactics": [
+        "TA0004"
+    ],
+    "features": [
+        "COMPONENT",
+        "FUNCTION",
+        "NETWORK",
+        "DIRECTORY"
+    ],
+    "locations": [
+        "Windows",
+        "Linux",
+        "Containers"
+    ],
+    "procedures": [
+        "relationship--19df36ab-4da3-4077-8b83-6066a546f2e2",
+        "relationship--46dd6393-93c7-4e61-8a47-ceecd5b77589",
+        "relationship--6c91f220-34c0-4d9a-8e23-e1a4b29742dc",
+        "relationship--6f5b07b1-6848-48ce-9a33-f5418e2195be",
+        "relationship--f47bdd6d-d8d4-450f-b6ff-30da690621b3"
+    ],
+    "graph_nodes": [
+        {
+            "count": 5,
+            "id": 0,
+            "texts": [
+                "Peirates",
+                "reverse shell",
+                "calling",
+                "NtSetInformationSymbolicLink",
+                "BOtB tool"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 3,
+            "id": 1,
+            "texts": [
+                "host node",
+                "Kubernetes hostPath",
+                "global symbolic link"
+            ],
+            "label": "NETWORK"
+        },
+        {
+            "count": 6,
+            "id": 2,
+            "texts": [
+                "container",
+                "container",
+                "host",
+                "privileged containers",
+                "filesystem",
+                "victim machine"
+            ],
+            "label": "COMPONENT"
+        },
+        {
+            "count": 4,
+            "id": 3,
+            "texts": [
+                "Doki",
+                "Siloscape",
+                "TeamTNT",
+                "Hildegard"
+            ],
+            "label": "ACTOR"
+        },
+        {
+            "count": 2,
+            "id": 4,
+            "texts": [
+                "host root directory",
+                "C drive"
+            ],
+            "label": "DIRECTORY"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 3
+        },
+        {
+            "id": "2_3",
+            "source": 2,
+            "dest": 3,
+            "count": 1
+        },
+        {
+            "id": "2_4",
+            "source": 2,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "3_0",
+            "source": 3,
+            "dest": 0,
+            "count": 2
+        },
+        {
+            "id": "3_4",
+            "source": 3,
+            "dest": 4,
+            "count": 1
+        },
+        {
+            "id": "3_2",
+            "source": 3,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "4_2",
+            "source": 4,
+            "dest": 2,
+            "count": 2
+        },
+        {
+            "id": "1_0",
+            "source": 1,
+            "dest": 0,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 1
+        }
+    ],
+    "verbs": {
+        "gain": 1,
+        "on": 2,
+        "mount": 2,
+        "of": 4,
+        "bind": 1,
+        "use": 2,
+        "map": 1,
+        "to": 3,
+        "create": 1,
+        "by": 1,
+        "deploy": 1
+    }
+}

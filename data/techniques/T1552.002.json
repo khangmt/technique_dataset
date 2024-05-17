@@ -1,0 +1,159 @@
+{
+    "id": "T1552.002",
+    "tech_id": "T1552.002",
+    "tech_name": "Credentials in Registry",
+    "best_phrases": [],
+    "tactics": [
+        "TA0006"
+    ],
+    "features": [
+        "FUNCTION",
+        "DATA",
+        "REGISTRY"
+    ],
+    "locations": [
+        "Windows"
+    ],
+    "procedures": [
+        "relationship--19e44b4d-fb66-43f9-8853-8e42692522b2",
+        "relationship--216b3711-fc70-4029-aaec-a8f021c38bef",
+        "relationship--304f5c1b-7cfa-4c2a-b7a2-e4957da603b1",
+        "relationship--56faef01-6a5b-41a7-a7fe-888860750abe",
+        "relationship--91cff72f-644b-42e3-9c86-8cc6475f725a",
+        "relationship--92c6a85d-d8b4-44d2-acf4-53ae07f69f77",
+        "relationship--f2ac3f65-68d3-45d2-8aab-b2bd57036fa8"
+    ],
+    "graph_nodes": [
+        {
+            "count": 11,
+            "id": 0,
+            "texts": [
+                "Reg",
+                "PowerSploit",
+                "Get-ApplicationHost",
+                "Get-SiteListPassword",
+                "Get-RegistryAutoLogon",
+                "Get-CachedGPPPassword",
+                "Get-Webconfig",
+                "modules",
+                "Get-UnattendedInstallFile",
+                "Outlook Credential Dumper",
+                "clientgrabber module"
+            ],
+            "label": "FUNCTION"
+        },
+        {
+            "count": 7,
+            "id": 1,
+            "texts": [
+                "credentials",
+                "stored credentials",
+                "credentials",
+                "credentials",
+                "PuTTY credentials",
+                "e-mail credentials",
+                "credentials"
+            ],
+            "label": "DATA"
+        },
+        {
+            "count": 7,
+            "id": 2,
+            "texts": [
+                "Windows Registry",
+                "Windows Registry",
+                "Windows registry",
+                "local and remote host registries",
+                "Software\\SimonTatham\\Putty\\Sessions registry key",
+                "Registry",
+                "Registry"
+            ],
+            "label": "REGISTRY"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "texts": [
+                "that"
+            ],
+            "label": "OTHER"
+        },
+        {
+            "count": 5,
+            "id": 4,
+            "texts": [
+                "APT32",
+                "IceApple",
+                "TrickBot",
+                "Valak",
+                "Agent Tesla"
+            ],
+            "label": "ACTOR"
+        }
+    ],
+    "graph_edges": [
+        {
+            "id": "0_1",
+            "source": 0,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "1_2",
+            "source": 1,
+            "dest": 2,
+            "count": 5
+        },
+        {
+            "id": "0_2",
+            "source": 0,
+            "dest": 2,
+            "count": 1
+        },
+        {
+            "id": "2_1",
+            "source": 2,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "3_1",
+            "source": 3,
+            "dest": 1,
+            "count": 1
+        },
+        {
+            "id": "4_0",
+            "source": 4,
+            "dest": 0,
+            "count": 2
+        },
+        {
+            "id": "4_1",
+            "source": 4,
+            "dest": 1,
+            "count": 5
+        },
+        {
+            "id": "4_2",
+            "source": 4,
+            "dest": 2,
+            "count": 3
+        }
+    ],
+    "verbs": {
+        "find": 1,
+        "in": 1,
+        "have": 2,
+        "search": 1,
+        "for": 2,
+        "use": 2,
+        "harvest": 2,
+        "store in": 1,
+        "from": 5,
+        "retrieve": 1,
+        "query": 1,
+        "steal": 1,
+        "extract": 1
+    }
+}
